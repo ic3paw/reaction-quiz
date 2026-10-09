@@ -130,11 +130,12 @@ for entry in entries:
             book[id]['mechanism'] = None
             book[id]['mechanismNote'] = 'Baldwin’s rules classify ring closures rather than describe a single reaction mechanism. The Reaction tab contains the book’s rules and stereoelectronic diagrams.'
     r.update(categories=memberships, category=memberships[0], printedPage=p, bookName=name,
+             appendixSummary=summary if entry['rows'] else None,
              appendixPages=sorted(set(row['appendixPage'] for row in entry['rows'])))
     catalog.append(r)
 
 extra = dict(next(r for r in legacy if r['id']=='fischer'))
-extra.update(categories=['not-listed'], category='not-listed', appendixPages=[], supplemental=True)
+extra.update(categories=['not-listed'], category='not-listed', appendixPages=[], appendixSummary=None, supplemental=True)
 catalog.append(extra)
 catalog.sort(key=lambda r:r['name'].casefold())
 categories = [dict(id=slug(n),name=n.capitalize().replace('c-c','C–C'),short=n.capitalize().replace('c-c','C–C')) for n in category_names]

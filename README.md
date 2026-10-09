@@ -5,25 +5,27 @@ A responsive named-reaction study website built with plain HTML, CSS, and JavaSc
 ## Features
 
 - All 250 dedicated book entries, plus the original Fischer esterification card (251 total)
-- Searchable library with reagents, conditions, and explanations
+- Searchable library with a remembered Condensed view (names and appendix overviews) or Expanded view (book reaction schemes)
 - Reaction & conditions (shown first), Outline / history, Mechanism, and Synthetic applications tabs for every card, with book figures and printed-page citations
 - Sidebar checkboxes to select multiple categories for the library and all quiz modes; selections persist in the browser
-- Quick quizzes, full quizzes for selected categories or all reactions, a daily challenge, mistake review, and saved-reaction practice
+- Quick quizzes, full quizzes for selected categories or all reactions, endless quizzes, mistake review, and saved-reaction practice
 - Immediate answer feedback
 - Flashcard modes for recalling the name from a book scheme, reaction/conditions, mechanism, or outline/history, with synthetic application answer tabs, flip, shuffle, keyboard navigation, self-rating, and review of remaining cards
 - Accuracy, practice history, daily streaks, and reaction mastery
 - Local browser storage for bookmarks and progress
 - Responsive layouts and keyboard-accessible dialogs
 
-Progress is specific to the current browser and website origin. Three consecutive correct answers for a reaction mark it as mastered. An unfinished quiz keeps answered-question progress but does not count as a completed session. The daily challenge is selected using the local calendar date.
+Progress is specific to the current browser and website origin. Three consecutive correct answers for a reaction mark it as mastered. An unfinished finite quiz keeps answered-question progress but does not count as a completed session. Ending an endless quiz saves its answered-question total and score; unanswered questions are excluded, and empty sessions are not recorded.
 
-The interface uses Arial and system fonts, with no external assets or network requests. Reaction data is in [assets/reactions.js](./assets/reactions.js), application logic is in [assets/app.js](./assets/app.js), and styling is in [assets/styles.css](./assets/styles.css).
+The interface uses Arial and system fonts, with UChicago maroon (`#800000`) accents and no external assets or network requests. Reaction data is in [assets/reactions.js](./assets/reactions.js), application logic is in [assets/app.js](./assets/app.js), and styling is in [assets/styles.css](./assets/styles.css).
 
 ## Categories and practice
 
 The 23 categories and their overlapping reaction memberships follow appendix 8.3, printed pages 508–517. Selecting multiple categories takes their union, without repeating reactions. The appendix omits 43 dedicated entries; these remain fully available under “Not listed in appendix 8.3,” alongside the supplemental Fischer esterification card. The appendix’s subtypes are not separate sidebar categories.
 
-The sidebar filters library results, selected-reaction quizzes, daily challenges, and flashcards. Search and saved-reaction filters also apply when starting a quiz or flashcards from the library. Explicit category buttons on the Practice page or reaction details practice the named category directly. Quick quizzes and daily challenges contain up to five questions; other quizzes and flashcard decks include every matching reaction once. The Practice page also offers an explicit “All reactions” quiz covering all 251 entries regardless of sidebar selection. Tiny quiz selections draw extra answer choices from the wider library.
+The sidebar filters library results, selected-reaction quizzes, endless quizzes, and flashcards. Search and saved-reaction filters also apply when starting a quiz or flashcards from the library. Explicit category buttons on the Practice page or reaction details practice the named category directly. Quick quizzes contain up to five questions; other finite quizzes and flashcard decks include every matching reaction once. Endless quizzes shuffle the selected pool, cover each reaction once per pass, and keep reshuffling until you end the session. Consecutive repeats across passes are avoided when more than one reaction is selected. The Practice page also offers an explicit “All reactions” quiz covering all 251 entries regardless of sidebar selection. Tiny quiz selections draw extra answer choices from the wider library.
+
+Condensed library rows show only a reaction name and its brief appendix description, using the existing summary for entries omitted from the appendix. Expanded rows show the original book schemes, with lazy-loaded images and full-size links. Search, category filters, and saved reactions work in both views. Click a name to open all reaction details and save or unsave it.
 
 Open Flashcards in the navigation and choose what to recall: Name shows the actual cropped book reaction scheme, including reagents and conditions, with no text overview or reaction name in the image's accessible label. Other recall modes show the reaction name. Flip to reveal the chosen answer, then switch between Reaction & conditions, Outline / history, Name, Mechanism, and Synthetic applications for the same reaction. The reaction figure tab is first in the tab list. Mechanism answers include the book figure where available, with a source note otherwise. Synthetic applications are shown only when a source figure exists (currently all 251 cards). The recall mode persists across category changes, navigation, and reloads, and can also be changed inside a deck opened from any page.
 

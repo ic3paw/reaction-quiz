@@ -138,6 +138,7 @@ const reactionCatalog = [
     "category": "not-listed",
     "printedPage": 2,
     "bookName": "Acetoacetic Ester Synthesis",
+    "appendixSummary": null,
     "appendixPages": []
   },
   {
@@ -156,6 +157,7 @@ const reactionCatalog = [
     "category": "carbocycle-formation",
     "printedPage": 4,
     "bookName": "Acyloin Condensation",
+    "appendixSummary": "Formation of cyclic α-hydroxy ketones from diesters.",
     "appendixPages": [
       508
     ]
@@ -175,6 +177,7 @@ const reactionCatalog = [
     ],
     "printedPage": 6,
     "bookName": "Alder (Ene) Reaction (Hydro-Allyl Addition)",
+    "appendixSummary": "Activation of an allylic C-H bond and the concomitant allylic transposition of the C=C double bond of alkenes. (Formally the addition of alkenes to C=C and C=O bonds.)",
     "appendixPages": [
       511
     ]
@@ -194,6 +197,7 @@ const reactionCatalog = [
     ],
     "printedPage": 8,
     "bookName": "Aldol Reaction",
+    "appendixSummary": "Addition of an enol/enolate of a carbonyl compound to an aldehyde or ketone to form a β-hydroxycarbonyl compound.",
     "appendixPages": [
       513
     ]
@@ -215,6 +219,7 @@ const reactionCatalog = [
     "category": "carbocycle-formation",
     "printedPage": 10,
     "bookName": "Alkene (Olefin) Metathesis",
+    "appendixSummary": "Formation of cyclic alkenes from dienes.",
     "appendixPages": [
       508,
       510
@@ -237,6 +242,7 @@ const reactionCatalog = [
     "category": "carbocycle-formation",
     "printedPage": 12,
     "bookName": "Alkyne Metathesis",
+    "appendixSummary": "Formation of cyclic alkynes from diynes.",
     "appendixPages": [
       508,
       510
@@ -258,6 +264,7 @@ const reactionCatalog = [
     "category": "rearrangements",
     "printedPage": 14,
     "bookName": "Amadori Reaction / Rearrangement",
+    "appendixSummary": "The acid- or base-catalyzed isomerization of N-glycosides of aldoses to form 1-amino-1-deoxy ketoses.",
     "appendixPages": [
       515
     ]
@@ -278,6 +285,7 @@ const reactionCatalog = [
     "category": "not-listed",
     "printedPage": 16,
     "bookName": "Arbuzov Reaction (Michaelis-Arbuzov Reaction)",
+    "appendixSummary": null,
     "appendixPages": []
   },
   {
@@ -296,6 +304,7 @@ const reactionCatalog = [
     "category": "homologation",
     "printedPage": 18,
     "bookName": "Arndt-Eistert Homologation / Synthesis",
+    "appendixSummary": "One-carbon homologation of carboxylic acids.",
     "appendixPages": [
       510
     ]
@@ -317,6 +326,7 @@ const reactionCatalog = [
     "category": "pericyclic-reactions",
     "printedPage": 26,
     "bookName": "Aza-[2,3]-Wittig Rearrangement",
+    "appendixSummary": "Base-promoted [2,3]-sigmatropic rearrangement of allylic tertiary amines to give homoallylic secondary amines.",
     "appendixPages": [
       512,
       515
@@ -339,6 +349,7 @@ const reactionCatalog = [
     "category": "pericyclic-reactions",
     "printedPage": 20,
     "bookName": "Aza-Claisen Rearrangement (3-Aza-Cope Rearrangement)",
+    "appendixSummary": "Thermal [3,3]-sigmatropic rearrangement of N-allyl enamines.",
     "appendixPages": [
       512,
       515
@@ -361,6 +372,7 @@ const reactionCatalog = [
     "category": "pericyclic-reactions",
     "printedPage": 22,
     "bookName": "Aza-Cope Rearrangement",
+    "appendixSummary": "Thermal [3,3]-sigmatropic rearrangement of N-substituted 1,5-dienes.",
     "appendixPages": [
       512,
       515
@@ -382,6 +394,7 @@ const reactionCatalog = [
     "category": "not-listed",
     "printedPage": 24,
     "bookName": "Aza-Wittig Reaction",
+    "appendixSummary": null,
     "appendixPages": []
   },
   {
@@ -400,6 +413,7 @@ const reactionCatalog = [
     ],
     "printedPage": 28,
     "bookName": "Baeyer-Villiger Oxidation/Rearrangement",
+    "appendixSummary": "Formation of esters from ketones upon peracid oxidation.",
     "appendixPages": [
       511,
       515
@@ -421,6 +435,7 @@ const reactionCatalog = [
     "category": "rearrangements",
     "printedPage": 30,
     "bookName": "Baker-Venkataraman Rearrangement",
+    "appendixSummary": "Base-catalyzed rearrangement of aromatic ortho- acyloxyketones to aromatic β-diketones.",
     "appendixPages": [
       514
     ]
@@ -441,6 +456,7 @@ const reactionCatalog = [
     "category": "not-listed",
     "printedPage": 32,
     "bookName": "Baldwin’s Rules / Guidelines For Ring-Closing Reactions",
+    "appendixSummary": null,
     "appendixPages": []
   },
   {
@@ -459,6 +475,7 @@ const reactionCatalog = [
     "category": "not-listed",
     "printedPage": 34,
     "bookName": "Balz-Schiemann Reaction (Schiemann Reaction)",
+    "appendixSummary": null,
     "appendixPages": []
   },
   {
@@ -477,6 +494,7 @@ const reactionCatalog = [
     "category": "not-listed",
     "printedPage": 36,
     "bookName": "Bamford-Stevens-Shapiro Olefination",
+    "appendixSummary": null,
     "appendixPages": []
   },
   {
@@ -495,6 +513,7 @@ const reactionCatalog = [
     "category": "reactions-involving-carbonyl-compounds",
     "printedPage": 38,
     "bookName": "Barbier Coupling Reaction",
+    "appendixSummary": "Metal-mediated addition of alkyl, allyl or benzyl halides to carbonyl compounds.",
     "appendixPages": [
       513
     ]
@@ -515,6 +534,7 @@ const reactionCatalog = [
     "category": "heterocycle-formation",
     "printedPage": 40,
     "bookName": "Bartoli Indole Synthesis",
+    "appendixSummary": "Formation of 7-substituted indoles from ortho-substituted nitro- or nitrosoarenes.",
     "appendixPages": [
       509
     ]
@@ -535,6 +555,7 @@ const reactionCatalog = [
     "category": "radical-reactions",
     "printedPage": 42,
     "bookName": "Barton Nitrite Ester Reaction",
+    "appendixSummary": "Thermal or photolytic reaction of nitrite esters to afford γ- hydroxy oximes.",
     "appendixPages": [
       513
     ]
@@ -555,6 +576,7 @@ const reactionCatalog = [
     "category": "radical-reactions",
     "printedPage": 44,
     "bookName": "Barton Radical Decarboxylation Reaction",
+    "appendixSummary": "Reductive decarboxylation of thiohydroxamate esters to give alkanes.",
     "appendixPages": [
       513
     ]
@@ -575,6 +597,7 @@ const reactionCatalog = [
     "category": "radical-reactions",
     "printedPage": 46,
     "bookName": "Barton-McCombie Radical Deoxygenation Reaction",
+    "appendixSummary": "Reductive deoxygenation of thioxoesters to give the corresponding alkanes.",
     "appendixPages": [
       513
     ]
@@ -595,6 +618,7 @@ const reactionCatalog = [
     "category": "reactions-involving-carbonyl-compounds",
     "printedPage": 48,
     "bookName": "Baylis-Hillman Reaction",
+    "appendixSummary": "Formation of a C-C single bond between the α-position of conjugated carbonyl compounds or conjugated carboxylic acid derivatives and aldehydes or ketones.",
     "appendixPages": [
       513
     ]
@@ -614,6 +638,7 @@ const reactionCatalog = [
     ],
     "printedPage": 50,
     "bookName": "Beckmann Rearrangement",
+    "appendixSummary": "Conversion of aldoximes and ketoximes to the corresponding amides in acidic medium.",
     "appendixPages": [
       515
     ]
@@ -635,6 +660,7 @@ const reactionCatalog = [
     "category": "rearrangements",
     "printedPage": 52,
     "bookName": "Benzilic Acid Rearrangement",
+    "appendixSummary": "Rearrangement of 1,2-diketones to give the salts of α- hydroxy acids.",
     "appendixPages": [
       514,
       516
@@ -656,6 +682,7 @@ const reactionCatalog = [
     "category": "reactions-involving-carbonyl-compounds",
     "printedPage": 54,
     "bookName": "Benzoin And Retro-Benzoin Condensation",
+    "appendixSummary": "Reaction of aldehydes to form α-hydroxy ketones in the presence of a nucleophilic catalyst (e.g. cyanide ion).",
     "appendixPages": [
       513
     ]
@@ -677,6 +704,7 @@ const reactionCatalog = [
     "category": "cycloaromatization",
     "printedPage": 56,
     "bookName": "Bergman Cycloaromatization Reaction",
+    "appendixSummary": "Thermal or photochemical cycloaromatization of enediynes to form substituted benzene rings.",
     "appendixPages": [
       508,
       512
@@ -698,6 +726,7 @@ const reactionCatalog = [
     "category": "heterocycle-formation",
     "printedPage": 58,
     "bookName": "Biginelli Reaction",
+    "appendixSummary": "One-pot three component formation of 3,4- dihydropyrimidin-2(1H)-ones from aromatic aldehydes, keto esters and urea.",
     "appendixPages": [
       509
     ]
@@ -717,6 +746,7 @@ const reactionCatalog = [
     ],
     "printedPage": 60,
     "bookName": "Birch Reduction",
+    "appendixSummary": "1,4-Reduction of aromatic rings using alkali metals dissolved in liquid ammonia as reducing agents.",
     "appendixPages": [
       516
     ]
@@ -738,6 +768,7 @@ const reactionCatalog = [
     "category": "electrophilic-aromatic-substitution",
     "printedPage": 62,
     "bookName": "Bischler-Napieralski Isoquinoline Synthesis",
+    "appendixSummary": "Preparation of isoquinolines from acylated phenylethylamines.",
     "appendixPages": [
       508,
       509
@@ -759,6 +790,7 @@ const reactionCatalog = [
     "category": "rearrangements",
     "printedPage": 64,
     "bookName": "Brook Rearrangement",
+    "appendixSummary": "Intramolecular anionic [1,n]-migration of silyl groups from a carbon to an oxygen atom.",
     "appendixPages": [
       514
     ]
@@ -779,6 +811,7 @@ const reactionCatalog = [
     "category": "electrophilic-addition-to-c-c-multiple-bonds",
     "printedPage": 66,
     "bookName": "Brown Hydroboration Reaction",
+    "appendixSummary": "Formation of alkylboranes from alkenes.",
     "appendixPages": [
       508
     ]
@@ -801,6 +834,7 @@ const reactionCatalog = [
     "category": "photochemical-reactions",
     "printedPage": 68,
     "bookName": "Buchner Method Of Ring Expansion",
+    "appendixSummary": "Thermal or photochemical reaction of ethyl diazoacetate with benzenes and its homologs to give the isomeric esters of cycloheptatriene carboxylic acid.",
     "appendixPages": [
       512,
       513,
@@ -823,6 +857,7 @@ const reactionCatalog = [
     "category": "transition-metal-catalyzed-couplings",
     "printedPage": 70,
     "bookName": "Buchwald-Hartwig Cross-Coupling",
+    "appendixSummary": "Direct Pd-catalyzed C-N and C-O bond formation between aryl halides and amines or alcohols.",
     "appendixPages": [
       517
     ]
@@ -843,6 +878,7 @@ const reactionCatalog = [
     "category": "elimination-reactions",
     "printedPage": 72,
     "bookName": "Burgess Dehydration Reaction",
+    "appendixSummary": "Preparation of alkenes from 2° and 3° alcohols.",
     "appendixPages": [
       509
     ]
@@ -863,6 +899,7 @@ const reactionCatalog = [
     "category": "not-listed",
     "printedPage": 74,
     "bookName": "Cannizzaro Reaction",
+    "appendixSummary": null,
     "appendixPages": []
   },
   {
@@ -882,6 +919,7 @@ const reactionCatalog = [
     "category": "pericyclic-reactions",
     "printedPage": 76,
     "bookName": "Carroll Rearrangement (Kimel-Cope Rearrangement)",
+    "appendixSummary": "Thermal [3,3]-sigmatropic rearrangement of allylic β-keto esters to afford γ,δ-unsaturated ketones.",
     "appendixPages": [
       512,
       515
@@ -903,6 +941,7 @@ const reactionCatalog = [
     "category": "transition-metal-catalyzed-couplings",
     "printedPage": 78,
     "bookName": "Castro-Stephens Coupling",
+    "appendixSummary": "The copper(I)-mediated coupling of aryl or vinyl halides with aryl- or alkyl-substituted alkynes to afford disubstituted alkynes or enynes.",
     "appendixPages": [
       517
     ]
@@ -923,6 +962,7 @@ const reactionCatalog = [
     "category": "nucleophilic-aromatic-substitution",
     "printedPage": 80,
     "bookName": "Chichibabin Amination Reaction",
+    "appendixSummary": "Direct amination of pyridine via SNAr reaction.",
     "appendixPages": [
       510
     ]
@@ -942,6 +982,7 @@ const reactionCatalog = [
     ],
     "printedPage": 82,
     "bookName": "Chugaev Elimination Reaction (Xanthate Ester Pyrolysis)",
+    "appendixSummary": "Thermal syn elimination of xanthate esters to form alkenes.",
     "appendixPages": [
       509
     ]
@@ -965,6 +1006,7 @@ const reactionCatalog = [
     "category": "heterocycle-formation",
     "printedPage": 84,
     "bookName": "Ciamician-Dennstedt Rearrangement",
+    "appendixSummary": "Synthesis of 3-halopyridines from pyrroles and 2- haloquinolines from indoles.",
     "appendixPages": [
       509,
       513,
@@ -988,6 +1030,7 @@ const reactionCatalog = [
     "category": "not-listed",
     "printedPage": 86,
     "bookName": "Claisen Condensation / Claisen Reaction",
+    "appendixSummary": null,
     "appendixPages": []
   },
   {
@@ -1006,6 +1049,7 @@ const reactionCatalog = [
     ],
     "printedPage": 88,
     "bookName": "Claisen Rearrangement",
+    "appendixSummary": "Thermal [3,3]-sigmatropic rearrangement of allyl vinyl ethers to give γ,δ-unsaturated carbonyl compounds.",
     "appendixPages": [
       512,
       516
@@ -1028,6 +1072,7 @@ const reactionCatalog = [
     "category": "pericyclic-reactions",
     "printedPage": 90,
     "bookName": "Claisen-Ireland Rearrangement",
+    "appendixSummary": "Thermal [3,3]-sigmatropic rearrangement of O- trialkylsilylketene acetals to γ,δ-unsaturated carboxylic acids.",
     "appendixPages": [
       512,
       516
@@ -1048,6 +1093,7 @@ const reactionCatalog = [
     ],
     "printedPage": 92,
     "bookName": "Clemmensen Reduction",
+    "appendixSummary": "Conversion of a carbonyl group to the corresponding methylene group using Zn(Hg)/HCl.",
     "appendixPages": [
       516
     ]
@@ -1069,6 +1115,7 @@ const reactionCatalog = [
     "category": "electrophilic-aromatic-substitution",
     "printedPage": 94,
     "bookName": "Combes Quinoline Synthesis",
+    "appendixSummary": "Preparation of quinolines from aryl amines and 1,3- diketones.",
     "appendixPages": [
       508,
       509
@@ -1090,6 +1137,7 @@ const reactionCatalog = [
     "category": "elimination-reactions",
     "printedPage": 96,
     "bookName": "Cope Elimination / Cope Reaction",
+    "appendixSummary": "Thermal syn elimination of 3° amine N-oxides to form alkenes.",
     "appendixPages": [
       509
     ]
@@ -1110,6 +1158,7 @@ const reactionCatalog = [
     ],
     "printedPage": 98,
     "bookName": "Cope Rearrangement",
+    "appendixSummary": "Thermal [3,3]-sigmatropic rearrangement of 1,5-dienes to the isomeric 1,5-dienes.",
     "appendixPages": [
       512,
       516
@@ -1131,6 +1180,7 @@ const reactionCatalog = [
     "category": "reduction",
     "printedPage": 100,
     "bookName": "Corey-Bakshi-Shibata Reduction (CBS Reduction)",
+    "appendixSummary": "Enantioselective reduction of ketones with BH3 using oxazaborolidines as catalysts.",
     "appendixPages": [
       516
     ]
@@ -1152,6 +1202,7 @@ const reactionCatalog = [
     "category": "oxidation",
     "printedPage": 102,
     "bookName": "Corey-Chaykovsky Epoxidation And Cyclopropanation",
+    "appendixSummary": "Preparation of epoxides from aldehydes and ketones.",
     "appendixPages": [
       511,
       513
@@ -1174,6 +1225,7 @@ const reactionCatalog = [
     "category": "homologation",
     "printedPage": 104,
     "bookName": "Corey-Fuchs Alkyne Synthesis",
+    "appendixSummary": "One-carbon homologation of aldehydes to form the corresponding terminal alkynes.",
     "appendixPages": [
       510,
       513
@@ -1195,6 +1247,7 @@ const reactionCatalog = [
     "category": "oxidation",
     "printedPage": 106,
     "bookName": "Corey-Kim Oxidation",
+    "appendixSummary": "Oxidation of primary and secondary alcohols with NCS/DMS to afford aldehydes and ketones, respectively.",
     "appendixPages": [
       511
     ]
@@ -1215,6 +1268,7 @@ const reactionCatalog = [
     "category": "not-listed",
     "printedPage": 108,
     "bookName": "Corey-Nicolaou Macrolactonization",
+    "appendixSummary": null,
     "appendixPages": []
   },
   {
@@ -1233,6 +1287,7 @@ const reactionCatalog = [
     "category": "not-listed",
     "printedPage": 110,
     "bookName": "Corey-Winter Olefination",
+    "appendixSummary": null,
     "appendixPages": []
   },
   {
@@ -1252,6 +1307,7 @@ const reactionCatalog = [
     "category": "pericyclic-reactions",
     "printedPage": 112,
     "bookName": "Cornforth Rearrangement",
+    "appendixSummary": "Thermal rearrangement of 4-carbonyl substituted oxazoles to their isomeric oxazoles.",
     "appendixPages": [
       512,
       515
@@ -1273,6 +1329,7 @@ const reactionCatalog = [
     "category": "oxidation",
     "printedPage": 114,
     "bookName": "Criegee Oxidation",
+    "appendixSummary": "Cleavage of 1,2-diols (glycols) to the corresponding carbonyl compounds using LTA.",
     "appendixPages": [
       511
     ]
@@ -1294,6 +1351,7 @@ const reactionCatalog = [
     "category": "photochemical-reactions",
     "printedPage": 116,
     "bookName": "Curtius Rearrangement",
+    "appendixSummary": "Thermal or photochemical rearrangement of acyl azides to give isocyanates.",
     "appendixPages": [
       512,
       515
@@ -1316,6 +1374,7 @@ const reactionCatalog = [
     "category": "oxidation",
     "printedPage": 118,
     "bookName": "Dakin Oxidation",
+    "appendixSummary": "Conversion of aromatic aldehydes and ketones to the corresponding phenols.",
     "appendixPages": [
       511,
       513
@@ -1337,6 +1396,7 @@ const reactionCatalog = [
     "category": "not-listed",
     "printedPage": 120,
     "bookName": "Dakin-West Reaction",
+    "appendixSummary": null,
     "appendixPages": []
   },
   {
@@ -1355,6 +1415,7 @@ const reactionCatalog = [
     "category": "cycloaromatization",
     "printedPage": 122,
     "bookName": "Danheiser Benzannulation",
+    "appendixSummary": "Reaction of cyclobutenones with alkynes to give highly substituted benzene rings.",
     "appendixPages": [
       508
     ]
@@ -1375,6 +1436,7 @@ const reactionCatalog = [
     "category": "carbocycle-formation",
     "printedPage": 124,
     "bookName": "Danheiser Cyclopentene Annulation",
+    "appendixSummary": "Formation of cyclopentenes from enones and allenes.",
     "appendixPages": [
       508
     ]
@@ -1396,6 +1458,7 @@ const reactionCatalog = [
     "category": "carbocycle-formation",
     "printedPage": 126,
     "bookName": "Danishefsky’s Diene Cycloaddition",
+    "appendixSummary": "Formation of six-membered carbocycles using 1- methoxy-3-trimethylsilyloxy-1,3-butadiene.",
     "appendixPages": [
       508,
       511
@@ -1417,6 +1480,7 @@ const reactionCatalog = [
     "category": "not-listed",
     "printedPage": 128,
     "bookName": "Darzens Glycidic Ester Condensation",
+    "appendixSummary": null,
     "appendixPages": []
   },
   {
@@ -1436,6 +1500,7 @@ const reactionCatalog = [
     "category": "electrophilic-addition-to-c-c-multiple-bonds",
     "printedPage": 130,
     "bookName": "Davis’ Oxaziridine Oxidations",
+    "appendixSummary": "Formation of epoxides from alkenes using oxaziridines.",
     "appendixPages": [
       508,
       511
@@ -1458,6 +1523,7 @@ const reactionCatalog = [
     "category": "pericyclic-reactions",
     "printedPage": 132,
     "bookName": "De Mayo Cycloaddition (Enone-Alkene [2+2] Photocycloaddition)",
+    "appendixSummary": "Photochemical [2+2] cycloaddition of enones and alkenes to give substituted cyclobutanes.",
     "appendixPages": [
       511,
       512
@@ -1480,6 +1546,7 @@ const reactionCatalog = [
     "category": "rearrangements",
     "printedPage": 134,
     "bookName": "Demjanov And Tiffeneau-Demjanov Rearrangement",
+    "appendixSummary": "The ring enlargement of 1-aminomethyl cycloalkanes to the corresponding cycloalkanols and the ring- enlargement of 1-aminomethyl cycloalkanols to the corresponding cycloalkanones.",
     "appendixPages": [
       515,
       517
@@ -1501,6 +1568,7 @@ const reactionCatalog = [
     "category": "oxidation",
     "printedPage": 136,
     "bookName": "Dess-Martin Oxidation",
+    "appendixSummary": "Oxidation of alcohols and oximes to afford the corresponding carbonyl compounds using DMP.",
     "appendixPages": [
       511
     ]
@@ -1521,6 +1589,7 @@ const reactionCatalog = [
     "category": "carbocycle-formation",
     "printedPage": 138,
     "bookName": "Dieckmann Condensation",
+    "appendixSummary": "Formation of cyclic β-keto esters from diesters.",
     "appendixPages": [
       508
     ]
@@ -1541,6 +1610,7 @@ const reactionCatalog = [
     ],
     "printedPage": 140,
     "bookName": "Diels-Alder Cycloaddition",
+    "appendixSummary": "The [4+2] cycloaddition of alkenes and dienes to afford substituted cyclohexenes.",
     "appendixPages": [
       508,
       511
@@ -1562,6 +1632,7 @@ const reactionCatalog = [
     "category": "rearrangements",
     "printedPage": 142,
     "bookName": "Dienone-Phenol Rearrangement",
+    "appendixSummary": "Acid-catalyzed migration of alkyl groups in cyclohexadienones to afford substituted phenols.",
     "appendixPages": [
       515
     ]
@@ -1583,6 +1654,7 @@ const reactionCatalog = [
     "category": "heterocycle-formation",
     "printedPage": 144,
     "bookName": "Dimroth Rearrangement",
+    "appendixSummary": "Isomerization of heterocycles in which endocyclic or oxocyclic heteroatoms and their attached substituents are translocated via a ring-opening-ring-closure sequence.",
     "appendixPages": [
       509,
       515
@@ -1605,6 +1677,7 @@ const reactionCatalog = [
     "category": "homologation",
     "printedPage": 146,
     "bookName": "Doering-Laflamme Allene Synthesis",
+    "appendixSummary": "Preparation of allenes from olefins.",
     "appendixPages": [
       510,
       513
@@ -1626,6 +1699,7 @@ const reactionCatalog = [
     "category": "cycloaromatization",
     "printedPage": 148,
     "bookName": "Dötz Benzannulation Reaction",
+    "appendixSummary": "Reaction of Fischer chromium carbenes with alkynes to give substituted hydroquinone derivatives.",
     "appendixPages": [
       508
     ]
@@ -1646,6 +1720,7 @@ const reactionCatalog = [
     "category": "not-listed",
     "printedPage": 150,
     "bookName": "Enders SAMP/RAMP Hydrazone Alkylation",
+    "appendixSummary": null,
     "appendixPages": []
   },
   {
@@ -1664,6 +1739,7 @@ const reactionCatalog = [
     "category": "metathesis",
     "printedPage": 152,
     "bookName": "Enyne Metathesis",
+    "appendixSummary": "Transition metal catalyzed cycloisomerization of [1,n]- enynes to the corresponding 1,3-dienes.",
     "appendixPages": [
       510
     ]
@@ -1684,6 +1760,7 @@ const reactionCatalog = [
     "category": "not-listed",
     "printedPage": 154,
     "bookName": "Eschenmoser Methenylation",
+    "appendixSummary": null,
     "appendixPages": []
   },
   {
@@ -1703,6 +1780,7 @@ const reactionCatalog = [
     "category": "pericyclic-reactions",
     "printedPage": 156,
     "bookName": "Eschenmoser-Claisen Rearrangement",
+    "appendixSummary": "Thermal [3,3]-sigmatropic rearrangement to generate γ,δ- unsaturated amides from allylic alcohols and N,N- dimethylacetamide dimethyl acetal.",
     "appendixPages": [
       512,
       516
@@ -1724,6 +1802,7 @@ const reactionCatalog = [
     "category": "fragmentation-reactions",
     "printedPage": 158,
     "bookName": "Eschenmoser-Tanabe Fragmentation",
+    "appendixSummary": "Formation of alkynals or alkynones from epoxy ketone hydrazones.",
     "appendixPages": [
       509
     ]
@@ -1745,6 +1824,7 @@ const reactionCatalog = [
     "category": "reactions-involving-carbonyl-compounds",
     "printedPage": 160,
     "bookName": "Eschweiler-Clarke Methylation (Reductive Alkylation)",
+    "appendixSummary": "One-pot reductive methylation of primary and secondary amines to the corresponding tertiary amines using formaldehyde and a reducing agent.",
     "appendixPages": [
       513,
       516
@@ -1766,6 +1846,7 @@ const reactionCatalog = [
     "category": "reactions-involving-carbonyl-compounds",
     "printedPage": 162,
     "bookName": "Evans Aldol Reaction",
+    "appendixSummary": "Reaction of boron enolates with aldehydes to afford syn aldol products.",
     "appendixPages": [
       513
     ]
@@ -1787,6 +1868,7 @@ const reactionCatalog = [
     "category": "rearrangements",
     "printedPage": 164,
     "bookName": "Favorskii And Homo-Favorskii Rearrangement",
+    "appendixSummary": "Skeletal rearrangement of α-halo ketones via a cyclopropanone intermediate to give carboxylic acids or carboxylic acid derivatives.",
     "appendixPages": [
       514,
       516
@@ -1808,6 +1890,7 @@ const reactionCatalog = [
     "category": "heterocycle-formation",
     "printedPage": 166,
     "bookName": "Feist-Bénary Furan Synthesis",
+    "appendixSummary": "Synthesis of furans from β-keto esters and α-halogenated carbonyl compounds under basic conditions.",
     "appendixPages": [
       509
     ]
@@ -1828,6 +1911,7 @@ const reactionCatalog = [
     "category": "rearrangements",
     "printedPage": 168,
     "bookName": "Ferrier Reaction / Rearrangement",
+    "appendixSummary": "Lewis acid promoted rearrangement of unsaturated carbohydrates (glycals) in the presence of nucleophiles to the corresponding 2,3-unsaturated glycosyl compounds.",
     "appendixPages": [
       515
     ]
@@ -1847,6 +1931,7 @@ const reactionCatalog = [
     ],
     "printedPage": 170,
     "bookName": "Finkelstein Reaction",
+    "appendixSummary": "Equilibrium exchange of the halogen atom in alkyl halides for another halogen atom.",
     "appendixPages": [
       510
     ]
@@ -1865,6 +1950,7 @@ const reactionCatalog = [
       "not-listed"
     ],
     "appendixPages": [],
+    "appendixSummary": null,
     "supplemental": true
   },
   {
@@ -1883,6 +1969,7 @@ const reactionCatalog = [
     "category": "heterocycle-formation",
     "printedPage": 172,
     "bookName": "Fischer Indole Synthesis",
+    "appendixSummary": "Preparation of indoles from arylhydrazones of ketones and aldehydes in the presence of protic or Lewis acid catalyst.",
     "appendixPages": [
       509
     ]
@@ -1903,6 +1990,7 @@ const reactionCatalog = [
     "category": "oxidation",
     "printedPage": 174,
     "bookName": "Fleming-Tamao Oxidation",
+    "appendixSummary": "Mild stereospecific oxidation of silicon-carbon bonds to the corresponding carbon-oxygen bonds",
     "appendixPages": [
       511
     ]
@@ -1923,6 +2011,7 @@ const reactionCatalog = [
     "category": "electrophilic-aromatic-substitution",
     "printedPage": 176,
     "bookName": "Friedel-Crafts Acylation",
+    "appendixSummary": "Synthesis of aromatic ketones using acyl halides or anhydrides.",
     "appendixPages": [
       508
     ]
@@ -1943,6 +2032,7 @@ const reactionCatalog = [
     "category": "electrophilic-aromatic-substitution",
     "printedPage": 178,
     "bookName": "Friedel-Crafts Alkylation",
+    "appendixSummary": "Synthesis of alkylbenzenes using alkyl halides.",
     "appendixPages": [
       508
     ]
@@ -1965,6 +2055,7 @@ const reactionCatalog = [
     "category": "electrophilic-aromatic-substitution",
     "printedPage": 180,
     "bookName": "Fries-, Photo-Fries, And Anionic Ortho-Fries Rearrangement",
+    "appendixSummary": "Synthesis of acylated phenols from O-acyl phenols.",
     "appendixPages": [
       508,
       512,
@@ -1986,6 +2077,7 @@ const reactionCatalog = [
     ],
     "printedPage": 182,
     "bookName": "Gabriel Synthesis",
+    "appendixSummary": "Two-step preparation of primary amines from the corresponding alkyl halides using phthalimide as the nitrogen source.",
     "appendixPages": [
       510
     ]
@@ -2006,6 +2098,7 @@ const reactionCatalog = [
     "category": "electrophilic-aromatic-substitution",
     "printedPage": 184,
     "bookName": "Gattermann And Gattermann-Koch Formylation",
+    "appendixSummary": "Synthesis of aromatic aldehydes using HCN or CO.",
     "appendixPages": [
       509
     ]
@@ -2026,6 +2119,7 @@ const reactionCatalog = [
     "category": "transition-metal-catalyzed-couplings",
     "printedPage": 186,
     "bookName": "Glaser Coupling",
+    "appendixSummary": "Preparation of symmetrical conjugated diynes and polyynes by the oxidative homocoupling of terminal alkynes in the presence of copper salts.",
     "appendixPages": [
       517
     ]
@@ -2045,6 +2139,7 @@ const reactionCatalog = [
     ],
     "printedPage": 188,
     "bookName": "Grignard Reaction",
+    "appendixSummary": "Addition of organomagnesium species to aldehydes and ketones to form secondary alcohols and tertiary alcohols, respectively.",
     "appendixPages": [
       513
     ]
@@ -2065,6 +2160,7 @@ const reactionCatalog = [
     "category": "fragmentation-reactions",
     "printedPage": 190,
     "bookName": "Grob Fragmentation",
+    "appendixSummary": "Regulated heterolytic cleavage of certain types of molecules to form three different fragments.",
     "appendixPages": [
       509
     ]
@@ -2085,6 +2181,7 @@ const reactionCatalog = [
     "category": "carbocycle-formation",
     "printedPage": 192,
     "bookName": "Hajos-Parrish Reaction",
+    "appendixSummary": "Enantio-enriched bicyclic enones from 1,5-diketones.",
     "appendixPages": [
       508
     ]
@@ -2106,6 +2203,7 @@ const reactionCatalog = [
     "category": "heterocycle-formation",
     "printedPage": 194,
     "bookName": "Hantzsch Dihydropyridine Synthesis",
+    "appendixSummary": "Preparation of dihydropyridines from 1,3-diketones, aldehydes and ammonia.",
     "appendixPages": [
       509,
       513
@@ -2127,6 +2225,7 @@ const reactionCatalog = [
     "category": "transition-metal-catalyzed-couplings",
     "printedPage": 196,
     "bookName": "Heck Reaction",
+    "appendixSummary": "Pd-catalyzed arylation or alkenylation of olefins.",
     "appendixPages": [
       517
     ]
@@ -2148,6 +2247,7 @@ const reactionCatalog = [
     "category": "heterocycle-formation",
     "printedPage": 198,
     "bookName": "Heine Reaction",
+    "appendixSummary": "Intramolecular ring expansion of substituted N- acylazirdines to the corresponding substituted oxazolines.",
     "appendixPages": [
       509,
       510
@@ -2168,6 +2268,7 @@ const reactionCatalog = [
     ],
     "printedPage": 200,
     "bookName": "Hell-Volhard-Zelinsky Reaction",
+    "appendixSummary": null,
     "appendixPages": []
   },
   {
@@ -2186,6 +2287,7 @@ const reactionCatalog = [
     "category": "reactions-involving-carbonyl-compounds",
     "printedPage": 202,
     "bookName": "Henry Reaction",
+    "appendixSummary": "Aldol condensation between nitroalkanes and carbonyl compounds to form β-nitro alcohols.",
     "appendixPages": [
       513
     ]
@@ -2207,6 +2309,7 @@ const reactionCatalog = [
     "category": "heterocycle-formation",
     "printedPage": 204,
     "bookName": "Hetero Diels-Alder Cycloaddition",
+    "appendixSummary": "The [4+2] cyclization of a diene or heterodiene and a dienophile or heterodienophile.",
     "appendixPages": [
       509,
       512
@@ -2228,6 +2331,7 @@ const reactionCatalog = [
     "category": "elimination-reactions",
     "printedPage": 206,
     "bookName": "Hofmann Elimination",
+    "appendixSummary": "Formation of alkenes from quaternary ammonium salts.",
     "appendixPages": [
       509
     ]
@@ -2248,6 +2352,7 @@ const reactionCatalog = [
     ],
     "printedPage": 210,
     "bookName": "Hofmann Rearrangement",
+    "appendixSummary": "Conversion of primary carboxamides to one-carbon shorter primary amines.",
     "appendixPages": [
       508,
       514
@@ -2270,6 +2375,7 @@ const reactionCatalog = [
     "category": "heterocycle-formation",
     "printedPage": 208,
     "bookName": "Hofmann-Löffler-Freytag Reaction (Remote Functionalization)",
+    "appendixSummary": "Formation of cyclic amines from N-halogenated amines via an intramolecular 1,5-hydrogen atom transfer to a nitrogen radical.",
     "appendixPages": [
       509,
       513
@@ -2291,6 +2397,7 @@ const reactionCatalog = [
     "category": "reactions-involving-carbonyl-compounds",
     "printedPage": 212,
     "bookName": "Horner-Wadsworth-Emmons Olefination",
+    "appendixSummary": "Stereoselective olefination of aldehydes and ketones using phosphoryl-stabilized carbanions.",
     "appendixPages": [
       513
     ]
@@ -2311,6 +2418,7 @@ const reactionCatalog = [
     "category": "reactions-involving-carbonyl-compounds",
     "printedPage": 214,
     "bookName": "Horner-Wadsworth-Emmons Olefination – Still-Gennari Modification",
+    "appendixSummary": "Preparation of (Z)-α,β-unsaturated ketones and esters by coupling electrophilic bis(trifluoroalkyl) phosphonoesters with aldehydes and ketones in the presence of a strong base.",
     "appendixPages": [
       513
     ]
@@ -2331,6 +2439,7 @@ const reactionCatalog = [
     "category": "electrophilic-aromatic-substitution",
     "printedPage": 216,
     "bookName": "Houben-Hoesch Reaction / Synthesis",
+    "appendixSummary": "Synthesis of aromatic ketones from activated aromatic compounds (e.g. phenols) and nitriles.",
     "appendixPages": [
       509
     ]
@@ -2352,6 +2461,7 @@ const reactionCatalog = [
     "category": "degradation",
     "printedPage": 218,
     "bookName": "Hunsdiecker Reaction",
+    "appendixSummary": "Conversion of carboxylic acids to one-carbon shorter alkyl, alkenyl or aryl halides.",
     "appendixPages": [
       508,
       513
@@ -2373,6 +2483,7 @@ const reactionCatalog = [
     "category": "not-listed",
     "printedPage": 220,
     "bookName": "Jacobsen Hydrolytic Kinetic Resolution",
+    "appendixSummary": null,
     "appendixPages": []
   },
   {
@@ -2392,6 +2503,7 @@ const reactionCatalog = [
     "category": "electrophilic-addition-to-c-c-multiple-bonds",
     "printedPage": 222,
     "bookName": "Jacobsen-Katsuki Epoxidation",
+    "appendixSummary": "Formation of epoxides from alkenes using metal salen complexes.",
     "appendixPages": [
       508,
       511
@@ -2413,6 +2525,7 @@ const reactionCatalog = [
     "category": "not-listed",
     "printedPage": 224,
     "bookName": "Japp-Klingemann Reaction",
+    "appendixSummary": null,
     "appendixPages": []
   },
   {
@@ -2432,6 +2545,7 @@ const reactionCatalog = [
     "category": "pericyclic-reactions",
     "printedPage": 226,
     "bookName": "Johnson-Claisen Rearrangement",
+    "appendixSummary": "Thermal [3,3]-sigmatropic rearrangement of allyl ketene acetals to afford γ,δ-unsaturated esters.",
     "appendixPages": [
       512,
       516
@@ -2453,6 +2567,7 @@ const reactionCatalog = [
     "category": "oxidation",
     "printedPage": 228,
     "bookName": "Jones Oxidation / Oxidation Of Alcohols By Chromium Reagents",
+    "appendixSummary": "Oxidation of primary and secondary alcohols with chromic acid to give the corresponding carboxylic acids and ketones.",
     "appendixPages": [
       511
     ]
@@ -2473,6 +2588,7 @@ const reactionCatalog = [
     "category": "not-listed",
     "printedPage": 230,
     "bookName": "Julia-Lythgoe Olefination",
+    "appendixSummary": null,
     "appendixPages": []
   },
   {
@@ -2491,6 +2607,7 @@ const reactionCatalog = [
     "category": "reactions-involving-carbonyl-compounds",
     "printedPage": 232,
     "bookName": "Kagan-Molander Samarium Diiodide-Mediated Coupling",
+    "appendixSummary": "SmI2-mediated addition of alkyl, allyl or benzyl halides to carbonyl compounds.",
     "appendixPages": [
       514
     ]
@@ -2511,6 +2628,7 @@ const reactionCatalog = [
     "category": "nucleophilic-substitution",
     "printedPage": 234,
     "bookName": "Kahne Glycosidation",
+    "appendixSummary": "Preparation of O-, S- or N-glycosides via the activation of glycosyl sulfoxides.",
     "appendixPages": [
       510
     ]
@@ -2531,6 +2649,7 @@ const reactionCatalog = [
     "category": "reactions-involving-carbonyl-compounds",
     "printedPage": 236,
     "bookName": "Keck Asymmetric Allylation",
+    "appendixSummary": "The reaction of aldehydes with allyltributylstannane in the presence of Lewis acid catalysts to form homoallylic alcohols.",
     "appendixPages": [
       514
     ]
@@ -2551,6 +2670,7 @@ const reactionCatalog = [
     "category": "not-listed",
     "printedPage": 238,
     "bookName": "Keck Macrolactonization",
+    "appendixSummary": null,
     "appendixPages": []
   },
   {
@@ -2569,6 +2689,7 @@ const reactionCatalog = [
     "category": "radical-reactions",
     "printedPage": 240,
     "bookName": "Keck Radical Allylation",
+    "appendixSummary": "Coupling of alkyl halides with allyltributyltin in the presence of a radical initiator (e.g. AIBN)",
     "appendixPages": [
       512
     ]
@@ -2589,6 +2710,7 @@ const reactionCatalog = [
     "category": "reactions-involving-carbonyl-compounds",
     "printedPage": 242,
     "bookName": "Knoevenagel Condensation",
+    "appendixSummary": "Condensation of aldehydes and ketones with active methylene compounds to afford α,β-unsaturated dicarbonyl or related compounds.",
     "appendixPages": [
       514
     ]
@@ -2609,6 +2731,7 @@ const reactionCatalog = [
     "category": "heterocycle-formation",
     "printedPage": 244,
     "bookName": "Knorr Pyrrole Synthesis",
+    "appendixSummary": "Condensation of an α-amino ketone or an α-amino-β- ketoester with an active methylene compound to afford substituted pyrroles.",
     "appendixPages": [
       509
     ]
@@ -2629,6 +2752,7 @@ const reactionCatalog = [
     "category": "nucleophilic-substitution",
     "printedPage": 246,
     "bookName": "Koenigs-Knorr Glycosidation",
+    "appendixSummary": "Synthesis of alkyl or aryl O-glycosides from glycosyl halides and alcohols or phenols, respectively.",
     "appendixPages": [
       510
     ]
@@ -2649,6 +2773,7 @@ const reactionCatalog = [
     "category": "electrophilic-aromatic-substitution",
     "printedPage": 248,
     "bookName": "Kolbe-Schmitt Reaction",
+    "appendixSummary": "Synthesis of salicylic acid der. from phenols and CO2.",
     "appendixPages": [
       509
     ]
@@ -2669,6 +2794,7 @@ const reactionCatalog = [
     "category": "oxidation",
     "printedPage": 250,
     "bookName": "Kornblum Oxidation",
+    "appendixSummary": "Oxidation of alkyl halides to the corresponding carbonyl compounds using DMSO as the oxidant.",
     "appendixPages": [
       511
     ]
@@ -2689,6 +2815,7 @@ const reactionCatalog = [
     "category": "nucleophilic-substitution",
     "printedPage": 252,
     "bookName": "Krapcho Dealkoxycarbonylation (Krapcho Reaction)",
+    "appendixSummary": "Decarboxylation of β-keto esters using alkali metal salts.",
     "appendixPages": [
       510
     ]
@@ -2709,6 +2836,7 @@ const reactionCatalog = [
     "category": "heterocycle-formation",
     "printedPage": 254,
     "bookName": "Kröhnke Pyridine Synthesis",
+    "appendixSummary": "Condensation of an unsaturated ketone with an α-halo ketone to give highly substituted pyridines.",
     "appendixPages": [
       509
     ]
@@ -2729,6 +2857,7 @@ const reactionCatalog = [
     "category": "not-listed",
     "printedPage": 256,
     "bookName": "Kulinkovich Reaction",
+    "appendixSummary": null,
     "appendixPages": []
   },
   {
@@ -2747,6 +2876,7 @@ const reactionCatalog = [
     "category": "transition-metal-catalyzed-couplings",
     "printedPage": 258,
     "bookName": "Kumada Cross-Coupling",
+    "appendixSummary": "Cross-coupling of alkenyl- or aryl halides and Grignard reagents or organolithium species.",
     "appendixPages": [
       517
     ]
@@ -2768,6 +2898,7 @@ const reactionCatalog = [
     "category": "heterocycle-formation",
     "printedPage": 260,
     "bookName": "Larock Indole Synthesis",
+    "appendixSummary": "Preparation of 2,3-disubstituted indoles from ortho- iodoanilines and disubstituted alkynes.",
     "appendixPages": [
       509,
       517
@@ -2789,6 +2920,7 @@ const reactionCatalog = [
     "category": "oxidation",
     "printedPage": 262,
     "bookName": "Ley Oxidation",
+    "appendixSummary": "Oxidation of primary and secondary alcohols with TPAP/NMO to give the corresponding aldehydes and ketones.",
     "appendixPages": [
       511
     ]
@@ -2809,6 +2941,7 @@ const reactionCatalog = [
     "category": "degradation",
     "printedPage": 264,
     "bookName": "Lieben Haloform Reaction",
+    "appendixSummary": "Conversion of methyl ketones to one-carbon shorter carboxylic acids.",
     "appendixPages": [
       508
     ]
@@ -2829,6 +2962,7 @@ const reactionCatalog = [
     "category": "rearrangements",
     "printedPage": 266,
     "bookName": "Lossen Rearrangement",
+    "appendixSummary": "Conversion of O-acyl hydroxamic acids to the corresponding isocyanates.",
     "appendixPages": [
       514
     ]
@@ -2849,6 +2983,7 @@ const reactionCatalog = [
     "category": "reduction",
     "printedPage": 268,
     "bookName": "Luche Reduction",
+    "appendixSummary": "Reduction of enones to the corresponding allylic alcohols using CeCl3/NaBH4.",
     "appendixPages": [
       516
     ]
@@ -2869,6 +3004,7 @@ const reactionCatalog = [
     "category": "heterocycle-formation",
     "printedPage": 270,
     "bookName": "Madelung Indole Synthesis",
+    "appendixSummary": "The intramolecular cyclization of N-acylated-ortho- alkylanilines to afford 2,3-disubstituted indoles.",
     "appendixPages": [
       510
     ]
@@ -2889,6 +3025,7 @@ const reactionCatalog = [
     "category": "not-listed",
     "printedPage": 272,
     "bookName": "Malonic Ester Synthesis",
+    "appendixSummary": null,
     "appendixPages": []
   },
   {
@@ -2907,6 +3044,7 @@ const reactionCatalog = [
     "category": "reactions-involving-carbonyl-compounds",
     "printedPage": 274,
     "bookName": "Mannich Reaction",
+    "appendixSummary": "The condensation of CH activated compound with a primary or secondary amine and a non-enolizable carbonyl compound to afford aminoalkylated derivatives.",
     "appendixPages": [
       514
     ]
@@ -2927,6 +3065,7 @@ const reactionCatalog = [
     "category": "not-listed",
     "printedPage": 276,
     "bookName": "McMurry Coupling",
+    "appendixSummary": null,
     "appendixPages": []
   },
   {
@@ -2945,6 +3084,7 @@ const reactionCatalog = [
     "category": "radical-reactions",
     "printedPage": 278,
     "bookName": "Meerwein Arylation",
+    "appendixSummary": "Arylation of unsaturated carbonyl compounds using diazonium salts.",
     "appendixPages": [
       513
     ]
@@ -2965,6 +3105,7 @@ const reactionCatalog = [
     "category": "reduction",
     "printedPage": 280,
     "bookName": "Meerwein-Ponndorf-Verley Reduction",
+    "appendixSummary": "The reduction of aldehydes and ketones by metal alkoxides to the corresponding alcohols",
     "appendixPages": [
       516
     ]
@@ -2986,6 +3127,7 @@ const reactionCatalog = [
     "category": "pericyclic-reactions",
     "printedPage": 282,
     "bookName": "Meisenheimer Rearrangement",
+    "appendixSummary": "Thermal rearrangement of certain tertiary amine N-oxides to the corresponding O-substituted-N,N-disubstituted hydroxylamines.",
     "appendixPages": [
       512,
       516
@@ -3007,6 +3149,7 @@ const reactionCatalog = [
     "category": "rearrangements",
     "printedPage": 284,
     "bookName": "Meyer-Schuster And Rupe Rearrangement",
+    "appendixSummary": "Acid-catalyzed isomerization of secondary and tertiary propargylic alcohols to the corresponding α,β-unsaturated aldehydes or ketones.",
     "appendixPages": [
       515
     ]
@@ -3027,6 +3170,7 @@ const reactionCatalog = [
     "category": "not-listed",
     "printedPage": 286,
     "bookName": "Michael Addition/Reaction",
+    "appendixSummary": null,
     "appendixPages": []
   },
   {
@@ -3045,6 +3189,7 @@ const reactionCatalog = [
     "category": "reduction",
     "printedPage": 288,
     "bookName": "Midland Alpine-Borane® Reduction (Midland Reduction)",
+    "appendixSummary": "Enantioselective reduction of ketones using Alpine borane.",
     "appendixPages": [
       516
     ]
@@ -3065,6 +3210,7 @@ const reactionCatalog = [
     "category": "radical-reactions",
     "printedPage": 290,
     "bookName": "Minisci Reaction",
+    "appendixSummary": "Substitution of protonated heteroaromatic bases by nucleophilic carbon-centered radicals.",
     "appendixPages": [
       512
     ]
@@ -3086,6 +3232,7 @@ const reactionCatalog = [
     "category": "pericyclic-reactions",
     "printedPage": 292,
     "bookName": "Mislow-Evans Rearrangement",
+    "appendixSummary": "Reversible 1,3-transposition of allylic sulfoxide and allylic alcohol functionalities.",
     "appendixPages": [
       512,
       516
@@ -3107,6 +3254,7 @@ const reactionCatalog = [
     "category": "nucleophilic-substitution",
     "printedPage": 294,
     "bookName": "Mitsunobu Reaction",
+    "appendixSummary": "Substitution of primary and secondary alcohols with nucleophiles in the presence of dialkyl azodicarboxylate and trialkyl- or triarylphosphine.",
     "appendixPages": [
       510
     ]
@@ -3127,6 +3275,7 @@ const reactionCatalog = [
     "category": "transition-metal-catalyzed-couplings",
     "printedPage": 296,
     "bookName": "Miyaura Boration",
+    "appendixSummary": "Pd-catalyzed cross-coupling of aromatic and heteroaromatic halides or triflates with tetraalkoxydiboron compounds to give arylboronic and heteroarylboronic esters.",
     "appendixPages": [
       517
     ]
@@ -3147,6 +3296,7 @@ const reactionCatalog = [
     "category": "reactions-involving-carbonyl-compounds",
     "printedPage": 298,
     "bookName": "Mukaiyama Aldol Reaction",
+    "appendixSummary": "Lewis acid mediated addition of enol silanes to carbonyl compounds.",
     "appendixPages": [
       514
     ]
@@ -3167,6 +3317,7 @@ const reactionCatalog = [
     "category": "nucleophilic-substitution",
     "printedPage": 300,
     "bookName": "Myers Asymmetric Alkylation",
+    "appendixSummary": "Alkylation of N-acylated pseudoephedrines to obtain enantio-enriched α-alkylated carbonyl compounds.",
     "appendixPages": [
       510
     ]
@@ -3187,6 +3338,7 @@ const reactionCatalog = [
     "category": "not-listed",
     "printedPage": 302,
     "bookName": "Nagata Hydrocyanation",
+    "appendixSummary": null,
     "appendixPages": []
   },
   {
@@ -3207,6 +3359,7 @@ const reactionCatalog = [
     "category": "carbocycle-formation",
     "printedPage": 304,
     "bookName": "Nazarov Cyclization",
+    "appendixSummary": "Cyclopentenones and cyclopentanones from divinyl ketones.",
     "appendixPages": [
       508,
       512
@@ -3228,6 +3381,7 @@ const reactionCatalog = [
     "category": "not-listed",
     "printedPage": 306,
     "bookName": "Neber Rearrangement",
+    "appendixSummary": null,
     "appendixPages": []
   },
   {
@@ -3246,6 +3400,7 @@ const reactionCatalog = [
     "category": "not-listed",
     "printedPage": 308,
     "bookName": "Nef Reaction",
+    "appendixSummary": null,
     "appendixPages": []
   },
   {
@@ -3264,6 +3419,7 @@ const reactionCatalog = [
     "category": "transition-metal-catalyzed-couplings",
     "printedPage": 310,
     "bookName": "Negishi Cross-Coupling",
+    "appendixSummary": "Pd- or Ni-catalyzed cross-coupling of organozincs and aryl- or alkenyl- or alkynyl halides.",
     "appendixPages": [
       517
     ]
@@ -3284,6 +3440,7 @@ const reactionCatalog = [
     "category": "not-listed",
     "printedPage": 312,
     "bookName": "Nenitzescu Indole Synthesis",
+    "appendixSummary": null,
     "appendixPages": []
   },
   {
@@ -3302,6 +3459,7 @@ const reactionCatalog = [
     "category": "nucleophilic-substitution",
     "printedPage": 314,
     "bookName": "Nicholas Reaction",
+    "appendixSummary": "Trapping of dicobalt hexacarbonyl-stabilized propargylic cations with various nucleophiles.",
     "appendixPages": [
       510
     ]
@@ -3323,6 +3481,7 @@ const reactionCatalog = [
     "category": "electrophilic-addition-to-c-c-multiple-bonds",
     "printedPage": 316,
     "bookName": "Noyori Asymmetric Hydrogenation",
+    "appendixSummary": "Formation of enantio-enriched carboxylic acids, alcohols and amino acids from unsaturated carboxylic acids, allylic alcohols and enamides, respectively.",
     "appendixPages": [
       508,
       516
@@ -3344,6 +3503,7 @@ const reactionCatalog = [
     "category": "not-listed",
     "printedPage": 318,
     "bookName": "Nozaki-Hiyama-Kishi Reaction",
+    "appendixSummary": null,
     "appendixPages": []
   },
   {
@@ -3362,6 +3522,7 @@ const reactionCatalog = [
     "category": "oxidation",
     "printedPage": 320,
     "bookName": "Oppenauer Oxidation",
+    "appendixSummary": "Oxidation of primary and secondary alcohols with ketones in the presence of metal alkoxides to afford the corresponding aldehydes and ketones.",
     "appendixPages": [
       511
     ]
@@ -3383,6 +3544,7 @@ const reactionCatalog = [
     "category": "pericyclic-reactions",
     "printedPage": 322,
     "bookName": "Overman Rearrangement",
+    "appendixSummary": "The 1,3-transposition of alcohol and amine functionalities via the [3,3]-sigmatropic rearrangement of allylic trichloroacetimidates.",
     "appendixPages": [
       512,
       516
@@ -3405,6 +3567,7 @@ const reactionCatalog = [
     "category": "pericyclic-reactions",
     "printedPage": 324,
     "bookName": "Oxy-Cope Rearrangement And Anionic Oxy-Cope Rearrangement",
+    "appendixSummary": "Thermal [3,3]-sigmatropic rearrangement of 1,5-diene-3- ols to afford δ,ε-unsaturated carbonyl compounds.",
     "appendixPages": [
       512,
       516
@@ -3426,6 +3589,7 @@ const reactionCatalog = [
     "category": "heterocycle-formation",
     "printedPage": 326,
     "bookName": "Paal-Knorr Furan Synthesis",
+    "appendixSummary": "Dehydration of 1,4-diketones to the corresponding substituted furans.",
     "appendixPages": [
       510
     ]
@@ -3446,6 +3610,7 @@ const reactionCatalog = [
     "category": "heterocycle-formation",
     "printedPage": 328,
     "bookName": "Paal-Knorr Pyrrole Synthesis",
+    "appendixSummary": "Condensation of primary amines with 1,4-dicarbonyl compounds to form substituted pyrroles.",
     "appendixPages": [
       510
     ]
@@ -3466,6 +3631,7 @@ const reactionCatalog = [
     "category": "reactions-involving-carbonyl-compounds",
     "printedPage": 330,
     "bookName": "Passerini Multicomponent Reaction",
+    "appendixSummary": "Condensation of isocyanides with carboxylic acids and carbonyl compounds to afford α-acyloxycarboxamides.",
     "appendixPages": [
       514
     ]
@@ -3488,6 +3654,7 @@ const reactionCatalog = [
     "category": "heterocycle-formation",
     "printedPage": 332,
     "bookName": "Paterno-Büchi Reaction",
+    "appendixSummary": "Formation of oxetanes by the photocycloaddition of alkenes and carbonyl compounds.",
     "appendixPages": [
       510,
       512
@@ -3509,6 +3676,7 @@ const reactionCatalog = [
     "category": "carbocycle-formation",
     "printedPage": 334,
     "bookName": "Pauson-Khand Reaction",
+    "appendixSummary": "Formation of cyclopentenones from alkenes, alkynes and CO.",
     "appendixPages": [
       508
     ]
@@ -3530,6 +3698,7 @@ const reactionCatalog = [
     "category": "nucleophilic-substitution",
     "printedPage": 336,
     "bookName": "Payne Rearrangement",
+    "appendixSummary": "Base-catalyzed intramolecular displacement of 2,3-epoxy alcohols to give isomeric 2,3-epoxy alcohols.",
     "appendixPages": [
       510,
       515
@@ -3551,6 +3720,7 @@ const reactionCatalog = [
     "category": "reactions-involving-carbonyl-compounds",
     "printedPage": 338,
     "bookName": "Perkin Reaction",
+    "appendixSummary": "Condensation of aromatic aldehydes with the anhydrides of aliphatic carboxylic acids to afford α,β-unsaturated carboxylic acids.",
     "appendixPages": [
       514
     ]
@@ -3571,6 +3741,7 @@ const reactionCatalog = [
     "category": "not-listed",
     "printedPage": 340,
     "bookName": "Petasis Boronic Acid-Mannich Reaction",
+    "appendixSummary": null,
     "appendixPages": []
   },
   {
@@ -3589,6 +3760,7 @@ const reactionCatalog = [
     "category": "rearrangements",
     "printedPage": 342,
     "bookName": "Petasis-Ferrier Rearrangement",
+    "appendixSummary": "Lewis acid-promoted rearrangement of cyclic enol acetals to the corresponding substituted tetrahydrofurans and tetrahydropyrans.",
     "appendixPages": [
       515
     ]
@@ -3609,6 +3781,7 @@ const reactionCatalog = [
     "category": "reactions-involving-carbonyl-compounds",
     "printedPage": 344,
     "bookName": "Peterson Olefination",
+    "appendixSummary": "Preparation of alkenes from α-silyl carbanions and carbonyl compounds.",
     "appendixPages": [
       514
     ]
@@ -3629,6 +3802,7 @@ const reactionCatalog = [
     "category": "oxidation",
     "printedPage": 346,
     "bookName": "Pfitzner-Moffatt Oxidation",
+    "appendixSummary": "Oxidation of primary and secondary alcohols with DCC/DMSO to give the corresponding aldehydes and ketones.",
     "appendixPages": [
       511
     ]
@@ -3651,6 +3825,7 @@ const reactionCatalog = [
     "category": "electrophilic-aromatic-substitution",
     "printedPage": 348,
     "bookName": "Pictet-Spengler Tetrahydroisoquinoline Synthesis",
+    "appendixSummary": "Synthesis of tetrahydroisoquinolines and isoquinolines from β-arylethylamines.",
     "appendixPages": [
       509,
       510,
@@ -3672,6 +3847,7 @@ const reactionCatalog = [
     ],
     "printedPage": 350,
     "bookName": "Pinacol And Semipinacol Rearrangement",
+    "appendixSummary": "Acid-catalyzed transformation of 1,2-diols to give the corresponding rearranged ketones or aldehydes.",
     "appendixPages": [
       515
     ]
@@ -3692,6 +3868,7 @@ const reactionCatalog = [
     "category": "not-listed",
     "printedPage": 352,
     "bookName": "Pinner Reaction",
+    "appendixSummary": null,
     "appendixPages": []
   },
   {
@@ -3710,6 +3887,7 @@ const reactionCatalog = [
     "category": "oxidation",
     "printedPage": 354,
     "bookName": "Pinnick Oxidation",
+    "appendixSummary": "Mild oxidation of aldehydes directly to the corresponding carboxylic acids using NaClO2 as the oxidant.",
     "appendixPages": [
       511
     ]
@@ -3730,6 +3908,7 @@ const reactionCatalog = [
     "category": "not-listed",
     "printedPage": 356,
     "bookName": "Polonovski Reaction",
+    "appendixSummary": null,
     "appendixPages": []
   },
   {
@@ -3749,6 +3928,7 @@ const reactionCatalog = [
     "category": "electrophilic-aromatic-substitution",
     "printedPage": 358,
     "bookName": "Pomeranz-Fritsch Reaction",
+    "appendixSummary": "Synthesis of isoquinolines from aromatic aldehydes and 2,2-dialkoxyethylamine.",
     "appendixPages": [
       509,
       510
@@ -3771,6 +3951,7 @@ const reactionCatalog = [
     "category": "electrophilic-addition-to-c-c-multiple-bonds",
     "printedPage": 362,
     "bookName": "Prilezhaev Reaction",
+    "appendixSummary": "Formation of epoxides from alkenes using peracids.",
     "appendixPages": [
       508,
       511
@@ -3792,6 +3973,7 @@ const reactionCatalog = [
     "category": "reactions-involving-carbonyl-compounds",
     "printedPage": 364,
     "bookName": "Prins Reaction",
+    "appendixSummary": "Acid-catalyzed condensation of alkenes with aldehydes.",
     "appendixPages": [
       514
     ]
@@ -3812,6 +3994,7 @@ const reactionCatalog = [
     "category": "rearrangements",
     "printedPage": 366,
     "bookName": "Prins-Pinacol Rearrangement",
+    "appendixSummary": "Formation of oxacyclic and carbocyclic ring systems by terminating Prins cyclizations with the pinacol rearrangement in a tandem fashion.",
     "appendixPages": [
       515
     ]
@@ -3832,6 +4015,7 @@ const reactionCatalog = [
     "category": "not-listed",
     "printedPage": 360,
     "bookName": "Prévost Reaction",
+    "appendixSummary": null,
     "appendixPages": []
   },
   {
@@ -3850,6 +4034,7 @@ const reactionCatalog = [
     "category": "rearrangements",
     "printedPage": 368,
     "bookName": "Pummerer Rearrangement",
+    "appendixSummary": "Formation of α-substituted sulfides from the corresponding sulfoxides.",
     "appendixPages": [
       515
     ]
@@ -3871,6 +4056,7 @@ const reactionCatalog = [
     "category": "rearrangements",
     "printedPage": 370,
     "bookName": "Quasi-Favorskii Rearrangement",
+    "appendixSummary": "Skeletal rearrangement of bicyclic α-halo ketones in which the halogen is located at the bridgehead position to afford carboxylic acids or carboxylic acid derivatives.",
     "appendixPages": [
       515,
       516
@@ -3892,6 +4078,7 @@ const reactionCatalog = [
     "category": "rearrangements",
     "printedPage": 372,
     "bookName": "Ramberg-Bäcklund Rearrangement",
+    "appendixSummary": "Base-induced rearrangement of α-halogenated sulfones via episulfone intermediates to produce alkenes.",
     "appendixPages": [
       515
     ]
@@ -3912,6 +4099,7 @@ const reactionCatalog = [
     "category": "reactions-involving-carbonyl-compounds",
     "printedPage": 374,
     "bookName": "Reformatsky Reaction",
+    "appendixSummary": "Zinc-mediated reaction of an α-halo ester with an aldehyde or ketone to afford a β-hydroxy ester.",
     "appendixPages": [
       514
     ]
@@ -3932,6 +4120,7 @@ const reactionCatalog = [
     "category": "not-listed",
     "printedPage": 376,
     "bookName": "Regitz Diazo Transfer",
+    "appendixSummary": null,
     "appendixPages": []
   },
   {
@@ -3951,6 +4140,7 @@ const reactionCatalog = [
     "category": "electrophilic-aromatic-substitution",
     "printedPage": 378,
     "bookName": "Reimer-Tiemann Reaction",
+    "appendixSummary": "Preparation of formylated phenols from substituted phenols",
     "appendixPages": [
       509,
       513
@@ -3972,6 +4162,7 @@ const reactionCatalog = [
     "category": "oxidation",
     "printedPage": 380,
     "bookName": "Riley Selenium Dioxide Oxidation",
+    "appendixSummary": "Oxidation of the methylene group adjacent to a carbonyl group or the double bond of olefins (allylic or benzylic position) with SeO2.",
     "appendixPages": [
       511
     ]
@@ -3991,6 +4182,7 @@ const reactionCatalog = [
     ],
     "printedPage": 382,
     "bookName": "Ritter Reaction",
+    "appendixSummary": null,
     "appendixPages": []
   },
   {
@@ -4010,6 +4202,7 @@ const reactionCatalog = [
     "category": "carbocycle-formation",
     "printedPage": 384,
     "bookName": "Robinson Annulation",
+    "appendixSummary": "Formation of bicyclic enones from 1,5-diketones.",
     "appendixPages": [
       508,
       514
@@ -4031,6 +4224,7 @@ const reactionCatalog = [
     "category": "reactions-involving-carbonyl-compounds",
     "printedPage": 386,
     "bookName": "Roush Asymmetric Allylation",
+    "appendixSummary": "Reaction of allylboronates with aldehydes to give homoallylic alcohols.",
     "appendixPages": [
       514
     ]
@@ -4051,6 +4245,7 @@ const reactionCatalog = [
     "category": "oxidation",
     "printedPage": 388,
     "bookName": "Rubottom Oxidation",
+    "appendixSummary": "Oxidation of silyl enol ethers with mCPBA to give α-hydroxy ketones or α-hydroxy aldehydes.",
     "appendixPages": [
       511
     ]
@@ -4071,6 +4266,7 @@ const reactionCatalog = [
     "category": "oxidation",
     "printedPage": 390,
     "bookName": "Saegusa Oxidation",
+    "appendixSummary": "Regioselective introduction of the carbon-carbon double bond to cyclic and acylic ketones via Pd-mediated oxidation of the corresponding silyl enol ethers.",
     "appendixPages": [
       511
     ]
@@ -4091,6 +4287,7 @@ const reactionCatalog = [
     "category": "reactions-involving-carbonyl-compounds",
     "printedPage": 392,
     "bookName": "Sakurai Allylation",
+    "appendixSummary": "Reaction of allylsilanes with a variety of aldehydes and ketones in the presence of a Lewis acid.",
     "appendixPages": [
       514
     ]
@@ -4110,6 +4307,7 @@ const reactionCatalog = [
     ],
     "printedPage": 394,
     "bookName": "Sandmeyer Reaction",
+    "appendixSummary": "Formation of aryl halides from the corresponding diazonium salts via an aryl radical.",
     "appendixPages": [
       513
     ]
@@ -4130,6 +4328,7 @@ const reactionCatalog = [
     "category": "rearrangements",
     "printedPage": 396,
     "bookName": "Schmidt Reaction",
+    "appendixSummary": "Reaction of carboxylic acids and carbonyl compounds with hydrazoic acid or alkyl azides to afford the corresponding amines, nitriles or amides, respectively.",
     "appendixPages": [
       515
     ]
@@ -4150,6 +4349,7 @@ const reactionCatalog = [
     "category": "not-listed",
     "printedPage": 398,
     "bookName": "Schotten-Baumann Reaction",
+    "appendixSummary": null,
     "appendixPages": []
   },
   {
@@ -4168,6 +4368,7 @@ const reactionCatalog = [
     "category": "electrophilic-addition-to-c-c-multiple-bonds",
     "printedPage": 400,
     "bookName": "Schwartz Hydrozirconation",
+    "appendixSummary": "Formation of alkylzirconium compounds from alkenes.",
     "appendixPages": [
       508
     ]
@@ -4189,6 +4390,7 @@ const reactionCatalog = [
     "category": "homologation",
     "printedPage": 402,
     "bookName": "Seyferth-Gilbert Homologation",
+    "appendixSummary": "Synthesis of alkynes from aldehydes.",
     "appendixPages": [
       510,
       514
@@ -4210,6 +4412,7 @@ const reactionCatalog = [
     "category": "oxidation",
     "printedPage": 404,
     "bookName": "Sharpless Asymmetric Aminohydroxylation",
+    "appendixSummary": "One-pot enantioselective synthesis of protected vicinal amino alcohols from simple alkenes.",
     "appendixPages": [
       511
     ]
@@ -4230,6 +4433,7 @@ const reactionCatalog = [
     "category": "oxidation",
     "printedPage": 406,
     "bookName": "Sharpless Asymmetric Dihydroxylation",
+    "appendixSummary": "One-pot enantioselective synthesis of vicinal diols from simple alkenes.",
     "appendixPages": [
       511
     ]
@@ -4251,6 +4455,7 @@ const reactionCatalog = [
     "category": "electrophilic-addition-to-c-c-multiple-bonds",
     "printedPage": 408,
     "bookName": "Sharpless Asymmetric Epoxidation",
+    "appendixSummary": "Formation of epoxy alcohols from allylic alcohols.",
     "appendixPages": [
       508,
       511
@@ -4273,6 +4478,7 @@ const reactionCatalog = [
     "category": "electrophilic-addition-to-c-c-multiple-bonds",
     "printedPage": 410,
     "bookName": "Shi Asymmetric Epoxidation",
+    "appendixSummary": "Formation of epoxides from alkenes.",
     "appendixPages": [
       508,
       511
@@ -4294,6 +4500,7 @@ const reactionCatalog = [
     "category": "electrophilic-addition-to-c-c-multiple-bonds",
     "printedPage": 412,
     "bookName": "Simmons-Smith Cyclopropanation",
+    "appendixSummary": "Formation of cyclopropanes from alkenes.",
     "appendixPages": [
       508
     ]
@@ -4314,6 +4521,7 @@ const reactionCatalog = [
     "category": "heterocycle-formation",
     "printedPage": 414,
     "bookName": "Skraup And Doebner-Miller Quinoline Synthesis",
+    "appendixSummary": "Formation of substituted quinolines from anilines and suitable three-carbon carbonyl precursors under acidic conditions.",
     "appendixPages": [
       510
     ]
@@ -4335,6 +4543,7 @@ const reactionCatalog = [
     "category": "nucleophilic-aromatic-substitution",
     "printedPage": 416,
     "bookName": "Smiles Rearrangement",
+    "appendixSummary": "Intramolecular nucleophilic aromatic rearrangement of activated aromatic substrates.",
     "appendixPages": [
       510,
       515
@@ -4356,6 +4565,7 @@ const reactionCatalog = [
     "category": "not-listed",
     "printedPage": 418,
     "bookName": "Smith-Tietze Multicomponent Dithiane Linchpin Coupling",
+    "appendixSummary": null,
     "appendixPages": []
   },
   {
@@ -4374,6 +4584,7 @@ const reactionCatalog = [
     "category": "not-listed",
     "printedPage": 420,
     "bookName": "Snieckus Directed Ortho Metalation",
+    "appendixSummary": null,
     "appendixPages": []
   },
   {
@@ -4393,6 +4604,7 @@ const reactionCatalog = [
     "category": "pericyclic-reactions",
     "printedPage": 422,
     "bookName": "Sommelet-Hauser Rearrangement",
+    "appendixSummary": "The thermal [2,3]-sigmatropic rearrangement of benzylic quaternary ammonium salts in the presence of a strong base.",
     "appendixPages": [
       512,
       516
@@ -4414,6 +4626,7 @@ const reactionCatalog = [
     "category": "transition-metal-catalyzed-couplings",
     "printedPage": 424,
     "bookName": "Sonogashira Cross-Coupling",
+    "appendixSummary": "Cu-Pd-catalyzed coupling of terminal alkynes with aryl and vinyl halides to give enynes.",
     "appendixPages": [
       517
     ]
@@ -4434,6 +4647,7 @@ const reactionCatalog = [
     "category": "pericyclic-reactions",
     "printedPage": 426,
     "bookName": "Staudinger Ketene Cycloaddition",
+    "appendixSummary": "Cycloaddition of ketenes with imines to form β-lactams; ketenes also undergo [2+2] cycloadditions with alkenes.",
     "appendixPages": [
       512
     ]
@@ -4454,6 +4668,7 @@ const reactionCatalog = [
     "category": "reduction",
     "printedPage": 428,
     "bookName": "Staudinger Reaction",
+    "appendixSummary": "Reduction of azides with triphenylphosphine.",
     "appendixPages": [
       516
     ]
@@ -4474,6 +4689,7 @@ const reactionCatalog = [
     "category": "reduction",
     "printedPage": 430,
     "bookName": "Stephen Aldehyde Synthesis (Stephen Reduction)",
+    "appendixSummary": "Reduction of nitriles with SnCl2/HCl to give the corresponding aldehydes.",
     "appendixPages": [
       516
     ]
@@ -4494,6 +4710,7 @@ const reactionCatalog = [
     "category": "reactions-involving-carbonyl-compounds",
     "printedPage": 432,
     "bookName": "Stetter Reaction",
+    "appendixSummary": "Formation of 1,4-diketones from aldehydes and α,β- unsaturated carbonyl compounds in the presence of a nucleophilic catalyst.",
     "appendixPages": [
       514
     ]
@@ -4514,6 +4731,7 @@ const reactionCatalog = [
     "category": "rearrangements",
     "printedPage": 434,
     "bookName": "Stevens Rearrangement",
+    "appendixSummary": "Base-promoted transformation of sulfonium or quaternary ammonium salts to sulfides or tertiary amines.",
     "appendixPages": [
       515
     ]
@@ -4534,6 +4752,7 @@ const reactionCatalog = [
     "category": "transition-metal-catalyzed-couplings",
     "printedPage": 436,
     "bookName": "Stille Carbonylative Cross-Coupling",
+    "appendixSummary": "Pd-catalyzed coupling of organostannanes and alkenyl- or aryl halides and CO to form ketones.",
     "appendixPages": [
       517
     ]
@@ -4554,6 +4773,7 @@ const reactionCatalog = [
     "category": "transition-metal-catalyzed-couplings",
     "printedPage": 438,
     "bookName": "Stille Cross-Coupling (Migita-Kosugi-Stille Coupling)",
+    "appendixSummary": "Pd-catalyzed coupling of organostannanes and alkenyl- or aryl halides.",
     "appendixPages": [
       517
     ]
@@ -4574,6 +4794,7 @@ const reactionCatalog = [
     "category": "transition-metal-catalyzed-couplings",
     "printedPage": 440,
     "bookName": "Stille-Kelly Coupling",
+    "appendixSummary": "Pd-catalyzed intramolecular biaryl coupling of aryl halides or aryl triflates in the presence of distannanes.",
     "appendixPages": [
       517
     ]
@@ -4594,6 +4815,7 @@ const reactionCatalog = [
     "category": "reactions-involving-carbonyl-compounds",
     "printedPage": 442,
     "bookName": "Stobbe Condensation",
+    "appendixSummary": "Formation of alkylidene succinic acids or their monoesters from dialkyl succinates and carbonyl compounds.",
     "appendixPages": [
       514
     ]
@@ -4614,6 +4836,7 @@ const reactionCatalog = [
     "category": "nucleophilic-substitution",
     "printedPage": 444,
     "bookName": "Stork Enamine Synthesis",
+    "appendixSummary": "Alkylation of enamines with alkyl halides to afford α- alkylated aldehydes or ketones.",
     "appendixPages": [
       510
     ]
@@ -4634,6 +4857,7 @@ const reactionCatalog = [
     "category": "reactions-involving-carbonyl-compounds",
     "printedPage": 446,
     "bookName": "Strecker Reaction",
+    "appendixSummary": "The condensation of carbonyl compounds with amines and nitriles to afford α-amino nitriles.",
     "appendixPages": [
       514
     ]
@@ -4653,6 +4877,7 @@ const reactionCatalog = [
     ],
     "printedPage": 448,
     "bookName": "Suzuki Cross-Coupling (Suzuki-Miyaura Cross-Coupling)",
+    "appendixSummary": "Pd-catalyzed coupling between organoboron compounds and organic halides and triflates.",
     "appendixPages": [
       517
     ]
@@ -4672,6 +4897,7 @@ const reactionCatalog = [
     ],
     "printedPage": 450,
     "bookName": "Swern Oxidation",
+    "appendixSummary": "Oxidation of primary and secondary alcohols using DMSO/TFAA or oxalyl chloride to afford the corresponding aldehydes and ketones.",
     "appendixPages": [
       511
     ]
@@ -4693,6 +4919,7 @@ const reactionCatalog = [
     "category": "homologation",
     "printedPage": 452,
     "bookName": "Takai-Utimoto Olefination (Takai Reaction)",
+    "appendixSummary": "The chromium(II)-mediated one-carbon homologation of aldehydes to the corresponding (E)-alkenyl halides.",
     "appendixPages": [
       510,
       514
@@ -4715,6 +4942,7 @@ const reactionCatalog = [
     "category": "homologation",
     "printedPage": 454,
     "bookName": "Tebbe Olefination / Petasis-Tebbe Olefination",
+    "appendixSummary": "One-carbon homologation of carbonyl compounds to afford the corresponding 1,1-disubstituted alkenes.",
     "appendixPages": [
       510,
       514
@@ -4737,6 +4965,7 @@ const reactionCatalog = [
     "category": "oxidation",
     "printedPage": 456,
     "bookName": "Tishchenko Reaction",
+    "appendixSummary": "Conversion of aldehydes to the corresponding esters in the presence of metal alkoxides.",
     "appendixPages": [
       511,
       516
@@ -4758,6 +4987,7 @@ const reactionCatalog = [
     "category": "transition-metal-catalyzed-couplings",
     "printedPage": 458,
     "bookName": "Tsuji-Trost Reaction / Allylation",
+    "appendixSummary": "Pd-catalyzed allylation of nucleophiles using allylic substrates via π-allylpalladium complexes.",
     "appendixPages": [
       517
     ]
@@ -4778,6 +5008,7 @@ const reactionCatalog = [
     "category": "not-listed",
     "printedPage": 460,
     "bookName": "Tsuji-Wilkinson Decarbonylation Reaction",
+    "appendixSummary": null,
     "appendixPages": []
   },
   {
@@ -4796,6 +5027,7 @@ const reactionCatalog = [
     "category": "not-listed",
     "printedPage": 462,
     "bookName": "Ugi Multicomponent Reaction",
+    "appendixSummary": null,
     "appendixPages": []
   },
   {
@@ -4814,6 +5046,7 @@ const reactionCatalog = [
     "category": "transition-metal-catalyzed-couplings",
     "printedPage": 464,
     "bookName": "Ullmann Biaryl Ether And Biaryl Amine Synthesis / Condensation",
+    "appendixSummary": "Cu-mediated synthesis of biaryl ethers by coupling aryl halides and phenols.",
     "appendixPages": [
       517
     ]
@@ -4834,6 +5067,7 @@ const reactionCatalog = [
     "category": "transition-metal-catalyzed-couplings",
     "printedPage": 466,
     "bookName": "Ullmann Reaction / Coupling / Biaryl Synthesis",
+    "appendixSummary": "Cu-mediated coupling of two aryl halides to afford symmetrical or unsymmetrical biaryls.",
     "appendixPages": [
       517
     ]
@@ -4854,6 +5088,7 @@ const reactionCatalog = [
     "category": "electrophilic-aromatic-substitution",
     "printedPage": 468,
     "bookName": "Vilsmeier-Haack Formylation",
+    "appendixSummary": "Synthesis of substituted benzaldehydes and heteroaromatic aldehydes using chloromethyliminium salts.",
     "appendixPages": [
       509
     ]
@@ -4875,6 +5110,7 @@ const reactionCatalog = [
     "category": "photochemical-reactions",
     "printedPage": 470,
     "bookName": "Vinylcyclopropane-Cyclopentene Rearrangement",
+    "appendixSummary": "Thermal or photochemical rearrangement of substituted vinylcyclopropanes to substituted cyclopentenes.",
     "appendixPages": [
       512,
       515
@@ -4897,6 +5133,7 @@ const reactionCatalog = [
     "category": "electrophilic-aromatic-substitution",
     "printedPage": 472,
     "bookName": "Von Pechmann Reaction",
+    "appendixSummary": "Preparation of coumarins from phenols and β-keto esters.",
     "appendixPages": [
       509,
       510
@@ -4918,6 +5155,7 @@ const reactionCatalog = [
     "category": "oxidation",
     "printedPage": 474,
     "bookName": "Wacker Oxidation",
+    "appendixSummary": "One-pot oxidation of olefins to the corresponding ketones in the presence of catalytic amounts of Pd(II)-salts",
     "appendixPages": [
       511
     ]
@@ -4938,6 +5176,7 @@ const reactionCatalog = [
     "category": "rearrangements",
     "printedPage": 476,
     "bookName": "Wagner-Meerwein Rearrangement",
+    "appendixSummary": "Generation of a carbocation followed by the [1,2]-shift of an adjacent carbon-carbon bond to generate a new carbocation.",
     "appendixPages": [
       515
     ]
@@ -4958,6 +5197,7 @@ const reactionCatalog = [
     "category": "not-listed",
     "printedPage": 478,
     "bookName": "Weinreb Ketone Synthesis",
+    "appendixSummary": null,
     "appendixPages": []
   },
   {
@@ -4976,6 +5216,7 @@ const reactionCatalog = [
     "category": "fragmentation-reactions",
     "printedPage": 480,
     "bookName": "Wharton Fragmentation",
+    "appendixSummary": "Base-induced formation of medium-sized cyclic alkenes from 1,3-diol monosulfonates.",
     "appendixPages": [
       509
     ]
@@ -4996,6 +5237,7 @@ const reactionCatalog = [
     "category": "not-listed",
     "printedPage": 482,
     "bookName": "Wharton Olefin Synthesis (Wharton Transposition)",
+    "appendixSummary": null,
     "appendixPages": []
   },
   {
@@ -5013,6 +5255,7 @@ const reactionCatalog = [
     ],
     "printedPage": 484,
     "bookName": "Williamson Ether Synthesis",
+    "appendixSummary": "Alkylation of alkali alkoxides with primary or secondary alkyl halides to form ethers.",
     "appendixPages": [
       510
     ]
@@ -5032,6 +5275,7 @@ const reactionCatalog = [
     ],
     "printedPage": 486,
     "bookName": "Wittig Reaction",
+    "appendixSummary": "Formation of carbon-carbon double bonds from carbonyl compounds and phosphorous ylides.",
     "appendixPages": [
       514
     ]
@@ -5052,6 +5296,7 @@ const reactionCatalog = [
     "category": "reactions-involving-carbonyl-compounds",
     "printedPage": 488,
     "bookName": "Wittig Reaction - Schlosser Modification",
+    "appendixSummary": "One-pot multistep preparation of (E)-alkenes from \"nonstabilized\" phosphorous ylides and carbonyl compounds by the equilibration of the intermediate lithiobetaines.",
     "appendixPages": [
       514
     ]
@@ -5073,6 +5318,7 @@ const reactionCatalog = [
     "category": "pericyclic-reactions",
     "printedPage": 490,
     "bookName": "Wittig-[1,2]- And [2,3]-Rearrangement",
+    "appendixSummary": "Thermal [1,2]-rearrangement of aryl alkyl ethers and also the thermal [2,3]-rearrangement of allyl alkyl ethers.",
     "appendixPages": [
       512,
       515
@@ -5094,6 +5340,7 @@ const reactionCatalog = [
     "category": "radical-reactions",
     "printedPage": 492,
     "bookName": "Wohl-Ziegler Bromination",
+    "appendixSummary": "Bromination of alkenes and alkylbenzenes at the allylic or benzylic position.",
     "appendixPages": [
       513
     ]
@@ -5116,6 +5363,7 @@ const reactionCatalog = [
     "category": "photochemical-reactions",
     "printedPage": 494,
     "bookName": "Wolff Rearrangement",
+    "appendixSummary": "Thermal or photochemical rearrangement of α-diazo ketones to form ketenes.",
     "appendixPages": [
       512,
       513,
@@ -5137,6 +5385,7 @@ const reactionCatalog = [
     ],
     "printedPage": 496,
     "bookName": "Wolff-Kishner Reduction",
+    "appendixSummary": "Deoxygenation of aldehydes and ketones under basic conditions to give hydrocarbons via the corresponding hydrazones or semicarbazones.",
     "appendixPages": [
       516
     ]
@@ -5157,6 +5406,7 @@ const reactionCatalog = [
     "category": "not-listed",
     "printedPage": 498,
     "bookName": "Wurtz Coupling",
+    "appendixSummary": null,
     "appendixPages": []
   },
   {
@@ -5175,6 +5425,7 @@ const reactionCatalog = [
     "category": "not-listed",
     "printedPage": 500,
     "bookName": "Yamaguchi Macrolactonization",
+    "appendixSummary": null,
     "appendixPages": []
   }
 ];

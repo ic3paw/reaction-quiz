@@ -31,6 +31,7 @@ try { const raw = JSON.parse(localStorage.getItem(storageKey)); if(raw && Array.
 function persist(){try{localStorage.setItem(storageKey,JSON.stringify(state));}catch{storageAvailable=false;document.querySelector('.local-status').innerHTML='Progress saved for this visit';}}
 if(!storageAvailable) document.querySelector('.local-status').innerHTML='Progress saved for this visit';
 let page = 'dashboard', searchTerm = '', quiz = null;
+if (!['condensed', 'expanded'].includes(state.libraryView)) state.libraryView = 'condensed';
 // Retain bookmarks and quiz history when upgrading the original six-category app.
 if (state.categoryVersion !== 2) {
   state.selectedCategories = categories.map(c => c.id);
@@ -118,8 +119,8 @@ function syncCategories() {
 
 function dashboard() {
   main.innerHTML = heading('Named reactions') + `
-    <p class="intro">${selectedReactions().length ? `${selectedReactions().length} reactions selected. Quiz yourself or browse the library.` : 'Select at least one category to start.'}</p>
-    <div class="actions"><button class="button primary" data-start="selected" ${selectedReactions().length ? '' : 'disabled'}>Quiz all selected</button><button class="button secondary" data-flashcards="selected" ${selectedReactions().length ? '' : 'disabled'}>Study flashcards</button><button class="text-button" data-start="mixed" ${selectedReactions().length ? '' : 'disabled'}>Quick quiz</button><button class="text-button" data-start="daily" ${selectedReactions().length ? '' : 'disabled'}>Daily challenge</button><a class="text-button" href="#library">Browse reactions</a></div>
+    ${selectedReactions().length ? '' : '<p class="intro">Select at least one category to start.</p>'}
+    <div class="actions"><button class="button primary" data-start="selected" ${selectedReactions().length ? '' : 'disabled'}>Quiz all selected</button><button class="button secondary" data-flashcards="selected" ${selectedReactions().length ? '' : 'disabled'}>Study flashcards</button><button class="text-button" data-start="mixed" ${selectedReactions().length ? '' : 'disabled'}>Quick quiz</button><button class="text-button" data-start="endless" ${selectedReactions().length ? '' : 'disabled'}>Endless quiz</button></div>
     <p class="catalog-note">250 book entries, plus your original Fischer esterification card. Categories follow appendix 8.3 (pp. 508–517); reactions can belong to more than one category.</p>
     <section class="home-section"><div class="section-heading"><h2>All-time progress</h2><a class="text-button" href="#statistics">View statistics</a></div>${statsMarkup()}</section>`;
 }
@@ -127,12 +128,13 @@ function dashboard() {
 function filteredReactions(saved = page === 'saved') {
   return reactions.filter(r => (!saved || state.saved.includes(r.id)) &&
     isSelected(r) &&
-    `${r.name} ${r.bookName || ''} ${r.summary} ${r.reagents} ${r.equation} ${categoryLabel(r)}`.toLowerCase().includes(searchTerm.toLowerCase()));
+    `${r.name} ${r.bookName || ''} ${r.appendixSummary || ''} ${r.summary} ${r.reagents} ${r.equation} ${categoryLabel(r)}`.toLowerCase().includes(searchTerm.toLowerCase()));
 }
 
 function library(saved = false) {
   main.innerHTML = heading(saved ? 'Saved reactions' : 'Reaction library') + `
     <div class="search-row"><label class="search-box"><input id="reaction-search" aria-label="Search reactions" placeholder="Search reactions or reagents" value="${escapeHTML(searchTerm)}"></label></div>
+    <div class="library-view-toggle" role="group" aria-label="Library view"><button data-library-view="condensed" aria-pressed="${state.libraryView === 'condensed'}">Condensed</button><button data-library-view="expanded" aria-pressed="${state.libraryView === 'expanded'}">Expanded</button></div>
     <div class="section-heading"><p id="result-count"></p><div class="actions"><button class="text-button" data-flashcards="collection">Flashcards</button><button class="text-button" data-start="collection">Quiz this selection</button></div></div>
     <div class="library-list" id="library-results"></div>`;
   renderLibraryResults(saved);
@@ -144,10 +146,11 @@ function renderLibraryResults(saved) {
   document.querySelector('#result-count').textContent = `${filtered.length} reaction${filtered.length === 1 ? '' : 's'}`;
   document.querySelector('[data-start="collection"]').disabled = !filtered.length;
   document.querySelector('[data-flashcards="collection"]').disabled = !filtered.length;
+  document.querySelectorAll('[data-library-view]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.libraryView === state.libraryView)));
   document.querySelector('#library-results').innerHTML = filtered.length ? filtered.map(r => `
-    <article class="reaction-row"><button class="text-button reaction-name" data-detail="${r.id}">${r.name}</button>
-    <span class="reaction-category">${categoryLabel(r)}</span>
-    <button class="bookmark-button ${state.saved.includes(r.id) ? 'saved' : ''}" data-save="${r.id}" aria-label="${state.saved.includes(r.id) ? 'Unsave' : 'Save'} ${r.name}" aria-pressed="${state.saved.includes(r.id)}">${icon('bookmark')}</button></article>`).join('') :
+    <article class="reaction-row ${state.libraryView}"><div class="reaction-row-heading"><button class="text-button reaction-name" data-detail="${r.id}">${escapeHTML(r.name)}</button>
+    ${state.libraryView === 'expanded' ? `<button class="bookmark-button ${state.saved.includes(r.id) ? 'saved' : ''}" data-save="${r.id}" aria-label="${state.saved.includes(r.id) ? 'Unsave' : 'Save'} ${escapeHTML(r.name)}" aria-pressed="${state.saved.includes(r.id)}">${icon('bookmark')}</button>` : ''}</div>
+    ${state.libraryView === 'expanded' ? bookFigure(bookSections[r.id].reaction, r.name, 'reaction & conditions') : `<p class="reaction-overview">${escapeHTML(r.appendixSummary || r.summary)}</p>`}</article>`).join('') :
     `<div class="empty-state"><p>${!state.selectedCategories.length ? 'Select at least one category.' : saved && !state.saved.length ? 'No saved reactions. Bookmark reactions in the library.' : 'No matches. Try a different search or category.'}</p>${saved && !state.saved.length ? '<a href="#library">Browse reactions</a>' : ''}</div>`;
 }
 
@@ -156,7 +159,7 @@ function practice() {
     ['Quick quiz', 'Up to 5 questions from selected categories.', 'mixed'],
     ['Quiz every selected reaction', `${selectedReactions().length} questions from your selected categories, without repeats.`, 'selected'],
     ['All reactions', `All ${reactions.length} reactions, regardless of sidebar selection.`, 'all'],
-    ['Daily challenge', 'A daily mix from selected categories.', 'daily'],
+    ['Endless quiz', 'Keep practicing selected categories. End the session whenever you like.', 'endless'],
     ['Review mistakes', 'Reactions you last answered incorrectly.', 'review'],
     ['Saved reactions', 'Practice your bookmarked reactions.', 'saved'],
   ];
@@ -382,43 +385,40 @@ function startQuiz(mode) {
   } else if (mode === 'collection') {
     pool = filteredReactions(); title = state.selectedCategories.length === 1 ? categoryFor(state.selectedCategories[0]).short : 'Selected reactions';
     if (!pool.length) { toast('No reactions selected.'); return; }
-  } else if (mode === 'daily') {
-    title = 'Daily challenge';
-    let seed = [...dayKey()].reduce((n,c) => n * 31 + c.charCodeAt(0), 0) >>> 0;
-    pool = [...reactions];
-    for (let i = pool.length - 1; i > 0; i--) {
-      seed = (Math.imul(seed, 1664525) + 1013904223) >>> 0;
-      const j = seed % (i + 1); [pool[i],pool[j]] = [pool[j],pool[i]];
-    }
-    pool = pool.filter(isSelected);
+  } else if (mode === 'endless') {
+    title = 'Endless quiz';
   } else if (categoryFor(mode)) { title = categoryFor(mode).short; }
   else if (mode === 'all') { title = 'All reactions'; }
   else if (mode === 'selected') { title = selectionTitle(); }
   if (!pool.length) { toast('No reactions in this selection.'); return; }
-  const ordered = mode === 'daily' ? pool : shuffle(pool);
-  quiz = {mode, title, pool:[...pool], questions:['mixed','daily'].includes(mode) ? ordered.slice(0,5) : ordered, index:0, correct:0, answered:false, started:Date.now(), finished:false};
+  const ordered = shuffle(pool);
+  quiz = {mode, title, pool:[...pool], questions:mode === 'mixed' ? ordered.slice(0,5) : ordered, index:0, answeredCount:0, correct:0, answered:false, started:Date.now(), finished:false};
   if (reactionDialog.open) reactionDialog.close();
   renderQuestion(); quizDialog.showModal();
 }
 
 function renderQuestion() {
   const r = quiz.questions[quiz.index];
+  const endless = quiz.mode === 'endless';
   // Prefer the actual quiz pool; fill tiny selections without repeating answers.
   const candidates = shuffle(quiz.pool.filter(x => x.id !== r.id));
   const used = new Set([r.id,...candidates.map(x => x.id)]);
   const distractors = [...candidates,...shuffle(reactions.filter(x => !used.has(x.id)))].slice(0,3);
   quiz.options = shuffle([r, ...distractors]); quiz.answered = false;
-  quizDialog.innerHTML = `<div class="dialog-inner"><div class="dialog-top"><span>${quiz.title} · ${quiz.index + 1} / ${quiz.questions.length}</span><button class="close-button" data-close="quiz" aria-label="Exit quiz">×</button></div>
-    <div class="quiz-progress"><div style="width:${quiz.index / quiz.questions.length * 100}%"></div></div><span class="badge quiz-category">${escapeHTML(quiz.title)}</span>
+  quizDialog.innerHTML = `<div class="dialog-inner"><div class="dialog-top"><span>${escapeHTML(quiz.title)} · ${endless ? `Question ${quiz.answeredCount + 1}` : `${quiz.index + 1} / ${quiz.questions.length}`}</span><button class="close-button" data-close="quiz" aria-label="${endless ? 'End session' : 'Exit quiz'}">×</button></div>
+    ${endless ? `<p class="running-score" id="quiz-running-score" aria-live="polite">${quiz.correct} correct · ${quiz.answeredCount} answered</p>` : `<div class="quiz-progress"><div style="width:${quiz.index / quiz.questions.length * 100}%"></div></div>`}<span class="badge quiz-category">${escapeHTML(quiz.title)}</span>
     <h2 id="quiz-title">Name the reaction</h2><p class="question-text">${escapeHTML(r.question)}</p><div class="answers">${quiz.options.map((option,i) => `<button class="answer" data-answer="${option.id}"><span>${String.fromCharCode(65+i)}</span>${escapeHTML(option.name)}</button>`).join('')}</div>
-    <div id="answer-feedback" aria-live="polite"></div><div class="quiz-footer"><button class="button primary" id="next-question" disabled>${quiz.index === quiz.questions.length - 1 ? 'See results' : 'Next question'} →</button></div></div>`;
+    <div id="answer-feedback" aria-live="polite"></div><div class="quiz-footer">${endless ? '<button class="button secondary" data-end-session>End session</button>' : ''}<button class="button primary" id="next-question" disabled>${!endless && quiz.index === quiz.questions.length - 1 ? 'See results' : 'Next question'} →</button></div></div>`;
 }
 
 function answer(id) {
   if (!quiz || quiz.answered || quiz.finished) return;
   quiz.answered = true;
   const r = quiz.questions[quiz.index], correct = id === r.id;
+  quiz.answeredCount++;
   if (correct) quiz.correct++;
+  const runningScore = quizDialog.querySelector('#quiz-running-score');
+  if (runningScore) runningScore.textContent = `${quiz.correct} correct · ${quiz.answeredCount} answered`;
   state.attempts.push({id:r.id, correct, at:new Date().toISOString()}); persist();
   quizDialog.querySelectorAll('[data-answer]').forEach(button => {
     button.disabled = true;
@@ -432,18 +432,38 @@ function answer(id) {
 function nextQuestion() {
   if (!quiz?.answered || quiz.finished) return;
   if (quiz.index < quiz.questions.length - 1) { quiz.index++; renderQuestion(); quizDialog.querySelector('[data-answer]').focus(); return; }
+  if (quiz.mode === 'endless') {
+    const previousId = quiz.questions[quiz.index].id;
+    quiz.questions = shuffle(quiz.pool);
+    // Cover each selected reaction once per pass; avoid back-to-back repeats.
+    if (quiz.questions.length > 1 && quiz.questions[0].id === previousId) {
+      [quiz.questions[0], quiz.questions[1]] = [quiz.questions[1], quiz.questions[0]];
+    }
+    quiz.index = 0;
+    renderQuestion(); quizDialog.querySelector('[data-answer]').focus();
+    return;
+  }
+  finishQuiz();
+}
+
+function finishQuiz() {
+  if (!quiz || quiz.finished) return;
   quiz.finished = true;
+  const total = quiz.answeredCount;
+  if (!total) { quizDialog.close(); render(); return; }
   const seconds = Math.round((Date.now() - quiz.started) / 1000);
-  state.sessions.push({title:quiz.title, total:quiz.questions.length, correct:quiz.correct, seconds, at:new Date().toISOString()}); persist();
+  state.sessions.push({title:quiz.title, total, correct:quiz.correct, seconds, at:new Date().toISOString()}); persist();
   quizDialog.innerHTML = `<div class="dialog-inner results"><div class="dialog-top"><span>${quiz.title}</span><button class="close-button" data-close="quiz" aria-label="Close results">×</button></div>
-    <h2 id="quiz-title">Quiz complete</h2><div class="result-score">${quiz.correct}<span> / ${quiz.questions.length}</span></div>
-    <div class="result-metrics"><div><strong>${Math.round(quiz.correct / quiz.questions.length * 100)}%</strong><span>Accuracy</span></div><div><strong>${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2,'0')}</strong><span>Time</span></div><div><strong>${streak()}</strong><span>Day streak</span></div></div>
+    <h2 id="quiz-title">${quiz.mode === 'endless' ? 'Session complete' : 'Quiz complete'}</h2><div class="result-score">${quiz.correct}<span> / ${total}</span></div>
+    <div class="result-metrics"><div><strong>${Math.round(quiz.correct / total * 100)}%</strong><span>Accuracy</span></div><div><strong>${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2,'0')}</strong><span>Time</span></div><div><strong>${streak()}</strong><span>Day streak</span></div></div>
     <div class="result-actions"><button class="button secondary" data-close="quiz">Done</button><button class="button primary" data-retry>Try again</button></div></div>`;
   render();
+  quizDialog.querySelector('[data-close="quiz"]').focus();
 }
 
 function requestExit() {
   if (!quiz || quiz.finished) { quizDialog.close(); render(); return; }
+  if (quiz.mode === 'endless') { finishQuiz(); return; }
   if (quizDialog.querySelector('.quiz-exit')) return;
   const section = document.createElement('div'); section.className = 'quiz-exit';
   section.innerHTML = '<strong>Leave quiz?</strong><p>Answered questions are saved. This session will remain incomplete.</p><div class="result-actions"><button class="button secondary" data-continue>Continue</button><button class="button primary" data-exit>Leave</button></div>';
@@ -476,7 +496,11 @@ document.addEventListener('change', e => {
 });
 document.addEventListener('click', e => {
   const button = e.target.closest('button'); if (!button) return;
-  if (button.dataset.flashcards) startFlashcards(button.dataset.flashcards);
+  if (button.dataset.libraryView) {
+    state.libraryView = button.dataset.libraryView;
+    persist(); renderLibraryResults(page === 'saved');
+  }
+  else if (button.dataset.flashcards) startFlashcards(button.dataset.flashcards);
   else if (button.dataset.close === 'flashcards') flashcardDialog.close();
   else if (button.hasAttribute('data-card-flip')) flipCard();
   else if (button.dataset.cardView && deck?.revealed) {
@@ -496,6 +520,7 @@ document.addEventListener('click', e => {
   else if (button.dataset.detailTab) selectDetailTab(button.dataset.detailTab);
   else if (button.dataset.answer) answer(button.dataset.answer);
   else if (button.id === 'next-question') nextQuestion();
+  else if (button.hasAttribute('data-end-session')) finishQuiz();
   else if (button.dataset.close === 'reaction') reactionDialog.close();
   else if (button.dataset.close === 'quiz') requestExit();
   else if (button.hasAttribute('data-continue')) button.closest('.quiz-exit').remove();
