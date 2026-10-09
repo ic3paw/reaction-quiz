@@ -1,0 +1,5502 @@
+[
+  {
+    "page": 60,
+    "file": "assets/book/aldol-scheme.png",
+    "crop": [
+      0.11,
+      0.4184107590909091,
+      0.78,
+      0.20853535391414135
+    ],
+    "scale": 2
+  },
+  {
+    "page": 60,
+    "file": "assets/book/aldol-history.png",
+    "crop": [
+      0.11,
+      0.0707066805555554,
+      0.78,
+      0.3477040785353537
+    ],
+    "scale": 2
+  },
+  {
+    "page": 240,
+    "file": "assets/book/grignard-scheme.png",
+    "crop": [
+      0.11,
+      0.4975805313131314,
+      0.78,
+      0.21444355391414127
+    ],
+    "scale": 2
+  },
+  {
+    "page": 240,
+    "file": "assets/book/grignard-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.42687389621212135
+    ],
+    "scale": 2
+  },
+  {
+    "page": 500,
+    "file": "assets/book/suzuki-scheme.png",
+    "crop": [
+      0.11,
+      0.33984206941919193,
+      0.78,
+      0.13829250570707063
+    ],
+    "scale": 2
+  },
+  {
+    "page": 500,
+    "file": "assets/book/suzuki-history.png",
+    "crop": [
+      0.11,
+      0.08524066340909087,
+      0.78,
+      0.25460140601010106
+    ],
+    "scale": 2
+  },
+  {
+    "page": 538,
+    "file": "assets/book/wittig-scheme.png",
+    "crop": [
+      0.11,
+      0.5228742663888889,
+      0.78,
+      0.19045245015151513
+    ],
+    "scale": 2
+  },
+  {
+    "page": 538,
+    "file": "assets/book/wittig-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.45216763128787885
+    ],
+    "scale": 2
+  },
+  {
+    "page": 502,
+    "file": "assets/book/swern-scheme.png",
+    "crop": [
+      0.11,
+      0.32871486845959597,
+      0.78,
+      0.1439695804040404
+    ],
+    "scale": 2
+  },
+  {
+    "page": 502,
+    "file": "assets/book/swern-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.2580082333585859
+    ],
+    "scale": 2
+  },
+  {
+    "page": 144,
+    "file": "assets/book/clemmensen-scheme.png",
+    "crop": [
+      0.11,
+      0.3400656833333333,
+      0.78,
+      0.12649169545454542
+    ],
+    "scale": 2
+  },
+  {
+    "page": 144,
+    "file": "assets/book/clemmensen-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.26935904823232326
+    ],
+    "scale": 2
+  },
+  {
+    "page": 548,
+    "file": "assets/book/wolff-scheme.png",
+    "crop": [
+      0.11,
+      0.5667347796969697,
+      0.78,
+      0.22854925691919192
+    ],
+    "scale": 2
+  },
+  {
+    "page": 548,
+    "file": "assets/book/wolff-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.4960281445959597
+    ],
+    "scale": 2
+  },
+  {
+    "page": 112,
+    "file": "assets/book/birch-scheme.png",
+    "crop": [
+      0.11,
+      0.28699856186868633,
+      0.78,
+      0.09771180934343482
+    ],
+    "scale": 2
+  },
+  {
+    "page": 112,
+    "file": "assets/book/birch-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.21629192676767628
+    ],
+    "scale": 2
+  },
+  {
+    "page": 102,
+    "file": "assets/book/beckmann-scheme.png",
+    "crop": [
+      0.11,
+      0.24779622904040377,
+      0.78,
+      0.16849852285353561
+    ],
+    "scale": 2
+  },
+  {
+    "page": 102,
+    "file": "assets/book/beckmann-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.17708959393939372
+    ],
+    "scale": 2
+  },
+  {
+    "page": 402,
+    "file": "assets/book/pinacol-scheme.png",
+    "crop": [
+      0.11,
+      0.4849817038131313,
+      0.78,
+      0.3196202153787878
+    ],
+    "scale": 2
+  },
+  {
+    "page": 402,
+    "file": "assets/book/pinacol-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.4142750687121213
+    ],
+    "scale": 2
+  },
+  {
+    "page": 262,
+    "file": "assets/book/hofmann-scheme.png",
+    "crop": [
+      0.11,
+      0.45755856376262627,
+      0.78,
+      0.2762118592171716
+    ],
+    "scale": 2
+  },
+  {
+    "page": 262,
+    "file": "assets/book/hofmann-history.png",
+    "crop": [
+      0.11,
+      0.07072236426767675,
+      0.78,
+      0.3868361994949495
+    ],
+    "scale": 2
+  },
+  {
+    "page": 80,
+    "file": "assets/book/baeyer-scheme.png",
+    "crop": [
+      0.11,
+      0.36641548686868697,
+      0.78,
+      0.14539615517676763
+    ],
+    "scale": 2
+  },
+  {
+    "page": 80,
+    "file": "assets/book/baeyer-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.2957088517676769
+    ],
+    "scale": 2
+  },
+  {
+    "page": 536,
+    "file": "assets/book/williamson-scheme.png",
+    "crop": [
+      0.11,
+      0.4971694837121212,
+      0.78,
+      0.28208816717171714
+    ],
+    "scale": 2
+  },
+  {
+    "page": 536,
+    "file": "assets/book/williamson-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.42646284861111117
+    ],
+    "scale": 2
+  },
+  {
+    "page": 446,
+    "file": "assets/book/sandmeyer-scheme.png",
+    "crop": [
+      0.11,
+      0.40497065729797976,
+      0.78,
+      0.3517183313383839
+    ],
+    "scale": 2
+  },
+  {
+    "page": 446,
+    "file": "assets/book/sandmeyer-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.3342640221969697
+    ],
+    "scale": 2
+  },
+  {
+    "page": 222,
+    "file": "assets/book/finkelstein-scheme.png",
+    "crop": [
+      0.11,
+      0.3919677887626263,
+      0.78,
+      0.20696690252525252
+    ],
+    "scale": 2
+  },
+  {
+    "page": 222,
+    "file": "assets/book/finkelstein-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.32126115366161623
+    ],
+    "scale": 2
+  },
+  {
+    "page": 134,
+    "file": "assets/book/chugaev-scheme.png",
+    "crop": [
+      0.11,
+      0.31670582676767656,
+      0.78,
+      0.12517592196969718
+    ],
+    "scale": 2
+  },
+  {
+    "page": 134,
+    "file": "assets/book/chugaev-history.png",
+    "crop": [
+      0.11,
+      0.08524406969696963,
+      0.78,
+      0.23146175707070693
+    ],
+    "scale": 2
+  },
+  {
+    "page": 192,
+    "file": "assets/book/diels-scheme.png",
+    "crop": [
+      0.11,
+      0.3653481328282828,
+      0.78,
+      0.37868602626262626
+    ],
+    "scale": 2
+  },
+  {
+    "page": 192,
+    "file": "assets/book/diels-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.29464149772727277
+    ],
+    "scale": 2
+  },
+  {
+    "page": 150,
+    "file": "assets/book/cope-scheme.png",
+    "crop": [
+      0.11,
+      0.29919017828282823,
+      0.78,
+      0.27160015505050505
+    ],
+    "scale": 2
+  },
+  {
+    "page": 150,
+    "file": "assets/book/cope-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.22848354318181818
+    ],
+    "scale": 2
+  },
+  {
+    "page": 140,
+    "file": "assets/book/claisen-scheme.png",
+    "crop": [
+      0.11,
+      0.24779650681818177,
+      0.78,
+      0.2753812002525252
+    ],
+    "scale": 2
+  },
+  {
+    "page": 140,
+    "file": "assets/book/claisen-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.17708987171717172
+    ],
+    "scale": 2
+  },
+  {
+    "page": 58,
+    "file": "assets/book/ene-scheme.png",
+    "crop": [
+      0.11,
+      0.38177766843434335,
+      0.78,
+      0.242973242550505
+    ],
+    "scale": 2
+  },
+  {
+    "page": 58,
+    "file": "assets/book/ene-history.png",
+    "crop": [
+      0.11,
+      0.08524405429292936,
+      0.78,
+      0.296533614141414
+    ],
+    "scale": 2
+  },
+  {
+    "page": 234,
+    "file": "assets/book/gabriel-scheme.png",
+    "crop": [
+      0.11,
+      0.49759221388888897,
+      0.78,
+      0.13813060871212113
+    ],
+    "scale": 2
+  },
+  {
+    "page": 234,
+    "file": "assets/book/gabriel-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.4268855787878789
+    ],
+    "scale": 2
+  },
+  {
+    "page": 252,
+    "file": "assets/book/hell-scheme.png",
+    "crop": [
+      0.11,
+      0.41308561085858586,
+      0.78,
+      0.23406762335858589
+    ],
+    "scale": 2
+  },
+  {
+    "page": 252,
+    "file": "assets/book/hell-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.3423789757575758
+    ],
+    "scale": 2
+  },
+  {
+    "page": 434,
+    "file": "assets/book/ritter-scheme.png",
+    "crop": [
+      0.11,
+      0.3936163775252526,
+      0.78,
+      0.32787412626262613
+    ],
+    "scale": 2
+  },
+  {
+    "page": 434,
+    "file": "assets/book/ritter-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.32290974242424253
+    ],
+    "scale": 2
+  },
+  {
+    "page": 54,
+    "file": "assets/book/acetoacetic-ester-synthesis-scheme.png",
+    "crop": [
+      0.11,
+      0.3836018507575757,
+      0.78,
+      0.2703809819444445
+    ],
+    "scale": 2
+  },
+  {
+    "page": 54,
+    "file": "assets/book/acetoacetic-ester-synthesis-history.png",
+    "crop": [
+      0.11,
+      0.0707066805555554,
+      0.78,
+      0.3128951702020203
+    ],
+    "scale": 2
+  },
+  {
+    "page": 56,
+    "file": "assets/book/acyloin-condensation-scheme.png",
+    "crop": [
+      0.11,
+      0.27474394621212106,
+      0.78,
+      0.08281464406565675
+    ],
+    "scale": 2
+  },
+  {
+    "page": 56,
+    "file": "assets/book/acyloin-condensation-history.png",
+    "crop": [
+      0.11,
+      0.0707066805555554,
+      0.78,
+      0.20403726565656566
+    ],
+    "scale": 2
+  },
+  {
+    "page": 62,
+    "file": "assets/book/alkene-olefin-metathesis-scheme.png",
+    "crop": [
+      0.11,
+      0.32530872904040387,
+      0.78,
+      0.288996222348485
+    ],
+    "scale": 2
+  },
+  {
+    "page": 62,
+    "file": "assets/book/alkene-olefin-metathesis-history.png",
+    "crop": [
+      0.11,
+      0.0707066805555554,
+      0.78,
+      0.25460204848484846
+    ],
+    "scale": 2
+  },
+  {
+    "page": 64,
+    "file": "assets/book/alkyne-metathesis-scheme.png",
+    "crop": [
+      0.11,
+      0.3044130318181817,
+      0.78,
+      0.24396098522727283
+    ],
+    "scale": 2
+  },
+  {
+    "page": 64,
+    "file": "assets/book/alkyne-metathesis-history.png",
+    "crop": [
+      0.11,
+      0.0707066805555554,
+      0.78,
+      0.2337063512626263
+    ],
+    "scale": 2
+  },
+  {
+    "page": 66,
+    "file": "assets/book/amadori-reaction-rearrangement-scheme.png",
+    "crop": [
+      0.11,
+      0.23387230505050494,
+      0.78,
+      0.16848466654040417
+    ],
+    "scale": 2
+  },
+  {
+    "page": 66,
+    "file": "assets/book/amadori-reaction-rearrangement-history.png",
+    "crop": [
+      0.11,
+      0.0707066805555554,
+      0.78,
+      0.16316562449494953
+    ],
+    "scale": 2
+  },
+  {
+    "page": 68,
+    "file": "assets/book/arbuzov-reaction-michaelis-arbuzov-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.45989542095959624,
+      0.78,
+      0.29270549002525226
+    ],
+    "scale": 2
+  },
+  {
+    "page": 68,
+    "file": "assets/book/arbuzov-reaction-michaelis-arbuzov-reaction-history.png",
+    "crop": [
+      0.11,
+      0.08524406969696963,
+      0.78,
+      0.3746513512626266
+    ],
+    "scale": 2
+  },
+  {
+    "page": 70,
+    "file": "assets/book/arndt-eistert-homologation-synthesis-scheme.png",
+    "crop": [
+      0.11,
+      0.2739114058080807,
+      0.78,
+      0.13950424886363644
+    ],
+    "scale": 2
+  },
+  {
+    "page": 70,
+    "file": "assets/book/arndt-eistert-homologation-synthesis-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.20320477070707066
+    ],
+    "scale": 2
+  },
+  {
+    "page": 72,
+    "file": "assets/book/aza-claisen-rearrangement-3-aza-cope-rearrangement-scheme.png",
+    "crop": [
+      0.11,
+      0.2614969361111107,
+      0.78,
+      0.30537684040404056
+    ],
+    "scale": 2
+  },
+  {
+    "page": 72,
+    "file": "assets/book/aza-claisen-rearrangement-3-aza-cope-rearrangement-history.png",
+    "crop": [
+      0.11,
+      0.08524406969696963,
+      0.78,
+      0.17625286641414106
+    ],
+    "scale": 2
+  },
+  {
+    "page": 74,
+    "file": "assets/book/aza-cope-rearrangement-scheme.png",
+    "crop": [
+      0.11,
+      0.2608838648989895,
+      0.78,
+      0.26212304356060634
+    ],
+    "scale": 2
+  },
+  {
+    "page": 74,
+    "file": "assets/book/aza-cope-rearrangement-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.19017722979797946
+    ],
+    "scale": 2
+  },
+  {
+    "page": 76,
+    "file": "assets/book/aza-wittig-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.23519292853535334,
+      0.78,
+      0.09097309356060623
+    ],
+    "scale": 2
+  },
+  {
+    "page": 76,
+    "file": "assets/book/aza-wittig-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.1644862934343433
+    ],
+    "scale": 2
+  },
+  {
+    "page": 78,
+    "file": "assets/book/aza-2-3-wittig-rearrangement-scheme.png",
+    "crop": [
+      0.11,
+      0.31569538055555546,
+      0.78,
+      0.16017013080808096
+    ],
+    "scale": 2
+  },
+  {
+    "page": 78,
+    "file": "assets/book/aza-2-3-wittig-rearrangement-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.2449887454545454
+    ],
+    "scale": 2
+  },
+  {
+    "page": 82,
+    "file": "assets/book/baker-venkataraman-rearrangement-scheme.png",
+    "crop": [
+      0.11,
+      0.19647078434343412,
+      0.78,
+      0.1756483633838386
+    ],
+    "scale": 2
+  },
+  {
+    "page": 82,
+    "file": "assets/book/baker-venkataraman-rearrangement-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.12576414924242407
+    ],
+    "scale": 2
+  },
+  {
+    "page": 84,
+    "file": "assets/book/baldwins-rules-guidelines-for-ring-closing-reactions-scheme.png",
+    "crop": [
+      0.11,
+      0.2078254055555554,
+      0.78,
+      0.7661745944444446
+    ],
+    "scale": 2
+  },
+  {
+    "page": 84,
+    "file": "assets/book/baldwins-rules-guidelines-for-ring-closing-reactions-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.13711877045454535
+    ],
+    "scale": 2
+  },
+  {
+    "page": 86,
+    "file": "assets/book/balz-schiemann-reaction-schiemann-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.27940752171717176,
+      0.78,
+      0.09342729898989888
+    ],
+    "scale": 2
+  },
+  {
+    "page": 86,
+    "file": "assets/book/balz-schiemann-reaction-schiemann-reaction-history.png",
+    "crop": [
+      0.11,
+      0.08524406969696963,
+      0.78,
+      0.19416345202020213
+    ],
+    "scale": 2
+  },
+  {
+    "page": 88,
+    "file": "assets/book/bamford-stevens-shapiro-olefination-scheme.png",
+    "crop": [
+      0.11,
+      0.23476881439393904,
+      0.78,
+      0.09499219381313162
+    ],
+    "scale": 2
+  },
+  {
+    "page": 88,
+    "file": "assets/book/bamford-stevens-shapiro-olefination-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.164062179292929
+    ],
+    "scale": 2
+  },
+  {
+    "page": 90,
+    "file": "assets/book/barbier-coupling-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.20782507727272703,
+      0.78,
+      0.14547671313131327
+    ],
+    "scale": 2
+  },
+  {
+    "page": 90,
+    "file": "assets/book/barbier-coupling-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.13711844217171698
+    ],
+    "scale": 2
+  },
+  {
+    "page": 92,
+    "file": "assets/book/bartoli-indole-synthesis-scheme.png",
+    "crop": [
+      0.11,
+      0.2861019010101006,
+      0.78,
+      0.2780865762626267
+    ],
+    "scale": 2
+  },
+  {
+    "page": 92,
+    "file": "assets/book/bartoli-indole-synthesis-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.21539526590909053
+    ],
+    "scale": 2
+  },
+  {
+    "page": 94,
+    "file": "assets/book/barton-nitrite-ester-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.24779913282828248,
+      0.78,
+      0.0822869827020205
+    ],
+    "scale": 2
+  },
+  {
+    "page": 94,
+    "file": "assets/book/barton-nitrite-ester-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07071408459595963,
+      0.78,
+      0.17708504823232285
+    ],
+    "scale": 2
+  },
+  {
+    "page": 96,
+    "file": "assets/book/barton-radical-decarboxylation-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.18171020353535328,
+      0.78,
+      0.2039876891414143
+    ],
+    "scale": 2
+  },
+  {
+    "page": 96,
+    "file": "assets/book/barton-radical-decarboxylation-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.11100356843434322
+    ],
+    "scale": 2
+  },
+  {
+    "page": 98,
+    "file": "assets/book/barton-mccombie-radical-deoxygenation-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.18171020353535328,
+      0.78,
+      0.13367487285353552
+    ],
+    "scale": 2
+  },
+  {
+    "page": 98,
+    "file": "assets/book/barton-mccombie-radical-deoxygenation-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.11100356843434322
+    ],
+    "scale": 2
+  },
+  {
+    "page": 100,
+    "file": "assets/book/baylis-hillman-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.28783943611111096,
+      0.78,
+      0.10536079179292945
+    ],
+    "scale": 2
+  },
+  {
+    "page": 100,
+    "file": "assets/book/baylis-hillman-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.2171328010101009
+    ],
+    "scale": 2
+  },
+  {
+    "page": 104,
+    "file": "assets/book/benzilic-acid-rearrangement-scheme.png",
+    "crop": [
+      0.11,
+      0.2782183851010098,
+      0.78,
+      0.21815684469696994
+    ],
+    "scale": 2
+  },
+  {
+    "page": 104,
+    "file": "assets/book/benzilic-acid-rearrangement-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.20751174999999977
+    ],
+    "scale": 2
+  },
+  {
+    "page": 106,
+    "file": "assets/book/benzoin-and-retro-benzoin-condensation-scheme.png",
+    "crop": [
+      0.11,
+      0.3008630878787878,
+      0.78,
+      0.13372695126262624
+    ],
+    "scale": 2
+  },
+  {
+    "page": 106,
+    "file": "assets/book/benzoin-and-retro-benzoin-condensation-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.23015645277777774
+    ],
+    "scale": 2
+  },
+  {
+    "page": 108,
+    "file": "assets/book/bergman-cycloaromatization-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.2730750015151513,
+      0.78,
+      0.12163658750000028
+    ],
+    "scale": 2
+  },
+  {
+    "page": 108,
+    "file": "assets/book/bergman-cycloaromatization-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.20236836641414124
+    ],
+    "scale": 2
+  },
+  {
+    "page": 110,
+    "file": "assets/book/biginelli-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.4184107590909091,
+      0.78,
+      0.25401893030303035
+    ],
+    "scale": 2
+  },
+  {
+    "page": 110,
+    "file": "assets/book/biginelli-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.347704123989899
+    ],
+    "scale": 2
+  },
+  {
+    "page": 114,
+    "file": "assets/book/bischler-napieralski-isoquinoline-synthesis-scheme.png",
+    "crop": [
+      0.11,
+      0.18350435858585867,
+      0.78,
+      0.12635920328282813
+    ],
+    "scale": 2
+  },
+  {
+    "page": 114,
+    "file": "assets/book/bischler-napieralski-isoquinoline-synthesis-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.11279772348484862
+    ],
+    "scale": 2
+  },
+  {
+    "page": 116,
+    "file": "assets/book/brook-rearrangement-scheme.png",
+    "crop": [
+      0.11,
+      0.20782893106060585,
+      0.78,
+      0.15207269330808093
+    ],
+    "scale": 2
+  },
+  {
+    "page": 116,
+    "file": "assets/book/brook-rearrangement-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.1371222959595958
+    ],
+    "scale": 2
+  },
+  {
+    "page": 118,
+    "file": "assets/book/brown-hydroboration-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.24696012777777765,
+      0.78,
+      0.12178385265151526
+    ],
+    "scale": 2
+  },
+  {
+    "page": 118,
+    "file": "assets/book/brown-hydroboration-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.1762534926767676
+    ],
+    "scale": 2
+  },
+  {
+    "page": 120,
+    "file": "assets/book/buchner-method-of-ring-expansion-scheme.png",
+    "crop": [
+      0.11,
+      0.274392251010101,
+      0.78,
+      0.1523337811868687
+    ],
+    "scale": 2
+  },
+  {
+    "page": 120,
+    "file": "assets/book/buchner-method-of-ring-expansion-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.20368561590909096
+    ],
+    "scale": 2
+  },
+  {
+    "page": 122,
+    "file": "assets/book/buchwald-hartwig-cross-coupling-scheme.png",
+    "crop": [
+      0.11,
+      0.3383321030303028,
+      0.78,
+      0.20807337108585877
+    ],
+    "scale": 2
+  },
+  {
+    "page": 122,
+    "file": "assets/book/buchwald-hartwig-cross-coupling-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.26762546792929276
+    ],
+    "scale": 2
+  },
+  {
+    "page": 124,
+    "file": "assets/book/burgess-dehydration-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.33833227979797964,
+      0.78,
+      0.4244115781565658
+    ],
+    "scale": 2
+  },
+  {
+    "page": 124,
+    "file": "assets/book/burgess-dehydration-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.2676256446969696
+    ],
+    "scale": 2
+  },
+  {
+    "page": 126,
+    "file": "assets/book/cannizzaro-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.29089389242424235,
+      0.78,
+      0.10820779381313139
+    ],
+    "scale": 2
+  },
+  {
+    "page": 126,
+    "file": "assets/book/cannizzaro-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.2201872573232323
+    ],
+    "scale": 2
+  },
+  {
+    "page": 128,
+    "file": "assets/book/carroll-rearrangement-kimel-cope-rearrangement-scheme.png",
+    "crop": [
+      0.11,
+      0.25228510429292916,
+      0.78,
+      0.1170000491161618
+    ],
+    "scale": 2
+  },
+  {
+    "page": 128,
+    "file": "assets/book/carroll-rearrangement-kimel-cope-rearrangement-history.png",
+    "crop": [
+      0.11,
+      0.08524406969696963,
+      0.78,
+      0.16704103459595954
+    ],
+    "scale": 2
+  },
+  {
+    "page": 130,
+    "file": "assets/book/castro-stephens-coupling-scheme.png",
+    "crop": [
+      0.11,
+      0.27308235555555527,
+      0.78,
+      0.24684169116161647
+    ],
+    "scale": 2
+  },
+  {
+    "page": 130,
+    "file": "assets/book/castro-stephens-coupling-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.20237572045454522
+    ],
+    "scale": 2
+  },
+  {
+    "page": 132,
+    "file": "assets/book/chichibabin-amination-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.37836767828282836,
+      0.78,
+      0.15624134318181815
+    ],
+    "scale": 2
+  },
+  {
+    "page": 132,
+    "file": "assets/book/chichibabin-amination-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.3076610431818183
+    ],
+    "scale": 2
+  },
+  {
+    "page": 136,
+    "file": "assets/book/ciamician-dennstedt-rearrangement-scheme.png",
+    "crop": [
+      0.11,
+      0.20914250353535346,
+      0.78,
+      0.11018798257575746
+    ],
+    "scale": 2
+  },
+  {
+    "page": 136,
+    "file": "assets/book/ciamician-dennstedt-rearrangement-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.1384358684343434
+    ],
+    "scale": 2
+  },
+  {
+    "page": 138,
+    "file": "assets/book/claisen-condensation-claisen-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.29221018232323204,
+      0.78,
+      0.30878394015151545
+    ],
+    "scale": 2
+  },
+  {
+    "page": 138,
+    "file": "assets/book/claisen-condensation-claisen-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.22150354722222199
+    ],
+    "scale": 2
+  },
+  {
+    "page": 142,
+    "file": "assets/book/claisen-ireland-rearrangement-scheme.png",
+    "crop": [
+      0.11,
+      0.33923310757575753,
+      0.78,
+      0.28333298333333334
+    ],
+    "scale": 2
+  },
+  {
+    "page": 142,
+    "file": "assets/book/claisen-ireland-rearrangement-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.2685264724747475
+    ],
+    "scale": 2
+  },
+  {
+    "page": 146,
+    "file": "assets/book/combes-quinoline-synthesis-scheme.png",
+    "crop": [
+      0.11,
+      0.18468502828282807,
+      0.78,
+      0.30367272929292954
+    ],
+    "scale": 2
+  },
+  {
+    "page": 146,
+    "file": "assets/book/combes-quinoline-synthesis-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.11397839318181802
+    ],
+    "scale": 2
+  },
+  {
+    "page": 148,
+    "file": "assets/book/cope-elimination-cope-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.3670206232323231,
+      0.78,
+      0.3282133969696971
+    ],
+    "scale": 2
+  },
+  {
+    "page": 148,
+    "file": "assets/book/cope-elimination-cope-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.29631398813131304
+    ],
+    "scale": 2
+  },
+  {
+    "page": 152,
+    "file": "assets/book/corey-bakshi-shibata-reduction-cbs-reduction-scheme.png",
+    "crop": [
+      0.11,
+      0.3122204972222219,
+      0.78,
+      0.17712122500000027
+    ],
+    "scale": 2
+  },
+  {
+    "page": 152,
+    "file": "assets/book/corey-bakshi-shibata-reduction-cbs-reduction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.24151386212121184
+    ],
+    "scale": 2
+  },
+  {
+    "page": 154,
+    "file": "assets/book/corey-chaykovsky-epoxidation-and-cyclopropanation-scheme.png",
+    "crop": [
+      0.11,
+      0.33923280454545424,
+      0.78,
+      0.3304917459595962
+    ],
+    "scale": 2
+  },
+  {
+    "page": 154,
+    "file": "assets/book/corey-chaykovsky-epoxidation-and-cyclopropanation-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.2685261694444442
+    ],
+    "scale": 2
+  },
+  {
+    "page": 156,
+    "file": "assets/book/corey-fuchs-alkyne-synthesis-scheme.png",
+    "crop": [
+      0.11,
+      0.3135306755050504,
+      0.78,
+      0.1735402133838384
+    ],
+    "scale": 2
+  },
+  {
+    "page": 156,
+    "file": "assets/book/corey-fuchs-alkyne-synthesis-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.24282404040404038
+    ],
+    "scale": 2
+  },
+  {
+    "page": 158,
+    "file": "assets/book/corey-kim-oxidation-scheme.png",
+    "crop": [
+      0.11,
+      0.3005111047979797,
+      0.78,
+      0.24575372348484847
+    ],
+    "scale": 2
+  },
+  {
+    "page": 158,
+    "file": "assets/book/corey-kim-oxidation-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.22980446969696966
+    ],
+    "scale": 2
+  },
+  {
+    "page": 160,
+    "file": "assets/book/corey-nicolaou-macrolactonization-scheme.png",
+    "crop": [
+      0.11,
+      0.3936166351010102,
+      0.78,
+      0.22024440530303013
+    ],
+    "scale": 2
+  },
+  {
+    "page": 160,
+    "file": "assets/book/corey-nicolaou-macrolactonization-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.32291000000000014
+    ],
+    "scale": 2
+  },
+  {
+    "page": 162,
+    "file": "assets/book/corey-winter-olefination-scheme.png",
+    "crop": [
+      0.11,
+      0.2874191505050502,
+      0.78,
+      0.17572279709595995
+    ],
+    "scale": 2
+  },
+  {
+    "page": 162,
+    "file": "assets/book/corey-winter-olefination-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.21671251540404013
+    ],
+    "scale": 2
+  },
+  {
+    "page": 164,
+    "file": "assets/book/cornforth-rearrangement-scheme.png",
+    "crop": [
+      0.11,
+      0.2861023555555554,
+      0.78,
+      0.1555419910353537
+    ],
+    "scale": 2
+  },
+  {
+    "page": 164,
+    "file": "assets/book/cornforth-rearrangement-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.21539572045454536
+    ],
+    "scale": 2
+  },
+  {
+    "page": 166,
+    "file": "assets/book/criegee-oxidation-scheme.png",
+    "crop": [
+      0.11,
+      0.30086661338383813,
+      0.78,
+      0.23850083926767707
+    ],
+    "scale": 2
+  },
+  {
+    "page": 166,
+    "file": "assets/book/criegee-oxidation-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.23015997828282808
+    ],
+    "scale": 2
+  },
+  {
+    "page": 168,
+    "file": "assets/book/curtius-rearrangement-scheme.png",
+    "crop": [
+      0.11,
+      0.2874194535353535,
+      0.78,
+      0.2554299435606061
+    ],
+    "scale": 2
+  },
+  {
+    "page": 168,
+    "file": "assets/book/curtius-rearrangement-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.21671281843434342
+    ],
+    "scale": 2
+  },
+  {
+    "page": 170,
+    "file": "assets/book/dakin-oxidation-scheme.png",
+    "crop": [
+      0.11,
+      0.2735782531565656,
+      0.78,
+      0.17086685101010102
+    ],
+    "scale": 2
+  },
+  {
+    "page": 170,
+    "file": "assets/book/dakin-oxidation-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.20287161805555554
+    ],
+    "scale": 2
+  },
+  {
+    "page": 172,
+    "file": "assets/book/dakin-west-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.3312881835858582,
+      0.78,
+      0.25039315795454586
+    ],
+    "scale": 2
+  },
+  {
+    "page": 172,
+    "file": "assets/book/dakin-west-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.26058154848484816
+    ],
+    "scale": 2
+  },
+  {
+    "page": 174,
+    "file": "assets/book/danheiser-benzannulation-scheme.png",
+    "crop": [
+      0.11,
+      0.34006757702020163,
+      0.78,
+      0.1582887405303034
+    ],
+    "scale": 2
+  },
+  {
+    "page": 174,
+    "file": "assets/book/danheiser-benzannulation-history.png",
+    "crop": [
+      0.11,
+      0.07071408459595963,
+      0.78,
+      0.269353492424242
+    ],
+    "scale": 2
+  },
+  {
+    "page": 176,
+    "file": "assets/book/danheiser-cyclopentene-annulation-scheme.png",
+    "crop": [
+      0.11,
+      0.28867932550505027,
+      0.78,
+      0.1495257565656567
+    ],
+    "scale": 2
+  },
+  {
+    "page": 176,
+    "file": "assets/book/danheiser-cyclopentene-annulation-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.21797269040404021
+    ],
+    "scale": 2
+  },
+  {
+    "page": 178,
+    "file": "assets/book/danishefskys-diene-cycloaddition-scheme.png",
+    "crop": [
+      0.11,
+      0.35226031010101,
+      0.78,
+      0.2089502012626263
+    ],
+    "scale": 2
+  },
+  {
+    "page": 178,
+    "file": "assets/book/danishefskys-diene-cycloaddition-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.28155367499999995
+    ],
+    "scale": 2
+  },
+  {
+    "page": 180,
+    "file": "assets/book/darzens-glycidic-ester-condensation-scheme.png",
+    "crop": [
+      0.11,
+      0.3426430977272725,
+      0.78,
+      0.21516110050505066
+    ],
+    "scale": 2
+  },
+  {
+    "page": 180,
+    "file": "assets/book/darzens-glycidic-ester-condensation-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.2719364626262625
+    ],
+    "scale": 2
+  },
+  {
+    "page": 182,
+    "file": "assets/book/davis-oxaziridine-oxidations-scheme.png",
+    "crop": [
+      0.11,
+      0.3261414563131312,
+      0.78,
+      0.23128433282828287
+    ],
+    "scale": 2
+  },
+  {
+    "page": 182,
+    "file": "assets/book/davis-oxaziridine-oxidations-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.25543482121212113
+    ],
+    "scale": 2
+  },
+  {
+    "page": 184,
+    "file": "assets/book/de-mayo-cycloaddition-enone-alkene-2-2-photocycloaddition-scheme.png",
+    "crop": [
+      0.11,
+      0.35399736540404014,
+      0.78,
+      0.27178158030303057
+    ],
+    "scale": 2
+  },
+  {
+    "page": 184,
+    "file": "assets/book/de-mayo-cycloaddition-enone-alkene-2-2-photocycloaddition-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.2832907303030301
+    ],
+    "scale": 2
+  },
+  {
+    "page": 186,
+    "file": "assets/book/demjanov-and-tiffeneau-demjanov-rearrangement-scheme.png",
+    "crop": [
+      0.11,
+      0.31443502878787866,
+      0.78,
+      0.27546234936868685
+    ],
+    "scale": 2
+  },
+  {
+    "page": 186,
+    "file": "assets/book/demjanov-and-tiffeneau-demjanov-rearrangement-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.2437283936868686
+    ],
+    "scale": 2
+  },
+  {
+    "page": 188,
+    "file": "assets/book/dess-martin-oxidation-scheme.png",
+    "crop": [
+      0.11,
+      0.40710572196969685,
+      0.78,
+      0.312857225
+    ],
+    "scale": 2
+  },
+  {
+    "page": 188,
+    "file": "assets/book/dess-martin-oxidation-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.3363990868686868
+    ],
+    "scale": 2
+  },
+  {
+    "page": 190,
+    "file": "assets/book/dieckmann-condensation-scheme.png",
+    "crop": [
+      0.11,
+      0.3548264156565656,
+      0.78,
+      0.2707441070707072
+    ],
+    "scale": 2
+  },
+  {
+    "page": 190,
+    "file": "assets/book/dieckmann-condensation-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.28411978055555553
+    ],
+    "scale": 2
+  },
+  {
+    "page": 194,
+    "file": "assets/book/dienone-phenol-rearrangement-scheme.png",
+    "crop": [
+      0.11,
+      0.24696012777777765,
+      0.78,
+      0.3166912030303032
+    ],
+    "scale": 2
+  },
+  {
+    "page": 194,
+    "file": "assets/book/dienone-phenol-rearrangement-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.1762534926767676
+    ],
+    "scale": 2
+  },
+  {
+    "page": 196,
+    "file": "assets/book/dimroth-rearrangement-scheme.png",
+    "crop": [
+      0.11,
+      0.3122173808080807,
+      0.78,
+      0.28889743611111107
+    ],
+    "scale": 2
+  },
+  {
+    "page": 196,
+    "file": "assets/book/dimroth-rearrangement-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.24151074570707065
+    ],
+    "scale": 2
+  },
+  {
+    "page": 198,
+    "file": "assets/book/doering-laflamme-allene-synthesis-scheme.png",
+    "crop": [
+      0.11,
+      0.2860985270202019,
+      0.78,
+      0.2217592191919192
+    ],
+    "scale": 2
+  },
+  {
+    "page": 198,
+    "file": "assets/book/doering-laflamme-allene-synthesis-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.21539189191919184
+    ],
+    "scale": 2
+  },
+  {
+    "page": 200,
+    "file": "assets/book/dotz-benzannulation-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.3914663805555554,
+      0.78,
+      0.25664747234848506
+    ],
+    "scale": 2
+  },
+  {
+    "page": 200,
+    "file": "assets/book/dotz-benzannulation-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.32075974545454533
+    ],
+    "scale": 2
+  },
+  {
+    "page": 202,
+    "file": "assets/book/enders-samp-ramp-hydrazone-alkylation-scheme.png",
+    "crop": [
+      0.11,
+      0.4062275775252525,
+      0.78,
+      0.2904828662878788
+    ],
+    "scale": 2
+  },
+  {
+    "page": 202,
+    "file": "assets/book/enders-samp-ramp-hydrazone-alkylation-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.33552094242424246
+    ],
+    "scale": 2
+  },
+  {
+    "page": 204,
+    "file": "assets/book/enyne-metathesis-scheme.png",
+    "crop": [
+      0.11,
+      0.4427923808080808,
+      0.78,
+      0.2035804367424242
+    ],
+    "scale": 2
+  },
+  {
+    "page": 204,
+    "file": "assets/book/enyne-metathesis-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.37208574570707076
+    ],
+    "scale": 2
+  },
+  {
+    "page": 206,
+    "file": "assets/book/eschenmoser-methenylation-scheme.png",
+    "crop": [
+      0.11,
+      0.27647747601010086,
+      0.78,
+      0.47396184621212145
+    ],
+    "scale": 2
+  },
+  {
+    "page": 206,
+    "file": "assets/book/eschenmoser-methenylation-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.2057708409090908
+    ],
+    "scale": 2
+  },
+  {
+    "page": 208,
+    "file": "assets/book/eschenmoser-claisen-rearrangement-scheme.png",
+    "crop": [
+      0.11,
+      0.23477313282828283,
+      0.78,
+      0.12395612411616164
+    ],
+    "scale": 2
+  },
+  {
+    "page": 208,
+    "file": "assets/book/eschenmoser-claisen-rearrangement-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.16406649772727278
+    ],
+    "scale": 2
+  },
+  {
+    "page": 210,
+    "file": "assets/book/eschenmoser-tanabe-fragmentation-scheme.png",
+    "crop": [
+      0.11,
+      0.39361648358585855,
+      0.78,
+      0.20335015214646468
+    ],
+    "scale": 2
+  },
+  {
+    "page": 210,
+    "file": "assets/book/eschenmoser-tanabe-fragmentation-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.3229098484848485
+    ],
+    "scale": 2
+  },
+  {
+    "page": 212,
+    "file": "assets/book/eschweiler-clarke-methylation-reductive-alkylation-scheme.png",
+    "crop": [
+      0.11,
+      0.3150444128787877,
+      0.78,
+      0.3411919198232325
+    ],
+    "scale": 2
+  },
+  {
+    "page": 212,
+    "file": "assets/book/eschweiler-clarke-methylation-reductive-alkylation-history.png",
+    "crop": [
+      0.11,
+      0.08524406969696963,
+      0.78,
+      0.22980034318181808
+    ],
+    "scale": 2
+  },
+  {
+    "page": 214,
+    "file": "assets/book/evans-aldol-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.4053230626262626,
+      0.78,
+      0.20277084583333338
+    ],
+    "scale": 2
+  },
+  {
+    "page": 214,
+    "file": "assets/book/evans-aldol-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.33461642752525256
+    ],
+    "scale": 2
+  },
+  {
+    "page": 216,
+    "file": "assets/book/favorskii-and-homo-favorskii-rearrangement-scheme.png",
+    "crop": [
+      0.11,
+      0.4151860641414141,
+      0.78,
+      0.33506428371212116
+    ],
+    "scale": 2
+  },
+  {
+    "page": 216,
+    "file": "assets/book/favorskii-and-homo-favorskii-rearrangement-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.3444794290404041
+    ],
+    "scale": 2
+  },
+  {
+    "page": 218,
+    "file": "assets/book/feist-benary-furan-synthesis-scheme.png",
+    "crop": [
+      0.11,
+      0.3890913998737374,
+      0.78,
+      0.24988634696969692
+    ],
+    "scale": 2
+  },
+  {
+    "page": 218,
+    "file": "assets/book/feist-benary-furan-synthesis-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.31838476477272737
+    ],
+    "scale": 2
+  },
+  {
+    "page": 220,
+    "file": "assets/book/ferrier-reaction-rearrangement-scheme.png",
+    "crop": [
+      0.11,
+      0.3936127964646464,
+      0.78,
+      0.2776112887626263
+    ],
+    "scale": 2
+  },
+  {
+    "page": 220,
+    "file": "assets/book/ferrier-reaction-rearrangement-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.32290616136363637
+    ],
+    "scale": 2
+  },
+  {
+    "page": 224,
+    "file": "assets/book/fischer-indole-synthesis-scheme.png",
+    "crop": [
+      0.11,
+      0.48541531060606036,
+      0.78,
+      0.22736571906565683
+    ],
+    "scale": 2
+  },
+  {
+    "page": 224,
+    "file": "assets/book/fischer-indole-synthesis-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.4147086755050503
+    ],
+    "scale": 2
+  },
+  {
+    "page": 226,
+    "file": "assets/book/fleming-tamao-oxidation-scheme.png",
+    "crop": [
+      0.11,
+      0.4689074060606061,
+      0.78,
+      0.23872627512626254
+    ],
+    "scale": 2
+  },
+  {
+    "page": 226,
+    "file": "assets/book/fleming-tamao-oxidation-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.39820077095959605
+    ],
+    "scale": 2
+  },
+  {
+    "page": 228,
+    "file": "assets/book/friedel-crafts-acylation-scheme.png",
+    "crop": [
+      0.11,
+      0.4558832744949495,
+      0.78,
+      0.19846063396464653
+    ],
+    "scale": 2
+  },
+  {
+    "page": 228,
+    "file": "assets/book/friedel-crafts-acylation-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.3851766393939394
+    ],
+    "scale": 2
+  },
+  {
+    "page": 230,
+    "file": "assets/book/friedel-crafts-alkylation-scheme.png",
+    "crop": [
+      0.11,
+      0.5211336280303029,
+      0.78,
+      0.18998212386363644
+    ],
+    "scale": 2
+  },
+  {
+    "page": 230,
+    "file": "assets/book/friedel-crafts-alkylation-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.4504269929292929
+    ],
+    "scale": 2
+  },
+  {
+    "page": 232,
+    "file": "assets/book/fries-photo-fries-and-anionic-ortho-fries-rearrangement-scheme.png",
+    "crop": [
+      0.11,
+      0.4310859532828284,
+      0.78,
+      0.3092482329545453
+    ],
+    "scale": 2
+  },
+  {
+    "page": 232,
+    "file": "assets/book/fries-photo-fries-and-anionic-ortho-fries-rearrangement-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.36037931818181834
+    ],
+    "scale": 2
+  },
+  {
+    "page": 236,
+    "file": "assets/book/gattermann-and-gattermann-koch-formylation-scheme.png",
+    "crop": [
+      0.11,
+      0.4558802035353535,
+      0.78,
+      0.15645259381313137
+    ],
+    "scale": 2
+  },
+  {
+    "page": 236,
+    "file": "assets/book/gattermann-and-gattermann-koch-formylation-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.38517356843434347
+    ],
+    "scale": 2
+  },
+  {
+    "page": 238,
+    "file": "assets/book/glaser-coupling-scheme.png",
+    "crop": [
+      0.11,
+      0.4689074060606061,
+      0.78,
+      0.2921674367424242
+    ],
+    "scale": 2
+  },
+  {
+    "page": 238,
+    "file": "assets/book/glaser-coupling-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.39820077095959605
+    ],
+    "scale": 2
+  },
+  {
+    "page": 242,
+    "file": "assets/book/grob-fragmentation-scheme.png",
+    "crop": [
+      0.11,
+      0.31221644646464586,
+      0.78,
+      0.30200877512626334
+    ],
+    "scale": 2
+  },
+  {
+    "page": 242,
+    "file": "assets/book/grob-fragmentation-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.2415098113636358
+    ],
+    "scale": 2
+  },
+  {
+    "page": 244,
+    "file": "assets/book/hajos-parrish-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.39270446313131313,
+      0.78,
+      0.1611155816919192
+    ],
+    "scale": 2
+  },
+  {
+    "page": 244,
+    "file": "assets/book/hajos-parrish-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.3219978280303031
+    ],
+    "scale": 2
+  },
+  {
+    "page": 246,
+    "file": "assets/book/hantzsch-dihydropyridine-synthesis-scheme.png",
+    "crop": [
+      0.11,
+      0.423565597979798,
+      0.78,
+      0.15296315896464652
+    ],
+    "scale": 2
+  },
+  {
+    "page": 246,
+    "file": "assets/book/hantzsch-dihydropyridine-synthesis-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.35285896287878793
+    ],
+    "scale": 2
+  },
+  {
+    "page": 248,
+    "file": "assets/book/heck-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.4723137191919192,
+      0.78,
+      0.13093561856060598
+    ],
+    "scale": 2
+  },
+  {
+    "page": 248,
+    "file": "assets/book/heck-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.40160708409090917
+    ],
+    "scale": 2
+  },
+  {
+    "page": 250,
+    "file": "assets/book/heine-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.3383284512626261,
+      0.78,
+      0.3680184875000001
+    ],
+    "scale": 2
+  },
+  {
+    "page": 250,
+    "file": "assets/book/heine-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.26762181616161607
+    ],
+    "scale": 2
+  },
+  {
+    "page": 254,
+    "file": "assets/book/henry-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.5162398520202021,
+      0.78,
+      0.2546758821969697
+    ],
+    "scale": 2
+  },
+  {
+    "page": 254,
+    "file": "assets/book/henry-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.445533216919192
+    ],
+    "scale": 2
+  },
+  {
+    "page": 256,
+    "file": "assets/book/hetero-diels-alder-cycloaddition-scheme.png",
+    "crop": [
+      0.11,
+      0.3405532512626257,
+      0.78,
+      0.42771311426767733
+    ],
+    "scale": 2
+  },
+  {
+    "page": 256,
+    "file": "assets/book/hetero-diels-alder-cycloaddition-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.26984661616161565
+    ],
+    "scale": 2
+  },
+  {
+    "page": 258,
+    "file": "assets/book/hofmann-elimination-scheme.png",
+    "crop": [
+      0.11,
+      0.4223015944444444,
+      0.78,
+      0.16012802487373734
+    ],
+    "scale": 2
+  },
+  {
+    "page": 258,
+    "file": "assets/book/hofmann-elimination-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.3515949593434343
+    ],
+    "scale": 2
+  },
+  {
+    "page": 260,
+    "file": "assets/book/hofmann-loffler-freytag-reaction-remote-functionalization-scheme.png",
+    "crop": [
+      0.11,
+      0.4328760676767677,
+      0.78,
+      0.23577097588383833
+    ],
+    "scale": 2
+  },
+  {
+    "page": 260,
+    "file": "assets/book/hofmann-loffler-freytag-reaction-remote-functionalization-history.png",
+    "crop": [
+      0.11,
+      0.08524406969696963,
+      0.78,
+      0.34763199797979805
+    ],
+    "scale": 2
+  },
+  {
+    "page": 264,
+    "file": "assets/book/horner-wadsworth-emmons-olefination-scheme.png",
+    "crop": [
+      0.11,
+      0.4710572060606061,
+      0.78,
+      0.15262657992424233
+    ],
+    "scale": 2
+  },
+  {
+    "page": 264,
+    "file": "assets/book/horner-wadsworth-emmons-olefination-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.40035057095959603
+    ],
+    "scale": 2
+  },
+  {
+    "page": 266,
+    "file": "assets/book/horner-wadsworth-emmons-olefination-still-gennari-modification-scheme.png",
+    "crop": [
+      0.11,
+      0.3039172916666667,
+      0.78,
+      0.1624709135101009
+    ],
+    "scale": 2
+  },
+  {
+    "page": 266,
+    "file": "assets/book/horner-wadsworth-emmons-olefination-still-gennari-modification-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.23321065656565665
+    ],
+    "scale": 2
+  },
+  {
+    "page": 268,
+    "file": "assets/book/houben-hoesch-reaction-synthesis-scheme.png",
+    "crop": [
+      0.11,
+      0.40580378156565655,
+      0.78,
+      0.28532482765151523
+    ],
+    "scale": 2
+  },
+  {
+    "page": 268,
+    "file": "assets/book/houben-hoesch-reaction-synthesis-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.3350971464646465
+    ],
+    "scale": 2
+  },
+  {
+    "page": 270,
+    "file": "assets/book/hunsdiecker-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.45672041111111106,
+      0.78,
+      0.358246329419192
+    ],
+    "scale": 2
+  },
+  {
+    "page": 270,
+    "file": "assets/book/hunsdiecker-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.386013776010101
+    ],
+    "scale": 2
+  },
+  {
+    "page": 272,
+    "file": "assets/book/jacobsen-hydrolytic-kinetic-resolution-scheme.png",
+    "crop": [
+      0.11,
+      0.36444329974747447,
+      0.78,
+      0.32532280946969716
+    ],
+    "scale": 2
+  },
+  {
+    "page": 272,
+    "file": "assets/book/jacobsen-hydrolytic-kinetic-resolution-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.2937366646464644
+    ],
+    "scale": 2
+  },
+  {
+    "page": 274,
+    "file": "assets/book/jacobsen-katsuki-epoxidation-scheme.png",
+    "crop": [
+      0.11,
+      0.40449675820707065,
+      0.78,
+      0.2739410890151516
+    ],
+    "scale": 2
+  },
+  {
+    "page": 274,
+    "file": "assets/book/jacobsen-katsuki-epoxidation-history.png",
+    "crop": [
+      0.11,
+      0.07072236426767675,
+      0.78,
+      0.3337743939393939
+    ],
+    "scale": 2
+  },
+  {
+    "page": 276,
+    "file": "assets/book/japp-klingemann-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.4609624820707071,
+      0.78,
+      0.2669625640151515
+    ],
+    "scale": 2
+  },
+  {
+    "page": 276,
+    "file": "assets/book/japp-klingemann-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.39025584696969706
+    ],
+    "scale": 2
+  },
+  {
+    "page": 278,
+    "file": "assets/book/johnson-claisen-rearrangement-scheme.png",
+    "crop": [
+      0.11,
+      0.28832395833333324,
+      0.78,
+      0.16806808459595968
+    ],
+    "scale": 2
+  },
+  {
+    "page": 278,
+    "file": "assets/book/johnson-claisen-rearrangement-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.2176173232323232
+    ],
+    "scale": 2
+  },
+  {
+    "page": 280,
+    "file": "assets/book/jones-oxidation-oxidation-of-alcohols-by-chromium-reagents-scheme.png",
+    "crop": [
+      0.11,
+      0.49675583484848485,
+      0.78,
+      0.22737181414141416
+    ],
+    "scale": 2
+  },
+  {
+    "page": 280,
+    "file": "assets/book/jones-oxidation-oxidation-of-alcohols-by-chromium-reagents-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.4260491997474748
+    ],
+    "scale": 2
+  },
+  {
+    "page": 282,
+    "file": "assets/book/julia-lythgoe-olefination-scheme.png",
+    "crop": [
+      0.11,
+      0.4096338805555556,
+      0.78,
+      0.2643832886363636
+    ],
+    "scale": 2
+  },
+  {
+    "page": 282,
+    "file": "assets/book/julia-lythgoe-olefination-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.33892724545454556
+    ],
+    "scale": 2
+  },
+  {
+    "page": 284,
+    "file": "assets/book/kagan-molander-samarium-diiodide-mediated-coupling-scheme.png",
+    "crop": [
+      0.11,
+      0.5111918623737373,
+      0.78,
+      0.26602717171717183
+    ],
+    "scale": 2
+  },
+  {
+    "page": 284,
+    "file": "assets/book/kagan-molander-samarium-diiodide-mediated-coupling-history.png",
+    "crop": [
+      0.11,
+      0.07072236426767675,
+      0.78,
+      0.4404694981060605
+    ],
+    "scale": 2
+  },
+  {
+    "page": 286,
+    "file": "assets/book/kahne-glycosidation-scheme.png",
+    "crop": [
+      0.11,
+      0.44452928459595975,
+      0.78,
+      0.314418440151515
+    ],
+    "scale": 2
+  },
+  {
+    "page": 286,
+    "file": "assets/book/kahne-glycosidation-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.3738226494949497
+    ],
+    "scale": 2
+  },
+  {
+    "page": 288,
+    "file": "assets/book/keck-asymmetric-allylation-scheme.png",
+    "crop": [
+      0.11,
+      0.4575624116161616,
+      0.78,
+      0.13980674873737375
+    ],
+    "scale": 2
+  },
+  {
+    "page": 288,
+    "file": "assets/book/keck-asymmetric-allylation-history.png",
+    "crop": [
+      0.11,
+      0.07072236426767675,
+      0.78,
+      0.3868400473484849
+    ],
+    "scale": 2
+  },
+  {
+    "page": 290,
+    "file": "assets/book/keck-macrolactonization-scheme.png",
+    "crop": [
+      0.11,
+      0.4044855876262623,
+      0.78,
+      0.2831250070707074
+    ],
+    "scale": 2
+  },
+  {
+    "page": 290,
+    "file": "assets/book/keck-macrolactonization-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.33377895252525225
+    ],
+    "scale": 2
+  },
+  {
+    "page": 292,
+    "file": "assets/book/keck-radical-allylation-scheme.png",
+    "crop": [
+      0.11,
+      0.3253088805555554,
+      0.78,
+      0.2890062722222223
+    ],
+    "scale": 2
+  },
+  {
+    "page": 292,
+    "file": "assets/book/keck-radical-allylation-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.25460224545454535
+    ],
+    "scale": 2
+  },
+  {
+    "page": 294,
+    "file": "assets/book/knoevenagel-condensation-scheme.png",
+    "crop": [
+      0.11,
+      0.38011241590909084,
+      0.78,
+      0.27386725707070714
+    ],
+    "scale": 2
+  },
+  {
+    "page": 294,
+    "file": "assets/book/knoevenagel-condensation-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.3094057808080808
+    ],
+    "scale": 2
+  },
+  {
+    "page": 296,
+    "file": "assets/book/knorr-pyrrole-synthesis-scheme.png",
+    "crop": [
+      0.11,
+      0.3738370022727272,
+      0.78,
+      0.3308356852272728
+    ],
+    "scale": 2
+  },
+  {
+    "page": 296,
+    "file": "assets/book/knorr-pyrrole-synthesis-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.30313036717171715
+    ],
+    "scale": 2
+  },
+  {
+    "page": 298,
+    "file": "assets/book/koenigs-knorr-glycosidation-scheme.png",
+    "crop": [
+      0.11,
+      0.46095912323232335,
+      0.78,
+      0.32434779974747463
+    ],
+    "scale": 2
+  },
+  {
+    "page": 298,
+    "file": "assets/book/koenigs-knorr-glycosidation-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.3902524881313133
+    ],
+    "scale": 2
+  },
+  {
+    "page": 300,
+    "file": "assets/book/kolbe-schmitt-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.35226031010101,
+      0.78,
+      0.2661404468434344
+    ],
+    "scale": 2
+  },
+  {
+    "page": 300,
+    "file": "assets/book/kolbe-schmitt-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.28155367499999995
+    ],
+    "scale": 2
+  },
+  {
+    "page": 302,
+    "file": "assets/book/kornblum-oxidation-scheme.png",
+    "crop": [
+      0.11,
+      0.39279067550505053,
+      0.78,
+      0.27255209595959595
+    ],
+    "scale": 2
+  },
+  {
+    "page": 302,
+    "file": "assets/book/kornblum-oxidation-history.png",
+    "crop": [
+      0.11,
+      0.07072236426767675,
+      0.78,
+      0.3220683112373738
+    ],
+    "scale": 2
+  },
+  {
+    "page": 304,
+    "file": "assets/book/krapcho-dealkoxycarbonylation-krapcho-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.4592779050505049,
+      0.78,
+      0.23010506464646485
+    ],
+    "scale": 2
+  },
+  {
+    "page": 304,
+    "file": "assets/book/krapcho-dealkoxycarbonylation-krapcho-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070625631313121,
+      0.78,
+      0.3885716487373737
+    ],
+    "scale": 2
+  },
+  {
+    "page": 306,
+    "file": "assets/book/krohnke-pyridine-synthesis-scheme.png",
+    "crop": [
+      0.11,
+      0.3957096535353536,
+      0.78,
+      0.27891271010101004
+    ],
+    "scale": 2
+  },
+  {
+    "page": 306,
+    "file": "assets/book/krohnke-pyridine-synthesis-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.32500301843434354
+    ],
+    "scale": 2
+  },
+  {
+    "page": 308,
+    "file": "assets/book/kulinkovich-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.2869992285353534,
+      0.78,
+      0.2288132683080809
+    ],
+    "scale": 2
+  },
+  {
+    "page": 308,
+    "file": "assets/book/kulinkovich-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.21629259343434337
+    ],
+    "scale": 2
+  },
+  {
+    "page": 310,
+    "file": "assets/book/kumada-cross-coupling-scheme.png",
+    "crop": [
+      0.11,
+      0.5115165671717172,
+      0.78,
+      0.12192711654040389
+    ],
+    "scale": 2
+  },
+  {
+    "page": 310,
+    "file": "assets/book/kumada-cross-coupling-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.4408099320707072
+    ],
+    "scale": 2
+  },
+  {
+    "page": 312,
+    "file": "assets/book/larock-indole-synthesis-scheme.png",
+    "crop": [
+      0.11,
+      0.3653481328282828,
+      0.78,
+      0.254156380429293
+    ],
+    "scale": 2
+  },
+  {
+    "page": 312,
+    "file": "assets/book/larock-indole-synthesis-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.29464149772727277
+    ],
+    "scale": 2
+  },
+  {
+    "page": 314,
+    "file": "assets/book/ley-oxidation-scheme.png",
+    "crop": [
+      0.11,
+      0.5620092593434344,
+      0.78,
+      0.129860405429293
+    ],
+    "scale": 2
+  },
+  {
+    "page": 314,
+    "file": "assets/book/ley-oxidation-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.4913026242424243
+    ],
+    "scale": 2
+  },
+  {
+    "page": 316,
+    "file": "assets/book/lieben-haloform-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.36535181994949484,
+      0.78,
+      0.20951906199494952
+    ],
+    "scale": 2
+  },
+  {
+    "page": 316,
+    "file": "assets/book/lieben-haloform-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.2946451848484848
+    ],
+    "scale": 2
+  },
+  {
+    "page": 318,
+    "file": "assets/book/lossen-rearrangement-scheme.png",
+    "crop": [
+      0.11,
+      0.44278840075757586,
+      0.78,
+      0.3013180853535352
+    ],
+    "scale": 2
+  },
+  {
+    "page": 318,
+    "file": "assets/book/lossen-rearrangement-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.3720817656565658
+    ],
+    "scale": 2
+  },
+  {
+    "page": 320,
+    "file": "assets/book/luche-reduction-scheme.png",
+    "crop": [
+      0.11,
+      0.5097785997222224,
+      0.78,
+      0.1386485934595958
+    ],
+    "scale": 2
+  },
+  {
+    "page": 320,
+    "file": "assets/book/luche-reduction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.43907196462121234
+    ],
+    "scale": 2
+  },
+  {
+    "page": 322,
+    "file": "assets/book/madelung-indole-synthesis-scheme.png",
+    "crop": [
+      0.11,
+      0.35357369876262634,
+      0.78,
+      0.3897230158838383
+    ],
+    "scale": 2
+  },
+  {
+    "page": 322,
+    "file": "assets/book/madelung-indole-synthesis-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.2828670636616163
+    ],
+    "scale": 2
+  },
+  {
+    "page": 324,
+    "file": "assets/book/malonic-ester-synthesis-scheme.png",
+    "crop": [
+      0.11,
+      0.4331728753787879,
+      0.78,
+      0.2920919686868687
+    ],
+    "scale": 2
+  },
+  {
+    "page": 324,
+    "file": "assets/book/malonic-ester-synthesis-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.36246624027777785
+    ],
+    "scale": 2
+  },
+  {
+    "page": 326,
+    "file": "assets/book/mannich-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.43574870989898995,
+      0.78,
+      0.229948083030303
+    ],
+    "scale": 2
+  },
+  {
+    "page": 326,
+    "file": "assets/book/mannich-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.3650420747979799
+    ],
+    "scale": 2
+  },
+  {
+    "page": 328,
+    "file": "assets/book/mcmurry-coupling-scheme.png",
+    "crop": [
+      0.11,
+      0.4044861815909092,
+      0.78,
+      0.16151932345959585
+    ],
+    "scale": 2
+  },
+  {
+    "page": 328,
+    "file": "assets/book/mcmurry-coupling-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.33377954648989916
+    ],
+    "scale": 2
+  },
+  {
+    "page": 330,
+    "file": "assets/book/meerwein-arylation-scheme.png",
+    "crop": [
+      0.11,
+      0.4323523137626264,
+      0.78,
+      0.2915022001262625
+    ],
+    "scale": 2
+  },
+  {
+    "page": 330,
+    "file": "assets/book/meerwein-arylation-history.png",
+    "crop": [
+      0.11,
+      0.07072236426767675,
+      0.78,
+      0.36162994949494964
+    ],
+    "scale": 2
+  },
+  {
+    "page": 332,
+    "file": "assets/book/meerwein-ponndorf-verley-reduction-scheme.png",
+    "crop": [
+      0.11,
+      0.580297467449495,
+      0.78,
+      0.1582917471969697
+    ],
+    "scale": 2
+  },
+  {
+    "page": 332,
+    "file": "assets/book/meerwein-ponndorf-verley-reduction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.5095908323484849
+    ],
+    "scale": 2
+  },
+  {
+    "page": 334,
+    "file": "assets/book/meisenheimer-rearrangement-scheme.png",
+    "crop": [
+      0.11,
+      0.36666692790404043,
+      0.78,
+      0.42733150391414143
+    ],
+    "scale": 2
+  },
+  {
+    "page": 334,
+    "file": "assets/book/meisenheimer-rearrangement-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.2959602928030304
+    ],
+    "scale": 2
+  },
+  {
+    "page": 336,
+    "file": "assets/book/meyer-schuster-and-rupe-rearrangement-scheme.png",
+    "crop": [
+      0.11,
+      0.4379083491161616,
+      0.78,
+      0.3197815183080809
+    ],
+    "scale": 2
+  },
+  {
+    "page": 336,
+    "file": "assets/book/meyer-schuster-and-rupe-rearrangement-history.png",
+    "crop": [
+      0.11,
+      0.07072236426767675,
+      0.78,
+      0.36718598484848486
+    ],
+    "scale": 2
+  },
+  {
+    "page": 338,
+    "file": "assets/book/michael-addition-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.4331747461868687,
+      0.78,
+      0.35741737250000005
+    ],
+    "scale": 2
+  },
+  {
+    "page": 338,
+    "file": "assets/book/michael-addition-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.36246811108585864
+    ],
+    "scale": 2
+  },
+  {
+    "page": 340,
+    "file": "assets/book/midland-alpine-borane-reduction-midland-reduction-scheme.png",
+    "crop": [
+      0.11,
+      0.41407155037878784,
+      0.78,
+      0.2873606933080809
+    ],
+    "scale": 2
+  },
+  {
+    "page": 340,
+    "file": "assets/book/midland-alpine-borane-reduction-midland-reduction-history.png",
+    "crop": [
+      0.11,
+      0.071691168459596,
+      0.78,
+      0.34238038191919185
+    ],
+    "scale": 2
+  },
+  {
+    "page": 342,
+    "file": "assets/book/minisci-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.3653518098484849,
+      0.78,
+      0.25470745404040396
+    ],
+    "scale": 2
+  },
+  {
+    "page": 342,
+    "file": "assets/book/minisci-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.29464517474747487
+    ],
+    "scale": 2
+  },
+  {
+    "page": 344,
+    "file": "assets/book/mislow-evans-rearrangement-scheme.png",
+    "crop": [
+      0.11,
+      0.43234204416666666,
+      0.78,
+      0.3287383055808081
+    ],
+    "scale": 2
+  },
+  {
+    "page": 344,
+    "file": "assets/book/mislow-evans-rearrangement-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.3616354090656566
+    ],
+    "scale": 2
+  },
+  {
+    "page": 346,
+    "file": "assets/book/mitsunobu-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.4584547763636365,
+      0.78,
+      0.32041408348484834
+    ],
+    "scale": 2
+  },
+  {
+    "page": 346,
+    "file": "assets/book/mitsunobu-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.38774814126262647
+    ],
+    "scale": 2
+  },
+  {
+    "page": 348,
+    "file": "assets/book/miyaura-boration-scheme.png",
+    "crop": [
+      0.11,
+      0.37886624084595966,
+      0.78,
+      0.33022779324494944
+    ],
+    "scale": 2
+  },
+  {
+    "page": 348,
+    "file": "assets/book/miyaura-boration-history.png",
+    "crop": [
+      0.11,
+      0.07072236426767675,
+      0.78,
+      0.3081438765782829
+    ],
+    "scale": 2
+  },
+  {
+    "page": 350,
+    "file": "assets/book/mukaiyama-aldol-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.37753880479797985,
+      0.78,
+      0.1308707128787877
+    ],
+    "scale": 2
+  },
+  {
+    "page": 350,
+    "file": "assets/book/mukaiyama-aldol-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.3068321696969698
+    ],
+    "scale": 2
+  },
+  {
+    "page": 352,
+    "file": "assets/book/myers-asymmetric-alkylation-scheme.png",
+    "crop": [
+      0.11,
+      0.5009972290404044,
+      0.78,
+      0.28786468762626216
+    ],
+    "scale": 2
+  },
+  {
+    "page": 352,
+    "file": "assets/book/myers-asymmetric-alkylation-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.4302905939393944
+    ],
+    "scale": 2
+  },
+  {
+    "page": 354,
+    "file": "assets/book/nagata-hydrocyanation-scheme.png",
+    "crop": [
+      0.11,
+      0.44586696414141413,
+      0.78,
+      0.32538599219696973
+    ],
+    "scale": 2
+  },
+  {
+    "page": 354,
+    "file": "assets/book/nagata-hydrocyanation-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.3751603290404041
+    ],
+    "scale": 2
+  },
+  {
+    "page": 356,
+    "file": "assets/book/nazarov-cyclization-scheme.png",
+    "crop": [
+      0.11,
+      0.31610690702020194,
+      0.78,
+      0.38796672492424256
+    ],
+    "scale": 2
+  },
+  {
+    "page": 356,
+    "file": "assets/book/nazarov-cyclization-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.2454002719191919
+    ],
+    "scale": 2
+  },
+  {
+    "page": 358,
+    "file": "assets/book/neber-rearrangement-scheme.png",
+    "crop": [
+      0.11,
+      0.4092103654292929,
+      0.78,
+      0.2679156655050505
+    ],
+    "scale": 2
+  },
+  {
+    "page": 358,
+    "file": "assets/book/neber-rearrangement-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.33850373032828285
+    ],
+    "scale": 2
+  },
+  {
+    "page": 360,
+    "file": "assets/book/nef-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.32530848356060604,
+      0.78,
+      0.35073688070707065
+    ],
+    "scale": 2
+  },
+  {
+    "page": 360,
+    "file": "assets/book/nef-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.254601848459596
+    ],
+    "scale": 2
+  },
+  {
+    "page": 362,
+    "file": "assets/book/negishi-cross-coupling-scheme.png",
+    "crop": [
+      0.11,
+      0.5224504482323233,
+      0.78,
+      0.11258239457070696
+    ],
+    "scale": 2
+  },
+  {
+    "page": 362,
+    "file": "assets/book/negishi-cross-coupling-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.4517438131313133
+    ],
+    "scale": 2
+  },
+  {
+    "page": 364,
+    "file": "assets/book/nenitzescu-indole-synthesis-scheme.png",
+    "crop": [
+      0.11,
+      0.40531965633838385,
+      0.78,
+      0.30427353999999995
+    ],
+    "scale": 2
+  },
+  {
+    "page": 364,
+    "file": "assets/book/nenitzescu-indole-synthesis-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.3346130212373738
+    ],
+    "scale": 2
+  },
+  {
+    "page": 366,
+    "file": "assets/book/nicholas-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.3905583502525253,
+      0.78,
+      0.3335609029040404
+    ],
+    "scale": 2
+  },
+  {
+    "page": 366,
+    "file": "assets/book/nicholas-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.3198517151515152
+    ],
+    "scale": 2
+  },
+  {
+    "page": 368,
+    "file": "assets/book/noyori-asymmetric-hydrogenation-scheme.png",
+    "crop": [
+      0.11,
+      0.4231379734848485,
+      0.78,
+      0.23285514330808077
+    ],
+    "scale": 2
+  },
+  {
+    "page": 368,
+    "file": "assets/book/noyori-asymmetric-hydrogenation-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.35243133838383844
+    ],
+    "scale": 2
+  },
+  {
+    "page": 370,
+    "file": "assets/book/nozaki-hiyama-kishi-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.44278897452020205,
+      0.78,
+      0.1347078038888888
+    ],
+    "scale": 2
+  },
+  {
+    "page": 370,
+    "file": "assets/book/nozaki-hiyama-kishi-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.372082339419192
+    ],
+    "scale": 2
+  },
+  {
+    "page": 372,
+    "file": "assets/book/oppenauer-oxidation-scheme.png",
+    "crop": [
+      0.11,
+      0.5359026922348484,
+      0.78,
+      0.16168578630050512
+    ],
+    "scale": 2
+  },
+  {
+    "page": 372,
+    "file": "assets/book/oppenauer-oxidation-history.png",
+    "crop": [
+      0.11,
+      0.07072236426767675,
+      0.78,
+      0.4651803279671717
+    ],
+    "scale": 2
+  },
+  {
+    "page": 374,
+    "file": "assets/book/overman-rearrangement-scheme.png",
+    "crop": [
+      0.11,
+      0.4436968856060606,
+      0.78,
+      0.31607514532828285
+    ],
+    "scale": 2
+  },
+  {
+    "page": 374,
+    "file": "assets/book/overman-rearrangement-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.3729902505050505
+    ],
+    "scale": 2
+  },
+  {
+    "page": 376,
+    "file": "assets/book/oxy-cope-rearrangement-and-anionic-oxy-cope-rearrangement-scheme.png",
+    "crop": [
+      0.11,
+      0.35399661487373746,
+      0.78,
+      0.18263876012626257
+    ],
+    "scale": 2
+  },
+  {
+    "page": 376,
+    "file": "assets/book/oxy-cope-rearrangement-and-anionic-oxy-cope-rearrangement-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.2832899797727274
+    ],
+    "scale": 2
+  },
+  {
+    "page": 378,
+    "file": "assets/book/paal-knorr-furan-synthesis-scheme.png",
+    "crop": [
+      0.11,
+      0.23386901797979798,
+      0.78,
+      0.3858803721717172
+    ],
+    "scale": 2
+  },
+  {
+    "page": 378,
+    "file": "assets/book/paal-knorr-furan-synthesis-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.16316238287878793
+    ],
+    "scale": 2
+  },
+  {
+    "page": 380,
+    "file": "assets/book/paal-knorr-pyrrole-synthesis-scheme.png",
+    "crop": [
+      0.11,
+      0.3522564815656566,
+      0.78,
+      0.3508990670454545
+    ],
+    "scale": 2
+  },
+  {
+    "page": 380,
+    "file": "assets/book/paal-knorr-pyrrole-synthesis-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.28154984646464654
+    ],
+    "scale": 2
+  },
+  {
+    "page": 382,
+    "file": "assets/book/passerini-multicomponent-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.45229628058080806,
+      0.78,
+      0.30453524972222223
+    ],
+    "scale": 2
+  },
+  {
+    "page": 382,
+    "file": "assets/book/passerini-multicomponent-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.381589645479798
+    ],
+    "scale": 2
+  },
+  {
+    "page": 384,
+    "file": "assets/book/paterno-buchi-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.3905585957323233,
+      0.78,
+      0.2550759648737373
+    ],
+    "scale": 2
+  },
+  {
+    "page": 384,
+    "file": "assets/book/paterno-buchi-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.31985196063131327
+    ],
+    "scale": 2
+  },
+  {
+    "page": 386,
+    "file": "assets/book/pauson-khand-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.4171793623737373,
+      0.78,
+      0.29077931818181824
+    ],
+    "scale": 2
+  },
+  {
+    "page": 386,
+    "file": "assets/book/pauson-khand-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07072236426767675,
+      0.78,
+      0.34645699810606057
+    ],
+    "scale": 2
+  },
+  {
+    "page": 388,
+    "file": "assets/book/payne-rearrangement-scheme.png",
+    "crop": [
+      0.11,
+      0.3274582260101012,
+      0.78,
+      0.339225510732323
+    ],
+    "scale": 2
+  },
+  {
+    "page": 388,
+    "file": "assets/book/payne-rearrangement-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.25675159090909117
+    ],
+    "scale": 2
+  },
+  {
+    "page": 390,
+    "file": "assets/book/perkin-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.385670367550505,
+      0.78,
+      0.39242881868686874
+    ],
+    "scale": 2
+  },
+  {
+    "page": 390,
+    "file": "assets/book/perkin-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.31496373244949494
+    ],
+    "scale": 2
+  },
+  {
+    "page": 392,
+    "file": "assets/book/petasis-boronic-acid-mannich-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.36618466338383837,
+      0.78,
+      0.29102380757575763
+    ],
+    "scale": 2
+  },
+  {
+    "page": 392,
+    "file": "assets/book/petasis-boronic-acid-mannich-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.2954780282828283
+    ],
+    "scale": 2
+  },
+  {
+    "page": 394,
+    "file": "assets/book/petasis-ferrier-rearrangement-scheme.png",
+    "crop": [
+      0.11,
+      0.3914668351010101,
+      0.78,
+      0.22880224191919185
+    ],
+    "scale": 2
+  },
+  {
+    "page": 394,
+    "file": "assets/book/petasis-ferrier-rearrangement-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.32076020000000005
+    ],
+    "scale": 2
+  },
+  {
+    "page": 396,
+    "file": "assets/book/peterson-olefination-scheme.png",
+    "crop": [
+      0.11,
+      0.430374420959596,
+      0.78,
+      0.24976051969696966
+    ],
+    "scale": 2
+  },
+  {
+    "page": 396,
+    "file": "assets/book/peterson-olefination-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.35966778585858594
+    ],
+    "scale": 2
+  },
+  {
+    "page": 398,
+    "file": "assets/book/pfitzner-moffatt-oxidation-scheme.png",
+    "crop": [
+      0.11,
+      0.4188991098484848,
+      0.78,
+      0.19167156313131317
+    ],
+    "scale": 2
+  },
+  {
+    "page": 398,
+    "file": "assets/book/pfitzner-moffatt-oxidation-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.3481924747474747
+    ],
+    "scale": 2
+  },
+  {
+    "page": 400,
+    "file": "assets/book/pictet-spengler-tetrahydroisoquinoline-synthesis-scheme.png",
+    "crop": [
+      0.11,
+      0.3139563716414143,
+      0.78,
+      0.32424321547979773
+    ],
+    "scale": 2
+  },
+  {
+    "page": 400,
+    "file": "assets/book/pictet-spengler-tetrahydroisoquinoline-synthesis-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.24324973654040427
+    ],
+    "scale": 2
+  },
+  {
+    "page": 404,
+    "file": "assets/book/pinner-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.4175804936616164,
+      0.78,
+      0.37641179926767643
+    ],
+    "scale": 2
+  },
+  {
+    "page": 404,
+    "file": "assets/book/pinner-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.3468738585606064
+    ],
+    "scale": 2
+  },
+  {
+    "page": 406,
+    "file": "assets/book/pinnick-oxidation-scheme.png",
+    "crop": [
+      0.11,
+      0.48457252702020204,
+      0.78,
+      0.3203956497474747
+    ],
+    "scale": 2
+  },
+  {
+    "page": 406,
+    "file": "assets/book/pinnick-oxidation-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.413865891919192
+    ],
+    "scale": 2
+  },
+  {
+    "page": 408,
+    "file": "assets/book/polonovski-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.44710347957070706,
+      0.78,
+      0.2787626769949495
+    ],
+    "scale": 2
+  },
+  {
+    "page": 408,
+    "file": "assets/book/polonovski-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.376396844469697
+    ],
+    "scale": 2
+  },
+  {
+    "page": 410,
+    "file": "assets/book/pomeranz-fritsch-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.4049709280303031,
+      0.78,
+      0.34663717108585856
+    ],
+    "scale": 2
+  },
+  {
+    "page": 410,
+    "file": "assets/book/pomeranz-fritsch-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.33426429292929305
+    ],
+    "scale": 2
+  },
+  {
+    "page": 412,
+    "file": "assets/book/prevost-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.27439577651515157,
+      0.78,
+      0.26790883648989894
+    ],
+    "scale": 2
+  },
+  {
+    "page": 412,
+    "file": "assets/book/prevost-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.20368914141414152
+    ],
+    "scale": 2
+  },
+  {
+    "page": 414,
+    "file": "assets/book/prilezhaev-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.5881247068434343,
+      0.78,
+      0.12464657282828284
+    ],
+    "scale": 2
+  },
+  {
+    "page": 414,
+    "file": "assets/book/prilezhaev-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.5174180717424243
+    ],
+    "scale": 2
+  },
+  {
+    "page": 416,
+    "file": "assets/book/prins-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.3274582512626264,
+      0.78,
+      0.30583259911616145
+    ],
+    "scale": 2
+  },
+  {
+    "page": 416,
+    "file": "assets/book/prins-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.25675161616161635
+    ],
+    "scale": 2
+  },
+  {
+    "page": 418,
+    "file": "assets/book/prins-pinacol-rearrangement-scheme.png",
+    "crop": [
+      0.11,
+      0.3914665643686869,
+      0.78,
+      0.4007851445959596
+    ],
+    "scale": 2
+  },
+  {
+    "page": 418,
+    "file": "assets/book/prins-pinacol-rearrangement-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.3207599292676768
+    ],
+    "scale": 2
+  },
+  {
+    "page": 420,
+    "file": "assets/book/pummerer-rearrangement-scheme.png",
+    "crop": [
+      0.11,
+      0.46352709255050506,
+      0.78,
+      0.24895919406565659
+    ],
+    "scale": 2
+  },
+  {
+    "page": 420,
+    "file": "assets/book/pummerer-rearrangement-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.392820457449495
+    ],
+    "scale": 2
+  },
+  {
+    "page": 422,
+    "file": "assets/book/quasi-favorskii-rearrangement-scheme.png",
+    "crop": [
+      0.11,
+      0.37132960265151504,
+      0.78,
+      0.23927032032828288
+    ],
+    "scale": 2
+  },
+  {
+    "page": 422,
+    "file": "assets/book/quasi-favorskii-rearrangement-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.300622967550505
+    ],
+    "scale": 2
+  },
+  {
+    "page": 424,
+    "file": "assets/book/ramberg-backlund-rearrangement-scheme.png",
+    "crop": [
+      0.11,
+      0.3152712310606063,
+      0.78,
+      0.3539928333333331
+    ],
+    "scale": 2
+  },
+  {
+    "page": 424,
+    "file": "assets/book/ramberg-backlund-rearrangement-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.24456459595959623
+    ],
+    "scale": 2
+  },
+  {
+    "page": 426,
+    "file": "assets/book/reformatsky-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.5245397896464647,
+      0.78,
+      0.20588612512626248
+    ],
+    "scale": 2
+  },
+  {
+    "page": 426,
+    "file": "assets/book/reformatsky-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.4538331545454547
+    ],
+    "scale": 2
+  },
+  {
+    "page": 428,
+    "file": "assets/book/regitz-diazo-transfer-scheme.png",
+    "crop": [
+      0.11,
+      0.3704238230050505,
+      0.78,
+      0.350237319040404
+    ],
+    "scale": 2
+  },
+  {
+    "page": 428,
+    "file": "assets/book/regitz-diazo-transfer-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.29971718790404045
+    ],
+    "scale": 2
+  },
+  {
+    "page": 430,
+    "file": "assets/book/reimer-tiemann-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.4049710795454545,
+      0.78,
+      0.251345308080808
+    ],
+    "scale": 2
+  },
+  {
+    "page": 430,
+    "file": "assets/book/reimer-tiemann-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.3342644444444445
+    ],
+    "scale": 2
+  },
+  {
+    "page": 436,
+    "file": "assets/book/robinson-annulation-scheme.png",
+    "crop": [
+      0.11,
+      0.3553142179040404,
+      0.78,
+      0.2687558313383839
+    ],
+    "scale": 2
+  },
+  {
+    "page": 436,
+    "file": "assets/book/robinson-annulation-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.28460758280303033
+    ],
+    "scale": 2
+  },
+  {
+    "page": 438,
+    "file": "assets/book/roush-asymmetric-allylation-scheme.png",
+    "crop": [
+      0.11,
+      0.39055892401515147,
+      0.78,
+      0.18733675654040405
+    ],
+    "scale": 2
+  },
+  {
+    "page": 438,
+    "file": "assets/book/roush-asymmetric-allylation-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.3198522889141414
+    ],
+    "scale": 2
+  },
+  {
+    "page": 440,
+    "file": "assets/book/rubottom-oxidation-scheme.png",
+    "crop": [
+      0.11,
+      0.4269681078282829,
+      0.78,
+      0.33108338080808075
+    ],
+    "scale": 2
+  },
+  {
+    "page": 440,
+    "file": "assets/book/rubottom-oxidation-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.3562614727272728
+    ],
+    "scale": 2
+  },
+  {
+    "page": 442,
+    "file": "assets/book/saegusa-oxidation-scheme.png",
+    "crop": [
+      0.11,
+      0.40754426840909086,
+      0.78,
+      0.2725406798232324
+    ],
+    "scale": 2
+  },
+  {
+    "page": 442,
+    "file": "assets/book/saegusa-oxidation-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.3368376333080808
+    ],
+    "scale": 2
+  },
+  {
+    "page": 444,
+    "file": "assets/book/sakurai-allylation-scheme.png",
+    "crop": [
+      0.11,
+      0.37920463108585856,
+      0.78,
+      0.1536521605808081
+    ],
+    "scale": 2
+  },
+  {
+    "page": 444,
+    "file": "assets/book/sakurai-allylation-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.3084979959848485
+    ],
+    "scale": 2
+  },
+  {
+    "page": 448,
+    "file": "assets/book/schmidt-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.5250438825757575,
+      0.78,
+      0.2231842424242425
+    ],
+    "scale": 2
+  },
+  {
+    "page": 448,
+    "file": "assets/book/schmidt-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07072236426767675,
+      0.78,
+      0.45432151830808076
+    ],
+    "scale": 2
+  },
+  {
+    "page": 450,
+    "file": "assets/book/schotten-baumann-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.45671703219697,
+      0.78,
+      0.2884746344696967
+    ],
+    "scale": 2
+  },
+  {
+    "page": 450,
+    "file": "assets/book/schotten-baumann-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.38601039709595997
+    ],
+    "scale": 2
+  },
+  {
+    "page": 452,
+    "file": "assets/book/schwartz-hydrozirconation-scheme.png",
+    "crop": [
+      0.11,
+      0.3269761009090909,
+      0.78,
+      0.30934487446969694
+    ],
+    "scale": 2
+  },
+  {
+    "page": 452,
+    "file": "assets/book/schwartz-hydrozirconation-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.25626946580808085
+    ],
+    "scale": 2
+  },
+  {
+    "page": 454,
+    "file": "assets/book/seyferth-gilbert-homologation-scheme.png",
+    "crop": [
+      0.11,
+      0.3931299359848486,
+      0.78,
+      0.29519394343434335
+    ],
+    "scale": 2
+  },
+  {
+    "page": 454,
+    "file": "assets/book/seyferth-gilbert-homologation-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.3224233008838385
+    ],
+    "scale": 2
+  },
+  {
+    "page": 456,
+    "file": "assets/book/sharpless-asymmetric-aminohydroxylation-scheme.png",
+    "crop": [
+      0.11,
+      0.4588668048232323,
+      0.78,
+      0.14234895717171714
+    ],
+    "scale": 2
+  },
+  {
+    "page": 456,
+    "file": "assets/book/sharpless-asymmetric-aminohydroxylation-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.3881601697222222
+    ],
+    "scale": 2
+  },
+  {
+    "page": 458,
+    "file": "assets/book/sharpless-asymmetric-dihydroxylation-scheme.png",
+    "crop": [
+      0.11,
+      0.4192475452272728,
+      0.78,
+      0.2651577369696969
+    ],
+    "scale": 2
+  },
+  {
+    "page": 458,
+    "file": "assets/book/sharpless-asymmetric-dihydroxylation-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.34854091012626276
+    ],
+    "scale": 2
+  },
+  {
+    "page": 460,
+    "file": "assets/book/sharpless-asymmetric-epoxidation-scheme.png",
+    "crop": [
+      0.11,
+      0.4967697367424242,
+      0.78,
+      0.1782617973484849
+    ],
+    "scale": 2
+  },
+  {
+    "page": 460,
+    "file": "assets/book/sharpless-asymmetric-epoxidation-history.png",
+    "crop": [
+      0.11,
+      0.07072236426767675,
+      0.78,
+      0.42604737247474744
+    ],
+    "scale": 2
+  },
+  {
+    "page": 462,
+    "file": "assets/book/shi-asymmetric-epoxidation-scheme.png",
+    "crop": [
+      0.11,
+      0.3796995735479798,
+      0.78,
+      0.21925910700757578
+    ],
+    "scale": 2
+  },
+  {
+    "page": 462,
+    "file": "assets/book/shi-asymmetric-epoxidation-history.png",
+    "crop": [
+      0.11,
+      0.07072236426767675,
+      0.78,
+      0.30897720928030303
+    ],
+    "scale": 2
+  },
+  {
+    "page": 464,
+    "file": "assets/book/simmons-smith-cyclopropanation-scheme.png",
+    "crop": [
+      0.11,
+      0.5228745371212121,
+      0.78,
+      0.28249236123737376
+    ],
+    "scale": 2
+  },
+  {
+    "page": 464,
+    "file": "assets/book/simmons-smith-cyclopropanation-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.4521679020202021
+    ],
+    "scale": 2
+  },
+  {
+    "page": 466,
+    "file": "assets/book/skraup-and-doebner-miller-quinoline-synthesis-scheme.png",
+    "crop": [
+      0.11,
+      0.3679712805808081,
+      0.78,
+      0.22241998646464645
+    ],
+    "scale": 2
+  },
+  {
+    "page": 466,
+    "file": "assets/book/skraup-and-doebner-miller-quinoline-synthesis-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.29726464547979803
+    ],
+    "scale": 2
+  },
+  {
+    "page": 468,
+    "file": "assets/book/smiles-rearrangement-scheme.png",
+    "crop": [
+      0.11,
+      0.4558838805555555,
+      0.78,
+      0.3267743056818182
+    ],
+    "scale": 2
+  },
+  {
+    "page": 468,
+    "file": "assets/book/smiles-rearrangement-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.38517724545454546
+    ],
+    "scale": 2
+  },
+  {
+    "page": 470,
+    "file": "assets/book/smith-tietze-multicomponent-dithiane-linchpin-coupling-scheme.png",
+    "crop": [
+      0.11,
+      0.3918752714646466,
+      0.78,
+      0.2728490763888888
+    ],
+    "scale": 2
+  },
+  {
+    "page": 470,
+    "file": "assets/book/smith-tietze-multicomponent-dithiane-linchpin-coupling-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.3211686363636366
+    ],
+    "scale": 2
+  },
+  {
+    "page": 472,
+    "file": "assets/book/snieckus-directed-ortho-metalation-scheme.png",
+    "crop": [
+      0.11,
+      0.5380440593434344,
+      0.78,
+      0.2559685460858585
+    ],
+    "scale": 2
+  },
+  {
+    "page": 472,
+    "file": "assets/book/snieckus-directed-ortho-metalation-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.4673374242424243
+    ],
+    "scale": 2
+  },
+  {
+    "page": 474,
+    "file": "assets/book/sommelet-hauser-rearrangement-scheme.png",
+    "crop": [
+      0.11,
+      0.5097796310858586,
+      0.78,
+      0.33154282282828285
+    ],
+    "scale": 2
+  },
+  {
+    "page": 474,
+    "file": "assets/book/sommelet-hauser-rearrangement-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.4390729959848485
+    ],
+    "scale": 2
+  },
+  {
+    "page": 476,
+    "file": "assets/book/sonogashira-cross-coupling-scheme.png",
+    "crop": [
+      0.11,
+      0.469737956439394,
+      0.78,
+      0.11754977525252519
+    ],
+    "scale": 2
+  },
+  {
+    "page": 476,
+    "file": "assets/book/sonogashira-cross-coupling-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.3990313213383839
+    ],
+    "scale": 2
+  },
+  {
+    "page": 478,
+    "file": "assets/book/staudinger-ketene-cycloaddition-scheme.png",
+    "crop": [
+      0.11,
+      0.5262808502525254,
+      0.78,
+      0.25123011376262616
+    ],
+    "scale": 2
+  },
+  {
+    "page": 478,
+    "file": "assets/book/staudinger-ketene-cycloaddition-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.4555742151515153
+    ],
+    "scale": 2
+  },
+  {
+    "page": 480,
+    "file": "assets/book/staudinger-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.35142302901515166,
+      0.78,
+      0.2788597784343432
+    ],
+    "scale": 2
+  },
+  {
+    "page": 480,
+    "file": "assets/book/staudinger-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.2807163939141416
+    ],
+    "scale": 2
+  },
+  {
+    "page": 482,
+    "file": "assets/book/stephen-aldehyde-synthesis-stephen-reduction-scheme.png",
+    "crop": [
+      0.11,
+      0.4049845301767676,
+      0.78,
+      0.2535328732323232
+    ],
+    "scale": 2
+  },
+  {
+    "page": 482,
+    "file": "assets/book/stephen-aldehyde-synthesis-stephen-reduction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.33427789507575756
+    ],
+    "scale": 2
+  },
+  {
+    "page": 484,
+    "file": "assets/book/stetter-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.3687577946969699,
+      0.78,
+      0.3195079672979796
+    ],
+    "scale": 2
+  },
+  {
+    "page": 484,
+    "file": "assets/book/stetter-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.29805115959595985
+    ],
+    "scale": 2
+  },
+  {
+    "page": 486,
+    "file": "assets/book/stevens-rearrangement-scheme.png",
+    "crop": [
+      0.11,
+      0.41758143810606063,
+      0.78,
+      0.2554694248989898
+    ],
+    "scale": 2
+  },
+  {
+    "page": 486,
+    "file": "assets/book/stevens-rearrangement-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.3468748030050506
+    ],
+    "scale": 2
+  },
+  {
+    "page": 488,
+    "file": "assets/book/stille-carbonylative-cross-coupling-scheme.png",
+    "crop": [
+      0.11,
+      0.32530848356060604,
+      0.78,
+      0.15585386934343437
+    ],
+    "scale": 2
+  },
+  {
+    "page": 488,
+    "file": "assets/book/stille-carbonylative-cross-coupling-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.254601848459596
+    ],
+    "scale": 2
+  },
+  {
+    "page": 490,
+    "file": "assets/book/stille-cross-coupling-migita-kosugi-stille-coupling-scheme.png",
+    "crop": [
+      0.11,
+      0.3789767916414142,
+      0.78,
+      0.12239629358585846
+    ],
+    "scale": 2
+  },
+  {
+    "page": 490,
+    "file": "assets/book/stille-cross-coupling-migita-kosugi-stille-coupling-history.png",
+    "crop": [
+      0.11,
+      0.08524066340909087,
+      0.78,
+      0.2937361282323233
+    ],
+    "scale": 2
+  },
+  {
+    "page": 492,
+    "file": "assets/book/stille-kelly-coupling-scheme.png",
+    "crop": [
+      0.11,
+      0.29969185340909077,
+      0.78,
+      0.2638273176767677
+    ],
+    "scale": 2
+  },
+  {
+    "page": 492,
+    "file": "assets/book/stille-kelly-coupling-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.22898521830808072
+    ],
+    "scale": 2
+  },
+  {
+    "page": 494,
+    "file": "assets/book/stobbe-condensation-scheme.png",
+    "crop": [
+      0.11,
+      0.38309606757575754,
+      0.78,
+      0.2518042903787878
+    ],
+    "scale": 2
+  },
+  {
+    "page": 494,
+    "file": "assets/book/stobbe-condensation-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.3123894324747475
+    ],
+    "scale": 2
+  },
+  {
+    "page": 496,
+    "file": "assets/book/stork-enamine-synthesis-scheme.png",
+    "crop": [
+      0.11,
+      0.39230951104797995,
+      0.78,
+      0.3638664674873735
+    ],
+    "scale": 2
+  },
+  {
+    "page": 496,
+    "file": "assets/book/stork-enamine-synthesis-history.png",
+    "crop": [
+      0.11,
+      0.07072236426767675,
+      0.78,
+      0.3215871467803032
+    ],
+    "scale": 2
+  },
+  {
+    "page": 498,
+    "file": "assets/book/strecker-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.3851845553282828,
+      0.78,
+      0.33896087838383837
+    ],
+    "scale": 2
+  },
+  {
+    "page": 498,
+    "file": "assets/book/strecker-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.3144779202272727
+    ],
+    "scale": 2
+  },
+  {
+    "page": 504,
+    "file": "assets/book/takai-utimoto-olefination-takai-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.5254555972222221,
+      0.78,
+      0.20536280555555564
+    ],
+    "scale": 2
+  },
+  {
+    "page": 504,
+    "file": "assets/book/takai-utimoto-olefination-takai-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07072236426767675,
+      0.78,
+      0.4547332329545454
+    ],
+    "scale": 2
+  },
+  {
+    "page": 506,
+    "file": "assets/book/tebbe-olefination-petasis-tebbe-olefination-scheme.png",
+    "crop": [
+      0.11,
+      0.3657607260101009,
+      0.78,
+      0.38283445517676784
+    ],
+    "scale": 2
+  },
+  {
+    "page": 506,
+    "file": "assets/book/tebbe-olefination-petasis-tebbe-olefination-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.29505409090909085
+    ],
+    "scale": 2
+  },
+  {
+    "page": 508,
+    "file": "assets/book/tishchenko-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.3927840845959596,
+      0.78,
+      0.3077443036616161
+    ],
+    "scale": 2
+  },
+  {
+    "page": 508,
+    "file": "assets/book/tishchenko-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.32207744949494954
+    ],
+    "scale": 2
+  },
+  {
+    "page": 510,
+    "file": "assets/book/tsuji-trost-reaction-allylation-scheme.png",
+    "crop": [
+      0.11,
+      0.4100441453282828,
+      0.78,
+      0.23954106111111106
+    ],
+    "scale": 2
+  },
+  {
+    "page": 510,
+    "file": "assets/book/tsuji-trost-reaction-allylation-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.33933751022727277
+    ],
+    "scale": 2
+  },
+  {
+    "page": 512,
+    "file": "assets/book/tsuji-wilkinson-decarbonylation-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.35578570189393943,
+      0.78,
+      0.3721445803030303
+    ],
+    "scale": 2
+  },
+  {
+    "page": 512,
+    "file": "assets/book/tsuji-wilkinson-decarbonylation-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.2850790667929294
+    ],
+    "scale": 2
+  },
+  {
+    "page": 514,
+    "file": "assets/book/ugi-multicomponent-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.4053192340909091,
+      0.78,
+      0.34978579558080813
+    ],
+    "scale": 2
+  },
+  {
+    "page": 514,
+    "file": "assets/book/ugi-multicomponent-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.33461259898989903
+    ],
+    "scale": 2
+  },
+  {
+    "page": 516,
+    "file": "assets/book/ullmann-biaryl-ether-and-biaryl-amine-synthesis-condensation-scheme.png",
+    "crop": [
+      0.11,
+      0.49716869876262626,
+      0.78,
+      0.27413519454545454
+    ],
+    "scale": 2
+  },
+  {
+    "page": 516,
+    "file": "assets/book/ullmann-biaryl-ether-and-biaryl-amine-synthesis-condensation-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.4264620636616162
+    ],
+    "scale": 2
+  },
+  {
+    "page": 518,
+    "file": "assets/book/ullmann-reaction-coupling-biaryl-synthesis-scheme.png",
+    "crop": [
+      0.11,
+      0.4719613138636364,
+      0.78,
+      0.2555904329797979
+    ],
+    "scale": 2
+  },
+  {
+    "page": 518,
+    "file": "assets/book/ullmann-reaction-coupling-biaryl-synthesis-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.4012546787626263
+    ],
+    "scale": 2
+  },
+  {
+    "page": 520,
+    "file": "assets/book/vilsmeier-haack-formylation-scheme.png",
+    "crop": [
+      0.11,
+      0.3922989532575758,
+      0.78,
+      0.339567440050505
+    ],
+    "scale": 2
+  },
+  {
+    "page": 520,
+    "file": "assets/book/vilsmeier-haack-formylation-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.32159231815656575
+    ],
+    "scale": 2
+  },
+  {
+    "page": 522,
+    "file": "assets/book/vinylcyclopropane-cyclopentene-rearrangement-scheme.png",
+    "crop": [
+      0.11,
+      0.44370641729797977,
+      0.78,
+      0.25569872790404047
+    ],
+    "scale": 2
+  },
+  {
+    "page": 522,
+    "file": "assets/book/vinylcyclopropane-cyclopentene-rearrangement-history.png",
+    "crop": [
+      0.11,
+      0.07072236426767675,
+      0.78,
+      0.372984053030303
+    ],
+    "scale": 2
+  },
+  {
+    "page": 524,
+    "file": "assets/book/von-pechmann-reaction-scheme.png",
+    "crop": [
+      0.11,
+      0.4192486009090911,
+      0.78,
+      0.30684136184343414
+    ],
+    "scale": 2
+  },
+  {
+    "page": 524,
+    "file": "assets/book/von-pechmann-reaction-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.34854196580808106
+    ],
+    "scale": 2
+  },
+  {
+    "page": 526,
+    "file": "assets/book/wacker-oxidation-scheme.png",
+    "crop": [
+      0.11,
+      0.3409023432070706,
+      0.78,
+      0.2816990608333334
+    ],
+    "scale": 2
+  },
+  {
+    "page": 526,
+    "file": "assets/book/wacker-oxidation-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.27019570810606053
+    ],
+    "scale": 2
+  },
+  {
+    "page": 528,
+    "file": "assets/book/wagner-meerwein-rearrangement-scheme.png",
+    "crop": [
+      0.11,
+      0.41889787247474786,
+      0.78,
+      0.3524117986111107
+    ],
+    "scale": 2
+  },
+  {
+    "page": 528,
+    "file": "assets/book/wagner-meerwein-rearrangement-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.3481912373737378
+    ],
+    "scale": 2
+  },
+  {
+    "page": 530,
+    "file": "assets/book/weinreb-ketone-synthesis-scheme.png",
+    "crop": [
+      0.11,
+      0.4450133623737377,
+      0.78,
+      0.3057070410353532
+    ],
+    "scale": 2
+  },
+  {
+    "page": 530,
+    "file": "assets/book/weinreb-ketone-synthesis-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.3743067272727276
+    ],
+    "scale": 2
+  },
+  {
+    "page": 532,
+    "file": "assets/book/wharton-fragmentation-scheme.png",
+    "crop": [
+      0.11,
+      0.4036536785353536,
+      0.78,
+      0.38120548749999994
+    ],
+    "scale": 2
+  },
+  {
+    "page": 532,
+    "file": "assets/book/wharton-fragmentation-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.33294704343434356
+    ],
+    "scale": 2
+  },
+  {
+    "page": 534,
+    "file": "assets/book/wharton-olefin-synthesis-wharton-transposition-scheme.png",
+    "crop": [
+      0.11,
+      0.35399711992424243,
+      0.78,
+      0.3621303541919192
+    ],
+    "scale": 2
+  },
+  {
+    "page": 534,
+    "file": "assets/book/wharton-olefin-synthesis-wharton-transposition-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.2832904848232324
+    ],
+    "scale": 2
+  },
+  {
+    "page": 540,
+    "file": "assets/book/wittig-reaction-schlosser-modification-scheme.png",
+    "crop": [
+      0.11,
+      0.3269855839646465,
+      0.78,
+      0.18280504103535344
+    ],
+    "scale": 2
+  },
+  {
+    "page": 540,
+    "file": "assets/book/wittig-reaction-schlosser-modification-history.png",
+    "crop": [
+      0.11,
+      0.07072236426767675,
+      0.78,
+      0.25626321969696975
+    ],
+    "scale": 2
+  },
+  {
+    "page": 542,
+    "file": "assets/book/wittig-1-2-and-2-3-rearrangement-scheme.png",
+    "crop": [
+      0.11,
+      0.49760130334595953,
+      0.78,
+      0.26758225094696975
+    ],
+    "scale": 2
+  },
+  {
+    "page": 542,
+    "file": "assets/book/wittig-1-2-and-2-3-rearrangement-history.png",
+    "crop": [
+      0.11,
+      0.07072236426767675,
+      0.78,
+      0.4268789390782828
+    ],
+    "scale": 2
+  },
+  {
+    "page": 544,
+    "file": "assets/book/wohl-ziegler-bromination-scheme.png",
+    "crop": [
+      0.11,
+      0.41667379775252533,
+      0.78,
+      0.22335834492424234
+    ],
+    "scale": 2
+  },
+  {
+    "page": 544,
+    "file": "assets/book/wohl-ziegler-bromination-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.3459671626515153
+    ],
+    "scale": 2
+  },
+  {
+    "page": 546,
+    "file": "assets/book/wolff-rearrangement-scheme.png",
+    "crop": [
+      0.11,
+      0.5436132390151516,
+      0.78,
+      0.22653973699494945
+    ],
+    "scale": 2
+  },
+  {
+    "page": 546,
+    "file": "assets/book/wolff-rearrangement-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.4729066039141415
+    ],
+    "scale": 2
+  },
+  {
+    "page": 550,
+    "file": "assets/book/wurtz-coupling-scheme.png",
+    "crop": [
+      0.11,
+      0.44370641729797977,
+      0.78,
+      0.2727300410353536
+    ],
+    "scale": 2
+  },
+  {
+    "page": 550,
+    "file": "assets/book/wurtz-coupling-history.png",
+    "crop": [
+      0.11,
+      0.07072236426767675,
+      0.78,
+      0.372984053030303
+    ],
+    "scale": 2
+  },
+  {
+    "page": 552,
+    "file": "assets/book/yamaguchi-macrolactonization-scheme.png",
+    "crop": [
+      0.11,
+      0.3653507461868688,
+      0.78,
+      0.2936444495202022
+    ],
+    "scale": 2
+  },
+  {
+    "page": 552,
+    "file": "assets/book/yamaguchi-macrolactonization-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.29464411108585875
+    ],
+    "scale": 2
+  },
+  {
+    "page": 432,
+    "file": "assets/book/riley-selenium-dioxide-oxidation-scheme.png",
+    "crop": [
+      0.11,
+      0.4087249633585859,
+      0.78,
+      0.3285102373989899
+    ],
+    "scale": 2
+  },
+  {
+    "page": 432,
+    "file": "assets/book/riley-selenium-dioxide-oxidation-history.png",
+    "crop": [
+      0.11,
+      0.07070663510101005,
+      0.78,
+      0.33801832825757583
+    ],
+    "scale": 2
+  }
+]

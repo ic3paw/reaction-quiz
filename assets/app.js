@@ -57,8 +57,9 @@ const main = document.querySelector('main');
 const quizDialog = document.querySelector('#quiz-dialog');
 const reactionDialog = document.querySelector('#reaction-dialog');
 let detailReactionId = null;
-let detailTab = 'outline';
-const detailTabs = {outline:'General outline', importance:'Importance', mechanism:'Mechanism', applications:'Applications'};
+let detailTab = 'reaction';
+const detailTabs = {reaction:'Reaction & conditions', outline:'Outline / history', mechanism:'Mechanism', applications:'Synthetic applications'};
+const availableTabs = (tabs, r) => Object.entries(tabs).filter(([key]) => key !== 'applications' || bookReactions[r.id]?.applications?.length);
 const categoryFor = id => categories.find(c=>c.id===id);
 const categoryLabel = r => r.categories.map(id => categoryFor(id).short).join(' · ');
 const colorStyle = c => `--category-color:${c.color};--category-light:${c.light}`;
@@ -164,8 +165,11 @@ function practice() {
 }
 
 const flashcardDialog = document.querySelector('#flashcard-dialog');
-const cardModes = {outline:'General outline', name:'Name', mechanism:'Mechanism'};
-const cardViews = {outline:'General outline', importance:'Importance', name:'Name', mechanism:'Mechanism'};
+const cardModes = {reaction:'Reaction & conditions', name:'Name', mechanism:'Mechanism', outline:'Outline / history'};
+const cardViews = {reaction:'Reaction & conditions', outline:'Outline / history', name:'Name', mechanism:'Mechanism', applications:'Synthetic applications'};
+// The former "General outline" recall mode asked for the scheme and conditions.
+if (state.flashcardViewVersion !== 2 && state.flashcardMode === 'outline') state.flashcardMode = 'reaction';
+state.flashcardViewVersion = 2;
 if (!Object.hasOwn(cardModes, state.flashcardMode)) state.flashcardMode = 'name';
 let deck = null;
 function cardModeOptions() {
@@ -179,7 +183,7 @@ function flashcards() {
     <label class="flashcard-direction" for="flashcard-mode">Recall
       <select id="flashcard-mode" data-card-mode>${cardModeOptions()}</select>
     </label>
-    <p class="muted">Name: identify a transformation. Mechanism: recall the steps from a name. General outline: recall the transformation and conditions from a name.</p>
+    <p class="muted">Name: identify the reaction from its book figure and reagents. Reaction & conditions, Mechanism, or Outline / history: recall the selected topic from a name. Flip to explore the answer tabs, including synthetic applications.</p>
     <div class="actions"><button class="button primary" data-flashcards="selected" ${count ? '' : 'disabled'}>Study ${count} cards</button><button class="button secondary" data-flashcards="saved" ${selectedReactions().some(r => state.saved.includes(r.id)) ? '' : 'disabled'}>Study saved cards</button></div>
     <p class="catalog-note">${studied} cards reviewed. Choose one or more appendix categories in the sidebar. Your flashcard reviews are saved separately from quiz accuracy.</p>`;
 }
@@ -200,14 +204,17 @@ function cardAnswer(r, view) {
 
 function renderFlashcard() {
   const r = deck.cards[deck.index];
+  const views = availableTabs(cardViews, r);
+  if (!views.some(([key]) => key === deck.answerView)) deck.answerView = deck.mode;
   flashcardDialog.innerHTML = `<div class="dialog-inner"><div class="dialog-top"><span>${escapeHTML(deck.title)} · ${deck.index+1} / ${deck.cards.length}</span><button class="close-button" data-close="flashcards" aria-label="Close flashcards">×</button></div>
     <div class="quiz-progress"><div style="width:${deck.index/deck.cards.length*100}%"></div></div>
     <label class="flashcard-direction" for="deck-card-mode">Recall<select id="deck-card-mode" data-card-mode>${cardModeOptions()}</select></label>
-    <h2 id="flashcard-title" tabindex="-1">${deck.revealed ? cardViews[deck.answerView] : deck.mode==='name' ? 'Name the reaction' : deck.mode==='mechanism' ? 'Recall the mechanism' : 'Recall the general outline'}</h2>
-    ${deck.revealed ? `<div class="reaction-tabs" role="tablist" aria-label="Answer view">${Object.entries(cardViews).map(([value,label]) => `<button role="tab" id="card-tab-${value}" data-card-view="${value}" aria-controls="card-answer" aria-selected="${deck.answerView===value}" tabindex="${deck.answerView===value ? 0 : -1}">${label}</button>`).join('')}</div>` : ''}
+    <h2 id="flashcard-title" tabindex="-1">${deck.revealed ? cardViews[deck.answerView] : deck.mode==='name' ? 'Name the reaction' : `Recall: ${cardModes[deck.mode]}`}</h2>
+    ${deck.revealed ? `<div class="reaction-tabs" role="tablist" aria-label="Answer view">${views.map(([value,label]) => `<button role="tab" id="card-tab-${value}" data-card-view="${value}" aria-controls="card-answer" aria-selected="${deck.answerView===value}" tabindex="${deck.answerView===value ? 0 : -1}">${label}</button>`).join('')}</div>` : ''}
     <div class="flashcard-content" ${deck.revealed ? `id="card-answer" role="tabpanel" tabindex="0" aria-labelledby="card-tab-${deck.answerView}"` : 'aria-live="polite"'}>${deck.revealed
       ? cardAnswer(r, deck.answerView)
-      : `<p class="flashcard-prompt">${escapeHTML(deck.mode==='name' ? r.question : r.name)}</p>`}</div>
+      : deck.mode==='name' ? bookFigure(bookSections[r.id].reaction, '', 'Reaction & conditions', true)
+      : `<p class="flashcard-prompt">${escapeHTML(r.name)}</p>`}</div>
     <div class="flashcard-controls"><button class="button ${deck.revealed ? 'secondary' : 'primary'}" data-card-flip>${deck.revealed ? 'Flip back' : 'Flip card'}</button>${deck.revealed ? `<button class="button secondary" data-card-rate="again">Study again</button><button class="button primary" data-card-rate="known">Got it</button>` : ''}</div>
     <div class="flashcard-navigation"><button class="text-button" data-card-prev ${deck.index ? '' : 'disabled'}>← Previous</button><button class="text-button" data-card-shuffle>Shuffle deck</button><button class="text-button" data-card-next>${deck.index===deck.cards.length-1 ? 'Finish' : 'Next →'}</button></div>
     <p class="catalog-note">Use ← / → to navigate. Space flips the card when a control is not focused.${deck.ratings[r.id] ? ` Your rating: ${deck.ratings[r.id]==='known' ? 'Got it' : 'Study again'}.` : ''}</p></div>`;
@@ -254,7 +261,7 @@ flashcardDialog.addEventListener('keydown', e => {
   if (e.target.closest('select,input,textarea')) return;
   if (e.target.matches('[data-card-view]') && ['ArrowLeft','ArrowRight','Home','End'].includes(e.key)) {
     e.preventDefault();
-    selectCardView(adjacentTab(Object.keys(cardViews), deck.answerView, e.key));
+    selectCardView(adjacentTab(availableTabs(cardViews, deck.cards[deck.index]).map(([key]) => key), deck.answerView, e.key));
     return;
   }
   if (e.key==='ArrowLeft' || e.key==='ArrowRight') { e.preventDefault(); moveCard(e.key==='ArrowLeft' ? -1 : 1); }
@@ -304,23 +311,23 @@ function toggleSave(id) {
   if (reactionDialog.open) showDetail(id, detailTab);
 }
 
-function bookFigure(figure, name, type) {
+function bookFigure(figure, name, type, prompt = false) {
   const v = figure.viewport;
-  const image = `<img src="${figure.image}" alt="${escapeHTML(name)}: ${escapeHTML(figure.caption || type)}" loading="lazy"${v ? ` style="top:${-v.top/(v.bottom-v.top)*100}%"` : ''}>`;
-  return `<figure class="book-figure"><a href="${figure.image}" target="_blank" rel="noopener" aria-label="Open ${escapeHTML(name)} ${type} source figure at full size">${v ? `<div class="book-figure-region" style="aspect-ratio:${v.width}/${v.height*(v.bottom-v.top)}">${image}</div>` : image}</a><figcaption>${escapeHTML(figure.caption || type)} <span>p. ${figure.printedPage} · <a href="${figure.image}" target="_blank" rel="noopener">${v ? 'Full source' : 'Full size'} ↗</a></span></figcaption></figure>`;
+  const caption = prompt ? 'Reaction & conditions' : figure.caption || type;
+  const description = prompt ? 'Book reaction scheme showing reactants, products, reagents and conditions. Identify the named reaction.' : `${name}: ${caption}`;
+  const image = `<img src="${figure.image}" alt="${escapeHTML(description)}" loading="${prompt ? 'eager' : 'lazy'}"${v ? ` style="top:${-v.top/(v.bottom-v.top)*100}%"` : ''}>`;
+  return `<figure class="book-figure"><a href="${figure.image}" target="_blank" rel="noopener" aria-label="${escapeHTML(prompt ? 'Open reaction figure at full size' : `Open ${name} ${type} source figure at full size`)}">${v ? `<div class="book-figure-region" style="aspect-ratio:${v.width}/${v.height*(v.bottom-v.top)}">${image}</div>` : image}</a><figcaption>${escapeHTML(caption)} <span>p. ${figure.printedPage} · <a href="${figure.image}" target="_blank" rel="noopener">${v ? 'Full source' : 'Full size'} ↗</a></span></figcaption></figure>`;
 }
 
 function detailPanel(r, tab) {
   const source = bookReactions[r.id];
   const sections = bookSections[r.id];
-  if (tab === 'outline') {
-    return `<p class="detail-equation">${escapeHTML(r.equation)}</p>
-      ${sections?.outline ? bookFigure(sections.outline, r.name, 'general outline') : ''}
-      ${r.reagents ? `<div class="detail-section"><h3>Reagents & conditions</h3><p>${escapeHTML(r.reagents)}</p></div>` : ''}`;
+  if (tab === 'reaction') {
+    return bookFigure(sections.reaction, r.name, 'reaction & conditions');
   }
-  if (tab === 'importance') {
-    return sections?.importance ? bookFigure(sections.importance, r.name, 'importance')
-      : `<p class="muted">${escapeHTML(sections?.importanceNote || 'A separate importance section is not available for this reaction.')}</p>`;
+  if (tab === 'outline') {
+    return sections?.outline ? bookFigure(sections.outline, r.name, 'outline / history')
+      : `<p>${escapeHTML(r.explanation)}</p><p class="muted">${escapeHTML(sections?.outlineNote || 'A separate outline/history section is not available for this reaction.')}</p>`;
   }
   if (tab === 'mechanism') {
     return `<p class="mechanism-summary">${r.explanation}</p>${source?.mechanism ? bookFigure(source.mechanism, r.name, 'mechanism') : `<p class="muted">${escapeHTML(source?.mechanismNote || 'A mechanism figure for this reaction has not been located in this copy.')}</p>`}`;
@@ -330,15 +337,17 @@ function detailPanel(r, tab) {
     : '<p class="muted">An applications page for this reaction has not been located in this copy.</p>';
 }
 
-function showDetail(id, tab = 'outline') {
+function showDetail(id, tab = 'reaction') {
   const r = reactions.find(r => r.id === id);
   if (!r) return;
+  const tabs = availableTabs(detailTabs, r);
+  if (!tabs.some(([key]) => key === tab)) tab = 'reaction';
   detailReactionId = id;
   detailTab = tab;
   const source = bookReactions[id];
   reactionDialog.innerHTML = `<div class="dialog-inner"><div class="dialog-top"><span>${categoryLabel(r)}</span><button class="close-button" data-close="reaction" aria-label="Close reaction">×</button></div>
     <h2 id="reaction-title">${r.name}</h2>
-    <div class="reaction-tabs" role="tablist" aria-label="Reaction details">${Object.entries(detailTabs).map(([key, label]) => `<button role="tab" id="tab-${key}" aria-controls="reaction-panel" aria-selected="${tab === key}" tabindex="${tab === key ? 0 : -1}" data-detail-tab="${key}">${label}</button>`).join('')}</div>
+    <div class="reaction-tabs" role="tablist" aria-label="Reaction details">${tabs.map(([key, label]) => `<button role="tab" id="tab-${key}" aria-controls="reaction-panel" aria-selected="${tab === key}" tabindex="${tab === key ? 0 : -1}" data-detail-tab="${key}">${label}</button>`).join('')}</div>
     <section id="reaction-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-${tab}">${detailPanel(r, tab)}</section>
     ${source ? `<p class="book-citation">Kürti & Czakó, <cite>Strategic Applications of Named Reactions in Organic Synthesis</cite> (2005), ${source.pages.length === 1 ? 'p.' : 'pp.'} ${source.pages.join('–')}. Figures from your supplied copy.</p>` : ''}
     <div class="detail-section"><h3>Study by category</h3><div class="actions">${r.categories.map(id => `<button class="text-button" data-start="${id}">Quiz: ${categoryFor(id).short}</button>`).join('')}</div><p class="muted">${r.appendixPages.length ? `Appendix 8.3, pp. ${r.appendixPages.join(', ')}.` : r.supplemental ? 'Preserved from your original library; this reaction has no dedicated chapter.' : 'This chapter is not listed in the book’s appendix 8.3 category table.'}</p></div>
@@ -454,7 +463,7 @@ function selectCardView(view) {
 reactionDialog.addEventListener('keydown', e => {
   if (!e.target.matches('[data-detail-tab]') || !['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(e.key)) return;
   e.preventDefault();
-  selectDetailTab(adjacentTab(Object.keys(detailTabs), detailTab, e.key));
+  selectDetailTab(adjacentTab(availableTabs(detailTabs, reactions.find(r => r.id === detailReactionId)).map(([key]) => key), detailTab, e.key));
 });
 document.addEventListener('change', e => {
   if (!e.target.matches('[data-card-mode]')) return;
