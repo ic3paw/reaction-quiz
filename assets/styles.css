@@ -26,6 +26,18 @@ nav { display: flex; flex-wrap: wrap; column-gap: 14px; row-gap: 8px; }
 .content-layout { max-width: 1200px; margin: 52px auto 0; padding: 0 32px; display: grid; grid-template-columns: 245px minmax(0, 1fr); gap: 42px; align-items: start; }
 main { min-width: 0; min-height: 65vh; }
 .category-sidebar { position: sticky; top: 24px; padding-right: 25px; border-right: 1px solid var(--line); }
+.category-sidebar fieldset { max-height: 62vh; overflow-y: auto; scrollbar-width: thin; }
+.category-option small { color: var(--muted); }
+.catalog-note { margin: 22px 0; font-size: 13px; color: var(--muted); line-height: 1.7; }
+.flashcard-direction { display: flex; flex-direction: column; gap: 8px; margin-bottom: 24px; font-size: 14px; }
+.flashcard-direction select { width: min(100%, 360px); }
+#flashcard-dialog { width: min(800px, calc(100% - 32px)); }
+.flashcard-content { padding: 20px 0; min-height: 190px; }
+.flashcard-prompt { font-size: 21px; line-height: 1.7; }
+.flashcard-controls { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin: 24px 0; }
+.flashcard-navigation { display: flex; gap: 16px; justify-content: space-between; border-top: 1px solid var(--line); padding-top: 20px; }
+.flashcard-mechanism { margin: 24px 0; border-top: 1px solid var(--line); padding-top: 16px; }
+.flashcard-mechanism summary { cursor: pointer; font-weight: 600; margin-bottom: 18px; }
 .category-sidebar summary { font-size: 18px; font-weight: 700; cursor: pointer; margin-bottom: 16px; }
 .sidebar-note { font-size: 12px; color: var(--muted); margin: 0 0 20px; }
 .category-sidebar fieldset { padding: 0; margin: 0 0 22px; border: 0; min-width: 0; }

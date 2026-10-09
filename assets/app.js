@@ -21,41 +21,8 @@ const icons = {
 const icon = name => `<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">${icons[name] || icons.flask}</svg>`;
 document.querySelectorAll('[data-icon]').forEach(el => el.innerHTML = icon(el.dataset.icon));
 
-const categories = [
-  {id:'carbon',name:'Carbon–carbon bond formation',short:'C–C bond formation',description:'Build the backbone of organic molecules.',color:'#7c9464',light:'#f0f4e9',icon:'bond'},
-  {id:'oxidation',name:'Oxidation & reduction',short:'Oxidation & reduction',description:'A little give and take. Of electrons.',color:'#ae9865',light:'#f8f4e9',icon:'arrows'},
-  {id:'rearrangement',name:'Rearrangements',short:'Rearrangements',description:'Same atoms. A whole new arrangement.',color:'#9c89af',light:'#f4f0f8',icon:'shuffle'},
-  {id:'substitution',name:'Substitution & elimination',short:'Substitution & elimination',description:'Make a switch. Or make a double bond.',color:'#789ba8',light:'#edf4f6',icon:'arrows'},
-  {id:'pericyclic',name:'Pericyclic reactions',short:'Pericyclic reactions',description:'Follow the electrons around the ring.',color:'#b18a73',light:'#f8f0ea',icon:'ring'},
-  {id:'functional',name:'Functional group transformations',short:'Functional groups',description:'New possibilities, one group at a time.',color:'#8d9b70',light:'#f1f4e9',icon:'flask'},
-];
-// Each prompt describes the transformation without revealing its named reaction.
-const reactions = [
-  ['aldol','Aldol condensation','carbon','An enolate and a carbonyl join to build a new carbon–carbon bond.','An enolate adds to an aldehyde or ketone, giving a β-hydroxy carbonyl that dehydrates to an α,β-unsaturated carbonyl. Which reaction is this?','Dilute base or acid; heat promotes dehydration.','Carbonyl + enolizable carbonyl → α,β-unsaturated carbonyl','The enolate attacks a carbonyl electrophile. Dehydration of the β-hydroxy intermediate extends conjugation.','Foundational'],
-  ['grignard','Grignard reaction','carbon','Organomagnesium reagents turn carbonyl compounds into alcohols.','An organomagnesium halide adds to a ketone in dry ether. Acidic workup gives a tertiary alcohol. Identify the reaction.','1. RMgX, dry ether or THF  2. H₃O⁺','Ketone + RMgX → tertiary alcohol','The carbon bonded to magnesium acts as a nucleophile. Water must be excluded until workup because it destroys the reagent.','Foundational'],
-  ['suzuki','Suzuki–Miyaura coupling','carbon','Connect organic fragments with an organoboron coupling partner.','An aryl halide couples with an arylboronic acid using a palladium catalyst and base. Which named reaction forms the biaryl?','Pd catalyst, base; aryl halide and organoboron reagent.','Ar–X + Ar′–B(OH)₂ → Ar–Ar′','Oxidative addition, transmetalation, and reductive elimination link the two carbon fragments in this palladium-catalyzed coupling.','Intermediate'],
-  ['wittig','Wittig reaction','carbon','Replace a carbonyl oxygen with a carbon–carbon double bond.','An aldehyde reacts with a phosphonium ylide to form an alkene and triphenylphosphine oxide. Name the reaction.','Phosphonium ylide, typically made using a strong base.','R₂C=O + Ph₃P=CHR → R₂C=CHR + Ph₃P=O','The carbonyl and ylide form an oxaphosphetane intermediate. Its fragmentation is driven by formation of the strong phosphorus–oxygen bond.','Foundational'],
-  ['swern','Swern oxidation','oxidation','Oxidize alcohols under mild, anhydrous conditions.','DMSO is activated with oxalyl chloride at low temperature, followed by an alcohol and triethylamine. Which oxidation is used?','DMSO, (COCl)₂, then Et₃N; typically −78 °C initially.','Primary alcohol → aldehyde; secondary alcohol → ketone','Activated DMSO converts the alcohol to an alkoxysulfonium intermediate. Base-induced elimination yields the carbonyl compound.','Intermediate'],
-  ['clemmensen','Clemmensen reduction','oxidation','Reduce aldehyde and ketone carbonyls to methylene groups in acid.','A ketone is converted to a methylene group using zinc amalgam and concentrated hydrochloric acid. Identify the reduction.','Zn(Hg), concentrated HCl.','R–CO–R′ → R–CH₂–R′','This reduction removes the carbonyl oxygen under strongly acidic conditions. Substrates must tolerate acid.','Foundational'],
-  ['wolff','Wolff–Kishner reduction','oxidation','Remove a carbonyl oxygen under strongly basic conditions.','An aldehyde or ketone is treated with hydrazine, then strong base and heat, to replace C=O with CH₂. Name the reaction.','NH₂NH₂, KOH, high-boiling solvent, heat.','R–CO–R′ → R–CH₂–R′ + N₂','The carbonyl forms a hydrazone. Base and heat promote loss of nitrogen, producing the reduced carbon skeleton.','Foundational'],
-  ['birch','Birch reduction','oxidation','Partially reduce an aromatic ring to a nonconjugated diene.','An aromatic ring is treated with sodium or lithium in liquid ammonia and an alcohol proton source to form a 1,4-cyclohexadiene. Name the reduction.','Li or Na, liquid NH₃, alcohol.','Arene → 1,4-cyclohexadiene','Sequential electron transfers and protonations reduce the aromatic ring without fully saturating it. Substituents influence regioselectivity.','Intermediate'],
-  ['beckmann','Beckmann rearrangement','rearrangement','Transform an oxime into an amide or a ring-expanded lactam.','A ketoxime undergoes acid-promoted rearrangement. The group anti to the departing oxime hydroxyl migrates to nitrogen, giving an amide. Which reaction is this?','Acid activation, such as H₂SO₄; ketoxime substrate.','Ketoxime → amide (cyclic ketoxime → lactam)','Migration occurs with the group anti to the leaving group. Cyclic ketoximes give ring-expanded lactams.','Intermediate'],
-  ['pinacol','Pinacol rearrangement','rearrangement','Rearrange a vicinal diol into a carbonyl compound.','A vicinal diol loses water under acidic conditions, followed by a 1,2-shift that produces an aldehyde or ketone. Identify the rearrangement.','Acid, often H₂SO₄.','Vicinal diol → rearranged carbonyl + H₂O','Protonation and loss of water create a carbocation. An adjacent group migrates as the remaining hydroxyl forms a carbonyl.','Intermediate'],
-  ['hofmann','Hofmann rearrangement','rearrangement','Convert a primary amide into an amine with one fewer carbon.','A primary amide reacts with bromine and aqueous sodium hydroxide, yielding a primary amine with one fewer carbon atom. Name the reaction.','Br₂, NaOH, H₂O.','R–CONH₂ → R–NH₂ + CO₂','An N-bromoamide rearranges to an isocyanate. Hydrolysis and decarboxylation remove the original carbonyl carbon.','Intermediate'],
-  ['baeyer','Baeyer–Villiger oxidation','rearrangement','Insert an oxygen beside a ketone carbonyl to form an ester.','A ketone reacts with a peroxyacid to give an ester; a cyclic ketone gives a ring-expanded lactone. Which named reaction occurs?','Peroxyacid, such as mCPBA.','Ketone + peroxyacid → ester','A group migrates to an adjacent oxygen of the peroxide intermediate. This reaction is both an oxidation and a rearrangement.','Intermediate'],
-  ['williamson','Williamson ether synthesis','substitution','Use an alkoxide and an alkyl electrophile to make an ether.','An alkoxide displaces a halide from a primary alkyl halide by an SN2 mechanism, forming an ether. Identify the synthesis.','Alkoxide (RO⁻), preferably a primary alkyl halide or sulfonate.','RO⁻ + R′–X → R–O–R′','The alkoxide attacks by SN2. Primary electrophiles are preferred because steric hindrance favors elimination with secondary or tertiary substrates.','Foundational'],
-  ['sandmeyer','Sandmeyer reaction','substitution','Replace an aromatic diazonium group using copper(I) salts.','An aryl diazonium salt is treated with CuCl, CuBr, or CuCN to replace the diazonium group. Which reaction is this?','Aryl diazonium salt; CuCl, CuBr, or CuCN.','Ar–N₂⁺ → Ar–Cl, Ar–Br, or Ar–CN','Copper(I) mediates replacement of the diazonium group, with nitrogen gas released. This provides access to substituted aromatic compounds.','Intermediate'],
-  ['finkelstein','Finkelstein reaction','substitution','Exchange alkyl chlorides or bromides for iodides.','An alkyl bromide is treated with sodium iodide in acetone. Sodium bromide precipitates as the alkyl iodide forms. Identify the reaction.','NaI in acetone; typically a primary alkyl chloride or bromide.','R–Br + NaI → R–I + NaBr↓','An SN2 halide exchange is driven by precipitation of NaCl or NaBr from acetone. Primary substrates react most readily.','Foundational'],
-  ['chugaev','Chugaev elimination','substitution','Form an alkene by heating a xanthate ester.','An alcohol is converted to a xanthate ester, then heated to form an alkene through a cyclic syn-elimination transition state. Name this elimination.','1. Base, CS₂, then MeI  2. Heat.','Alcohol → xanthate ester → alkene','The xanthate undergoes intramolecular syn elimination through a six-membered cyclic transition state. A suitable β-hydrogen is required.','Advanced'],
-  ['diels','Diels–Alder reaction','pericyclic','Bring a diene and a dienophile together in a six-membered ring.','A conjugated diene and an alkene combine in a concerted [4+2] cycloaddition, producing a cyclohexene. Which reaction is this?','Conjugated diene in an s-cis conformation; dienophile; often heat.','Conjugated diene + alkene → cyclohexene','Six π electrons reorganize in one concerted step, forming two σ bonds and a new π bond. The dienophile’s relative stereochemistry is retained.','Foundational'],
-  ['cope','Cope rearrangement','pericyclic','Reorganize a 1,5-diene through a concerted [3,3] shift.','Heating a 1,5-diene shifts one carbon–carbon σ bond and two π bonds in a concerted [3,3]-sigmatropic rearrangement. Name the reaction.','Heat; 1,5-diene substrate.','1,5-Diene → isomeric 1,5-diene','A six-electron cyclic transition state, often chair-like, reorganizes the carbon framework. The equilibrium favors the more stable product.','Intermediate'],
-  ['claisen','Claisen rearrangement','pericyclic','Turn an allyl vinyl ether into an unsaturated carbonyl compound.','An allyl vinyl ether is heated and undergoes a [3,3]-sigmatropic shift to produce a γ,δ-unsaturated carbonyl compound. Identify the rearrangement.','Heat; allyl vinyl ether substrate.','Allyl vinyl ether → γ,δ-unsaturated carbonyl','This concerted six-electron rearrangement creates a C–C bond. Formation of a stable carbonyl group favors the product.','Intermediate'],
-  ['ene','Alder–ene reaction','pericyclic','Transfer an allylic hydrogen while making a new σ bond.','An alkene with an allylic hydrogen reacts with an enophile in a concerted process that forms a σ bond, shifts a double bond, and transfers hydrogen. Name the reaction.','Alkene bearing an allylic H and an enophile; heat or Lewis acid.','Ene + enophile → new σ bond + shifted alkene','The ene reaction reorganizes six electrons in a cyclic transition state, transferring an allylic hydrogen to the enophile.','Advanced'],
-  ['fischer','Fischer esterification','functional','Join a carboxylic acid and an alcohol to make an ester.','A carboxylic acid and an alcohol are heated with a catalytic strong acid to form an ester and water. Name the reaction.','Alcohol, carboxylic acid, catalytic H₂SO₄; heat.','R–COOH + R′–OH ⇌ R–COOR′ + H₂O','Acid-catalyzed nucleophilic acyl substitution is reversible. Excess alcohol or removal of water shifts the equilibrium toward the ester.','Foundational'],
-  ['gabriel','Gabriel synthesis','functional','Prepare primary amines using a protected nitrogen nucleophile.','Potassium phthalimide alkylates a primary alkyl halide. Cleavage with hydrazine then releases a primary amine. Identify the synthesis.','1. Potassium phthalimide, primary R–X  2. NH₂NH₂.','Primary alkyl halide → primary amine','Phthalimide undergoes SN2 alkylation and prevents overalkylation of nitrogen. Cleavage releases the primary amine.','Intermediate'],
-  ['hell','Hell–Volhard–Zelinsky reaction','functional','Halogenate a carboxylic acid at its α carbon.','A carboxylic acid bearing an α-hydrogen is treated with Br₂ and PBr₃, then water, to give an α-bromo acid. Name the reaction.','Br₂, catalytic PBr₃ (or red phosphorus); then H₂O.','R–CH₂–COOH → R–CHBr–COOH','The acid is converted to an acyl bromide, which enolizes and undergoes α-bromination. Hydrolysis restores the carboxylic acid group.','Intermediate'],
-  ['ritter','Ritter reaction','functional','Combine a carbocation precursor and a nitrile to make an amide.','An alcohol that readily forms a carbocation reacts with a nitrile in strong acid. Hydrolysis gives an N-substituted amide. Name this reaction.','Nitrile, carbocation-forming alcohol or alkene, strong acid; water.','R–OH + R′–CN → R′–CONH–R','The nitrile nitrogen traps a carbocation to form a nitrilium ion. Water then adds, ultimately yielding the amide.','Advanced'],
-].map(([id,name,category,summary,question,reagents,equation,explanation,difficulty])=>({id,name,category,summary,question,reagents,equation,explanation,difficulty}));
+const categories = bookCategories;
+const reactions = reactionCatalog;
 
 const storageKey = 'catalyst-progress-v1';
 let state = {saved:[], attempts:[], sessions:[]};
@@ -64,16 +31,24 @@ try { const raw = JSON.parse(localStorage.getItem(storageKey)); if(raw && Array.
 function persist(){try{localStorage.setItem(storageKey,JSON.stringify(state));}catch{storageAvailable=false;document.querySelector('.local-status').innerHTML='Progress saved for this visit';}}
 if(!storageAvailable) document.querySelector('.local-status').innerHTML='Progress saved for this visit';
 let page = 'dashboard', searchTerm = '', quiz = null;
+// Retain bookmarks and quiz history when upgrading the original six-category app.
+if (state.categoryVersion !== 2) {
+  state.selectedCategories = categories.map(c => c.id);
+  state.categoryVersion = 2;
+}
 state.selectedCategories = Array.isArray(state.selectedCategories)
   ? categories.filter(c => state.selectedCategories.includes(c.id)).map(c => c.id)
   : categories.map(c => c.id);
-const selectedReactions = () => reactions.filter(r => state.selectedCategories.includes(r.category));
+const inCategory = (r, id) => r.categories.includes(id);
+const isSelected = r => r.categories.some(id => state.selectedCategories.includes(id));
+const selectedReactions = () => reactions.filter(isSelected);
 const main = document.querySelector('main');
 const quizDialog = document.querySelector('#quiz-dialog');
 const reactionDialog = document.querySelector('#reaction-dialog');
 let detailReactionId = null;
 let detailTab = 'reaction';
 const categoryFor = id => categories.find(c=>c.id===id);
+const categoryLabel = r => r.categories.map(id => categoryFor(id).short).join(' · ');
 const colorStyle = c => `--category-color:${c.color};--category-light:${c.light}`;
 const escapeHTML = s => String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const dayKey = (date = new Date()) => `${date.getFullYear()}-${String(date.getMonth()+1).padStart(2,'0')}-${String(date.getDate()).padStart(2,'0')}`;
@@ -89,7 +64,7 @@ function heading(title) {
 function statsMarkup() {
   const correct = state.attempts.filter(a => a.correct).length;
   const stats = [
-    [new Set(state.attempts.map(a => a.id)).size, '/ 24', 'Reactions practiced'],
+    [new Set(state.attempts.map(a => a.id)).size, `/ ${reactions.length}`, 'Reactions practiced'],
     [state.attempts.length ? Math.round(correct / state.attempts.length * 100) + '%' : '—', '', 'Accuracy'],
     [state.sessions.length, '', 'Quizzes completed'],
     [streak(), streak() === 1 ? 'day' : 'days', 'Current streak'],
@@ -100,7 +75,7 @@ function statsMarkup() {
 function setupCategories() {
   document.querySelector('#category-options').insertAdjacentHTML('beforeend', `
     <label class="category-option all-categories"><input type="checkbox" id="all-categories"><span>All categories</span></label>
-    ${categories.map(c => `<label class="category-option"><input type="checkbox" data-category-select="${c.id}"><span>${c.name}</span></label>`).join('')}`);
+    ${categories.map(c => `<label class="category-option"><input type="checkbox" data-category-select="${c.id}"><span>${c.name} <small>(${reactions.filter(r => inCategory(r,c.id)).length})</small></span></label>`).join('')}`);
   document.querySelector('#category-options').addEventListener('change', e => {
     if (e.target.id === 'all-categories') {
       state.selectedCategories = e.target.checked ? categories.map(c => c.id) : [];
@@ -131,20 +106,21 @@ function syncCategories() {
 function dashboard() {
   main.innerHTML = heading('Named reactions') + `
     <p class="intro">${selectedReactions().length ? `${selectedReactions().length} reactions selected. Quiz yourself or browse the library.` : 'Select at least one category to start.'}</p>
-    <div class="actions"><button class="button primary" data-start="mixed" ${selectedReactions().length ? '' : 'disabled'}>Start quiz</button><button class="text-button" data-start="daily" ${selectedReactions().length ? '' : 'disabled'}>Daily challenge</button><a class="text-button" href="#library">Browse reactions</a></div>
+    <div class="actions"><button class="button primary" data-start="mixed" ${selectedReactions().length ? '' : 'disabled'}>Start quiz</button><button class="button secondary" data-flashcards="selected" ${selectedReactions().length ? '' : 'disabled'}>Study flashcards</button><button class="text-button" data-start="daily" ${selectedReactions().length ? '' : 'disabled'}>Daily challenge</button><a class="text-button" href="#library">Browse reactions</a></div>
+    <p class="catalog-note">250 book entries, plus your original Fischer esterification card. Categories follow appendix 8.3 (pp. 508–517); reactions can belong to more than one category.</p>
     <section class="home-section"><div class="section-heading"><h2>All-time progress</h2><a class="text-button" href="#statistics">View statistics</a></div>${statsMarkup()}</section>`;
 }
 
 function filteredReactions(saved = page === 'saved') {
   return reactions.filter(r => (!saved || state.saved.includes(r.id)) &&
-    state.selectedCategories.includes(r.category) &&
-    `${r.name} ${r.summary} ${r.reagents} ${r.equation}`.toLowerCase().includes(searchTerm.toLowerCase()));
+    isSelected(r) &&
+    `${r.name} ${r.bookName || ''} ${r.summary} ${r.reagents} ${r.equation} ${categoryLabel(r)}`.toLowerCase().includes(searchTerm.toLowerCase()));
 }
 
 function library(saved = false) {
   main.innerHTML = heading(saved ? 'Saved reactions' : 'Reaction library') + `
     <div class="search-row"><label class="search-box"><input id="reaction-search" aria-label="Search reactions" placeholder="Search reactions or reagents" value="${escapeHTML(searchTerm)}"></label></div>
-    <div class="section-heading"><p id="result-count"></p><button class="text-button" data-start="collection">Quiz this selection</button></div>
+    <div class="section-heading"><p id="result-count"></p><div class="actions"><button class="text-button" data-flashcards="collection">Flashcards</button><button class="text-button" data-start="collection">Quiz this selection</button></div></div>
     <div class="library-list" id="library-results"></div>`;
   renderLibraryResults(saved);
   document.querySelector('#reaction-search').addEventListener('input', e => { searchTerm = e.target.value; renderLibraryResults(saved); });
@@ -154,9 +130,10 @@ function renderLibraryResults(saved) {
   const filtered = filteredReactions(saved);
   document.querySelector('#result-count').textContent = `${filtered.length} reaction${filtered.length === 1 ? '' : 's'}`;
   document.querySelector('[data-start="collection"]').disabled = !filtered.length;
+  document.querySelector('[data-flashcards="collection"]').disabled = !filtered.length;
   document.querySelector('#library-results').innerHTML = filtered.length ? filtered.map(r => `
     <article class="reaction-row"><button class="text-button reaction-name" data-detail="${r.id}">${r.name}</button>
-    <span class="reaction-category">${categoryFor(r.category).short}</span>
+    <span class="reaction-category">${categoryLabel(r)}</span>
     <button class="bookmark-button ${state.saved.includes(r.id) ? 'saved' : ''}" data-save="${r.id}" aria-label="${state.saved.includes(r.id) ? 'Unsave' : 'Save'} ${r.name}" aria-pressed="${state.saved.includes(r.id)}">${icon('bookmark')}</button></article>`).join('') :
     `<div class="empty-state"><p>${!state.selectedCategories.length ? 'Select at least one category.' : saved && !state.saved.length ? 'No saved reactions. Bookmark reactions in the library.' : 'No matches. Try a different search or category.'}</p>${saved && !state.saved.length ? '<a href="#library">Browse reactions</a>' : ''}</div>`;
 }
@@ -168,8 +145,92 @@ function practice() {
     ['Review mistakes', 'Reactions you last answered incorrectly.', 'review'],
     ['Saved reactions', 'Practice your bookmarked reactions.', 'saved'],
   ];
-  main.innerHTML = heading('Practice') + `<div class="practice-list">${modes.map(([title, description, mode]) => `<div class="practice-row"><div><h3>${title}</h3><p>${description}</p></div><button class="text-button" data-start="${mode}" aria-label="Start ${title.toLowerCase()}" ${selectedReactions().length ? '' : 'disabled'}>Start →</button></div>`).join('')}</div>`;
+  main.innerHTML = heading('Practice') + `<div class="practice-list">${modes.map(([title, description, mode]) => `<div class="practice-row"><div><h3>${title}</h3><p>${description}</p></div><button class="text-button" data-start="${mode}" aria-label="Start ${title.toLowerCase()}" ${selectedReactions().length ? '' : 'disabled'}>Start →</button></div>`).join('')}</div>
+    <h2>Practice by appendix category</h2><p class="muted">Each quiz draws from the category shown. Use the sidebar to combine categories in a quick quiz.</p><div class="practice-list">${categories.map(c => `<div class="practice-row"><div><h3>${c.name}</h3><p>${reactions.filter(r => inCategory(r,c.id)).length} reactions</p></div><div class="actions"><button class="text-button" data-start="${c.id}" aria-label="Quiz ${c.name}">Quiz</button><button class="text-button" data-flashcards="${c.id}" aria-label="Flashcards for ${c.name}">Cards</button></div></div>`).join('')}</div>`;
 }
+
+const flashcardDialog = document.querySelector('#flashcard-dialog');
+let deck = null;
+function flashcards() {
+  const count = selectedReactions().length;
+  const studied = Object.keys(state.flashcardReviews || {}).length;
+  main.innerHTML = heading('Flashcards') + `
+    <p class="intro">Recall the reaction from its transformation, then flip the card to check the name, scheme, and mechanism.</p>
+    <label class="flashcard-direction" for="flashcard-direction">Card front
+      <select id="flashcard-direction"><option value="transformation">Transformation → reaction name</option><option value="name">Reaction name → transformation</option></select>
+    </label>
+    <div class="actions"><button class="button primary" data-flashcards="selected" ${count ? '' : 'disabled'}>Study ${count} cards</button><button class="button secondary" data-flashcards="saved" ${selectedReactions().some(r => state.saved.includes(r.id)) ? '' : 'disabled'}>Study saved cards</button></div>
+    <p class="catalog-note">${studied} cards reviewed. Choose one or more appendix categories in the sidebar. Your flashcard reviews are saved separately from quiz accuracy.</p>`;
+}
+
+function startFlashcards(mode) {
+  let pool = categoryFor(mode) ? reactions.filter(r => inCategory(r,mode)) : selectedReactions();
+  if (mode === 'collection') pool = filteredReactions();
+  if (mode === 'saved') pool = pool.filter(r => state.saved.includes(r.id));
+  if (!pool.length) { toast('No cards in this selection.'); return; }
+  const direction = document.querySelector('#flashcard-direction')?.value || 'transformation';
+  deck = {cards:shuffle(pool), original:[...pool], index:0, revealed:false, ratings:{}, direction,
+    title:categoryFor(mode)?.short || (mode==='saved' ? 'Saved reactions' : 'Selected reactions'), finished:false};
+  if (reactionDialog.open) reactionDialog.close();
+  renderFlashcard(); flashcardDialog.showModal();
+}
+
+function renderFlashcard() {
+  const r = deck.cards[deck.index];
+  flashcardDialog.innerHTML = `<div class="dialog-inner"><div class="dialog-top"><span>${escapeHTML(deck.title)} · ${deck.index+1} / ${deck.cards.length}</span><button class="close-button" data-close="flashcards" aria-label="Close flashcards">×</button></div>
+    <div class="quiz-progress"><div style="width:${deck.index/deck.cards.length*100}%"></div></div>
+    <h2 id="flashcard-title" tabindex="-1">${deck.revealed ? 'Answer' : deck.direction==='name' ? 'Recall the transformation' : 'Name the reaction'}</h2>
+    <div class="flashcard-content" aria-live="polite">${deck.revealed
+      ? `<h3>${escapeHTML(r.name)}</h3><p>${escapeHTML(r.summary)}</p>${r.reagents ? `<p><strong>Reagents:</strong> ${escapeHTML(r.reagents)}</p>` : ''}${bookReactions[r.id]?.reaction ? bookFigure(bookReactions[r.id].reaction,r.name,'reaction') : ''}<details class="flashcard-mechanism"><summary>Mechanism & explanation</summary><p>${escapeHTML(r.explanation)}</p>${bookReactions[r.id]?.mechanism ? bookFigure(bookReactions[r.id].mechanism,r.name,'mechanism') : `<p class="muted">${escapeHTML(bookReactions[r.id]?.mechanismNote || '')}</p>`}</details><p class="muted">${categoryLabel(r)}</p>`
+      : `<p class="flashcard-prompt">${escapeHTML(deck.direction==='name' ? r.name : r.question)}</p>`}</div>
+    <div class="flashcard-controls">${deck.revealed ? `<button class="button secondary" data-card-rate="again">Study again</button><button class="button primary" data-card-rate="known">Got it</button>` : '<button class="button primary" data-card-flip>Flip card</button>'}</div>
+    <div class="flashcard-navigation"><button class="text-button" data-card-prev ${deck.index ? '' : 'disabled'}>← Previous</button><button class="text-button" data-card-shuffle>Shuffle deck</button><button class="text-button" data-card-next>${deck.index===deck.cards.length-1 ? 'Finish' : 'Next →'}</button></div>
+    <p class="catalog-note">Use ← / → to navigate. Space flips the card when a control is not focused.${deck.ratings[r.id] ? ` Your rating: ${deck.ratings[r.id]==='known' ? 'Got it' : 'Study again'}.` : ''}</p></div>`;
+  flashcardDialog.scrollTop = 0;
+}
+
+function flipCard() {
+  if (!deck || deck.finished) return;
+  deck.revealed = !deck.revealed;
+  renderFlashcard();
+  flashcardDialog.querySelector('#flashcard-title').focus({preventScroll:true});
+}
+
+function moveCard(step) {
+  if (!deck || deck.finished) return;
+  if (deck.index+step >= deck.cards.length) { finishDeck(); return; }
+  deck.index = Math.max(0,deck.index+step); deck.revealed = false;
+  renderFlashcard(); flashcardDialog.querySelector('[data-card-flip]').focus();
+}
+
+function rateCard(rating) {
+  if (!deck || !deck.revealed || deck.finished) return;
+  const id = deck.cards[deck.index].id;
+  deck.ratings[id] = rating;
+  state.flashcardReviews ||= {};
+  state.flashcardReviews[id] = {rating, at:new Date().toISOString()};
+  persist(); moveCard(1);
+}
+
+function finishDeck() {
+  deck.finished = true;
+  const known = deck.cards.filter(r => deck.ratings[r.id]==='known').length;
+  const again = deck.cards.filter(r => deck.ratings[r.id]==='again').length;
+  flashcardDialog.innerHTML = `<div class="dialog-inner results"><div class="dialog-top"><span>${escapeHTML(deck.title)}</span><button class="close-button" data-close="flashcards" aria-label="Close flashcards">×</button></div>
+    <h2 id="flashcard-title">Deck complete</h2><p>${known} got it · ${again} study again · ${deck.cards.length-known-again} unrated</p>
+    <div class="result-actions"><button class="button secondary" data-close="flashcards">Done</button><button class="button secondary" data-card-restart>Restart deck</button><button class="button primary" data-card-review ${known===deck.cards.length ? 'disabled' : ''}>Review remaining cards</button></div></div>`;
+  flashcardDialog.querySelector('[data-card-restart]').focus();
+  if (page==='flashcards') flashcards();
+}
+
+flashcardDialog.addEventListener('keydown', e => {
+  if (!deck || deck.finished) return;
+  if (e.key==='ArrowLeft' || e.key==='ArrowRight') { e.preventDefault(); moveCard(e.key==='ArrowLeft' ? -1 : 1); }
+  if (e.code==='Space' && !e.target.closest('button,a,summary,input,select')) {
+    e.preventDefault(); flipCard();
+  }
+});
+flashcardDialog.addEventListener('close', () => { if (page==='flashcards') flashcards(); });
 
 function historyMarkup() {
   if (!state.sessions.length) return '<p class="muted">No completed quizzes yet.</p>';
@@ -186,20 +247,21 @@ function statistics() {
   main.innerHTML = heading('Statistics') + statsMarkup() + `<div class="lower-grid">
     <section><h2>This week</h2><p class="muted">Questions answered</p><div class="chart">${days.map(d => `<div class="chart-column"><div class="chart-count">${d.count}</div><div class="chart-bar" style="height:${d.count / max * 110}px" aria-label="${d.day}: ${d.count} answers"></div><span>${d.day}</span></div>`).join('')}</div></section>
     <section><h2>Mastery by category</h2>${categories.map(c => {
-      const count = reactions.filter(r => r.category === c.id && mastery.has(r.id)).length;
-      return `<div class="progress-row"><div class="progress-label"><span>${c.short}</span><span>${count} / 4</span></div><div class="progress-track"><div style="width:${count / 4 * 100}%"></div></div></div>`;
+      const members = reactions.filter(r => inCategory(r,c.id));
+      const count = members.filter(r => mastery.has(r.id)).length;
+      return `<div class="progress-row"><div class="progress-label"><span>${c.short}</span><span>${count} / ${members.length}</span></div><div class="progress-track"><div style="width:${members.length ? count / members.length * 100 : 0}%"></div></div></div>`;
     }).join('')}<p class="chart-note">Mastery = 3 consecutive correct answers.</p></section></div>
     <section><h2>Quiz history</h2>${historyMarkup()}</section>`;
 }
 
 function render() {
   page = location.hash.slice(1) || 'dashboard';
-  if (!['dashboard','library','practice','statistics','saved'].includes(page)) page = 'dashboard';
+  if (!['dashboard','library','practice','statistics','saved','flashcards'].includes(page)) page = 'dashboard';
   document.querySelectorAll('[data-page]').forEach(a => {
     a.classList.toggle('active', a.dataset.page === page);
     if (a.dataset.page === page) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
   });
-  ({dashboard, library, practice, statistics, saved:() => library(true)})[page]();
+  ({dashboard, library, practice, statistics, flashcards, saved:() => library(true)})[page]();
 }
 
 function toggleSave(id) {
@@ -219,7 +281,7 @@ function detailPanel(r, tab) {
   if (tab === 'reaction') {
     return `${source?.reaction ? bookFigure(source.reaction, r.name, 'reaction scheme') : ''}
       <div class="detail-section"><h3>Transformation</h3><p class="detail-equation">${r.equation}</p></div>
-      <div class="detail-section"><h3>Reagents & conditions</h3><p>${r.reagents}</p></div>`;
+      ${r.reagents ? `<div class="detail-section"><h3>Reagents & conditions</h3><p>${escapeHTML(r.reagents)}</p></div>` : '<p class="muted">Reagents, conditions, and background are reproduced in the book figure above.</p>'}`;
   }
   if (tab === 'mechanism') {
     return `<p class="mechanism-summary">${r.explanation}</p>${source?.mechanism ? bookFigure(source.mechanism, r.name, 'mechanism') : `<p class="muted">${escapeHTML(source?.mechanismNote || 'A mechanism figure for this reaction has not been located in this copy.')}</p>`}`;
@@ -235,12 +297,13 @@ function showDetail(id, tab = 'reaction') {
   detailReactionId = id;
   detailTab = tab;
   const source = bookReactions[id];
-  reactionDialog.innerHTML = `<div class="dialog-inner"><div class="dialog-top"><span>${categoryFor(r.category).short}</span><button class="close-button" data-close="reaction" aria-label="Close reaction">×</button></div>
+  reactionDialog.innerHTML = `<div class="dialog-inner"><div class="dialog-top"><span>${categoryLabel(r)}</span><button class="close-button" data-close="reaction" aria-label="Close reaction">×</button></div>
     <h2 id="reaction-title">${r.name}</h2>
     <div class="reaction-tabs" role="tablist" aria-label="Reaction details">${[['reaction','Reaction'],['mechanism','Mechanism'],['applications','Applications']].map(([key, label]) => `<button role="tab" id="tab-${key}" aria-controls="reaction-panel" aria-selected="${tab === key}" tabindex="${tab === key ? 0 : -1}" data-detail-tab="${key}">${label}</button>`).join('')}</div>
     <section id="reaction-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-${tab}">${detailPanel(r, tab)}</section>
     ${source ? `<p class="book-citation">Kürti & Czakó, <cite>Strategic Applications of Named Reactions in Organic Synthesis</cite> (2005), ${source.pages.length === 1 ? 'p.' : 'pp.'} ${source.pages.join('–')}. Figures from your supplied copy.</p>` : ''}
-    <div class="detail-actions"><button class="button primary" data-start="${r.category}">Quiz this category</button><button class="button secondary" data-save="${r.id}">${state.saved.includes(r.id) ? 'Unsave reaction' : 'Save reaction'}</button></div></div>`;
+    <div class="detail-section"><h3>Study by category</h3><div class="actions">${r.categories.map(id => `<button class="text-button" data-start="${id}">Quiz: ${categoryFor(id).short}</button>`).join('')}</div><p class="muted">${r.appendixPages.length ? `Appendix 8.3, pp. ${r.appendixPages.join(', ')}.` : r.supplemental ? 'Preserved from your original library; this reaction has no dedicated chapter.' : 'This chapter is not listed in the book’s appendix 8.3 category table.'}</p></div>
+    <div class="detail-actions"><button class="button secondary" data-save="${r.id}">${state.saved.includes(r.id) ? 'Unsave reaction' : 'Save reaction'}</button></div></div>`;
   if (!reactionDialog.open) reactionDialog.showModal();
 }
 
@@ -259,7 +322,7 @@ function selectDetailTab(tab, focus = true) {
 }
 
 function startQuiz(mode) {
-  let pool = selectedReactions(), title = 'Quick quiz';
+  let pool = categoryFor(mode) ? reactions.filter(r => inCategory(r,mode)) : selectedReactions(), title = 'Quick quiz';
   if (!pool.length) { toast('Select at least one category.'); return; }
   if (mode === 'review') {
     pool = pool.filter(r => { const attempts = state.attempts.filter(a => a.id === r.id); return attempts.length && !attempts[attempts.length - 1].correct; });
@@ -279,23 +342,24 @@ function startQuiz(mode) {
       seed = (Math.imul(seed, 1664525) + 1013904223) >>> 0;
       const j = seed % (i + 1); [pool[i],pool[j]] = [pool[j],pool[i]];
     }
-    pool = pool.filter(r => state.selectedCategories.includes(r.category));
-  } else if (categoryFor(mode)) { pool = pool.filter(r => r.category === mode); title = categoryFor(mode).short; }
+    pool = pool.filter(isSelected);
+  } else if (categoryFor(mode)) { title = categoryFor(mode).short; }
   if (!pool.length) { toast('No reactions in this selection.'); return; }
-  quiz = {mode, title, questions:(mode === 'daily' ? pool : shuffle(pool)).slice(0,5), index:0, correct:0, answered:false, started:Date.now(), finished:false};
+  quiz = {mode, title, pool:[...pool], questions:(mode === 'daily' ? pool : shuffle(pool)).slice(0,5), index:0, correct:0, answered:false, started:Date.now(), finished:false};
   if (reactionDialog.open) reactionDialog.close();
   renderQuestion(); quizDialog.showModal();
 }
 
 function renderQuestion() {
   const r = quiz.questions[quiz.index];
-  const selected = selectedReactions();
-  const same = selected.filter(x => x.category === r.category && x.id !== r.id);
-  const distractors = shuffle([...same, ...shuffle(selected.filter(x => x.category !== r.category)).slice(0,2)]).slice(0,3);
+  // Prefer the actual quiz pool; fill tiny selections without repeating answers.
+  const candidates = shuffle(quiz.pool.filter(x => x.id !== r.id));
+  const used = new Set([r.id,...candidates.map(x => x.id)]);
+  const distractors = [...candidates,...shuffle(reactions.filter(x => !used.has(x.id)))].slice(0,3);
   quiz.options = shuffle([r, ...distractors]); quiz.answered = false;
   quizDialog.innerHTML = `<div class="dialog-inner"><div class="dialog-top"><span>${quiz.title} · ${quiz.index + 1} / ${quiz.questions.length}</span><button class="close-button" data-close="quiz" aria-label="Exit quiz">×</button></div>
-    <div class="quiz-progress"><div style="width:${quiz.index / quiz.questions.length * 100}%"></div></div><span class="badge quiz-category">${categoryFor(r.category).short}</span>
-    <h2 id="quiz-title">Name the reaction</h2><p class="question-text">${r.question}</p><div class="answers">${quiz.options.map((option,i) => `<button class="answer" data-answer="${option.id}"><span>${String.fromCharCode(65+i)}</span>${option.name}</button>`).join('')}</div>
+    <div class="quiz-progress"><div style="width:${quiz.index / quiz.questions.length * 100}%"></div></div><span class="badge quiz-category">${escapeHTML(quiz.title)}</span>
+    <h2 id="quiz-title">Name the reaction</h2><p class="question-text">${escapeHTML(r.question)}</p><div class="answers">${quiz.options.map((option,i) => `<button class="answer" data-answer="${option.id}"><span>${String.fromCharCode(65+i)}</span>${escapeHTML(option.name)}</button>`).join('')}</div>
     <div id="answer-feedback" aria-live="polite"></div><div class="quiz-footer"><button class="button primary" id="next-question" disabled>${quiz.index === quiz.questions.length - 1 ? 'See results' : 'Next question'} →</button></div></div>`;
 }
 
@@ -347,7 +411,18 @@ reactionDialog.addEventListener('keydown', e => {
 });
 document.addEventListener('click', e => {
   const button = e.target.closest('button'); if (!button) return;
-  if (button.dataset.start) startQuiz(button.dataset.start);
+  if (button.dataset.flashcards) startFlashcards(button.dataset.flashcards);
+  else if (button.dataset.close === 'flashcards') flashcardDialog.close();
+  else if (button.hasAttribute('data-card-flip')) flipCard();
+  else if (button.hasAttribute('data-card-next')) moveCard(1);
+  else if (button.hasAttribute('data-card-prev')) moveCard(-1);
+  else if (button.dataset.cardRate) rateCard(button.dataset.cardRate);
+  else if (button.hasAttribute('data-card-shuffle')) { deck.cards=shuffle(deck.cards); deck.index=0; deck.revealed=false; renderFlashcard(); flashcardDialog.querySelector('[data-card-flip]').focus(); }
+  else if (button.hasAttribute('data-card-review') || button.hasAttribute('data-card-restart')) {
+    deck.cards=shuffle(button.hasAttribute('data-card-review') ? deck.cards.filter(r => deck.ratings[r.id]!=='known') : deck.original);
+    deck.index=0; deck.revealed=false; deck.finished=false; deck.ratings={}; renderFlashcard(); flashcardDialog.querySelector('[data-card-flip]').focus();
+  }
+  else if (button.dataset.start) startQuiz(button.dataset.start);
   else if (button.dataset.save) toggleSave(button.dataset.save);
   else if (button.dataset.detail) showDetail(button.dataset.detail);
   else if (button.dataset.detailTab) selectDetailTab(button.dataset.detailTab);
@@ -361,4 +436,6 @@ document.addEventListener('click', e => {
 });
 window.addEventListener('hashchange', () => { render(); window.scrollTo({top:0, behavior:'instant'}); });
 setupCategories();
+if (window.matchMedia('(max-width: 700px)').matches) document.querySelector('.category-sidebar details').open = false;
+persist();
 render();

@@ -8,6 +8,7 @@
   <title>Name Reaction Database</title>
   <link rel="stylesheet" href="assets/styles.css">
   <script src="assets/book-data.js" defer></script>
+  <script src="assets/reactions.js" defer></script>
   <script src="assets/app.js" defer></script>
 </head>
 <body>
@@ -17,6 +18,7 @@
       <a href="#dashboard" data-page="dashboard" class="nav-item active">Home</a>
       <a href="#library" data-page="library" class="nav-item">Reactions</a>
       <a href="#practice" data-page="practice" class="nav-item">Practice</a>
+      <a href="#flashcards" data-page="flashcards" class="nav-item">Flashcards</a>
       <a href="#statistics" data-page="statistics" class="nav-item">Statistics</a>
       <a href="#saved" data-page="saved" class="nav-item">Saved</a>
     </nav>
@@ -25,7 +27,7 @@
     <aside class="category-sidebar" aria-label="Category selection">
       <details open>
         <summary>Categories</summary>
-        <p class="sidebar-note">Filter reactions and quizzes.</p>
+        <p class="sidebar-note">Appendix 8.3 · Select categories for reactions, quizzes, and flashcards.</p>
         <fieldset id="category-options"><legend class="visually-hidden">Select reaction categories</legend></fieldset>
         <p id="selection-count" class="sidebar-note" aria-live="polite"></p>
       </details>
@@ -35,6 +37,7 @@
   <footer><span>Name Reaction Database / Organic chemistry</span><span class="local-status">Progress saved in this browser.</span></footer>
   <dialog id="quiz-dialog" aria-labelledby="quiz-title"></dialog>
   <dialog id="reaction-dialog" aria-labelledby="reaction-title"></dialog>
+  <dialog id="flashcard-dialog" aria-labelledby="flashcard-title"></dialog>
   <div id="toast" role="status"></div>
 </body>
 </html>

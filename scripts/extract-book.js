@@ -27,7 +27,12 @@ function run(args) {
         }
       }
       let crop = job.crop || [0, 0, 1, 1];
-      if (job.region === 'reaction') {
+      if (job.region === 'overview') {
+        if (!markers['Importance:'] || !markers['Mechanism:']) throw new Error('Missing overview markers for ' + job.file);
+        const top = markers['Importance:'].top - 0.005;
+        const bottom = markers['Mechanism:'].top - 0.006;
+        crop = [0.11, top, 0.78, bottom - top];
+      } else if (job.region === 'reaction') {
         const index = sourceText.indexOf(job.introEnd);
         if (index < 0 || !markers['Mechanism:']) throw new Error('Missing crop marker for ' + job.file);
         const endBox = page.selectionForRange($.NSMakeRange(index, job.introEnd.length)).boundsForPage(page);
@@ -42,7 +47,9 @@ function run(args) {
       }
       const rect = $.NSMakeRect(bounds.origin.x + crop[0] * width, bounds.origin.y + (1 - crop[1] - crop[3]) * height, crop[2] * width, crop[3] * height);
       page.setBoundsForBox(rect, $.kPDFDisplayBoxCropBox);
-      const image = page.thumbnailOfSizeForBox($.NSMakeSize(rect.size.width * 2.5, rect.size.height * 2.5), $.kPDFDisplayBoxCropBox);
+      if (job.skipExisting && $.NSFileManager.defaultManager.fileExistsAtPath(job.file)) continue;
+      const scale = job.scale || 2.5;
+      const image = page.thumbnailOfSizeForBox($.NSMakeSize(rect.size.width * scale, rect.size.height * scale), $.kPDFDisplayBoxCropBox);
       const bitmap = $.NSBitmapImageRep.imageRepWithData(image.TIFFRepresentation);
       const data = bitmap.representationUsingTypeProperties($.NSBitmapImageFileTypePNG, $({}));
       if (!data.writeToFileAtomically(job.file, true)) throw new Error('Could not write ' + job.file);

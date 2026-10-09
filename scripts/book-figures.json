@@ -3,12 +3,14 @@
     "page": 60,
     "file": "assets/book/aldol-reaction.png",
     "region": "reaction",
-    "introEnd": "mediated catalysis; and 3) organocatalysis utilizing small organic molecules.21,28,29,33,82,35-37,39"
+    "introEnd": "mediated catalysis; and 3) organocatalysis utilizing small organic molecules.21,28,29,33,82,35-37,39",
+    "skipExisting": true
   },
   {
     "page": 60,
     "file": "assets/book/aldol-mechanism.png",
-    "region": "mechanism"
+    "region": "mechanism",
+    "skipExisting": true
   },
   {
     "page": 61,
@@ -18,18 +20,21 @@
       0.093,
       0.78,
       0.882
-    ]
+    ],
+    "skipExisting": true
   },
   {
     "page": 240,
     "file": "assets/book/grignard-reaction.png",
     "region": "reaction",
-    "introEnd": "reduction of the carbonyl group may occur by an intermolecular hydride transfer."
+    "introEnd": "reduction of the carbonyl group may occur by an intermolecular hydride transfer.",
+    "skipExisting": true
   },
   {
     "page": 240,
     "file": "assets/book/grignard-mechanism.png",
-    "region": "mechanism"
+    "region": "mechanism",
+    "skipExisting": true
   },
   {
     "page": 241,
@@ -39,18 +44,21 @@
       0.093,
       0.78,
       0.882
-    ]
+    ],
+    "skipExisting": true
   },
   {
     "page": 500,
     "file": "assets/book/suzuki-reaction.png",
     "region": "reaction",
-    "introEnd": "the use of alkyl, alkenyl, aryl, and alkynyl trifluoroborates in place of boronic acids.45-47"
+    "introEnd": "the use of alkyl, alkenyl, aryl, and alkynyl trifluoroborates in place of boronic acids.45-47",
+    "skipExisting": true
   },
   {
     "page": 500,
     "file": "assets/book/suzuki-mechanism.png",
-    "region": "mechanism"
+    "region": "mechanism",
+    "skipExisting": true
   },
   {
     "page": 501,
@@ -60,18 +68,21 @@
       0.093,
       0.78,
       0.882
-    ]
+    ],
+    "skipExisting": true
   },
   {
     "page": 538,
     "file": "assets/book/wittig-reaction.png",
     "region": "reaction",
-    "introEnd": "support allows easy separation of the products from triphenylphosphine oxide.42"
+    "introEnd": "support allows easy separation of the products from triphenylphosphine oxide.42",
+    "skipExisting": true
   },
   {
     "page": 538,
     "file": "assets/book/wittig-mechanism.png",
-    "region": "mechanism"
+    "region": "mechanism",
+    "skipExisting": true
   },
   {
     "page": 539,
@@ -81,18 +92,21 @@
       0.093,
       0.78,
       0.882
-    ]
+    ],
+    "skipExisting": true
   },
   {
     "page": 502,
     "file": "assets/book/swern-reaction.png",
     "region": "reaction",
-    "introEnd": "trifluoroacetate side products, whereas in the case of oxalyl chloride side reactions are extremely rare."
+    "introEnd": "trifluoroacetate side products, whereas in the case of oxalyl chloride side reactions are extremely rare.",
+    "skipExisting": true
   },
   {
     "page": 502,
     "file": "assets/book/swern-mechanism.png",
-    "region": "mechanism"
+    "region": "mechanism",
+    "skipExisting": true
   },
   {
     "page": 503,
@@ -102,18 +116,21 @@
       0.093,
       0.78,
       0.882
-    ]
+    ],
+    "skipExisting": true
   },
   {
     "page": 144,
     "file": "assets/book/clemmensen-reaction.png",
     "region": "reaction",
-    "introEnd": "mixtures are formed in these reactions, which contain a substantial amount of rearranged products."
+    "introEnd": "mixtures are formed in these reactions, which contain a substantial amount of rearranged products.",
+    "skipExisting": true
   },
   {
     "page": 144,
     "file": "assets/book/clemmensen-mechanism.png",
-    "region": "mechanism"
+    "region": "mechanism",
+    "skipExisting": true
   },
   {
     "page": 145,
@@ -123,18 +140,21 @@
       0.093,
       0.78,
       0.882
-    ]
+    ],
+    "skipExisting": true
   },
   {
     "page": 548,
     "file": "assets/book/wolff-reaction.png",
     "region": "reaction",
-    "introEnd": "Leonard elimination);23,24 and 5) cleavage or rearrangement of strained rings adjacent to the carbonyl group."
+    "introEnd": "Leonard elimination);23,24 and 5) cleavage or rearrangement of strained rings adjacent to the carbonyl group.",
+    "skipExisting": true
   },
   {
     "page": 548,
     "file": "assets/book/wolff-mechanism.png",
-    "region": "mechanism"
+    "region": "mechanism",
+    "skipExisting": true
   },
   {
     "page": 549,
@@ -144,18 +164,21 @@
       0.093,
       0.78,
       0.882
-    ]
+    ],
+    "skipExisting": true
   },
   {
     "page": 112,
     "file": "assets/book/birch-reaction.png",
     "region": "reaction",
-    "introEnd": "present."
+    "introEnd": "present.",
+    "skipExisting": true
   },
   {
     "page": 112,
     "file": "assets/book/birch-mechanism.png",
-    "region": "mechanism"
+    "region": "mechanism",
+    "skipExisting": true
   },
   {
     "page": 113,
@@ -165,18 +188,21 @@
       0.093,
       0.78,
       0.882
-    ]
+    ],
+    "skipExisting": true
   },
   {
     "page": 102,
     "file": "assets/book/beckmann-reaction.png",
     "region": "reaction",
-    "introEnd": "unsubstituted amides."
+    "introEnd": "unsubstituted amides.",
+    "skipExisting": true
   },
   {
     "page": 102,
     "file": "assets/book/beckmann-mechanism.png",
-    "region": "mechanism"
+    "region": "mechanism",
+    "skipExisting": true
   },
   {
     "page": 103,
@@ -186,18 +212,21 @@
       0.093,
       0.78,
       0.882
-    ]
+    ],
+    "skipExisting": true
   },
   {
     "page": 402,
     "file": "assets/book/pinacol-reaction.png",
     "region": "reaction",
-    "introEnd": "mild reaction conditions, the semipinacol rearrangement is almost exclusively utilized in complex molecule synthesis."
+    "introEnd": "mild reaction conditions, the semipinacol rearrangement is almost exclusively utilized in complex molecule synthesis.",
+    "skipExisting": true
   },
   {
     "page": 402,
     "file": "assets/book/pinacol-mechanism.png",
-    "region": "mechanism"
+    "region": "mechanism",
+    "skipExisting": true
   },
   {
     "page": 403,
@@ -207,18 +236,21 @@
       0.093,
       0.78,
       0.882
-    ]
+    ],
+    "skipExisting": true
   },
   {
     "page": 262,
     "file": "assets/book/hofmann-reaction.png",
     "region": "reaction",
-    "introEnd": "the corresponding carbamate or urea derivative.17"
+    "introEnd": "the corresponding carbamate or urea derivative.17",
+    "skipExisting": true
   },
   {
     "page": 262,
     "file": "assets/book/hofmann-mechanism.png",
-    "region": "mechanism"
+    "region": "mechanism",
+    "skipExisting": true
   },
   {
     "page": 263,
@@ -228,18 +260,21 @@
       0.093,
       0.78,
       0.882
-    ]
+    ],
+    "skipExisting": true
   },
   {
     "page": 80,
     "file": "assets/book/baeyer-reaction.png",
     "region": "reaction",
-    "introEnd": "activation).28,34"
+    "introEnd": "activation).28,34",
+    "skipExisting": true
   },
   {
     "page": 80,
     "file": "assets/book/baeyer-mechanism.png",
-    "region": "mechanism"
+    "region": "mechanism",
+    "skipExisting": true
   },
   {
     "page": 81,
@@ -249,18 +284,21 @@
       0.093,
       0.78,
       0.882
-    ]
+    ],
+    "skipExisting": true
   },
   {
     "page": 536,
     "file": "assets/book/williamson-reaction.png",
     "region": "reaction",
-    "introEnd": "alkylation in addition to expected O-alkylation."
+    "introEnd": "alkylation in addition to expected O-alkylation.",
+    "skipExisting": true
   },
   {
     "page": 536,
     "file": "assets/book/williamson-mechanism.png",
-    "region": "mechanism"
+    "region": "mechanism",
+    "skipExisting": true
   },
   {
     "page": 537,
@@ -270,18 +308,21 @@
       0.093,
       0.78,
       0.882
-    ]
+    ],
+    "skipExisting": true
   },
   {
     "page": 446,
     "file": "assets/book/sandmeyer-reaction.png",
     "region": "reaction",
-    "introEnd": "aqueous sulfuric acid, or with aqueous solution of copper salts (occasionally called the Sandmeyer hydroxylation).22-"
+    "introEnd": "aqueous sulfuric acid, or with aqueous solution of copper salts (occasionally called the Sandmeyer hydroxylation).22-",
+    "skipExisting": true
   },
   {
     "page": 446,
     "file": "assets/book/sandmeyer-mechanism.png",
-    "region": "mechanism"
+    "region": "mechanism",
+    "skipExisting": true
   },
   {
     "page": 447,
@@ -291,18 +332,21 @@
       0.093,
       0.78,
       0.882
-    ]
+    ],
+    "skipExisting": true
   },
   {
     "page": 222,
     "file": "assets/book/finkelstein-reaction.png",
     "region": "reaction",
-    "introEnd": "treatment with NaI/CS2 in the presence of various Lewis acids (AlMe3, ZnCl2 FeCl3, etc.).3"
+    "introEnd": "treatment with NaI/CS2 in the presence of various Lewis acids (AlMe3, ZnCl2 FeCl3, etc.).3",
+    "skipExisting": true
   },
   {
     "page": 222,
     "file": "assets/book/finkelstein-mechanism.png",
-    "region": "mechanism"
+    "region": "mechanism",
+    "skipExisting": true
   },
   {
     "page": 223,
@@ -312,18 +356,21 @@
       0.093,
       0.78,
       0.882
-    ]
+    ],
+    "skipExisting": true
   },
   {
     "page": 134,
     "file": "assets/book/chugaev-reaction.png",
     "region": "reaction",
-    "introEnd": "Chugaev reaction is greatly diminished by the formation of complex mixtures of olefins."
+    "introEnd": "Chugaev reaction is greatly diminished by the formation of complex mixtures of olefins.",
+    "skipExisting": true
   },
   {
     "page": 134,
     "file": "assets/book/chugaev-mechanism.png",
-    "region": "mechanism"
+    "region": "mechanism",
+    "skipExisting": true
   },
   {
     "page": 135,
@@ -333,18 +380,21 @@
       0.093,
       0.78,
       0.882
-    ]
+    ],
+    "skipExisting": true
   },
   {
     "page": 192,
     "file": "assets/book/diels-reaction.png",
     "region": "reaction",
-    "introEnd": "8) multiple rings can be created in one step with defined stereochemistry."
+    "introEnd": "8) multiple rings can be created in one step with defined stereochemistry.",
+    "skipExisting": true
   },
   {
     "page": 192,
     "file": "assets/book/diels-mechanism.png",
-    "region": "mechanism"
+    "region": "mechanism",
+    "skipExisting": true
   },
   {
     "page": 193,
@@ -354,18 +404,21 @@
       0.093,
       0.78,
       0.882
-    ]
+    ],
+    "skipExisting": true
   },
   {
     "page": 150,
     "file": "assets/book/cope-reaction.png",
     "region": "reaction",
-    "introEnd": "gives convenient access to synthetically useful seven- and eight-membered carbocycles."
+    "introEnd": "gives convenient access to synthetically useful seven- and eight-membered carbocycles.",
+    "skipExisting": true
   },
   {
     "page": 150,
     "file": "assets/book/cope-mechanism.png",
-    "region": "mechanism"
+    "region": "mechanism",
+    "skipExisting": true
   },
   {
     "page": 151,
@@ -375,18 +428,21 @@
       0.093,
       0.78,
       0.882
-    ]
+    ],
+    "skipExisting": true
   },
   {
     "page": 140,
     "file": "assets/book/claisen-reaction.png",
     "region": "reaction",
-    "introEnd": "is usually not necessary to isolate the allyl vinyl ethers, since they are prepared under conditions that will induce their\nrearrangement."
+    "introEnd": "is usually not necessary to isolate the allyl vinyl ethers, since they are prepared under conditions that will induce their\nrearrangement.",
+    "skipExisting": true
   },
   {
     "page": 140,
     "file": "assets/book/claisen-mechanism.png",
-    "region": "mechanism"
+    "region": "mechanism",
+    "skipExisting": true
   },
   {
     "page": 141,
@@ -396,18 +452,21 @@
       0.093,
       0.78,
       0.882
-    ]
+    ],
+    "skipExisting": true
   },
   {
     "page": 58,
     "file": "assets/book/ene-reaction.png",
     "region": "reaction",
-    "introEnd": "steric and electronic properties, affords more control over the regioselectivity of the reaction."
+    "introEnd": "steric and electronic properties, affords more control over the regioselectivity of the reaction.",
+    "skipExisting": true
   },
   {
     "page": 58,
     "file": "assets/book/ene-mechanism.png",
-    "region": "mechanism"
+    "region": "mechanism",
+    "skipExisting": true
   },
   {
     "page": 59,
@@ -417,18 +476,21 @@
       0.093,
       0.78,
       0.882
-    ]
+    ],
+    "skipExisting": true
   },
   {
     "page": 234,
     "file": "assets/book/gabriel-reaction.png",
     "region": "reaction",
-    "introEnd": "obtained.19"
+    "introEnd": "obtained.19",
+    "skipExisting": true
   },
   {
     "page": 234,
     "file": "assets/book/gabriel-mechanism.png",
-    "region": "mechanism"
+    "region": "mechanism",
+    "skipExisting": true
   },
   {
     "page": 235,
@@ -438,18 +500,21 @@
       0.093,
       0.78,
       0.882
-    ]
+    ],
+    "skipExisting": true
   },
   {
     "page": 252,
     "file": "assets/book/hell-reaction.png",
     "region": "reaction",
-    "introEnd": "corresponding α-halo acids.10,11"
+    "introEnd": "corresponding α-halo acids.10,11",
+    "skipExisting": true
   },
   {
     "page": 252,
     "file": "assets/book/hell-mechanism.png",
-    "region": "mechanism"
+    "region": "mechanism",
+    "skipExisting": true
   },
   {
     "page": 253,
@@ -459,18 +524,21 @@
       0.093,
       0.78,
       0.882
-    ]
+    ],
+    "skipExisting": true
   },
   {
     "page": 434,
     "file": "assets/book/ritter-reaction.png",
     "region": "reaction",
-    "introEnd": "(Ritter-type reactions) that proceed under neutral conditions expanded the scope of the substrates."
+    "introEnd": "(Ritter-type reactions) that proceed under neutral conditions expanded the scope of the substrates.",
+    "skipExisting": true
   },
   {
     "page": 434,
     "file": "assets/book/ritter-mechanism.png",
-    "region": "mechanism"
+    "region": "mechanism",
+    "skipExisting": true
   },
   {
     "page": 435,
@@ -480,7 +548,8 @@
       0.093,
       0.78,
       0.882
-    ]
+    ],
+    "skipExisting": true
   },
   {
     "page": 317,
@@ -490,7 +559,8 @@
       0.232,
       0.78,
       0.125
-    ]
+    ],
+    "skipExisting": true
   },
   {
     "page": 317,
@@ -500,6 +570,5907 @@
       0.097,
       0.78,
       0.26
+    ],
+    "skipExisting": true
+  },
+  {
+    "page": 54,
+    "file": "assets/book/acetoacetic-ester-synthesis-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 54,
+    "file": "assets/book/acetoacetic-ester-synthesis-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 55,
+    "file": "assets/book/acetoacetic-ester-synthesis-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 56,
+    "file": "assets/book/acyloin-condensation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 56,
+    "file": "assets/book/acyloin-condensation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 57,
+    "file": "assets/book/acyloin-condensation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 62,
+    "file": "assets/book/alkene-olefin-metathesis-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 62,
+    "file": "assets/book/alkene-olefin-metathesis-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 63,
+    "file": "assets/book/alkene-olefin-metathesis-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 64,
+    "file": "assets/book/alkyne-metathesis-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 64,
+    "file": "assets/book/alkyne-metathesis-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 65,
+    "file": "assets/book/alkyne-metathesis-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 66,
+    "file": "assets/book/amadori-reaction-rearrangement-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 66,
+    "file": "assets/book/amadori-reaction-rearrangement-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 67,
+    "file": "assets/book/amadori-reaction-rearrangement-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 68,
+    "file": "assets/book/arbuzov-reaction-michaelis-arbuzov-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 68,
+    "file": "assets/book/arbuzov-reaction-michaelis-arbuzov-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 69,
+    "file": "assets/book/arbuzov-reaction-michaelis-arbuzov-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 70,
+    "file": "assets/book/arndt-eistert-homologation-synthesis-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 70,
+    "file": "assets/book/arndt-eistert-homologation-synthesis-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 71,
+    "file": "assets/book/arndt-eistert-homologation-synthesis-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 72,
+    "file": "assets/book/aza-claisen-rearrangement-3-aza-cope-rearrangement-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 72,
+    "file": "assets/book/aza-claisen-rearrangement-3-aza-cope-rearrangement-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 73,
+    "file": "assets/book/aza-claisen-rearrangement-3-aza-cope-rearrangement-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 74,
+    "file": "assets/book/aza-cope-rearrangement-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 74,
+    "file": "assets/book/aza-cope-rearrangement-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 75,
+    "file": "assets/book/aza-cope-rearrangement-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 76,
+    "file": "assets/book/aza-wittig-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 76,
+    "file": "assets/book/aza-wittig-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 77,
+    "file": "assets/book/aza-wittig-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 78,
+    "file": "assets/book/aza-2-3-wittig-rearrangement-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 78,
+    "file": "assets/book/aza-2-3-wittig-rearrangement-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 79,
+    "file": "assets/book/aza-2-3-wittig-rearrangement-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 82,
+    "file": "assets/book/baker-venkataraman-rearrangement-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 82,
+    "file": "assets/book/baker-venkataraman-rearrangement-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 83,
+    "file": "assets/book/baker-venkataraman-rearrangement-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 84,
+    "file": "assets/book/baldwins-rules-guidelines-for-ring-closing-reactions-reaction.png",
+    "scale": 2,
+    "skipExisting": true,
+    "crop": [
+      0.11,
+      0.12,
+      0.78,
+      0.855
     ]
+  },
+  {
+    "page": 85,
+    "file": "assets/book/baldwins-rules-guidelines-for-ring-closing-reactions-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 86,
+    "file": "assets/book/balz-schiemann-reaction-schiemann-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 86,
+    "file": "assets/book/balz-schiemann-reaction-schiemann-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 87,
+    "file": "assets/book/balz-schiemann-reaction-schiemann-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 88,
+    "file": "assets/book/bamford-stevens-shapiro-olefination-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 88,
+    "file": "assets/book/bamford-stevens-shapiro-olefination-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 89,
+    "file": "assets/book/bamford-stevens-shapiro-olefination-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 90,
+    "file": "assets/book/barbier-coupling-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 90,
+    "file": "assets/book/barbier-coupling-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 91,
+    "file": "assets/book/barbier-coupling-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 92,
+    "file": "assets/book/bartoli-indole-synthesis-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 92,
+    "file": "assets/book/bartoli-indole-synthesis-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 93,
+    "file": "assets/book/bartoli-indole-synthesis-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 94,
+    "file": "assets/book/barton-nitrite-ester-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 94,
+    "file": "assets/book/barton-nitrite-ester-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 95,
+    "file": "assets/book/barton-nitrite-ester-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 96,
+    "file": "assets/book/barton-radical-decarboxylation-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 96,
+    "file": "assets/book/barton-radical-decarboxylation-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 97,
+    "file": "assets/book/barton-radical-decarboxylation-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 98,
+    "file": "assets/book/barton-mccombie-radical-deoxygenation-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 98,
+    "file": "assets/book/barton-mccombie-radical-deoxygenation-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 99,
+    "file": "assets/book/barton-mccombie-radical-deoxygenation-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 100,
+    "file": "assets/book/baylis-hillman-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 100,
+    "file": "assets/book/baylis-hillman-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 101,
+    "file": "assets/book/baylis-hillman-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 104,
+    "file": "assets/book/benzilic-acid-rearrangement-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 104,
+    "file": "assets/book/benzilic-acid-rearrangement-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 105,
+    "file": "assets/book/benzilic-acid-rearrangement-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 106,
+    "file": "assets/book/benzoin-and-retro-benzoin-condensation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 106,
+    "file": "assets/book/benzoin-and-retro-benzoin-condensation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 107,
+    "file": "assets/book/benzoin-and-retro-benzoin-condensation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 108,
+    "file": "assets/book/bergman-cycloaromatization-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 108,
+    "file": "assets/book/bergman-cycloaromatization-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 109,
+    "file": "assets/book/bergman-cycloaromatization-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 110,
+    "file": "assets/book/biginelli-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 110,
+    "file": "assets/book/biginelli-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 111,
+    "file": "assets/book/biginelli-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 114,
+    "file": "assets/book/bischler-napieralski-isoquinoline-synthesis-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 114,
+    "file": "assets/book/bischler-napieralski-isoquinoline-synthesis-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 115,
+    "file": "assets/book/bischler-napieralski-isoquinoline-synthesis-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 116,
+    "file": "assets/book/brook-rearrangement-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 116,
+    "file": "assets/book/brook-rearrangement-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 117,
+    "file": "assets/book/brook-rearrangement-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 118,
+    "file": "assets/book/brown-hydroboration-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 118,
+    "file": "assets/book/brown-hydroboration-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 119,
+    "file": "assets/book/brown-hydroboration-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 120,
+    "file": "assets/book/buchner-method-of-ring-expansion-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 120,
+    "file": "assets/book/buchner-method-of-ring-expansion-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 121,
+    "file": "assets/book/buchner-method-of-ring-expansion-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 122,
+    "file": "assets/book/buchwald-hartwig-cross-coupling-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 122,
+    "file": "assets/book/buchwald-hartwig-cross-coupling-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 123,
+    "file": "assets/book/buchwald-hartwig-cross-coupling-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 124,
+    "file": "assets/book/burgess-dehydration-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 124,
+    "file": "assets/book/burgess-dehydration-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 125,
+    "file": "assets/book/burgess-dehydration-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 126,
+    "file": "assets/book/cannizzaro-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 126,
+    "file": "assets/book/cannizzaro-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 127,
+    "file": "assets/book/cannizzaro-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 128,
+    "file": "assets/book/carroll-rearrangement-kimel-cope-rearrangement-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 128,
+    "file": "assets/book/carroll-rearrangement-kimel-cope-rearrangement-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 129,
+    "file": "assets/book/carroll-rearrangement-kimel-cope-rearrangement-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 130,
+    "file": "assets/book/castro-stephens-coupling-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 130,
+    "file": "assets/book/castro-stephens-coupling-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 131,
+    "file": "assets/book/castro-stephens-coupling-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 132,
+    "file": "assets/book/chichibabin-amination-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 132,
+    "file": "assets/book/chichibabin-amination-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 133,
+    "file": "assets/book/chichibabin-amination-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 136,
+    "file": "assets/book/ciamician-dennstedt-rearrangement-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 136,
+    "file": "assets/book/ciamician-dennstedt-rearrangement-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 137,
+    "file": "assets/book/ciamician-dennstedt-rearrangement-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 138,
+    "file": "assets/book/claisen-condensation-claisen-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 138,
+    "file": "assets/book/claisen-condensation-claisen-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 139,
+    "file": "assets/book/claisen-condensation-claisen-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 142,
+    "file": "assets/book/claisen-ireland-rearrangement-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 142,
+    "file": "assets/book/claisen-ireland-rearrangement-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 143,
+    "file": "assets/book/claisen-ireland-rearrangement-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 146,
+    "file": "assets/book/combes-quinoline-synthesis-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 146,
+    "file": "assets/book/combes-quinoline-synthesis-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 147,
+    "file": "assets/book/combes-quinoline-synthesis-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 148,
+    "file": "assets/book/cope-elimination-cope-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 148,
+    "file": "assets/book/cope-elimination-cope-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 149,
+    "file": "assets/book/cope-elimination-cope-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 152,
+    "file": "assets/book/corey-bakshi-shibata-reduction-cbs-reduction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 152,
+    "file": "assets/book/corey-bakshi-shibata-reduction-cbs-reduction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 153,
+    "file": "assets/book/corey-bakshi-shibata-reduction-cbs-reduction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 154,
+    "file": "assets/book/corey-chaykovsky-epoxidation-and-cyclopropanation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 154,
+    "file": "assets/book/corey-chaykovsky-epoxidation-and-cyclopropanation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 155,
+    "file": "assets/book/corey-chaykovsky-epoxidation-and-cyclopropanation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 156,
+    "file": "assets/book/corey-fuchs-alkyne-synthesis-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 156,
+    "file": "assets/book/corey-fuchs-alkyne-synthesis-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 157,
+    "file": "assets/book/corey-fuchs-alkyne-synthesis-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 158,
+    "file": "assets/book/corey-kim-oxidation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 158,
+    "file": "assets/book/corey-kim-oxidation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 159,
+    "file": "assets/book/corey-kim-oxidation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 160,
+    "file": "assets/book/corey-nicolaou-macrolactonization-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 160,
+    "file": "assets/book/corey-nicolaou-macrolactonization-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 161,
+    "file": "assets/book/corey-nicolaou-macrolactonization-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 162,
+    "file": "assets/book/corey-winter-olefination-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 162,
+    "file": "assets/book/corey-winter-olefination-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 163,
+    "file": "assets/book/corey-winter-olefination-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 164,
+    "file": "assets/book/cornforth-rearrangement-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 164,
+    "file": "assets/book/cornforth-rearrangement-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 165,
+    "file": "assets/book/cornforth-rearrangement-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 166,
+    "file": "assets/book/criegee-oxidation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 166,
+    "file": "assets/book/criegee-oxidation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 167,
+    "file": "assets/book/criegee-oxidation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 168,
+    "file": "assets/book/curtius-rearrangement-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 168,
+    "file": "assets/book/curtius-rearrangement-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 169,
+    "file": "assets/book/curtius-rearrangement-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 170,
+    "file": "assets/book/dakin-oxidation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 170,
+    "file": "assets/book/dakin-oxidation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 171,
+    "file": "assets/book/dakin-oxidation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 172,
+    "file": "assets/book/dakin-west-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 172,
+    "file": "assets/book/dakin-west-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 173,
+    "file": "assets/book/dakin-west-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 174,
+    "file": "assets/book/danheiser-benzannulation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 174,
+    "file": "assets/book/danheiser-benzannulation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 175,
+    "file": "assets/book/danheiser-benzannulation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 176,
+    "file": "assets/book/danheiser-cyclopentene-annulation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 176,
+    "file": "assets/book/danheiser-cyclopentene-annulation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 177,
+    "file": "assets/book/danheiser-cyclopentene-annulation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 178,
+    "file": "assets/book/danishefskys-diene-cycloaddition-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 178,
+    "file": "assets/book/danishefskys-diene-cycloaddition-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 179,
+    "file": "assets/book/danishefskys-diene-cycloaddition-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 180,
+    "file": "assets/book/darzens-glycidic-ester-condensation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 180,
+    "file": "assets/book/darzens-glycidic-ester-condensation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 181,
+    "file": "assets/book/darzens-glycidic-ester-condensation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 182,
+    "file": "assets/book/davis-oxaziridine-oxidations-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 182,
+    "file": "assets/book/davis-oxaziridine-oxidations-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 183,
+    "file": "assets/book/davis-oxaziridine-oxidations-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 184,
+    "file": "assets/book/de-mayo-cycloaddition-enone-alkene-2-2-photocycloaddition-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 184,
+    "file": "assets/book/de-mayo-cycloaddition-enone-alkene-2-2-photocycloaddition-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 185,
+    "file": "assets/book/de-mayo-cycloaddition-enone-alkene-2-2-photocycloaddition-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 186,
+    "file": "assets/book/demjanov-and-tiffeneau-demjanov-rearrangement-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 186,
+    "file": "assets/book/demjanov-and-tiffeneau-demjanov-rearrangement-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 187,
+    "file": "assets/book/demjanov-and-tiffeneau-demjanov-rearrangement-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 188,
+    "file": "assets/book/dess-martin-oxidation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 188,
+    "file": "assets/book/dess-martin-oxidation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 189,
+    "file": "assets/book/dess-martin-oxidation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 190,
+    "file": "assets/book/dieckmann-condensation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 190,
+    "file": "assets/book/dieckmann-condensation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 191,
+    "file": "assets/book/dieckmann-condensation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 194,
+    "file": "assets/book/dienone-phenol-rearrangement-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 194,
+    "file": "assets/book/dienone-phenol-rearrangement-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 195,
+    "file": "assets/book/dienone-phenol-rearrangement-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 196,
+    "file": "assets/book/dimroth-rearrangement-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 196,
+    "file": "assets/book/dimroth-rearrangement-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 197,
+    "file": "assets/book/dimroth-rearrangement-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 198,
+    "file": "assets/book/doering-laflamme-allene-synthesis-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 198,
+    "file": "assets/book/doering-laflamme-allene-synthesis-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 199,
+    "file": "assets/book/doering-laflamme-allene-synthesis-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 200,
+    "file": "assets/book/dotz-benzannulation-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 200,
+    "file": "assets/book/dotz-benzannulation-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 201,
+    "file": "assets/book/dotz-benzannulation-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 202,
+    "file": "assets/book/enders-samp-ramp-hydrazone-alkylation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 202,
+    "file": "assets/book/enders-samp-ramp-hydrazone-alkylation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 203,
+    "file": "assets/book/enders-samp-ramp-hydrazone-alkylation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 204,
+    "file": "assets/book/enyne-metathesis-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 204,
+    "file": "assets/book/enyne-metathesis-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 205,
+    "file": "assets/book/enyne-metathesis-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 206,
+    "file": "assets/book/eschenmoser-methenylation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 206,
+    "file": "assets/book/eschenmoser-methenylation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 207,
+    "file": "assets/book/eschenmoser-methenylation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 208,
+    "file": "assets/book/eschenmoser-claisen-rearrangement-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 208,
+    "file": "assets/book/eschenmoser-claisen-rearrangement-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 209,
+    "file": "assets/book/eschenmoser-claisen-rearrangement-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 210,
+    "file": "assets/book/eschenmoser-tanabe-fragmentation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 210,
+    "file": "assets/book/eschenmoser-tanabe-fragmentation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 211,
+    "file": "assets/book/eschenmoser-tanabe-fragmentation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 212,
+    "file": "assets/book/eschweiler-clarke-methylation-reductive-alkylation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 212,
+    "file": "assets/book/eschweiler-clarke-methylation-reductive-alkylation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 213,
+    "file": "assets/book/eschweiler-clarke-methylation-reductive-alkylation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 214,
+    "file": "assets/book/evans-aldol-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 214,
+    "file": "assets/book/evans-aldol-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 215,
+    "file": "assets/book/evans-aldol-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 216,
+    "file": "assets/book/favorskii-and-homo-favorskii-rearrangement-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 216,
+    "file": "assets/book/favorskii-and-homo-favorskii-rearrangement-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 217,
+    "file": "assets/book/favorskii-and-homo-favorskii-rearrangement-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 218,
+    "file": "assets/book/feist-benary-furan-synthesis-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 218,
+    "file": "assets/book/feist-benary-furan-synthesis-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 219,
+    "file": "assets/book/feist-benary-furan-synthesis-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 220,
+    "file": "assets/book/ferrier-reaction-rearrangement-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 220,
+    "file": "assets/book/ferrier-reaction-rearrangement-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 221,
+    "file": "assets/book/ferrier-reaction-rearrangement-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 224,
+    "file": "assets/book/fischer-indole-synthesis-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 224,
+    "file": "assets/book/fischer-indole-synthesis-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 225,
+    "file": "assets/book/fischer-indole-synthesis-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 226,
+    "file": "assets/book/fleming-tamao-oxidation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 226,
+    "file": "assets/book/fleming-tamao-oxidation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 227,
+    "file": "assets/book/fleming-tamao-oxidation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 228,
+    "file": "assets/book/friedel-crafts-acylation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 228,
+    "file": "assets/book/friedel-crafts-acylation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 229,
+    "file": "assets/book/friedel-crafts-acylation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 230,
+    "file": "assets/book/friedel-crafts-alkylation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 230,
+    "file": "assets/book/friedel-crafts-alkylation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 231,
+    "file": "assets/book/friedel-crafts-alkylation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 232,
+    "file": "assets/book/fries-photo-fries-and-anionic-ortho-fries-rearrangement-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 232,
+    "file": "assets/book/fries-photo-fries-and-anionic-ortho-fries-rearrangement-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 233,
+    "file": "assets/book/fries-photo-fries-and-anionic-ortho-fries-rearrangement-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 236,
+    "file": "assets/book/gattermann-and-gattermann-koch-formylation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 236,
+    "file": "assets/book/gattermann-and-gattermann-koch-formylation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 237,
+    "file": "assets/book/gattermann-and-gattermann-koch-formylation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 238,
+    "file": "assets/book/glaser-coupling-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 238,
+    "file": "assets/book/glaser-coupling-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 239,
+    "file": "assets/book/glaser-coupling-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 242,
+    "file": "assets/book/grob-fragmentation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 242,
+    "file": "assets/book/grob-fragmentation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 243,
+    "file": "assets/book/grob-fragmentation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 244,
+    "file": "assets/book/hajos-parrish-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 244,
+    "file": "assets/book/hajos-parrish-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 245,
+    "file": "assets/book/hajos-parrish-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 246,
+    "file": "assets/book/hantzsch-dihydropyridine-synthesis-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 246,
+    "file": "assets/book/hantzsch-dihydropyridine-synthesis-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 247,
+    "file": "assets/book/hantzsch-dihydropyridine-synthesis-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 248,
+    "file": "assets/book/heck-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 248,
+    "file": "assets/book/heck-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 249,
+    "file": "assets/book/heck-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 250,
+    "file": "assets/book/heine-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 250,
+    "file": "assets/book/heine-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 251,
+    "file": "assets/book/heine-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 254,
+    "file": "assets/book/henry-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 254,
+    "file": "assets/book/henry-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 255,
+    "file": "assets/book/henry-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 256,
+    "file": "assets/book/hetero-diels-alder-cycloaddition-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 256,
+    "file": "assets/book/hetero-diels-alder-cycloaddition-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 257,
+    "file": "assets/book/hetero-diels-alder-cycloaddition-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 258,
+    "file": "assets/book/hofmann-elimination-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 258,
+    "file": "assets/book/hofmann-elimination-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 259,
+    "file": "assets/book/hofmann-elimination-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 260,
+    "file": "assets/book/hofmann-loffler-freytag-reaction-remote-functionalization-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 260,
+    "file": "assets/book/hofmann-loffler-freytag-reaction-remote-functionalization-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 261,
+    "file": "assets/book/hofmann-loffler-freytag-reaction-remote-functionalization-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 264,
+    "file": "assets/book/horner-wadsworth-emmons-olefination-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 264,
+    "file": "assets/book/horner-wadsworth-emmons-olefination-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 265,
+    "file": "assets/book/horner-wadsworth-emmons-olefination-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 266,
+    "file": "assets/book/horner-wadsworth-emmons-olefination-still-gennari-modification-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 266,
+    "file": "assets/book/horner-wadsworth-emmons-olefination-still-gennari-modification-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 267,
+    "file": "assets/book/horner-wadsworth-emmons-olefination-still-gennari-modification-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 268,
+    "file": "assets/book/houben-hoesch-reaction-synthesis-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 268,
+    "file": "assets/book/houben-hoesch-reaction-synthesis-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 269,
+    "file": "assets/book/houben-hoesch-reaction-synthesis-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 270,
+    "file": "assets/book/hunsdiecker-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 270,
+    "file": "assets/book/hunsdiecker-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 271,
+    "file": "assets/book/hunsdiecker-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 272,
+    "file": "assets/book/jacobsen-hydrolytic-kinetic-resolution-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 272,
+    "file": "assets/book/jacobsen-hydrolytic-kinetic-resolution-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 273,
+    "file": "assets/book/jacobsen-hydrolytic-kinetic-resolution-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 274,
+    "file": "assets/book/jacobsen-katsuki-epoxidation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 274,
+    "file": "assets/book/jacobsen-katsuki-epoxidation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 275,
+    "file": "assets/book/jacobsen-katsuki-epoxidation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 276,
+    "file": "assets/book/japp-klingemann-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 276,
+    "file": "assets/book/japp-klingemann-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 277,
+    "file": "assets/book/japp-klingemann-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 278,
+    "file": "assets/book/johnson-claisen-rearrangement-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 278,
+    "file": "assets/book/johnson-claisen-rearrangement-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 279,
+    "file": "assets/book/johnson-claisen-rearrangement-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 280,
+    "file": "assets/book/jones-oxidation-oxidation-of-alcohols-by-chromium-reagents-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 280,
+    "file": "assets/book/jones-oxidation-oxidation-of-alcohols-by-chromium-reagents-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 281,
+    "file": "assets/book/jones-oxidation-oxidation-of-alcohols-by-chromium-reagents-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 282,
+    "file": "assets/book/julia-lythgoe-olefination-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 282,
+    "file": "assets/book/julia-lythgoe-olefination-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 283,
+    "file": "assets/book/julia-lythgoe-olefination-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 284,
+    "file": "assets/book/kagan-molander-samarium-diiodide-mediated-coupling-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 284,
+    "file": "assets/book/kagan-molander-samarium-diiodide-mediated-coupling-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 285,
+    "file": "assets/book/kagan-molander-samarium-diiodide-mediated-coupling-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 286,
+    "file": "assets/book/kahne-glycosidation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 286,
+    "file": "assets/book/kahne-glycosidation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 287,
+    "file": "assets/book/kahne-glycosidation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 288,
+    "file": "assets/book/keck-asymmetric-allylation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 288,
+    "file": "assets/book/keck-asymmetric-allylation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 289,
+    "file": "assets/book/keck-asymmetric-allylation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 290,
+    "file": "assets/book/keck-macrolactonization-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 290,
+    "file": "assets/book/keck-macrolactonization-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 291,
+    "file": "assets/book/keck-macrolactonization-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 292,
+    "file": "assets/book/keck-radical-allylation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 292,
+    "file": "assets/book/keck-radical-allylation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 293,
+    "file": "assets/book/keck-radical-allylation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 294,
+    "file": "assets/book/knoevenagel-condensation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 294,
+    "file": "assets/book/knoevenagel-condensation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 295,
+    "file": "assets/book/knoevenagel-condensation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 296,
+    "file": "assets/book/knorr-pyrrole-synthesis-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 296,
+    "file": "assets/book/knorr-pyrrole-synthesis-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 297,
+    "file": "assets/book/knorr-pyrrole-synthesis-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 298,
+    "file": "assets/book/koenigs-knorr-glycosidation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 298,
+    "file": "assets/book/koenigs-knorr-glycosidation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 299,
+    "file": "assets/book/koenigs-knorr-glycosidation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 300,
+    "file": "assets/book/kolbe-schmitt-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 300,
+    "file": "assets/book/kolbe-schmitt-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 301,
+    "file": "assets/book/kolbe-schmitt-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 302,
+    "file": "assets/book/kornblum-oxidation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 302,
+    "file": "assets/book/kornblum-oxidation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 303,
+    "file": "assets/book/kornblum-oxidation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 304,
+    "file": "assets/book/krapcho-dealkoxycarbonylation-krapcho-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 304,
+    "file": "assets/book/krapcho-dealkoxycarbonylation-krapcho-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 305,
+    "file": "assets/book/krapcho-dealkoxycarbonylation-krapcho-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 306,
+    "file": "assets/book/krohnke-pyridine-synthesis-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 306,
+    "file": "assets/book/krohnke-pyridine-synthesis-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 307,
+    "file": "assets/book/krohnke-pyridine-synthesis-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 308,
+    "file": "assets/book/kulinkovich-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 308,
+    "file": "assets/book/kulinkovich-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 309,
+    "file": "assets/book/kulinkovich-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 310,
+    "file": "assets/book/kumada-cross-coupling-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 310,
+    "file": "assets/book/kumada-cross-coupling-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 311,
+    "file": "assets/book/kumada-cross-coupling-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 312,
+    "file": "assets/book/larock-indole-synthesis-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 312,
+    "file": "assets/book/larock-indole-synthesis-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 313,
+    "file": "assets/book/larock-indole-synthesis-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 314,
+    "file": "assets/book/ley-oxidation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 314,
+    "file": "assets/book/ley-oxidation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 315,
+    "file": "assets/book/ley-oxidation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 316,
+    "file": "assets/book/lieben-haloform-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 316,
+    "file": "assets/book/lieben-haloform-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 317,
+    "file": "assets/book/lieben-haloform-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 318,
+    "file": "assets/book/lossen-rearrangement-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 318,
+    "file": "assets/book/lossen-rearrangement-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 319,
+    "file": "assets/book/lossen-rearrangement-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 320,
+    "file": "assets/book/luche-reduction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 320,
+    "file": "assets/book/luche-reduction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 321,
+    "file": "assets/book/luche-reduction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 322,
+    "file": "assets/book/madelung-indole-synthesis-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 322,
+    "file": "assets/book/madelung-indole-synthesis-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 323,
+    "file": "assets/book/madelung-indole-synthesis-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 324,
+    "file": "assets/book/malonic-ester-synthesis-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 324,
+    "file": "assets/book/malonic-ester-synthesis-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 325,
+    "file": "assets/book/malonic-ester-synthesis-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 326,
+    "file": "assets/book/mannich-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 326,
+    "file": "assets/book/mannich-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 327,
+    "file": "assets/book/mannich-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 328,
+    "file": "assets/book/mcmurry-coupling-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 328,
+    "file": "assets/book/mcmurry-coupling-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 329,
+    "file": "assets/book/mcmurry-coupling-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 330,
+    "file": "assets/book/meerwein-arylation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 330,
+    "file": "assets/book/meerwein-arylation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 331,
+    "file": "assets/book/meerwein-arylation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 332,
+    "file": "assets/book/meerwein-ponndorf-verley-reduction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 332,
+    "file": "assets/book/meerwein-ponndorf-verley-reduction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 333,
+    "file": "assets/book/meerwein-ponndorf-verley-reduction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 334,
+    "file": "assets/book/meisenheimer-rearrangement-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 334,
+    "file": "assets/book/meisenheimer-rearrangement-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 335,
+    "file": "assets/book/meisenheimer-rearrangement-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 336,
+    "file": "assets/book/meyer-schuster-and-rupe-rearrangement-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 336,
+    "file": "assets/book/meyer-schuster-and-rupe-rearrangement-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 337,
+    "file": "assets/book/meyer-schuster-and-rupe-rearrangement-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 338,
+    "file": "assets/book/michael-addition-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 338,
+    "file": "assets/book/michael-addition-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 339,
+    "file": "assets/book/michael-addition-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 340,
+    "file": "assets/book/midland-alpine-borane-reduction-midland-reduction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 340,
+    "file": "assets/book/midland-alpine-borane-reduction-midland-reduction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 341,
+    "file": "assets/book/midland-alpine-borane-reduction-midland-reduction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 342,
+    "file": "assets/book/minisci-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 342,
+    "file": "assets/book/minisci-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 343,
+    "file": "assets/book/minisci-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 344,
+    "file": "assets/book/mislow-evans-rearrangement-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 344,
+    "file": "assets/book/mislow-evans-rearrangement-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 345,
+    "file": "assets/book/mislow-evans-rearrangement-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 346,
+    "file": "assets/book/mitsunobu-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 346,
+    "file": "assets/book/mitsunobu-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 347,
+    "file": "assets/book/mitsunobu-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 348,
+    "file": "assets/book/miyaura-boration-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 348,
+    "file": "assets/book/miyaura-boration-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 349,
+    "file": "assets/book/miyaura-boration-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 350,
+    "file": "assets/book/mukaiyama-aldol-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 350,
+    "file": "assets/book/mukaiyama-aldol-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 351,
+    "file": "assets/book/mukaiyama-aldol-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 352,
+    "file": "assets/book/myers-asymmetric-alkylation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 352,
+    "file": "assets/book/myers-asymmetric-alkylation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 353,
+    "file": "assets/book/myers-asymmetric-alkylation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 354,
+    "file": "assets/book/nagata-hydrocyanation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 354,
+    "file": "assets/book/nagata-hydrocyanation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 355,
+    "file": "assets/book/nagata-hydrocyanation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 356,
+    "file": "assets/book/nazarov-cyclization-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 356,
+    "file": "assets/book/nazarov-cyclization-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 357,
+    "file": "assets/book/nazarov-cyclization-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 358,
+    "file": "assets/book/neber-rearrangement-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 358,
+    "file": "assets/book/neber-rearrangement-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 359,
+    "file": "assets/book/neber-rearrangement-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 360,
+    "file": "assets/book/nef-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 360,
+    "file": "assets/book/nef-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 361,
+    "file": "assets/book/nef-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 362,
+    "file": "assets/book/negishi-cross-coupling-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 362,
+    "file": "assets/book/negishi-cross-coupling-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 363,
+    "file": "assets/book/negishi-cross-coupling-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 364,
+    "file": "assets/book/nenitzescu-indole-synthesis-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 364,
+    "file": "assets/book/nenitzescu-indole-synthesis-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 365,
+    "file": "assets/book/nenitzescu-indole-synthesis-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 366,
+    "file": "assets/book/nicholas-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 366,
+    "file": "assets/book/nicholas-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 367,
+    "file": "assets/book/nicholas-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 368,
+    "file": "assets/book/noyori-asymmetric-hydrogenation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 368,
+    "file": "assets/book/noyori-asymmetric-hydrogenation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 369,
+    "file": "assets/book/noyori-asymmetric-hydrogenation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 370,
+    "file": "assets/book/nozaki-hiyama-kishi-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 370,
+    "file": "assets/book/nozaki-hiyama-kishi-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 371,
+    "file": "assets/book/nozaki-hiyama-kishi-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 372,
+    "file": "assets/book/oppenauer-oxidation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 372,
+    "file": "assets/book/oppenauer-oxidation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 373,
+    "file": "assets/book/oppenauer-oxidation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 374,
+    "file": "assets/book/overman-rearrangement-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 374,
+    "file": "assets/book/overman-rearrangement-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 375,
+    "file": "assets/book/overman-rearrangement-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 376,
+    "file": "assets/book/oxy-cope-rearrangement-and-anionic-oxy-cope-rearrangement-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 376,
+    "file": "assets/book/oxy-cope-rearrangement-and-anionic-oxy-cope-rearrangement-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 377,
+    "file": "assets/book/oxy-cope-rearrangement-and-anionic-oxy-cope-rearrangement-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 378,
+    "file": "assets/book/paal-knorr-furan-synthesis-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 378,
+    "file": "assets/book/paal-knorr-furan-synthesis-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 379,
+    "file": "assets/book/paal-knorr-furan-synthesis-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 380,
+    "file": "assets/book/paal-knorr-pyrrole-synthesis-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 380,
+    "file": "assets/book/paal-knorr-pyrrole-synthesis-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 381,
+    "file": "assets/book/paal-knorr-pyrrole-synthesis-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 382,
+    "file": "assets/book/passerini-multicomponent-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 382,
+    "file": "assets/book/passerini-multicomponent-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 383,
+    "file": "assets/book/passerini-multicomponent-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 384,
+    "file": "assets/book/paterno-buchi-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 384,
+    "file": "assets/book/paterno-buchi-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 385,
+    "file": "assets/book/paterno-buchi-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 386,
+    "file": "assets/book/pauson-khand-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 386,
+    "file": "assets/book/pauson-khand-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 387,
+    "file": "assets/book/pauson-khand-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 388,
+    "file": "assets/book/payne-rearrangement-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 388,
+    "file": "assets/book/payne-rearrangement-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 389,
+    "file": "assets/book/payne-rearrangement-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 390,
+    "file": "assets/book/perkin-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 390,
+    "file": "assets/book/perkin-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 391,
+    "file": "assets/book/perkin-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 392,
+    "file": "assets/book/petasis-boronic-acid-mannich-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 392,
+    "file": "assets/book/petasis-boronic-acid-mannich-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 393,
+    "file": "assets/book/petasis-boronic-acid-mannich-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 394,
+    "file": "assets/book/petasis-ferrier-rearrangement-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 394,
+    "file": "assets/book/petasis-ferrier-rearrangement-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 395,
+    "file": "assets/book/petasis-ferrier-rearrangement-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 396,
+    "file": "assets/book/peterson-olefination-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 396,
+    "file": "assets/book/peterson-olefination-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 397,
+    "file": "assets/book/peterson-olefination-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 398,
+    "file": "assets/book/pfitzner-moffatt-oxidation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 398,
+    "file": "assets/book/pfitzner-moffatt-oxidation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 399,
+    "file": "assets/book/pfitzner-moffatt-oxidation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 400,
+    "file": "assets/book/pictet-spengler-tetrahydroisoquinoline-synthesis-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 400,
+    "file": "assets/book/pictet-spengler-tetrahydroisoquinoline-synthesis-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 401,
+    "file": "assets/book/pictet-spengler-tetrahydroisoquinoline-synthesis-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 404,
+    "file": "assets/book/pinner-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 404,
+    "file": "assets/book/pinner-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 405,
+    "file": "assets/book/pinner-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 406,
+    "file": "assets/book/pinnick-oxidation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 406,
+    "file": "assets/book/pinnick-oxidation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 407,
+    "file": "assets/book/pinnick-oxidation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 408,
+    "file": "assets/book/polonovski-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 408,
+    "file": "assets/book/polonovski-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 409,
+    "file": "assets/book/polonovski-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 410,
+    "file": "assets/book/pomeranz-fritsch-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 410,
+    "file": "assets/book/pomeranz-fritsch-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 411,
+    "file": "assets/book/pomeranz-fritsch-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 412,
+    "file": "assets/book/prevost-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 412,
+    "file": "assets/book/prevost-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 413,
+    "file": "assets/book/prevost-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 414,
+    "file": "assets/book/prilezhaev-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 414,
+    "file": "assets/book/prilezhaev-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 415,
+    "file": "assets/book/prilezhaev-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 416,
+    "file": "assets/book/prins-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 416,
+    "file": "assets/book/prins-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 417,
+    "file": "assets/book/prins-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 418,
+    "file": "assets/book/prins-pinacol-rearrangement-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 418,
+    "file": "assets/book/prins-pinacol-rearrangement-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 419,
+    "file": "assets/book/prins-pinacol-rearrangement-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 420,
+    "file": "assets/book/pummerer-rearrangement-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 420,
+    "file": "assets/book/pummerer-rearrangement-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 421,
+    "file": "assets/book/pummerer-rearrangement-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 422,
+    "file": "assets/book/quasi-favorskii-rearrangement-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 422,
+    "file": "assets/book/quasi-favorskii-rearrangement-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 423,
+    "file": "assets/book/quasi-favorskii-rearrangement-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 424,
+    "file": "assets/book/ramberg-backlund-rearrangement-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 424,
+    "file": "assets/book/ramberg-backlund-rearrangement-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 425,
+    "file": "assets/book/ramberg-backlund-rearrangement-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 426,
+    "file": "assets/book/reformatsky-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 426,
+    "file": "assets/book/reformatsky-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 427,
+    "file": "assets/book/reformatsky-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 428,
+    "file": "assets/book/regitz-diazo-transfer-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 428,
+    "file": "assets/book/regitz-diazo-transfer-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 429,
+    "file": "assets/book/regitz-diazo-transfer-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 430,
+    "file": "assets/book/reimer-tiemann-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 430,
+    "file": "assets/book/reimer-tiemann-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 431,
+    "file": "assets/book/reimer-tiemann-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 432,
+    "file": "assets/book/riley-selenium-dioxide-oxidation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 432,
+    "file": "assets/book/riley-selenium-dioxide-oxidation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 433,
+    "file": "assets/book/riley-selenium-dioxide-oxidation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 436,
+    "file": "assets/book/robinson-annulation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 436,
+    "file": "assets/book/robinson-annulation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 437,
+    "file": "assets/book/robinson-annulation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 438,
+    "file": "assets/book/roush-asymmetric-allylation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 438,
+    "file": "assets/book/roush-asymmetric-allylation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 439,
+    "file": "assets/book/roush-asymmetric-allylation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 440,
+    "file": "assets/book/rubottom-oxidation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 440,
+    "file": "assets/book/rubottom-oxidation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 441,
+    "file": "assets/book/rubottom-oxidation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 442,
+    "file": "assets/book/saegusa-oxidation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 442,
+    "file": "assets/book/saegusa-oxidation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 443,
+    "file": "assets/book/saegusa-oxidation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 444,
+    "file": "assets/book/sakurai-allylation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 444,
+    "file": "assets/book/sakurai-allylation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 445,
+    "file": "assets/book/sakurai-allylation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 448,
+    "file": "assets/book/schmidt-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 448,
+    "file": "assets/book/schmidt-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 449,
+    "file": "assets/book/schmidt-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 450,
+    "file": "assets/book/schotten-baumann-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 450,
+    "file": "assets/book/schotten-baumann-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 451,
+    "file": "assets/book/schotten-baumann-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 452,
+    "file": "assets/book/schwartz-hydrozirconation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 452,
+    "file": "assets/book/schwartz-hydrozirconation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 453,
+    "file": "assets/book/schwartz-hydrozirconation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 454,
+    "file": "assets/book/seyferth-gilbert-homologation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 454,
+    "file": "assets/book/seyferth-gilbert-homologation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 455,
+    "file": "assets/book/seyferth-gilbert-homologation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 456,
+    "file": "assets/book/sharpless-asymmetric-aminohydroxylation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 456,
+    "file": "assets/book/sharpless-asymmetric-aminohydroxylation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 457,
+    "file": "assets/book/sharpless-asymmetric-aminohydroxylation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 458,
+    "file": "assets/book/sharpless-asymmetric-dihydroxylation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 458,
+    "file": "assets/book/sharpless-asymmetric-dihydroxylation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 459,
+    "file": "assets/book/sharpless-asymmetric-dihydroxylation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 460,
+    "file": "assets/book/sharpless-asymmetric-epoxidation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 460,
+    "file": "assets/book/sharpless-asymmetric-epoxidation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 461,
+    "file": "assets/book/sharpless-asymmetric-epoxidation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 462,
+    "file": "assets/book/shi-asymmetric-epoxidation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 462,
+    "file": "assets/book/shi-asymmetric-epoxidation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 463,
+    "file": "assets/book/shi-asymmetric-epoxidation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 464,
+    "file": "assets/book/simmons-smith-cyclopropanation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 464,
+    "file": "assets/book/simmons-smith-cyclopropanation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 465,
+    "file": "assets/book/simmons-smith-cyclopropanation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 466,
+    "file": "assets/book/skraup-and-doebner-miller-quinoline-synthesis-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 466,
+    "file": "assets/book/skraup-and-doebner-miller-quinoline-synthesis-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 467,
+    "file": "assets/book/skraup-and-doebner-miller-quinoline-synthesis-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 468,
+    "file": "assets/book/smiles-rearrangement-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 468,
+    "file": "assets/book/smiles-rearrangement-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 469,
+    "file": "assets/book/smiles-rearrangement-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 470,
+    "file": "assets/book/smith-tietze-multicomponent-dithiane-linchpin-coupling-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 470,
+    "file": "assets/book/smith-tietze-multicomponent-dithiane-linchpin-coupling-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 471,
+    "file": "assets/book/smith-tietze-multicomponent-dithiane-linchpin-coupling-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 472,
+    "file": "assets/book/snieckus-directed-ortho-metalation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 472,
+    "file": "assets/book/snieckus-directed-ortho-metalation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 473,
+    "file": "assets/book/snieckus-directed-ortho-metalation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 474,
+    "file": "assets/book/sommelet-hauser-rearrangement-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 474,
+    "file": "assets/book/sommelet-hauser-rearrangement-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 475,
+    "file": "assets/book/sommelet-hauser-rearrangement-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 476,
+    "file": "assets/book/sonogashira-cross-coupling-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 476,
+    "file": "assets/book/sonogashira-cross-coupling-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 477,
+    "file": "assets/book/sonogashira-cross-coupling-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 478,
+    "file": "assets/book/staudinger-ketene-cycloaddition-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 478,
+    "file": "assets/book/staudinger-ketene-cycloaddition-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 479,
+    "file": "assets/book/staudinger-ketene-cycloaddition-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 480,
+    "file": "assets/book/staudinger-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 480,
+    "file": "assets/book/staudinger-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 481,
+    "file": "assets/book/staudinger-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 482,
+    "file": "assets/book/stephen-aldehyde-synthesis-stephen-reduction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 482,
+    "file": "assets/book/stephen-aldehyde-synthesis-stephen-reduction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 483,
+    "file": "assets/book/stephen-aldehyde-synthesis-stephen-reduction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 484,
+    "file": "assets/book/stetter-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 484,
+    "file": "assets/book/stetter-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 485,
+    "file": "assets/book/stetter-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 486,
+    "file": "assets/book/stevens-rearrangement-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 486,
+    "file": "assets/book/stevens-rearrangement-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 487,
+    "file": "assets/book/stevens-rearrangement-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 488,
+    "file": "assets/book/stille-carbonylative-cross-coupling-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 488,
+    "file": "assets/book/stille-carbonylative-cross-coupling-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 489,
+    "file": "assets/book/stille-carbonylative-cross-coupling-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 490,
+    "file": "assets/book/stille-cross-coupling-migita-kosugi-stille-coupling-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 490,
+    "file": "assets/book/stille-cross-coupling-migita-kosugi-stille-coupling-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 491,
+    "file": "assets/book/stille-cross-coupling-migita-kosugi-stille-coupling-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 492,
+    "file": "assets/book/stille-kelly-coupling-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 492,
+    "file": "assets/book/stille-kelly-coupling-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 493,
+    "file": "assets/book/stille-kelly-coupling-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 494,
+    "file": "assets/book/stobbe-condensation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 494,
+    "file": "assets/book/stobbe-condensation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 495,
+    "file": "assets/book/stobbe-condensation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 496,
+    "file": "assets/book/stork-enamine-synthesis-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 496,
+    "file": "assets/book/stork-enamine-synthesis-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 497,
+    "file": "assets/book/stork-enamine-synthesis-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 498,
+    "file": "assets/book/strecker-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 498,
+    "file": "assets/book/strecker-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 499,
+    "file": "assets/book/strecker-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 504,
+    "file": "assets/book/takai-utimoto-olefination-takai-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 504,
+    "file": "assets/book/takai-utimoto-olefination-takai-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 505,
+    "file": "assets/book/takai-utimoto-olefination-takai-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 506,
+    "file": "assets/book/tebbe-olefination-petasis-tebbe-olefination-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 506,
+    "file": "assets/book/tebbe-olefination-petasis-tebbe-olefination-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 507,
+    "file": "assets/book/tebbe-olefination-petasis-tebbe-olefination-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 508,
+    "file": "assets/book/tishchenko-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 508,
+    "file": "assets/book/tishchenko-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 509,
+    "file": "assets/book/tishchenko-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 510,
+    "file": "assets/book/tsuji-trost-reaction-allylation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 510,
+    "file": "assets/book/tsuji-trost-reaction-allylation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 511,
+    "file": "assets/book/tsuji-trost-reaction-allylation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 512,
+    "file": "assets/book/tsuji-wilkinson-decarbonylation-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 512,
+    "file": "assets/book/tsuji-wilkinson-decarbonylation-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 513,
+    "file": "assets/book/tsuji-wilkinson-decarbonylation-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 514,
+    "file": "assets/book/ugi-multicomponent-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 514,
+    "file": "assets/book/ugi-multicomponent-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 515,
+    "file": "assets/book/ugi-multicomponent-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 516,
+    "file": "assets/book/ullmann-biaryl-ether-and-biaryl-amine-synthesis-condensation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 516,
+    "file": "assets/book/ullmann-biaryl-ether-and-biaryl-amine-synthesis-condensation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 517,
+    "file": "assets/book/ullmann-biaryl-ether-and-biaryl-amine-synthesis-condensation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 518,
+    "file": "assets/book/ullmann-reaction-coupling-biaryl-synthesis-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 518,
+    "file": "assets/book/ullmann-reaction-coupling-biaryl-synthesis-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 519,
+    "file": "assets/book/ullmann-reaction-coupling-biaryl-synthesis-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 520,
+    "file": "assets/book/vilsmeier-haack-formylation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 520,
+    "file": "assets/book/vilsmeier-haack-formylation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 521,
+    "file": "assets/book/vilsmeier-haack-formylation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 522,
+    "file": "assets/book/vinylcyclopropane-cyclopentene-rearrangement-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 522,
+    "file": "assets/book/vinylcyclopropane-cyclopentene-rearrangement-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 523,
+    "file": "assets/book/vinylcyclopropane-cyclopentene-rearrangement-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 524,
+    "file": "assets/book/von-pechmann-reaction-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 524,
+    "file": "assets/book/von-pechmann-reaction-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 525,
+    "file": "assets/book/von-pechmann-reaction-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 526,
+    "file": "assets/book/wacker-oxidation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 526,
+    "file": "assets/book/wacker-oxidation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 527,
+    "file": "assets/book/wacker-oxidation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 528,
+    "file": "assets/book/wagner-meerwein-rearrangement-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 528,
+    "file": "assets/book/wagner-meerwein-rearrangement-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 529,
+    "file": "assets/book/wagner-meerwein-rearrangement-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 530,
+    "file": "assets/book/weinreb-ketone-synthesis-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 530,
+    "file": "assets/book/weinreb-ketone-synthesis-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 531,
+    "file": "assets/book/weinreb-ketone-synthesis-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 532,
+    "file": "assets/book/wharton-fragmentation-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 532,
+    "file": "assets/book/wharton-fragmentation-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 533,
+    "file": "assets/book/wharton-fragmentation-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 534,
+    "file": "assets/book/wharton-olefin-synthesis-wharton-transposition-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 534,
+    "file": "assets/book/wharton-olefin-synthesis-wharton-transposition-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 535,
+    "file": "assets/book/wharton-olefin-synthesis-wharton-transposition-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 540,
+    "file": "assets/book/wittig-reaction-schlosser-modification-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 540,
+    "file": "assets/book/wittig-reaction-schlosser-modification-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 541,
+    "file": "assets/book/wittig-reaction-schlosser-modification-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 542,
+    "file": "assets/book/wittig-1-2-and-2-3-rearrangement-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 542,
+    "file": "assets/book/wittig-1-2-and-2-3-rearrangement-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 543,
+    "file": "assets/book/wittig-1-2-and-2-3-rearrangement-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 544,
+    "file": "assets/book/wohl-ziegler-bromination-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 544,
+    "file": "assets/book/wohl-ziegler-bromination-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 545,
+    "file": "assets/book/wohl-ziegler-bromination-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 546,
+    "file": "assets/book/wolff-rearrangement-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 546,
+    "file": "assets/book/wolff-rearrangement-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 547,
+    "file": "assets/book/wolff-rearrangement-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 550,
+    "file": "assets/book/wurtz-coupling-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 550,
+    "file": "assets/book/wurtz-coupling-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 551,
+    "file": "assets/book/wurtz-coupling-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 552,
+    "file": "assets/book/yamaguchi-macrolactonization-reaction.png",
+    "region": "overview",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 552,
+    "file": "assets/book/yamaguchi-macrolactonization-mechanism.png",
+    "region": "mechanism",
+    "scale": 2,
+    "skipExisting": true
+  },
+  {
+    "page": 553,
+    "file": "assets/book/yamaguchi-macrolactonization-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ],
+    "scale": 2,
+    "skipExisting": true
   }
 ]
