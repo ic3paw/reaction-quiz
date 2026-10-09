@@ -121,7 +121,7 @@ function dashboard() {
   main.innerHTML = heading('Named reactions') + `
     ${selectedReactions().length ? '' : '<p class="intro">Select at least one category to start.</p>'}
     <div class="actions"><button class="button primary" data-start="selected" ${selectedReactions().length ? '' : 'disabled'}>Quiz all selected</button><button class="button secondary" data-flashcards="selected" ${selectedReactions().length ? '' : 'disabled'}>Study flashcards</button><button class="text-button" data-start="mixed" ${selectedReactions().length ? '' : 'disabled'}>Quick quiz</button><button class="text-button" data-start="endless" ${selectedReactions().length ? '' : 'disabled'}>Endless quiz</button></div>
-    <p class="catalog-note">250 book entries, plus your original Fischer esterification card. Categories follow appendix 8.3 (pp. 508–517); reactions can belong to more than one category.</p>
+    <p class="catalog-note">${selectedReactions().length} reactions selected.</p>
     <section class="home-section"><div class="section-heading"><h2>All-time progress</h2><a class="text-button" href="#statistics">View statistics</a></div>${statsMarkup()}</section>`;
 }
 
