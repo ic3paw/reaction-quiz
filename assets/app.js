@@ -42,11 +42,23 @@ state.selectedCategories = Array.isArray(state.selectedCategories)
 const inCategory = (r, id) => r.categories.includes(id);
 const isSelected = r => r.categories.some(id => state.selectedCategories.includes(id));
 const selectedReactions = () => reactions.filter(isSelected);
+function studyPool(mode) {
+  if (mode === 'all') return [...reactions];
+  if (categoryFor(mode)) return reactions.filter(r => inCategory(r, mode));
+  if (mode === 'collection') return filteredReactions();
+  const pool = selectedReactions();
+  return mode === 'saved' ? pool.filter(r => state.saved.includes(r.id)) : pool;
+}
+function selectionTitle() {
+  return state.selectedCategories.length === categories.length ? 'All reactions'
+    : state.selectedCategories.map(id => categoryFor(id).short).join(' · ');
+}
 const main = document.querySelector('main');
 const quizDialog = document.querySelector('#quiz-dialog');
 const reactionDialog = document.querySelector('#reaction-dialog');
 let detailReactionId = null;
-let detailTab = 'reaction';
+let detailTab = 'outline';
+const detailTabs = {outline:'General outline', importance:'Importance', mechanism:'Mechanism', applications:'Applications'};
 const categoryFor = id => categories.find(c=>c.id===id);
 const categoryLabel = r => r.categories.map(id => categoryFor(id).short).join(' · ');
 const colorStyle = c => `--category-color:${c.color};--category-light:${c.light}`;
@@ -106,7 +118,7 @@ function syncCategories() {
 function dashboard() {
   main.innerHTML = heading('Named reactions') + `
     <p class="intro">${selectedReactions().length ? `${selectedReactions().length} reactions selected. Quiz yourself or browse the library.` : 'Select at least one category to start.'}</p>
-    <div class="actions"><button class="button primary" data-start="mixed" ${selectedReactions().length ? '' : 'disabled'}>Start quiz</button><button class="button secondary" data-flashcards="selected" ${selectedReactions().length ? '' : 'disabled'}>Study flashcards</button><button class="text-button" data-start="daily" ${selectedReactions().length ? '' : 'disabled'}>Daily challenge</button><a class="text-button" href="#library">Browse reactions</a></div>
+    <div class="actions"><button class="button primary" data-start="selected" ${selectedReactions().length ? '' : 'disabled'}>Quiz all selected</button><button class="button secondary" data-flashcards="selected" ${selectedReactions().length ? '' : 'disabled'}>Study flashcards</button><button class="text-button" data-start="mixed" ${selectedReactions().length ? '' : 'disabled'}>Quick quiz</button><button class="text-button" data-start="daily" ${selectedReactions().length ? '' : 'disabled'}>Daily challenge</button><a class="text-button" href="#library">Browse reactions</a></div>
     <p class="catalog-note">250 book entries, plus your original Fischer esterification card. Categories follow appendix 8.3 (pp. 508–517); reactions can belong to more than one category.</p>
     <section class="home-section"><div class="section-heading"><h2>All-time progress</h2><a class="text-button" href="#statistics">View statistics</a></div>${statsMarkup()}</section>`;
 }
@@ -141,49 +153,62 @@ function renderLibraryResults(saved) {
 function practice() {
   const modes = [
     ['Quick quiz', 'Up to 5 questions from selected categories.', 'mixed'],
+    ['Quiz every selected reaction', `${selectedReactions().length} questions from your selected categories, without repeats.`, 'selected'],
+    ['All reactions', `All ${reactions.length} reactions, regardless of sidebar selection.`, 'all'],
     ['Daily challenge', 'A daily mix from selected categories.', 'daily'],
     ['Review mistakes', 'Reactions you last answered incorrectly.', 'review'],
     ['Saved reactions', 'Practice your bookmarked reactions.', 'saved'],
   ];
-  main.innerHTML = heading('Practice') + `<div class="practice-list">${modes.map(([title, description, mode]) => `<div class="practice-row"><div><h3>${title}</h3><p>${description}</p></div><button class="text-button" data-start="${mode}" aria-label="Start ${title.toLowerCase()}" ${selectedReactions().length ? '' : 'disabled'}>Start →</button></div>`).join('')}</div>
+  main.innerHTML = heading('Practice') + `<div class="practice-list">${modes.map(([title, description, mode]) => `<div class="practice-row"><div><h3>${title}</h3><p>${description}</p></div><button class="text-button" data-start="${mode}" aria-label="Start ${title.toLowerCase()}" ${mode === 'all' || selectedReactions().length ? '' : 'disabled'}>Start →</button></div>`).join('')}</div>
     <h2>Practice by appendix category</h2><p class="muted">Each quiz draws from the category shown. Use the sidebar to combine categories in a quick quiz.</p><div class="practice-list">${categories.map(c => `<div class="practice-row"><div><h3>${c.name}</h3><p>${reactions.filter(r => inCategory(r,c.id)).length} reactions</p></div><div class="actions"><button class="text-button" data-start="${c.id}" aria-label="Quiz ${c.name}">Quiz</button><button class="text-button" data-flashcards="${c.id}" aria-label="Flashcards for ${c.name}">Cards</button></div></div>`).join('')}</div>`;
 }
 
 const flashcardDialog = document.querySelector('#flashcard-dialog');
+const cardModes = {outline:'General outline', name:'Name', mechanism:'Mechanism'};
+const cardViews = {outline:'General outline', importance:'Importance', name:'Name', mechanism:'Mechanism'};
+if (!Object.hasOwn(cardModes, state.flashcardMode)) state.flashcardMode = 'name';
 let deck = null;
+function cardModeOptions() {
+  return Object.entries(cardModes).map(([value, label]) => `<option value="${value}" ${state.flashcardMode === value ? 'selected' : ''}>${label}</option>`).join('');
+}
 function flashcards() {
   const count = selectedReactions().length;
   const studied = Object.keys(state.flashcardReviews || {}).length;
   main.innerHTML = heading('Flashcards') + `
-    <p class="intro">Recall the reaction from its transformation, then flip the card to check the name, scheme, and mechanism.</p>
-    <label class="flashcard-direction" for="flashcard-direction">Card front
-      <select id="flashcard-direction"><option value="transformation">Transformation → reaction name</option><option value="name">Reaction name → transformation</option></select>
+    <p class="intro">Study ${count} reactions from: ${escapeHTML(selectionTitle() || 'no categories selected')}. Choose what to recall, then flip to check your answer.</p>
+    <label class="flashcard-direction" for="flashcard-mode">Recall
+      <select id="flashcard-mode" data-card-mode>${cardModeOptions()}</select>
     </label>
+    <p class="muted">Name: identify a transformation. Mechanism: recall the steps from a name. General outline: recall the transformation and conditions from a name.</p>
     <div class="actions"><button class="button primary" data-flashcards="selected" ${count ? '' : 'disabled'}>Study ${count} cards</button><button class="button secondary" data-flashcards="saved" ${selectedReactions().some(r => state.saved.includes(r.id)) ? '' : 'disabled'}>Study saved cards</button></div>
     <p class="catalog-note">${studied} cards reviewed. Choose one or more appendix categories in the sidebar. Your flashcard reviews are saved separately from quiz accuracy.</p>`;
 }
 
 function startFlashcards(mode) {
-  let pool = categoryFor(mode) ? reactions.filter(r => inCategory(r,mode)) : selectedReactions();
-  if (mode === 'collection') pool = filteredReactions();
-  if (mode === 'saved') pool = pool.filter(r => state.saved.includes(r.id));
+  const pool = studyPool(mode);
   if (!pool.length) { toast('No cards in this selection.'); return; }
-  const direction = document.querySelector('#flashcard-direction')?.value || 'transformation';
-  deck = {cards:shuffle(pool), original:[...pool], index:0, revealed:false, ratings:{}, direction,
-    title:categoryFor(mode)?.short || (mode==='saved' ? 'Saved reactions' : 'Selected reactions'), finished:false};
+  deck = {cards:shuffle(pool), original:[...pool], index:0, revealed:false, ratings:{}, mode:state.flashcardMode, answerView:state.flashcardMode,
+    title:categoryFor(mode)?.short || `${mode==='saved' || (mode==='collection' && page==='saved') ? 'Saved · ' : ''}${selectionTitle()}`, finished:false};
   if (reactionDialog.open) reactionDialog.close();
   renderFlashcard(); flashcardDialog.showModal();
+}
+
+function cardAnswer(r, view) {
+  if (view === 'name') return `<h3>${escapeHTML(r.name)}</h3><p class="muted">${escapeHTML(categoryLabel(r))}</p>`;
+  return `<h3>${escapeHTML(r.name)}</h3>${detailPanel(r, view)}`;
 }
 
 function renderFlashcard() {
   const r = deck.cards[deck.index];
   flashcardDialog.innerHTML = `<div class="dialog-inner"><div class="dialog-top"><span>${escapeHTML(deck.title)} · ${deck.index+1} / ${deck.cards.length}</span><button class="close-button" data-close="flashcards" aria-label="Close flashcards">×</button></div>
     <div class="quiz-progress"><div style="width:${deck.index/deck.cards.length*100}%"></div></div>
-    <h2 id="flashcard-title" tabindex="-1">${deck.revealed ? 'Answer' : deck.direction==='name' ? 'Recall the transformation' : 'Name the reaction'}</h2>
-    <div class="flashcard-content" aria-live="polite">${deck.revealed
-      ? `<h3>${escapeHTML(r.name)}</h3><p>${escapeHTML(r.summary)}</p>${r.reagents ? `<p><strong>Reagents:</strong> ${escapeHTML(r.reagents)}</p>` : ''}${bookReactions[r.id]?.reaction ? bookFigure(bookReactions[r.id].reaction,r.name,'reaction') : ''}<details class="flashcard-mechanism"><summary>Mechanism & explanation</summary><p>${escapeHTML(r.explanation)}</p>${bookReactions[r.id]?.mechanism ? bookFigure(bookReactions[r.id].mechanism,r.name,'mechanism') : `<p class="muted">${escapeHTML(bookReactions[r.id]?.mechanismNote || '')}</p>`}</details><p class="muted">${categoryLabel(r)}</p>`
-      : `<p class="flashcard-prompt">${escapeHTML(deck.direction==='name' ? r.name : r.question)}</p>`}</div>
-    <div class="flashcard-controls">${deck.revealed ? `<button class="button secondary" data-card-rate="again">Study again</button><button class="button primary" data-card-rate="known">Got it</button>` : '<button class="button primary" data-card-flip>Flip card</button>'}</div>
+    <label class="flashcard-direction" for="deck-card-mode">Recall<select id="deck-card-mode" data-card-mode>${cardModeOptions()}</select></label>
+    <h2 id="flashcard-title" tabindex="-1">${deck.revealed ? cardViews[deck.answerView] : deck.mode==='name' ? 'Name the reaction' : deck.mode==='mechanism' ? 'Recall the mechanism' : 'Recall the general outline'}</h2>
+    ${deck.revealed ? `<div class="reaction-tabs" role="tablist" aria-label="Answer view">${Object.entries(cardViews).map(([value,label]) => `<button role="tab" id="card-tab-${value}" data-card-view="${value}" aria-controls="card-answer" aria-selected="${deck.answerView===value}" tabindex="${deck.answerView===value ? 0 : -1}">${label}</button>`).join('')}</div>` : ''}
+    <div class="flashcard-content" ${deck.revealed ? `id="card-answer" role="tabpanel" tabindex="0" aria-labelledby="card-tab-${deck.answerView}"` : 'aria-live="polite"'}>${deck.revealed
+      ? cardAnswer(r, deck.answerView)
+      : `<p class="flashcard-prompt">${escapeHTML(deck.mode==='name' ? r.question : r.name)}</p>`}</div>
+    <div class="flashcard-controls"><button class="button ${deck.revealed ? 'secondary' : 'primary'}" data-card-flip>${deck.revealed ? 'Flip back' : 'Flip card'}</button>${deck.revealed ? `<button class="button secondary" data-card-rate="again">Study again</button><button class="button primary" data-card-rate="known">Got it</button>` : ''}</div>
     <div class="flashcard-navigation"><button class="text-button" data-card-prev ${deck.index ? '' : 'disabled'}>← Previous</button><button class="text-button" data-card-shuffle>Shuffle deck</button><button class="text-button" data-card-next>${deck.index===deck.cards.length-1 ? 'Finish' : 'Next →'}</button></div>
     <p class="catalog-note">Use ← / → to navigate. Space flips the card when a control is not focused.${deck.ratings[r.id] ? ` Your rating: ${deck.ratings[r.id]==='known' ? 'Got it' : 'Study again'}.` : ''}</p></div>`;
   flashcardDialog.scrollTop = 0;
@@ -192,6 +217,7 @@ function renderFlashcard() {
 function flipCard() {
   if (!deck || deck.finished) return;
   deck.revealed = !deck.revealed;
+  deck.answerView = deck.mode;
   renderFlashcard();
   flashcardDialog.querySelector('#flashcard-title').focus({preventScroll:true});
 }
@@ -225,6 +251,12 @@ function finishDeck() {
 
 flashcardDialog.addEventListener('keydown', e => {
   if (!deck || deck.finished) return;
+  if (e.target.closest('select,input,textarea')) return;
+  if (e.target.matches('[data-card-view]') && ['ArrowLeft','ArrowRight','Home','End'].includes(e.key)) {
+    e.preventDefault();
+    selectCardView(adjacentTab(Object.keys(cardViews), deck.answerView, e.key));
+    return;
+  }
   if (e.key==='ArrowLeft' || e.key==='ArrowRight') { e.preventDefault(); moveCard(e.key==='ArrowLeft' ? -1 : 1); }
   if (e.code==='Space' && !e.target.closest('button,a,summary,input,select')) {
     e.preventDefault(); flipCard();
@@ -273,15 +305,22 @@ function toggleSave(id) {
 }
 
 function bookFigure(figure, name, type) {
-  return `<figure class="book-figure"><a href="${figure.image}" target="_blank" rel="noopener" aria-label="Open ${escapeHTML(name)} ${type} figure at full size"><img src="${figure.image}" alt="${escapeHTML(name)}: ${escapeHTML(figure.caption || type)}" loading="lazy"></a><figcaption>${escapeHTML(figure.caption || type)} <span>p. ${figure.printedPage} · <a href="${figure.image}" target="_blank" rel="noopener">Full size ↗</a></span></figcaption></figure>`;
+  const v = figure.viewport;
+  const image = `<img src="${figure.image}" alt="${escapeHTML(name)}: ${escapeHTML(figure.caption || type)}" loading="lazy"${v ? ` style="top:${-v.top/(v.bottom-v.top)*100}%"` : ''}>`;
+  return `<figure class="book-figure"><a href="${figure.image}" target="_blank" rel="noopener" aria-label="Open ${escapeHTML(name)} ${type} source figure at full size">${v ? `<div class="book-figure-region" style="aspect-ratio:${v.width}/${v.height*(v.bottom-v.top)}">${image}</div>` : image}</a><figcaption>${escapeHTML(figure.caption || type)} <span>p. ${figure.printedPage} · <a href="${figure.image}" target="_blank" rel="noopener">${v ? 'Full source' : 'Full size'} ↗</a></span></figcaption></figure>`;
 }
 
 function detailPanel(r, tab) {
   const source = bookReactions[r.id];
-  if (tab === 'reaction') {
-    return `${source?.reaction ? bookFigure(source.reaction, r.name, 'reaction scheme') : ''}
-      <div class="detail-section"><h3>Transformation</h3><p class="detail-equation">${r.equation}</p></div>
-      ${r.reagents ? `<div class="detail-section"><h3>Reagents & conditions</h3><p>${escapeHTML(r.reagents)}</p></div>` : '<p class="muted">Reagents, conditions, and background are reproduced in the book figure above.</p>'}`;
+  const sections = bookSections[r.id];
+  if (tab === 'outline') {
+    return `<p class="detail-equation">${escapeHTML(r.equation)}</p>
+      ${sections?.outline ? bookFigure(sections.outline, r.name, 'general outline') : ''}
+      ${r.reagents ? `<div class="detail-section"><h3>Reagents & conditions</h3><p>${escapeHTML(r.reagents)}</p></div>` : ''}`;
+  }
+  if (tab === 'importance') {
+    return sections?.importance ? bookFigure(sections.importance, r.name, 'importance')
+      : `<p class="muted">${escapeHTML(sections?.importanceNote || 'A separate importance section is not available for this reaction.')}</p>`;
   }
   if (tab === 'mechanism') {
     return `<p class="mechanism-summary">${r.explanation}</p>${source?.mechanism ? bookFigure(source.mechanism, r.name, 'mechanism') : `<p class="muted">${escapeHTML(source?.mechanismNote || 'A mechanism figure for this reaction has not been located in this copy.')}</p>`}`;
@@ -291,7 +330,7 @@ function detailPanel(r, tab) {
     : '<p class="muted">An applications page for this reaction has not been located in this copy.</p>';
 }
 
-function showDetail(id, tab = 'reaction') {
+function showDetail(id, tab = 'outline') {
   const r = reactions.find(r => r.id === id);
   if (!r) return;
   detailReactionId = id;
@@ -299,7 +338,7 @@ function showDetail(id, tab = 'reaction') {
   const source = bookReactions[id];
   reactionDialog.innerHTML = `<div class="dialog-inner"><div class="dialog-top"><span>${categoryLabel(r)}</span><button class="close-button" data-close="reaction" aria-label="Close reaction">×</button></div>
     <h2 id="reaction-title">${r.name}</h2>
-    <div class="reaction-tabs" role="tablist" aria-label="Reaction details">${[['reaction','Reaction'],['mechanism','Mechanism'],['applications','Applications']].map(([key, label]) => `<button role="tab" id="tab-${key}" aria-controls="reaction-panel" aria-selected="${tab === key}" tabindex="${tab === key ? 0 : -1}" data-detail-tab="${key}">${label}</button>`).join('')}</div>
+    <div class="reaction-tabs" role="tablist" aria-label="Reaction details">${Object.entries(detailTabs).map(([key, label]) => `<button role="tab" id="tab-${key}" aria-controls="reaction-panel" aria-selected="${tab === key}" tabindex="${tab === key ? 0 : -1}" data-detail-tab="${key}">${label}</button>`).join('')}</div>
     <section id="reaction-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-${tab}">${detailPanel(r, tab)}</section>
     ${source ? `<p class="book-citation">Kürti & Czakó, <cite>Strategic Applications of Named Reactions in Organic Synthesis</cite> (2005), ${source.pages.length === 1 ? 'p.' : 'pp.'} ${source.pages.join('–')}. Figures from your supplied copy.</p>` : ''}
     <div class="detail-section"><h3>Study by category</h3><div class="actions">${r.categories.map(id => `<button class="text-button" data-start="${id}">Quiz: ${categoryFor(id).short}</button>`).join('')}</div><p class="muted">${r.appendixPages.length ? `Appendix 8.3, pp. ${r.appendixPages.join(', ')}.` : r.supplemental ? 'Preserved from your original library; this reaction has no dedicated chapter.' : 'This chapter is not listed in the book’s appendix 8.3 category table.'}</p></div>
@@ -322,7 +361,7 @@ function selectDetailTab(tab, focus = true) {
 }
 
 function startQuiz(mode) {
-  let pool = categoryFor(mode) ? reactions.filter(r => inCategory(r,mode)) : selectedReactions(), title = 'Quick quiz';
+  let pool = studyPool(mode), title = 'Quick quiz';
   if (!pool.length) { toast('Select at least one category.'); return; }
   if (mode === 'review') {
     pool = pool.filter(r => { const attempts = state.attempts.filter(a => a.id === r.id); return attempts.length && !attempts[attempts.length - 1].correct; });
@@ -344,8 +383,11 @@ function startQuiz(mode) {
     }
     pool = pool.filter(isSelected);
   } else if (categoryFor(mode)) { title = categoryFor(mode).short; }
+  else if (mode === 'all') { title = 'All reactions'; }
+  else if (mode === 'selected') { title = selectionTitle(); }
   if (!pool.length) { toast('No reactions in this selection.'); return; }
-  quiz = {mode, title, pool:[...pool], questions:(mode === 'daily' ? pool : shuffle(pool)).slice(0,5), index:0, correct:0, answered:false, started:Date.now(), finished:false};
+  const ordered = mode === 'daily' ? pool : shuffle(pool);
+  quiz = {mode, title, pool:[...pool], questions:['mixed','daily'].includes(mode) ? ordered.slice(0,5) : ordered, index:0, correct:0, answered:false, started:Date.now(), finished:false};
   if (reactionDialog.open) reactionDialog.close();
   renderQuestion(); quizDialog.showModal();
 }
@@ -402,18 +444,35 @@ function requestExit() {
 quizDialog.addEventListener('cancel', e => { e.preventDefault(); requestExit(); });
 document.addEventListener('keydown', e => { if (e.key === 'Escape' && quizDialog.open) { e.preventDefault(); requestExit(); } });
 reactionDialog.addEventListener('click', e => { if (e.target === reactionDialog) reactionDialog.close(); });
+function adjacentTab(tabs, current, key) {
+  return tabs[key === 'Home' ? 0 : key === 'End' ? tabs.length-1 : (tabs.indexOf(current) + (key === 'ArrowRight' ? 1 : tabs.length-1)) % tabs.length];
+}
+function selectCardView(view) {
+  deck.answerView = view;
+  renderFlashcard(); flashcardDialog.querySelector(`[data-card-view="${view}"]`).focus();
+}
 reactionDialog.addEventListener('keydown', e => {
   if (!e.target.matches('[data-detail-tab]') || !['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(e.key)) return;
   e.preventDefault();
-  const tabs = ['reaction', 'mechanism', 'applications'];
-  const index = e.key === 'Home' ? 0 : e.key === 'End' ? 2 : (tabs.indexOf(detailTab) + (e.key === 'ArrowRight' ? 1 : 2)) % 3;
-  selectDetailTab(tabs[index]);
+  selectDetailTab(adjacentTab(Object.keys(detailTabs), detailTab, e.key));
+});
+document.addEventListener('change', e => {
+  if (!e.target.matches('[data-card-mode]')) return;
+  state.flashcardMode = e.target.value;
+  persist();
+  if (flashcardDialog.open && deck && !deck.finished) {
+    deck.mode = state.flashcardMode; deck.answerView = deck.mode; deck.revealed = false;
+    renderFlashcard(); flashcardDialog.querySelector('[data-card-mode]').focus();
+  }
 });
 document.addEventListener('click', e => {
   const button = e.target.closest('button'); if (!button) return;
   if (button.dataset.flashcards) startFlashcards(button.dataset.flashcards);
   else if (button.dataset.close === 'flashcards') flashcardDialog.close();
   else if (button.hasAttribute('data-card-flip')) flipCard();
+  else if (button.dataset.cardView && deck?.revealed) {
+    selectCardView(button.dataset.cardView);
+  }
   else if (button.hasAttribute('data-card-next')) moveCard(1);
   else if (button.hasAttribute('data-card-prev')) moveCard(-1);
   else if (button.dataset.cardRate) rateCard(button.dataset.cardRate);

@@ -8,9 +8,9 @@ A responsive named-reaction study website built with plain HTML, CSS, and JavaSc
 - Searchable library with reagents, conditions, and explanations
 - Reaction, Mechanism, and Applications tabs with 751 book figures and printed-page citations
 - Sidebar checkboxes to select multiple categories for the library and all quiz modes; selections persist in the browser
-- Quick quizzes, category practice, a daily challenge, mistake review, and saved-reaction practice
+- Quick quizzes, full quizzes for selected categories or all reactions, a daily challenge, mistake review, and saved-reaction practice
 - Immediate answer feedback
-- Flashcards in both recall directions, with flip, shuffle, keyboard navigation, self-rating, and review of remaining cards
+- Flashcard modes for recalling the name, mechanism, or general outline, with flip, answer views, shuffle, keyboard navigation, self-rating, and review of remaining cards
 - Accuracy, practice history, daily streaks, and reaction mastery
 - Local browser storage for bookmarks and progress
 - Responsive layouts and keyboard-accessible dialogs
@@ -23,9 +23,11 @@ The interface uses Arial and system fonts, with no external assets or network re
 
 The 23 categories and their overlapping reaction memberships follow appendix 8.3, printed pages 508–517. Selecting multiple categories takes their union, without repeating reactions. The appendix omits 43 dedicated entries; these remain fully available under “Not listed in appendix 8.3,” alongside the supplemental Fischer esterification card. The appendix’s subtypes are not separate sidebar categories.
 
-The sidebar filters library results, quick quizzes, daily challenges, and flashcards. Search and saved-reaction filters also apply when starting a quiz or flashcards from the library. Explicit category buttons on the Practice page or reaction details practice the named category directly. Quizzes contain up to five questions; flashcard decks include every matching card. Tiny quiz selections draw extra answer choices from the wider library.
+The sidebar filters library results, selected-reaction quizzes, daily challenges, and flashcards. Search and saved-reaction filters also apply when starting a quiz or flashcards from the library. Explicit category buttons on the Practice page or reaction details practice the named category directly. Quick quizzes and daily challenges contain up to five questions; other quizzes and flashcard decks include every matching reaction once. The Practice page also offers an explicit “All reactions” quiz covering all 251 entries regardless of sidebar selection. Tiny quiz selections draw extra answer choices from the wider library.
 
-Flashcard ratings persist separately from quiz attempts and do not change quiz accuracy or mastery. Use Previous/Next or the arrow keys to navigate, Flip card or Space to reveal the answer, and “Got it”/“Study again” to rate it. At completion, review cards marked for study or left unrated. Original bookmarks and progress are retained; the first upgrade selects all of the new appendix categories.
+Open Flashcards in the navigation and choose what to recall: Name shows a transformation as the prompt; Mechanism and General outline show the reaction name. Flip to reveal the chosen answer, then switch between Name, Mechanism, and General outline for the same reaction. Mechanism answers include the book figure where available, with a source note otherwise. The recall mode persists across category changes, navigation, and reloads, and can also be changed inside a deck opened from any page.
+
+Flashcard ratings persist separately from quiz attempts and do not change quiz accuracy or mastery. Use Previous/Next or the arrow keys to navigate, Flip card / Flip back or Space to turn the card, and “Got it”/“Study again” to rate it. Arrow keys retain their normal behavior when the recall selector is focused. At completion, review cards marked for study or left unrated. Original bookmarks and progress are retained; the first upgrade selects all of the new appendix categories.
 
 ## Book figures
 

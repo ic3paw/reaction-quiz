@@ -31,6 +31,7 @@ main { min-width: 0; min-height: 65vh; }
 .catalog-note { margin: 22px 0; font-size: 13px; color: var(--muted); line-height: 1.7; }
 .flashcard-direction { display: flex; flex-direction: column; gap: 8px; margin-bottom: 24px; font-size: 14px; }
 .flashcard-direction select { width: min(100%, 360px); }
+.flashcard-direction + .muted { margin-bottom: 24px; }
 #flashcard-dialog { width: min(800px, calc(100% - 32px)); }
 .flashcard-content { padding: 20px 0; min-height: 190px; }
 .flashcard-prompt { font-size: 21px; line-height: 1.7; }
@@ -108,11 +109,13 @@ select { width: 240px; }
 dialog { width: min(620px, calc(100% - 32px)); max-height: 90vh; border: 1px solid #bbb; border-radius: 3px; padding: 0; background: white; color: #171717; }
 dialog::backdrop { background: #0005; }
 #reaction-dialog { width: min(950px, calc(100% - 32px)); }
-.reaction-tabs { display: flex; border-bottom: 1px solid var(--line); gap: 28px; margin: 24px 0; }
+.reaction-tabs { display: flex; flex-wrap: wrap; border-bottom: 1px solid var(--line); gap: 12px 28px; margin: 24px 0; }
 .reaction-tabs button { background: none; border: 0; border-bottom: 2px solid transparent; padding: 0 0 12px; font-weight: 600; color: var(--muted); font-size: 14px; }
 .reaction-tabs button[aria-selected="true"] { color: #171717; border-bottom-color: #171717; }
 .book-figure { margin: 24px 0; }
 .book-figure img { display: block; width: 100%; height: auto; background: white; }
+.book-figure-region { position: relative; overflow: hidden; }
+.book-figure-region img { position: absolute; left: 0; }
 .book-figure > a { display: block; cursor: zoom-in; }
 .book-figure figcaption { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: 12px; color: var(--muted); padding: 10px 0; }
 .book-figure figcaption span { white-space: nowrap; }
