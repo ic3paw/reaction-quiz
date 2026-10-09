@@ -1,0 +1,505 @@
+[
+  {
+    "page": 60,
+    "file": "assets/book/aldol-reaction.png",
+    "region": "reaction",
+    "introEnd": "mediated catalysis; and 3) organocatalysis utilizing small organic molecules.21,28,29,33,82,35-37,39"
+  },
+  {
+    "page": 60,
+    "file": "assets/book/aldol-mechanism.png",
+    "region": "mechanism"
+  },
+  {
+    "page": 61,
+    "file": "assets/book/aldol-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ]
+  },
+  {
+    "page": 240,
+    "file": "assets/book/grignard-reaction.png",
+    "region": "reaction",
+    "introEnd": "reduction of the carbonyl group may occur by an intermolecular hydride transfer."
+  },
+  {
+    "page": 240,
+    "file": "assets/book/grignard-mechanism.png",
+    "region": "mechanism"
+  },
+  {
+    "page": 241,
+    "file": "assets/book/grignard-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ]
+  },
+  {
+    "page": 500,
+    "file": "assets/book/suzuki-reaction.png",
+    "region": "reaction",
+    "introEnd": "the use of alkyl, alkenyl, aryl, and alkynyl trifluoroborates in place of boronic acids.45-47"
+  },
+  {
+    "page": 500,
+    "file": "assets/book/suzuki-mechanism.png",
+    "region": "mechanism"
+  },
+  {
+    "page": 501,
+    "file": "assets/book/suzuki-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ]
+  },
+  {
+    "page": 538,
+    "file": "assets/book/wittig-reaction.png",
+    "region": "reaction",
+    "introEnd": "support allows easy separation of the products from triphenylphosphine oxide.42"
+  },
+  {
+    "page": 538,
+    "file": "assets/book/wittig-mechanism.png",
+    "region": "mechanism"
+  },
+  {
+    "page": 539,
+    "file": "assets/book/wittig-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ]
+  },
+  {
+    "page": 502,
+    "file": "assets/book/swern-reaction.png",
+    "region": "reaction",
+    "introEnd": "trifluoroacetate side products, whereas in the case of oxalyl chloride side reactions are extremely rare."
+  },
+  {
+    "page": 502,
+    "file": "assets/book/swern-mechanism.png",
+    "region": "mechanism"
+  },
+  {
+    "page": 503,
+    "file": "assets/book/swern-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ]
+  },
+  {
+    "page": 144,
+    "file": "assets/book/clemmensen-reaction.png",
+    "region": "reaction",
+    "introEnd": "mixtures are formed in these reactions, which contain a substantial amount of rearranged products."
+  },
+  {
+    "page": 144,
+    "file": "assets/book/clemmensen-mechanism.png",
+    "region": "mechanism"
+  },
+  {
+    "page": 145,
+    "file": "assets/book/clemmensen-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ]
+  },
+  {
+    "page": 548,
+    "file": "assets/book/wolff-reaction.png",
+    "region": "reaction",
+    "introEnd": "Leonard elimination);23,24 and 5) cleavage or rearrangement of strained rings adjacent to the carbonyl group."
+  },
+  {
+    "page": 548,
+    "file": "assets/book/wolff-mechanism.png",
+    "region": "mechanism"
+  },
+  {
+    "page": 549,
+    "file": "assets/book/wolff-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ]
+  },
+  {
+    "page": 112,
+    "file": "assets/book/birch-reaction.png",
+    "region": "reaction",
+    "introEnd": "present."
+  },
+  {
+    "page": 112,
+    "file": "assets/book/birch-mechanism.png",
+    "region": "mechanism"
+  },
+  {
+    "page": 113,
+    "file": "assets/book/birch-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ]
+  },
+  {
+    "page": 102,
+    "file": "assets/book/beckmann-reaction.png",
+    "region": "reaction",
+    "introEnd": "unsubstituted amides."
+  },
+  {
+    "page": 102,
+    "file": "assets/book/beckmann-mechanism.png",
+    "region": "mechanism"
+  },
+  {
+    "page": 103,
+    "file": "assets/book/beckmann-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ]
+  },
+  {
+    "page": 402,
+    "file": "assets/book/pinacol-reaction.png",
+    "region": "reaction",
+    "introEnd": "mild reaction conditions, the semipinacol rearrangement is almost exclusively utilized in complex molecule synthesis."
+  },
+  {
+    "page": 402,
+    "file": "assets/book/pinacol-mechanism.png",
+    "region": "mechanism"
+  },
+  {
+    "page": 403,
+    "file": "assets/book/pinacol-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ]
+  },
+  {
+    "page": 262,
+    "file": "assets/book/hofmann-reaction.png",
+    "region": "reaction",
+    "introEnd": "the corresponding carbamate or urea derivative.17"
+  },
+  {
+    "page": 262,
+    "file": "assets/book/hofmann-mechanism.png",
+    "region": "mechanism"
+  },
+  {
+    "page": 263,
+    "file": "assets/book/hofmann-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ]
+  },
+  {
+    "page": 80,
+    "file": "assets/book/baeyer-reaction.png",
+    "region": "reaction",
+    "introEnd": "activation).28,34"
+  },
+  {
+    "page": 80,
+    "file": "assets/book/baeyer-mechanism.png",
+    "region": "mechanism"
+  },
+  {
+    "page": 81,
+    "file": "assets/book/baeyer-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ]
+  },
+  {
+    "page": 536,
+    "file": "assets/book/williamson-reaction.png",
+    "region": "reaction",
+    "introEnd": "alkylation in addition to expected O-alkylation."
+  },
+  {
+    "page": 536,
+    "file": "assets/book/williamson-mechanism.png",
+    "region": "mechanism"
+  },
+  {
+    "page": 537,
+    "file": "assets/book/williamson-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ]
+  },
+  {
+    "page": 446,
+    "file": "assets/book/sandmeyer-reaction.png",
+    "region": "reaction",
+    "introEnd": "aqueous sulfuric acid, or with aqueous solution of copper salts (occasionally called the Sandmeyer hydroxylation).22-"
+  },
+  {
+    "page": 446,
+    "file": "assets/book/sandmeyer-mechanism.png",
+    "region": "mechanism"
+  },
+  {
+    "page": 447,
+    "file": "assets/book/sandmeyer-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ]
+  },
+  {
+    "page": 222,
+    "file": "assets/book/finkelstein-reaction.png",
+    "region": "reaction",
+    "introEnd": "treatment with NaI/CS2 in the presence of various Lewis acids (AlMe3, ZnCl2 FeCl3, etc.).3"
+  },
+  {
+    "page": 222,
+    "file": "assets/book/finkelstein-mechanism.png",
+    "region": "mechanism"
+  },
+  {
+    "page": 223,
+    "file": "assets/book/finkelstein-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ]
+  },
+  {
+    "page": 134,
+    "file": "assets/book/chugaev-reaction.png",
+    "region": "reaction",
+    "introEnd": "Chugaev reaction is greatly diminished by the formation of complex mixtures of olefins."
+  },
+  {
+    "page": 134,
+    "file": "assets/book/chugaev-mechanism.png",
+    "region": "mechanism"
+  },
+  {
+    "page": 135,
+    "file": "assets/book/chugaev-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ]
+  },
+  {
+    "page": 192,
+    "file": "assets/book/diels-reaction.png",
+    "region": "reaction",
+    "introEnd": "8) multiple rings can be created in one step with defined stereochemistry."
+  },
+  {
+    "page": 192,
+    "file": "assets/book/diels-mechanism.png",
+    "region": "mechanism"
+  },
+  {
+    "page": 193,
+    "file": "assets/book/diels-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ]
+  },
+  {
+    "page": 150,
+    "file": "assets/book/cope-reaction.png",
+    "region": "reaction",
+    "introEnd": "gives convenient access to synthetically useful seven- and eight-membered carbocycles."
+  },
+  {
+    "page": 150,
+    "file": "assets/book/cope-mechanism.png",
+    "region": "mechanism"
+  },
+  {
+    "page": 151,
+    "file": "assets/book/cope-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ]
+  },
+  {
+    "page": 140,
+    "file": "assets/book/claisen-reaction.png",
+    "region": "reaction",
+    "introEnd": "is usually not necessary to isolate the allyl vinyl ethers, since they are prepared under conditions that will induce their\nrearrangement."
+  },
+  {
+    "page": 140,
+    "file": "assets/book/claisen-mechanism.png",
+    "region": "mechanism"
+  },
+  {
+    "page": 141,
+    "file": "assets/book/claisen-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ]
+  },
+  {
+    "page": 58,
+    "file": "assets/book/ene-reaction.png",
+    "region": "reaction",
+    "introEnd": "steric and electronic properties, affords more control over the regioselectivity of the reaction."
+  },
+  {
+    "page": 58,
+    "file": "assets/book/ene-mechanism.png",
+    "region": "mechanism"
+  },
+  {
+    "page": 59,
+    "file": "assets/book/ene-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ]
+  },
+  {
+    "page": 234,
+    "file": "assets/book/gabriel-reaction.png",
+    "region": "reaction",
+    "introEnd": "obtained.19"
+  },
+  {
+    "page": 234,
+    "file": "assets/book/gabriel-mechanism.png",
+    "region": "mechanism"
+  },
+  {
+    "page": 235,
+    "file": "assets/book/gabriel-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ]
+  },
+  {
+    "page": 252,
+    "file": "assets/book/hell-reaction.png",
+    "region": "reaction",
+    "introEnd": "corresponding α-halo acids.10,11"
+  },
+  {
+    "page": 252,
+    "file": "assets/book/hell-mechanism.png",
+    "region": "mechanism"
+  },
+  {
+    "page": 253,
+    "file": "assets/book/hell-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ]
+  },
+  {
+    "page": 434,
+    "file": "assets/book/ritter-reaction.png",
+    "region": "reaction",
+    "introEnd": "(Ritter-type reactions) that proceed under neutral conditions expanded the scope of the substrates."
+  },
+  {
+    "page": 434,
+    "file": "assets/book/ritter-mechanism.png",
+    "region": "mechanism"
+  },
+  {
+    "page": 435,
+    "file": "assets/book/ritter-applications.png",
+    "crop": [
+      0.11,
+      0.093,
+      0.78,
+      0.882
+    ]
+  },
+  {
+    "page": 317,
+    "file": "assets/book/fischer-reaction.png",
+    "crop": [
+      0.11,
+      0.232,
+      0.78,
+      0.125
+    ]
+  },
+  {
+    "page": 317,
+    "file": "assets/book/fischer-applications.png",
+    "crop": [
+      0.11,
+      0.097,
+      0.78,
+      0.26
+    ]
+  }
+]
