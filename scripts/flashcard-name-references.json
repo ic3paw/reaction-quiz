@@ -1,0 +1,368 @@
+{
+  "note": "Supplemental named-reaction references found by independently reviewing the native PDF text and OCR for all 251 scheme figures. Match names across every figure, not just the matching reaction card.",
+  "additionalNames": {
+    "albright": [
+      "pfitzner-moffatt-oxidation",
+      "swern"
+    ],
+    "atwal": [
+      "biginelli-reaction"
+    ],
+    "auwers": [
+      "reimer-tiemann-reaction"
+    ],
+    "batey": [
+      "ullmann-biaryl-ether-and-biaryl-amine-synthesis-condensation"
+    ],
+    "beringer": [
+      "ullmann-biaryl-ether-and-biaryl-amine-synthesis-condensation"
+    ],
+    "bestmann": [
+      "seyferth-gilbert-homologation"
+    ],
+    "bickel": [
+      "payne-rearrangement"
+    ],
+    "blaise": [
+      "reformatsky-reaction"
+    ],
+    "boden": [
+      "keck-macrolactonization"
+    ],
+    "borchert": [
+      "vinylcyclopropane-cyclopentene-rearrangement"
+    ],
+    "bredt": [
+      "nagata-hydrocyanation"
+    ],
+    "brickner": [
+      "wagner-meerwein-rearrangement"
+    ],
+    "brutcher": [
+      "prevost-reaction"
+    ],
+    "cadiot": [
+      "glaser-coupling"
+    ],
+    "chan": [
+      "ullmann-biaryl-ether-and-biaryl-amine-synthesis-condensation"
+    ],
+    "charette": [
+      "simmons-smith-cyclopropanation"
+    ],
+    "chodkiewitz": [
+      "glaser-coupling"
+    ],
+    "claus": [
+      "nagata-hydrocyanation"
+    ],
+    "collins": [
+      "jones-oxidation-oxidation-of-alcohols-by-chromium-reagents"
+    ],
+    "colvin": [
+      "seyferth-gilbert-homologation"
+    ],
+    "cordus": [
+      "williamson"
+    ],
+    "cram": [
+      "wolff"
+    ],
+    "cristol": [
+      "hunsdiecker-reaction"
+    ],
+    "eglinton": [
+      "glaser-coupling"
+    ],
+    "erlenmeyer": [
+      "perkin-reaction"
+    ],
+    "ermster": [
+      "wagner-meerwein-rearrangement"
+    ],
+    "firth": [
+      "hunsdiecker-reaction"
+    ],
+    "fittig": [
+      "wurtz-coupling"
+    ],
+    "foucaud": [
+      "knoevenagel-condensation"
+    ],
+    "furukawa": [
+      "simmons-smith-cyclopropanation"
+    ],
+    "ganem": [
+      "kornblum-oxidation"
+    ],
+    "gillman": [
+      "snieckus-directed-ortho-metalation"
+    ],
+    "goldberg": [
+      "ullmann-biaryl-ether-and-biaryl-amine-synthesis-condensation"
+    ],
+    "goldman": [
+      "pfitzner-moffatt-oxidation",
+      "swern"
+    ],
+    "grignon": [
+      "keck-radical-allylation"
+    ],
+    "guillemonat": [
+      "riley-selenium-dioxide-oxidation"
+    ],
+    "hamill": [
+      "seyferth-gilbert-homologation"
+    ],
+    "hassner": [
+      "rubottom-oxidation"
+    ],
+    "hay": [
+      "glaser-coupling"
+    ],
+    "hendrickson": [
+      "ramberg-backlund-rearrangement"
+    ],
+    "henriques": [
+      "smiles-rearrangement"
+    ],
+    "hinsberg": [
+      "smiles-rearrangement"
+    ],
+    "hoffmann": [
+      "roush-asymmetric-allylation"
+    ],
+    "huang": [
+      "wolff"
+    ],
+    "ing": [
+      "gabriel"
+    ],
+    "jussen": [
+      "wagner-meerwein-rearrangement"
+    ],
+    "kallen": [
+      "nagata-hydrocyanation"
+    ],
+    "kang": [
+      "ullmann-biaryl-ether-and-biaryl-amine-synthesis-condensation"
+    ],
+    "kleinschmidt": [
+      "meisenheimer-rearrangement"
+    ],
+    "kohler": [
+      "payne-rearrangement"
+    ],
+    "konovalov": [
+      "nef-reaction"
+    ],
+    "kraus": [
+      "pinnick-oxidation"
+    ],
+    "kriewitz": [
+      "prins-reaction"
+    ],
+    "lam": [
+      "ullmann-biaryl-ether-and-biaryl-amine-synthesis-condensation"
+    ],
+    "landesman": [
+      "stork-enamine-synthesis"
+    ],
+    "lautemann": [
+      "kolbe-schmitt-reaction"
+    ],
+    "lehnert": [
+      "knoevenagel-condensation"
+    ],
+    "leuckart": [
+      "eschweiler-clarke-methylation-reductive-alkylation"
+    ],
+    "lindgren": [
+      "pinnick-oxidation"
+    ],
+    "lohmann": [
+      "wittig-1-2-and-2-3-rearrangement"
+    ],
+    "manske": [
+      "gabriel"
+    ],
+    "marle": [
+      "mannich-reaction"
+    ],
+    "masamune": [
+      "roush-asymmetric-allylation"
+    ],
+    "meyers": [
+      "ramberg-backlund-rearrangement"
+    ],
+    "miescher": [
+      "hajos-parrish-reaction"
+    ],
+    "mikami": [
+      "keck-asymmetric-allylation"
+    ],
+    "minieri": [
+      "ritter"
+    ],
+    "minlon": [
+      "wolff"
+    ],
+    "moller": [
+      "overman-rearrangement"
+    ],
+    "mori": [
+      "stille-kelly-coupling"
+    ],
+    "mousset": [
+      "prins-pinacol-rearrangement"
+    ],
+    "mumm": [
+      "overman-rearrangement"
+    ],
+    "muller": [
+      "pomeranz-fritsch-reaction"
+    ],
+    "nahm": [
+      "weinreb-ketone-synthesis"
+    ],
+    "neureiter": [
+      "vinylcyclopropane-cyclopentene-rearrangement"
+    ],
+    "oglialoro": [
+      "perkin-reaction"
+    ],
+    "ohira": [
+      "seyferth-gilbert-homologation"
+    ],
+    "ono": [
+      "tsuji-wilkinson-decarbonylation-reaction"
+    ],
+    "overberger": [
+      "vinylcyclopropane-cyclopentene-rearrangement"
+    ],
+    "parikh": [
+      "pfitzner-moffatt-oxidation"
+    ],
+    "parrikh": [
+      "swern"
+    ],
+    "pettit": [
+      "nicholas-reaction"
+    ],
+    "plochl": [
+      "perkin-reaction"
+    ],
+    "potier": [
+      "polonovski-reaction"
+    ],
+    "rapson": [
+      "robinson-annulation"
+    ],
+    "sarett": [
+      "jones-oxidation-oxidation-of-alcohols-by-chromium-reagents"
+    ],
+    "schiff": [
+      "aza-wittig-reaction",
+      "combes-quinoline-synthesis",
+      "pictet-spengler-tetrahydroisoquinoline-synthesis",
+      "pomeranz-fritsch-reaction"
+    ],
+    "schlittler": [
+      "pomeranz-fritsch-reaction"
+    ],
+    "schreckenberg": [
+      "stetter-reaction"
+    ],
+    "schroeter": [
+      "nazarov-cyclization"
+    ],
+    "serullas": [
+      "lieben-haloform-reaction"
+    ],
+    "shibasaki": [
+      "stille-kelly-coupling"
+    ],
+    "smidt": [
+      "wacker-oxidation"
+    ],
+    "suarez": [
+      "hofmann-loffler-freytag-reaction-remote-functionalization"
+    ],
+    "szmuszkovicz": [
+      "stork-enamine-synthesis"
+    ],
+    "tagliavini": [
+      "keck-asymmetric-allylation"
+    ],
+    "terrell": [
+      "stork-enamine-synthesis"
+    ],
+    "thorpe": [
+      "dieckmann-condensation"
+    ],
+    "tollens": [
+      "mannich-reaction"
+    ],
+    "truce": [
+      "smiles-rearrangement"
+    ],
+    "valerius": [
+      "williamson"
+    ],
+    "vorlander": [
+      "nazarov-cyclization"
+    ],
+    "wallach": [
+      "eschweiler-clarke-methylation-reductive-alkylation"
+    ],
+    "weerasooriya": [
+      "seyferth-gilbert-homologation"
+    ],
+    "wieland": [
+      "hajos-parrish-reaction"
+    ],
+    "woodward": [
+      "prevost-reaction"
+    ],
+    "yamamoto": [
+      "roush-asymmetric-allylation"
+    ],
+    "semipinacol": [
+      "pinacol"
+    ]
+  },
+  "ordinaryChemicalTerms": [
+    "addition",
+    "elimination",
+    "esterification",
+    "phenol",
+    "dienone",
+    "vinylcyclopropane",
+    "oxaziridine",
+    "ene",
+    "cycloaromatization",
+    "methenylation",
+    "acetoacetic",
+    "malonic",
+    "haloform",
+    "metathesis"
+  ],
+  "abbreviations": [
+    "ADMET",
+    "BR",
+    "CM",
+    "DMP",
+    "RAMBO",
+    "RCAM",
+    "RCM",
+    "ROM",
+    "ROMP",
+    "SADP",
+    "SAEP",
+    "SAPP"
+  ],
+  "phrases": [
+    "AD-mix",
+    "P-K"
+  ]
+}

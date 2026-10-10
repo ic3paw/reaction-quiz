@@ -9,12 +9,15 @@ categories = json.loads(source.split('const bookCategories = ')[1].split(';\ncon
 cards = json.loads(source.split('const reactionCatalog = ')[1].strip().rstrip(';'))
 book = json.loads((root/'assets/book-data.js').read_text().split('const bookReactions = ')[1].strip().rstrip(';'))
 sections = json.loads((root/'assets/book-sections.js').read_text().split('const bookSections = ')[1].strip().rstrip(';'))
+prompts = json.loads((root/'assets/flashcard-figures.js').read_text().split('const flashcardFigures = ')[1].strip().rstrip(';'))
+masks = json.loads((root/'scripts/flashcard-masks.json').read_text())
 rows = json.loads((root/'scripts/appendix-categories.json').read_text())
 jobs = json.loads((root/'scripts/book-figures.json').read_text())
 legacy = json.loads((root/'scripts/legacy-reactions.json').read_text())
 assert len(cards)==251 and len(book)==251
 assert len({c['id'] for c in cards})==251
 assert set(sections)==set(book), 'Every card needs its own reaction and outline/history sections'
+assert set(prompts)==set(masks)==set(book), 'Every name-recall card must have an audited prompt image'
 chapters = {c['printedPage']:c for c in cards if not c.get('supplemental')}
 assert set(chapters)==set(range(2,501,2)), 'Missing or duplicate book chapter'
 assert len(categories)==24
@@ -28,6 +31,23 @@ for c in cards:
         assert book[c['id']]['pages']==[c['printedPage'],c['printedPage']+1]
     b = book[c['id']]
     s = sections[c['id']]
+    prompt, mask = prompts[c['id']], masks[c['id']]
+    assert mask['source']==s['reaction']['image']
+    assert prompt['image']==mask['image'] and prompt['image']!=mask['source']
+    assert prompt['printedPage']==s['reaction']['printedPage']
+    assert mask['terms'], c['name']
+    original = (root/mask['source']).read_bytes()
+    redacted = (root/mask['image']).read_bytes()
+    assert redacted[:8]==b'\x89PNG\r\n\x1a\n'
+    assert original[16:24]==redacted[16:24], 'Whiteouts must not crop or resize the scheme'
+    assert struct.unpack('>II',redacted[16:24])==(mask['width'],mask['height'])
+    if mask['masks']:
+        assert original!=redacted, 'Name masks must actually change the image: '+c['name']
+    else:
+        assert original==redacted, 'Schemes without identifying text should remain intact'
+    for area in mask['masks']:
+        x,y,w,h=area['rect']
+        assert 0<=x<x+w<=mask['width'] and 0<=y<y+h<=mask['height']
     assert s.get('reaction') and (s.get('outline') or s.get('outlineNote')), c['name']
     assert not s['reaction'].get('viewport'), 'Use standalone scheme crops so full-size links cannot reveal history'
     for f in [s['reaction'], s.get('outline')]:
@@ -57,4 +77,6 @@ for j in jobs + section_jobs:
         x,y,cw,ch=j['crop']
         assert 0<=x<x+cw<=1 and 0<=y<y+ch<=1, j['file']
 
-print('PASS: 251 cards with reaction and outline/history sections; 500 separate section crops; 751 original PNGs including applications for every card; IDs, categories and citations verified.')
+assert [m['text'].lower() for m in masks['fleming-tamao-oxidation']['masks']].count('fleming')==2
+assert [m['text'].lower() for m in masks['fleming-tamao-oxidation']['masks']].count('tamao')==2
+print('PASS: 251 cards and audited name-recall figures with unchanged dimensions; 500 section crops; 751 original PNGs; IDs, categories and citations verified.')

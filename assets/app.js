@@ -156,23 +156,21 @@ function renderLibraryResults(saved) {
 
 function practice() {
   const modes = [
-    ['Quick quiz', 'Up to 5 questions from selected categories.', 'mixed'],
     ['Quiz every selected reaction', `${selectedReactions().length} questions from your selected categories, without repeats.`, 'selected'],
-    ['All reactions', `All ${reactions.length} reactions, regardless of sidebar selection.`, 'all'],
     ['Endless quiz', 'Keep practicing selected categories. End the session whenever you like.', 'endless'],
     ['Review mistakes', 'Reactions you last answered incorrectly.', 'review'],
     ['Saved reactions', 'Practice your bookmarked reactions.', 'saved'],
   ];
-  main.innerHTML = heading('Practice') + `<div class="practice-list">${modes.map(([title, description, mode]) => `<div class="practice-row"><div><h3>${title}</h3><p>${description}</p></div><button class="text-button" data-start="${mode}" aria-label="Start ${title.toLowerCase()}" ${mode === 'all' || selectedReactions().length ? '' : 'disabled'}>Start →</button></div>`).join('')}</div>
-    <h2>Practice by appendix category</h2><p class="muted">Each quiz draws from the category shown. Use the sidebar to combine categories in a quick quiz.</p><div class="practice-list">${categories.map(c => `<div class="practice-row"><div><h3>${c.name}</h3><p>${reactions.filter(r => inCategory(r,c.id)).length} reactions</p></div><div class="actions"><button class="text-button" data-start="${c.id}" aria-label="Quiz ${c.name}">Quiz</button><button class="text-button" data-flashcards="${c.id}" aria-label="Flashcards for ${c.name}">Cards</button></div></div>`).join('')}</div>`;
+  main.innerHTML = heading('Practice') + `<div class="practice-list">${modes.map(([title, description, mode]) => `<div class="practice-row"><div><h3>${title}</h3><p>${description}</p></div><button class="text-button" data-start="${mode}" aria-label="Start ${title.toLowerCase()}" ${selectedReactions().length ? '' : 'disabled'}>Start →</button></div>`).join('')}</div>
+    <h2>Practice by appendix category</h2><p class="muted">Each quiz draws from the category shown. Use the sidebar to combine categories in a quiz.</p><div class="practice-list">${categories.map(c => `<div class="practice-row"><div><h3>${c.name}</h3><p>${reactions.filter(r => inCategory(r,c.id)).length} reactions</p></div><div class="actions"><button class="text-button" data-start="${c.id}" aria-label="Quiz ${c.name}">Quiz</button><button class="text-button" data-flashcards="${c.id}" aria-label="Flashcards for ${c.name}">Cards</button></div></div>`).join('')}</div>`;
 }
 
 const flashcardDialog = document.querySelector('#flashcard-dialog');
-const cardModes = {reaction:'Reaction & conditions', name:'Name', mechanism:'Mechanism', outline:'Outline / history'};
+const cardModes = {reaction:'Reaction & conditions', name:'Name', mechanism:'Mechanism'};
 const cardViews = {reaction:'Reaction & conditions', outline:'Outline / history', name:'Name', mechanism:'Mechanism', applications:'Synthetic applications'};
-// The former "General outline" recall mode asked for the scheme and conditions.
-if (state.flashcardViewVersion !== 2 && state.flashcardMode === 'outline') state.flashcardMode = 'reaction';
-state.flashcardViewVersion = 2;
+// Retired outline recall preferences now open Reaction & conditions.
+if (state.flashcardMode === 'outline') state.flashcardMode = 'reaction';
+state.flashcardViewVersion = 3;
 if (!Object.hasOwn(cardModes, state.flashcardMode)) state.flashcardMode = 'name';
 let deck = null;
 function cardModeOptions() {
@@ -186,7 +184,7 @@ function flashcards() {
     <label class="flashcard-direction" for="flashcard-mode">Recall
       <select id="flashcard-mode" data-card-mode>${cardModeOptions()}</select>
     </label>
-    <p class="muted">Name: identify the reaction from its book figure and reagents. Reaction & conditions, Mechanism, or Outline / history: recall the selected topic from a name. Flip to explore the answer tabs, including synthetic applications.</p>
+    <p class="muted">Name: identify the reaction from its book figure and reagents. Reaction & conditions or Mechanism: recall the selected topic from a name. Flip to explore the answer tabs, including outline/history and synthetic applications.</p>
     <div class="actions"><button class="button primary" data-flashcards="selected" ${count ? '' : 'disabled'}>Study ${count} cards</button><button class="button secondary" data-flashcards="saved" ${selectedReactions().some(r => state.saved.includes(r.id)) ? '' : 'disabled'}>Study saved cards</button></div>
     <p class="catalog-note">${studied} cards reviewed. Choose one or more appendix categories in the sidebar. Your flashcard reviews are saved separately from quiz accuracy.</p>`;
 }
@@ -214,9 +212,9 @@ function renderFlashcard() {
     <label class="flashcard-direction" for="deck-card-mode">Recall<select id="deck-card-mode" data-card-mode>${cardModeOptions()}</select></label>
     <h2 id="flashcard-title" tabindex="-1">${deck.revealed ? cardViews[deck.answerView] : deck.mode==='name' ? 'Name the reaction' : `Recall: ${cardModes[deck.mode]}`}</h2>
     ${deck.revealed ? `<div class="reaction-tabs" role="tablist" aria-label="Answer view">${views.map(([value,label]) => `<button role="tab" id="card-tab-${value}" data-card-view="${value}" aria-controls="card-answer" aria-selected="${deck.answerView===value}" tabindex="${deck.answerView===value ? 0 : -1}">${label}</button>`).join('')}</div>` : ''}
-    <div class="flashcard-content" ${deck.revealed ? `id="card-answer" role="tabpanel" tabindex="0" aria-labelledby="card-tab-${deck.answerView}"` : 'aria-live="polite"'}>${deck.revealed
+    <div class="flashcard-content${!deck.revealed && deck.mode === 'reaction' ? ' flashcard-reaction-prompt' : ''}" ${deck.revealed ? `id="card-answer" role="tabpanel" tabindex="0" aria-labelledby="card-tab-${deck.answerView}"` : 'aria-live="polite"'}>${deck.revealed
       ? cardAnswer(r, deck.answerView)
-      : deck.mode==='name' ? bookFigure(bookSections[r.id].reaction, '', 'Reaction & conditions', true)
+      : deck.mode==='name' ? bookFigure(flashcardFigures[r.id], '', 'Reaction & conditions', true)
       : `<p class="flashcard-prompt">${escapeHTML(r.name)}</p>`}</div>
     <div class="flashcard-controls"><button class="button ${deck.revealed ? 'secondary' : 'primary'}" data-card-flip>${deck.revealed ? 'Flip back' : 'Flip card'}</button>${deck.revealed ? `<button class="button secondary" data-card-rate="again">Study again</button><button class="button primary" data-card-rate="known">Got it</button>` : ''}</div>
     <div class="flashcard-navigation"><button class="text-button" data-card-prev ${deck.index ? '' : 'disabled'}>← Previous</button><button class="text-button" data-card-shuffle>Shuffle deck</button><button class="text-button" data-card-next>${deck.index===deck.cards.length-1 ? 'Finish' : 'Next →'}</button></div>
