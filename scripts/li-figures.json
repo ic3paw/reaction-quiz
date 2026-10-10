@@ -1,0 +1,2718 @@
+[
+  {
+    "id": "abnormal-beckmann-rearrangement",
+    "type": "reaction",
+    "printedPage": 28,
+    "pdfPage": 47,
+    "crop": [
+      50,
+      118,
+      390,
+      166
+    ],
+    "scale": 3,
+    "image": "assets/li/abnormal-beckmann-rearrangement-reaction.png"
+  },
+  {
+    "id": "abnormal-beckmann-rearrangement",
+    "type": "outline",
+    "printedPage": 28,
+    "pdfPage": 47,
+    "crop": [
+      50,
+      82,
+      390,
+      113
+    ],
+    "scale": 3,
+    "image": "assets/li/abnormal-beckmann-rearrangement-outline.png"
+  },
+  {
+    "id": "abnormal-beckmann-rearrangement",
+    "type": "mechanism",
+    "printedPage": 28,
+    "pdfPage": 47,
+    "crop": [
+      50,
+      118,
+      390,
+      166
+    ],
+    "scale": 3,
+    "image": "assets/li/abnormal-beckmann-rearrangement-mechanism.png"
+  },
+  {
+    "id": "abnormal-beckmann-rearrangement",
+    "type": "applications-28",
+    "printedPage": 28,
+    "pdfPage": 47,
+    "crop": [
+      50,
+      175.08935546875,
+      390,
+      492.4639892578125
+    ],
+    "scale": 3,
+    "image": "assets/li/abnormal-beckmann-rearrangement-applications-28.png"
+  },
+  {
+    "id": "buchererbergs-reaction",
+    "type": "reaction",
+    "printedPage": 53,
+    "pdfPage": 72,
+    "crop": [
+      50,
+      141,
+      390,
+      198
+    ],
+    "scale": 3,
+    "image": "assets/li/buchererbergs-reaction-reaction.png"
+  },
+  {
+    "id": "buchererbergs-reaction",
+    "type": "outline",
+    "printedPage": 53,
+    "pdfPage": 72,
+    "crop": [
+      50,
+      82,
+      390,
+      136
+    ],
+    "scale": 3,
+    "image": "assets/li/buchererbergs-reaction-outline.png"
+  },
+  {
+    "id": "buchererbergs-reaction",
+    "type": "mechanism",
+    "printedPage": 53,
+    "pdfPage": 72,
+    "crop": [
+      50,
+      209,
+      390,
+      373
+    ],
+    "scale": 3,
+    "image": "assets/li/buchererbergs-reaction-mechanism.png"
+  },
+  {
+    "id": "buchererbergs-reaction",
+    "type": "applications-53",
+    "printedPage": 53,
+    "pdfPage": 72,
+    "crop": [
+      50,
+      374.7893371582031,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/buchererbergs-reaction-applications-53.png"
+  },
+  {
+    "id": "buchererbergs-reaction",
+    "type": "applications-54",
+    "printedPage": 54,
+    "pdfPage": 73,
+    "crop": [
+      50,
+      58,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/buchererbergs-reaction-applications-54.png"
+  },
+  {
+    "id": "buchererbergs-reaction",
+    "type": "applications-55",
+    "printedPage": 55,
+    "pdfPage": 74,
+    "crop": [
+      50,
+      58,
+      390,
+      164.12400817871094
+    ],
+    "scale": 3,
+    "image": "assets/li/buchererbergs-reaction-applications-55.png"
+  },
+  {
+    "id": "cadiotchodkiewicz-coupling",
+    "type": "reaction",
+    "printedPage": 67,
+    "pdfPage": 86,
+    "crop": [
+      50,
+      118,
+      390,
+      151
+    ],
+    "scale": 3,
+    "image": "assets/li/cadiotchodkiewicz-coupling-reaction.png"
+  },
+  {
+    "id": "cadiotchodkiewicz-coupling",
+    "type": "outline",
+    "printedPage": 67,
+    "pdfPage": 86,
+    "crop": [
+      50,
+      82,
+      390,
+      113
+    ],
+    "scale": 3,
+    "image": "assets/li/cadiotchodkiewicz-coupling-outline.png"
+  },
+  {
+    "id": "cadiotchodkiewicz-coupling",
+    "type": "mechanism",
+    "printedPage": 67,
+    "pdfPage": 86,
+    "crop": [
+      50,
+      166,
+      390,
+      249
+    ],
+    "scale": 3,
+    "image": "assets/li/cadiotchodkiewicz-coupling-mechanism.png"
+  },
+  {
+    "id": "cadiotchodkiewicz-coupling",
+    "type": "applications-67",
+    "printedPage": 67,
+    "pdfPage": 86,
+    "crop": [
+      50,
+      250.32931518554688,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/cadiotchodkiewicz-coupling-applications-67.png"
+  },
+  {
+    "id": "cadiotchodkiewicz-coupling",
+    "type": "applications-68",
+    "printedPage": 68,
+    "pdfPage": 87,
+    "crop": [
+      50,
+      58,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/cadiotchodkiewicz-coupling-applications-68.png"
+  },
+  {
+    "id": "cadiotchodkiewicz-coupling",
+    "type": "applications-69",
+    "printedPage": 69,
+    "pdfPage": 88,
+    "crop": [
+      50,
+      58,
+      390,
+      217.0439910888672
+    ],
+    "scale": 3,
+    "image": "assets/li/cadiotchodkiewicz-coupling-applications-69.png"
+  },
+  {
+    "id": "catellani-reaction",
+    "type": "reaction",
+    "printedPage": 73,
+    "pdfPage": 92,
+    "crop": [
+      50,
+      209,
+      390,
+      285
+    ],
+    "scale": 3,
+    "image": "assets/li/catellani-reaction-reaction.png"
+  },
+  {
+    "id": "catellani-reaction",
+    "type": "outline",
+    "printedPage": 73,
+    "pdfPage": 92,
+    "crop": [
+      50,
+      82,
+      390,
+      172.7486572265625
+    ],
+    "scale": 3,
+    "image": "assets/li/catellani-reaction-outline.png"
+  },
+  {
+    "id": "catellani-reaction",
+    "type": "mechanism",
+    "printedPage": 73,
+    "pdfPage": 92,
+    "crop": [
+      50,
+      294,
+      390,
+      598
+    ],
+    "scale": 3,
+    "image": "assets/li/catellani-reaction-mechanism.png"
+  },
+  {
+    "id": "catellani-reaction",
+    "type": "applications-73",
+    "printedPage": 73,
+    "pdfPage": 92,
+    "crop": [
+      50,
+      174.7486572265625,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/catellani-reaction-applications-73.png"
+  },
+  {
+    "id": "catellani-reaction",
+    "type": "applications-74",
+    "printedPage": 74,
+    "pdfPage": 93,
+    "crop": [
+      50,
+      58,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/catellani-reaction-applications-74.png"
+  },
+  {
+    "id": "catellani-reaction",
+    "type": "applications-75",
+    "printedPage": 75,
+    "pdfPage": 94,
+    "crop": [
+      50,
+      58,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/catellani-reaction-applications-75.png"
+  },
+  {
+    "id": "catellani-reaction",
+    "type": "applications-76",
+    "printedPage": 76,
+    "pdfPage": 95,
+    "crop": [
+      50,
+      58,
+      390,
+      174.3240203857422
+    ],
+    "scale": 3,
+    "image": "assets/li/catellani-reaction-applications-76.png"
+  },
+  {
+    "id": "chanlam-cx-coupling-reaction",
+    "type": "reaction",
+    "printedPage": 77,
+    "pdfPage": 96,
+    "crop": [
+      50,
+      232,
+      390,
+      355
+    ],
+    "scale": 3,
+    "image": "assets/li/chanlam-cx-coupling-reaction-reaction.png"
+  },
+  {
+    "id": "chanlam-cx-coupling-reaction",
+    "type": "outline",
+    "printedPage": 77,
+    "pdfPage": 96,
+    "crop": [
+      50,
+      82,
+      390,
+      227
+    ],
+    "scale": 3,
+    "image": "assets/li/chanlam-cx-coupling-reaction-outline.png"
+  },
+  {
+    "id": "chanlam-cx-coupling-reaction",
+    "type": "mechanism",
+    "printedPage": 77,
+    "pdfPage": 96,
+    "crop": [
+      50,
+      359,
+      390,
+      579
+    ],
+    "scale": 3,
+    "image": "assets/li/chanlam-cx-coupling-reaction-mechanism.png"
+  },
+  {
+    "id": "chanlam-cx-coupling-reaction",
+    "type": "applications-78",
+    "printedPage": 78,
+    "pdfPage": 97,
+    "crop": [
+      50,
+      58,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/chanlam-cx-coupling-reaction-applications-78.png"
+  },
+  {
+    "id": "chanlam-cx-coupling-reaction",
+    "type": "applications-79",
+    "printedPage": 79,
+    "pdfPage": 98,
+    "crop": [
+      50,
+      58,
+      390,
+      280.52398681640625
+    ],
+    "scale": 3,
+    "image": "assets/li/chanlam-cx-coupling-reaction-applications-79.png"
+  },
+  {
+    "id": "chapman-rearrangement",
+    "type": "reaction",
+    "printedPage": 81,
+    "pdfPage": 100,
+    "crop": [
+      50,
+      106,
+      390,
+      160
+    ],
+    "scale": 3,
+    "image": "assets/li/chapman-rearrangement-reaction.png"
+  },
+  {
+    "id": "chapman-rearrangement",
+    "type": "outline",
+    "printedPage": 81,
+    "pdfPage": 100,
+    "crop": [
+      50,
+      82,
+      390,
+      101
+    ],
+    "scale": 3,
+    "image": "assets/li/chapman-rearrangement-outline.png"
+  },
+  {
+    "id": "chapman-rearrangement",
+    "type": "mechanism",
+    "printedPage": 81,
+    "pdfPage": 100,
+    "crop": [
+      50,
+      169,
+      390,
+      254
+    ],
+    "scale": 3,
+    "image": "assets/li/chapman-rearrangement-mechanism.png"
+  },
+  {
+    "id": "chapman-rearrangement",
+    "type": "applications-81",
+    "printedPage": 81,
+    "pdfPage": 100,
+    "crop": [
+      50,
+      255.72933959960938,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/chapman-rearrangement-applications-81.png"
+  },
+  {
+    "id": "chapman-rearrangement",
+    "type": "applications-82",
+    "printedPage": 82,
+    "pdfPage": 101,
+    "crop": [
+      50,
+      58,
+      390,
+      343.1839904785156
+    ],
+    "scale": 3,
+    "image": "assets/li/chapman-rearrangement-applications-82.png"
+  },
+  {
+    "id": "chichibabin-pyridine-synthesis",
+    "type": "reaction",
+    "printedPage": 83,
+    "pdfPage": 102,
+    "crop": [
+      50,
+      117,
+      390,
+      169
+    ],
+    "scale": 3,
+    "image": "assets/li/chichibabin-pyridine-synthesis-reaction.png"
+  },
+  {
+    "id": "chichibabin-pyridine-synthesis",
+    "type": "outline",
+    "printedPage": 83,
+    "pdfPage": 102,
+    "crop": [
+      50,
+      82,
+      390,
+      112
+    ],
+    "scale": 3,
+    "image": "assets/li/chichibabin-pyridine-synthesis-outline.png"
+  },
+  {
+    "id": "chichibabin-pyridine-synthesis",
+    "type": "mechanism",
+    "printedPage": 83,
+    "pdfPage": 102,
+    "crop": [
+      50,
+      184,
+      390,
+      441
+    ],
+    "scale": 3,
+    "image": "assets/li/chichibabin-pyridine-synthesis-mechanism.png"
+  },
+  {
+    "id": "chichibabin-pyridine-synthesis",
+    "type": "applications-83",
+    "printedPage": 83,
+    "pdfPage": 102,
+    "crop": [
+      50,
+      442.3493347167969,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/chichibabin-pyridine-synthesis-applications-83.png"
+  },
+  {
+    "id": "chichibabin-pyridine-synthesis",
+    "type": "applications-84",
+    "printedPage": 84,
+    "pdfPage": 103,
+    "crop": [
+      50,
+      58,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/chichibabin-pyridine-synthesis-applications-84.png"
+  },
+  {
+    "id": "chichibabin-pyridine-synthesis",
+    "type": "applications-85",
+    "printedPage": 85,
+    "pdfPage": 104,
+    "crop": [
+      50,
+      58,
+      390,
+      271.8840026855469
+    ],
+    "scale": 3,
+    "image": "assets/li/chichibabin-pyridine-synthesis-applications-85.png"
+  },
+  {
+    "id": "para-claisen-rearrangement",
+    "type": "reaction",
+    "printedPage": 94,
+    "pdfPage": 113,
+    "crop": [
+      50,
+      117,
+      390,
+      189
+    ],
+    "scale": 3,
+    "image": "assets/li/para-claisen-rearrangement-reaction.png"
+  },
+  {
+    "id": "para-claisen-rearrangement",
+    "type": "outline",
+    "printedPage": 94,
+    "pdfPage": 113,
+    "crop": [
+      50,
+      82,
+      390,
+      112
+    ],
+    "scale": 3,
+    "image": "assets/li/para-claisen-rearrangement-outline.png"
+  },
+  {
+    "id": "para-claisen-rearrangement",
+    "type": "mechanism",
+    "printedPage": 94,
+    "pdfPage": 113,
+    "crop": [
+      50,
+      194,
+      390,
+      491
+    ],
+    "scale": 3,
+    "image": "assets/li/para-claisen-rearrangement-mechanism.png"
+  },
+  {
+    "id": "para-claisen-rearrangement",
+    "type": "applications-94",
+    "printedPage": 94,
+    "pdfPage": 113,
+    "crop": [
+      50,
+      492.86932373046875,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/para-claisen-rearrangement-applications-94.png"
+  },
+  {
+    "id": "para-claisen-rearrangement",
+    "type": "applications-95",
+    "printedPage": 95,
+    "pdfPage": 114,
+    "crop": [
+      50,
+      58,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/para-claisen-rearrangement-applications-95.png"
+  },
+  {
+    "id": "abnormal-claisen-rearrangement",
+    "type": "reaction",
+    "printedPage": 97,
+    "pdfPage": 116,
+    "crop": [
+      50,
+      118,
+      390,
+      185
+    ],
+    "scale": 3,
+    "image": "assets/li/abnormal-claisen-rearrangement-reaction.png"
+  },
+  {
+    "id": "abnormal-claisen-rearrangement",
+    "type": "outline",
+    "printedPage": 97,
+    "pdfPage": 116,
+    "crop": [
+      50,
+      82,
+      390,
+      113
+    ],
+    "scale": 3,
+    "image": "assets/li/abnormal-claisen-rearrangement-outline.png"
+  },
+  {
+    "id": "abnormal-claisen-rearrangement",
+    "type": "mechanism",
+    "printedPage": 97,
+    "pdfPage": 116,
+    "crop": [
+      50,
+      200,
+      390,
+      300
+    ],
+    "scale": 3,
+    "image": "assets/li/abnormal-claisen-rearrangement-mechanism.png"
+  },
+  {
+    "id": "abnormal-claisen-rearrangement",
+    "type": "applications-97",
+    "printedPage": 97,
+    "pdfPage": 116,
+    "crop": [
+      50,
+      301.0893249511719,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/abnormal-claisen-rearrangement-applications-97.png"
+  },
+  {
+    "id": "abnormal-claisen-rearrangement",
+    "type": "applications-98",
+    "printedPage": 98,
+    "pdfPage": 117,
+    "crop": [
+      50,
+      58,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/abnormal-claisen-rearrangement-applications-98.png"
+  },
+  {
+    "id": "siloxy-cope-rearrangement",
+    "type": "reaction",
+    "printedPage": 122,
+    "pdfPage": 141,
+    "crop": [
+      50,
+      90,
+      390,
+      135
+    ],
+    "scale": 3,
+    "image": "assets/li/siloxy-cope-rearrangement-reaction.png"
+  },
+  {
+    "id": "siloxy-cope-rearrangement",
+    "type": "applications-122",
+    "printedPage": 122,
+    "pdfPage": 141,
+    "crop": [
+      50,
+      144.21929931640625,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/siloxy-cope-rearrangement-applications-122.png"
+  },
+  {
+    "id": "siloxy-cope-rearrangement",
+    "type": "applications-123",
+    "printedPage": 123,
+    "pdfPage": 142,
+    "crop": [
+      50,
+      58,
+      390,
+      145.73399353027344
+    ],
+    "scale": 3,
+    "image": "assets/li/siloxy-cope-rearrangement-applications-123.png"
+  },
+  {
+    "id": "inverse-electronic-demand-dielsalder-reaction",
+    "type": "reaction",
+    "printedPage": 173,
+    "pdfPage": 192,
+    "crop": [
+      50,
+      129,
+      390,
+      202
+    ],
+    "scale": 3,
+    "image": "assets/li/inverse-electronic-demand-dielsalder-reaction-reaction.png"
+  },
+  {
+    "id": "inverse-electronic-demand-dielsalder-reaction",
+    "type": "outline",
+    "printedPage": 173,
+    "pdfPage": 192,
+    "crop": [
+      50,
+      82,
+      390,
+      124
+    ],
+    "scale": 3,
+    "image": "assets/li/inverse-electronic-demand-dielsalder-reaction-outline.png"
+  },
+  {
+    "id": "inverse-electronic-demand-dielsalder-reaction",
+    "type": "mechanism",
+    "printedPage": 173,
+    "pdfPage": 192,
+    "crop": [
+      50,
+      129,
+      390,
+      202
+    ],
+    "scale": 3,
+    "image": "assets/li/inverse-electronic-demand-dielsalder-reaction-mechanism.png"
+  },
+  {
+    "id": "inverse-electronic-demand-dielsalder-reaction",
+    "type": "applications-173",
+    "printedPage": 173,
+    "pdfPage": 192,
+    "crop": [
+      50,
+      210.96929931640625,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/inverse-electronic-demand-dielsalder-reaction-applications-173.png"
+  },
+  {
+    "id": "inverse-electronic-demand-dielsalder-reaction",
+    "type": "applications-174",
+    "printedPage": 174,
+    "pdfPage": 193,
+    "crop": [
+      50,
+      58,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/inverse-electronic-demand-dielsalder-reaction-applications-174.png"
+  },
+  {
+    "id": "inverse-electronic-demand-dielsalder-reaction",
+    "type": "applications-175",
+    "printedPage": 175,
+    "pdfPage": 194,
+    "crop": [
+      50,
+      58,
+      390,
+      216.8040008544922
+    ],
+    "scale": 3,
+    "image": "assets/li/inverse-electronic-demand-dielsalder-reaction-applications-175.png"
+  },
+  {
+    "id": "ferrier-carbocyclization",
+    "type": "reaction",
+    "printedPage": 191,
+    "pdfPage": 210,
+    "crop": [
+      50,
+      199,
+      390,
+      325
+    ],
+    "scale": 3,
+    "image": "assets/li/ferrier-carbocyclization-reaction.png"
+  },
+  {
+    "id": "ferrier-carbocyclization",
+    "type": "outline",
+    "printedPage": 191,
+    "pdfPage": 210,
+    "crop": [
+      50,
+      82,
+      390,
+      172.25390625
+    ],
+    "scale": 3,
+    "image": "assets/li/ferrier-carbocyclization-outline.png"
+  },
+  {
+    "id": "ferrier-carbocyclization",
+    "type": "applications-191",
+    "printedPage": 191,
+    "pdfPage": 210,
+    "crop": [
+      50,
+      174.25390625,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/ferrier-carbocyclization-applications-191.png"
+  },
+  {
+    "id": "ferrier-carbocyclization",
+    "type": "applications-192",
+    "printedPage": 192,
+    "pdfPage": 211,
+    "crop": [
+      50,
+      58,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/ferrier-carbocyclization-applications-192.png"
+  },
+  {
+    "id": "friedlander-quinoline-synthesis",
+    "type": "reaction",
+    "printedPage": 206,
+    "pdfPage": 225,
+    "crop": [
+      50,
+      142,
+      390,
+      201
+    ],
+    "scale": 3,
+    "image": "assets/li/friedlander-quinoline-synthesis-reaction.png"
+  },
+  {
+    "id": "friedlander-quinoline-synthesis",
+    "type": "outline",
+    "printedPage": 206,
+    "pdfPage": 225,
+    "crop": [
+      50,
+      82,
+      390,
+      137
+    ],
+    "scale": 3,
+    "image": "assets/li/friedlander-quinoline-synthesis-outline.png"
+  },
+  {
+    "id": "friedlander-quinoline-synthesis",
+    "type": "mechanism",
+    "printedPage": 206,
+    "pdfPage": 225,
+    "crop": [
+      50,
+      218,
+      390,
+      358
+    ],
+    "scale": 3,
+    "image": "assets/li/friedlander-quinoline-synthesis-mechanism.png"
+  },
+  {
+    "id": "friedlander-quinoline-synthesis",
+    "type": "applications-206",
+    "printedPage": 206,
+    "pdfPage": 225,
+    "crop": [
+      50,
+      359.1893310546875,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/friedlander-quinoline-synthesis-applications-206.png"
+  },
+  {
+    "id": "friedlander-quinoline-synthesis",
+    "type": "applications-207",
+    "printedPage": 207,
+    "pdfPage": 226,
+    "crop": [
+      50,
+      58,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/friedlander-quinoline-synthesis-applications-207.png"
+  },
+  {
+    "id": "friedlander-quinoline-synthesis",
+    "type": "applications-208",
+    "printedPage": 208,
+    "pdfPage": 227,
+    "crop": [
+      50,
+      58,
+      390,
+      302.5886535644531
+    ],
+    "scale": 3,
+    "image": "assets/li/friedlander-quinoline-synthesis-applications-208.png"
+  },
+  {
+    "id": "ingmanske-procedure",
+    "type": "reaction",
+    "printedPage": 216,
+    "pdfPage": 235,
+    "crop": [
+      50,
+      118,
+      390,
+      182
+    ],
+    "scale": 3,
+    "image": "assets/li/ingmanske-procedure-reaction.png"
+  },
+  {
+    "id": "ingmanske-procedure",
+    "type": "outline",
+    "printedPage": 216,
+    "pdfPage": 235,
+    "crop": [
+      50,
+      82,
+      390,
+      113
+    ],
+    "scale": 3,
+    "image": "assets/li/ingmanske-procedure-outline.png"
+  },
+  {
+    "id": "ingmanske-procedure",
+    "type": "mechanism",
+    "printedPage": 216,
+    "pdfPage": 235,
+    "crop": [
+      50,
+      195,
+      390,
+      330
+    ],
+    "scale": 3,
+    "image": "assets/li/ingmanske-procedure-mechanism.png"
+  },
+  {
+    "id": "ingmanske-procedure",
+    "type": "applications-216",
+    "printedPage": 216,
+    "pdfPage": 235,
+    "crop": [
+      50,
+      331.5893249511719,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/ingmanske-procedure-applications-216.png"
+  },
+  {
+    "id": "ingmanske-procedure",
+    "type": "applications-217",
+    "printedPage": 217,
+    "pdfPage": 236,
+    "crop": [
+      50,
+      58,
+      390,
+      202.74862670898438
+    ],
+    "scale": 3,
+    "image": "assets/li/ingmanske-procedure-applications-217.png"
+  },
+  {
+    "id": "gewald-aminothiophene-synthesis",
+    "type": "reaction",
+    "printedPage": 218,
+    "pdfPage": 237,
+    "crop": [
+      50,
+      118,
+      390,
+      174
+    ],
+    "scale": 3,
+    "image": "assets/li/gewald-aminothiophene-synthesis-reaction.png"
+  },
+  {
+    "id": "gewald-aminothiophene-synthesis",
+    "type": "outline",
+    "printedPage": 218,
+    "pdfPage": 237,
+    "crop": [
+      50,
+      82,
+      390,
+      113
+    ],
+    "scale": 3,
+    "image": "assets/li/gewald-aminothiophene-synthesis-outline.png"
+  },
+  {
+    "id": "gewald-aminothiophene-synthesis",
+    "type": "mechanism",
+    "printedPage": 218,
+    "pdfPage": 237,
+    "crop": [
+      50,
+      191,
+      390,
+      420
+    ],
+    "scale": 3,
+    "image": "assets/li/gewald-aminothiophene-synthesis-mechanism.png"
+  },
+  {
+    "id": "gewald-aminothiophene-synthesis",
+    "type": "applications-218",
+    "printedPage": 218,
+    "pdfPage": 237,
+    "crop": [
+      50,
+      421.10931396484375,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/gewald-aminothiophene-synthesis-applications-218.png"
+  },
+  {
+    "id": "gewald-aminothiophene-synthesis",
+    "type": "applications-219",
+    "printedPage": 219,
+    "pdfPage": 238,
+    "crop": [
+      50,
+      58,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/gewald-aminothiophene-synthesis-applications-219.png"
+  },
+  {
+    "id": "gewald-aminothiophene-synthesis",
+    "type": "applications-220",
+    "printedPage": 220,
+    "pdfPage": 239,
+    "crop": [
+      50,
+      58,
+      390,
+      239.70864868164062
+    ],
+    "scale": 3,
+    "image": "assets/li/gewald-aminothiophene-synthesis-applications-220.png"
+  },
+  {
+    "id": "eglinton-coupling",
+    "type": "reaction",
+    "printedPage": 224,
+    "pdfPage": 243,
+    "crop": [
+      50,
+      117,
+      390,
+      163
+    ],
+    "scale": 3,
+    "image": "assets/li/eglinton-coupling-reaction.png"
+  },
+  {
+    "id": "eglinton-coupling",
+    "type": "outline",
+    "printedPage": 224,
+    "pdfPage": 243,
+    "crop": [
+      50,
+      82,
+      390,
+      112
+    ],
+    "scale": 3,
+    "image": "assets/li/eglinton-coupling-outline.png"
+  },
+  {
+    "id": "eglinton-coupling",
+    "type": "mechanism",
+    "printedPage": 224,
+    "pdfPage": 243,
+    "crop": [
+      50,
+      177,
+      390,
+      269
+    ],
+    "scale": 3,
+    "image": "assets/li/eglinton-coupling-mechanism.png"
+  },
+  {
+    "id": "eglinton-coupling",
+    "type": "applications-224",
+    "printedPage": 224,
+    "pdfPage": 243,
+    "crop": [
+      50,
+      270.36932373046875,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/eglinton-coupling-applications-224.png"
+  },
+  {
+    "id": "eglinton-coupling",
+    "type": "applications-225",
+    "printedPage": 225,
+    "pdfPage": 244,
+    "crop": [
+      50,
+      58,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/eglinton-coupling-applications-225.png"
+  },
+  {
+    "id": "eglinton-coupling",
+    "type": "applications-226",
+    "printedPage": 226,
+    "pdfPage": 245,
+    "crop": [
+      50,
+      58,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/eglinton-coupling-applications-226.png"
+  },
+  {
+    "id": "gouldjacobs-reaction",
+    "type": "reaction",
+    "printedPage": 228,
+    "pdfPage": 247,
+    "crop": [
+      50,
+      187,
+      390,
+      312
+    ],
+    "scale": 3,
+    "image": "assets/li/gouldjacobs-reaction-reaction.png"
+  },
+  {
+    "id": "gouldjacobs-reaction",
+    "type": "outline",
+    "printedPage": 228,
+    "pdfPage": 247,
+    "crop": [
+      50,
+      82,
+      390,
+      182
+    ],
+    "scale": 3,
+    "image": "assets/li/gouldjacobs-reaction-outline.png"
+  },
+  {
+    "id": "gouldjacobs-reaction",
+    "type": "mechanism",
+    "printedPage": 228,
+    "pdfPage": 247,
+    "crop": [
+      50,
+      327,
+      390,
+      506
+    ],
+    "scale": 3,
+    "image": "assets/li/gouldjacobs-reaction-mechanism.png"
+  },
+  {
+    "id": "gouldjacobs-reaction",
+    "type": "applications-228",
+    "printedPage": 228,
+    "pdfPage": 247,
+    "crop": [
+      50,
+      507.059326171875,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/gouldjacobs-reaction-applications-228.png"
+  },
+  {
+    "id": "gouldjacobs-reaction",
+    "type": "applications-229",
+    "printedPage": 229,
+    "pdfPage": 248,
+    "crop": [
+      50,
+      58,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/gouldjacobs-reaction-applications-229.png"
+  },
+  {
+    "id": "gouldjacobs-reaction",
+    "type": "applications-230",
+    "printedPage": 230,
+    "pdfPage": 249,
+    "crop": [
+      50,
+      58,
+      390,
+      214.62863159179688
+    ],
+    "scale": 3,
+    "image": "assets/li/gouldjacobs-reaction-applications-230.png"
+  },
+  {
+    "id": "hiyama-reaction",
+    "type": "reaction",
+    "printedPage": 251,
+    "pdfPage": 270,
+    "crop": [
+      50,
+      140,
+      390,
+      234
+    ],
+    "scale": 3,
+    "image": "assets/li/hiyama-reaction-reaction.png"
+  },
+  {
+    "id": "hiyama-reaction",
+    "type": "outline",
+    "printedPage": 251,
+    "pdfPage": 270,
+    "crop": [
+      50,
+      82,
+      390,
+      135
+    ],
+    "scale": 3,
+    "image": "assets/li/hiyama-reaction-outline.png"
+  },
+  {
+    "id": "hiyama-reaction",
+    "type": "mechanism",
+    "printedPage": 251,
+    "pdfPage": 270,
+    "crop": [
+      50,
+      247,
+      390,
+      410
+    ],
+    "scale": 3,
+    "image": "assets/li/hiyama-reaction-mechanism.png"
+  },
+  {
+    "id": "hiyama-reaction",
+    "type": "applications-251",
+    "printedPage": 251,
+    "pdfPage": 270,
+    "crop": [
+      50,
+      411.1493225097656,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/hiyama-reaction-applications-251.png"
+  },
+  {
+    "id": "hiyama-reaction",
+    "type": "applications-252",
+    "printedPage": 252,
+    "pdfPage": 271,
+    "crop": [
+      50,
+      58,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/hiyama-reaction-applications-252.png"
+  },
+  {
+    "id": "hiyama-reaction",
+    "type": "applications-253",
+    "printedPage": 253,
+    "pdfPage": 272,
+    "crop": [
+      50,
+      58,
+      390,
+      254.34866333007812
+    ],
+    "scale": 3,
+    "image": "assets/li/hiyama-reaction-applications-253.png"
+  },
+  {
+    "id": "collins-oxidation",
+    "type": "reaction",
+    "printedPage": 282,
+    "pdfPage": 301,
+    "crop": [
+      50,
+      149,
+      390,
+      207
+    ],
+    "scale": 3,
+    "image": "assets/li/collins-oxidation-reaction.png"
+  },
+  {
+    "id": "collins-oxidation",
+    "type": "outline",
+    "printedPage": 282,
+    "pdfPage": 301,
+    "crop": [
+      50,
+      82,
+      390,
+      126.25933837890625
+    ],
+    "scale": 3,
+    "image": "assets/li/collins-oxidation-outline.png"
+  },
+  {
+    "id": "collins-oxidation",
+    "type": "applications-282",
+    "printedPage": 282,
+    "pdfPage": 301,
+    "crop": [
+      50,
+      128.25933837890625,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/collins-oxidation-applications-282.png"
+  },
+  {
+    "id": "collins-oxidation",
+    "type": "applications-283",
+    "printedPage": 283,
+    "pdfPage": 302,
+    "crop": [
+      50,
+      58,
+      390,
+      325.04864501953125
+    ],
+    "scale": 3,
+    "image": "assets/li/collins-oxidation-applications-283.png"
+  },
+  {
+    "id": "pcc-oxidation",
+    "type": "reaction",
+    "printedPage": 284,
+    "pdfPage": 303,
+    "crop": [
+      50,
+      171,
+      390,
+      223
+    ],
+    "scale": 3,
+    "image": "assets/li/pcc-oxidation-reaction.png"
+  },
+  {
+    "id": "pcc-oxidation",
+    "type": "outline",
+    "printedPage": 284,
+    "pdfPage": 303,
+    "crop": [
+      50,
+      82,
+      390,
+      149.29931640625
+    ],
+    "scale": 3,
+    "image": "assets/li/pcc-oxidation-outline.png"
+  },
+  {
+    "id": "pcc-oxidation",
+    "type": "applications-284",
+    "printedPage": 284,
+    "pdfPage": 303,
+    "crop": [
+      50,
+      151.29931640625,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/pcc-oxidation-applications-284.png"
+  },
+  {
+    "id": "pcc-oxidation",
+    "type": "applications-285",
+    "printedPage": 285,
+    "pdfPage": 304,
+    "crop": [
+      50,
+      58,
+      390,
+      278.7086486816406
+    ],
+    "scale": 3,
+    "image": "assets/li/pcc-oxidation-applications-285.png"
+  },
+  {
+    "id": "pdc-oxidation",
+    "type": "reaction",
+    "printedPage": 286,
+    "pdfPage": 305,
+    "crop": [
+      50,
+      137,
+      390,
+      224
+    ],
+    "scale": 3,
+    "image": "assets/li/pdc-oxidation-reaction.png"
+  },
+  {
+    "id": "pdc-oxidation",
+    "type": "outline",
+    "printedPage": 286,
+    "pdfPage": 305,
+    "crop": [
+      50,
+      82,
+      390,
+      114.85931396484375
+    ],
+    "scale": 3,
+    "image": "assets/li/pdc-oxidation-outline.png"
+  },
+  {
+    "id": "pdc-oxidation",
+    "type": "applications-286",
+    "printedPage": 286,
+    "pdfPage": 305,
+    "crop": [
+      50,
+      116.85931396484375,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/pdc-oxidation-applications-286.png"
+  },
+  {
+    "id": "pdc-oxidation",
+    "type": "applications-287",
+    "printedPage": 287,
+    "pdfPage": 306,
+    "crop": [
+      50,
+      58,
+      390,
+      292.628662109375
+    ],
+    "scale": 3,
+    "image": "assets/li/pdc-oxidation-applications-287.png"
+  },
+  {
+    "id": "juliakocienski-olefination",
+    "type": "reaction",
+    "printedPage": 288,
+    "pdfPage": 307,
+    "crop": [
+      50,
+      118,
+      390,
+      171
+    ],
+    "scale": 3,
+    "image": "assets/li/juliakocienski-olefination-reaction.png"
+  },
+  {
+    "id": "juliakocienski-olefination",
+    "type": "outline",
+    "printedPage": 288,
+    "pdfPage": 307,
+    "crop": [
+      50,
+      82,
+      390,
+      113
+    ],
+    "scale": 3,
+    "image": "assets/li/juliakocienski-olefination-outline.png"
+  },
+  {
+    "id": "juliakocienski-olefination",
+    "type": "mechanism",
+    "printedPage": 288,
+    "pdfPage": 307,
+    "crop": [
+      50,
+      186,
+      390,
+      513
+    ],
+    "scale": 3,
+    "image": "assets/li/juliakocienski-olefination-mechanism.png"
+  },
+  {
+    "id": "juliakocienski-olefination",
+    "type": "applications-288",
+    "printedPage": 288,
+    "pdfPage": 307,
+    "crop": [
+      50,
+      514.1393432617188,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/juliakocienski-olefination-applications-288.png"
+  },
+  {
+    "id": "juliakocienski-olefination",
+    "type": "applications-289",
+    "printedPage": 289,
+    "pdfPage": 308,
+    "crop": [
+      50,
+      58,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/juliakocienski-olefination-applications-289.png"
+  },
+  {
+    "id": "juliakocienski-olefination",
+    "type": "applications-290",
+    "printedPage": 290,
+    "pdfPage": 309,
+    "crop": [
+      50,
+      58,
+      390,
+      286.5086364746094
+    ],
+    "scale": 3,
+    "image": "assets/li/juliakocienski-olefination-applications-290.png"
+  },
+  {
+    "id": "knorr-pyrazole-synthesis",
+    "type": "reaction",
+    "printedPage": 298,
+    "pdfPage": 317,
+    "crop": [
+      50,
+      129,
+      390,
+      207
+    ],
+    "scale": 3,
+    "image": "assets/li/knorr-pyrazole-synthesis-reaction.png"
+  },
+  {
+    "id": "knorr-pyrazole-synthesis",
+    "type": "outline",
+    "printedPage": 298,
+    "pdfPage": 317,
+    "crop": [
+      50,
+      82,
+      390,
+      124
+    ],
+    "scale": 3,
+    "image": "assets/li/knorr-pyrazole-synthesis-outline.png"
+  },
+  {
+    "id": "knorr-pyrazole-synthesis",
+    "type": "mechanism",
+    "printedPage": 298,
+    "pdfPage": 317,
+    "crop": [
+      50,
+      221,
+      390,
+      412
+    ],
+    "scale": 3,
+    "image": "assets/li/knorr-pyrazole-synthesis-mechanism.png"
+  },
+  {
+    "id": "knorr-pyrazole-synthesis",
+    "type": "applications-298",
+    "printedPage": 298,
+    "pdfPage": 317,
+    "crop": [
+      50,
+      413.1893310546875,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/knorr-pyrazole-synthesis-applications-298.png"
+  },
+  {
+    "id": "knorr-pyrazole-synthesis",
+    "type": "applications-299",
+    "printedPage": 299,
+    "pdfPage": 318,
+    "crop": [
+      50,
+      58,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/knorr-pyrazole-synthesis-applications-299.png"
+  },
+  {
+    "id": "knorr-pyrazole-synthesis",
+    "type": "applications-300",
+    "printedPage": 300,
+    "pdfPage": 319,
+    "crop": [
+      50,
+      58,
+      390,
+      215.82864379882812
+    ],
+    "scale": 3,
+    "image": "assets/li/knorr-pyrazole-synthesis-applications-300.png"
+  },
+  {
+    "id": "lawessons-reagent",
+    "type": "reaction",
+    "printedPage": 314,
+    "pdfPage": 333,
+    "crop": [
+      50,
+      129,
+      390,
+      217
+    ],
+    "scale": 3,
+    "image": "assets/li/lawessons-reagent-reaction.png"
+  },
+  {
+    "id": "lawessons-reagent",
+    "type": "outline",
+    "printedPage": 314,
+    "pdfPage": 333,
+    "crop": [
+      50,
+      82,
+      390,
+      124
+    ],
+    "scale": 3,
+    "image": "assets/li/lawessons-reagent-outline.png"
+  },
+  {
+    "id": "lawessons-reagent",
+    "type": "mechanism",
+    "printedPage": 314,
+    "pdfPage": 333,
+    "crop": [
+      50,
+      230,
+      390,
+      408
+    ],
+    "scale": 3,
+    "image": "assets/li/lawessons-reagent-mechanism.png"
+  },
+  {
+    "id": "lawessons-reagent",
+    "type": "applications-314",
+    "printedPage": 314,
+    "pdfPage": 333,
+    "crop": [
+      50,
+      408.98931884765625,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/lawessons-reagent-applications-314.png"
+  },
+  {
+    "id": "lawessons-reagent",
+    "type": "applications-315",
+    "printedPage": 315,
+    "pdfPage": 334,
+    "crop": [
+      50,
+      58,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/lawessons-reagent-applications-315.png"
+  },
+  {
+    "id": "lawessons-reagent",
+    "type": "applications-316",
+    "printedPage": 316,
+    "pdfPage": 335,
+    "crop": [
+      50,
+      58,
+      390,
+      356.8486633300781
+    ],
+    "scale": 3,
+    "image": "assets/li/lawessons-reagent-applications-316.png"
+  },
+  {
+    "id": "leuckartwallach-reaction",
+    "type": "reaction",
+    "printedPage": 317,
+    "pdfPage": 336,
+    "crop": [
+      50,
+      141,
+      390,
+      194
+    ],
+    "scale": 3,
+    "image": "assets/li/leuckartwallach-reaction-reaction.png"
+  },
+  {
+    "id": "leuckartwallach-reaction",
+    "type": "outline",
+    "printedPage": 317,
+    "pdfPage": 336,
+    "crop": [
+      50,
+      82,
+      390,
+      136
+    ],
+    "scale": 3,
+    "image": "assets/li/leuckartwallach-reaction-outline.png"
+  },
+  {
+    "id": "leuckartwallach-reaction",
+    "type": "mechanism",
+    "printedPage": 317,
+    "pdfPage": 336,
+    "crop": [
+      50,
+      209,
+      390,
+      332
+    ],
+    "scale": 3,
+    "image": "assets/li/leuckartwallach-reaction-mechanism.png"
+  },
+  {
+    "id": "leuckartwallach-reaction",
+    "type": "applications-317",
+    "printedPage": 317,
+    "pdfPage": 336,
+    "crop": [
+      50,
+      333.3893127441406,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/leuckartwallach-reaction-applications-317.png"
+  },
+  {
+    "id": "leuckartwallach-reaction",
+    "type": "applications-318",
+    "printedPage": 318,
+    "pdfPage": 337,
+    "crop": [
+      50,
+      58,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/leuckartwallach-reaction-applications-318.png"
+  },
+  {
+    "id": "leuckartwallach-reaction",
+    "type": "applications-319",
+    "printedPage": 319,
+    "pdfPage": 338,
+    "crop": [
+      50,
+      58,
+      390,
+      130.11862182617188
+    ],
+    "scale": 3,
+    "image": "assets/li/leuckartwallach-reaction-applications-319.png"
+  },
+  {
+    "id": "markovnikovs-rule",
+    "type": "reaction",
+    "printedPage": 329,
+    "pdfPage": 348,
+    "crop": [
+      50,
+      138,
+      390,
+      197
+    ],
+    "scale": 3,
+    "image": "assets/li/markovnikovs-rule-reaction.png"
+  },
+  {
+    "id": "markovnikovs-rule",
+    "type": "outline",
+    "printedPage": 329,
+    "pdfPage": 348,
+    "crop": [
+      50,
+      82,
+      390,
+      133
+    ],
+    "scale": 3,
+    "image": "assets/li/markovnikovs-rule-outline.png"
+  },
+  {
+    "id": "markovnikovs-rule",
+    "type": "mechanism",
+    "printedPage": 329,
+    "pdfPage": 348,
+    "crop": [
+      50,
+      216,
+      390,
+      508
+    ],
+    "scale": 3,
+    "image": "assets/li/markovnikovs-rule-mechanism.png"
+  },
+  {
+    "id": "markovnikovs-rule",
+    "type": "applications-329",
+    "printedPage": 329,
+    "pdfPage": 348,
+    "crop": [
+      50,
+      509.33935546875,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/markovnikovs-rule-applications-329.png"
+  },
+  {
+    "id": "markovnikovs-rule",
+    "type": "applications-330",
+    "printedPage": 330,
+    "pdfPage": 349,
+    "crop": [
+      50,
+      58,
+      390,
+      485.0086364746094
+    ],
+    "scale": 3,
+    "image": "assets/li/markovnikovs-rule-applications-330.png"
+  },
+  {
+    "id": "anti-markovnikov",
+    "type": "reaction",
+    "printedPage": 332,
+    "pdfPage": 351,
+    "crop": [
+      50,
+      129,
+      390,
+      178
+    ],
+    "scale": 3,
+    "image": "assets/li/anti-markovnikov-reaction.png"
+  },
+  {
+    "id": "anti-markovnikov",
+    "type": "outline",
+    "printedPage": 332,
+    "pdfPage": 351,
+    "crop": [
+      50,
+      82,
+      390,
+      124
+    ],
+    "scale": 3,
+    "image": "assets/li/anti-markovnikov-outline.png"
+  },
+  {
+    "id": "anti-markovnikov",
+    "type": "mechanism",
+    "printedPage": 332,
+    "pdfPage": 351,
+    "crop": [
+      50,
+      187,
+      390,
+      466
+    ],
+    "scale": 3,
+    "image": "assets/li/anti-markovnikov-mechanism.png"
+  },
+  {
+    "id": "anti-markovnikov",
+    "type": "applications-332",
+    "printedPage": 332,
+    "pdfPage": 351,
+    "crop": [
+      50,
+      466.8609924316406,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/anti-markovnikov-applications-332.png"
+  },
+  {
+    "id": "anti-markovnikov",
+    "type": "applications-333",
+    "printedPage": 333,
+    "pdfPage": 352,
+    "crop": [
+      50,
+      58,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/anti-markovnikov-applications-333.png"
+  },
+  {
+    "id": "anti-markovnikov",
+    "type": "applications-334",
+    "printedPage": 334,
+    "pdfPage": 353,
+    "crop": [
+      50,
+      58,
+      390,
+      237.06863403320312
+    ],
+    "scale": 3,
+    "image": "assets/li/anti-markovnikov-applications-334.png"
+  },
+  {
+    "id": "martins-sulfurane-dehydrating-reagent",
+    "type": "reaction",
+    "printedPage": 335,
+    "pdfPage": 354,
+    "crop": [
+      50,
+      118,
+      390,
+      162
+    ],
+    "scale": 3,
+    "image": "assets/li/martins-sulfurane-dehydrating-reagent-reaction.png"
+  },
+  {
+    "id": "martins-sulfurane-dehydrating-reagent",
+    "type": "outline",
+    "printedPage": 335,
+    "pdfPage": 354,
+    "crop": [
+      50,
+      82,
+      390,
+      113
+    ],
+    "scale": 3,
+    "image": "assets/li/martins-sulfurane-dehydrating-reagent-outline.png"
+  },
+  {
+    "id": "martins-sulfurane-dehydrating-reagent",
+    "type": "mechanism",
+    "printedPage": 335,
+    "pdfPage": 354,
+    "crop": [
+      50,
+      178,
+      390,
+      385
+    ],
+    "scale": 3,
+    "image": "assets/li/martins-sulfurane-dehydrating-reagent-mechanism.png"
+  },
+  {
+    "id": "martins-sulfurane-dehydrating-reagent",
+    "type": "applications-335",
+    "printedPage": 335,
+    "pdfPage": 354,
+    "crop": [
+      50,
+      386.54931640625,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/martins-sulfurane-dehydrating-reagent-applications-335.png"
+  },
+  {
+    "id": "martins-sulfurane-dehydrating-reagent",
+    "type": "applications-336",
+    "printedPage": 336,
+    "pdfPage": 355,
+    "crop": [
+      50,
+      58,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/martins-sulfurane-dehydrating-reagent-applications-336.png"
+  },
+  {
+    "id": "martins-sulfurane-dehydrating-reagent",
+    "type": "applications-337",
+    "printedPage": 337,
+    "pdfPage": 356,
+    "crop": [
+      50,
+      58,
+      390,
+      477.68865966796875
+    ],
+    "scale": 3,
+    "image": "assets/li/martins-sulfurane-dehydrating-reagent-applications-337.png"
+  },
+  {
+    "id": "meisenheimer-complex",
+    "type": "reaction",
+    "printedPage": 342,
+    "pdfPage": 361,
+    "crop": [
+      50,
+      118,
+      390,
+      219
+    ],
+    "scale": 3,
+    "image": "assets/li/meisenheimer-complex-reaction.png"
+  },
+  {
+    "id": "meisenheimer-complex",
+    "type": "outline",
+    "printedPage": 342,
+    "pdfPage": 361,
+    "crop": [
+      50,
+      82,
+      390,
+      113
+    ],
+    "scale": 3,
+    "image": "assets/li/meisenheimer-complex-outline.png"
+  },
+  {
+    "id": "meisenheimer-complex",
+    "type": "mechanism",
+    "printedPage": 342,
+    "pdfPage": 361,
+    "crop": [
+      50,
+      118,
+      390,
+      219
+    ],
+    "scale": 3,
+    "image": "assets/li/meisenheimer-complex-mechanism.png"
+  },
+  {
+    "id": "meisenheimer-complex",
+    "type": "applications-342",
+    "printedPage": 342,
+    "pdfPage": 361,
+    "crop": [
+      50,
+      224.64932250976562,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/meisenheimer-complex-applications-342.png"
+  },
+  {
+    "id": "meisenheimer-complex",
+    "type": "applications-343",
+    "printedPage": 343,
+    "pdfPage": 362,
+    "crop": [
+      50,
+      58,
+      390,
+      456.4486389160156
+    ],
+    "scale": 3,
+    "image": "assets/li/meisenheimer-complex-applications-343.png"
+  },
+  {
+    "id": "mukaiyama-michael-addition",
+    "type": "reaction",
+    "printedPage": 373,
+    "pdfPage": 392,
+    "crop": [
+      50,
+      118,
+      390,
+      180
+    ],
+    "scale": 3,
+    "image": "assets/li/mukaiyama-michael-addition-reaction.png"
+  },
+  {
+    "id": "mukaiyama-michael-addition",
+    "type": "outline",
+    "printedPage": 373,
+    "pdfPage": 392,
+    "crop": [
+      50,
+      82,
+      390,
+      113
+    ],
+    "scale": 3,
+    "image": "assets/li/mukaiyama-michael-addition-outline.png"
+  },
+  {
+    "id": "mukaiyama-michael-addition",
+    "type": "mechanism",
+    "printedPage": 373,
+    "pdfPage": 392,
+    "crop": [
+      50,
+      196,
+      390,
+      255
+    ],
+    "scale": 3,
+    "image": "assets/li/mukaiyama-michael-addition-mechanism.png"
+  },
+  {
+    "id": "mukaiyama-michael-addition",
+    "type": "applications-373",
+    "printedPage": 373,
+    "pdfPage": 392,
+    "crop": [
+      50,
+      256.2093200683594,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/mukaiyama-michael-addition-applications-373.png"
+  },
+  {
+    "id": "mukaiyama-michael-addition",
+    "type": "applications-374",
+    "printedPage": 374,
+    "pdfPage": 393,
+    "crop": [
+      50,
+      58,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/mukaiyama-michael-addition-applications-374.png"
+  },
+  {
+    "id": "mukaiyama-michael-addition",
+    "type": "applications-375",
+    "printedPage": 375,
+    "pdfPage": 394,
+    "crop": [
+      50,
+      58,
+      390,
+      276.0686340332031
+    ],
+    "scale": 3,
+    "image": "assets/li/mukaiyama-michael-addition-applications-375.png"
+  },
+  {
+    "id": "mukaiyama-reagent",
+    "type": "reaction",
+    "printedPage": 376,
+    "pdfPage": 395,
+    "crop": [
+      50,
+      131,
+      390,
+      216
+    ],
+    "scale": 3,
+    "image": "assets/li/mukaiyama-reagent-reaction.png"
+  },
+  {
+    "id": "mukaiyama-reagent",
+    "type": "outline",
+    "printedPage": 376,
+    "pdfPage": 395,
+    "crop": [
+      50,
+      82,
+      390,
+      126
+    ],
+    "scale": 3,
+    "image": "assets/li/mukaiyama-reagent-outline.png"
+  },
+  {
+    "id": "mukaiyama-reagent",
+    "type": "mechanism",
+    "printedPage": 376,
+    "pdfPage": 395,
+    "crop": [
+      50,
+      312,
+      390,
+      450
+    ],
+    "scale": 3,
+    "image": "assets/li/mukaiyama-reagent-mechanism.png"
+  },
+  {
+    "id": "mukaiyama-reagent",
+    "type": "applications-376",
+    "printedPage": 376,
+    "pdfPage": 395,
+    "crop": [
+      50,
+      218.28933715820312,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/mukaiyama-reagent-applications-376.png"
+  },
+  {
+    "id": "mukaiyama-reagent",
+    "type": "applications-377",
+    "printedPage": 377,
+    "pdfPage": 396,
+    "crop": [
+      50,
+      58,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/mukaiyama-reagent-applications-377.png"
+  },
+  {
+    "id": "mukaiyama-reagent",
+    "type": "applications-378",
+    "printedPage": 378,
+    "pdfPage": 397,
+    "crop": [
+      50,
+      58,
+      390,
+      520.798583984375
+    ],
+    "scale": 3,
+    "image": "assets/li/mukaiyama-reagent-applications-378.png"
+  },
+  {
+    "id": "newmankwart-reaction",
+    "type": "reaction",
+    "printedPage": 393,
+    "pdfPage": 412,
+    "crop": [
+      50,
+      119,
+      390,
+      195
+    ],
+    "scale": 3,
+    "image": "assets/li/newmankwart-reaction-reaction.png"
+  },
+  {
+    "id": "newmankwart-reaction",
+    "type": "outline",
+    "printedPage": 393,
+    "pdfPage": 412,
+    "crop": [
+      50,
+      82,
+      390,
+      114
+    ],
+    "scale": 3,
+    "image": "assets/li/newmankwart-reaction-outline.png"
+  },
+  {
+    "id": "newmankwart-reaction",
+    "type": "mechanism",
+    "printedPage": 393,
+    "pdfPage": 412,
+    "crop": [
+      50,
+      211,
+      390,
+      282
+    ],
+    "scale": 3,
+    "image": "assets/li/newmankwart-reaction-mechanism.png"
+  },
+  {
+    "id": "newmankwart-reaction",
+    "type": "applications-393",
+    "printedPage": 393,
+    "pdfPage": 412,
+    "crop": [
+      50,
+      456.1493225097656,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/newmankwart-reaction-applications-393.png"
+  },
+  {
+    "id": "newmankwart-reaction",
+    "type": "applications-394",
+    "printedPage": 394,
+    "pdfPage": 413,
+    "crop": [
+      50,
+      58,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/newmankwart-reaction-applications-394.png"
+  },
+  {
+    "id": "newmankwart-reaction",
+    "type": "applications-395",
+    "printedPage": 395,
+    "pdfPage": 414,
+    "crop": [
+      50,
+      58,
+      390,
+      156.30862426757812
+    ],
+    "scale": 3,
+    "image": "assets/li/newmankwart-reaction-applications-395.png"
+  },
+  {
+    "id": "parham-cyclization",
+    "type": "reaction",
+    "printedPage": 421,
+    "pdfPage": 440,
+    "crop": [
+      50,
+      129,
+      390,
+      180
+    ],
+    "scale": 3,
+    "image": "assets/li/parham-cyclization-reaction.png"
+  },
+  {
+    "id": "parham-cyclization",
+    "type": "outline",
+    "printedPage": 421,
+    "pdfPage": 440,
+    "crop": [
+      50,
+      82,
+      390,
+      124
+    ],
+    "scale": 3,
+    "image": "assets/li/parham-cyclization-outline.png"
+  },
+  {
+    "id": "parham-cyclization",
+    "type": "mechanism",
+    "printedPage": 421,
+    "pdfPage": 440,
+    "crop": [
+      50,
+      270,
+      390,
+      380
+    ],
+    "scale": 3,
+    "image": "assets/li/parham-cyclization-mechanism.png"
+  },
+  {
+    "id": "parham-cyclization",
+    "type": "applications-421",
+    "printedPage": 421,
+    "pdfPage": 440,
+    "crop": [
+      50,
+      188.28933715820312,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/parham-cyclization-applications-421.png"
+  },
+  {
+    "id": "parham-cyclization",
+    "type": "applications-422",
+    "printedPage": 422,
+    "pdfPage": 441,
+    "crop": [
+      50,
+      58,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/parham-cyclization-applications-422.png"
+  },
+  {
+    "id": "polonovskipotier-rearrangement",
+    "type": "reaction",
+    "printedPage": 455,
+    "pdfPage": 474,
+    "crop": [
+      50,
+      129,
+      390,
+      206
+    ],
+    "scale": 3,
+    "image": "assets/li/polonovskipotier-rearrangement-reaction.png"
+  },
+  {
+    "id": "polonovskipotier-rearrangement",
+    "type": "outline",
+    "printedPage": 455,
+    "pdfPage": 474,
+    "crop": [
+      50,
+      82,
+      390,
+      124
+    ],
+    "scale": 3,
+    "image": "assets/li/polonovskipotier-rearrangement-outline.png"
+  },
+  {
+    "id": "polonovskipotier-rearrangement",
+    "type": "mechanism",
+    "printedPage": 455,
+    "pdfPage": 474,
+    "crop": [
+      50,
+      221,
+      390,
+      386
+    ],
+    "scale": 3,
+    "image": "assets/li/polonovskipotier-rearrangement-mechanism.png"
+  },
+  {
+    "id": "polonovskipotier-rearrangement",
+    "type": "applications-455",
+    "printedPage": 455,
+    "pdfPage": 474,
+    "crop": [
+      50,
+      387.1493225097656,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/polonovskipotier-rearrangement-applications-455.png"
+  },
+  {
+    "id": "polonovskipotier-rearrangement",
+    "type": "applications-456",
+    "printedPage": 456,
+    "pdfPage": 475,
+    "crop": [
+      50,
+      58,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/polonovskipotier-rearrangement-applications-456.png"
+  },
+  {
+    "id": "polonovskipotier-rearrangement",
+    "type": "applications-457",
+    "printedPage": 457,
+    "pdfPage": 476,
+    "crop": [
+      50,
+      58,
+      390,
+      140.79867553710938
+    ],
+    "scale": 3,
+    "image": "assets/li/polonovskipotier-rearrangement-applications-457.png"
+  },
+  {
+    "id": "trucesmile-rearrangement",
+    "type": "reaction",
+    "printedPage": 507,
+    "pdfPage": 526,
+    "crop": [
+      50,
+      107,
+      390,
+      168
+    ],
+    "scale": 3,
+    "image": "assets/li/trucesmile-rearrangement-reaction.png"
+  },
+  {
+    "id": "trucesmile-rearrangement",
+    "type": "outline",
+    "printedPage": 507,
+    "pdfPage": 526,
+    "crop": [
+      50,
+      82,
+      390,
+      102
+    ],
+    "scale": 3,
+    "image": "assets/li/trucesmile-rearrangement-outline.png"
+  },
+  {
+    "id": "trucesmile-rearrangement",
+    "type": "mechanism",
+    "printedPage": 507,
+    "pdfPage": 526,
+    "crop": [
+      50,
+      243,
+      390,
+      349
+    ],
+    "scale": 3,
+    "image": "assets/li/trucesmile-rearrangement-mechanism.png"
+  },
+  {
+    "id": "trucesmile-rearrangement",
+    "type": "applications-507",
+    "printedPage": 507,
+    "pdfPage": 526,
+    "crop": [
+      50,
+      175.6893310546875,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/trucesmile-rearrangement-applications-507.png"
+  },
+  {
+    "id": "trucesmile-rearrangement",
+    "type": "applications-508",
+    "printedPage": 508,
+    "pdfPage": 527,
+    "crop": [
+      50,
+      58,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/trucesmile-rearrangement-applications-508.png"
+  },
+  {
+    "id": "von-braun-reaction",
+    "type": "reaction",
+    "printedPage": 559,
+    "pdfPage": 578,
+    "crop": [
+      50,
+      125,
+      390,
+      167
+    ],
+    "scale": 3,
+    "image": "assets/li/von-braun-reaction-reaction.png"
+  },
+  {
+    "id": "von-braun-reaction",
+    "type": "outline",
+    "printedPage": 559,
+    "pdfPage": 578,
+    "crop": [
+      50,
+      82,
+      390,
+      120
+    ],
+    "scale": 3,
+    "image": "assets/li/von-braun-reaction-outline.png"
+  },
+  {
+    "id": "von-braun-reaction",
+    "type": "mechanism",
+    "printedPage": 559,
+    "pdfPage": 578,
+    "crop": [
+      50,
+      179,
+      390,
+      231
+    ],
+    "scale": 3,
+    "image": "assets/li/von-braun-reaction-mechanism.png"
+  },
+  {
+    "id": "von-braun-reaction",
+    "type": "applications-559",
+    "printedPage": 559,
+    "pdfPage": 578,
+    "crop": [
+      50,
+      232.20932006835938,
+      390,
+      599
+    ],
+    "scale": 3,
+    "image": "assets/li/von-braun-reaction-applications-559.png"
+  },
+  {
+    "id": "von-braun-reaction",
+    "type": "applications-560",
+    "printedPage": 560,
+    "pdfPage": 579,
+    "crop": [
+      50,
+      58,
+      390,
+      338.9686584472656
+    ],
+    "scale": 3,
+    "image": "assets/li/von-braun-reaction-applications-560.png"
+  }
+]
