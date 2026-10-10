@@ -1,6 +1,7 @@
 """Check chapter coverage, appendix memberships, citations and rendered PNGs."""
 import json
 import struct
+import unicodedata
 from pathlib import Path
 
 root = Path(__file__).resolve().parent.parent
@@ -79,4 +80,13 @@ for j in jobs + section_jobs:
 
 assert [m['text'].lower() for m in masks['fleming-tamao-oxidation']['masks']].count('fleming')==2
 assert [m['text'].lower() for m in masks['fleming-tamao-oxidation']['masks']].count('tamao')==2
+references = json.loads((root/'scripts/flashcard-name-references.json').read_text())
+def normalize_name(text):
+    return ''.join(c for c in unicodedata.normalize('NFKD', text.lower()) if not unicodedata.combining(c))
+for name, ids in references['additionalNames'].items():
+    for id in ids:
+        assert name in {normalize_name(m['text']) for m in masks[id]['masks']}, f'Missing related name: {name} in {id}'
+assert sum(normalize_name(m['text'])=='ganem' for m in masks['kornblum-oxidation']['masks'])==2
+for id, figure in prompts.items():
+    assert '-' in Path(figure['image']).stem, 'Prompt URLs need a content revision to avoid stale unmasked images'
 print('PASS: 251 cards and audited name-recall figures with unchanged dimensions; 500 section crops; 751 original PNGs; IDs, categories and citations verified.')

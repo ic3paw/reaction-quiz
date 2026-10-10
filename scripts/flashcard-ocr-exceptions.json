@@ -1,0 +1,14 @@
+[
+  {
+    "id": "meisenheimer-rearrangement",
+    "image": "assets/flashcards/334-8217b865.png",
+    "term": "ROM",
+    "reason": "Visually checked: OCR joins R superscript 8 and nearby bond strokes into ROM; there is no printed ROM label."
+  },
+  {
+    "id": "pictet-spengler-tetrahydroisoquinoline-synthesis",
+    "image": "assets/flashcards/400-9b22b285.png",
+    "term": "BR",
+    "reason": "Visually checked: OCR joins the beta position marker and R superscript 3 into BR; there is no printed BR label."
+  }
+]

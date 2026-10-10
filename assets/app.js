@@ -212,7 +212,7 @@ function renderFlashcard() {
     <label class="flashcard-direction" for="deck-card-mode">Recall<select id="deck-card-mode" data-card-mode>${cardModeOptions()}</select></label>
     <h2 id="flashcard-title" tabindex="-1">${deck.revealed ? cardViews[deck.answerView] : deck.mode==='name' ? 'Name the reaction' : `Recall: ${cardModes[deck.mode]}`}</h2>
     ${deck.revealed ? `<div class="reaction-tabs" role="tablist" aria-label="Answer view">${views.map(([value,label]) => `<button role="tab" id="card-tab-${value}" data-card-view="${value}" aria-controls="card-answer" aria-selected="${deck.answerView===value}" tabindex="${deck.answerView===value ? 0 : -1}">${label}</button>`).join('')}</div>` : ''}
-    <div class="flashcard-content${!deck.revealed && deck.mode === 'reaction' ? ' flashcard-reaction-prompt' : ''}" ${deck.revealed ? `id="card-answer" role="tabpanel" tabindex="0" aria-labelledby="card-tab-${deck.answerView}"` : 'aria-live="polite"'}>${deck.revealed
+    <div class="flashcard-content${!deck.revealed && ['reaction', 'mechanism'].includes(deck.mode) ? ' flashcard-text-prompt' : ''}" ${deck.revealed ? `id="card-answer" role="tabpanel" tabindex="0" aria-labelledby="card-tab-${deck.answerView}"` : 'aria-live="polite"'}>${deck.revealed
       ? cardAnswer(r, deck.answerView)
       : deck.mode==='name' ? bookFigure(flashcardFigures[r.id], '', 'Reaction & conditions', true)
       : `<p class="flashcard-prompt">${escapeHTML(r.name)}</p>`}</div>

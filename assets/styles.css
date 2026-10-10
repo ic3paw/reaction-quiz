@@ -38,8 +38,8 @@ main { min-width: 0; min-height: 65vh; }
 #flashcard-dialog { width: min(800px, calc(100% - 32px)); }
 .flashcard-content { padding: 20px 0; min-height: 190px; }
 .flashcard-prompt { font-size: 21px; line-height: 1.7; }
-.flashcard-reaction-prompt { display: grid; place-items: center; min-height: 240px; padding: 32px 24px; border: 3px solid #171717; text-align: center; }
-.flashcard-reaction-prompt .flashcard-prompt { margin: 0; max-width: 100%; font-size: 21px; font-weight: 700; line-height: 1.4; color: #171717; overflow-wrap: anywhere; }
+.flashcard-text-prompt { display: grid; place-items: center; min-height: 240px; padding: 32px 24px; border: 3px solid #171717; border-radius: 8px; text-align: center; }
+.flashcard-text-prompt .flashcard-prompt { margin: 0; max-width: 100%; font-size: 21px; font-weight: 700; line-height: 1.4; color: #171717; overflow-wrap: anywhere; }
 .flashcard-controls { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin: 24px 0; }
 .flashcard-navigation { display: flex; gap: 16px; justify-content: space-between; border-top: 1px solid var(--line); padding-top: 20px; }
 .flashcard-mechanism { margin: 24px 0; border-top: 1px solid var(--line); padding-top: 16px; }
