@@ -22,7 +22,18 @@ const icon = name => `<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">$
 document.querySelectorAll('[data-icon]').forEach(el => el.innerHTML = icon(el.dataset.icon));
 
 const categories = bookCategories;
-const reactions = reactionCatalog;
+const sourceBooks = {
+  kurti: {label:'Kürti & Czakó (2005)', authors:'Kürti & Czakó', title:'Strategic Applications of Named Reactions in Organic Synthesis', year:2005},
+  li: {label:'Li (2021)', authors:'Jie Jack Li', title:'Name Reactions: A Collection of Detailed Mechanisms and Synthetic Applications', year:2021},
+};
+Object.assign(bookReactions, liBookReactions);
+Object.assign(bookSections, liBookSections);
+Object.assign(flashcardFigures, liFlashcardFigures);
+const reactions = [...reactionCatalog, ...liCatalog].sort((a,b) => a.name.localeCompare(b.name));
+reactions.forEach(r => {
+  r.sourceBook = r.sourceBook || 'kurti';
+  r.books = r.sourceBook === 'li' ? ['li'] : liCoverage[r.id] ? ['kurti', 'li'] : ['kurti'];
+});
 
 const storageKey = 'catalyst-progress-v1';
 let state = {saved:[], attempts:[], sessions:[]};
@@ -41,18 +52,21 @@ state.selectedCategories = Array.isArray(state.selectedCategories)
   ? categories.filter(c => state.selectedCategories.includes(c.id)).map(c => c.id)
   : categories.map(c => c.id);
 const inCategory = (r, id) => r.categories.includes(id);
-const isSelected = r => r.categories.some(id => state.selectedCategories.includes(id));
+if (!['all', 'kurti', 'li'].includes(state.bookFilter)) state.bookFilter = 'all';
+const matchesBook = r => state.bookFilter === 'all' || r.books.includes(state.bookFilter);
+const isSelected = r => matchesBook(r) && r.categories.some(id => state.selectedCategories.includes(id));
 const selectedReactions = () => reactions.filter(isSelected);
 function studyPool(mode) {
-  if (mode === 'all') return [...reactions];
-  if (categoryFor(mode)) return reactions.filter(r => inCategory(r, mode));
+  if (mode === 'all') return reactions.filter(matchesBook);
+  if (categoryFor(mode)) return reactions.filter(r => matchesBook(r) && inCategory(r, mode));
   if (mode === 'collection') return filteredReactions();
   const pool = selectedReactions();
   return mode === 'saved' ? pool.filter(r => state.saved.includes(r.id)) : pool;
 }
 function selectionTitle() {
-  return state.selectedCategories.length === categories.length ? 'All reactions'
+  const selection = state.selectedCategories.length === categories.length ? 'All categories'
     : state.selectedCategories.map(id => categoryFor(id).short).join(' · ');
+  return [state.bookFilter === 'all' ? 'All books' : sourceBooks[state.bookFilter].label, selection].filter(Boolean).join(' · ');
 }
 const main = document.querySelector('main');
 const quizDialog = document.querySelector('#quiz-dialog');
@@ -60,7 +74,14 @@ const reactionDialog = document.querySelector('#reaction-dialog');
 let detailReactionId = null;
 let detailTab = 'reaction';
 const detailTabs = {reaction:'Reaction & conditions', outline:'Outline / history', mechanism:'Mechanism', applications:'Synthetic applications'};
-const availableTabs = (tabs, r) => Object.entries(tabs).filter(([key]) => key !== 'applications' || bookReactions[r.id]?.applications?.length);
+const hasSection = (r, key) => ({
+  name:true, reaction:!!bookSections[r.id]?.reaction,
+  outline:!!(bookSections[r.id]?.outline || bookSections[r.id]?.outlineNote),
+  mechanism:!!bookReactions[r.id]?.mechanism,
+  applications:!!bookReactions[r.id]?.applications?.length,
+})[key];
+const availableTabs = (tabs, r) => Object.entries(tabs).filter(([key]) => hasSection(r, key));
+const canRecall = (r, mode) => hasSection(r, mode === 'name' ? 'reaction' : mode);
 const categoryFor = id => categories.find(c=>c.id===id);
 const categoryLabel = r => r.categories.map(id => categoryFor(id).short).join(' · ');
 const colorStyle = c => `--category-color:${c.color};--category-light:${c.light}`;
@@ -86,10 +107,22 @@ function statsMarkup() {
   return `<div class="stats-grid">${stats.map(([value, unit, label]) => `<div><div class="stat-value">${value}<small>${unit}</small></div><div class="stat-label">${label}</div></div>`).join('')}</div>`;
 }
 
+function setupBooks() {
+  const select = document.querySelector('#book-filter');
+  select.innerHTML = '<option value="all">All books</option>' + Object.entries(sourceBooks).map(([id, book]) => `<option value="${id}">${book.label}</option>`).join('');
+  select.value = state.bookFilter;
+  select.addEventListener('change', () => {
+    state.bookFilter = select.value;
+    persist(); syncCategories();
+    if (page === 'library' || page === 'saved') renderLibraryResults(page === 'saved');
+    else render();
+  });
+}
+
 function setupCategories() {
   document.querySelector('#category-options').insertAdjacentHTML('beforeend', `
     <label class="category-option all-categories"><input type="checkbox" id="all-categories"><span>All categories</span></label>
-    ${categories.map(c => `<label class="category-option"><input type="checkbox" data-category-select="${c.id}"><span>${c.name} <small>(${reactions.filter(r => inCategory(r,c.id)).length})</small></span></label>`).join('')}`);
+    ${categories.map(c => `<label class="category-option"><input type="checkbox" data-category-select="${c.id}"><span>${c.name} <small data-category-count="${c.id}">(${reactions.filter(r => matchesBook(r) && inCategory(r,c.id)).length})</small></span></label>`).join('')}`);
   document.querySelector('#category-options').addEventListener('change', e => {
     if (e.target.id === 'all-categories') {
       state.selectedCategories = e.target.checked ? categories.map(c => c.id) : [];
@@ -114,6 +147,7 @@ function syncCategories() {
   document.querySelectorAll('[data-category-select]').forEach(input => {
     input.checked = state.selectedCategories.includes(input.dataset.categorySelect);
   });
+  document.querySelectorAll('[data-category-count]').forEach(el => { el.textContent = `(${reactions.filter(r => matchesBook(r) && inCategory(r,el.dataset.categoryCount)).length})`; });
   document.querySelector('#selection-count').textContent = `${selectedReactions().length} reactions selected`;
 }
 
@@ -162,7 +196,7 @@ function practice() {
     ['Saved reactions', 'Practice your bookmarked reactions.', 'saved'],
   ];
   main.innerHTML = heading('Practice') + `<div class="practice-list">${modes.map(([title, description, mode]) => `<div class="practice-row"><div><h3>${title}</h3><p>${description}</p></div><button class="text-button" data-start="${mode}" aria-label="Start ${title.toLowerCase()}" ${selectedReactions().length ? '' : 'disabled'}>Start →</button></div>`).join('')}</div>
-    <h2>Practice by appendix category</h2><p class="muted">Each quiz draws from the category shown. Use the sidebar to combine categories in a quiz.</p><div class="practice-list">${categories.map(c => `<div class="practice-row"><div><h3>${c.name}</h3><p>${reactions.filter(r => inCategory(r,c.id)).length} reactions</p></div><div class="actions"><button class="text-button" data-start="${c.id}" aria-label="Quiz ${c.name}">Quiz</button><button class="text-button" data-flashcards="${c.id}" aria-label="Flashcards for ${c.name}">Cards</button></div></div>`).join('')}</div>`;
+    <h2>Practice by category</h2><p class="muted">Each quiz draws from the category shown. Use the sidebar to combine categories in a quiz.</p><div class="practice-list">${categories.map(c => `<div class="practice-row"><div><h3>${c.name}</h3><p>${reactions.filter(r => matchesBook(r) && inCategory(r,c.id)).length} reactions</p></div><div class="actions"><button class="text-button" data-start="${c.id}" aria-label="Quiz ${c.name}">Quiz</button><button class="text-button" data-flashcards="${c.id}" aria-label="Flashcards for ${c.name}">Cards</button></div></div>`).join('')}</div>`;
 }
 
 const flashcardDialog = document.querySelector('#flashcard-dialog');
@@ -173,26 +207,27 @@ if (state.flashcardMode === 'outline') state.flashcardMode = 'reaction';
 state.flashcardViewVersion = 3;
 if (!Object.hasOwn(cardModes, state.flashcardMode)) state.flashcardMode = 'name';
 let deck = null;
-function cardModeOptions() {
-  return Object.entries(cardModes).map(([value, label]) => `<option value="${value}" ${state.flashcardMode === value ? 'selected' : ''}>${label}</option>`).join('');
+function cardModeOptions(pool = reactions) {
+  return Object.entries(cardModes).filter(([mode]) => pool.some(r => canRecall(r, mode))).map(([value, label]) => `<option value="${value}" ${state.flashcardMode === value ? 'selected' : ''}>${label}</option>`).join('');
 }
 function flashcards() {
-  const count = selectedReactions().length;
+  const count = selectedReactions().filter(r => canRecall(r, state.flashcardMode)).length;
   const studied = Object.keys(state.flashcardReviews || {}).length;
   main.innerHTML = heading('Flashcards') + `
     <p class="intro">Study ${count} reactions from: ${escapeHTML(selectionTitle() || 'no categories selected')}. Choose what to recall, then flip to check your answer.</p>
     <label class="flashcard-direction" for="flashcard-mode">Recall
       <select id="flashcard-mode" data-card-mode>${cardModeOptions()}</select>
     </label>
-    <p class="muted">Name: identify the reaction from its book figure and reagents. Reaction & conditions or Mechanism: recall the selected topic from a name. Flip to explore the answer tabs, including outline/history and synthetic applications.</p>
-    <div class="actions"><button class="button primary" data-flashcards="selected" ${count ? '' : 'disabled'}>Study ${count} cards</button><button class="button secondary" data-flashcards="saved" ${selectedReactions().some(r => state.saved.includes(r.id)) ? '' : 'disabled'}>Study saved cards</button></div>
-    <p class="catalog-note">${studied} cards reviewed. Choose one or more appendix categories in the sidebar. Your flashcard reviews are saved separately from quiz accuracy.</p>`;
+    <p class="muted">Name: identify the reaction from its book figure and reagents. Reaction & conditions or Mechanism: recall the selected topic from a name. Flip to explore the answer tabs, including outline/history and synthetic applications when available. Mechanism decks include only entries with a mechanism figure.</p>
+    <div class="actions"><button class="button primary" data-flashcards="selected" ${count ? '' : 'disabled'}>Study ${count} cards</button><button class="button secondary" data-flashcards="saved" ${selectedReactions().some(r => state.saved.includes(r.id) && canRecall(r, state.flashcardMode)) ? '' : 'disabled'}>Study saved cards</button></div>
+    <p class="catalog-note">${studied} cards reviewed. Choose a book and one or more categories in the sidebar. Your flashcard reviews are saved separately from quiz accuracy.</p>`;
 }
 
 function startFlashcards(mode) {
-  const pool = studyPool(mode);
-  if (!pool.length) { toast('No cards in this selection.'); return; }
-  deck = {cards:shuffle(pool), original:[...pool], index:0, revealed:false, ratings:{}, mode:state.flashcardMode, answerView:state.flashcardMode,
+  const fullPool = studyPool(mode);
+  const pool = fullPool.filter(r => canRecall(r, state.flashcardMode));
+  if (!pool.length) { toast(state.flashcardMode === 'mechanism' ? 'No mechanism figures in this selection. Choose another recall mode.' : 'No cards in this selection.'); return; }
+  deck = {pool:fullPool, cards:shuffle(pool), original:[...pool], index:0, revealed:false, ratings:{}, mode:state.flashcardMode, answerView:state.flashcardMode,
     title:categoryFor(mode)?.short || `${mode==='saved' || (mode==='collection' && page==='saved') ? 'Saved · ' : ''}${selectionTitle()}`, finished:false};
   if (reactionDialog.open) reactionDialog.close();
   renderFlashcard(); flashcardDialog.showModal();
@@ -209,7 +244,7 @@ function renderFlashcard() {
   if (!views.some(([key]) => key === deck.answerView)) deck.answerView = deck.mode;
   flashcardDialog.innerHTML = `<div class="dialog-inner"><div class="dialog-top"><span>${escapeHTML(deck.title)} · ${deck.index+1} / ${deck.cards.length}</span><button class="close-button" data-close="flashcards" aria-label="Close flashcards">×</button></div>
     <div class="quiz-progress"><div style="width:${deck.index/deck.cards.length*100}%"></div></div>
-    <label class="flashcard-direction" for="deck-card-mode">Recall<select id="deck-card-mode" data-card-mode>${cardModeOptions()}</select></label>
+    <label class="flashcard-direction" for="deck-card-mode">Recall<select id="deck-card-mode" data-card-mode>${cardModeOptions(deck.pool)}</select></label>
     <h2 id="flashcard-title" tabindex="-1">${deck.revealed ? cardViews[deck.answerView] : deck.mode==='name' ? 'Name the reaction' : `Recall: ${cardModes[deck.mode]}`}</h2>
     ${deck.revealed ? `<div class="reaction-tabs" role="tablist" aria-label="Answer view">${views.map(([value,label]) => `<button role="tab" id="card-tab-${value}" data-card-view="${value}" aria-controls="card-answer" aria-selected="${deck.answerView===value}" tabindex="${deck.answerView===value ? 0 : -1}">${label}</button>`).join('')}</div>` : ''}
     <div class="flashcard-content${!deck.revealed && ['reaction', 'mechanism'].includes(deck.mode) ? ' flashcard-text-prompt' : ''}" ${deck.revealed ? `id="card-answer" role="tabpanel" tabindex="0" aria-labelledby="card-tab-${deck.answerView}"` : 'aria-live="polite"'}>${deck.revealed
@@ -317,7 +352,7 @@ function bookFigure(figure, name, type, prompt = false) {
   const caption = prompt ? 'Reaction & conditions' : figure.caption || type;
   const description = prompt ? 'Book reaction scheme showing reactants, products, reagents and conditions. Identify the named reaction.' : `${name}: ${caption}`;
   const image = `<img src="${figure.image}" alt="${escapeHTML(description)}" loading="${prompt ? 'eager' : 'lazy'}"${v ? ` style="top:${-v.top/(v.bottom-v.top)*100}%"` : ''}>`;
-  return `<figure class="book-figure"><a href="${figure.image}" target="_blank" rel="noopener" aria-label="${escapeHTML(prompt ? 'Open reaction figure at full size' : `Open ${name} ${type} source figure at full size`)}">${v ? `<div class="book-figure-region" style="aspect-ratio:${v.width}/${v.height*(v.bottom-v.top)}">${image}</div>` : image}</a><figcaption>${escapeHTML(caption)} <span>p. ${figure.printedPage} · <a href="${figure.image}" target="_blank" rel="noopener">${v ? 'Full source' : 'Full size'} ↗</a></span></figcaption></figure>`;
+  return `<figure class="book-figure"><a href="${figure.image}" target="_blank" rel="noopener" aria-label="${escapeHTML(prompt ? 'Open reaction figure at full size' : `Open ${name} ${type} source figure at full size`)}">${v ? `<div class="book-figure-region" style="aspect-ratio:${v.width}/${v.height*(v.bottom-v.top)}">${image}</div>` : image}</a><figcaption>${escapeHTML(caption)} <span>${prompt ? '' : escapeHTML(sourceBooks[figure.book || 'kurti'].label) + ' · '}p. ${figure.printedPage} · <a href="${figure.image}" target="_blank" rel="noopener">${v ? 'Full source' : 'Full size'} ↗</a></span></figcaption></figure>`;
 }
 
 function detailPanel(r, tab) {
@@ -350,8 +385,8 @@ function showDetail(id, tab = 'reaction') {
     <h2 id="reaction-title">${r.name}</h2>
     <div class="reaction-tabs" role="tablist" aria-label="Reaction details">${tabs.map(([key, label]) => `<button role="tab" id="tab-${key}" aria-controls="reaction-panel" aria-selected="${tab === key}" tabindex="${tab === key ? 0 : -1}" data-detail-tab="${key}">${label}</button>`).join('')}</div>
     <section id="reaction-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-${tab}">${detailPanel(r, tab)}</section>
-    ${source ? `<p class="book-citation">Kürti & Czakó, <cite>Strategic Applications of Named Reactions in Organic Synthesis</cite> (2005), ${source.pages.length === 1 ? 'p.' : 'pp.'} ${source.pages.join('–')}. Figures from your supplied copy.</p>` : ''}
-    <div class="detail-section"><h3>Study by category</h3><div class="actions">${r.categories.map(id => `<button class="text-button" data-start="${id}">Quiz: ${categoryFor(id).short}</button>`).join('')}</div><p class="muted">${r.appendixPages.length ? `Appendix 8.3, pp. ${r.appendixPages.join(', ')}.` : r.supplemental ? 'Preserved from your original library; this reaction has no dedicated chapter.' : 'This chapter is not listed in the book’s appendix 8.3 category table.'}</p></div>
+    ${source ? `<p class="book-citation">${sourceBooks[r.sourceBook].authors}, <cite>${sourceBooks[r.sourceBook].title}</cite> (${sourceBooks[r.sourceBook].year}), ${source.pages.length === 1 ? 'p.' : 'pp.'} ${source.pages.join('–')}. Figures from your supplied copy.${r.sourceBook === 'kurti' && liCoverage[id] ? ` Also covered in Li (2021), p. ${liCoverage[id].pages.join(', ')}.` : ''}</p>` : ''}
+    <div class="detail-section"><h3>Study by category</h3><div class="actions">${r.categories.map(id => `<button class="text-button" data-start="${id}">Quiz: ${categoryFor(id).short}</button>`).join('')}</div><p class="muted">${r.sourceBook === 'li' ? 'Categories describe the reaction type.' : r.appendixPages.length ? `Appendix 8.3, pp. ${r.appendixPages.join(', ')}.` : r.supplemental ? 'Preserved from your original library; this reaction has no dedicated chapter.' : 'This chapter is not listed in the book’s appendix 8.3 category table.'}</p></div>
     <div class="detail-actions"><button class="button secondary" data-save="${r.id}">${state.saved.includes(r.id) ? 'Unsave reaction' : 'Save reaction'}</button></div></div>`;
   if (!reactionDialog.open) reactionDialog.showModal();
 }
@@ -401,7 +436,7 @@ function renderQuestion() {
   // Prefer the actual quiz pool; fill tiny selections without repeating answers.
   const candidates = shuffle(quiz.pool.filter(x => x.id !== r.id));
   const used = new Set([r.id,...candidates.map(x => x.id)]);
-  const distractors = [...candidates,...shuffle(reactions.filter(x => !used.has(x.id)))].slice(0,3);
+  const distractors = [...candidates,...shuffle(reactions.filter(x => matchesBook(x) && !used.has(x.id)))].slice(0,3);
   quiz.options = shuffle([r, ...distractors]); quiz.answered = false;
   quizDialog.innerHTML = `<div class="dialog-inner"><div class="dialog-top"><span>${escapeHTML(quiz.title)} · ${endless ? `Question ${quiz.answeredCount + 1}` : `${quiz.index + 1} / ${quiz.questions.length}`}</span><button class="close-button" data-close="quiz" aria-label="${endless ? 'End session' : 'Exit quiz'}">×</button></div>
     ${endless ? `<p class="running-score" id="quiz-running-score" aria-live="polite">${quiz.correct} correct · ${quiz.answeredCount} answered</p>` : `<div class="quiz-progress"><div style="width:${quiz.index / quiz.questions.length * 100}%"></div></div>`}<span class="badge quiz-category">${escapeHTML(quiz.title)}</span>
@@ -488,9 +523,13 @@ document.addEventListener('change', e => {
   state.flashcardMode = e.target.value;
   persist();
   if (flashcardDialog.open && deck && !deck.finished) {
+    const currentId = deck.cards[deck.index].id;
     deck.mode = state.flashcardMode; deck.answerView = deck.mode; deck.revealed = false;
+    deck.cards = deck.pool.filter(r => canRecall(r, deck.mode));
+    deck.original = [...deck.cards];
+    deck.index = Math.max(0, deck.cards.findIndex(r => r.id === currentId));
     renderFlashcard(); flashcardDialog.querySelector('[data-card-mode]').focus();
-  }
+  } else if (page === 'flashcards') { flashcards(); document.querySelector('[data-card-mode]').focus(); }
 });
 document.addEventListener('click', e => {
   const button = e.target.closest('button'); if (!button) return;
@@ -526,6 +565,7 @@ document.addEventListener('click', e => {
   else if (button.hasAttribute('data-retry')) { const mode = quiz.mode; quizDialog.close(); startQuiz(mode); }
 });
 window.addEventListener('hashchange', () => { render(); window.scrollTo({top:0, behavior:'instant'}); });
+setupBooks();
 setupCategories();
 if (window.matchMedia('(max-width: 700px)').matches) document.querySelector('.category-sidebar details').open = false;
 persist();

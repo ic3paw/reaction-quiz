@@ -1,6 +1,6 @@
 """Import reviewed Li (2021) entries without changing existing reaction IDs.
 
-Usage: python scripts/build-li.py /path/to/li.pdf [--mask-only]
+Usage: python scripts/build-li.py /path/to/li.pdf [--prepare-ocr | --mask-only]
 Requires pymupdf and Pillow. Run from the repository root.
 The PDF and OCR intermediates stay in .book-work; only selected figures ship.
 """
@@ -31,7 +31,9 @@ references = read('scripts/flashcard-name-references.json')
 known = set().union(*(f['terms'] for f in original_masks.values()), references['additionalNames'])
 known.update(tokens('Bucherer Bergs Chodkiewicz Catellani Chapman Friedländer Gewald Gould Jacobs Kocienski Lawesson Markovnikov Newman Kwart Parham Braun Jackson Sanger Schönberg Lautens Smile'))
 abbreviations = set(references['abbreviations'])
-known.update(normal(a) for a in abbreviations)
+# Acronyms are case-sensitive: BR is a named reaction; Br is bromine.
+def identifying(text):
+    return bool(known.intersection(tokens(text)) or abbreviations.intersection(re.findall(r'[^\W\d_]+', text)))
 doc = pymupdf.open(sys.argv[1])
 render = '--mask-only' not in sys.argv
 scale = 3
@@ -39,6 +41,9 @@ for directory in ['assets/li', 'assets/flashcards', '.book-work']:
     (ROOT/directory).mkdir(exist_ok=True)
 ocr_path = ROOT/'.book-work/li-diagram-ocr.json'
 ocr = json.loads(ocr_path.read_text()) if ocr_path.exists() else {}
+if '--prepare-ocr' not in sys.argv:
+    missing = [e['id'] for e in entries if e['status']=='new' and e['id'] not in ocr]
+    if missing: sys.exit('Source OCR required. Run with --prepare-ocr, then scripts/ocr-li-figures.swift, then --mask-only.')
 prior = read('scripts/li-flashcard-masks.json') if (ROOT/'scripts/li-flashcard-masks.json').exists() else {}
 catalog, book, sections, figures, coverage, masks, jobs = [], {}, {}, {}, {}, {}, []
 starts = sorted(set(e['printedPage'] for e in entries) | {586})
@@ -75,6 +80,7 @@ for entry in entries:
         printedPage=printed, categories=entry['categories'], category=entry['categories'][0],
         appendixPages=[], appendixSummary=None))
     reaction = figure(id, 'reaction', printed, entry['reactionCrop'])
+    if printed in [282,284,286]: reaction['caption'] = 'Reaction & conditions (book example)'
     sections[id] = {'reaction': reaction}
     examples = [b[1] for t,b in text_lines if t.startswith(('Example ', 'General examples:'))]
     if entry.get('hasOutline', True):
@@ -114,10 +120,10 @@ for entry in entries:
         right=min(width,math.ceil(x1)+3); bottom=min(height,math.ceil(y1)+3)
         if right>x and bottom>y: areas.append(dict(text=label, rect=[x,y,right-x,bottom-y], detection=origin))
     for word in pg.get_text('words', clip=pymupdf.Rect(rect)):
-        if known.intersection(tokens(word[4])):
+        if identifying(word[4]):
             add(word[4], [word[0]*scale-origin_x,word[1]*scale-origin_y,word[2]*scale-origin_x,word[3]*scale-origin_y], 'pdf')
     for word in ocr.get(id, {}).get('words', []):
-        if known.intersection(tokens(word['text'])):
+        if identifying(word['text']):
             x,y,w,h = word['rect']
             add(word['text'], [x*width,y*height,(x+w)*width,(y+h)*height], 'ocr')
     draw = ImageDraw.Draw(image)

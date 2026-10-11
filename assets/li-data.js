@@ -1126,7 +1126,14 @@ const liBookReactions = {
         "book": "li",
         "caption": "Synthetic applications"
       }
-    ]
+    ],
+    "mechanism": {
+      "image": "assets/li/siloxy-cope-rearrangement-mechanism.png",
+      "printedPage": 122,
+      "pdfPage": 141,
+      "book": "li",
+      "caption": "Mechanism"
+    }
   },
   "inverse-electronic-demand-dielsalder-reaction": {
     "pages": [
@@ -1200,7 +1207,14 @@ const liBookReactions = {
         "book": "li",
         "caption": "Synthetic applications"
       }
-    ]
+    ],
+    "mechanism": {
+      "image": "assets/li/ferrier-carbocyclization-mechanism.png",
+      "printedPage": 191,
+      "pdfPage": 210,
+      "book": "li",
+      "caption": "Mechanism"
+    }
   },
   "friedlander-quinoline-synthesis": {
     "pages": [
@@ -1470,7 +1484,7 @@ const liBookReactions = {
       "printedPage": 282,
       "pdfPage": 301,
       "book": "li",
-      "caption": "Reaction & conditions"
+      "caption": "Reaction & conditions (book example)"
     },
     "applications": [
       {
@@ -1500,7 +1514,7 @@ const liBookReactions = {
       "printedPage": 284,
       "pdfPage": 303,
       "book": "li",
-      "caption": "Reaction & conditions"
+      "caption": "Reaction & conditions (book example)"
     },
     "applications": [
       {
@@ -1530,7 +1544,7 @@ const liBookReactions = {
       "printedPage": 286,
       "pdfPage": 305,
       "book": "li",
-      "caption": "Reaction & conditions"
+      "caption": "Reaction & conditions (book example)"
     },
     "applications": [
       {
@@ -2463,7 +2477,7 @@ const liBookSections = {
       "printedPage": 282,
       "pdfPage": 301,
       "book": "li",
-      "caption": "Reaction & conditions"
+      "caption": "Reaction & conditions (book example)"
     },
     "outline": {
       "image": "assets/li/collins-oxidation-outline.png",
@@ -2479,7 +2493,7 @@ const liBookSections = {
       "printedPage": 284,
       "pdfPage": 303,
       "book": "li",
-      "caption": "Reaction & conditions"
+      "caption": "Reaction & conditions (book example)"
     },
     "outline": {
       "image": "assets/li/pcc-oxidation-outline.png",
@@ -2495,7 +2509,7 @@ const liBookSections = {
       "printedPage": 286,
       "pdfPage": 305,
       "book": "li",
-      "caption": "Reaction & conditions"
+      "caption": "Reaction & conditions (book example)"
     },
     "outline": {
       "image": "assets/li/pdc-oxidation-outline.png",
@@ -2878,21 +2892,21 @@ const liFlashcardFigures = {
     "printedPage": 282,
     "pdfPage": 301,
     "book": "li",
-    "caption": "Reaction & conditions"
+    "caption": "Reaction & conditions (book example)"
   },
   "pcc-oxidation": {
-    "image": "assets/flashcards/li-284-cb6b164a0eb4.png",
+    "image": "assets/flashcards/li-284-dc7849700c9a.png",
     "printedPage": 284,
     "pdfPage": 303,
     "book": "li",
-    "caption": "Reaction & conditions"
+    "caption": "Reaction & conditions (book example)"
   },
   "pdc-oxidation": {
-    "image": "assets/flashcards/li-286-f47a68e54479.png",
+    "image": "assets/flashcards/li-286-6166f20c2a85.png",
     "printedPage": 286,
     "pdfPage": 305,
     "book": "li",
-    "caption": "Reaction & conditions"
+    "caption": "Reaction & conditions (book example)"
   },
   "juliakocienski-olefination": {
     "image": "assets/flashcards/li-288-a7fa0e533c20.png",
@@ -2909,7 +2923,7 @@ const liFlashcardFigures = {
     "caption": "Reaction & conditions"
   },
   "lawessons-reagent": {
-    "image": "assets/flashcards/li-314-fda70eeec9d9.png",
+    "image": "assets/flashcards/li-314-8d36caafe21c.png",
     "printedPage": 314,
     "pdfPage": 333,
     "book": "li",
@@ -2944,7 +2958,7 @@ const liFlashcardFigures = {
     "caption": "Reaction & conditions"
   },
   "meisenheimer-complex": {
-    "image": "assets/flashcards/li-342-753da97a40dd.png",
+    "image": "assets/flashcards/li-342-0e11b27be620.png",
     "printedPage": 342,
     "pdfPage": 361,
     "book": "li",

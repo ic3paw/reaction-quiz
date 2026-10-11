@@ -38,7 +38,9 @@ func tokens(_ value: String) -> [String] {
     value.components(separatedBy: CharacterSet.letters.inverted).filter { !$0.isEmpty }
 }
 
-let figures: [String: Figure] = try read("scripts/flashcard-masks.json")
+var figures: [String: Figure] = try read("scripts/flashcard-masks.json")
+let liFigures: [String: Figure] = try read("scripts/li-flashcard-masks.json")
+figures.merge(liFigures) { _, _ in fatalError("Duplicate reaction ID") }
 let references: References = try read("scripts/flashcard-name-references.json")
 let exceptions: [OCRException] = try read("scripts/flashcard-ocr-exceptions.json")
 let useOCR = CommandLine.arguments.contains("--ocr")

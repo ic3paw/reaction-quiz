@@ -6,12 +6,13 @@
   <meta name="theme-color" content="#ffffff">
   <meta name="description" content="Named reaction quizzes, a searchable reaction library, and practice statistics.">
   <title>Named Reaction Database</title>
-  <link rel="stylesheet" href="assets/styles.css?v=20261010-prompts">
+  <link rel="stylesheet" href="assets/styles.css?v=20261010-books-final">
   <script src="assets/reactions.js" defer></script>
   <script src="assets/book-data.js" defer></script>
   <script src="assets/book-sections.js" defer></script>
-  <script src="assets/flashcard-figures.js" defer></script>
-  <script src="assets/app.js?v=20261010-prompts" defer></script>
+  <script src="assets/flashcard-figures.js?v=20261010-books-final" defer></script>
+  <script src="assets/li-data.js?v=20261010-books-final" defer></script>
+  <script src="assets/app.js?v=20261010-books-final" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -26,7 +27,9 @@
     </nav>
   </header>
   <div class="content-layout">
-    <aside class="category-sidebar" aria-label="Category selection">
+    <aside class="category-sidebar" aria-label="Book and category selection">
+      <label class="book-filter" for="book-filter">Book<select id="book-filter"></select></label>
+      <p class="sidebar-note">Shared reactions appear under both books.</p>
       <details open>
         <summary>Categories</summary>
         <p class="sidebar-note">Filter reactions, quizzes, and flashcards.</p>

@@ -205,3 +205,6 @@ dialog::backdrop { background: #0005; }
   .practice-row p { font-size: 13px; }
   .result-metrics { gap: 26px; }
 }
+
+.book-filter { display: flex; flex-direction: column; gap: 8px; font-weight: 700; margin-bottom: 8px; }
+.book-filter select { width: 100%; min-width: 0; padding: 9px 6px; border: 1px solid #aaa; border-radius: 6px; background: white; color: #222; font: 14px Arial, sans-serif; }

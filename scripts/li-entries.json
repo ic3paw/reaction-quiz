@@ -455,8 +455,14 @@
       390,
       135
     ],
-    "mechanismCrop": null,
-    "hasOutline": false
+    "mechanismCrop": [
+      50,
+      90,
+      390,
+      135
+    ],
+    "hasOutline": false,
+    "note": "The reaction scheme itself includes the electron-flow mechanism."
   },
   {
     "name": "Corey–Bakshi–Shibata (CBS) reagent",
@@ -635,7 +641,13 @@
       390,
       325
     ],
-    "mechanismCrop": null
+    "mechanismCrop": [
+      50,
+      199,
+      390,
+      325
+    ],
+    "note": "The reaction scheme itself includes the electron-flow mechanism."
   },
   {
     "name": "Ferrier glycal allylic rearrangement",

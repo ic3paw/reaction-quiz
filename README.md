@@ -4,9 +4,9 @@ A responsive named-reaction study website built with plain HTML, CSS, and JavaSc
 
 ## Features
 
-- All 250 dedicated book entries, plus the original Fischer esterification card (251 total)
+- 287 entries: the original 251 plus 36 additions from Li (2021); a persistent book filter covers Kürti & Czakó (251 entries), Li (181), or both (287 unique entries)
 - Searchable library with a remembered Condensed view (names and appendix overviews) or Expanded view (book reaction schemes)
-- Reaction & conditions (shown first), Outline / history, Mechanism, and Synthetic applications tabs for every card, with book figures and printed-page citations
+- Reaction & conditions (shown first), Outline / history, Mechanism, and Synthetic applications tabs where source material is available, with book figures and printed-page citations
 - Sidebar checkboxes to select multiple categories for the library and all quiz modes; selections persist in the browser
 - Quick quizzes from Home, full quizzes for selected categories, endless quizzes, mistake review, and saved-reaction practice
 - Immediate answer feedback
@@ -27,7 +27,7 @@ The sidebar filters library results, selected-reaction quizzes, endless quizzes,
 
 Condensed library rows show only a reaction name and its brief appendix description, using the existing summary for entries omitted from the appendix. Expanded rows show the original book schemes, with lazy-loaded images and full-size links. Search, category filters, and saved reactions work in both views. Click a name to open all reaction details and save or unsave it.
 
-Open Flashcards in the navigation and choose what to recall: Name shows the complete book reaction scheme, including reagents and conditions, with identifying names and aliases whited out wherever they occur. All 251 figures are audited; the whiteouts preserve the original image dimensions and do not crop the drawing. The prompt and both full-size links use the same anonymous image, and the accessible label does not reveal the name. The other recall choices are Reaction & conditions and Mechanism. Reaction & conditions centers the reaction name inside a black-bordered card using the site’s heading typography. Outline / history remains available in the reaction library and revealed answer tabs, but is no longer a recall mode; saved outline recall preferences migrate to Reaction & conditions. Flip to reveal the chosen answer, then switch between Reaction & conditions, Outline / history, Name, Mechanism, and Synthetic applications for the same reaction. The reaction figure tab is first in the tab list. Mechanism answers include the book figure where available, with a source note otherwise. Synthetic applications are shown only when a source figure exists (currently all 251 cards). The recall mode persists across category changes, navigation, and reloads, and can also be changed inside a deck opened from any page.
+Open Flashcards in the navigation and choose what to recall: Name shows the complete book reaction scheme, including reagents and conditions, with identifying names and aliases whited out wherever they occur. All 287 figures are audited; the whiteouts preserve the original image dimensions and do not crop the drawing. The prompt and both full-size links use the same anonymous image, and the accessible label does not reveal the name. The other recall choices are Reaction & conditions and Mechanism. Reaction & conditions centers the reaction name inside a black-bordered card using the site’s heading typography. Outline / history remains available in the reaction library and revealed answer tabs, but is no longer a recall mode; saved outline recall preferences migrate to Reaction & conditions. Flip to reveal the chosen answer, then switch between Reaction & conditions, Outline / history, Name, Mechanism, and Synthetic applications for the same reaction. The reaction figure tab is first in the tab list. Mechanism tabs and mechanism-recall decks include only entries with source mechanism figures. Synthetic applications are shown only when a source figure exists. Missing outline/history sections are omitted. The recall mode persists across category changes, navigation, and reloads, and can also be changed inside a deck opened from any page.
 
 Flashcard ratings persist separately from quiz attempts and do not change quiz accuracy or mastery. Use Previous/Next or the arrow keys to navigate, Flip card / Flip back or Space to turn the card, and “Got it”/“Study again” to rate it. Arrow keys retain their normal behavior when the recall selector is focused. At completion, review cards marked for study or left unrated. Original bookmarks and progress are retained; the first upgrade selects all of the new appendix categories.
 
@@ -35,7 +35,7 @@ Flashcard ratings persist separately from quiz attempts and do not change quiz a
 
 The figures come from the supplied copy of László Kürti and Barbara Czakó, *Strategic Applications of Named Reactions in Organic Synthesis: Background and Detailed Mechanisms* (Elsevier, 2005, as stated on the copyright page). The supplied filename dates the copy to 2009. Printed page numbers are 52 lower than the corresponding PDF page numbers.
 
-[Book metadata](./assets/book-data.js) maps every card to cropped images in [assets/book](./assets/book/). [Section metadata](./assets/book-sections.js) separates the reaction schemes from the book's introductory importance/history paragraphs using 500 standalone PDF crops for the 250 dedicated chapters. Reaction & conditions opens first and shows the scheme itself; Outline / history shows the introductory paragraph separately. Full-size links open those same crops. Mechanism and Synthetic applications retain the original drawings, commentary, and synthetic examples. Baldwin’s rules is a guidelines entry rather than a single mechanism; its Mechanism tab explains this. Fischer esterification has no dedicated entry; its reaction/application figures come from the methyl epijasmonate example on printed page 265, within the Lieben haloform reaction chapter. Its Outline / history and Mechanism tabs identify this source limitation.
+[Book metadata](./assets/book-data.js) maps every card to cropped images in [assets/book](./assets/book/). [Section metadata](./assets/book-sections.js) separates the reaction schemes from the book's introductory importance/history paragraphs using 500 standalone PDF crops for the 250 dedicated chapters. Reaction & conditions opens first and shows the scheme itself; Outline / history shows the introductory paragraph separately. Full-size links open those same crops. Mechanism and Synthetic applications retain the original drawings, commentary, and synthetic examples. Baldwin’s rules is a guidelines entry rather than a single mechanism; its unavailable Mechanism tab is omitted. Fischer esterification has no dedicated entry; its reaction/application figures come from the methyl epijasmonate example on printed page 265, within the Lieben haloform reaction chapter. Its Outline / history tab identifies this source limitation; its unavailable Mechanism tab is omitted.
 
 Short prompts use appendix descriptions, with authored summaries for omitted entries. The generator corrects the appendix’s page references for Lieben, Larock, and Ley, and description errors for Aza-[2,3]-Wittig, Reformatsky, Skraup/Doebner–Miller, and Staudinger ketene cycloaddition. The unmodified category-table descriptions and corrected chapter references remain reviewable in [scripts/appendix-categories.json](./scripts/appendix-categories.json).
 
@@ -74,3 +74,24 @@ swiftc -O scripts/validate-flashcards.swift -o .book-work/validate-flashcards
 ```
 
 The OCR audit is written to `.book-work/flashcard-text-audit.json` for review; it checks the shared names and abbreviations rather than only the name of the card being studied. Visually reviewed formula misreadings are recorded in [scripts/flashcard-ocr-exceptions.json](./scripts/flashcard-ocr-exceptions.json), tied to an exact image revision so changes require another review.
+
+## Li (2021) additions and book filtering
+
+The second source is Jie Jack Li, *Name Reactions: A Collection of Detailed Mechanisms and Synthetic Applications*, sixth edition (Springer, 2021). All 186 table-of-contents rows are mapped in [scripts/li-entries.json](./scripts/li-entries.json), including combined entries and distinct subvariants. These map to 181 unique reactions: 145 existing entries and 36 additions. Collins oxidation begins on printed page 282 despite the contents listing 283. Printed page numbers are 19 lower than PDF page numbers.
+
+Shared reactions remain one entry with their existing IDs, figures, bookmarks, and progress. They appear under either book filter; figure captions and entry citations identify the actual source. The Li filter denotes book coverage, not a switch to alternate figures for existing entries. It applies to the library, saved reactions, quizzes (including explicit category buttons), and flashcards. Counts update with the chosen book and category combination; all-time statistics remain cumulative.
+
+The additions use book schemes, introductory prose, mechanisms, and examples in [assets/li](./assets/li/), described by [assets/li-data.js](./assets/li-data.js). Categories are assigned by reaction type using the existing category vocabulary. Unavailable sections are omitted. For Collins, PCC, and PDC oxidations, the reaction figure is a labeled book example. Siloxy-Cope and Ferrier carbocyclization show their mechanism within the reaction scheme itself.
+
+To regenerate the Li additions (Python with PyMuPDF and Pillow; macOS Vision OCR):
+
+```sh
+python3 scripts/build-li.py "/path/to/li.pdf" --prepare-ocr
+swift scripts/ocr-li-figures.swift
+python3 scripts/build-li.py "/path/to/li.pdf" --mask-only
+python3 scripts/validate-li.py
+swiftc -O scripts/validate-flashcards.swift -o .book-work/validate-flashcards
+.book-work/validate-flashcards --ocr
+```
+
+The initial preparation creates source figures for OCR; the final import requires OCR for all additions. Li uses vector lettering that is absent from PDF text extraction, so the importer combines PDF text coordinates with OCR word coordinates and a visual review. [scripts/li-flashcard-masks.json](./scripts/li-flashcard-masks.json) records each white rectangle; source crops and prompt images retain identical dimensions. Acronyms are case-sensitive so ordinary chemical symbols such as Br remain visible. The shared label vocabulary also applies to the first book; regenerate its masks after changing that vocabulary. The final pixel/OCR validator covers both books together.

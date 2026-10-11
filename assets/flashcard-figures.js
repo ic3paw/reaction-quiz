@@ -685,7 +685,7 @@ const flashcardFigures = {
     "caption": "Reaction & conditions"
   },
   "jones-oxidation-oxidation-of-alcohols-by-chromium-reagents": {
-    "image": "assets/flashcards/280-662c0e3f.png",
+    "image": "assets/flashcards/280-71b5338e.png",
     "printedPage": 228,
     "pdfPage": 280,
     "caption": "Reaction & conditions"

@@ -701,6 +701,20 @@
   },
   {
     "id": "siloxy-cope-rearrangement",
+    "type": "mechanism",
+    "printedPage": 122,
+    "pdfPage": 141,
+    "crop": [
+      50,
+      90,
+      390,
+      135
+    ],
+    "scale": 3,
+    "image": "assets/li/siloxy-cope-rearrangement-mechanism.png"
+  },
+  {
+    "id": "siloxy-cope-rearrangement",
     "type": "applications-122",
     "printedPage": 122,
     "pdfPage": 141,
@@ -838,6 +852,20 @@
     ],
     "scale": 3,
     "image": "assets/li/ferrier-carbocyclization-outline.png"
+  },
+  {
+    "id": "ferrier-carbocyclization",
+    "type": "mechanism",
+    "printedPage": 191,
+    "pdfPage": 210,
+    "crop": [
+      50,
+      199,
+      390,
+      325
+    ],
+    "scale": 3,
+    "image": "assets/li/ferrier-carbocyclization-mechanism.png"
   },
   {
     "id": "ferrier-carbocyclization",
