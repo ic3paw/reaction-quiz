@@ -72,6 +72,7 @@ const main = document.querySelector('main');
 const quizDialog = document.querySelector('#quiz-dialog');
 const reactionDialog = document.querySelector('#reaction-dialog');
 let detailReactionId = null;
+let detailReactionIds = [];
 let detailTab = 'reaction';
 const detailTabs = {reaction:'Reaction & conditions', outline:'Outline / history', mechanism:'Mechanism', applications:'Synthetic applications'};
 const hasSection = (r, key) => ({
@@ -376,19 +377,35 @@ function detailPanel(r, tab) {
 function showDetail(id, tab = 'reaction') {
   const r = reactions.find(r => r.id === id);
   if (!r) return;
+  if (!reactionDialog.open) {
+    detailReactionIds = filteredReactions().map(item => item.id);
+    if (!detailReactionIds.includes(id)) detailReactionIds = [id];
+  }
+  const position = detailReactionIds.indexOf(id);
   const tabs = availableTabs(detailTabs, r);
   if (!tabs.some(([key]) => key === tab)) tab = 'reaction';
   detailReactionId = id;
   detailTab = tab;
   const source = bookReactions[id];
-  reactionDialog.innerHTML = `<div class="dialog-inner"><div class="dialog-top"><span>${categoryLabel(r)}</span><button class="close-button" data-close="reaction" aria-label="Close reaction">×</button></div>
-    <h2 id="reaction-title">${r.name}</h2>
+  reactionDialog.innerHTML = `<div class="detail-browser">
+    <button class="detail-arrow" data-detail-step="-1" aria-label="Previous reaction" title="Previous reaction (←)" ${position <= 0 ? 'disabled' : ''}>‹</button>
+    <div class="dialog-inner"><div class="dialog-top"><span>${position + 1} / ${detailReactionIds.length} · ${categoryLabel(r)}</span><button class="close-button" data-close="reaction" aria-label="Close reaction">×</button></div>
+    <h2 id="reaction-title" tabindex="-1">${r.name}</h2>
     <div class="reaction-tabs" role="tablist" aria-label="Reaction details">${tabs.map(([key, label]) => `<button role="tab" id="tab-${key}" aria-controls="reaction-panel" aria-selected="${tab === key}" tabindex="${tab === key ? 0 : -1}" data-detail-tab="${key}">${label}</button>`).join('')}</div>
     <section id="reaction-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-${tab}">${detailPanel(r, tab)}</section>
     ${source ? `<p class="book-citation">${sourceBooks[r.sourceBook].authors}, <cite>${sourceBooks[r.sourceBook].title}</cite> (${sourceBooks[r.sourceBook].year}), ${source.pages.length === 1 ? 'p.' : 'pp.'} ${source.pages.join('–')}. Figures from your supplied copy.${r.sourceBook === 'kurti' && liCoverage[id] ? ` Also covered in Li (2021), p. ${liCoverage[id].pages.join(', ')}.` : ''}</p>` : ''}
     <div class="detail-section"><h3>Study by category</h3><div class="actions">${r.categories.map(id => `<button class="text-button" data-start="${id}">Quiz: ${categoryFor(id).short}</button>`).join('')}</div><p class="muted">${r.sourceBook === 'li' ? 'Categories describe the reaction type.' : r.appendixPages.length ? `Appendix 8.3, pp. ${r.appendixPages.join(', ')}.` : r.supplemental ? 'Preserved from your original library; this reaction has no dedicated chapter.' : 'This chapter is not listed in the book’s appendix 8.3 category table.'}</p></div>
-    <div class="detail-actions"><button class="button secondary" data-save="${r.id}">${state.saved.includes(r.id) ? 'Unsave reaction' : 'Save reaction'}</button></div></div>`;
+    <div class="detail-actions"><button class="button secondary" data-save="${r.id}">${state.saved.includes(r.id) ? 'Unsave reaction' : 'Save reaction'}</button></div></div>
+    <button class="detail-arrow" data-detail-step="1" aria-label="Next reaction" title="Next reaction (→)" ${position >= detailReactionIds.length - 1 ? 'disabled' : ''}>›</button></div>`;
   if (!reactionDialog.open) reactionDialog.showModal();
+}
+
+function moveDetail(step) {
+  const nextId = detailReactionIds[detailReactionIds.indexOf(detailReactionId) + step];
+  if (!nextId) return;
+  showDetail(nextId, detailTab);
+  reactionDialog.scrollTop = 0;
+  reactionDialog.querySelector('#reaction-title').focus({preventScroll:true});
 }
 
 function selectDetailTab(tab, focus = true) {
@@ -514,9 +531,14 @@ function selectCardView(view) {
   renderFlashcard(); flashcardDialog.querySelector(`[data-card-view="${view}"]`).focus();
 }
 reactionDialog.addEventListener('keydown', e => {
-  if (!e.target.matches('[data-detail-tab]') || !['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(e.key)) return;
-  e.preventDefault();
-  selectDetailTab(adjacentTab(availableTabs(detailTabs, reactions.find(r => r.id === detailReactionId)).map(([key]) => key), detailTab, e.key));
+  if (e.altKey || e.ctrlKey || e.metaKey || e.shiftKey || e.target.closest('input,select,textarea,[contenteditable="true"]')) return;
+  if (e.target.matches('[data-detail-tab]') && ['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(e.key)) {
+    e.preventDefault();
+    selectDetailTab(adjacentTab(availableTabs(detailTabs, reactions.find(r => r.id === detailReactionId)).map(([key]) => key), detailTab, e.key));
+  } else if (['ArrowLeft', 'ArrowRight'].includes(e.key)) {
+    e.preventDefault();
+    moveDetail(e.key === 'ArrowLeft' ? -1 : 1);
+  }
 });
 document.addEventListener('change', e => {
   if (!e.target.matches('[data-card-mode]')) return;
@@ -554,6 +576,7 @@ document.addEventListener('click', e => {
   else if (button.dataset.start) startQuiz(button.dataset.start);
   else if (button.dataset.save) toggleSave(button.dataset.save);
   else if (button.dataset.detail) showDetail(button.dataset.detail);
+  else if (button.dataset.detailStep) moveDetail(Number(button.dataset.detailStep));
   else if (button.dataset.detailTab) selectDetailTab(button.dataset.detailTab);
   else if (button.dataset.answer) answer(button.dataset.answer);
   else if (button.id === 'next-question') nextQuestion();

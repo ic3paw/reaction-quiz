@@ -208,3 +208,15 @@ dialog::backdrop { background: #0005; }
 
 .book-filter { display: flex; flex-direction: column; gap: 8px; font-weight: 700; margin-bottom: 8px; }
 .book-filter select { width: 100%; min-width: 0; padding: 9px 6px; border: 1px solid #aaa; border-radius: 6px; background: white; color: #222; font: 14px Arial, sans-serif; }
+
+.detail-browser { display: grid; grid-template-columns: 44px minmax(0, 1fr) 44px; gap: 4px; padding: 0 8px; }
+.detail-browser .dialog-inner { min-width: 0; padding: 30px 12px; }
+.detail-arrow { position: sticky; top: min(35vh, 240px); align-self: start; width: 44px; height: 48px; border: 1px solid #ccc; border-radius: 8px; background: #fff; color: #800000; font: 32px Arial, sans-serif; cursor: pointer; }
+.detail-arrow:hover:not(:disabled) { background: #f8eeee; border-color: #800000; }
+.detail-arrow:disabled { color: #bbb; cursor: default; }
+#reaction-title { overflow-wrap: anywhere; }
+@media (max-width: 700px) {
+  .detail-browser { grid-template-columns: 32px minmax(0, 1fr) 32px; gap: 0; padding: 0 4px; }
+  .detail-browser .dialog-inner { padding: 23px 8px; }
+  .detail-arrow { width: 32px; height: 44px; }
+}
