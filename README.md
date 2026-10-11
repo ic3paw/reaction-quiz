@@ -39,7 +39,7 @@ The figures come from the supplied copy of László Kürti and Barbara Czakó, *
 
 Short prompts use appendix descriptions, with authored summaries for omitted entries. The generator corrects the appendix’s page references for Lieben, Larock, and Ley, and description errors for Aza-[2,3]-Wittig, Reformatsky, Skraup/Doebner–Miller, and Staudinger ketene cycloaddition. The unmodified category-table descriptions and corrected chapter references remain reviewable in [scripts/appendix-categories.json](./scripts/appendix-categories.json).
 
-Click a figure or its “Full size” link to open the original image (or the whited-out image on a name-recall prompt). Tabs support Left/Right arrow keys and Home/End. The images load only when their tab is opened.
+Click a figure or its “Full size” link to open the original image (or the whited-out image on a name-recall prompt). Use clicks or Tab followed by Enter/Space to choose information tabs. The images load only when their tab is opened.
 
 The crop manifest is [scripts/book-figures.json](./scripts/book-figures.json). To regenerate figures on macOS, run from the project directory:
 
@@ -96,4 +96,4 @@ swiftc -O scripts/validate-flashcards.swift -o .book-work/validate-flashcards
 
 The initial preparation creates source figures for OCR; the final import requires OCR for all additions. Li uses vector lettering that is absent from PDF text extraction, so the importer combines PDF text coordinates with OCR word coordinates and a visual review. [scripts/li-flashcard-masks.json](./scripts/li-flashcard-masks.json) records each white rectangle; source crops and prompt images retain identical dimensions. Acronyms are case-sensitive so ordinary chemical symbols such as Br remain visible. The shared label vocabulary also applies to the first book; regenerate its masks after changing that vocabulary. The final pixel/OCR validator covers both books together.
 
-Reaction details include sticky previous/next arrows and a position counter. Navigation follows the filtered library or saved list captured when opening the dialog, retains the active section when available, and falls back to Reaction & conditions otherwise. Left/Right keys navigate reactions except when a details tab is focused (where they retain standard tab navigation). Navigation stops at the list boundaries.
+Reaction details include vertically centered previous/next arrows and a position counter. Navigation follows the filtered library or saved list captured when opening the dialog, retains the active section when available, and falls back to Reaction & conditions otherwise. Left/Right keys navigate reactions even when a details tab is focused. Information tabs use clicks or Tab followed by Enter/Space; arrow keys never switch sections. The arrows stay centered while the information panel scrolls. Navigation stops at the list boundaries.

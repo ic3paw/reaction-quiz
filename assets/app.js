@@ -247,7 +247,7 @@ function renderFlashcard() {
     <div class="quiz-progress"><div style="width:${deck.index/deck.cards.length*100}%"></div></div>
     <label class="flashcard-direction" for="deck-card-mode">Recall<select id="deck-card-mode" data-card-mode>${cardModeOptions(deck.pool)}</select></label>
     <h2 id="flashcard-title" tabindex="-1">${deck.revealed ? cardViews[deck.answerView] : deck.mode==='name' ? 'Name the reaction' : `Recall: ${cardModes[deck.mode]}`}</h2>
-    ${deck.revealed ? `<div class="reaction-tabs" role="tablist" aria-label="Answer view">${views.map(([value,label]) => `<button role="tab" id="card-tab-${value}" data-card-view="${value}" aria-controls="card-answer" aria-selected="${deck.answerView===value}" tabindex="${deck.answerView===value ? 0 : -1}">${label}</button>`).join('')}</div>` : ''}
+    ${deck.revealed ? `<div class="reaction-tabs" role="tablist" aria-label="Answer view">${views.map(([value,label]) => `<button role="tab" id="card-tab-${value}" data-card-view="${value}" aria-controls="card-answer" aria-selected="${deck.answerView===value}" tabindex="0">${label}</button>`).join('')}</div>` : ''}
     <div class="flashcard-content${!deck.revealed && ['reaction', 'mechanism'].includes(deck.mode) ? ' flashcard-text-prompt' : ''}" ${deck.revealed ? `id="card-answer" role="tabpanel" tabindex="0" aria-labelledby="card-tab-${deck.answerView}"` : 'aria-live="polite"'}>${deck.revealed
       ? cardAnswer(r, deck.answerView)
       : deck.mode==='name' ? bookFigure(flashcardFigures[r.id], '', 'Reaction & conditions', true)
@@ -295,12 +295,7 @@ function finishDeck() {
 
 flashcardDialog.addEventListener('keydown', e => {
   if (!deck || deck.finished) return;
-  if (e.target.closest('select,input,textarea')) return;
-  if (e.target.matches('[data-card-view]') && ['ArrowLeft','ArrowRight','Home','End'].includes(e.key)) {
-    e.preventDefault();
-    selectCardView(adjacentTab(availableTabs(cardViews, deck.cards[deck.index]).map(([key]) => key), deck.answerView, e.key));
-    return;
-  }
+  if (e.target.closest('select,input,textarea') || e.altKey || e.ctrlKey || e.metaKey || e.shiftKey) return;
   if (e.key==='ArrowLeft' || e.key==='ArrowRight') { e.preventDefault(); moveCard(e.key==='ArrowLeft' ? -1 : 1); }
   if (e.code==='Space' && !e.target.closest('button,a,summary,input,select')) {
     e.preventDefault(); flipCard();
@@ -388,15 +383,15 @@ function showDetail(id, tab = 'reaction') {
   detailTab = tab;
   const source = bookReactions[id];
   reactionDialog.innerHTML = `<div class="detail-browser">
-    <button class="detail-arrow" data-detail-step="-1" aria-label="Previous reaction" title="Previous reaction (←)" ${position <= 0 ? 'disabled' : ''}>‹</button>
+    <button class="detail-arrow" data-detail-step="-1" aria-label="Previous reaction" title="Previous reaction (←)" ${position <= 0 ? 'disabled' : ''}><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 5h-3l-4 7 4 7h3l-4-7z"/></svg></button>
     <div class="dialog-inner"><div class="dialog-top"><span>${position + 1} / ${detailReactionIds.length} · ${categoryLabel(r)}</span><button class="close-button" data-close="reaction" aria-label="Close reaction">×</button></div>
     <h2 id="reaction-title" tabindex="-1">${r.name}</h2>
-    <div class="reaction-tabs" role="tablist" aria-label="Reaction details">${tabs.map(([key, label]) => `<button role="tab" id="tab-${key}" aria-controls="reaction-panel" aria-selected="${tab === key}" tabindex="${tab === key ? 0 : -1}" data-detail-tab="${key}">${label}</button>`).join('')}</div>
+    <div class="reaction-tabs" role="tablist" aria-label="Reaction details">${tabs.map(([key, label]) => `<button role="tab" id="tab-${key}" aria-controls="reaction-panel" aria-selected="${tab === key}" tabindex="0" data-detail-tab="${key}">${label}</button>`).join('')}</div>
     <section id="reaction-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-${tab}">${detailPanel(r, tab)}</section>
     ${source ? `<p class="book-citation">${sourceBooks[r.sourceBook].authors}, <cite>${sourceBooks[r.sourceBook].title}</cite> (${sourceBooks[r.sourceBook].year}), ${source.pages.length === 1 ? 'p.' : 'pp.'} ${source.pages.join('–')}. Figures from your supplied copy.${r.sourceBook === 'kurti' && liCoverage[id] ? ` Also covered in Li (2021), p. ${liCoverage[id].pages.join(', ')}.` : ''}</p>` : ''}
     <div class="detail-section"><h3>Study by category</h3><div class="actions">${r.categories.map(id => `<button class="text-button" data-start="${id}">Quiz: ${categoryFor(id).short}</button>`).join('')}</div><p class="muted">${r.sourceBook === 'li' ? 'Categories describe the reaction type.' : r.appendixPages.length ? `Appendix 8.3, pp. ${r.appendixPages.join(', ')}.` : r.supplemental ? 'Preserved from your original library; this reaction has no dedicated chapter.' : 'This chapter is not listed in the book’s appendix 8.3 category table.'}</p></div>
     <div class="detail-actions"><button class="button secondary" data-save="${r.id}">${state.saved.includes(r.id) ? 'Unsave reaction' : 'Save reaction'}</button></div></div>
-    <button class="detail-arrow" data-detail-step="1" aria-label="Next reaction" title="Next reaction (→)" ${position >= detailReactionIds.length - 1 ? 'disabled' : ''}>›</button></div>`;
+    <button class="detail-arrow" data-detail-step="1" aria-label="Next reaction" title="Next reaction (→)" ${position >= detailReactionIds.length - 1 ? 'disabled' : ''}><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5h3l4 7-4 7H8l4-7z"/></svg></button></div>`;
   if (!reactionDialog.open) reactionDialog.showModal();
 }
 
@@ -414,7 +409,7 @@ function selectDetailTab(tab, focus = true) {
   reactionDialog.querySelectorAll('[data-detail-tab]').forEach(button => {
     const active = button.dataset.detailTab === tab;
     button.setAttribute('aria-selected', String(active));
-    button.tabIndex = active ? 0 : -1;
+    button.tabIndex = 0;
     if (active && focus) button.focus();
   });
   const panel = document.querySelector('#reaction-panel');
@@ -523,19 +518,13 @@ function requestExit() {
 quizDialog.addEventListener('cancel', e => { e.preventDefault(); requestExit(); });
 document.addEventListener('keydown', e => { if (e.key === 'Escape' && quizDialog.open) { e.preventDefault(); requestExit(); } });
 reactionDialog.addEventListener('click', e => { if (e.target === reactionDialog) reactionDialog.close(); });
-function adjacentTab(tabs, current, key) {
-  return tabs[key === 'Home' ? 0 : key === 'End' ? tabs.length-1 : (tabs.indexOf(current) + (key === 'ArrowRight' ? 1 : tabs.length-1)) % tabs.length];
-}
 function selectCardView(view) {
   deck.answerView = view;
   renderFlashcard(); flashcardDialog.querySelector(`[data-card-view="${view}"]`).focus();
 }
 reactionDialog.addEventListener('keydown', e => {
   if (e.altKey || e.ctrlKey || e.metaKey || e.shiftKey || e.target.closest('input,select,textarea,[contenteditable="true"]')) return;
-  if (e.target.matches('[data-detail-tab]') && ['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(e.key)) {
-    e.preventDefault();
-    selectDetailTab(adjacentTab(availableTabs(detailTabs, reactions.find(r => r.id === detailReactionId)).map(([key]) => key), detailTab, e.key));
-  } else if (['ArrowLeft', 'ArrowRight'].includes(e.key)) {
+  if (['ArrowLeft', 'ArrowRight'].includes(e.key)) {
     e.preventDefault();
     moveDetail(e.key === 'ArrowLeft' ? -1 : 1);
   }
