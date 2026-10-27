@@ -1415,6 +1415,20 @@
   },
   {
     "id": "collins-oxidation",
+    "type": "mechanism",
+    "printedPage": 279,
+    "pdfPage": 298,
+    "crop": [
+      50,
+      363,
+      390,
+      586
+    ],
+    "scale": 3,
+    "image": "assets/li/collins-oxidation-mechanism.png"
+  },
+  {
+    "id": "collins-oxidation",
     "type": "applications-282",
     "printedPage": 282,
     "pdfPage": 301,
@@ -1471,6 +1485,20 @@
   },
   {
     "id": "pcc-oxidation",
+    "type": "mechanism",
+    "printedPage": 279,
+    "pdfPage": 298,
+    "crop": [
+      50,
+      363,
+      390,
+      586
+    ],
+    "scale": 3,
+    "image": "assets/li/pcc-oxidation-mechanism.png"
+  },
+  {
+    "id": "pcc-oxidation",
     "type": "applications-284",
     "printedPage": 284,
     "pdfPage": 303,
@@ -1524,6 +1552,20 @@
     ],
     "scale": 3,
     "image": "assets/li/pdc-oxidation-outline.png"
+  },
+  {
+    "id": "pdc-oxidation",
+    "type": "mechanism",
+    "printedPage": 279,
+    "pdfPage": 298,
+    "crop": [
+      50,
+      363,
+      390,
+      586
+    ],
+    "scale": 3,
+    "image": "assets/li/pdc-oxidation-mechanism.png"
   },
   {
     "id": "pdc-oxidation",

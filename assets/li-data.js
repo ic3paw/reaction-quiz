@@ -1501,7 +1501,15 @@ const liBookReactions = {
         "book": "li",
         "caption": "Synthetic applications"
       }
-    ]
+    ],
+    "mechanism": {
+      "image": "assets/li/collins-oxidation-mechanism.png",
+      "printedPage": 279,
+      "pdfPage": 298,
+      "book": "li",
+      "caption": "Shared chromium(VI) oxidation mechanism (Jones pathway)"
+    },
+    "mechanismIntro": "Li describes Collins, PCC, and PDC oxidations as following a pathway similar to Jones oxidation (p. 279). The shared figure below illustrates chromate ester formation and elimination using the Jones conditions. See Reaction & conditions for this reagent’s conditions and products."
   },
   "pcc-oxidation": {
     "pages": [
@@ -1531,7 +1539,15 @@ const liBookReactions = {
         "book": "li",
         "caption": "Synthetic applications"
       }
-    ]
+    ],
+    "mechanism": {
+      "image": "assets/li/pcc-oxidation-mechanism.png",
+      "printedPage": 279,
+      "pdfPage": 298,
+      "book": "li",
+      "caption": "Shared chromium(VI) oxidation mechanism (Jones pathway)"
+    },
+    "mechanismIntro": "Li describes Collins, PCC, and PDC oxidations as following a pathway similar to Jones oxidation (p. 279). The shared figure below illustrates chromate ester formation and elimination using the Jones conditions. See Reaction & conditions for this reagent’s conditions and products."
   },
   "pdc-oxidation": {
     "pages": [
@@ -1561,7 +1577,15 @@ const liBookReactions = {
         "book": "li",
         "caption": "Synthetic applications"
       }
-    ]
+    ],
+    "mechanism": {
+      "image": "assets/li/pdc-oxidation-mechanism.png",
+      "printedPage": 279,
+      "pdfPage": 298,
+      "book": "li",
+      "caption": "Shared chromium(VI) oxidation mechanism (Jones pathway)"
+    },
+    "mechanismIntro": "Li describes Collins, PCC, and PDC oxidations as following a pathway similar to Jones oxidation (p. 279). The shared figure below illustrates chromate ester formation and elimination using the Jones conditions. See Reaction & conditions for this reagent’s conditions and products."
   },
   "juliakocienski-olefination": {
     "pages": [

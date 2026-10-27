@@ -20,6 +20,7 @@ book = js('assets/li-data.js', 'liBookReactions')
 sections = js('assets/li-data.js', 'liBookSections')
 figures = js('assets/li-data.js', 'liFlashcardFigures')
 coverage = js('assets/li-data.js', 'liCoverage')
+original_book = js('assets/book-data.js', 'bookReactions')
 masks = read('scripts/li-flashcard-masks.json')
 new_ids = {e['id'] for e in entries if e['status']=='new'}
 old_ids = {r['id'] for r in original}
@@ -31,8 +32,19 @@ for e in entries:
     assert e['printedPage'] in coverage[e['id']]['pages']
     assert e['name'] in coverage[e['id']]['names']
     if e['status']=='new':
-        assert bool(e['mechanismCrop'])==bool(book[e['id']].get('mechanism'))
+        mechanism = book[e['id']]['mechanism']
+        assert e['mechanismCrop'] and mechanism['book']=='li'
+        assert mechanism['printedPage']==e.get('mechanismPage',e['printedPage'])
+        assert mechanism['pdfPage']==mechanism['printedPage']+19
+        assert (ROOT/mechanism['image']).is_file()
+        if mechanism['printedPage']!=e['printedPage']:
+            assert book[e['id']]['mechanismIntro']==e['mechanismIntro']
+            assert mechanism['caption']==e['mechanismCaption']
         assert ('outline' in sections[e['id']])==e.get('hasOutline',True)
+combined_book = {**original_book, **book}
+for id in coverage:
+    assert combined_book[id].get('mechanism'), f'Missing Li-covered mechanism: {id}'
+    assert (ROOT/combined_book[id]['mechanism']['image']).is_file()
 for r in catalog:
     id = r['id']
     assert r['categories'] and set(r['categories']) <= categories
@@ -50,7 +62,12 @@ for job in read('scripts/li-figures.json'):
     assert job['id'] in new_ids and job['pdfPage']==job['printedPage']+19
     assert (ROOT/job['image']).is_file()
     assert Image.open(ROOT/job['image']).size[0]==1020
+    if job['type']=='mechanism':
+        entry = next(e for e in entries if e['id']==job['id'] and e['status']=='new')
+        assert job['crop']==entry['mechanismCrop']
+        assert job['printedPage']==book[job['id']]['mechanism']['printedPage']
+        assert job['image']==book[job['id']]['mechanism']['image']
 expected={'lawessons-reagent':'Lawesson','meisenheimer-complex':'Meisenheimer','pcc-oxidation':'PCC','pdc-oxidation':'PDC'}
 for id,name in expected.items(): assert any(name in m['text'] for m in masks[id]['masks'])
 assert any('Sanger' in m['text'] for m in masks['meisenheimer-complex']['masks'])
-print('PASS: 36 additions; all 186 TOC rows mapped to 181 unique reactions; categories, citations, assets, optional sections and OCR mask coverage verified.')
+print('PASS: 36 additions; all 186 TOC rows mapped to 181 unique reactions, all with mechanism figures; categories, citations, assets, optional sections and OCR mask coverage verified.')

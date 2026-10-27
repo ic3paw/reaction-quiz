@@ -90,7 +90,11 @@ for entry in entries:
         if bottom>90: sections[id]['outline'] = figure(id, 'outline', printed, [50,82,390,bottom])
     source = {'pages':[printed,end] if end!=printed else [printed], 'book':'li', 'reaction':reaction, 'applications':[]}
     if entry['mechanismCrop']:
-        source['mechanism'] = figure(id, 'mechanism', printed, entry['mechanismCrop'])
+        source['mechanism'] = figure(id, 'mechanism', entry.get('mechanismPage', printed), entry['mechanismCrop'])
+        if entry.get('mechanismCaption'):
+            source['mechanism']['caption'] = entry['mechanismCaption']
+        if entry.get('mechanismIntro'):
+            source['mechanismIntro'] = entry['mechanismIntro']
     # Keep every source example up to the reference list. Absent sections are
     # absent metadata, not placeholder tabs or invented mechanism descriptions.
     started = False

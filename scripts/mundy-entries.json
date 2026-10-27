@@ -1,0 +1,6521 @@
+[
+  {
+    "id": "acetoacetic-ester-synthesis",
+    "name": "Acetoacetic Ester Synthesis",
+    "status": "existing",
+    "printedPage": 2,
+    "endPage": 3
+  },
+  {
+    "id": "acyloin-condensation",
+    "name": "Acyloin Condensation",
+    "status": "existing",
+    "printedPage": 4,
+    "endPage": 5
+  },
+  {
+    "id": "mundy-acyloin-rearrangement",
+    "name": "Acyloin rearrangement",
+    "summary": "An alpha-hydroxy ketone rearranges under acidic or basic conditions.",
+    "status": "new",
+    "printedPage": 6,
+    "endPage": 7,
+    "reactionCrop": [
+      50,
+      91.9,
+      389,
+      155.4
+    ],
+    "mechanismCrop": [
+      50,
+      153.9,
+      389,
+      355.1
+    ],
+    "notesCrop": null,
+    "applicationCrop": [
+      50,
+      357.1,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "mundy-adamantane-rearrangement-schleyer-adamantization",
+    "name": "Adamantane rearrangement (Schleyer adamantization)",
+    "summary": "Acid-promoted skeletal rearrangement converts suitable polycyclic hydrocarbons into adamantane derivatives.",
+    "status": "new",
+    "printedPage": 8,
+    "endPage": 9,
+    "reactionCrop": [
+      50,
+      90.9,
+      389,
+      150.5
+    ],
+    "mechanismCrop": [
+      50,
+      149.0,
+      389,
+      405.1
+    ],
+    "notesCrop": [
+      50,
+      407.1,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-arensvan-dorp-aldehyde-synthesis",
+    "name": "Arens–van Dorp aldehyde synthesis",
+    "summary": "A metalated ethoxyacetylene adds to a carbonyl compound and is transformed into an unsaturated aldehyde.",
+    "status": "new",
+    "printedPage": 10,
+    "endPage": 10,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      91.9,
+      389,
+      222.0
+    ],
+    "mechanismCrop": [
+      50,
+      91.9,
+      389,
+      222.0
+    ],
+    "notesCrop": null,
+    "applicationCrop": null,
+    "mechanismCaption": "Mechanism within the source reaction scheme"
+  },
+  {
+    "id": "mundy-bodrouxchichibabin-aldehyde-synthesis",
+    "name": "Bodroux–Chichibabin aldehyde synthesis",
+    "summary": "A Grignard reagent reacts with an orthoformate and hydrolysis releases an aldehyde.",
+    "status": "new",
+    "printedPage": 10,
+    "endPage": 10,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      221.6,
+      389,
+      396.0
+    ],
+    "mechanismCrop": [
+      50,
+      221.6,
+      389,
+      396.0
+    ],
+    "notesCrop": null,
+    "applicationCrop": null,
+    "mechanismCaption": "Mechanism within the source reaction scheme"
+  },
+  {
+    "id": "mundy-albrightgoldman-oxidation",
+    "name": "Albright–Goldman oxidation",
+    "summary": "DMSO and acetic anhydride oxidize an alcohol to a carbonyl compound.",
+    "status": "new",
+    "printedPage": 10,
+    "endPage": 10,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      483.9,
+      389,
+      617.0
+    ],
+    "mechanismCrop": [
+      50,
+      483.9,
+      389,
+      617.0
+    ],
+    "notesCrop": null,
+    "applicationCrop": null,
+    "mechanismCaption": "Mechanism within the source reaction scheme"
+  },
+  {
+    "id": "corey-kim-oxidation",
+    "name": "corey-kim-oxidation",
+    "status": "existing",
+    "printedPage": 11,
+    "endPage": 11,
+    "surveyEntry": true
+  },
+  {
+    "id": "kornblum-oxidation",
+    "name": "kornblum-oxidation",
+    "status": "existing",
+    "printedPage": 11,
+    "endPage": 11,
+    "surveyEntry": true
+  },
+  {
+    "id": "pfitzner-moffatt-oxidation",
+    "name": "pfitzner-moffatt-oxidation",
+    "status": "existing",
+    "printedPage": 11,
+    "endPage": 11,
+    "surveyEntry": true
+  },
+  {
+    "id": "swern",
+    "name": "swern",
+    "status": "existing",
+    "printedPage": 11,
+    "endPage": 11,
+    "surveyEntry": true
+  },
+  {
+    "id": "mundy-onodera-oxidation",
+    "name": "Onodera oxidation",
+    "summary": "DMSO activated with phosphorus pentoxide oxidizes an alcohol.",
+    "status": "new",
+    "printedPage": 11,
+    "endPage": 11,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      308.7,
+      389,
+      459.0
+    ],
+    "mechanismCrop": [
+      50,
+      308.7,
+      389,
+      459.0
+    ],
+    "notesCrop": null,
+    "applicationCrop": null,
+    "mechanismCaption": "Mechanism within the source reaction scheme"
+  },
+  {
+    "id": "dess-martin-oxidation",
+    "name": "dess-martin-oxidation",
+    "status": "existing",
+    "printedPage": 12,
+    "endPage": 12,
+    "surveyEntry": true
+  },
+  {
+    "id": "mundy-etard-reaction",
+    "name": "Étard reaction",
+    "summary": "Chromyl chloride oxidizes a benzylic methyl group to an aldehyde.",
+    "status": "new",
+    "printedPage": 12,
+    "endPage": 12,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      298.9,
+      389,
+      440.0
+    ],
+    "mechanismCrop": [
+      50,
+      298.9,
+      389,
+      440.0
+    ],
+    "notesCrop": null,
+    "applicationCrop": null,
+    "mechanismCaption": "Mechanism within the source reaction scheme"
+  },
+  {
+    "id": "mundy-fukuyama-reduction",
+    "name": "Fukuyama reduction",
+    "summary": "A thioester is reduced to an aldehyde with a hydrosilane and palladium catalyst.",
+    "status": "new",
+    "printedPage": 12,
+    "endPage": 12,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      440.3,
+      389,
+      617.0
+    ],
+    "mechanismCrop": [
+      50,
+      440.3,
+      389,
+      617.0
+    ],
+    "notesCrop": null,
+    "applicationCrop": null,
+    "mechanismCaption": "Mechanism within the source reaction scheme"
+  },
+  {
+    "id": "gattermann-and-gattermann-koch-formylation",
+    "name": "gattermann-and-gattermann-koch-formylation",
+    "status": "existing",
+    "printedPage": 13,
+    "endPage": 13,
+    "surveyEntry": true
+  },
+  {
+    "id": "meerwein-ponndorf-verley-reduction",
+    "name": "meerwein-ponndorf-verley-reduction",
+    "status": "existing",
+    "printedPage": 13,
+    "endPage": 13,
+    "surveyEntry": true
+  },
+  {
+    "id": "mundy-ganem-oxidation",
+    "name": "Ganem oxidation",
+    "summary": "Trimethylamine N-oxide converts an organic halide into a carbonyl compound.",
+    "status": "new",
+    "printedPage": 13,
+    "endPage": 13,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      68.7,
+      389,
+      196.0
+    ],
+    "mechanismCrop": [
+      50,
+      68.7,
+      389,
+      196.0
+    ],
+    "notesCrop": null,
+    "applicationCrop": null,
+    "mechanismCaption": "Mechanism within the source reaction scheme"
+  },
+  {
+    "id": "mundy-grundmann-aldehyde-synthesis",
+    "name": "Grundmann aldehyde synthesis",
+    "summary": "An acyl chloride is converted through a diazoketone into a one-carbon-homologated aldehyde.",
+    "status": "new",
+    "printedPage": 13,
+    "endPage": 13,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      424.9,
+      389,
+      547.0
+    ],
+    "mechanismCrop": [
+      50,
+      424.9,
+      389,
+      547.0
+    ],
+    "notesCrop": null,
+    "applicationCrop": null,
+    "mechanismCaption": "Mechanism within the source reaction scheme"
+  },
+  {
+    "id": "criegee-oxidation",
+    "name": "criegee-oxidation",
+    "status": "existing",
+    "printedPage": 14,
+    "endPage": 14,
+    "surveyEntry": true
+  },
+  {
+    "id": "mundy-krohnke-aldehyde-synthesis",
+    "name": "Kröhnke aldehyde synthesis",
+    "summary": "A pyridinium intermediate derived from a halide is converted into an aldehyde.",
+    "status": "new",
+    "printedPage": 14,
+    "endPage": 14,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      314.5,
+      389,
+      540.0
+    ],
+    "mechanismCrop": [
+      50,
+      314.5,
+      389,
+      540.0
+    ],
+    "notesCrop": null,
+    "applicationCrop": null,
+    "mechanismCaption": "Mechanism within the source reaction scheme"
+  },
+  {
+    "id": "mundy-meyers-aldehyde-synthesis",
+    "name": "Meyers aldehyde synthesis",
+    "summary": "A dihydrooxazine acts as a masked aldehyde during carbon–carbon bond formation.",
+    "status": "new",
+    "printedPage": 15,
+    "endPage": 15,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      68.7,
+      389,
+      286.0
+    ],
+    "mechanismCrop": [
+      50,
+      68.7,
+      389,
+      286.0
+    ],
+    "notesCrop": null,
+    "applicationCrop": null,
+    "mechanismCaption": "Mechanism within the source reaction scheme"
+  },
+  {
+    "id": "mundy-reissert-aldehyde-synthesis",
+    "name": "Reissert aldehyde synthesis",
+    "summary": "An acylated cyanodihydroquinoline derivative is hydrolyzed to release an aldehyde.",
+    "status": "new",
+    "printedPage": 16,
+    "endPage": 16,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      65.7,
+      389,
+      385.0
+    ],
+    "mechanismCrop": [
+      50,
+      65.7,
+      389,
+      385.0
+    ],
+    "notesCrop": null,
+    "applicationCrop": null,
+    "mechanismCaption": "Mechanism within the source reaction scheme"
+  },
+  {
+    "id": "stephen-aldehyde-synthesis-stephen-reduction",
+    "name": "stephen-aldehyde-synthesis-stephen-reduction",
+    "status": "existing",
+    "printedPage": 17,
+    "endPage": 17,
+    "surveyEntry": true
+  },
+  {
+    "id": "vilsmeier-haack-formylation",
+    "name": "vilsmeier-haack-formylation",
+    "status": "existing",
+    "printedPage": 17,
+    "endPage": 17,
+    "surveyEntry": true
+  },
+  {
+    "id": "wacker-oxidation",
+    "name": "wacker-oxidation",
+    "status": "existing",
+    "printedPage": 17,
+    "endPage": 17,
+    "surveyEntry": true
+  },
+  {
+    "id": "mundy-sonnmuller-method",
+    "name": "Sonn–Müller method",
+    "summary": "An amide is converted through an imidoyl chloride into an aldehyde.",
+    "status": "new",
+    "printedPage": 17,
+    "endPage": 17,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      68.7,
+      389,
+      191.0
+    ],
+    "mechanismCrop": [
+      50,
+      68.7,
+      389,
+      191.0
+    ],
+    "notesCrop": null,
+    "applicationCrop": null,
+    "mechanismCaption": "Mechanism within the source reaction scheme"
+  },
+  {
+    "id": "mundy-alderrickert-reaction",
+    "name": "Alder–Rickert reaction",
+    "summary": "Cycloaddition of a diene and an alkyne followed by fragmentation produces an aromatic ring.",
+    "status": "new",
+    "printedPage": 18,
+    "endPage": 19,
+    "reactionCrop": [
+      50,
+      91.9,
+      389,
+      158.2
+    ],
+    "mechanismCrop": [
+      50,
+      156.7,
+      389,
+      242.8
+    ],
+    "notesCrop": [
+      50,
+      244.8,
+      389,
+      281.3
+    ],
+    "applicationCrop": [
+      50,
+      283.3,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "aldol",
+    "name": "Aldol Condensation",
+    "status": "existing",
+    "printedPage": 26,
+    "endPage": 27
+  },
+  {
+    "id": "mundy-algarflynnoyamada-reaction",
+    "name": "Algar–Flynn–Oyamada reaction",
+    "summary": "Oxidative cyclization of an ortho-hydroxychalcone gives a flavonol.",
+    "status": "new",
+    "printedPage": 28,
+    "endPage": 29,
+    "reactionCrop": [
+      50,
+      90.0,
+      389,
+      176.5
+    ],
+    "mechanismCrop": [
+      50,
+      175.0,
+      389,
+      525.5
+    ],
+    "notesCrop": [
+      50,
+      527.5,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-allanrobinson-reaction",
+    "name": "Allan–Robinson reaction",
+    "summary": "An ortho-hydroxyaryl ketone reacts with an acid anhydride and its salt to form a flavone or related oxygen heterocycle.",
+    "status": "new",
+    "printedPage": 32,
+    "endPage": 33,
+    "reactionCrop": [
+      50,
+      90.9,
+      389,
+      162.1
+    ],
+    "mechanismCrop": [
+      50,
+      160.6,
+      389,
+      445.0
+    ],
+    "notesCrop": [
+      50,
+      447.0,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-delepine-reaction",
+    "name": "Delépine reaction",
+    "summary": "An alkyl halide reacts with hexamethylenetetramine and hydrolysis gives a primary amine.",
+    "status": "new",
+    "printedPage": 34,
+    "endPage": 34,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      99.6,
+      389,
+      157.0
+    ],
+    "mechanismCrop": null,
+    "notesCrop": null,
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-orton-rearrangement",
+    "name": "Orton rearrangement",
+    "summary": "An N-haloacylaniline gives a ring-halogenated acylaniline under acidic conditions.",
+    "status": "new",
+    "printedPage": 34,
+    "endPage": 34,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      243.9,
+      389,
+      342.0
+    ],
+    "mechanismCrop": null,
+    "notesCrop": null,
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-reillyhickinbottom-rearrangement",
+    "name": "Reilly–Hickinbottom rearrangement",
+    "summary": "Lewis-acid-promoted rearrangement transfers an alkyl group from an aniline nitrogen to the aromatic ring.",
+    "status": "new",
+    "printedPage": 34,
+    "endPage": 34,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      425,
+      389,
+      617.0
+    ],
+    "mechanismCrop": [
+      50,
+      425,
+      389,
+      617.0
+    ],
+    "notesCrop": null,
+    "applicationCrop": null,
+    "mechanismCaption": "Mechanism within the source reaction scheme"
+  },
+  {
+    "id": "mitsunobu-reaction",
+    "name": "mitsunobu-reaction",
+    "status": "existing",
+    "printedPage": 35,
+    "endPage": 35,
+    "surveyEntry": true
+  },
+  {
+    "id": "mundy-forsterdecker-method",
+    "name": "Forster–Decker method",
+    "summary": "A sequence of imine formation, alkylation, and hydrolysis converts a primary amine into a secondary amine.",
+    "status": "new",
+    "printedPage": 35,
+    "endPage": 35,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      67.7,
+      389,
+      288.0
+    ],
+    "mechanismCrop": [
+      50,
+      67.7,
+      389,
+      288.0
+    ],
+    "notesCrop": null,
+    "applicationCrop": null,
+    "mechanismCaption": "Mechanism within the source reaction scheme"
+  },
+  {
+    "id": "mundy-fukuyama-amine-synthesis",
+    "name": "Fukuyama amine synthesis",
+    "summary": "A nitrobenzenesulfonamide is alkylated and deprotected to prepare an amine.",
+    "status": "new",
+    "printedPage": 35,
+    "endPage": 35,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      287.3,
+      389,
+      449.0
+    ],
+    "mechanismCrop": [
+      50,
+      287.3,
+      389,
+      449.0
+    ],
+    "notesCrop": null,
+    "applicationCrop": null,
+    "mechanismCaption": "Mechanism within the source reaction scheme"
+  },
+  {
+    "id": "gabriel",
+    "name": "gabriel",
+    "status": "existing",
+    "printedPage": 36,
+    "endPage": 36,
+    "surveyEntry": true
+  },
+  {
+    "id": "mundy-gabrielcolman-rearrangement",
+    "name": "Gabriel–Colman rearrangement",
+    "summary": "Base-promoted rearrangement of a phthalimido ester constructs an isoquinoline derivative.",
+    "status": "new",
+    "printedPage": 36,
+    "endPage": 36,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      362.0,
+      389,
+      448.0
+    ],
+    "mechanismCrop": null,
+    "notesCrop": null,
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-gabrielmarckwald-ethylenimine-synthesis",
+    "name": "Gabriel–Marckwald ethylenimine synthesis",
+    "summary": "Ring closure of a beta-halo amine forms an aziridine.",
+    "status": "new",
+    "printedPage": 37,
+    "endPage": 37,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      59.0,
+      389,
+      127.0
+    ],
+    "mechanismCrop": [
+      50,
+      59.0,
+      389,
+      127.0
+    ],
+    "notesCrop": null,
+    "applicationCrop": null,
+    "mechanismCaption": "Mechanism within the source reaction scheme"
+  },
+  {
+    "id": "mundy-schweizer-allylamine-synthesis",
+    "name": "Schweizer allylamine synthesis",
+    "summary": "A vinylphosphonium reagent participates in a sequence that converts a carbonyl compound into an allylic amine.",
+    "status": "new",
+    "printedPage": 37,
+    "endPage": 37,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      126.7,
+      389,
+      385.0
+    ],
+    "mechanismCrop": [
+      50,
+      126.7,
+      389,
+      385.0
+    ],
+    "notesCrop": null,
+    "applicationCrop": null,
+    "mechanismCaption": "Mechanism within the source reaction scheme"
+  },
+  {
+    "id": "mundy-voigt-amination",
+    "name": "Voigt amination",
+    "summary": "An acyloin reacts with an amine under dehydrating conditions to form an alpha-amino ketone.",
+    "status": "new",
+    "printedPage": 37,
+    "endPage": 37,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      385.2,
+      389,
+      617.0
+    ],
+    "mechanismCrop": [
+      50,
+      385.2,
+      389,
+      617.0
+    ],
+    "notesCrop": null,
+    "applicationCrop": null,
+    "mechanismCaption": "Mechanism within the source reaction scheme"
+  },
+  {
+    "id": "mundy-andersen-sulfoxide-synthesis",
+    "name": "Andersen sulfoxide synthesis",
+    "summary": "An organometallic reagent displaces the alkoxy group of a chiral sulfinate ester to form a sulfoxide.",
+    "status": "new",
+    "printedPage": 38,
+    "endPage": 39,
+    "reactionCrop": [
+      50,
+      90.0,
+      389,
+      187.2
+    ],
+    "mechanismCrop": [
+      50,
+      185.7,
+      389,
+      456.8
+    ],
+    "notesCrop": [
+      50,
+      458.8,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-appel-reaction",
+    "name": "Appel reaction",
+    "summary": "Triphenylphosphine and a carbon tetrahalide convert an alcohol into an alkyl halide.",
+    "status": "new",
+    "printedPage": 40,
+    "endPage": 41,
+    "reactionCrop": [
+      50,
+      90.9,
+      389,
+      167.8
+    ],
+    "mechanismCrop": [
+      50,
+      166.3,
+      389,
+      345.5
+    ],
+    "notesCrop": [
+      50,
+      347.5,
+      389,
+      474.9
+    ],
+    "applicationCrop": [
+      50,
+      476.9,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "arbuzov-reaction-michaelis-arbuzov-reaction",
+    "name": "Arbuzov Reaction (Michaelis-Arbuzov",
+    "status": "existing",
+    "printedPage": 42,
+    "endPage": 43
+  },
+  {
+    "id": "arndt-eistert-homologation-synthesis",
+    "name": "Arndt-Eistert Homologation Reaction",
+    "status": "existing",
+    "printedPage": 44,
+    "endPage": 45
+  },
+  {
+    "id": "aza-cope-rearrangement",
+    "name": "Aza-Cope Rearrangement",
+    "status": "existing",
+    "printedPage": 46,
+    "endPage": 47
+  },
+  {
+    "id": "baeyer",
+    "name": "Baeyer-Villiger Reaction",
+    "status": "existing",
+    "printedPage": 48,
+    "endPage": 49
+  },
+  {
+    "id": "baker-venkataraman-rearrangement",
+    "name": "Baker-Venkataraman Rearrangement",
+    "status": "existing",
+    "printedPage": 50,
+    "endPage": 51
+  },
+  {
+    "id": "balz-schiemann-reaction-schiemann-reaction",
+    "name": "Balz-Schiemann Reaction (Schiemann Reaction)",
+    "status": "existing",
+    "printedPage": 52,
+    "endPage": 53
+  },
+  {
+    "id": "mundy-bamberger-rearrangement",
+    "name": "Bamberger rearrangement",
+    "summary": "Acid-catalyzed rearrangement of an arylhydroxylamine gives an aminophenol.",
+    "status": "new",
+    "printedPage": 54,
+    "endPage": 55,
+    "reactionCrop": [
+      50,
+      91.9,
+      389,
+      155.4
+    ],
+    "mechanismCrop": [
+      50,
+      153.9,
+      389,
+      357.7
+    ],
+    "notesCrop": [
+      50,
+      359.7,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "bamford-stevens-shapiro-olefination",
+    "name": "Bamford-Stevens Reaction",
+    "status": "existing",
+    "printedPage": 56,
+    "endPage": 57
+  },
+  {
+    "id": "barbier-coupling-reaction",
+    "name": "Barbier (Coupling) Reaction",
+    "status": "existing",
+    "printedPage": 58,
+    "endPage": 59
+  },
+  {
+    "id": "mundy-barbierwieland-degradation",
+    "name": "Barbier–Wieland degradation",
+    "summary": "A carboxylic acid derivative is shortened by one carbon through organometallic addition, dehydration, and oxidative cleavage.",
+    "status": "new",
+    "printedPage": 60,
+    "endPage": 61,
+    "reactionCrop": [
+      50,
+      90.9,
+      389,
+      160.2
+    ],
+    "mechanismCrop": [
+      50,
+      158.7,
+      389,
+      391.9
+    ],
+    "notesCrop": [
+      50,
+      393.9,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "bartoli-indole-synthesis",
+    "name": "Bartoli Indole Synthesis",
+    "status": "existing",
+    "printedPage": 62,
+    "endPage": 63
+  },
+  {
+    "id": "barton-radical-decarboxylation-reaction",
+    "name": "Barton Decarboxylation",
+    "status": "existing",
+    "printedPage": 64,
+    "endPage": 65
+  },
+  {
+    "id": "barton-nitrite-ester-reaction",
+    "name": "Barton Reaction (Barton Nitrite Photolysis Reaction)",
+    "status": "existing",
+    "printedPage": 66,
+    "endPage": 67
+  },
+  {
+    "id": "barton-mccombie-radical-deoxygenation-reaction",
+    "name": "Barton-McCombie Reaction (Barton-Deoxygenation)",
+    "status": "existing",
+    "printedPage": 68,
+    "endPage": 69
+  },
+  {
+    "id": "mundy-bartonzard-pyrrole-synthesis",
+    "name": "Barton–Zard pyrrole synthesis",
+    "summary": "An isocyanoacetate and a nitroalkene combine to construct a substituted pyrrole.",
+    "status": "new",
+    "printedPage": 70,
+    "endPage": 71,
+    "reactionCrop": [
+      50,
+      89.7,
+      389,
+      173.7
+    ],
+    "mechanismCrop": [
+      50,
+      172.2,
+      389,
+      409.0
+    ],
+    "notesCrop": [
+      50,
+      411.0,
+      389,
+      480.9
+    ],
+    "applicationCrop": [
+      50,
+      482.9,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "mundy-baudisch-reaction",
+    "name": "Baudisch reaction",
+    "summary": "An aromatic compound reacts with hydroxylamine and hydrogen peroxide in the presence of copper to form an ortho-nitrosophenol.",
+    "status": "new",
+    "printedPage": 72,
+    "endPage": 73,
+    "reactionCrop": [
+      50,
+      89.9,
+      389,
+      158.2
+    ],
+    "mechanismCrop": [
+      50,
+      156.7,
+      389,
+      326.1
+    ],
+    "notesCrop": [
+      50,
+      328.1,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "baylis-hillman-reaction",
+    "name": "Baylis-Hillman Reaction (Morita-Baylis-Hillman)",
+    "status": "existing",
+    "printedPage": 74,
+    "endPage": 75
+  },
+  {
+    "id": "mundy-bechamp-reduction",
+    "name": "Béchamp reduction",
+    "summary": "Iron and acid reduce an aromatic nitro group to an amine.",
+    "status": "new",
+    "printedPage": 76,
+    "endPage": 77,
+    "reactionCrop": [
+      50,
+      91.9,
+      389,
+      163.1
+    ],
+    "mechanismCrop": [
+      50,
+      161.6,
+      389,
+      293.0
+    ],
+    "notesCrop": [
+      50,
+      295.0,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "abnormal-beckmann-rearrangement",
+    "name": "Beckmann Fragmentation",
+    "status": "existing",
+    "printedPage": 78,
+    "endPage": 79
+  },
+  {
+    "id": "beckmann",
+    "name": "Beckmann Rearrangement",
+    "status": "existing",
+    "printedPage": 80,
+    "endPage": 81
+  },
+  {
+    "id": "mundy-beirut-reaction",
+    "name": "Beirut reaction",
+    "summary": "Benzofuroxan reacts with a carbonyl compound to form a quinoxaline di-N-oxide.",
+    "status": "new",
+    "printedPage": 82,
+    "endPage": 83,
+    "reactionCrop": [
+      50,
+      90.9,
+      389,
+      161.2
+    ],
+    "mechanismCrop": [
+      50,
+      159.7,
+      389,
+      620
+    ],
+    "notesCrop": null,
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-benzidine-rearrangement",
+    "name": "Benzidine rearrangement",
+    "summary": "Acid treatment of a hydrazobenzene produces a rearranged diaminobiphenyl.",
+    "status": "new",
+    "printedPage": 84,
+    "endPage": 85,
+    "reactionCrop": [
+      50,
+      95.7,
+      389,
+      166.0
+    ],
+    "mechanismCrop": [
+      50,
+      164.5,
+      389,
+      620
+    ],
+    "notesCrop": null,
+    "applicationCrop": null
+  },
+  {
+    "id": "benzilic-acid-rearrangement",
+    "name": "Benzilic Acid Rearrangement",
+    "status": "existing",
+    "printedPage": 86,
+    "endPage": 87
+  },
+  {
+    "id": "benzoin-and-retro-benzoin-condensation",
+    "name": "Benzoin Condensation",
+    "status": "existing",
+    "printedPage": 88,
+    "endPage": 89
+  },
+  {
+    "id": "bergman-cycloaromatization-reaction",
+    "name": "Bergman Cyclization",
+    "status": "existing",
+    "printedPage": 90,
+    "endPage": 91
+  },
+  {
+    "id": "biginelli-reaction",
+    "name": "Biginelli Reaction (Biginelli Pyrimidone Synthesis)",
+    "status": "existing",
+    "printedPage": 92,
+    "endPage": 93
+  },
+  {
+    "id": "birch",
+    "name": "Birch Reduction",
+    "status": "existing",
+    "printedPage": 94,
+    "endPage": 95
+  },
+  {
+    "id": "bischler-napieralski-isoquinoline-synthesis",
+    "name": "Bischler-Napieralski Reaction",
+    "status": "existing",
+    "printedPage": 96,
+    "endPage": 97
+  },
+  {
+    "id": "mundy-blaise-reaction",
+    "name": "Blaise reaction",
+    "summary": "A zinc reagent derived from an alpha-halo ester adds to a nitrile, giving a beta-keto ester after hydrolysis.",
+    "status": "new",
+    "printedPage": 98,
+    "endPage": 99,
+    "reactionCrop": [
+      50,
+      90.9,
+      389,
+      153.4
+    ],
+    "mechanismCrop": [
+      50,
+      151.9,
+      389,
+      403.5
+    ],
+    "notesCrop": [
+      50,
+      405.5,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-blanc-chloromethylation",
+    "name": "Blanc chloromethylation",
+    "summary": "Formaldehyde and hydrogen chloride introduce a chloromethyl group onto an aromatic ring.",
+    "status": "new",
+    "printedPage": 100,
+    "endPage": 101,
+    "reactionCrop": [
+      50,
+      90.0,
+      389,
+      147.5
+    ],
+    "mechanismCrop": [
+      50,
+      146.0,
+      389,
+      323.0
+    ],
+    "notesCrop": [
+      50,
+      325.0,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-blanc-cyclization",
+    "name": "Blanc cyclization",
+    "summary": "Heating a dicarboxylic acid with acetic anhydride gives a cyclic anhydride or cyclic ketone depending on chain length.",
+    "status": "new",
+    "printedPage": 102,
+    "endPage": 103,
+    "reactionCrop": [
+      50,
+      91.9,
+      389,
+      159.2
+    ],
+    "mechanismCrop": [
+      50,
+      157.7,
+      389,
+      360.8
+    ],
+    "notesCrop": [
+      50,
+      362.8,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-boord-olefin-synthesis",
+    "name": "Boord olefin synthesis",
+    "summary": "Reductive elimination from a beta-halo ether forms an alkene.",
+    "status": "new",
+    "printedPage": 104,
+    "endPage": 105,
+    "reactionCrop": [
+      50,
+      89.6,
+      389,
+      154.4
+    ],
+    "mechanismCrop": [
+      50,
+      152.9,
+      389,
+      249.5
+    ],
+    "notesCrop": [
+      50,
+      251.5,
+      389,
+      396.7
+    ],
+    "applicationCrop": [
+      50,
+      398.7,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "mundy-borch-reduction",
+    "name": "Borch reduction",
+    "summary": "A carbonyl compound and an amine undergo reductive amination with cyanoborohydride.",
+    "status": "new",
+    "printedPage": 106,
+    "endPage": 107,
+    "reactionCrop": [
+      50,
+      91.9,
+      389,
+      159.2
+    ],
+    "mechanismCrop": [
+      50,
+      157.7,
+      389,
+      211.9
+    ],
+    "notesCrop": [
+      50,
+      213.9,
+      389,
+      279.3
+    ],
+    "aliases": "Borche reduction",
+    "applicationCrop": [
+      50,
+      281.3,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "mundy-borschedrechsel-cyclization",
+    "name": "Borsche–Drechsel cyclization",
+    "summary": "Acid-promoted cyclization of a cyclohexanone arylhydrazone constructs a tetrahydrocarbazole.",
+    "status": "new",
+    "printedPage": 108,
+    "endPage": 109,
+    "reactionCrop": [
+      50,
+      91.9,
+      389,
+      171.8
+    ],
+    "mechanismCrop": [
+      50,
+      170.3,
+      389,
+      391.9
+    ],
+    "notesCrop": [
+      50,
+      393.9,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-bouveault-aldehyde-synthesis",
+    "name": "Bouveault aldehyde synthesis",
+    "summary": "A Grignard reagent reacts with a formamide derivative to give an aldehyde after hydrolysis.",
+    "status": "new",
+    "printedPage": 110,
+    "endPage": 111,
+    "reactionCrop": [
+      50,
+      91.9,
+      389,
+      158.2
+    ],
+    "mechanismCrop": [
+      50,
+      156.7,
+      389,
+      366.4
+    ],
+    "notesCrop": [
+      50,
+      368.4,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-bouveaultblanc-reduction",
+    "name": "Bouveault–Blanc reduction",
+    "summary": "Sodium in an alcohol reduces an ester to alcohol products.",
+    "status": "new",
+    "printedPage": 112,
+    "endPage": 113,
+    "reactionCrop": [
+      50,
+      91.9,
+      389,
+      146.5
+    ],
+    "mechanismCrop": [
+      50,
+      145.0,
+      389,
+      348.2
+    ],
+    "notesCrop": [
+      50,
+      350.2,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-boylandsims-oxidation",
+    "name": "Boyland–Sims oxidation",
+    "summary": "Persulfate oxidizes an aromatic amine to an ortho-aminophenol sulfate derivative.",
+    "status": "new",
+    "printedPage": 114,
+    "endPage": 115,
+    "reactionCrop": [
+      50,
+      96.7,
+      389,
+      164.1
+    ],
+    "mechanismCrop": [
+      50,
+      162.6,
+      389,
+      453.9
+    ],
+    "notesCrop": [
+      50,
+      455.9,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-bradsher-reaction",
+    "name": "Bradsher reaction",
+    "summary": "Acid-promoted cyclization of an appropriately substituted aromatic aldehyde constructs a fused aromatic system.",
+    "status": "new",
+    "printedPage": 116,
+    "endPage": 117,
+    "reactionCrop": [
+      50,
+      90.7,
+      389,
+      170.8
+    ],
+    "mechanismCrop": [
+      50,
+      169.3,
+      389,
+      420.9
+    ],
+    "notesCrop": [
+      50,
+      422.9,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "brook-rearrangement",
+    "name": "Brook Rearrangement",
+    "status": "existing",
+    "printedPage": 118,
+    "endPage": 119
+  },
+  {
+    "id": "brown-hydroboration-reaction",
+    "name": "Brown's Hydroboration",
+    "status": "existing",
+    "printedPage": 120,
+    "endPage": 121
+  },
+  {
+    "id": "buchererbergs-reaction",
+    "name": "Bucherer-Bergs Reaction",
+    "status": "existing",
+    "printedPage": 122,
+    "endPage": 123
+  },
+  {
+    "id": "mundy-bucherer-reaction",
+    "name": "Bucherer reaction",
+    "summary": "Ammonia and bisulfite interconvert naphthols and naphthylamines.",
+    "status": "new",
+    "printedPage": 124,
+    "endPage": 125,
+    "reactionCrop": [
+      50,
+      90.9,
+      389,
+      194.1
+    ],
+    "mechanismCrop": [
+      50,
+      192.6,
+      389,
+      620
+    ],
+    "notesCrop": null,
+    "applicationCrop": null
+  },
+  {
+    "id": "buchwald-hartwig-cross-coupling",
+    "name": "Buchwald-Hartwig Reactions",
+    "status": "existing",
+    "printedPage": 126,
+    "endPage": 127
+  },
+  {
+    "id": "cadiotchodkiewicz-coupling",
+    "name": "Cadiot-Chodkiewicz Coupling",
+    "status": "existing",
+    "printedPage": 128,
+    "endPage": 129
+  },
+  {
+    "id": "cannizzaro-reaction",
+    "name": "Cannizzarro Reaction / Aldehyde Disproportionation",
+    "status": "existing",
+    "printedPage": 130,
+    "endPage": 131
+  },
+  {
+    "id": "mundy-cargill-rearrangement",
+    "name": "Cargill rearrangement",
+    "summary": "Acid treatment rearranges the carbon skeleton of a bicyclic ketone.",
+    "status": "new",
+    "printedPage": 132,
+    "endPage": 133,
+    "reactionCrop": [
+      50,
+      90.0,
+      389,
+      163.1
+    ],
+    "mechanismCrop": [
+      50,
+      161.6,
+      389,
+      315.4
+    ],
+    "notesCrop": [
+      50,
+      317.4,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "carroll-rearrangement-kimel-cope-rearrangement",
+    "name": "Carroll Rearrangement (Kimel-Cope Rearrangement)",
+    "status": "existing",
+    "printedPage": 134,
+    "endPage": 135
+  },
+  {
+    "id": "castro-stephens-coupling",
+    "name": "Castro-Stephens Coupling",
+    "status": "existing",
+    "printedPage": 136,
+    "endPage": 137
+  },
+  {
+    "id": "mundy-chan-alkyne-reduction",
+    "name": "Chan alkyne reduction",
+    "summary": "An aluminum hydride reduces a propargyl alcohol or derivative to an E allylic alcohol.",
+    "status": "new",
+    "printedPage": 138,
+    "endPage": 139,
+    "reactionCrop": [
+      50,
+      90.8,
+      389,
+      172.8
+    ],
+    "mechanismCrop": [
+      50,
+      171.3,
+      389,
+      318.9
+    ],
+    "notesCrop": [
+      50,
+      320.9,
+      389,
+      467.4
+    ],
+    "applicationCrop": [
+      50,
+      469.4,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "chanlam-cx-coupling-reaction",
+    "name": "Chan-Lam Coupling",
+    "status": "existing",
+    "printedPage": 140,
+    "endPage": 141
+  },
+  {
+    "id": "chapman-rearrangement",
+    "name": "Chapman Rearrangement",
+    "status": "existing",
+    "printedPage": 142,
+    "endPage": 143
+  },
+  {
+    "id": "chichibabin-amination-reaction",
+    "name": "Chichibabin Reaction",
+    "status": "existing",
+    "printedPage": 144,
+    "endPage": 145
+  },
+  {
+    "id": "chugaev",
+    "name": "Chugaev Reaction",
+    "status": "existing",
+    "printedPage": 146,
+    "endPage": 147
+  },
+  {
+    "id": "ciamician-dennstedt-rearrangement",
+    "name": "Ciamician-Dennstedt Rearrangement",
+    "status": "existing",
+    "printedPage": 148,
+    "endPage": 149
+  },
+  {
+    "id": "claisen-condensation-claisen-reaction",
+    "name": "Claisen Condensation (ester attacking ester)",
+    "status": "existing",
+    "printedPage": 150,
+    "endPage": 151
+  },
+  {
+    "id": "carroll-rearrangement-kimel-cope-rearrangement",
+    "name": "carroll-rearrangement-kimel-cope-rearrangement",
+    "status": "existing",
+    "printedPage": 153,
+    "endPage": 153,
+    "surveyEntry": true
+  },
+  {
+    "id": "eschenmoser-claisen-rearrangement",
+    "name": "eschenmoser-claisen-rearrangement",
+    "status": "existing",
+    "printedPage": 153,
+    "endPage": 153,
+    "surveyEntry": true
+  },
+  {
+    "id": "claisen-ireland-rearrangement",
+    "name": "claisen-ireland-rearrangement",
+    "status": "existing",
+    "printedPage": 153,
+    "endPage": 153,
+    "surveyEntry": true
+  },
+  {
+    "id": "mundy-claisenarnold-reaction",
+    "name": "Claisen–Arnold reaction",
+    "summary": "An allylic ester enolate rearranges to a substituted carboxylic acid.",
+    "status": "new",
+    "printedPage": 153,
+    "endPage": 153,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      238.0,
+      389,
+      332.0
+    ],
+    "mechanismCrop": [
+      50,
+      238.0,
+      389,
+      332.0
+    ],
+    "notesCrop": null,
+    "applicationCrop": null,
+    "mechanismCaption": "Mechanism within the source reaction scheme"
+  },
+  {
+    "id": "johnson-claisen-rearrangement",
+    "name": "johnson-claisen-rearrangement",
+    "status": "existing",
+    "printedPage": 154,
+    "endPage": 154,
+    "surveyEntry": true
+  },
+  {
+    "id": "mundy-daubendietsche-rearrangement",
+    "name": "Dauben–Dietsche rearrangement",
+    "summary": "A vinyl-substituted strained ring undergoes a thermal rearrangement.",
+    "status": "new",
+    "printedPage": 154,
+    "endPage": 154,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      67.9,
+      389,
+      146.0
+    ],
+    "mechanismCrop": [
+      50,
+      67.9,
+      389,
+      146.0
+    ],
+    "notesCrop": null,
+    "applicationCrop": null,
+    "mechanismCaption": "Mechanism within the source reaction scheme"
+  },
+  {
+    "id": "mundy-denmark-rearrangement",
+    "name": "Denmark rearrangement",
+    "summary": "A sulfonyl-substituted allyl vinyl ether undergoes a Claisen-type rearrangement.",
+    "status": "new",
+    "printedPage": 154,
+    "endPage": 154,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      146.0,
+      389,
+      233.0
+    ],
+    "mechanismCrop": [
+      50,
+      146.0,
+      389,
+      233.0
+    ],
+    "notesCrop": null,
+    "applicationCrop": null,
+    "mechanismCaption": "Mechanism within the source reaction scheme"
+  },
+  {
+    "id": "mundy-marbetsaucy-reaction",
+    "name": "Marbet–Saucy reaction",
+    "summary": "An allylic alcohol and a vinyl ether form an allyl vinyl ether that rearranges to a carbonyl compound.",
+    "status": "new",
+    "printedPage": 154,
+    "endPage": 154,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      384.2,
+      389,
+      617.0
+    ],
+    "mechanismCrop": [
+      50,
+      384.2,
+      389,
+      617.0
+    ],
+    "notesCrop": null,
+    "applicationCrop": null,
+    "mechanismCaption": "Mechanism within the source reaction scheme"
+  },
+  {
+    "id": "aza-cope-rearrangement",
+    "name": "aza-cope-rearrangement",
+    "status": "existing",
+    "printedPage": 155,
+    "endPage": 155,
+    "surveyEntry": true
+  },
+  {
+    "id": "cope",
+    "name": "cope",
+    "status": "existing",
+    "printedPage": 155,
+    "endPage": 155,
+    "surveyEntry": true
+  },
+  {
+    "id": "oxy-cope-rearrangement-and-anionic-oxy-cope-rearrangement",
+    "name": "oxy-cope-rearrangement-and-anionic-oxy-cope-rearrangement",
+    "status": "existing",
+    "printedPage": 155,
+    "endPage": 155,
+    "surveyEntry": true
+  },
+  {
+    "id": "mundy-azo-cope-rearrangement",
+    "name": "Azo-Cope rearrangement",
+    "summary": "A nitrogen-containing six-atom system undergoes a sigmatropic rearrangement.",
+    "status": "new",
+    "printedPage": 155,
+    "endPage": 155,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      175.0,
+      389,
+      244.0
+    ],
+    "mechanismCrop": null,
+    "notesCrop": null,
+    "applicationCrop": null
+  },
+  {
+    "id": "claisen",
+    "name": "Claisen Rearrangement (allyl phenyl ethers)",
+    "status": "existing",
+    "printedPage": 156,
+    "endPage": 157
+  },
+  {
+    "id": "claisen",
+    "name": "Claisen Rearrangement (ally1 vinyl ethers)",
+    "status": "existing",
+    "printedPage": 158,
+    "endPage": 159
+  },
+  {
+    "id": "clemmensen",
+    "name": "Clemmensen Reduction",
+    "status": "existing",
+    "printedPage": 160,
+    "endPage": 161
+  },
+  {
+    "id": "mundy-collman-carbonylation",
+    "name": "Collman carbonylation",
+    "summary": "An alkyl halide reacts with sodium tetracarbonylferrate to form acyl derivatives after electrophilic trapping.",
+    "status": "new",
+    "printedPage": 162,
+    "endPage": 163,
+    "reactionCrop": [
+      50,
+      90.9,
+      389,
+      228.8
+    ],
+    "mechanismCrop": [
+      50,
+      227.3,
+      389,
+      336.5
+    ],
+    "notesCrop": [
+      50,
+      338.5,
+      389,
+      488.5
+    ],
+    "applicationCrop": [
+      50,
+      490.5,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "combes-quinoline-synthesis",
+    "name": "Combes Quinoline Synthesis",
+    "status": "existing",
+    "printedPage": 164,
+    "endPage": 165
+  },
+  {
+    "id": "mundy-conradlimpach-reaction",
+    "name": "Conrad–Limpach reaction",
+    "summary": "An aniline and a beta-keto ester condense and cyclize to form a 4-hydroxyquinoline.",
+    "status": "new",
+    "printedPage": 166,
+    "endPage": 167,
+    "reactionCrop": [
+      50,
+      93.8,
+      389,
+      164.1
+    ],
+    "mechanismCrop": [
+      50,
+      162.6,
+      389,
+      427.7
+    ],
+    "notesCrop": [
+      50,
+      429.7,
+      389,
+      465.3
+    ],
+    "applicationCrop": [
+      50,
+      467.3,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "cope-elimination-cope-reaction",
+    "name": "Cope Elimination (Reaction)",
+    "status": "existing",
+    "printedPage": 168,
+    "endPage": 169
+  },
+  {
+    "id": "cope",
+    "name": "Cope Rearrangement",
+    "status": "existing",
+    "printedPage": 170,
+    "endPage": 171
+  },
+  {
+    "id": "corey-bakshi-shibata-reduction-cbs-reduction",
+    "name": "Corey-Bakshi-Shibata (CBS Reduction)",
+    "status": "existing",
+    "printedPage": 172,
+    "endPage": 173
+  },
+  {
+    "id": "corey-chaykovsky-epoxidation-and-cyclopropanation",
+    "name": "C orey - C haykovsk y Reaction",
+    "status": "existing",
+    "printedPage": 174,
+    "endPage": 175
+  },
+  {
+    "id": "corey-fuchs-alkyne-synthesis",
+    "name": "Corey-Fuchs Reaction",
+    "status": "existing",
+    "printedPage": 176,
+    "endPage": 177
+  },
+  {
+    "id": "mundy-coreygilmanganem-oxidation",
+    "name": "Corey–Gilman–Ganem oxidation",
+    "summary": "Cyanide and manganese dioxide convert an aldehyde into an ester in an alcohol solvent.",
+    "status": "new",
+    "printedPage": 178,
+    "endPage": 179,
+    "reactionCrop": [
+      50,
+      92.9,
+      389,
+      149.5
+    ],
+    "mechanismCrop": [
+      50,
+      148.0,
+      389,
+      267.9
+    ],
+    "notesCrop": null,
+    "applicationCrop": [
+      50,
+      269.9,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "mundy-coreyhouseposnerwhitesides-reaction",
+    "name": "Corey–House–Posner–Whitesides reaction",
+    "summary": "A lithium diorganocuprate couples with an organic halide to form a carbon–carbon bond.",
+    "status": "new",
+    "printedPage": 180,
+    "endPage": 181,
+    "reactionCrop": [
+      50,
+      92.9,
+      389,
+      189.2
+    ],
+    "mechanismCrop": [
+      50,
+      187.7,
+      389,
+      270.5
+    ],
+    "notesCrop": [
+      50,
+      272.5,
+      389,
+      381.3
+    ],
+    "applicationCrop": [
+      50,
+      383.3,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "mundy-coreylink-reaction",
+    "name": "Corey–Link reaction",
+    "summary": "A trichloromethyl carbinol is converted into an alpha-substituted carboxylic acid derivative.",
+    "status": "new",
+    "printedPage": 182,
+    "endPage": 183,
+    "reactionCrop": [
+      50,
+      92.9,
+      389,
+      145.7
+    ],
+    "mechanismCrop": [
+      50,
+      144.2,
+      389,
+      319.3
+    ],
+    "notesCrop": [
+      50,
+      321.3,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "corey-nicolaou-macrolactonization",
+    "name": "Corey-Nicoloau Macrocyclization",
+    "status": "existing",
+    "printedPage": 184,
+    "endPage": 185
+  },
+  {
+    "id": "mundy-coreyseebach-reaction",
+    "name": "Corey–Seebach reaction",
+    "summary": "A lithiated dithiane acts as an acyl anion equivalent in carbon–carbon bond formation.",
+    "status": "new",
+    "printedPage": 186,
+    "endPage": 187,
+    "reactionCrop": [
+      50,
+      92.9,
+      389,
+      162.1
+    ],
+    "mechanismCrop": [
+      50,
+      160.6,
+      389,
+      279.6
+    ],
+    "notesCrop": [
+      50,
+      281.6,
+      389,
+      398.7
+    ],
+    "applicationCrop": [
+      50,
+      400.7,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "corey-winter-olefination",
+    "name": "Corey-Winter Olefination",
+    "status": "existing",
+    "printedPage": 188,
+    "endPage": 189
+  },
+  {
+    "id": "cornforth-rearrangement",
+    "name": "Cornforth Rearrangement",
+    "status": "existing",
+    "printedPage": 190,
+    "endPage": 191
+  },
+  {
+    "id": "curtius-rearrangement",
+    "name": "Curtius Rearrangement / Reaction / Degradation",
+    "status": "existing",
+    "printedPage": 192,
+    "endPage": 193
+  },
+  {
+    "id": "dakin-oxidation",
+    "name": "Dakin Reaction",
+    "status": "existing",
+    "printedPage": 194,
+    "endPage": 195
+  },
+  {
+    "id": "danheiser-cyclopentene-annulation",
+    "name": "Danheiser Annulation",
+    "status": "existing",
+    "printedPage": 196,
+    "endPage": 197
+  },
+  {
+    "id": "darzens-glycidic-ester-condensation",
+    "name": "Darzens Condensation (Darzens-Claisen Reaction, Darzens Glycidic",
+    "status": "existing",
+    "printedPage": 198,
+    "endPage": 199
+  },
+  {
+    "id": "de-mayo-cycloaddition-enone-alkene-2-2-photocycloaddition",
+    "name": "de Mayo Reaction",
+    "status": "existing",
+    "printedPage": 200,
+    "endPage": 201
+  },
+  {
+    "id": "dess-martin-oxidation",
+    "name": "Dess-Martin Oxidation",
+    "status": "existing",
+    "printedPage": 202,
+    "endPage": 203
+  },
+  {
+    "id": "dieckmann-condensation",
+    "name": "Dieckmann Condensation / Cyclization / Reaction",
+    "status": "existing",
+    "printedPage": 204,
+    "endPage": 205
+  },
+  {
+    "id": "diels",
+    "name": "Diels-Alder Reaction",
+    "status": "existing",
+    "printedPage": 206,
+    "endPage": 207
+  },
+  {
+    "id": "dienone-phenol-rearrangement",
+    "name": "Dienone-Phenol Rearrangement",
+    "status": "existing",
+    "printedPage": 210,
+    "endPage": 211
+  },
+  {
+    "id": "mundy-doebner-reaction",
+    "name": "Doebner reaction",
+    "summary": "An aniline, an aldehyde, and pyruvic acid combine to form a quinoline carboxylic acid.",
+    "status": "new",
+    "printedPage": 212,
+    "endPage": 213,
+    "reactionCrop": [
+      50,
+      108.3,
+      389,
+      177.5
+    ],
+    "mechanismCrop": [
+      50,
+      176.0,
+      389,
+      451.8
+    ],
+    "notesCrop": [
+      50,
+      453.8,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-dondoni-homologation",
+    "name": "Dondoni homologation",
+    "summary": "A metallated thiazole adds to an aldehyde and serves as a masked formyl group for chain extension.",
+    "status": "new",
+    "printedPage": 214,
+    "endPage": 215,
+    "reactionCrop": [
+      50,
+      98.7,
+      389,
+      156.2
+    ],
+    "mechanismCrop": [
+      50,
+      154.7,
+      389,
+      438.3
+    ],
+    "notesCrop": [
+      50,
+      440.3,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "dotz-benzannulation-reaction",
+    "name": "Dotz Reaction",
+    "status": "existing",
+    "printedPage": 216,
+    "endPage": 217
+  },
+  {
+    "id": "mundy-dowdbeckwith-ring-expansion",
+    "name": "Dowd–Beckwith ring expansion",
+    "summary": "Radical cyclization and fragmentation expand the ring of a cyclic beta-keto ester.",
+    "status": "new",
+    "printedPage": 218,
+    "endPage": 219,
+    "reactionCrop": [
+      50,
+      91.9,
+      389,
+      163.1
+    ],
+    "mechanismCrop": [
+      50,
+      161.6,
+      389,
+      361.9
+    ],
+    "notesCrop": null,
+    "applicationCrop": [
+      50,
+      363.9,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "mundy-doylekirmse-reaction",
+    "name": "Doyle–Kirmse reaction",
+    "summary": "A diazo compound and an allylic sulfide form a sulfur ylide that undergoes a rearrangement.",
+    "status": "new",
+    "printedPage": 220,
+    "endPage": 221,
+    "reactionCrop": [
+      50,
+      92.9,
+      389,
+      151.5
+    ],
+    "mechanismCrop": [
+      50,
+      150.0,
+      389,
+      308.5
+    ],
+    "notesCrop": [
+      50,
+      310.5,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-duff-reaction",
+    "name": "Duff reaction",
+    "summary": "Hexamethylenetetramine under acidic conditions formylates an activated aromatic ring.",
+    "status": "new",
+    "printedPage": 222,
+    "endPage": 223,
+    "reactionCrop": [
+      50,
+      91.6,
+      389,
+      205.7
+    ],
+    "mechanismCrop": [
+      50,
+      204.2,
+      389,
+      444.1
+    ],
+    "notesCrop": [
+      50,
+      446.1,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "eglinton-coupling",
+    "name": "Eglinton Reaction",
+    "status": "existing",
+    "printedPage": 224,
+    "endPage": 225
+  },
+  {
+    "id": "ene",
+    "name": "Ene Reaction (Alder-Ene Reaction)",
+    "status": "existing",
+    "printedPage": 226,
+    "endPage": 227
+  },
+  {
+    "id": "mundy-eschenmoser-coupling",
+    "name": "Eschenmoser coupling",
+    "summary": "A thioamide and an alpha-halo carbonyl compound couple to form an enaminocarbonyl compound after sulfur removal.",
+    "status": "new",
+    "printedPage": 228,
+    "endPage": 229,
+    "reactionCrop": [
+      50,
+      93.8,
+      389,
+      161.2
+    ],
+    "mechanismCrop": [
+      50,
+      159.7,
+      389,
+      305.7
+    ],
+    "notesCrop": [
+      50,
+      307.7,
+      389,
+      398.5
+    ],
+    "applicationCrop": [
+      50,
+      400.5,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "eschenmoser-tanabe-fragmentation",
+    "name": "Eschenmoser Fragmentation (Eschenmoser-Tanabe Fragmentation /",
+    "status": "existing",
+    "printedPage": 230,
+    "endPage": 231
+  },
+  {
+    "id": "eschweiler-clarke-methylation-reductive-alkylation",
+    "name": "Eschweiler-Clarke (Clark) Methylation",
+    "status": "existing",
+    "printedPage": 232,
+    "endPage": 233
+  },
+  {
+    "id": "evans-aldol-reaction",
+    "name": "Evans Chiral N-Acyloxazolidinone Methodology",
+    "status": "existing",
+    "printedPage": 234,
+    "endPage": 235
+  },
+  {
+    "id": "mundy-evanstishchenko-reaction",
+    "name": "Evans–Tishchenko reaction",
+    "summary": "A beta-hydroxy ketone and an aldehyde undergo a directed reduction to give a selectively esterified 1,3-diol.",
+    "status": "new",
+    "printedPage": 236,
+    "endPage": 237,
+    "reactionCrop": [
+      50,
+      92.9,
+      389,
+      170.8
+    ],
+    "mechanismCrop": [
+      50,
+      169.3,
+      389,
+      341.5
+    ],
+    "notesCrop": [
+      50,
+      343.5,
+      389,
+      390.9
+    ],
+    "applicationCrop": [
+      50,
+      392.9,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "favorskii-and-homo-favorskii-rearrangement",
+    "name": "Favorskii Rearrangement (Favorsky)",
+    "status": "existing",
+    "printedPage": 238,
+    "endPage": 239
+  },
+  {
+    "id": "ferrier-reaction-rearrangement",
+    "name": "Ferrier Rearrangement",
+    "status": "existing",
+    "printedPage": 240,
+    "endPage": 241
+  },
+  {
+    "id": "finkelstein",
+    "name": "Finkelstein Reaction",
+    "status": "existing",
+    "printedPage": 242,
+    "endPage": 243
+  },
+  {
+    "id": "fischer-indole-synthesis",
+    "name": "Fischer Indole Synthesis",
+    "status": "existing",
+    "printedPage": 244,
+    "endPage": 245
+  },
+  {
+    "id": "mundy-fischerhepp-rearrangement",
+    "name": "Fischer–Hepp rearrangement",
+    "summary": "Acid treatment of an N-nitrosoarylamine transfers the nitroso group to the aromatic ring.",
+    "status": "new",
+    "printedPage": 246,
+    "endPage": 247,
+    "reactionCrop": [
+      50,
+      91.9,
+      389,
+      168.8
+    ],
+    "mechanismCrop": [
+      50,
+      167.3,
+      389,
+      620
+    ],
+    "notesCrop": null,
+    "applicationCrop": null
+  },
+  {
+    "id": "fischer",
+    "name": "Fischer Esterification / Fischer-Speier Esterification",
+    "status": "existing",
+    "printedPage": 248,
+    "endPage": 249
+  },
+  {
+    "id": "fleming-tamao-oxidation",
+    "name": "Fleming Oxidation",
+    "status": "existing",
+    "printedPage": 250,
+    "endPage": 251
+  },
+  {
+    "id": "mundy-fraterseebach-alkylation",
+    "name": "Fráter–Seebach alkylation",
+    "summary": "A beta-hydroxy ester undergoes diastereoselective alpha-alkylation through its dianion.",
+    "status": "new",
+    "printedPage": 252,
+    "endPage": 253,
+    "reactionCrop": [
+      50,
+      94.7,
+      389,
+      185.4
+    ],
+    "mechanismCrop": [
+      50,
+      183.9,
+      389,
+      312.5
+    ],
+    "notesCrop": [
+      50,
+      314.5,
+      389,
+      420.8
+    ],
+    "applicationCrop": [
+      50,
+      422.8,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "friedel-crafts-acylation",
+    "name": "Friedel-Crafts Acylation",
+    "status": "existing",
+    "printedPage": 254,
+    "endPage": 255
+  },
+  {
+    "id": "friedel-crafts-alkylation",
+    "name": "Friedel-Crafts Alkyation",
+    "status": "existing",
+    "printedPage": 256,
+    "endPage": 257
+  },
+  {
+    "id": "friedlander-quinoline-synthesis",
+    "name": "Friedlander Quinoline Synthesis",
+    "status": "existing",
+    "printedPage": 258,
+    "endPage": 259
+  },
+  {
+    "id": "fries-photo-fries-and-anionic-ortho-fries-rearrangement",
+    "name": "Fries Rearrangement / Photo Fries Rearrangement",
+    "status": "existing",
+    "printedPage": 260,
+    "endPage": 261
+  },
+  {
+    "id": "mundy-fritschbuttenbergwiechell-rearrangement",
+    "name": "Fritsch–Buttenberg–Wiechell rearrangement",
+    "summary": "A carbene derived from a gem-dihaloalkene rearranges to an alkyne.",
+    "status": "new",
+    "printedPage": 262,
+    "endPage": 263,
+    "reactionCrop": [
+      50,
+      91.9,
+      389,
+      143.7
+    ],
+    "mechanismCrop": [
+      50,
+      142.2,
+      389,
+      259.2
+    ],
+    "notesCrop": [
+      50,
+      261.2,
+      389,
+      421.9
+    ],
+    "applicationCrop": [
+      50,
+      423.9,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "gabriel",
+    "name": "Gabriel Synthesis",
+    "status": "existing",
+    "printedPage": 264,
+    "endPage": 265
+  },
+  {
+    "id": "mundy-gabrielcromwell-reaction",
+    "name": "Gabriel–Cromwell reaction",
+    "summary": "An amine reacts with an alpha-halo carbonyl substrate to form an aziridine.",
+    "status": "new",
+    "printedPage": 266,
+    "endPage": 267,
+    "reactionCrop": [
+      50,
+      91.9,
+      389,
+      150.5
+    ],
+    "mechanismCrop": [
+      50,
+      149.0,
+      389,
+      289.3
+    ],
+    "notesCrop": [
+      50,
+      291.3,
+      389,
+      387.9
+    ],
+    "applicationCrop": [
+      50,
+      389.9,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "mundy-gareggsamuelsson-reaction",
+    "name": "Garegg–Samuelsson reaction",
+    "summary": "Iodine, triphenylphosphine, and imidazole replace an alcohol hydroxyl group with iodide.",
+    "status": "new",
+    "printedPage": 268,
+    "endPage": 269,
+    "reactionCrop": [
+      50,
+      90.7,
+      389,
+      146.5
+    ],
+    "mechanismCrop": [
+      50,
+      145.0,
+      389,
+      372.5
+    ],
+    "notesCrop": [
+      50,
+      374.5,
+      389,
+      454.7
+    ],
+    "applicationCrop": [
+      50,
+      456.7,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "mundy-garstspencer-furan-annulation",
+    "name": "Garst–Spencer furan annulation",
+    "summary": "A carbonyl substrate and a sulfur-containing reagent are used to construct a substituted furan.",
+    "status": "new",
+    "printedPage": 270,
+    "endPage": 271,
+    "reactionCrop": [
+      50,
+      91.9,
+      389,
+      156.2
+    ],
+    "mechanismCrop": [
+      50,
+      154.7,
+      389,
+      288.1
+    ],
+    "notesCrop": null,
+    "applicationCrop": [
+      50,
+      290.1,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "gattermann-and-gattermann-koch-formylation",
+    "name": "Gattermann Aldehyde Synthesis (Gattermann-Adams Formylation)",
+    "status": "existing",
+    "printedPage": 272,
+    "endPage": 273
+  },
+  {
+    "id": "glaser-coupling",
+    "name": "Glaser (Oxidative) Coupling (Reaction)",
+    "status": "existing",
+    "printedPage": 276,
+    "endPage": 277
+  },
+  {
+    "id": "gouldjacobs-reaction",
+    "name": "Gould-Jacobs Reaction",
+    "status": "existing",
+    "printedPage": 278,
+    "endPage": 279
+  },
+  {
+    "id": "mundy-gribble-indole-reduction",
+    "name": "Gribble indole reduction",
+    "summary": "Cyanoborohydride in acetic acid reduces an indole to an indoline.",
+    "status": "new",
+    "printedPage": 280,
+    "endPage": 281,
+    "reactionCrop": [
+      50,
+      92.9,
+      389,
+      175.7
+    ],
+    "mechanismCrop": [
+      50,
+      174.2,
+      389,
+      249.5
+    ],
+    "notesCrop": [
+      50,
+      251.5,
+      389,
+      279.3
+    ],
+    "applicationCrop": [
+      50,
+      281.3,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "mundy-griecosharpless-elimination",
+    "name": "Grieco–Sharpless elimination",
+    "summary": "An alcohol is converted into an organoselenium derivative that eliminates on oxidation to give an alkene.",
+    "status": "new",
+    "printedPage": 282,
+    "endPage": 283,
+    "reactionCrop": [
+      50,
+      97.7,
+      389,
+      170.8
+    ],
+    "mechanismCrop": [
+      50,
+      169.3,
+      389,
+      235.0
+    ],
+    "notesCrop": [
+      50,
+      237.0,
+      389,
+      473.2
+    ],
+    "applicationCrop": [
+      50,
+      475.2,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "grignard",
+    "name": "Grignard Reactions",
+    "status": "existing",
+    "printedPage": 284,
+    "endPage": 285
+  },
+  {
+    "id": "mundy-benary-reaction",
+    "name": "Benary reaction",
+    "summary": "A Grignard reagent adds to an amino-substituted unsaturated carbonyl compound; hydrolysis gives a ketone.",
+    "status": "new",
+    "printedPage": 286,
+    "endPage": 286,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      88.0,
+      389,
+      200.0
+    ],
+    "mechanismCrop": [
+      50,
+      88.0,
+      389,
+      200.0
+    ],
+    "notesCrop": null,
+    "applicationCrop": null,
+    "mechanismCaption": "Mechanism within the source reaction scheme"
+  },
+  {
+    "id": "mundy-bodroux-reaction",
+    "name": "Bodroux reaction",
+    "summary": "An organomagnesium amide converts an ester into an amide.",
+    "status": "new",
+    "printedPage": 286,
+    "endPage": 286,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      200.3,
+      389,
+      304.0
+    ],
+    "mechanismCrop": [
+      50,
+      200.3,
+      389,
+      304.0
+    ],
+    "notesCrop": null,
+    "applicationCrop": null,
+    "mechanismCaption": "Mechanism within the source reaction scheme"
+  },
+  {
+    "id": "mundy-dzhemilev-reaction",
+    "name": "Dzhemilev reaction",
+    "summary": "A transition-metal-catalyzed reaction of an alkene and a Grignard reagent forms a new organomagnesium compound.",
+    "status": "new",
+    "printedPage": 286,
+    "endPage": 286,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      362.0,
+      389,
+      413.8
+    ],
+    "mechanismCrop": [
+      50,
+      412.3,
+      389,
+      615.0
+    ],
+    "notesCrop": null,
+    "applicationCrop": null
+  },
+  {
+    "id": "grob-fragmentation",
+    "name": "Grob Fragmentation",
+    "status": "existing",
+    "printedPage": 288,
+    "endPage": 289
+  },
+  {
+    "id": "hajos-parrish-reaction",
+    "name": "Hajos-Weichert Reaction",
+    "status": "existing",
+    "printedPage": 290,
+    "endPage": 291
+  },
+  {
+    "id": "mundy-hallerbauer-reaction",
+    "name": "Haller–Bauer reaction",
+    "summary": "A non-enolizable ketone undergoes carbon–carbon bond cleavage with amide base to form an amide.",
+    "status": "new",
+    "printedPage": 292,
+    "endPage": 293,
+    "reactionCrop": [
+      50,
+      91.9,
+      389,
+      162.1
+    ],
+    "mechanismCrop": [
+      50,
+      160.6,
+      389,
+      272.7
+    ],
+    "notesCrop": [
+      50,
+      274.7,
+      389,
+      394.8
+    ],
+    "applicationCrop": [
+      50,
+      396.8,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "mundy-hassbender-reaction",
+    "name": "Hass–Bender reaction",
+    "summary": "A nitroalkane salt converts a benzyl halide into an aromatic aldehyde.",
+    "status": "new",
+    "printedPage": 294,
+    "endPage": 295,
+    "reactionCrop": [
+      50,
+      90.9,
+      389,
+      149.5
+    ],
+    "mechanismCrop": [
+      50,
+      148.0,
+      389,
+      284.5
+    ],
+    "notesCrop": [
+      50,
+      286.5,
+      389,
+      315.4
+    ],
+    "applicationCrop": [
+      50,
+      317.4,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "heck-reaction",
+    "name": "Heck Reaction",
+    "status": "existing",
+    "printedPage": 296,
+    "endPage": 297
+  },
+  {
+    "id": "hell",
+    "name": "Hell-Volhard-Zelinski Reaction",
+    "status": "existing",
+    "printedPage": 298,
+    "endPage": 299
+  },
+  {
+    "id": "henry-reaction",
+    "name": "Henry Reaction / Kamlet Reaction",
+    "status": "existing",
+    "printedPage": 300,
+    "endPage": 301
+  },
+  {
+    "id": "chichibabin-pyridine-synthesis",
+    "name": "chichibabin-pyridine-synthesis",
+    "status": "existing",
+    "printedPage": 302,
+    "endPage": 302,
+    "surveyEntry": true
+  },
+  {
+    "id": "mundy-guareschithorpe-condensation",
+    "name": "Guareschi–Thorpe condensation",
+    "summary": "A carbonyl compound and a cyanoacetamide derivative condense to form a nitrogen heterocycle.",
+    "status": "new",
+    "printedPage": 302,
+    "endPage": 302,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      509.0,
+      389,
+      617.0
+    ],
+    "mechanismCrop": null,
+    "notesCrop": null,
+    "applicationCrop": null
+  },
+  {
+    "id": "hantzsch-dihydropyridine-synthesis",
+    "name": "hantzsch-dihydropyridine-synthesis",
+    "status": "existing",
+    "printedPage": 303,
+    "endPage": 303,
+    "surveyEntry": true
+  },
+  {
+    "id": "krohnke-pyridine-synthesis",
+    "name": "krohnke-pyridine-synthesis",
+    "status": "existing",
+    "printedPage": 304,
+    "endPage": 304,
+    "surveyEntry": true
+  },
+  {
+    "id": "feist-benary-furan-synthesis",
+    "name": "feist-benary-furan-synthesis",
+    "status": "existing",
+    "printedPage": 304,
+    "endPage": 304,
+    "surveyEntry": true
+  },
+  {
+    "id": "paal-knorr-furan-synthesis",
+    "name": "paal-knorr-furan-synthesis",
+    "status": "existing",
+    "printedPage": 305,
+    "endPage": 305,
+    "surveyEntry": true
+  },
+  {
+    "id": "paal-knorr-pyrrole-synthesis",
+    "name": "paal-knorr-pyrrole-synthesis",
+    "status": "existing",
+    "printedPage": 305,
+    "endPage": 305,
+    "surveyEntry": true
+  },
+  {
+    "id": "knorr-pyrrole-synthesis",
+    "name": "knorr-pyrrole-synthesis",
+    "status": "existing",
+    "printedPage": 305,
+    "endPage": 305,
+    "surveyEntry": true
+  },
+  {
+    "id": "mundy-hantzsch-pyrrole-synthesis",
+    "name": "Hantzsch pyrrole synthesis",
+    "summary": "An alpha-halo carbonyl compound, a beta-keto ester, and ammonia or an amine combine to form a pyrrole.",
+    "status": "new",
+    "printedPage": 305,
+    "endPage": 305,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      357.0,
+      389,
+      415.0
+    ],
+    "mechanismCrop": null,
+    "notesCrop": null,
+    "applicationCrop": null
+  },
+  {
+    "id": "gewald-aminothiophene-synthesis",
+    "name": "gewald-aminothiophene-synthesis",
+    "status": "existing",
+    "printedPage": 306,
+    "endPage": 306,
+    "surveyEntry": true
+  },
+  {
+    "id": "mundy-fiesselmann-thiophene-synthesis",
+    "name": "Fiesselmann thiophene synthesis",
+    "summary": "A thioglycolate and an activated alkyne combine to form a hydroxythiophene derivative.",
+    "status": "new",
+    "printedPage": 306,
+    "endPage": 306,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      91.9,
+      389,
+      165.0
+    ],
+    "mechanismCrop": [
+      50,
+      163.5,
+      389,
+      366.0
+    ],
+    "notesCrop": null,
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-hinsberg-thiophene-synthesis",
+    "name": "Hinsberg thiophene synthesis",
+    "summary": "A 1,2-dicarbonyl compound and a thiodiacetate combine to form a thiophene.",
+    "status": "new",
+    "printedPage": 307,
+    "endPage": 307,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      67.7,
+      389,
+      113.5
+    ],
+    "mechanismCrop": [
+      50,
+      112.0,
+      389,
+      343.0
+    ],
+    "notesCrop": null,
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-volharderdmann-cyclization",
+    "name": "Volhard–Erdmann cyclization",
+    "summary": "A succinic-acid-derived substrate is converted into a thiophene using a phosphorus sulfide.",
+    "status": "new",
+    "printedPage": 307,
+    "endPage": 307,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      344.6,
+      389,
+      412.0
+    ],
+    "mechanismCrop": null,
+    "notesCrop": null,
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-baeyerdrewson-indigo-synthesis",
+    "name": "Baeyer–Drewson indigo synthesis",
+    "summary": "An ortho-nitrobenzaldehyde and acetone react under basic conditions to form indigo.",
+    "status": "new",
+    "printedPage": 307,
+    "endPage": 307,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      434.6,
+      389,
+      509.0
+    ],
+    "mechanismCrop": null,
+    "notesCrop": null,
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-bischlermohlau-indole-synthesis",
+    "name": "Bischler–Möhlau indole synthesis",
+    "summary": "An aniline reacts with an alpha-halo ketone to form an indole.",
+    "status": "new",
+    "printedPage": 308,
+    "endPage": 308,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      68.7,
+      389,
+      185.0
+    ],
+    "mechanismCrop": null,
+    "notesCrop": null,
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-furstner-indole-synthesis",
+    "name": "Fürstner indole synthesis",
+    "summary": "Low-valent titanium promotes intramolecular coupling of an oxoamide to form an indole.",
+    "status": "new",
+    "printedPage": 308,
+    "endPage": 308,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      256.3,
+      389,
+      332.0
+    ],
+    "mechanismCrop": null,
+    "notesCrop": null,
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-gassman-indole-synthesis",
+    "name": "Gassman indole synthesis",
+    "summary": "An aniline and a sulfur-containing carbonyl reagent form an indole through a rearrangement sequence.",
+    "status": "new",
+    "printedPage": 308,
+    "endPage": 308,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      332.0,
+      389,
+      408.0
+    ],
+    "mechanismCrop": [
+      50,
+      406.5,
+      389,
+      571.0
+    ],
+    "notesCrop": null,
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-hegedus-indole-synthesis",
+    "name": "Hegedus indole synthesis",
+    "summary": "Palladium-promoted cyclization of an ortho-allylaniline constructs an indole.",
+    "status": "new",
+    "printedPage": 308,
+    "endPage": 308,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      572.0,
+      389,
+      615.0
+    ],
+    "mechanismCrop": [
+      50,
+      66,
+      389,
+      246
+    ],
+    "notesCrop": null,
+    "applicationCrop": null,
+    "mechanismPage": 309
+  },
+  {
+    "id": "larock-indole-synthesis",
+    "name": "larock-indole-synthesis",
+    "status": "existing",
+    "printedPage": 309,
+    "endPage": 309,
+    "surveyEntry": true
+  },
+  {
+    "id": "mundy-leimgruberbatcho-indole-synthesis",
+    "name": "Leimgruber–Batcho indole synthesis",
+    "summary": "An ortho-nitrotoluene derivative is converted into an enamine and reductively cyclized to an indole.",
+    "status": "new",
+    "printedPage": 309,
+    "endPage": 309,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      419.0,
+      389,
+      617.0
+    ],
+    "mechanismCrop": [
+      50,
+      419.0,
+      389,
+      617.0
+    ],
+    "notesCrop": null,
+    "applicationCrop": null,
+    "mechanismCaption": "Mechanism within the source reaction scheme"
+  },
+  {
+    "id": "mundy-moriban-indole-synthesis",
+    "name": "Mori–Ban indole synthesis",
+    "summary": "Palladium-catalyzed intramolecular coupling closes an indole ring.",
+    "status": "new",
+    "printedPage": 310,
+    "endPage": 310,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      144.2,
+      389,
+      220.2
+    ],
+    "mechanismCrop": [
+      50,
+      218.7,
+      389,
+      533.0
+    ],
+    "notesCrop": null,
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-smith-indole-synthesis",
+    "name": "Smith indole synthesis",
+    "summary": "An ortho-toluidine derivative undergoes metalation and cyclization with an ester to form an indole.",
+    "status": "new",
+    "printedPage": 311,
+    "endPage": 311,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      484.9,
+      389,
+      617.0
+    ],
+    "mechanismCrop": [
+      50,
+      484.9,
+      389,
+      617.0
+    ],
+    "notesCrop": null,
+    "applicationCrop": null,
+    "mechanismCaption": "Mechanism within the source reaction scheme"
+  },
+  {
+    "id": "mundy-camps-quinoline-synthesis",
+    "name": "Camps quinoline synthesis",
+    "summary": "Base-induced cyclization of an ortho-acylamino aryl ketone gives a hydroxyquinoline.",
+    "status": "new",
+    "printedPage": 312,
+    "endPage": 312,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      237.0,
+      389,
+      320.0
+    ],
+    "mechanismCrop": null,
+    "notesCrop": null,
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-knorr-quinoline-synthesis",
+    "name": "Knorr quinoline synthesis",
+    "summary": "Acid-promoted cyclization of a beta-ketoanilide forms a hydroxyquinoline.",
+    "status": "new",
+    "printedPage": 313,
+    "endPage": 313,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      372.6,
+      389,
+      617.0
+    ],
+    "mechanismCrop": [
+      50,
+      372.6,
+      389,
+      617.0
+    ],
+    "notesCrop": null,
+    "applicationCrop": null,
+    "mechanismCaption": "Mechanism within the source reaction scheme"
+  },
+  {
+    "id": "mundy-niementowski-quinoline-synthesis",
+    "name": "Niementowski quinoline synthesis",
+    "summary": "An anthranilic acid derivative condenses with a carbonyl compound to form a hydroxyquinoline.",
+    "status": "new",
+    "printedPage": 314,
+    "endPage": 314,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      68.7,
+      389,
+      213.0
+    ],
+    "mechanismCrop": [
+      50,
+      68.7,
+      389,
+      213.0
+    ],
+    "notesCrop": null,
+    "applicationCrop": null,
+    "mechanismCaption": "Mechanism within the source reaction scheme"
+  },
+  {
+    "id": "mundy-riehm-quinoline-synthesis",
+    "name": "Riehm quinoline synthesis",
+    "summary": "An aniline and a ketone react under acidic conditions to form a quinoline derivative.",
+    "status": "new",
+    "printedPage": 314,
+    "endPage": 314,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      419.0,
+      389,
+      485.0
+    ],
+    "mechanismCrop": null,
+    "notesCrop": null,
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-schlittlermuller-reaction",
+    "name": "Schlittler–Müller reaction",
+    "summary": "Acid-catalyzed cyclization of a protected aminoacetal derivative constructs an isoquinoline.",
+    "status": "new",
+    "printedPage": 314,
+    "endPage": 314,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      484.9,
+      389,
+      552.0
+    ],
+    "mechanismCrop": null,
+    "notesCrop": null,
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-borsche-cinnoline-synthesis",
+    "name": "Borsche cinnoline synthesis",
+    "summary": "Diazotization and cyclization of an ortho-aminoaryl imine constructs a cinnoline.",
+    "status": "new",
+    "printedPage": 315,
+    "endPage": 315,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      90.9,
+      389,
+      160.2
+    ],
+    "mechanismCrop": [
+      50,
+      158.7,
+      389,
+      304.0
+    ],
+    "notesCrop": null,
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-von-richter-cinnoline-synthesis",
+    "name": "von Richter cinnoline synthesis",
+    "summary": "Cyclization of an ortho-alkynyl aryl diazonium compound constructs a cinnoline.",
+    "status": "new",
+    "printedPage": 315,
+    "endPage": 315,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      305.7,
+      389,
+      387.7
+    ],
+    "mechanismCrop": [
+      50,
+      386.2,
+      389,
+      533.0
+    ],
+    "notesCrop": null,
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-auwers-synthesis",
+    "name": "Auwers synthesis",
+    "summary": "A halogenated benzofuranone is converted into a flavonol by ring expansion.",
+    "status": "new",
+    "printedPage": 317,
+    "endPage": 317,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      66.7,
+      389,
+      212.0
+    ],
+    "mechanismCrop": [
+      50,
+      66.7,
+      389,
+      212.0
+    ],
+    "notesCrop": null,
+    "applicationCrop": null,
+    "mechanismCaption": "Mechanism within the source reaction scheme"
+  },
+  {
+    "id": "mundy-simonis-chromone-cyclization",
+    "name": "Simonis chromone cyclization",
+    "summary": "A phenol and a beta-keto ester form a chromone under dehydrating conditions.",
+    "status": "new",
+    "printedPage": 317,
+    "endPage": 317,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      280.7,
+      389,
+      347.0
+    ],
+    "mechanismCrop": null,
+    "notesCrop": null,
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-wesselymoser-rearrangement",
+    "name": "Wessely–Moser rearrangement",
+    "summary": "Acid treatment rearranges substituent positions in an oxygen-containing aromatic heterocycle.",
+    "status": "new",
+    "printedPage": 317,
+    "endPage": 317,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      346.3,
+      389,
+      500.0
+    ],
+    "mechanismCrop": [
+      50,
+      346.3,
+      389,
+      500.0
+    ],
+    "notesCrop": null,
+    "applicationCrop": null,
+    "mechanismCaption": "Mechanism within the source reaction scheme"
+  },
+  {
+    "id": "mundy-perkin-coumarin-rearrangement",
+    "name": "Perkin coumarin rearrangement",
+    "summary": "A coumarin derivative undergoes ring contraction to a benzofuran carboxylic acid.",
+    "status": "new",
+    "printedPage": 317,
+    "endPage": 317,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      499.3,
+      389,
+      617.0
+    ],
+    "mechanismCrop": null,
+    "notesCrop": null,
+    "applicationCrop": null
+  },
+  {
+    "id": "knorr-pyrazole-synthesis",
+    "name": "knorr-pyrazole-synthesis",
+    "status": "existing",
+    "printedPage": 318,
+    "endPage": 318,
+    "surveyEntry": true
+  },
+  {
+    "id": "mundy-hochcampbell-aziridine-synthesis",
+    "name": "Hoch–Campbell aziridine synthesis",
+    "summary": "An oxime reacts with a Grignard reagent to form an aziridine.",
+    "status": "new",
+    "printedPage": 318,
+    "endPage": 318,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      90.9,
+      389,
+      154.0
+    ],
+    "mechanismCrop": null,
+    "notesCrop": null,
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-brackeen-imidazole-synthesis",
+    "name": "Brackeen imidazole synthesis",
+    "summary": "An alpha-keto ester reacts with an amidine to construct an imidazole.",
+    "status": "new",
+    "printedPage": 318,
+    "endPage": 318,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      153.9,
+      389,
+      236.0
+    ],
+    "mechanismCrop": null,
+    "notesCrop": null,
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-bredereck-imidazole-synthesis",
+    "name": "Bredereck imidazole synthesis",
+    "summary": "An alpha-hydroxy carbonyl compound reacts with formamide to form an imidazole.",
+    "status": "new",
+    "printedPage": 318,
+    "endPage": 318,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      236.0,
+      389,
+      310.0
+    ],
+    "mechanismCrop": null,
+    "notesCrop": null,
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-pechmann-pyrazole-synthesis",
+    "name": "Pechmann pyrazole synthesis",
+    "summary": "A diazo compound and an alkyne combine to form a pyrazole.",
+    "status": "new",
+    "printedPage": 318,
+    "endPage": 318,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      380.3,
+      389,
+      444.0
+    ],
+    "mechanismCrop": null,
+    "notesCrop": null,
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-einhornbrunner-reaction",
+    "name": "Einhorn–Brunner reaction",
+    "summary": "A diacylamine and a hydrazine combine to form a triazole.",
+    "status": "new",
+    "printedPage": 318,
+    "endPage": 318,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      443.3,
+      389,
+      513.0
+    ],
+    "mechanismCrop": null,
+    "notesCrop": null,
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-pellizzari-reaction",
+    "name": "Pellizzari reaction",
+    "summary": "An acyl hydrazide and an amide condense to form a triazole.",
+    "status": "new",
+    "printedPage": 318,
+    "endPage": 318,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      512.0,
+      389,
+      617.0
+    ],
+    "mechanismCrop": null,
+    "notesCrop": null,
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-bernthsen-acridine-synthesis",
+    "name": "Bernthsen acridine synthesis",
+    "summary": "A diarylamine and a carboxylic acid form an acridine under Lewis-acid-promoted conditions.",
+    "status": "new",
+    "printedPage": 319,
+    "endPage": 319,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      69.6,
+      389,
+      152.0
+    ],
+    "mechanismCrop": null,
+    "notesCrop": null,
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-bischler-quinoxaline-synthesis",
+    "name": "Bischler quinoxaline synthesis",
+    "summary": "An aniline-derived carbonyl substrate is cyclized with ammonia to form a quinoxaline.",
+    "status": "new",
+    "printedPage": 319,
+    "endPage": 319,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      150.9,
+      389,
+      236.0
+    ],
+    "mechanismCrop": null,
+    "notesCrop": null,
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-gutknecht-pyrazine-synthesis",
+    "name": "Gutknecht pyrazine synthesis",
+    "summary": "Condensation and oxidation of alpha-amino carbonyl compounds form a pyrazine.",
+    "status": "new",
+    "printedPage": 319,
+    "endPage": 319,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      236.0,
+      389,
+      300.0
+    ],
+    "mechanismCrop": null,
+    "notesCrop": null,
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-pinner-triazine-synthesis",
+    "name": "Pinner triazine synthesis",
+    "summary": "An amidine reacts with an acyl chloride to construct a triazine.",
+    "status": "new",
+    "printedPage": 319,
+    "endPage": 319,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      300.0,
+      389,
+      382.0
+    ],
+    "mechanismCrop": null,
+    "notesCrop": null,
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-dornowwiehler-oxazole-synthesis",
+    "name": "Dornow–Wiehler oxazole synthesis",
+    "summary": "A nitroacetate and an aldehyde combine to form a nitrogen–oxygen heterocycle.",
+    "status": "new",
+    "printedPage": 319,
+    "endPage": 319,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      381.3,
+      389,
+      471.0
+    ],
+    "mechanismCrop": null,
+    "notesCrop": null,
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-fischer-oxazole-synthesis",
+    "name": "Fischer oxazole synthesis",
+    "summary": "A cyanohydrin reacts with an aldehyde under acidic conditions to form an oxazole.",
+    "status": "new",
+    "printedPage": 319,
+    "endPage": 319,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      470.3,
+      389,
+      617.0
+    ],
+    "mechanismCrop": null,
+    "notesCrop": null,
+    "applicationCrop": null
+  },
+  {
+    "id": "hiyama-reaction",
+    "name": "Hiyama Cross-Coupling Reaction",
+    "status": "existing",
+    "printedPage": 320,
+    "endPage": 321
+  },
+  {
+    "id": "hofmann-elimination",
+    "name": "Hofmann Elimination (Exhaustive Methylation, Degradation)",
+    "status": "existing",
+    "printedPage": 322,
+    "endPage": 323
+  },
+  {
+    "id": "mundy-hofmann-isonitrile-synthesis",
+    "name": "Hofmann isonitrile synthesis",
+    "summary": "A primary amine reacts with chloroform and base to form an isocyanide.",
+    "status": "new",
+    "printedPage": 324,
+    "endPage": 325,
+    "reactionCrop": [
+      50,
+      91.9,
+      389,
+      132.1
+    ],
+    "mechanismCrop": [
+      50,
+      130.6,
+      389,
+      258.1
+    ],
+    "notesCrop": [
+      50,
+      260.1,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "hofmann",
+    "name": "Hofmann Rearrangement",
+    "status": "existing",
+    "printedPage": 326,
+    "endPage": 327
+  },
+  {
+    "id": "hofmann-loffler-freytag-reaction-remote-functionalization",
+    "name": "Hofmann-Loffler-Freytag Reaction",
+    "status": "existing",
+    "printedPage": 328,
+    "endPage": 329
+  },
+  {
+    "id": "mundy-hofmannmartius-rearrangement",
+    "name": "Hofmann–Martius rearrangement",
+    "summary": "Heating an N-alkylaniline salt transfers an alkyl group from nitrogen to the aromatic ring.",
+    "status": "new",
+    "printedPage": 330,
+    "endPage": 331,
+    "reactionCrop": [
+      50,
+      90.4,
+      389,
+      177.5
+    ],
+    "mechanismCrop": [
+      50,
+      176.0,
+      389,
+      405.5
+    ],
+    "notesCrop": [
+      50,
+      407.5,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-hooker-reaction",
+    "name": "Hooker reaction",
+    "summary": "Oxidation and rearrangement shorten the alkyl side chain of a hydroxy-naphthoquinone.",
+    "status": "new",
+    "printedPage": 332,
+    "endPage": 333,
+    "reactionCrop": [
+      50,
+      90.9,
+      389,
+      170.8
+    ],
+    "mechanismCrop": [
+      50,
+      169.3,
+      389,
+      620
+    ],
+    "notesCrop": null,
+    "applicationCrop": null
+  },
+  {
+    "id": "horner-wadsworth-emmons-olefination",
+    "name": "Horner-Wadsworth-Emmons-Wittig Reaction",
+    "status": "existing",
+    "printedPage": 334,
+    "endPage": 335
+  },
+  {
+    "id": "houben-hoesch-reaction-synthesis",
+    "name": "Houben-Hoesch Reaction / Hoesch Reaction",
+    "status": "existing",
+    "printedPage": 336,
+    "endPage": 337
+  },
+  {
+    "id": "hunsdiecker-reaction",
+    "name": "Hunsdiecker Reaction (Borodine Reaction, Borodine-Hunsdiecker Reaction)",
+    "status": "existing",
+    "printedPage": 338,
+    "endPage": 339
+  },
+  {
+    "id": "claisen-ireland-rearrangement",
+    "name": "Ireland-Claisen Rearrangement",
+    "status": "existing",
+    "printedPage": 340,
+    "endPage": 341
+  },
+  {
+    "id": "mundy-ivanov-reaction",
+    "name": "Ivanov reaction",
+    "summary": "A dianion derived from a carboxylic acid adds to a carbonyl compound to give a beta-hydroxy acid.",
+    "status": "new",
+    "printedPage": 342,
+    "endPage": 343,
+    "reactionCrop": [
+      50,
+      91.9,
+      389,
+      163.1
+    ],
+    "mechanismCrop": [
+      50,
+      161.6,
+      389,
+      297.1
+    ],
+    "notesCrop": [
+      50,
+      299.1,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "jacobsen-katsuki-epoxidation",
+    "name": "Jacobsen-Katsuki Epoxidation",
+    "status": "existing",
+    "printedPage": 344,
+    "endPage": 345
+  },
+  {
+    "id": "japp-klingemann-reaction",
+    "name": "Japp-Klingemann Reaction",
+    "status": "existing",
+    "printedPage": 346,
+    "endPage": 347
+  },
+  {
+    "id": "mundy-johnson-polyene-cyclization",
+    "name": "Johnson polyene cyclization",
+    "summary": "Electrophilic activation of a polyene initiates a cascade that constructs a polycyclic skeleton.",
+    "status": "new",
+    "printedPage": 348,
+    "endPage": 349,
+    "reactionCrop": [
+      50,
+      91.9,
+      389,
+      256.0
+    ],
+    "mechanismCrop": [
+      50,
+      254.5,
+      389,
+      339.6
+    ],
+    "notesCrop": [
+      50,
+      341.6,
+      389,
+      408.3
+    ],
+    "applicationCrop": [
+      50,
+      410.3,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "johnson-claisen-rearrangement",
+    "name": "Johnson-Claisen Rearrangement (Johnson Orthoester",
+    "status": "existing",
+    "printedPage": 350,
+    "endPage": 351
+  },
+  {
+    "id": "jones-oxidation-oxidation-of-alcohols-by-chromium-reagents",
+    "name": "Jones Oxidation",
+    "status": "existing",
+    "printedPage": 352,
+    "endPage": 353
+  },
+  {
+    "id": "mundy-juliabruylants-rearrangement",
+    "name": "Julia–Bruylants rearrangement",
+    "summary": "Acid-promoted rearrangement of a cyclopropylcarbinol opens the cyclopropane ring to form an unsaturated product.",
+    "status": "new",
+    "printedPage": 354,
+    "endPage": 355,
+    "reactionCrop": [
+      50,
+      94.7,
+      389,
+      197.8
+    ],
+    "mechanismCrop": [
+      50,
+      196.3,
+      389,
+      329.7
+    ],
+    "notesCrop": null,
+    "applicationCrop": [
+      50,
+      331.7,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "julia-lythgoe-olefination",
+    "name": "Julia Olefination (Julia-Lythgoe Olefination)",
+    "status": "existing",
+    "printedPage": 356,
+    "endPage": 357
+  },
+  {
+    "id": "kahne-glycosidation",
+    "name": "Kahne Glycosylation",
+    "status": "existing",
+    "printedPage": 358,
+    "endPage": 359
+  },
+  {
+    "id": "keck-macrolactonization",
+    "name": "Keck Macrolactonization",
+    "status": "existing",
+    "printedPage": 360,
+    "endPage": 361
+  },
+  {
+    "id": "mundy-kennedy-oxidative-cyclization",
+    "name": "Kennedy oxidative cyclization",
+    "summary": "Oxidative cyclization of an unsaturated alcohol constructs a tetrahydrofuran ring.",
+    "status": "new",
+    "printedPage": 362,
+    "endPage": 363,
+    "reactionCrop": [
+      50,
+      92.9,
+      389,
+      159.2
+    ],
+    "mechanismCrop": [
+      50,
+      157.7,
+      389,
+      404.5
+    ],
+    "notesCrop": [
+      50,
+      406.5,
+      389,
+      452.8
+    ],
+    "applicationCrop": [
+      50,
+      454.8,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "knoevenagel-condensation",
+    "name": "Knoevenagel Condensation (Reaction)",
+    "status": "existing",
+    "printedPage": 364,
+    "endPage": 365
+  },
+  {
+    "id": "knorr-pyrrole-synthesis",
+    "name": "Knorr Pyrrole Synthesis",
+    "status": "existing",
+    "printedPage": 366,
+    "endPage": 367
+  },
+  {
+    "id": "mundy-kochhaaf-carbonylation",
+    "name": "Koch–Haaf carbonylation",
+    "summary": "An alcohol or alkene reacts with carbon monoxide under strongly acidic conditions to form a carboxylic acid.",
+    "status": "new",
+    "printedPage": 368,
+    "endPage": 369,
+    "reactionCrop": [
+      50,
+      91.9,
+      389,
+      153.4
+    ],
+    "mechanismCrop": [
+      50,
+      151.9,
+      389,
+      438.3
+    ],
+    "notesCrop": null,
+    "applicationCrop": [
+      50,
+      440.3,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "koenigs-knorr-glycosidation",
+    "name": "Koenigs-Knorr Synthesis / Reaction / Method / Glycosidation",
+    "status": "existing",
+    "printedPage": 370,
+    "endPage": 371
+  },
+  {
+    "id": "mundy-kolbe-electrolysis",
+    "name": "Kolbe electrolysis",
+    "summary": "Electrochemical decarboxylation of carboxylate salts forms radicals that couple into a carbon–carbon bond.",
+    "status": "new",
+    "printedPage": 372,
+    "endPage": 373,
+    "reactionCrop": [
+      50,
+      90.9,
+      389,
+      143.7
+    ],
+    "mechanismCrop": [
+      50,
+      142.2,
+      389,
+      434.3
+    ],
+    "notesCrop": null,
+    "applicationCrop": [
+      50,
+      436.3,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "kolbe-schmitt-reaction",
+    "name": "KolbC-Schmitt Reaction (KolbC Synthesis, Schmitt Synthesis)",
+    "status": "existing",
+    "printedPage": 374,
+    "endPage": 375
+  },
+  {
+    "id": "kornblum-oxidation",
+    "name": "Kornblum Aldehyde Synthesis",
+    "status": "existing",
+    "printedPage": 376,
+    "endPage": 377
+  },
+  {
+    "id": "mundy-kostanecki-acylation",
+    "name": "Kostanecki acylation",
+    "summary": "Acylation and cyclization of an ortho-hydroxyaryl ketone produces a chromone or coumarin.",
+    "status": "new",
+    "printedPage": 378,
+    "endPage": 379,
+    "reactionCrop": [
+      50,
+      89.5,
+      389,
+      202.8
+    ],
+    "mechanismCrop": [
+      50,
+      201.3,
+      389,
+      567.1
+    ],
+    "notesCrop": [
+      50,
+      569.1,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "krapcho-dealkoxycarbonylation-krapcho-reaction",
+    "name": "Krapcho Dealkoxycarbonylation",
+    "status": "existing",
+    "printedPage": 380,
+    "endPage": 381
+  },
+  {
+    "id": "krohnke-pyridine-synthesis",
+    "name": "Krohnke Pyridine Synthesis",
+    "status": "existing",
+    "printedPage": 382,
+    "endPage": 383
+  },
+  {
+    "id": "mundy-kucherov-reaction",
+    "name": "Kucherov reaction",
+    "summary": "Mercury-catalyzed hydration of an alkyne gives a carbonyl compound.",
+    "status": "new",
+    "printedPage": 384,
+    "endPage": 385,
+    "reactionCrop": [
+      50,
+      90.9,
+      389,
+      150.5
+    ],
+    "mechanismCrop": [
+      50,
+      149.0,
+      389,
+      304.5
+    ],
+    "notesCrop": [
+      50,
+      306.5,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "kumada-cross-coupling",
+    "name": "Kumada Coupling Reaction",
+    "status": "existing",
+    "printedPage": 386,
+    "endPage": 387
+  },
+  {
+    "id": "mundy-lemieuxjohnson-oxidation",
+    "name": "Lemieux–Johnson oxidation",
+    "summary": "Osmium tetroxide and periodate cleave an alkene into carbonyl compounds.",
+    "status": "new",
+    "printedPage": 388,
+    "endPage": 389,
+    "reactionCrop": [
+      50,
+      89.8,
+      389,
+      145.7
+    ],
+    "mechanismCrop": [
+      50,
+      144.2,
+      389,
+      298.0
+    ],
+    "notesCrop": [
+      50,
+      300.0,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "leuckartwallach-reaction",
+    "name": "Leuckart Reaction / Reductive Amination",
+    "status": "existing",
+    "printedPage": 390,
+    "endPage": 391
+  },
+  {
+    "id": "lieben-haloform-reaction",
+    "name": "Lieben Haloform (Iodoform) Reaction",
+    "status": "existing",
+    "printedPage": 392,
+    "endPage": 393
+  },
+  {
+    "id": "mundy-liebeskindsrogl-coupling",
+    "name": "Liebeskind–Srogl coupling",
+    "summary": "A thioester or related sulfur substrate couples with an organoboron reagent under palladium and copper mediation.",
+    "status": "new",
+    "printedPage": 394,
+    "endPage": 395,
+    "reactionCrop": [
+      50,
+      89.8,
+      389,
+      263.8
+    ],
+    "mechanismCrop": [
+      50,
+      262.3,
+      389,
+      426.6
+    ],
+    "notesCrop": [
+      50,
+      428.6,
+      389,
+      453.8
+    ],
+    "applicationCrop": [
+      50,
+      455.8,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "mundy-lindlar-reduction",
+    "name": "Lindlar reduction",
+    "summary": "A poisoned palladium catalyst hydrogenates an alkyne selectively to a cis alkene.",
+    "status": "new",
+    "printedPage": 396,
+    "endPage": 397,
+    "reactionCrop": [
+      50,
+      94.7,
+      389,
+      193.1
+    ],
+    "mechanismCrop": [
+      50,
+      191.6,
+      389,
+      259.2
+    ],
+    "notesCrop": [
+      50,
+      261.2,
+      389,
+      316.3
+    ],
+    "applicationCrop": [
+      50,
+      318.3,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "lossen-rearrangement",
+    "name": "Lossen Rearrangement",
+    "status": "existing",
+    "printedPage": 398,
+    "endPage": 399
+  },
+  {
+    "id": "luche-reduction",
+    "name": "Luche Reduction",
+    "status": "existing",
+    "printedPage": 400,
+    "endPage": 401
+  },
+  {
+    "id": "madelung-indole-synthesis",
+    "name": "Madelung Indole Synthesis",
+    "status": "existing",
+    "printedPage": 404,
+    "endPage": 405
+  },
+  {
+    "id": "malonic-ester-synthesis",
+    "name": "Malonic Ester Synthesis",
+    "status": "existing",
+    "printedPage": 406,
+    "endPage": 407
+  },
+  {
+    "id": "mannich-reaction",
+    "name": "Mannich Reaction",
+    "status": "existing",
+    "printedPage": 408,
+    "endPage": 409
+  },
+  {
+    "id": "mundy-marschalk-reaction",
+    "name": "Marschalk reaction",
+    "summary": "A reduced hydroxyanthraquinone reacts with an aldehyde to introduce a carbon substituent onto the aromatic framework.",
+    "status": "new",
+    "printedPage": 410,
+    "endPage": 411,
+    "reactionCrop": [
+      50,
+      93.8,
+      389,
+      175.7
+    ],
+    "mechanismCrop": [
+      50,
+      174.2,
+      389,
+      395.7
+    ],
+    "notesCrop": null,
+    "applicationCrop": [
+      50,
+      397.7,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "mundy-mcfadyenstevens-aldehyde-synthesis",
+    "name": "McFadyen–Stevens aldehyde synthesis",
+    "summary": "Base-induced decomposition of an acylsulfonylhydrazide produces an aldehyde.",
+    "status": "new",
+    "printedPage": 412,
+    "endPage": 413,
+    "reactionCrop": [
+      50,
+      91.9,
+      389,
+      162.1
+    ],
+    "mechanismCrop": [
+      50,
+      160.6,
+      389,
+      326.7
+    ],
+    "notesCrop": [
+      50,
+      328.7,
+      389,
+      432.0
+    ],
+    "applicationCrop": [
+      50,
+      434.0,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "mundy-mclafferty-rearrangement",
+    "name": "McLafferty rearrangement",
+    "summary": "A carbonyl radical cation transfers a gamma hydrogen and fragments through a six-membered arrangement.",
+    "status": "new",
+    "printedPage": 414,
+    "endPage": 415,
+    "reactionCrop": [
+      50,
+      90.9,
+      389,
+      158.2
+    ],
+    "mechanismCrop": [
+      50,
+      156.7,
+      389,
+      271.8
+    ],
+    "notesCrop": [
+      50,
+      273.8,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "mcmurry-coupling",
+    "name": "McMurry (Olefination) Reaction",
+    "status": "existing",
+    "printedPage": 416,
+    "endPage": 417
+  },
+  {
+    "id": "meerwein-ponndorf-verley-reduction",
+    "name": "Meerwein-Ponndorf-Verley Reduction",
+    "status": "existing",
+    "printedPage": 418,
+    "endPage": 419
+  },
+  {
+    "id": "mundy-meinwald-rearrangement",
+    "name": "Meinwald rearrangement",
+    "summary": "An epoxide rearranges under acid catalysis to an aldehyde or ketone.",
+    "status": "new",
+    "printedPage": 420,
+    "endPage": 421,
+    "reactionCrop": [
+      50,
+      91.9,
+      389,
+      147.5
+    ],
+    "mechanismCrop": [
+      50,
+      146.0,
+      389,
+      476.1
+    ],
+    "notesCrop": null,
+    "applicationCrop": [
+      50,
+      478.1,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "meisenheimer-rearrangement",
+    "name": "Meisenheimer Rearrangement",
+    "status": "existing",
+    "printedPage": 422,
+    "endPage": 423
+  },
+  {
+    "id": "mundy-meta-photocycloaddition-of-arenes",
+    "name": "Meta photocycloaddition of arenes",
+    "summary": "Photochemical addition of an alkene across meta positions of an aromatic ring gives a polycyclic product.",
+    "status": "new",
+    "printedPage": 424,
+    "endPage": 425,
+    "reactionCrop": [
+      50,
+      106.5,
+      389,
+      152.4
+    ],
+    "mechanismCrop": [
+      50,
+      150.9,
+      389,
+      388.9
+    ],
+    "notesCrop": [
+      50,
+      390.9,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "meyer-schuster-and-rupe-rearrangement",
+    "name": "Meyer-Schuster propargyl alcohol rearrangement",
+    "status": "existing",
+    "printedPage": 426,
+    "endPage": 427
+  },
+  {
+    "id": "michael-addition-reaction",
+    "name": "Michael Reaction",
+    "status": "existing",
+    "printedPage": 428,
+    "endPage": 429
+  },
+  {
+    "id": "mislow-evans-rearrangement",
+    "name": "Mislow-Evans Rearrangement (Evans (-Mislow) Rearrangement)",
+    "status": "existing",
+    "printedPage": 430,
+    "endPage": 431
+  },
+  {
+    "id": "mitsunobu-reaction",
+    "name": "Mitsunobu Lactonization",
+    "status": "existing",
+    "printedPage": 432,
+    "endPage": 433
+  },
+  {
+    "id": "mitsunobu-reaction",
+    "name": "Mitsunobu Reaction",
+    "status": "existing",
+    "printedPage": 434,
+    "endPage": 435
+  },
+  {
+    "id": "miyaura-boration",
+    "name": "Miyaura Boration Reaction",
+    "status": "existing",
+    "printedPage": 436,
+    "endPage": 437
+  },
+  {
+    "id": "mundy-morin-rearrangement",
+    "name": "Morin rearrangement",
+    "summary": "A penicillin sulfoxide undergoes ring expansion to a cephalosporin framework.",
+    "status": "new",
+    "printedPage": 438,
+    "endPage": 439,
+    "reactionCrop": [
+      50,
+      93.8,
+      389,
+      176.5
+    ],
+    "mechanismCrop": [
+      50,
+      175.0,
+      389,
+      395.4
+    ],
+    "notesCrop": [
+      50,
+      397.4,
+      389,
+      460.7
+    ],
+    "applicationCrop": [
+      50,
+      462.7,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "mukaiyama-aldol-reaction",
+    "name": "Mukaiyama Reaction",
+    "status": "existing",
+    "printedPage": 440,
+    "endPage": 441
+  },
+  {
+    "id": "mundy-mundy-n-acyl-lactam-rearrangement",
+    "name": "Mundy N-acyl lactam rearrangement",
+    "summary": "An N-acyl lactam undergoes a skeletal rearrangement to a carbon–carbon bonded product.",
+    "status": "new",
+    "printedPage": 442,
+    "endPage": 443,
+    "reactionCrop": [
+      50,
+      91.9,
+      389,
+      170.8
+    ],
+    "mechanismCrop": [
+      50,
+      169.3,
+      389,
+      240.9
+    ],
+    "notesCrop": [
+      50,
+      242.9,
+      389,
+      437.4
+    ],
+    "applicationCrop": [
+      50,
+      439.4,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "mundy-myerssaito-schmittel-cyclization",
+    "name": "Myers–Saito / Schmittel cyclization",
+    "summary": "An enyne-allene undergoes cyclization to a reactive diradical intermediate.",
+    "status": "new",
+    "printedPage": 444,
+    "endPage": 445,
+    "reactionCrop": [
+      50,
+      91.9,
+      389,
+      166.0
+    ],
+    "mechanismCrop": [
+      50,
+      164.5,
+      389,
+      310.5
+    ],
+    "notesCrop": [
+      50,
+      312.5,
+      389,
+      392.9
+    ],
+    "applicationCrop": [
+      50,
+      394.9,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "mundy-nametkin-rearrangement",
+    "name": "Nametkin rearrangement",
+    "summary": "A carbocation rearranges by methyl migration in a bicyclic terpene framework.",
+    "status": "new",
+    "printedPage": 446,
+    "endPage": 447,
+    "reactionCrop": [
+      50,
+      91.9,
+      389,
+      165.0
+    ],
+    "mechanismCrop": [
+      50,
+      163.5,
+      389,
+      291.1
+    ],
+    "notesCrop": [
+      50,
+      293.1,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "nazarov-cyclization",
+    "name": "Nazarov Cyclization",
+    "status": "existing",
+    "printedPage": 448,
+    "endPage": 449
+  },
+  {
+    "id": "neber-rearrangement",
+    "name": "Neber Rearrangement",
+    "status": "existing",
+    "printedPage": 450,
+    "endPage": 451
+  },
+  {
+    "id": "nef-reaction",
+    "name": "Nef Reaction",
+    "status": "existing",
+    "printedPage": 452,
+    "endPage": 453
+  },
+  {
+    "id": "negishi-cross-coupling",
+    "name": "Negishi Coupling",
+    "status": "existing",
+    "printedPage": 454,
+    "endPage": 455
+  },
+  {
+    "id": "mundy-nenitzescu-acylation",
+    "name": "Nenitzescu acylation",
+    "summary": "An alkene undergoes acylation with an acyl chloride and a Lewis acid.",
+    "status": "new",
+    "printedPage": 456,
+    "endPage": 457,
+    "reactionCrop": [
+      50,
+      91.9,
+      389,
+      156.2
+    ],
+    "mechanismCrop": [
+      50,
+      154.7,
+      389,
+      250.5
+    ],
+    "notesCrop": [
+      50,
+      252.5,
+      389,
+      279.5
+    ],
+    "applicationCrop": [
+      50,
+      281.5,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "nenitzescu-indole-synthesis",
+    "name": "Nenitzescu Indole Synthesis",
+    "status": "existing",
+    "printedPage": 458,
+    "endPage": 459
+  },
+  {
+    "id": "nicholas-reaction",
+    "name": "Nicholas Reaction",
+    "status": "existing",
+    "printedPage": 460,
+    "endPage": 461
+  },
+  {
+    "id": "mundy-niementowski-quinazoline-synthesis",
+    "name": "Niementowski quinazoline synthesis",
+    "summary": "An anthranilic acid derivative condenses with an amide to form a quinazolinone.",
+    "status": "new",
+    "printedPage": 462,
+    "endPage": 463,
+    "reactionCrop": [
+      50,
+      91.9,
+      389,
+      160.2
+    ],
+    "mechanismCrop": [
+      50,
+      158.7,
+      389,
+      284.3
+    ],
+    "notesCrop": [
+      50,
+      286.3,
+      389,
+      393.9
+    ],
+    "applicationCrop": [
+      50,
+      395.9,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "mundy-noyori-annulation",
+    "name": "Noyori annulation",
+    "summary": "An alpha,alpha-dihalo ketone and an alkene or diene form a five- or seven-membered carbocycle under reducing conditions.",
+    "status": "new",
+    "printedPage": 464,
+    "endPage": 465,
+    "reactionCrop": [
+      50,
+      94.7,
+      389,
+      214.4
+    ],
+    "mechanismCrop": [
+      50,
+      212.9,
+      389,
+      415.9
+    ],
+    "notesCrop": [
+      50,
+      417.9,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "nozaki-hiyama-kishi-reaction",
+    "name": "Nozaki-Hiyama-Kishi Reaction",
+    "status": "existing",
+    "printedPage": 466,
+    "endPage": 467
+  },
+  {
+    "id": "oppenauer-oxidation",
+    "name": "Oppenauer Oxidation",
+    "status": "existing",
+    "printedPage": 468,
+    "endPage": 469
+  },
+  {
+    "id": "overman-rearrangement",
+    "name": "Overman Rearrangement",
+    "status": "existing",
+    "printedPage": 470,
+    "endPage": 471
+  },
+  {
+    "id": "oxy-cope-rearrangement-and-anionic-oxy-cope-rearrangement",
+    "name": "Oxy-Cope Rearrangement",
+    "status": "existing",
+    "printedPage": 472,
+    "endPage": 473
+  },
+  {
+    "id": "mundy-oxymercuration-and-solvomercuration",
+    "name": "Oxymercuration and solvomercuration",
+    "summary": "An alkene reacts with a mercury(II) reagent and a nucleophilic solvent, followed by replacement of mercury by hydrogen.",
+    "status": "new",
+    "printedPage": 474,
+    "endPage": 475,
+    "reactionCrop": [
+      50,
+      90.0,
+      389,
+      165.0
+    ],
+    "mechanismCrop": [
+      50,
+      163.5,
+      389,
+      282.5
+    ],
+    "notesCrop": [
+      50,
+      284.5,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "paal-knorr-furan-synthesis",
+    "name": "Paal-Knorr Furan Synthesis",
+    "status": "existing",
+    "printedPage": 476,
+    "endPage": 477
+  },
+  {
+    "id": "parham-cyclization",
+    "name": "Parham Cyclization",
+    "status": "existing",
+    "printedPage": 478,
+    "endPage": 479
+  },
+  {
+    "id": "mundy-parikhdoering-oxidation",
+    "name": "Parikh–Doering oxidation",
+    "summary": "Sulfur trioxide–pyridine activates DMSO to oxidize an alcohol to an aldehyde or ketone.",
+    "status": "new",
+    "printedPage": 480,
+    "endPage": 481,
+    "reactionCrop": [
+      50,
+      83.2,
+      389,
+      130.2
+    ],
+    "mechanismCrop": [
+      50,
+      128.7,
+      389,
+      620
+    ],
+    "notesCrop": null,
+    "applicationCrop": null
+  },
+  {
+    "id": "passerini-multicomponent-reaction",
+    "name": "Passerini Reaction",
+    "status": "existing",
+    "printedPage": 482,
+    "endPage": 483
+  },
+  {
+    "id": "paterno-buchi-reaction",
+    "name": "Paterno-Buchi Reaction",
+    "status": "existing",
+    "printedPage": 484,
+    "endPage": 485
+  },
+  {
+    "id": "pauson-khand-reaction",
+    "name": "Pauson-Khand Cyclopentenone Annulation",
+    "status": "existing",
+    "printedPage": 486,
+    "endPage": 487
+  },
+  {
+    "id": "payne-rearrangement",
+    "name": "Payne Rearrangement",
+    "status": "existing",
+    "printedPage": 488,
+    "endPage": 489
+  },
+  {
+    "id": "von-pechmann-reaction",
+    "name": "Pechmann Condensation",
+    "status": "existing",
+    "printedPage": 490,
+    "endPage": 491
+  },
+  {
+    "id": "perkin-reaction",
+    "name": "3. acid workup -",
+    "status": "existing",
+    "printedPage": 492,
+    "endPage": 493
+  },
+  {
+    "id": "petasis-boronic-acid-mannich-reaction",
+    "name": "Petasis Reaction",
+    "status": "existing",
+    "printedPage": 494,
+    "endPage": 495
+  },
+  {
+    "id": "peterson-olefination",
+    "name": "PeterSon Olefination Reaction (Peterson Elimination, Silyl-Wittig Reaction)",
+    "status": "existing",
+    "printedPage": 496,
+    "endPage": 497
+  },
+  {
+    "id": "mundy-pfauplattner-azulene-synthesis",
+    "name": "Pfau–Plattner azulene synthesis",
+    "summary": "Dehydrogenation of a suitable bicyclic precursor generates an azulene ring system.",
+    "status": "new",
+    "printedPage": 498,
+    "endPage": 499,
+    "reactionCrop": [
+      50,
+      83.2,
+      389,
+      166.0
+    ],
+    "mechanismCrop": [
+      50,
+      164.5,
+      389,
+      332.7
+    ],
+    "notesCrop": [
+      50,
+      334.7,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-pfitzinger-reaction",
+    "name": "Pfitzinger reaction",
+    "summary": "Isatin and a carbonyl compound react under basic conditions to form a quinoline carboxylic acid.",
+    "status": "new",
+    "printedPage": 500,
+    "endPage": 501,
+    "reactionCrop": [
+      50,
+      81.2,
+      389,
+      166.0
+    ],
+    "mechanismCrop": [
+      50,
+      164.5,
+      389,
+      494.4
+    ],
+    "notesCrop": [
+      50,
+      496.4,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "pfitzner-moffatt-oxidation",
+    "name": "Pfitzner-Moffatt Oxidation",
+    "status": "existing",
+    "printedPage": 502,
+    "endPage": 503
+  },
+  {
+    "id": "mundy-pictetgams-isoquinoline-synthesis",
+    "name": "Pictet–Gams isoquinoline synthesis",
+    "summary": "Dehydrative cyclization of an acylated amino alcohol constructs an isoquinoline.",
+    "status": "new",
+    "printedPage": 504,
+    "endPage": 505,
+    "reactionCrop": [
+      50,
+      82.2,
+      389,
+      157.2
+    ],
+    "mechanismCrop": [
+      50,
+      155.7,
+      389,
+      370.5
+    ],
+    "notesCrop": [
+      50,
+      372.5,
+      389,
+      390.8
+    ],
+    "applicationCrop": [
+      50,
+      392.8,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "mundy-pictethubert-morganwalls-reaction",
+    "name": "Pictet–Hubert / Morgan–Walls reaction",
+    "summary": "Cyclodehydration of an acylated aminobiphenyl forms a phenanthridine.",
+    "status": "new",
+    "printedPage": 506,
+    "endPage": 507,
+    "reactionCrop": [
+      50,
+      87.0,
+      389,
+      183.4
+    ],
+    "mechanismCrop": [
+      50,
+      181.9,
+      389,
+      410.3
+    ],
+    "notesCrop": null,
+    "applicationCrop": [
+      50,
+      412.3,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "pictet-spengler-tetrahydroisoquinoline-synthesis",
+    "name": "Pictet-Spengler Isoquinoline Synthesis",
+    "status": "existing",
+    "printedPage": 508,
+    "endPage": 509
+  },
+  {
+    "id": "mundy-pilotyrobinson-pyrrole-synthesis",
+    "name": "Piloty–Robinson pyrrole synthesis",
+    "summary": "An azine undergoes acid-promoted rearrangement and cyclization to form a pyrrole.",
+    "status": "new",
+    "printedPage": 510,
+    "endPage": 511,
+    "reactionCrop": [
+      50,
+      83.2,
+      389,
+      154.4
+    ],
+    "mechanismCrop": [
+      50,
+      152.9,
+      389,
+      291.1
+    ],
+    "notesCrop": [
+      50,
+      293.1,
+      389,
+      379.3
+    ],
+    "applicationCrop": [
+      50,
+      381.3,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "mundy-pinacol-coupling",
+    "name": "Pinacol coupling",
+    "summary": "Reductive coupling of two carbonyl groups produces a vicinal diol.",
+    "status": "new",
+    "printedPage": 512,
+    "endPage": 513,
+    "reactionCrop": [
+      50,
+      82.2,
+      389,
+      132.1
+    ],
+    "mechanismCrop": [
+      50,
+      130.6,
+      389,
+      270.5
+    ],
+    "notesCrop": [
+      50,
+      272.5,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "pinacol",
+    "name": "Pinacol Rearrangement",
+    "status": "existing",
+    "printedPage": 514,
+    "endPage": 515
+  },
+  {
+    "id": "pinner-reaction",
+    "name": "Pinner Reaction",
+    "status": "existing",
+    "printedPage": 516,
+    "endPage": 517
+  },
+  {
+    "id": "pinnick-oxidation",
+    "name": "Pinnick Oxidation",
+    "status": "existing",
+    "printedPage": 518,
+    "endPage": 519
+  },
+  {
+    "id": "polonovski-reaction",
+    "name": "Polonovski Reaction",
+    "status": "existing",
+    "printedPage": 520,
+    "endPage": 521
+  },
+  {
+    "id": "polonovskipotier-rearrangement",
+    "name": "Polonovski-Potier Reaction",
+    "status": "existing",
+    "printedPage": 522,
+    "endPage": 523
+  },
+  {
+    "id": "mundy-bogertcook-synthesis",
+    "name": "Bogert–Cook synthesis",
+    "summary": "Acid-promoted cyclization of an aromatic cycloalkanol constructs a fused carbocyclic system.",
+    "status": "new",
+    "printedPage": 524,
+    "endPage": 524,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      81.3,
+      389,
+      171.8
+    ],
+    "mechanismCrop": [
+      50,
+      170.3,
+      389,
+      413
+    ],
+    "notesCrop": null,
+    "applicationCrop": null,
+    "aliases": "Bardhan–Sengupta phenanthrene synthesis"
+  },
+  {
+    "id": "mundy-bogert-reaction",
+    "name": "Bogert reaction",
+    "summary": "An aryl-substituted acyclic alcohol undergoes acid-promoted cyclization to a fused carbocycle.",
+    "status": "new",
+    "printedPage": 524,
+    "endPage": 524,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      411.3,
+      389,
+      617.0
+    ],
+    "mechanismCrop": null,
+    "notesCrop": null,
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-darzens-tetralin-synthesis",
+    "name": "Darzens tetralin synthesis",
+    "summary": "Acid-promoted cyclization of an aromatic alcohol constructs a tetralin framework.",
+    "status": "new",
+    "printedPage": 525,
+    "endPage": 525,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      67.7,
+      389,
+      148.5
+    ],
+    "mechanismCrop": [
+      50,
+      147.0,
+      389,
+      289.0
+    ],
+    "notesCrop": null,
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-haworth-synthesis",
+    "name": "Haworth synthesis",
+    "summary": "A sequence of acylation, reduction, and ring closure builds a fused aromatic system.",
+    "status": "new",
+    "printedPage": 525,
+    "endPage": 525,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      291.3,
+      389,
+      384.8
+    ],
+    "mechanismCrop": [
+      50,
+      383.3,
+      389,
+      615.0
+    ],
+    "notesCrop": null,
+    "applicationCrop": null
+  },
+  {
+    "id": "pomeranz-fritsch-reaction",
+    "name": "Pomeranz-Fritsch Reaction",
+    "status": "existing",
+    "printedPage": 526,
+    "endPage": 527
+  },
+  {
+    "id": "prevost-reaction",
+    "name": "PrCvost Reaction (Glycolization)",
+    "status": "existing",
+    "printedPage": 528,
+    "endPage": 529
+  },
+  {
+    "id": "prilezhaev-reaction",
+    "name": "Prilezhaev (Prileschajew) Reaction / Epoxidation",
+    "status": "existing",
+    "printedPage": 530,
+    "endPage": 531
+  },
+  {
+    "id": "prins-reaction",
+    "name": "Prins Reaction",
+    "status": "existing",
+    "printedPage": 532,
+    "endPage": 533
+  },
+  {
+    "id": "mundy-pschorr-arylation",
+    "name": "Pschorr arylation",
+    "summary": "Cyclization of an aryl diazonium species forms a new bond between aromatic carbons.",
+    "status": "new",
+    "printedPage": 534,
+    "endPage": 535,
+    "reactionCrop": [
+      50,
+      83.2,
+      389,
+      161.2
+    ],
+    "mechanismCrop": [
+      50,
+      159.7,
+      389,
+      387.0
+    ],
+    "notesCrop": [
+      50,
+      389.0,
+      389,
+      421.8
+    ],
+    "applicationCrop": [
+      50,
+      423.8,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "mundy-pudovik-reaction",
+    "name": "Pudovik reaction",
+    "summary": "A phosphorus–hydrogen reagent adds across an unsaturated bond.",
+    "status": "new",
+    "printedPage": 536,
+    "endPage": 537,
+    "reactionCrop": [
+      50,
+      85.7,
+      389,
+      153.4
+    ],
+    "mechanismCrop": [
+      50,
+      151.9,
+      389,
+      261.1
+    ],
+    "notesCrop": [
+      50,
+      263.1,
+      389,
+      281.5
+    ],
+    "applicationCrop": [
+      50,
+      283.5,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "pummerer-rearrangement",
+    "name": "Pummerer Rearrangement",
+    "status": "existing",
+    "printedPage": 538,
+    "endPage": 539
+  },
+  {
+    "id": "ramberg-backlund-rearrangement",
+    "name": "Ramberg-Backlund Olefin Synthesis",
+    "status": "existing",
+    "printedPage": 540,
+    "endPage": 541
+  },
+  {
+    "id": "mundy-reetz-alkylation",
+    "name": "Reetz alkylation",
+    "summary": "An organotitanium reagent alkylates a carbonyl compound with controlled selectivity.",
+    "status": "new",
+    "printedPage": 542,
+    "endPage": 543,
+    "reactionCrop": [
+      50,
+      92.9,
+      389,
+      192.1
+    ],
+    "mechanismCrop": [
+      50,
+      190.6,
+      389,
+      280.5
+    ],
+    "notesCrop": [
+      50,
+      282.5,
+      389,
+      437.2
+    ],
+    "applicationCrop": [
+      50,
+      439.2,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "reformatsky-reaction",
+    "name": "Reformatsky Reaction",
+    "status": "existing",
+    "printedPage": 544,
+    "endPage": 545
+  },
+  {
+    "id": "reimer-tiemann-reaction",
+    "name": "Reimer-Tiemann Reaction",
+    "status": "existing",
+    "printedPage": 546,
+    "endPage": 547
+  },
+  {
+    "id": "mundy-reisserthenze-reaction",
+    "name": "Reissert–Henze reaction",
+    "summary": "An activated aromatic N-oxide reacts with cyanide to introduce a cyano group into the heteroaromatic ring.",
+    "status": "new",
+    "printedPage": 548,
+    "endPage": 549,
+    "reactionCrop": [
+      50,
+      92.9,
+      389,
+      163.1
+    ],
+    "mechanismCrop": [
+      50,
+      161.6,
+      389,
+      271.8
+    ],
+    "notesCrop": [
+      50,
+      273.8,
+      389,
+      320.3
+    ],
+    "applicationCrop": [
+      50,
+      322.3,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "mundy-reissert-indole-synthesis",
+    "name": "Reissert indole synthesis",
+    "summary": "An ortho-nitrotoluene derivative is condensed with an oxalate and reductively cyclized to an indole.",
+    "status": "new",
+    "printedPage": 550,
+    "endPage": 551,
+    "reactionCrop": [
+      50,
+      91.9,
+      389,
+      155.4
+    ],
+    "mechanismCrop": [
+      50,
+      153.9,
+      389,
+      367.7
+    ],
+    "notesCrop": null,
+    "applicationCrop": [
+      50,
+      369.7,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "alkene-olefin-metathesis",
+    "name": "Ring Closing Metathesis (RCM)",
+    "status": "existing",
+    "printedPage": 552,
+    "endPage": 553
+  },
+  {
+    "id": "ritter",
+    "name": "Ritter Reaction",
+    "status": "existing",
+    "printedPage": 554,
+    "endPage": 555
+  },
+  {
+    "id": "robinson-annulation",
+    "name": "Robinson Annulation",
+    "status": "existing",
+    "printedPage": 556,
+    "endPage": 557
+  },
+  {
+    "id": "mundy-robinsonschopf-reaction",
+    "name": "Robinson–Schöpf reaction",
+    "summary": "A dialdehyde, an amine, and an acetonedicarboxylic acid derivative combine to build a tropinone skeleton.",
+    "status": "new",
+    "printedPage": 558,
+    "endPage": 559,
+    "reactionCrop": [
+      50,
+      91.9,
+      389,
+      185.4
+    ],
+    "mechanismCrop": [
+      50,
+      183.9,
+      389,
+      500.3
+    ],
+    "notesCrop": [
+      50,
+      502.3,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-rosenmund-reduction",
+    "name": "Rosenmund reduction",
+    "summary": "A poisoned palladium catalyst hydrogenates an acyl chloride to an aldehyde.",
+    "status": "new",
+    "printedPage": 560,
+    "endPage": 561,
+    "reactionCrop": [
+      50,
+      92.9,
+      389,
+      146.5
+    ],
+    "mechanismCrop": [
+      50,
+      145.0,
+      389,
+      210.8
+    ],
+    "notesCrop": [
+      50,
+      212.8,
+      389,
+      340.6
+    ],
+    "applicationCrop": [
+      50,
+      342.6,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "rubottom-oxidation",
+    "name": "Rubottom Oxidation",
+    "status": "existing",
+    "printedPage": 562,
+    "endPage": 563
+  },
+  {
+    "id": "meyer-schuster-and-rupe-rearrangement",
+    "name": "Rupe Rearrangement",
+    "status": "existing",
+    "printedPage": 564,
+    "endPage": 565
+  },
+  {
+    "id": "saegusa-oxidation",
+    "name": "Saegusa Oxidation",
+    "status": "existing",
+    "printedPage": 566,
+    "endPage": 567
+  },
+  {
+    "id": "sakurai-allylation",
+    "name": "Sakurai Reaction",
+    "status": "existing",
+    "printedPage": 568,
+    "endPage": 569
+  },
+  {
+    "id": "sandmeyer",
+    "name": "Sandmeyer Reaction",
+    "status": "existing",
+    "printedPage": 570,
+    "endPage": 571
+  },
+  {
+    "id": "mundy-schenck-ene-reaction",
+    "name": "Schenck ene reaction",
+    "summary": "Singlet oxygen reacts with an alkene bearing an allylic hydrogen to form an allylic hydroperoxide.",
+    "status": "new",
+    "printedPage": 572,
+    "endPage": 573,
+    "reactionCrop": [
+      50,
+      92.9,
+      389,
+      143.7
+    ],
+    "mechanismCrop": [
+      50,
+      142.2,
+      389,
+      191.5
+    ],
+    "notesCrop": [
+      50,
+      193.5,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "schmidt-reaction",
+    "name": "Schmidt Rearrangement, Schmidt Reaction",
+    "status": "existing",
+    "printedPage": 574,
+    "endPage": 575
+  },
+  {
+    "id": "mundy-schmidt-trichloroacetimidate-glycosylation",
+    "name": "Schmidt trichloroacetimidate glycosylation",
+    "summary": "An activated glycosyl trichloroacetimidate reacts with an alcohol to form a glycoside.",
+    "status": "new",
+    "printedPage": 576,
+    "endPage": 577,
+    "reactionCrop": [
+      50,
+      92.9,
+      389,
+      145.7
+    ],
+    "mechanismCrop": [
+      50,
+      144.2,
+      389,
+      404.5
+    ],
+    "notesCrop": [
+      50,
+      406.5,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-scholl-reaction",
+    "name": "Scholl reaction",
+    "summary": "Oxidative coupling joins aromatic carbon atoms to form larger aromatic ring systems.",
+    "status": "new",
+    "printedPage": 578,
+    "endPage": 579,
+    "reactionCrop": [
+      50,
+      92.9,
+      389,
+      131.2
+    ],
+    "mechanismCrop": [
+      50,
+      129.7,
+      389,
+      371.6
+    ],
+    "notesCrop": [
+      50,
+      373.6,
+      389,
+      410.3
+    ],
+    "applicationCrop": [
+      50,
+      412.3,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "schotten-baumann-reaction",
+    "name": "Schotten-Baumann Reaction",
+    "status": "existing",
+    "printedPage": 580,
+    "endPage": 581
+  },
+  {
+    "id": "mundy-schreiber-ozonolysis",
+    "name": "Schreiber ozonolysis",
+    "summary": "Ozonolysis in the presence of a nucleophile generates functionalized carbonyl products.",
+    "status": "new",
+    "printedPage": 582,
+    "endPage": 583,
+    "reactionCrop": [
+      50,
+      92.9,
+      389,
+      287.8
+    ],
+    "mechanismCrop": [
+      50,
+      286.3,
+      389,
+      427.6
+    ],
+    "notesCrop": null,
+    "applicationCrop": [
+      50,
+      429.6,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "mundy-semipinacol-rearrangement",
+    "name": "Semipinacol rearrangement",
+    "summary": "Migration next to an oxygen-bearing carbon creates a carbonyl group and a rearranged carbon skeleton.",
+    "status": "new",
+    "printedPage": 584,
+    "endPage": 585,
+    "reactionCrop": [
+      50,
+      92.9,
+      389,
+      235.7
+    ],
+    "mechanismCrop": [
+      50,
+      234.2,
+      389,
+      362.6
+    ],
+    "notesCrop": [
+      50,
+      364.6,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-semmlerwolff-reaction",
+    "name": "Semmler–Wolff reaction",
+    "summary": "An oxime of a cyclohexenone undergoes dehydration and aromatization to an aniline derivative.",
+    "status": "new",
+    "printedPage": 586,
+    "endPage": 587,
+    "reactionCrop": [
+      50,
+      92.9,
+      389,
+      162.1
+    ],
+    "mechanismCrop": [
+      50,
+      160.6,
+      389,
+      354.0
+    ],
+    "notesCrop": null,
+    "applicationCrop": [
+      50,
+      356.0,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "seyferth-gilbert-homologation",
+    "name": "Seyferth-Gilbert Homolgation",
+    "status": "existing",
+    "printedPage": 588,
+    "endPage": 589
+  },
+  {
+    "id": "bamford-stevens-shapiro-olefination",
+    "name": "Shapiro Reaction",
+    "status": "existing",
+    "printedPage": 590,
+    "endPage": 591
+  },
+  {
+    "id": "sharpless-asymmetric-aminohydroxylation",
+    "name": "Sharpless (Catalytic Asymmetric) Aminohydroxylation",
+    "status": "existing",
+    "printedPage": 592,
+    "endPage": 593
+  },
+  {
+    "id": "sharpless-asymmetric-dihydroxylation",
+    "name": "Sharpless Asymmetric Dihydroxylation",
+    "status": "existing",
+    "printedPage": 594,
+    "endPage": 595
+  },
+  {
+    "id": "sharpless-asymmetric-epoxidation",
+    "name": "Sharpless Epoxidation",
+    "status": "existing",
+    "printedPage": 596,
+    "endPage": 597
+  },
+  {
+    "id": "shi-asymmetric-epoxidation",
+    "name": "Shi (Asymmetric) Epoxidation",
+    "status": "existing",
+    "printedPage": 598,
+    "endPage": 599
+  },
+  {
+    "id": "simmons-smith-cyclopropanation",
+    "name": "Simmons-Smith Cyclopropanation",
+    "status": "existing",
+    "printedPage": 600,
+    "endPage": 601
+  },
+  {
+    "id": "skraup-and-doebner-miller-quinoline-synthesis",
+    "name": "Skraup Reaction",
+    "status": "existing",
+    "printedPage": 602,
+    "endPage": 603
+  },
+  {
+    "id": "smiles-rearrangement",
+    "name": "Smiles Rearrangement",
+    "status": "existing",
+    "printedPage": 604,
+    "endPage": 605
+  },
+  {
+    "id": "smith-tietze-multicomponent-dithiane-linchpin-coupling",
+    "name": "Smith-Tietze Coupling",
+    "status": "existing",
+    "printedPage": 606,
+    "endPage": 607
+  },
+  {
+    "id": "sommelet-hauser-rearrangement",
+    "name": "Sommelet-Hauser Rearrangement",
+    "status": "existing",
+    "printedPage": 608,
+    "endPage": 609
+  },
+  {
+    "id": "mundy-sommelet-oxidation",
+    "name": "Sommelet oxidation",
+    "summary": "A benzyl halide reacts with hexamethylenetetramine and is hydrolyzed to an aromatic aldehyde.",
+    "status": "new",
+    "printedPage": 610,
+    "endPage": 611,
+    "reactionCrop": [
+      50,
+      93.8,
+      389,
+      182.5
+    ],
+    "mechanismCrop": [
+      50,
+      181.0,
+      389,
+      440.1
+    ],
+    "notesCrop": [
+      50,
+      442.1,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "sonogashira-cross-coupling",
+    "name": "Sonogashira Coupling",
+    "status": "existing",
+    "printedPage": 612,
+    "endPage": 613
+  },
+  {
+    "id": "staudinger-reaction",
+    "name": "Staudinger Reaction",
+    "status": "existing",
+    "printedPage": 614,
+    "endPage": 615
+  },
+  {
+    "id": "stetter-reaction",
+    "name": "Stetter Reaction (Stetter 1,4-Dicarbonyl Synthesis)",
+    "status": "existing",
+    "printedPage": 616,
+    "endPage": 617
+  },
+  {
+    "id": "stevens-rearrangement",
+    "name": "Stevens Rearrangement",
+    "status": "existing",
+    "printedPage": 618,
+    "endPage": 619
+  },
+  {
+    "id": "stille-cross-coupling-migita-kosugi-stille-coupling",
+    "name": "Stille Coupling",
+    "status": "existing",
+    "printedPage": 620,
+    "endPage": 621
+  },
+  {
+    "id": "stille-carbonylative-cross-coupling",
+    "name": "Stille Carbonylative Coupling",
+    "status": "existing",
+    "printedPage": 622,
+    "endPage": 623
+  },
+  {
+    "id": "stille-kelly-coupling",
+    "name": "Stille-Kelly Reaction",
+    "status": "existing",
+    "printedPage": 624,
+    "endPage": 625
+  },
+  {
+    "id": "stobbe-condensation",
+    "name": "Stobbe Condensation",
+    "status": "existing",
+    "printedPage": 626,
+    "endPage": 627
+  },
+  {
+    "id": "stork-enamine-synthesis",
+    "name": "Stork Enamine Synthesis",
+    "status": "existing",
+    "printedPage": 628,
+    "endPage": 629
+  },
+  {
+    "id": "mundy-storkwittig-olefination",
+    "name": "Stork–Wittig olefination",
+    "summary": "A modified Wittig reagent converts an aldehyde into a vinyl halide with controlled geometry.",
+    "status": "new",
+    "printedPage": 630,
+    "endPage": 631,
+    "reactionCrop": [
+      50,
+      90.9,
+      389,
+      160.2
+    ],
+    "mechanismCrop": [
+      50,
+      158.7,
+      389,
+      304.8
+    ],
+    "notesCrop": [
+      50,
+      306.8,
+      389,
+      344.4
+    ],
+    "applicationCrop": [
+      50,
+      346.4,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "strecker-reaction",
+    "name": "Strecker Amino Acid Synthesis",
+    "status": "existing",
+    "printedPage": 632,
+    "endPage": 633
+  },
+  {
+    "id": "mundy-strecker-degradation",
+    "name": "Strecker degradation",
+    "summary": "An alpha-amino acid reacts with a dicarbonyl compound to give an aldehyde with one fewer carbon.",
+    "status": "new",
+    "printedPage": 634,
+    "endPage": 635,
+    "reactionCrop": [
+      50,
+      104.2,
+      389,
+      152.4
+    ],
+    "mechanismCrop": [
+      50,
+      150.9,
+      389,
+      375.5
+    ],
+    "notesCrop": [
+      50,
+      377.5,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "suzuki",
+    "name": "Suzuki Coupling",
+    "status": "existing",
+    "printedPage": 636,
+    "endPage": 637
+  },
+  {
+    "id": "swern",
+    "name": "Swern Oxidation",
+    "status": "existing",
+    "printedPage": 638,
+    "endPage": 639
+  },
+  {
+    "id": "takai-utimoto-olefination-takai-reaction",
+    "name": "Takai Reaction",
+    "status": "existing",
+    "printedPage": 640,
+    "endPage": 641
+  },
+  {
+    "id": "tebbe-olefination-petasis-tebbe-olefination",
+    "name": "Tebbe Reagent / Olefination",
+    "status": "existing",
+    "printedPage": 642,
+    "endPage": 643
+  },
+  {
+    "id": "mundy-thielewinter-acetoxylation",
+    "name": "Thiele–Winter acetoxylation",
+    "summary": "A quinone reacts with acetic anhydride under acid catalysis to form an acetoxylated aromatic product.",
+    "status": "new",
+    "printedPage": 644,
+    "endPage": 645,
+    "reactionCrop": [
+      50,
+      94.7,
+      389,
+      174.7
+    ],
+    "mechanismCrop": [
+      50,
+      173.2,
+      389,
+      445.0
+    ],
+    "notesCrop": [
+      50,
+      447.0,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-thorpe-thorpeziegler-reaction",
+    "name": "Thorpe / Thorpe–Ziegler reaction",
+    "summary": "Base-promoted condensation of nitriles forms an imine; intramolecular reaction gives a cyclic product.",
+    "status": "new",
+    "printedPage": 646,
+    "endPage": 647,
+    "reactionCrop": [
+      50,
+      92.9,
+      389,
+      160.2
+    ],
+    "mechanismCrop": [
+      50,
+      158.7,
+      389,
+      317.3
+    ],
+    "notesCrop": [
+      50,
+      319.3,
+      389,
+      509.4
+    ],
+    "applicationCrop": [
+      50,
+      511.4,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "demjanov-and-tiffeneau-demjanov-rearrangement",
+    "name": "Tiffeneau-Demjanov Rearrangement",
+    "status": "existing",
+    "printedPage": 648,
+    "endPage": 649
+  },
+  {
+    "id": "tishchenko-reaction",
+    "name": "Tischenko Reaction",
+    "status": "existing",
+    "printedPage": 650,
+    "endPage": 651
+  },
+  {
+    "id": "mundy-trost-trimethylenemethane-cycloaddition",
+    "name": "Trost trimethylenemethane cycloaddition",
+    "summary": "A palladium-generated trimethylenemethane equivalent adds to an unsaturated partner to construct a five-membered ring.",
+    "status": "new",
+    "printedPage": 652,
+    "endPage": 653,
+    "reactionCrop": [
+      50,
+      90.9,
+      389,
+      162.1
+    ],
+    "mechanismCrop": [
+      50,
+      160.6,
+      389,
+      348.3
+    ],
+    "notesCrop": [
+      50,
+      350.3,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-tscherniaceinhorn-reaction",
+    "name": "Tscherniac–Einhorn reaction",
+    "summary": "An N-hydroxymethyl amide alkylates an aromatic compound under acidic conditions.",
+    "status": "new",
+    "printedPage": 654,
+    "endPage": 655,
+    "reactionCrop": [
+      50,
+      90.9,
+      389,
+      172.8
+    ],
+    "mechanismCrop": [
+      50,
+      171.3,
+      389,
+      445.0
+    ],
+    "notesCrop": [
+      50,
+      447.0,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "tsuji-trost-reaction-allylation",
+    "name": "Tsuji-Trost Reaction",
+    "status": "existing",
+    "printedPage": 656,
+    "endPage": 657
+  },
+  {
+    "id": "mundy-uenostork-cyclization",
+    "name": "Ueno–Stork cyclization",
+    "summary": "Radical cyclization of a haloacetal constructs an oxygen-containing ring.",
+    "status": "new",
+    "printedPage": 658,
+    "endPage": 659,
+    "reactionCrop": [
+      50,
+      90.9,
+      389,
+      155.4
+    ],
+    "mechanismCrop": [
+      50,
+      153.9,
+      389,
+      357.9
+    ],
+    "notesCrop": null,
+    "applicationCrop": [
+      50,
+      359.9,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "ugi-multicomponent-reaction",
+    "name": "Ugi Reaction",
+    "status": "existing",
+    "printedPage": 660,
+    "endPage": 661
+  },
+  {
+    "id": "ullmann-reaction-coupling-biaryl-synthesis",
+    "name": "Ullmann Coupling Reaction",
+    "status": "existing",
+    "printedPage": 662,
+    "endPage": 663
+  },
+  {
+    "id": "ullmann-biaryl-ether-and-biaryl-amine-synthesis-condensation",
+    "name": "Ullmann Ether Synthesis",
+    "status": "existing",
+    "printedPage": 664,
+    "endPage": 665
+  },
+  {
+    "id": "mundy-upjohn-dihydroxylation",
+    "name": "Upjohn dihydroxylation",
+    "summary": "Catalytic osmium tetroxide with a co-oxidant converts an alkene into a syn vicinal diol.",
+    "status": "new",
+    "printedPage": 666,
+    "endPage": 667,
+    "reactionCrop": [
+      50,
+      91.9,
+      389,
+      161.2
+    ],
+    "mechanismCrop": [
+      50,
+      159.7,
+      389,
+      271.9
+    ],
+    "notesCrop": [
+      50,
+      273.9,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "vilsmeier-haack-formylation",
+    "name": "Vilsmeier-Haack Reaction",
+    "status": "existing",
+    "printedPage": 668,
+    "endPage": 669
+  },
+  {
+    "id": "vinylcyclopropane-cyclopentene-rearrangement",
+    "name": "Vinylcyclopropane-Cyclopentene Rearrangement",
+    "status": "existing",
+    "printedPage": 670,
+    "endPage": 671
+  },
+  {
+    "id": "von-braun-reaction",
+    "name": "von Braun Reaction",
+    "status": "existing",
+    "printedPage": 672,
+    "endPage": 673
+  },
+  {
+    "id": "mundy-von-richter-reaction",
+    "name": "von Richter reaction",
+    "summary": "Cyanide converts an aromatic nitro compound into a carboxylic acid with substitution at an adjacent position.",
+    "status": "new",
+    "printedPage": 674,
+    "endPage": 675,
+    "reactionCrop": [
+      50,
+      91.9,
+      389,
+      163.1
+    ],
+    "mechanismCrop": [
+      50,
+      161.6,
+      389,
+      620
+    ],
+    "notesCrop": null,
+    "applicationCrop": null
+  },
+  {
+    "id": "wacker-oxidation",
+    "name": "Wacker Oxidation Reaction",
+    "status": "existing",
+    "printedPage": 676,
+    "endPage": 677
+  },
+  {
+    "id": "wagner-meerwein-rearrangement",
+    "name": "Wagner-Meerwein Rearrangement",
+    "status": "existing",
+    "printedPage": 678,
+    "endPage": 679
+  },
+  {
+    "id": "mundy-watanabeconlon-transvinylation",
+    "name": "Watanabe–Conlon transvinylation",
+    "summary": "A vinyl group is transferred from a vinyl donor to an alcohol under catalysis.",
+    "status": "new",
+    "printedPage": 680,
+    "endPage": 681,
+    "reactionCrop": [
+      50,
+      90.0,
+      389,
+      143.7
+    ],
+    "mechanismCrop": [
+      50,
+      142.2,
+      389,
+      340.6
+    ],
+    "notesCrop": [
+      50,
+      342.6,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-weiss-reaction",
+    "name": "Weiss reaction",
+    "summary": "A 1,2-dicarbonyl compound and an acetonedicarboxylate combine to form a bicyclic diketone.",
+    "status": "new",
+    "printedPage": 682,
+    "endPage": 683,
+    "reactionCrop": [
+      50,
+      91.9,
+      389,
+      175.7
+    ],
+    "mechanismCrop": [
+      50,
+      174.2,
+      389,
+      532.1
+    ],
+    "notesCrop": [
+      50,
+      534.1,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "wharton-olefin-synthesis-wharton-transposition",
+    "name": "Wharton Olefination",
+    "status": "existing",
+    "printedPage": 684,
+    "endPage": 685
+  },
+  {
+    "id": "mundy-wichterle-reaction",
+    "name": "Wichterle reaction",
+    "summary": "An enolate reacts with a chlorinated alkene as part of a ring-forming sequence.",
+    "status": "new",
+    "printedPage": 686,
+    "endPage": 687,
+    "reactionCrop": [
+      50,
+      90.9,
+      389,
+      196.8
+    ],
+    "mechanismCrop": [
+      50,
+      195.3,
+      389,
+      397.7
+    ],
+    "notesCrop": [
+      50,
+      399.7,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-widmanstoermer-synthesis",
+    "name": "Widman–Stoermer synthesis",
+    "summary": "Cyclization of an ortho-substituted aryl diazonium compound constructs a cinnoline.",
+    "status": "new",
+    "printedPage": 688,
+    "endPage": 689,
+    "reactionCrop": [
+      50,
+      90.9,
+      389,
+      159.2
+    ],
+    "mechanismCrop": [
+      50,
+      157.7,
+      389,
+      439.4
+    ],
+    "notesCrop": [
+      50,
+      441.4,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-willgerodtkindler-reaction",
+    "name": "Willgerodt–Kindler reaction",
+    "summary": "A carbonyl compound reacts with sulfur and an amine to form a terminal thioamide derivative.",
+    "status": "new",
+    "printedPage": 690,
+    "endPage": 691,
+    "reactionCrop": [
+      50,
+      90.9,
+      389,
+      147.5
+    ],
+    "mechanismCrop": [
+      50,
+      146.0,
+      389,
+      620
+    ],
+    "notesCrop": null,
+    "applicationCrop": null
+  },
+  {
+    "id": "williamson",
+    "name": "Williamson Ether Synthesis",
+    "status": "existing",
+    "printedPage": 692,
+    "endPage": 693
+  },
+  {
+    "id": "mundy-wittig-indole-synthesis",
+    "name": "Wittig indole synthesis",
+    "summary": "An intramolecular Wittig reaction closes an indole ring.",
+    "status": "new",
+    "printedPage": 694,
+    "endPage": 695,
+    "reactionCrop": [
+      50,
+      90.9,
+      389,
+      176.5
+    ],
+    "mechanismCrop": [
+      50,
+      175.0,
+      389,
+      325.1
+    ],
+    "notesCrop": null,
+    "applicationCrop": [
+      50,
+      327.1,
+      389,
+      620
+    ]
+  },
+  {
+    "id": "wittig",
+    "name": "Wittig Reaction (Wittig Olefination Reaction)",
+    "status": "existing",
+    "printedPage": 696,
+    "endPage": 697
+  },
+  {
+    "id": "wittig-1-2-and-2-3-rearrangement",
+    "name": "[ 1,2] - Wi ttig Rearrangement",
+    "status": "existing",
+    "printedPage": 698,
+    "endPage": 699
+  },
+  {
+    "id": "wittig-1-2-and-2-3-rearrangement",
+    "name": "[2,3]-Wittig Rearrangement",
+    "status": "existing",
+    "printedPage": 700,
+    "endPage": 701
+  },
+  {
+    "id": "wolff-rearrangement",
+    "name": "Wolff Rearrangement",
+    "status": "existing",
+    "printedPage": 702,
+    "endPage": 703
+  },
+  {
+    "id": "wolff",
+    "name": "Wolff-Kishner Reduction",
+    "status": "existing",
+    "printedPage": 704,
+    "endPage": 705
+  },
+  {
+    "id": "mundy-woodward-cis-hydroxylation",
+    "name": "Woodward cis hydroxylation",
+    "summary": "Iodine and silver acetate in wet acetic acid convert an alkene into a cis diol after hydrolysis.",
+    "status": "new",
+    "printedPage": 706,
+    "endPage": 707,
+    "reactionCrop": [
+      50,
+      91.9,
+      389,
+      164.1
+    ],
+    "mechanismCrop": [
+      50,
+      162.6,
+      389,
+      413.2
+    ],
+    "notesCrop": [
+      50,
+      415.2,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "wurtz-coupling",
+    "name": "Wurtz (Coupling) Reaction and Related Reactions",
+    "status": "existing",
+    "printedPage": 708,
+    "endPage": 709
+  },
+  {
+    "id": "yamaguchi-macrolactonization",
+    "name": "Yamaguchi Esterification / Reagent",
+    "status": "existing",
+    "printedPage": 710,
+    "endPage": 711
+  },
+  {
+    "id": "mundy-yamamoto-esterification",
+    "name": "Yamamoto esterification",
+    "summary": "Scandium triflate catalyzes ester formation from an alcohol and an acid anhydride.",
+    "status": "new",
+    "printedPage": 712,
+    "endPage": 713,
+    "reactionCrop": [
+      50,
+      90.9,
+      389,
+      167.8
+    ],
+    "mechanismCrop": [
+      50,
+      166.3,
+      389,
+      233.2
+    ],
+    "notesCrop": [
+      50,
+      235.2,
+      389,
+      620
+    ],
+    "applicationCrop": null
+  },
+  {
+    "id": "mundy-kulinkovich-reaction",
+    "name": "Kulinkovich reaction",
+    "summary": "An ester and a Grignard reagent react with a titanium catalyst to form a cyclopropanol.",
+    "status": "new",
+    "printedPage": 287,
+    "endPage": 287,
+    "surveyEntry": true,
+    "reactionCrop": [
+      50,
+      158,
+      389,
+      227
+    ],
+    "mechanismCrop": [
+      50,
+      158,
+      389,
+      227
+    ],
+    "notesCrop": null,
+    "applicationCrop": [
+      50,
+      228,
+      389,
+      369
+    ],
+    "mechanismCaption": "Mechanism within the source reaction scheme"
+  }
+]

@@ -6,13 +6,14 @@
   <meta name="theme-color" content="#ffffff">
   <meta name="description" content="Named reaction quizzes, a searchable reaction library, and practice statistics.">
   <title>Named Reaction Database</title>
-  <link rel="stylesheet" href="assets/styles.css?v=20261010-solid-chevrons">
+  <link rel="stylesheet" href="assets/styles.css?v=20261026-mundy">
   <script src="assets/reactions.js" defer></script>
   <script src="assets/book-data.js" defer></script>
   <script src="assets/book-sections.js" defer></script>
   <script src="assets/flashcard-figures.js?v=20261010-books-final" defer></script>
-  <script src="assets/li-data.js?v=20261010-books-final" defer></script>
-  <script src="assets/app.js?v=20261010-solid-chevrons" defer></script>
+  <script src="assets/li-data.js?v=20261026-li-mechanisms" defer></script>
+  <script src="assets/mundy-data.js?v=20261026-mundy" defer></script>
+  <script src="assets/app.js?v=20261026-mundy" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -20,6 +21,7 @@
     <nav aria-label="Main navigation">
       <a href="#dashboard" data-page="dashboard" class="nav-item active">Home</a>
       <a href="#library" data-page="library" class="nav-item">Reactions</a>
+      <a href="#reagents" data-page="reagents" class="nav-item">Reagents</a>
       <a href="#practice" data-page="practice" class="nav-item">Practice</a>
       <a href="#flashcards" data-page="flashcards" class="nav-item">Flashcards</a>
       <a href="#statistics" data-page="statistics" class="nav-item">Statistics</a>
@@ -29,7 +31,7 @@
   <div class="content-layout">
     <aside class="category-sidebar" aria-label="Book and category selection">
       <label class="book-filter" for="book-filter">Book<select id="book-filter"></select></label>
-      <p class="sidebar-note">Shared reactions appear under both books.</p>
+      <p class="sidebar-note">Shared reactions appear under each book that covers them.</p>
       <details open>
         <summary>Categories</summary>
         <p class="sidebar-note">Filter reactions, quizzes, and flashcards.</p>
@@ -42,6 +44,7 @@
   <footer><span>Name Reaction Database / Organic chemistry</span><span class="local-status">Progress saved in this browser.</span></footer>
 <dialog id="quiz-dialog" aria-labelledby="quiz-title"></dialog>
 <dialog id="reaction-dialog" aria-labelledby="reaction-title"></dialog>
+<dialog id="reagent-dialog" aria-labelledby="reagent-title"></dialog>
 <dialog id="flashcard-dialog" aria-labelledby="flashcard-title"></dialog>
 <div id="toast" role="status"></div>
 </body>

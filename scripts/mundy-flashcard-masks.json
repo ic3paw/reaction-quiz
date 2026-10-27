@@ -1,0 +1,4573 @@
+{
+  "mundy-acyloin-rearrangement": {
+    "source": "assets/mundy/mundy-acyloin-rearrangement-reaction.png",
+    "image": "assets/flashcards/mundy-acyloin-rearrangement-0443bb58b226.png",
+    "width": 1017,
+    "height": 192,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-adamantane-rearrangement-schleyer-adamantization": {
+    "source": "assets/mundy/mundy-adamantane-rearrangement-schleyer-adamantization-reaction.png",
+    "image": "assets/flashcards/mundy-adamantane-rearrangement-schleyer-adamantization-8241a6f28bfb.png",
+    "width": 1017,
+    "height": 180,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-arensvan-dorp-aldehyde-synthesis": {
+    "source": "assets/mundy/mundy-arensvan-dorp-aldehyde-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-arensvan-dorp-aldehyde-synthesis-fe62d7ea8cd4.png",
+    "width": 1017,
+    "height": 391,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Arens-van",
+        "rect": [
+          17,
+          0,
+          135,
+          38
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Dorp",
+        "rect": [
+          151,
+          0,
+          71,
+          38
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Arens",
+        "rect": [
+          12,
+          3,
+          143,
+          40
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Dorp",
+        "rect": [
+          152,
+          4,
+          70,
+          38
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-bodrouxchichibabin-aldehyde-synthesis": {
+    "source": "assets/mundy/mundy-bodrouxchichibabin-aldehyde-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-bodrouxchichibabin-aldehyde-synthesis-d9952f2de88a.png",
+    "width": 1017,
+    "height": 524,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Bodrozu-Chichibabin",
+        "rect": [
+          17,
+          0,
+          275,
+          39
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Bodroux",
+        "rect": [
+          15,
+          3,
+          279,
+          40
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Chichibabin",
+        "rect": [
+          15,
+          3,
+          279,
+          40
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-albrightgoldman-oxidation": {
+    "source": "assets/mundy/mundy-albrightgoldman-oxidation-reaction.png",
+    "image": "assets/flashcards/mundy-albrightgoldman-oxidation-a094d3859bd4.png",
+    "width": 1017,
+    "height": 400,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Albright-Goldman",
+        "rect": [
+          124,
+          7,
+          235,
+          40
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Albrieht-Goldman",
+        "rect": [
+          501,
+          7,
+          234,
+          40
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Albright",
+        "rect": [
+          122,
+          3,
+          241,
+          48
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Goldman",
+        "rect": [
+          122,
+          3,
+          241,
+          48
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Albright",
+        "rect": [
+          502,
+          4,
+          236,
+          46
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Goldman",
+        "rect": [
+          502,
+          4,
+          236,
+          46
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Reagent",
+        "rect": [
+          737,
+          3,
+          108,
+          48
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-onodera-oxidation": {
+    "source": "assets/mundy/mundy-onodera-oxidation-reaction.png",
+    "image": "assets/flashcards/mundy-onodera-oxidation-a4ec3cd352de.png",
+    "width": 1017,
+    "height": 451,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Onodera",
+        "rect": [
+          124,
+          0,
+          114,
+          38
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Onodera",
+        "rect": [
+          119,
+          2,
+          124,
+          37
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-etard-reaction": {
+    "source": "assets/mundy/mundy-etard-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-etard-reaction-69a7e30fb2ea.png",
+    "width": 1017,
+    "height": 424,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Etard",
+        "rect": [
+          15,
+          4,
+          80,
+          39
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-fukuyama-reduction": {
+    "source": "assets/mundy/mundy-fukuyama-reduction-reaction.png",
+    "image": "assets/flashcards/mundy-fukuyama-reduction-51ea45945391.png",
+    "width": 1017,
+    "height": 531,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Fukuyama",
+        "rect": [
+          15,
+          0,
+          142,
+          40
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Fukuyama",
+        "rect": [
+          12,
+          3,
+          146,
+          40
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-ganem-oxidation": {
+    "source": "assets/mundy/mundy-ganem-oxidation-reaction.png",
+    "image": "assets/flashcards/mundy-ganem-oxidation-ce9894abb5e8.png",
+    "width": 1017,
+    "height": 382,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Ganem",
+        "rect": [
+          18,
+          0,
+          97,
+          39
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Ganem",
+        "rect": [
+          15,
+          2,
+          101,
+          37
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-grundmann-aldehyde-synthesis": {
+    "source": "assets/mundy/mundy-grundmann-aldehyde-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-grundmann-aldehyde-synthesis-a361636b2eb0.png",
+    "width": 1017,
+    "height": 367,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Grundmann",
+        "rect": [
+          19,
+          0,
+          160,
+          38
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Grundmann",
+        "rect": [
+          15,
+          3,
+          162,
+          40
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-krohnke-aldehyde-synthesis": {
+    "source": "assets/mundy/mundy-krohnke-aldehyde-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-krohnke-aldehyde-synthesis-2f29ea70586c.png",
+    "width": 1017,
+    "height": 677,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Kröhnke",
+        "rect": [
+          15,
+          3,
+          122,
+          45
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-meyers-aldehyde-synthesis": {
+    "source": "assets/mundy/mundy-meyers-aldehyde-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-meyers-aldehyde-synthesis-4c9c4d0a652d.png",
+    "width": 1017,
+    "height": 652,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Meyers",
+        "rect": [
+          18,
+          2,
+          99,
+          39
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-reissert-aldehyde-synthesis": {
+    "source": "assets/mundy/mundy-reissert-aldehyde-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-reissert-aldehyde-synthesis-5771ec6a689f.png",
+    "width": 1017,
+    "height": 958,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Reissert",
+        "rect": [
+          15,
+          7,
+          106,
+          40
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "(Grosheintz-Fischer-Reissert",
+        "rect": [
+          238,
+          7,
+          365,
+          40
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Reissert",
+        "rect": [
+          12,
+          2,
+          111,
+          46
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Fischer",
+        "rect": [
+          235,
+          2,
+          368,
+          45
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Reissert",
+        "rect": [
+          235,
+          2,
+          368,
+          45
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-sonnmuller-method": {
+    "source": "assets/mundy/mundy-sonnmuller-method-reaction.png",
+    "image": "assets/flashcards/mundy-sonnmuller-method-7485b328eb9a.png",
+    "width": 1017,
+    "height": 367,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Sonn-Muller",
+        "rect": [
+          16,
+          0,
+          165,
+          40
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Sonn",
+        "rect": [
+          15,
+          2,
+          170,
+          37
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Muller",
+        "rect": [
+          15,
+          2,
+          170,
+          37
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-alderrickert-reaction": {
+    "source": "assets/mundy/mundy-alderrickert-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-alderrickert-reaction-d1434550d55a.png",
+    "width": 1017,
+    "height": 200,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-algarflynnoyamada-reaction": {
+    "source": "assets/mundy/mundy-algarflynnoyamada-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-algarflynnoyamada-reaction-8acaec15b9bf.png",
+    "width": 1017,
+    "height": 260,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-allanrobinson-reaction": {
+    "source": "assets/mundy/mundy-allanrobinson-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-allanrobinson-reaction-58e7f7cc1078.png",
+    "width": 1017,
+    "height": 215,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-delepine-reaction": {
+    "source": "assets/mundy/mundy-delepine-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-delepine-reaction-d8c7b9cd17ea.png",
+    "width": 1017,
+    "height": 173,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Delépine",
+        "rect": [
+          15,
+          3,
+          120,
+          42
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-orton-rearrangement": {
+    "source": "assets/mundy/mundy-orton-rearrangement-reaction.png",
+    "image": "assets/flashcards/mundy-orton-rearrangement-3923d6e6bd47.png",
+    "width": 1017,
+    "height": 295,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Orton",
+        "rect": [
+          72,
+          0,
+          80,
+          40
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Orton",
+        "rect": [
+          67,
+          3,
+          87,
+          40
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-reillyhickinbottom-rearrangement": {
+    "source": "assets/mundy/mundy-reillyhickinbottom-rearrangement-reaction.png",
+    "image": "assets/flashcards/mundy-reillyhickinbottom-rearrangement-ab18329149ba.png",
+    "width": 1017,
+    "height": 576,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "ReiCCy-Hickinbottom",
+        "rect": [
+          70,
+          0,
+          258,
+          38
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Hoffmann-Martius",
+        "rect": [
+          171,
+          31,
+          195,
+          34
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Reilly",
+        "rect": [
+          67,
+          2,
+          260,
+          43
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Hickinbottom",
+        "rect": [
+          67,
+          2,
+          260,
+          43
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Hoffmann",
+        "rect": [
+          170,
+          38,
+          200,
+          29
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Martius",
+        "rect": [
+          170,
+          38,
+          200,
+          29
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-forsterdecker-method": {
+    "source": "assets/mundy/mundy-forsterdecker-method-reaction.png",
+    "image": "assets/flashcards/mundy-forsterdecker-method-f848b9dc51e7.png",
+    "width": 1017,
+    "height": 661,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Forster",
+        "rect": [
+          20,
+          2,
+          101,
+          41
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "(Forster-Decker",
+        "rect": [
+          236,
+          2,
+          210,
+          41
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Forster",
+        "rect": [
+          18,
+          3,
+          103,
+          42
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Forster",
+        "rect": [
+          232,
+          3,
+          208,
+          42
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Decker",
+        "rect": [
+          232,
+          3,
+          208,
+          42
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Schiff",
+        "rect": [
+          368,
+          374,
+          74,
+          31
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-fukuyama-amine-synthesis": {
+    "source": "assets/mundy/mundy-fukuyama-amine-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-fukuyama-amine-synthesis-cbadc36a0240.png",
+    "width": 1017,
+    "height": 486,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Fukuyama",
+        "rect": [
+          18,
+          4,
+          146,
+          39
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-gabrielcolman-rearrangement": {
+    "source": "assets/mundy/mundy-gabrielcolman-rearrangement-reaction.png",
+    "image": "assets/flashcards/mundy-gabrielcolman-rearrangement-31cc83b9c9f4.png",
+    "width": 1017,
+    "height": 258,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Gabriel-Colman",
+        "rect": [
+          18,
+          0,
+          206,
+          36
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Gabriel",
+        "rect": [
+          12,
+          2,
+          213,
+          36
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Colman",
+        "rect": [
+          12,
+          2,
+          213,
+          36
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-gabrielmarckwald-ethylenimine-synthesis": {
+    "source": "assets/mundy/mundy-gabrielmarckwald-ethylenimine-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-gabrielmarckwald-ethylenimine-synthesis-eedb5d9134db.png",
+    "width": 1017,
+    "height": 204,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Gabriel",
+        "rect": [
+          15,
+          2,
+          102,
+          40
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Marckwald",
+        "rect": [
+          115,
+          2,
+          178,
+          39
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-schweizer-allylamine-synthesis": {
+    "source": "assets/mundy/mundy-schweizer-allylamine-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-schweizer-allylamine-synthesis-df50170980ab.png",
+    "width": 1017,
+    "height": 775,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Schweizer",
+        "rect": [
+          14,
+          0,
+          131,
+          40
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Ally1",
+        "rect": [
+          145,
+          0,
+          70,
+          40
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Gabriel",
+        "rect": [
+          246,
+          34,
+          81,
+          34
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Schweizer",
+        "rect": [
+          12,
+          2,
+          139,
+          40
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Allyl",
+        "rect": [
+          148,
+          3,
+          66,
+          39
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Gabriel",
+        "rect": [
+          242,
+          37,
+          85,
+          33
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Wittig",
+        "rect": [
+          365,
+          37,
+          69,
+          33
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-voigt-amination": {
+    "source": "assets/mundy/mundy-voigt-amination-reaction.png",
+    "image": "assets/flashcards/mundy-voigt-amination-c904cb02ce02.png",
+    "width": 1017,
+    "height": 696,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Voight",
+        "rect": [
+          19,
+          0,
+          89,
+          40
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Voight",
+        "rect": [
+          15,
+          3,
+          91,
+          40
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-andersen-sulfoxide-synthesis": {
+    "source": "assets/mundy/mundy-andersen-sulfoxide-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-andersen-sulfoxide-synthesis-14b3f64c3f50.png",
+    "width": 1017,
+    "height": 292,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-appel-reaction": {
+    "source": "assets/mundy/mundy-appel-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-appel-reaction-d56c4338c03a.png",
+    "width": 1017,
+    "height": 232,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-bamberger-rearrangement": {
+    "source": "assets/mundy/mundy-bamberger-rearrangement-reaction.png",
+    "image": "assets/flashcards/mundy-bamberger-rearrangement-3838ff093fb7.png",
+    "width": 1017,
+    "height": 192,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-barbierwieland-degradation": {
+    "source": "assets/mundy/mundy-barbierwieland-degradation-reaction.png",
+    "image": "assets/flashcards/mundy-barbierwieland-degradation-8a0a17268ed4.png",
+    "width": 1017,
+    "height": 209,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-bartonzard-pyrrole-synthesis": {
+    "source": "assets/mundy/mundy-bartonzard-pyrrole-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-bartonzard-pyrrole-synthesis-cf2d83978df4.png",
+    "width": 1017,
+    "height": 253,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Barton,",
+        "rect": [
+          97,
+          166,
+          78,
+          34
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Zard,",
+        "rect": [
+          225,
+          166,
+          58,
+          34
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Barton,",
+        "rect": [
+          97,
+          194,
+          78,
+          34
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Zard,",
+        "rect": [
+          339,
+          194,
+          58,
+          34
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Barton",
+        "rect": [
+          96,
+          166,
+          81,
+          44
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Zard",
+        "rect": [
+          231,
+          166,
+          57,
+          44
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Barton",
+        "rect": [
+          98,
+          192,
+          81,
+          38
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Zard",
+        "rect": [
+          338,
+          194,
+          62,
+          38
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-baudisch-reaction": {
+    "source": "assets/mundy/mundy-baudisch-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-baudisch-reaction-be90d1b27911.png",
+    "width": 1017,
+    "height": 206,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-bechamp-reduction": {
+    "source": "assets/mundy/mundy-bechamp-reduction-reaction.png",
+    "image": "assets/flashcards/mundy-bechamp-reduction-6e0d8044da84.png",
+    "width": 1017,
+    "height": 215,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-beirut-reaction": {
+    "source": "assets/mundy/mundy-beirut-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-beirut-reaction-e5d2756d82a4.png",
+    "width": 1017,
+    "height": 212,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-benzidine-rearrangement": {
+    "source": "assets/mundy/mundy-benzidine-rearrangement-reaction.png",
+    "image": "assets/flashcards/mundy-benzidine-rearrangement-1a913769d729.png",
+    "width": 1017,
+    "height": 211,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-blaise-reaction": {
+    "source": "assets/mundy/mundy-blaise-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-blaise-reaction-9e55b7228336.png",
+    "width": 1017,
+    "height": 189,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "workup",
+        "rect": [
+          248,
+          96,
+          80,
+          35
+        ],
+        "detection": "pdf"
+      }
+    ]
+  },
+  "mundy-blanc-chloromethylation": {
+    "source": "assets/mundy/mundy-blanc-chloromethylation-reaction.png",
+    "image": "assets/flashcards/mundy-blanc-chloromethylation-020c8308738a.png",
+    "width": 1017,
+    "height": 173,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-blanc-cyclization": {
+    "source": "assets/mundy/mundy-blanc-cyclization-reaction.png",
+    "image": "assets/flashcards/mundy-blanc-cyclization-03c6c4526f78.png",
+    "width": 1017,
+    "height": 203,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-boord-olefin-synthesis": {
+    "source": "assets/mundy/mundy-boord-olefin-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-boord-olefin-synthesis-e1d59f833a10.png",
+    "width": 1017,
+    "height": 196,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-borch-reduction": {
+    "source": "assets/mundy/mundy-borch-reduction-reaction.png",
+    "image": "assets/flashcards/mundy-borch-reduction-587ebd75e498.png",
+    "width": 1017,
+    "height": 203,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-borschedrechsel-cyclization": {
+    "source": "assets/mundy/mundy-borschedrechsel-cyclization-reaction.png",
+    "image": "assets/flashcards/mundy-borschedrechsel-cyclization-aa8219ecbe1a.png",
+    "width": 1017,
+    "height": 241,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-bouveault-aldehyde-synthesis": {
+    "source": "assets/mundy/mundy-bouveault-aldehyde-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-bouveault-aldehyde-synthesis-e157c5b2e050.png",
+    "width": 1017,
+    "height": 200,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-bouveaultblanc-reduction": {
+    "source": "assets/mundy/mundy-bouveaultblanc-reduction-reaction.png",
+    "image": "assets/flashcards/mundy-bouveaultblanc-reduction-e175a655fcb7.png",
+    "width": 1017,
+    "height": 165,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-boylandsims-oxidation": {
+    "source": "assets/mundy/mundy-boylandsims-oxidation-reaction.png",
+    "image": "assets/flashcards/mundy-boylandsims-oxidation-e7f588ab23ff.png",
+    "width": 1017,
+    "height": 203,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-bradsher-reaction": {
+    "source": "assets/mundy/mundy-bradsher-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-bradsher-reaction-9505fb813a53.png",
+    "width": 1017,
+    "height": 241,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-bucherer-reaction": {
+    "source": "assets/mundy/mundy-bucherer-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-bucherer-reaction-9b2e696f11fc.png",
+    "width": 1017,
+    "height": 311,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-cargill-rearrangement": {
+    "source": "assets/mundy/mundy-cargill-rearrangement-reaction.png",
+    "image": "assets/flashcards/mundy-cargill-rearrangement-6b355394915c.png",
+    "width": 1017,
+    "height": 220,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-chan-alkyne-reduction": {
+    "source": "assets/mundy/mundy-chan-alkyne-reduction-reaction.png",
+    "image": "assets/flashcards/mundy-chan-alkyne-reduction-f83e2e9cb5ad.png",
+    "width": 1017,
+    "height": 247,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Propargyl",
+        "rect": [
+          10,
+          153,
+          101,
+          34
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "alcohol",
+        "rect": [
+          111,
+          153,
+          76,
+          34
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Propargyl",
+        "rect": [
+          9,
+          151,
+          105,
+          42
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "alcohol",
+        "rect": [
+          111,
+          151,
+          79,
+          43
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-claisenarnold-reaction": {
+    "source": "assets/mundy/mundy-claisenarnold-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-claisenarnold-reaction-ff8810714970.png",
+    "width": 1017,
+    "height": 282,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Claisen-A",
+        "rect": [
+          21,
+          1,
+          107,
+          34
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "allyl",
+        "rect": [
+          276,
+          27,
+          49,
+          35
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Claisen",
+        "rect": [
+          18,
+          2,
+          162,
+          34
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Arnold",
+        "rect": [
+          18,
+          2,
+          162,
+          34
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "allyl",
+        "rect": [
+          272,
+          29,
+          54,
+          35
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-daubendietsche-rearrangement": {
+    "source": "assets/mundy/mundy-daubendietsche-rearrangement-reaction.png",
+    "image": "assets/flashcards/mundy-daubendietsche-rearrangement-d24c3601e7ac.png",
+    "width": 1017,
+    "height": 235,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Dauben-Dietsche",
+        "rect": [
+          14,
+          4,
+          181,
+          33
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Dauben",
+        "rect": [
+          14,
+          3,
+          178,
+          34
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Dietsche",
+        "rect": [
+          14,
+          3,
+          178,
+          34
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-denmark-rearrangement": {
+    "source": "assets/mundy/mundy-denmark-rearrangement-reaction.png",
+    "image": "assets/flashcards/mundy-denmark-rearrangement-5334b97c5464.png",
+    "width": 1017,
+    "height": 261,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Denmark",
+        "rect": [
+          11,
+          0,
+          102,
+          34
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "phenyl",
+        "rect": [
+          313,
+          27,
+          71,
+          35
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "ally1",
+        "rect": [
+          577,
+          27,
+          53,
+          35
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "ethers.",
+        "rect": [
+          680,
+          27,
+          70,
+          35
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Denmark",
+        "rect": [
+          9,
+          2,
+          104,
+          37
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Claisen",
+        "rect": [
+          53,
+          29,
+          83,
+          35
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "phenyl",
+        "rect": [
+          310,
+          29,
+          76,
+          35
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "allyl",
+        "rect": [
+          575,
+          29,
+          54,
+          35
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "ethers",
+        "rect": [
+          680,
+          28,
+          72,
+          37
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-marbetsaucy-reaction": {
+    "source": "assets/mundy/mundy-marbetsaucy-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-marbetsaucy-reaction-e33ac0c509e8.png",
+    "width": 1017,
+    "height": 699,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Marbet-Saucy",
+        "rect": [
+          8,
+          0,
+          149,
+          34
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "ether",
+        "rect": [
+          88,
+          28,
+          57,
+          34
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "allyl",
+        "rect": [
+          183,
+          28,
+          49,
+          34
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "alcohol",
+        "rect": [
+          231,
+          28,
+          77,
+          34
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "allyl",
+        "rect": [
+          736,
+          28,
+          49,
+          34
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "ether",
+        "rect": [
+          839,
+          28,
+          55,
+          34
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Marbet",
+        "rect": [
+          6,
+          3,
+          153,
+          34
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Saucy",
+        "rect": [
+          6,
+          3,
+          153,
+          34
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "ether",
+        "rect": [
+          89,
+          30,
+          54,
+          35
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "allyl",
+        "rect": [
+          179,
+          30,
+          55,
+          35
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "alcohol",
+        "rect": [
+          230,
+          30,
+          76,
+          35
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "allyl",
+        "rect": [
+          734,
+          30,
+          54,
+          35
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "ether",
+        "rect": [
+          839,
+          30,
+          54,
+          35
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-azo-cope-rearrangement": {
+    "source": "assets/mundy/mundy-azo-cope-rearrangement-reaction.png",
+    "image": "assets/flashcards/mundy-azo-cope-rearrangement-5acd83a86e7b.png",
+    "width": 1017,
+    "height": 207,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Azo-Cope",
+        "rect": [
+          15,
+          0,
+          125,
+          38
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Cope",
+        "rect": [
+          17,
+          202,
+          70,
+          5
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Cope",
+        "rect": [
+          12,
+          3,
+          130,
+          36
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-collman-carbonylation": {
+    "source": "assets/mundy/mundy-collman-carbonylation-reaction.png",
+    "image": "assets/flashcards/mundy-collman-carbonylation-8aafe36b9dea.png",
+    "width": 1017,
+    "height": 415,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Collman",
+        "rect": [
+          145,
+          111,
+          94,
+          34
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Reagent",
+        "rect": [
+          251,
+          111,
+          89,
+          34
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Collman",
+        "rect": [
+          142,
+          110,
+          112,
+          40
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Reagent",
+        "rect": [
+          251,
+          111,
+          90,
+          39
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-conradlimpach-reaction": {
+    "source": "assets/mundy/mundy-conradlimpach-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-conradlimpach-reaction-e41e8d7a0f80.png",
+    "width": 1017,
+    "height": 212,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-coreygilmanganem-oxidation": {
+    "source": "assets/mundy/mundy-coreygilmanganem-oxidation-reaction.png",
+    "image": "assets/flashcards/mundy-coreygilmanganem-oxidation-ce855146b719.png",
+    "width": 1017,
+    "height": 171,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-coreyhouseposnerwhitesides-reaction": {
+    "source": "assets/mundy/mundy-coreyhouseposnerwhitesides-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-coreyhouseposnerwhitesides-reaction-4392fd962841.png",
+    "width": 1017,
+    "height": 290,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-coreylink-reaction": {
+    "source": "assets/mundy/mundy-coreylink-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-coreylink-reaction-71ad61a6caee.png",
+    "width": 1017,
+    "height": 160,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-coreyseebach-reaction": {
+    "source": "assets/mundy/mundy-coreyseebach-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-coreyseebach-reaction-ead7ce87a8a4.png",
+    "width": 1017,
+    "height": 209,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-doebner-reaction": {
+    "source": "assets/mundy/mundy-doebner-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-doebner-reaction-33fd809e4edb.png",
+    "width": 1017,
+    "height": 209,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-dondoni-homologation": {
+    "source": "assets/mundy/mundy-dondoni-homologation-reaction.png",
+    "image": "assets/flashcards/mundy-dondoni-homologation-f25e7f4758b5.png",
+    "width": 1017,
+    "height": 173,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "workup",
+        "rect": [
+          174,
+          136,
+          83,
+          34
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-dowdbeckwith-ring-expansion": {
+    "source": "assets/mundy/mundy-dowdbeckwith-ring-expansion-reaction.png",
+    "image": "assets/flashcards/mundy-dowdbeckwith-ring-expansion-a25ff7d90b66.png",
+    "width": 1017,
+    "height": 215,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-doylekirmse-reaction": {
+    "source": "assets/mundy/mundy-doylekirmse-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-doylekirmse-reaction-397880c4eac5.png",
+    "width": 1017,
+    "height": 177,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-duff-reaction": {
+    "source": "assets/mundy/mundy-duff-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-duff-reaction-bc1f3ad222a8.png",
+    "width": 1017,
+    "height": 344,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-eschenmoser-coupling": {
+    "source": "assets/mundy/mundy-eschenmoser-coupling-reaction.png",
+    "image": "assets/flashcards/mundy-eschenmoser-coupling-fff2062cc0b5.png",
+    "width": 1017,
+    "height": 203,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-evanstishchenko-reaction": {
+    "source": "assets/mundy/mundy-evanstishchenko-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-evanstishchenko-reaction-cbcfe5ab71f5.png",
+    "width": 1017,
+    "height": 235,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-fischerhepp-rearrangement": {
+    "source": "assets/mundy/mundy-fischerhepp-rearrangement-reaction.png",
+    "image": "assets/flashcards/mundy-fischerhepp-rearrangement-0fb87a57b2dd.png",
+    "width": 1017,
+    "height": 232,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-fraterseebach-alkylation": {
+    "source": "assets/mundy/mundy-fraterseebach-alkylation-reaction.png",
+    "image": "assets/flashcards/mundy-fraterseebach-alkylation-47b6b430005b.png",
+    "width": 1017,
+    "height": 273,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-fritschbuttenbergwiechell-rearrangement": {
+    "source": "assets/mundy/mundy-fritschbuttenbergwiechell-rearrangement-reaction.png",
+    "image": "assets/flashcards/mundy-fritschbuttenbergwiechell-rearrangement-17d7a047ad85.png",
+    "width": 1017,
+    "height": 157,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-gabrielcromwell-reaction": {
+    "source": "assets/mundy/mundy-gabrielcromwell-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-gabrielcromwell-reaction-80cbbb1565ce.png",
+    "width": 1017,
+    "height": 177,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-gareggsamuelsson-reaction": {
+    "source": "assets/mundy/mundy-gareggsamuelsson-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-gareggsamuelsson-reaction-d268784be915.png",
+    "width": 1017,
+    "height": 168,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-garstspencer-furan-annulation": {
+    "source": "assets/mundy/mundy-garstspencer-furan-annulation-reaction.png",
+    "image": "assets/flashcards/mundy-garstspencer-furan-annulation-05d5decc6647.png",
+    "width": 1017,
+    "height": 194,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-gribble-indole-reduction": {
+    "source": "assets/mundy/mundy-gribble-indole-reduction-reaction.png",
+    "image": "assets/flashcards/mundy-gribble-indole-reduction-6a624b2e1870.png",
+    "width": 1017,
+    "height": 250,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Gribble,",
+        "rect": [
+          81,
+          159,
+          85,
+          34
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Johnson,",
+        "rect": [
+          679,
+          159,
+          91,
+          34
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Gribble",
+        "rect": [
+          80,
+          159,
+          87,
+          37
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Johnson",
+        "rect": [
+          679,
+          159,
+          93,
+          37
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-griecosharpless-elimination": {
+    "source": "assets/mundy/mundy-griecosharpless-elimination-reaction.png",
+    "image": "assets/flashcards/mundy-griecosharpless-elimination-541c33688b97.png",
+    "width": 1017,
+    "height": 220,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-benary-reaction": {
+    "source": "assets/mundy/mundy-benary-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-benary-reaction-47f87c68c3cf.png",
+    "width": 1017,
+    "height": 336,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Benary",
+        "rect": [
+          12,
+          3,
+          103,
+          39
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-bodroux-reaction": {
+    "source": "assets/mundy/mundy-bodroux-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-bodroux-reaction-210dddd38dbd.png",
+    "width": 1017,
+    "height": 312,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Bodroux",
+        "rect": [
+          14,
+          0,
+          116,
+          38
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Bodroux",
+        "rect": [
+          12,
+          3,
+          120,
+          34
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-dzhemilev-reaction": {
+    "source": "assets/mundy/mundy-dzhemilev-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-dzhemilev-reaction-ec97a223a1b0.png",
+    "width": 1017,
+    "height": 156,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Dzhemilev",
+        "rect": [
+          13,
+          0,
+          137,
+          41
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Dzhemilev",
+        "rect": [
+          12,
+          2,
+          138,
+          39
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-hallerbauer-reaction": {
+    "source": "assets/mundy/mundy-hallerbauer-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-hallerbauer-reaction-dba185106383.png",
+    "width": 1017,
+    "height": 212,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-hassbender-reaction": {
+    "source": "assets/mundy/mundy-hassbender-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-hassbender-reaction-6ca9ec7d62f8.png",
+    "width": 1017,
+    "height": 177,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-guareschithorpe-condensation": {
+    "source": "assets/mundy/mundy-guareschithorpe-condensation-reaction.png",
+    "image": "assets/flashcards/mundy-guareschithorpe-condensation-b37fc86f8e23.png",
+    "width": 1017,
+    "height": 324,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Guareschi-",
+        "rect": [
+          10,
+          4,
+          149,
+          40
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Thorpe",
+        "rect": [
+          148,
+          4,
+          98,
+          40
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Guareschi",
+        "rect": [
+          6,
+          3,
+          238,
+          42
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Thorpe",
+        "rect": [
+          6,
+          3,
+          238,
+          42
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-hantzsch-pyrrole-synthesis": {
+    "source": "assets/mundy/mundy-hantzsch-pyrrole-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-hantzsch-pyrrole-synthesis-6a4ba6b3225c.png",
+    "width": 1017,
+    "height": 174,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Hantzsch",
+        "rect": [
+          6,
+          3,
+          129,
+          42
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-fiesselmann-thiophene-synthesis": {
+    "source": "assets/mundy/mundy-fiesselmann-thiophene-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-fiesselmann-thiophene-synthesis-8bbc8a42e7d7.png",
+    "width": 1017,
+    "height": 220,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Fiesselmann",
+        "rect": [
+          12,
+          2,
+          166,
+          40
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Fiesselmann",
+        "rect": [
+          12,
+          3,
+          168,
+          43
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-hinsberg-thiophene-synthesis": {
+    "source": "assets/mundy/mundy-hinsberg-thiophene-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-hinsberg-thiophene-synthesis-c0fd1323aa10.png",
+    "width": 1017,
+    "height": 138,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Hinsberg",
+        "rect": [
+          17,
+          1,
+          122,
+          40
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Hinsberg",
+        "rect": [
+          15,
+          3,
+          125,
+          42
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-volharderdmann-cyclization": {
+    "source": "assets/mundy/mundy-volharderdmann-cyclization-reaction.png",
+    "image": "assets/flashcards/mundy-volharderdmann-cyclization-a9b71139c84f.png",
+    "width": 1017,
+    "height": 203,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Vollhard-Erdmann",
+        "rect": [
+          22,
+          2,
+          245,
+          40
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Vollhard",
+        "rect": [
+          18,
+          3,
+          247,
+          42
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Erdmann",
+        "rect": [
+          18,
+          3,
+          247,
+          42
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-baeyerdrewson-indigo-synthesis": {
+    "source": "assets/mundy/mundy-baeyerdrewson-indigo-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-baeyerdrewson-indigo-synthesis-1a432f5ff69b.png",
+    "width": 1017,
+    "height": 224,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Baeyer-Drewson",
+        "rect": [
+          18,
+          0,
+          214,
+          41
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Baeyer",
+        "rect": [
+          15,
+          3,
+          217,
+          42
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Drewson",
+        "rect": [
+          15,
+          3,
+          217,
+          42
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-bischlermohlau-indole-synthesis": {
+    "source": "assets/mundy/mundy-bischlermohlau-indole-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-bischlermohlau-indole-synthesis-8e897408dfd8.png",
+    "width": 1017,
+    "height": 349,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Bischler-Mohlau",
+        "rect": [
+          17,
+          0,
+          218,
+          40
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Bischler",
+        "rect": [
+          15,
+          2,
+          220,
+          37
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Möhlau",
+        "rect": [
+          15,
+          2,
+          220,
+          37
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-furstner-indole-synthesis": {
+    "source": "assets/mundy/mundy-furstner-indole-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-furstner-indole-synthesis-bff096bf2afb.png",
+    "width": 1017,
+    "height": 228,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Furstner",
+        "rect": [
+          19,
+          0,
+          117,
+          39
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Furstner",
+        "rect": [
+          15,
+          3,
+          123,
+          37
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "McMurry",
+        "rect": [
+          252,
+          41,
+          120,
+          37
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-gassman-indole-synthesis": {
+    "source": "assets/mundy/mundy-gassman-indole-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-gassman-indole-synthesis-e10fb3f8f9df.png",
+    "width": 1017,
+    "height": 228,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Gassman",
+        "rect": [
+          19,
+          0,
+          122,
+          39
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Gassman",
+        "rect": [
+          18,
+          2,
+          122,
+          40
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-hegedus-indole-synthesis": {
+    "source": "assets/mundy/mundy-hegedus-indole-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-hegedus-indole-synthesis-9dc73deb482a.png",
+    "width": 1017,
+    "height": 129,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Hegedus",
+        "rect": [
+          17,
+          0,
+          116,
+          37
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Hegedus",
+        "rect": [
+          15,
+          2,
+          118,
+          40
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-leimgruberbatcho-indole-synthesis": {
+    "source": "assets/mundy/mundy-leimgruberbatcho-indole-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-leimgruberbatcho-indole-synthesis-d31e6a2d8901.png",
+    "width": 1017,
+    "height": 594,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Leimgruber-Batcho",
+        "rect": [
+          18,
+          0,
+          252,
+          38
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "enamine.",
+        "rect": [
+          702,
+          242,
+          93,
+          34
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Leimgruber",
+        "rect": [
+          15,
+          3,
+          254,
+          39
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Batcho",
+        "rect": [
+          15,
+          3,
+          254,
+          39
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "enamine",
+        "rect": [
+          702,
+          244,
+          93,
+          35
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "enamine",
+        "rect": [
+          531,
+          555,
+          156,
+          33
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-moriban-indole-synthesis": {
+    "source": "assets/mundy/mundy-moriban-indole-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-moriban-indole-synthesis-778f86bdbac5.png",
+    "width": 1017,
+    "height": 229,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Mori-Ban",
+        "rect": [
+          17,
+          0,
+          130,
+          39
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Mori",
+        "rect": [
+          15,
+          3,
+          134,
+          39
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-smith-indole-synthesis": {
+    "source": "assets/mundy/mundy-smith-indole-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-smith-indole-synthesis-fd9c6bf803a9.png",
+    "width": 1017,
+    "height": 397,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Smith",
+        "rect": [
+          15,
+          0,
+          80,
+          37
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Smith",
+        "rect": [
+          12,
+          3,
+          83,
+          37
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-camps-quinoline-synthesis": {
+    "source": "assets/mundy/mundy-camps-quinoline-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-camps-quinoline-synthesis-777c622a3180.png",
+    "width": 1017,
+    "height": 249,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Camps",
+        "rect": [
+          18,
+          2,
+          92,
+          40
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Camps",
+        "rect": [
+          15,
+          3,
+          98,
+          42
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-knorr-quinoline-synthesis": {
+    "source": "assets/mundy/mundy-knorr-quinoline-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-knorr-quinoline-synthesis-eea564bf4735.png",
+    "width": 1017,
+    "height": 734,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Knorr",
+        "rect": [
+          15,
+          3,
+          85,
+          42
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-niementowski-quinoline-synthesis": {
+    "source": "assets/mundy/mundy-niementowski-quinoline-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-niementowski-quinoline-synthesis-3420f205cbd9.png",
+    "width": 1017,
+    "height": 433,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Niementowski",
+        "rect": [
+          14,
+          0,
+          180,
+          39
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "imine-enamine",
+        "rect": [
+          603,
+          65,
+          149,
+          35
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Niementowski",
+        "rect": [
+          12,
+          2,
+          187,
+          40
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "enamine",
+        "rect": [
+          600,
+          66,
+          152,
+          46
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-riehm-quinoline-synthesis": {
+    "source": "assets/mundy/mundy-riehm-quinoline-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-riehm-quinoline-synthesis-b711ccb8524f.png",
+    "width": 1017,
+    "height": 198,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Riehm",
+        "rect": [
+          16,
+          0,
+          89,
+          38
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Riehm",
+        "rect": [
+          15,
+          3,
+          90,
+          39
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-schlittlermuller-reaction": {
+    "source": "assets/mundy/mundy-schlittlermuller-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-schlittlermuller-reaction-23f33ace251b.png",
+    "width": 1017,
+    "height": 202,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Schlittler-Muller",
+        "rect": [
+          16,
+          0,
+          213,
+          39
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Pomeranz-Fritsch",
+        "rect": [
+          597,
+          0,
+          230,
+          39
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Schlittler",
+        "rect": [
+          15,
+          3,
+          218,
+          40
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Müller",
+        "rect": [
+          15,
+          3,
+          218,
+          40
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Pomeranz",
+        "rect": [
+          595,
+          4,
+          234,
+          38
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Fritsch",
+        "rect": [
+          595,
+          4,
+          234,
+          38
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-borsche-cinnoline-synthesis": {
+    "source": "assets/mundy/mundy-borsche-cinnoline-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-borsche-cinnoline-synthesis-330c52056648.png",
+    "width": 1017,
+    "height": 209,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Borsche",
+        "rect": [
+          15,
+          0,
+          108,
+          40
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Borsche",
+        "rect": [
+          12,
+          3,
+          115,
+          39
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-von-richter-cinnoline-synthesis": {
+    "source": "assets/mundy/mundy-von-richter-cinnoline-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-von-richter-cinnoline-synthesis-261bc7c49d9a.png",
+    "width": 1017,
+    "height": 247,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Richter",
+        "rect": [
+          67,
+          0,
+          98,
+          38
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Richter",
+        "rect": [
+          64,
+          2,
+          101,
+          55
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-auwers-synthesis": {
+    "source": "assets/mundy/mundy-auwers-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-auwers-synthesis-33f67e090acc.png",
+    "width": 1017,
+    "height": 436,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Auwers",
+        "rect": [
+          16,
+          3,
+          103,
+          41
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Auwers",
+        "rect": [
+          15,
+          3,
+          103,
+          42
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-simonis-chromone-cyclization": {
+    "source": "assets/mundy/mundy-simonis-chromone-cyclization-reaction.png",
+    "image": "assets/flashcards/mundy-simonis-chromone-cyclization-4c0845429c3c.png",
+    "width": 1017,
+    "height": 199,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Simonis",
+        "rect": [
+          17,
+          0,
+          109,
+          38
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Chromone",
+        "rect": [
+          125,
+          0,
+          139,
+          38
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Simonis",
+        "rect": [
+          15,
+          2,
+          110,
+          39
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Chromone",
+        "rect": [
+          123,
+          2,
+          138,
+          40
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-wesselymoser-rearrangement": {
+    "source": "assets/mundy/mundy-wesselymoser-rearrangement-reaction.png",
+    "image": "assets/flashcards/mundy-wesselymoser-rearrangement-2930f70629d8.png",
+    "width": 1017,
+    "height": 462,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Wessely-Moser",
+        "rect": [
+          21,
+          0,
+          198,
+          40
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Wessely",
+        "rect": [
+          18,
+          4,
+          194,
+          39
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Moser",
+        "rect": [
+          18,
+          4,
+          194,
+          39
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-perkin-coumarin-rearrangement": {
+    "source": "assets/mundy/mundy-perkin-coumarin-rearrangement-reaction.png",
+    "image": "assets/flashcards/mundy-perkin-coumarin-rearrangement-c93669888670.png",
+    "width": 1017,
+    "height": 354,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Perkin",
+        "rect": [
+          18,
+          1,
+          92,
+          41
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "(Coumarin-BenZo",
+        "rect": [
+          308,
+          1,
+          229,
+          41
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Perkin",
+        "rect": [
+          15,
+          4,
+          94,
+          42
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Coumarin",
+        "rect": [
+          308,
+          4,
+          300,
+          41
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-hochcampbell-aziridine-synthesis": {
+    "source": "assets/mundy/mundy-hochcampbell-aziridine-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-hochcampbell-aziridine-synthesis-d71c185bf5be.png",
+    "width": 1017,
+    "height": 190,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Hoch-Campbell",
+        "rect": [
+          17,
+          2,
+          203,
+          40
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Aziridine",
+        "rect": [
+          217,
+          2,
+          121,
+          40
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Hoch",
+        "rect": [
+          15,
+          3,
+          207,
+          39
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Campbell",
+        "rect": [
+          15,
+          3,
+          207,
+          39
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Aziridine",
+        "rect": [
+          219,
+          4,
+          122,
+          38
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-brackeen-imidazole-synthesis": {
+    "source": "assets/mundy/mundy-brackeen-imidazole-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-brackeen-imidazole-synthesis-acbd06063061.png",
+    "width": 1017,
+    "height": 247,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Brackeen",
+        "rect": [
+          17,
+          0,
+          126,
+          40
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Brackeen",
+        "rect": [
+          15,
+          3,
+          127,
+          40
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-bredereck-imidazole-synthesis": {
+    "source": "assets/mundy/mundy-bredereck-imidazole-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-bredereck-imidazole-synthesis-9ca261bd2cf1.png",
+    "width": 1017,
+    "height": 222,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Bredereck",
+        "rect": [
+          18,
+          0,
+          134,
+          39
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Bredereck",
+        "rect": [
+          15,
+          2,
+          137,
+          37
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-pechmann-pyrazole-synthesis": {
+    "source": "assets/mundy/mundy-pechmann-pyrazole-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-pechmann-pyrazole-synthesis-0781b7436a58.png",
+    "width": 1017,
+    "height": 192,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Pechmann",
+        "rect": [
+          18,
+          0,
+          140,
+          40
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Einhorn-Brunner",
+        "rect": [
+          18,
+          187,
+          229,
+          5
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Pechmann",
+        "rect": [
+          15,
+          3,
+          147,
+          40
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-einhornbrunner-reaction": {
+    "source": "assets/mundy/mundy-einhornbrunner-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-einhornbrunner-reaction-fbdc2e0c29e4.png",
+    "width": 1017,
+    "height": 210,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Einhorn-Brunner",
+        "rect": [
+          18,
+          0,
+          229,
+          38
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Pellizzari",
+        "rect": [
+          19,
+          206,
+          122,
+          4
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Einhorn",
+        "rect": [
+          15,
+          3,
+          234,
+          34
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Brunner",
+        "rect": [
+          15,
+          3,
+          234,
+          34
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-pellizzari-reaction": {
+    "source": "assets/mundy/mundy-pellizzari-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-pellizzari-reaction-2ef4866bb0da.png",
+    "width": 1017,
+    "height": 315,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Pellizzari",
+        "rect": [
+          19,
+          0,
+          122,
+          39
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Pellizzari",
+        "rect": [
+          18,
+          3,
+          126,
+          36
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-bernthsen-acridine-synthesis": {
+    "source": "assets/mundy/mundy-bernthsen-acridine-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-bernthsen-acridine-synthesis-c95fe9b7f5bf.png",
+    "width": 1017,
+    "height": 248,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Bernthsen",
+        "rect": [
+          17,
+          0,
+          135,
+          40
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Bernthsen",
+        "rect": [
+          15,
+          3,
+          141,
+          37
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-bischler-quinoxaline-synthesis": {
+    "source": "assets/mundy/mundy-bischler-quinoxaline-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-bischler-quinoxaline-synthesis-923ccfab6cee.png",
+    "width": 1017,
+    "height": 256,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Bischler",
+        "rect": [
+          19,
+          3,
+          111,
+          40
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Bischler",
+        "rect": [
+          15,
+          3,
+          115,
+          39
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-gutknecht-pyrazine-synthesis": {
+    "source": "assets/mundy/mundy-gutknecht-pyrazine-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-gutknecht-pyrazine-synthesis-88f685597f1b.png",
+    "width": 1017,
+    "height": 192,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Gutknecht",
+        "rect": [
+          24,
+          2,
+          137,
+          40
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Gutknecht",
+        "rect": [
+          20,
+          3,
+          143,
+          42
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-pinner-triazine-synthesis": {
+    "source": "assets/mundy/mundy-pinner-triazine-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-pinner-triazine-synthesis-37d5a720a82a.png",
+    "width": 1017,
+    "height": 246,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Pinner",
+        "rect": [
+          24,
+          3,
+          92,
+          40
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Pinner",
+        "rect": [
+          20,
+          3,
+          99,
+          41
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "shi",
+        "rect": [
+          551,
+          107,
+          59,
+          56
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-dornowwiehler-oxazole-synthesis": {
+    "source": "assets/mundy/mundy-dornowwiehler-oxazole-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-dornowwiehler-oxazole-synthesis-71d48ee87012.png",
+    "width": 1017,
+    "height": 270,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Dornow-",
+        "rect": [
+          28,
+          5,
+          117,
+          40
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Wiehler",
+        "rect": [
+          141,
+          5,
+          105,
+          40
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Dornow",
+        "rect": [
+          26,
+          4,
+          217,
+          41
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Wiehler",
+        "rect": [
+          26,
+          4,
+          217,
+          41
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-fischer-oxazole-synthesis": {
+    "source": "assets/mundy/mundy-fischer-oxazole-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-fischer-oxazole-synthesis-a8e61cbf2936.png",
+    "width": 1017,
+    "height": 441,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Fischer",
+        "rect": [
+          31,
+          5,
+          102,
+          40
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Fischer",
+        "rect": [
+          29,
+          4,
+          108,
+          42
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "ether",
+        "rect": [
+          365,
+          94,
+          63,
+          30
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-hofmann-isonitrile-synthesis": {
+    "source": "assets/mundy/mundy-hofmann-isonitrile-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-hofmann-isonitrile-synthesis-d743d92363e8.png",
+    "width": 1017,
+    "height": 122,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-hofmannmartius-rearrangement": {
+    "source": "assets/mundy/mundy-hofmannmartius-rearrangement-reaction.png",
+    "image": "assets/flashcards/mundy-hofmannmartius-rearrangement-83a0733dec87.png",
+    "width": 1017,
+    "height": 262,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-hooker-reaction": {
+    "source": "assets/mundy/mundy-hooker-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-hooker-reaction-9b7542f628a1.png",
+    "width": 1017,
+    "height": 241,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-ivanov-reaction": {
+    "source": "assets/mundy/mundy-ivanov-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-ivanov-reaction-e43ed6decb12.png",
+    "width": 1017,
+    "height": 215,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Ivanov",
+        "rect": [
+          348,
+          153,
+          76,
+          35
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "reagent",
+        "rect": [
+          422,
+          153,
+          82,
+          35
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Ivanov",
+        "rect": [
+          342,
+          154,
+          80,
+          37
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "reagent",
+        "rect": [
+          418,
+          154,
+          88,
+          36
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-johnson-polyene-cyclization": {
+    "source": "assets/mundy/mundy-johnson-polyene-cyclization-reaction.png",
+    "image": "assets/flashcards/mundy-johnson-polyene-cyclization-48114184f59f.png",
+    "width": 1017,
+    "height": 493,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Johnson,",
+        "rect": [
+          77,
+          434,
+          91,
+          34
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Johnson",
+        "rect": [
+          76,
+          436,
+          94,
+          35
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-juliabruylants-rearrangement": {
+    "source": "assets/mundy/mundy-juliabruylants-rearrangement-reaction.png",
+    "image": "assets/flashcards/mundy-juliabruylants-rearrangement-6d038eb18d1a.png",
+    "width": 1017,
+    "height": 310,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-kennedy-oxidative-cyclization": {
+    "source": "assets/mundy/mundy-kennedy-oxidative-cyclization-reaction.png",
+    "image": "assets/flashcards/mundy-kennedy-oxidative-cyclization-4932b58c1161.png",
+    "width": 1017,
+    "height": 200,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-kochhaaf-carbonylation": {
+    "source": "assets/mundy/mundy-kochhaaf-carbonylation-reaction.png",
+    "image": "assets/flashcards/mundy-kochhaaf-carbonylation-14c7f1743cb0.png",
+    "width": 1017,
+    "height": 186,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-kolbe-electrolysis": {
+    "source": "assets/mundy/mundy-kolbe-electrolysis-reaction.png",
+    "image": "assets/flashcards/mundy-kolbe-electrolysis-cac088c1d2b7.png",
+    "width": 1017,
+    "height": 160,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-kostanecki-acylation": {
+    "source": "assets/mundy/mundy-kostanecki-acylation-reaction.png",
+    "image": "assets/flashcards/mundy-kostanecki-acylation-db9952d3cacc.png",
+    "width": 1017,
+    "height": 341,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Kostanecki",
+        "rect": [
+          708,
+          99,
+          116,
+          34
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "coumarin",
+        "rect": [
+          811,
+          125,
+          96,
+          34
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "chromone",
+        "rect": [
+          832,
+          287,
+          105,
+          34
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Kostanecki",
+        "rect": [
+          702,
+          94,
+          125,
+          42
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "coumarin",
+        "rect": [
+          810,
+          126,
+          96,
+          36
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Allan",
+        "rect": [
+          722,
+          254,
+          171,
+          40
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Robinson",
+        "rect": [
+          722,
+          254,
+          171,
+          40
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "chromone",
+        "rect": [
+          831,
+          289,
+          104,
+          36
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-kucherov-reaction": {
+    "source": "assets/mundy/mundy-kucherov-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-kucherov-reaction-6af90d67e6b1.png",
+    "width": 1017,
+    "height": 180,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-lemieuxjohnson-oxidation": {
+    "source": "assets/mundy/mundy-lemieuxjohnson-oxidation-reaction.png",
+    "image": "assets/flashcards/mundy-lemieuxjohnson-oxidation-5b7f9df9605f.png",
+    "width": 1017,
+    "height": 169,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-liebeskindsrogl-coupling": {
+    "source": "assets/mundy/mundy-liebeskindsrogl-coupling-reaction.png",
+    "image": "assets/flashcards/mundy-liebeskindsrogl-coupling-f33fb68ca900.png",
+    "width": 1017,
+    "height": 523,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-lindlar-reduction": {
+    "source": "assets/mundy/mundy-lindlar-reduction-reaction.png",
+    "image": "assets/flashcards/mundy-lindlar-reduction-9200e67e3ae3.png",
+    "width": 1017,
+    "height": 296,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-marschalk-reaction": {
+    "source": "assets/mundy/mundy-marschalk-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-marschalk-reaction-d93f0af40d39.png",
+    "width": 1017,
+    "height": 247,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-mcfadyenstevens-aldehyde-synthesis": {
+    "source": "assets/mundy/mundy-mcfadyenstevens-aldehyde-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-mcfadyenstevens-aldehyde-synthesis-9e118aa9f1cf.png",
+    "width": 1017,
+    "height": 212,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-mclafferty-rearrangement": {
+    "source": "assets/mundy/mundy-mclafferty-rearrangement-reaction.png",
+    "image": "assets/flashcards/mundy-mclafferty-rearrangement-0f8a18e0179a.png",
+    "width": 1017,
+    "height": 203,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-meinwald-rearrangement": {
+    "source": "assets/mundy/mundy-meinwald-rearrangement-reaction.png",
+    "image": "assets/flashcards/mundy-meinwald-rearrangement-7f0288a7e483.png",
+    "width": 1017,
+    "height": 168,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-meta-photocycloaddition-of-arenes": {
+    "source": "assets/mundy/mundy-meta-photocycloaddition-of-arenes-reaction.png",
+    "image": "assets/flashcards/mundy-meta-photocycloaddition-of-arenes-6bf6111cf7ef.png",
+    "width": 1017,
+    "height": 139,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-morin-rearrangement": {
+    "source": "assets/mundy/mundy-morin-rearrangement-reaction.png",
+    "image": "assets/flashcards/mundy-morin-rearrangement-564f42aee923.png",
+    "width": 1017,
+    "height": 249,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-mundy-n-acyl-lactam-rearrangement": {
+    "source": "assets/mundy/mundy-mundy-n-acyl-lactam-rearrangement-reaction.png",
+    "image": "assets/flashcards/mundy-mundy-n-acyl-lactam-rearrangement-7166e10ea6a1.png",
+    "width": 1017,
+    "height": 238,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-myerssaito-schmittel-cyclization": {
+    "source": "assets/mundy/mundy-myerssaito-schmittel-cyclization-reaction.png",
+    "image": "assets/flashcards/mundy-myerssaito-schmittel-cyclization-1d63b7cd77de.png",
+    "width": 1017,
+    "height": 223,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-nametkin-rearrangement": {
+    "source": "assets/mundy/mundy-nametkin-rearrangement-reaction.png",
+    "image": "assets/flashcards/mundy-nametkin-rearrangement-bbd0683ea480.png",
+    "width": 1017,
+    "height": 220,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-nenitzescu-acylation": {
+    "source": "assets/mundy/mundy-nenitzescu-acylation-reaction.png",
+    "image": "assets/flashcards/mundy-nenitzescu-acylation-1252a58d556a.png",
+    "width": 1017,
+    "height": 194,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-niementowski-quinazoline-synthesis": {
+    "source": "assets/mundy/mundy-niementowski-quinazoline-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-niementowski-quinazoline-synthesis-c7478104f89d.png",
+    "width": 1017,
+    "height": 206,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-noyori-annulation": {
+    "source": "assets/mundy/mundy-noyori-annulation-reaction.png",
+    "image": "assets/flashcards/mundy-noyori-annulation-73f7e4f88f0c.png",
+    "width": 1017,
+    "height": 360,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-oxymercuration-and-solvomercuration": {
+    "source": "assets/mundy/mundy-oxymercuration-and-solvomercuration-reaction.png",
+    "image": "assets/flashcards/mundy-oxymercuration-and-solvomercuration-d0282bc03298.png",
+    "width": 1017,
+    "height": 225,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-parikhdoering-oxidation": {
+    "source": "assets/mundy/mundy-parikhdoering-oxidation-reaction.png",
+    "image": "assets/flashcards/mundy-parikhdoering-oxidation-aa6abdeab3ba.png",
+    "width": 1017,
+    "height": 142,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Parikh-Doering",
+        "rect": [
+          18,
+          0,
+          251,
+          4
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "pyridine",
+        "rect": [
+          248,
+          31,
+          86,
+          34
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Parikh",
+        "rect": [
+          15,
+          0,
+          258,
+          4
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Doering",
+        "rect": [
+          15,
+          0,
+          258,
+          4
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "pyridine",
+        "rect": [
+          246,
+          32,
+          89,
+          37
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-pfauplattner-azulene-synthesis": {
+    "source": "assets/mundy/mundy-pfauplattner-azulene-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-pfauplattner-azulene-synthesis-83235b578a30.png",
+    "width": 1017,
+    "height": 249,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Pfau-Plattner",
+        "rect": [
+          19,
+          0,
+          217,
+          4
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Pfau",
+        "rect": [
+          15,
+          0,
+          225,
+          5
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Plattner",
+        "rect": [
+          15,
+          0,
+          225,
+          5
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-pfitzinger-reaction": {
+    "source": "assets/mundy/mundy-pfitzinger-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-pfitzinger-reaction-909db4122c9d.png",
+    "width": 1017,
+    "height": 255,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Pfitzinger",
+        "rect": [
+          15,
+          0,
+          160,
+          8
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Pfitzinger",
+        "rect": [
+          12,
+          0,
+          166,
+          10
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-pictetgams-isoquinoline-synthesis": {
+    "source": "assets/mundy/mundy-pictetgams-isoquinoline-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-pictetgams-isoquinoline-synthesis-45d9f3d8d9e7.png",
+    "width": 1017,
+    "height": 226,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Pictet-Gams",
+        "rect": [
+          15,
+          0,
+          202,
+          7
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Pictet",
+        "rect": [
+          9,
+          0,
+          206,
+          10
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Gams",
+        "rect": [
+          9,
+          0,
+          206,
+          10
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-pictethubert-morganwalls-reaction": {
+    "source": "assets/mundy/mundy-pictethubert-morganwalls-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-pictethubert-morganwalls-reaction-80e20fb9c2b1.png",
+    "width": 1017,
+    "height": 290,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Pictet-Hubert",
+        "rect": [
+          15,
+          0,
+          221,
+          5
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Morgan-Walls",
+        "rect": [
+          400,
+          0,
+          233,
+          5
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Piclet-Hubert",
+        "rect": [
+          240,
+          33,
+          139,
+          34
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Pictet",
+        "rect": [
+          12,
+          0,
+          224,
+          7
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Hubert",
+        "rect": [
+          12,
+          0,
+          224,
+          7
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Morgan",
+        "rect": [
+          395,
+          0,
+          239,
+          7
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Walls",
+        "rect": [
+          395,
+          0,
+          239,
+          7
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Pictet",
+        "rect": [
+          241,
+          34,
+          144,
+          31
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Hubert",
+        "rect": [
+          241,
+          34,
+          144,
+          31
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Morgan",
+        "rect": [
+          232,
+          229,
+          154,
+          34
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Walls",
+        "rect": [
+          232,
+          229,
+          154,
+          34
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-pilotyrobinson-pyrrole-synthesis": {
+    "source": "assets/mundy/mundy-pilotyrobinson-pyrrole-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-pilotyrobinson-pyrrole-synthesis-cea05aa6d63b.png",
+    "width": 1017,
+    "height": 215,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Piloty-Robinson",
+        "rect": [
+          22,
+          0,
+          253,
+          4
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Piloty",
+        "rect": [
+          18,
+          0,
+          263,
+          7
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Robinson",
+        "rect": [
+          18,
+          0,
+          263,
+          7
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-pinacol-coupling": {
+    "source": "assets/mundy/mundy-pinacol-coupling-reaction.png",
+    "image": "assets/flashcards/mundy-pinacol-coupling-6dd767335091.png",
+    "width": 1017,
+    "height": 151,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Pinacol",
+        "rect": [
+          17,
+          0,
+          122,
+          7
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Pinacol",
+        "rect": [
+          15,
+          0,
+          129,
+          7
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-bogertcook-synthesis": {
+    "source": "assets/mundy/mundy-bogertcook-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-bogertcook-synthesis-e57256781899.png",
+    "width": 1017,
+    "height": 273,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Bogert-Cook",
+        "rect": [
+          13,
+          1,
+          166,
+          40
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Bogert",
+        "rect": [
+          12,
+          3,
+          170,
+          40
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Cook",
+        "rect": [
+          12,
+          3,
+          170,
+          40
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-bogert-reaction": {
+    "source": "assets/mundy/mundy-bogert-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-bogert-reaction-10fb6057b97a.png",
+    "width": 1017,
+    "height": 618,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "alcohol",
+        "rect": [
+          113,
+          3,
+          77,
+          34
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Bogert",
+        "rect": [
+          741,
+          2,
+          73,
+          36
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "alcohol",
+        "rect": [
+          109,
+          4,
+          83,
+          35
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Bogert",
+        "rect": [
+          740,
+          4,
+          76,
+          35
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-darzens-tetralin-synthesis": {
+    "source": "assets/mundy/mundy-darzens-tetralin-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-darzens-tetralin-synthesis-8428b43e2e9e.png",
+    "width": 1017,
+    "height": 243,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Darzens",
+        "rect": [
+          16,
+          1,
+          109,
+          40
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Darzens",
+        "rect": [
+          15,
+          3,
+          111,
+          39
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-haworth-synthesis": {
+    "source": "assets/mundy/mundy-haworth-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-haworth-synthesis-711207b77a07.png",
+    "width": 1017,
+    "height": 282,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Haworth",
+        "rect": [
+          15,
+          0,
+          117,
+          40
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Clemmensen",
+        "rect": [
+          346,
+          96,
+          136,
+          35
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Wol&-Kishner",
+        "rect": [
+          506,
+          96,
+          140,
+          35
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Wolff-Kishner",
+        "rect": [
+          503,
+          158,
+          152,
+          35
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Haworth",
+        "rect": [
+          12,
+          3,
+          123,
+          37
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Clemmensen",
+        "rect": [
+          342,
+          100,
+          138,
+          36
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Wolff",
+        "rect": [
+          502,
+          99,
+          149,
+          36
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Kishner",
+        "rect": [
+          502,
+          99,
+          149,
+          36
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Clemmensen",
+        "rect": [
+          342,
+          161,
+          138,
+          35
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Wolff",
+        "rect": [
+          502,
+          160,
+          146,
+          37
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Kishner",
+        "rect": [
+          502,
+          160,
+          146,
+          37
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-pschorr-arylation": {
+    "source": "assets/mundy/mundy-pschorr-arylation-reaction.png",
+    "image": "assets/flashcards/mundy-pschorr-arylation-04659fa70e97.png",
+    "width": 1017,
+    "height": 235,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Pschorr",
+        "rect": [
+          9,
+          0,
+          135,
+          4
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-pudovik-reaction": {
+    "source": "assets/mundy/mundy-pudovik-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-pudovik-reaction-759e5fe2cd4a.png",
+    "width": 1017,
+    "height": 204,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Pudovik",
+        "rect": [
+          17,
+          0,
+          138,
+          11
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Pudovik",
+        "rect": [
+          15,
+          0,
+          143,
+          8
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-reetz-alkylation": {
+    "source": "assets/mundy/mundy-reetz-alkylation-reaction.png",
+    "image": "assets/flashcards/mundy-reetz-alkylation-f8ef32d2b248.png",
+    "width": 1017,
+    "height": 299,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-reisserthenze-reaction": {
+    "source": "assets/mundy/mundy-reisserthenze-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-reisserthenze-reaction-53d94ff849ae.png",
+    "width": 1017,
+    "height": 212,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-reissert-indole-synthesis": {
+    "source": "assets/mundy/mundy-reissert-indole-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-reissert-indole-synthesis-41af7f543444.png",
+    "width": 1017,
+    "height": 192,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-robinsonschopf-reaction": {
+    "source": "assets/mundy/mundy-robinsonschopf-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-robinsonschopf-reaction-b173df925fb7.png",
+    "width": 1017,
+    "height": 282,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-rosenmund-reduction": {
+    "source": "assets/mundy/mundy-rosenmund-reduction-reaction.png",
+    "image": "assets/flashcards/mundy-rosenmund-reduction-54a42a639573.png",
+    "width": 1017,
+    "height": 162,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-schenck-ene-reaction": {
+    "source": "assets/mundy/mundy-schenck-ene-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-schenck-ene-reaction-ad4c843f2a01.png",
+    "width": 1017,
+    "height": 154,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-schmidt-trichloroacetimidate-glycosylation": {
+    "source": "assets/mundy/mundy-schmidt-trichloroacetimidate-glycosylation-reaction.png",
+    "image": "assets/flashcards/mundy-schmidt-trichloroacetimidate-glycosylation-96d79a0f79d2.png",
+    "width": 1017,
+    "height": 160,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-scholl-reaction": {
+    "source": "assets/mundy/mundy-scholl-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-scholl-reaction-5800c4aa71e9.png",
+    "width": 1017,
+    "height": 116,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-schreiber-ozonolysis": {
+    "source": "assets/mundy/mundy-schreiber-ozonolysis-reaction.png",
+    "image": "assets/flashcards/mundy-schreiber-ozonolysis-b58b02e8f967.png",
+    "width": 1017,
+    "height": 586,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "ozonolysis.",
+        "rect": [
+          847,
+          522,
+          114,
+          35
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "ozonolysis",
+        "rect": [
+          843,
+          522,
+          118,
+          40
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-semipinacol-rearrangement": {
+    "source": "assets/mundy/mundy-semipinacol-rearrangement-reaction.png",
+    "image": "assets/flashcards/mundy-semipinacol-rearrangement-afe3388150cf.png",
+    "width": 1017,
+    "height": 430,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Tiffeneau-Demjanov",
+        "rect": [
+          366,
+          212,
+          217,
+          34
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Tiffeneau",
+        "rect": [
+          365,
+          209,
+          212,
+          42
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "Demjanov",
+        "rect": [
+          365,
+          209,
+          212,
+          42
+        ],
+        "detection": "ocr"
+      },
+      {
+        "text": "pinacol",
+        "rect": [
+          515,
+          239,
+          95,
+          38
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-semmlerwolff-reaction": {
+    "source": "assets/mundy/mundy-semmlerwolff-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-semmlerwolff-reaction-0815438607de.png",
+    "width": 1017,
+    "height": 209,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-sommelet-oxidation": {
+    "source": "assets/mundy/mundy-sommelet-oxidation-reaction.png",
+    "image": "assets/flashcards/mundy-sommelet-oxidation-23f1416b07d0.png",
+    "width": 1017,
+    "height": 267,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-storkwittig-olefination": {
+    "source": "assets/mundy/mundy-storkwittig-olefination-reaction.png",
+    "image": "assets/flashcards/mundy-storkwittig-olefination-14dcfeff4593.png",
+    "width": 1017,
+    "height": 209,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-strecker-degradation": {
+    "source": "assets/mundy/mundy-strecker-degradation-reaction.png",
+    "image": "assets/flashcards/mundy-strecker-degradation-a025846ba612.png",
+    "width": 1017,
+    "height": 146,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-thielewinter-acetoxylation": {
+    "source": "assets/mundy/mundy-thielewinter-acetoxylation-reaction.png",
+    "image": "assets/flashcards/mundy-thielewinter-acetoxylation-1039c390f86d.png",
+    "width": 1017,
+    "height": 241,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-thorpe-thorpeziegler-reaction": {
+    "source": "assets/mundy/mundy-thorpe-thorpeziegler-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-thorpe-thorpeziegler-reaction-7d628a0dd43d.png",
+    "width": 1017,
+    "height": 203,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-trost-trimethylenemethane-cycloaddition": {
+    "source": "assets/mundy/mundy-trost-trimethylenemethane-cycloaddition-reaction.png",
+    "image": "assets/flashcards/mundy-trost-trimethylenemethane-cycloaddition-790ca6efd84e.png",
+    "width": 1017,
+    "height": 215,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-tscherniaceinhorn-reaction": {
+    "source": "assets/mundy/mundy-tscherniaceinhorn-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-tscherniaceinhorn-reaction-7d0aca547470.png",
+    "width": 1017,
+    "height": 247,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-uenostork-cyclization": {
+    "source": "assets/mundy/mundy-uenostork-cyclization-reaction.png",
+    "image": "assets/flashcards/mundy-uenostork-cyclization-531383f6c636.png",
+    "width": 1017,
+    "height": 195,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-upjohn-dihydroxylation": {
+    "source": "assets/mundy/mundy-upjohn-dihydroxylation-reaction.png",
+    "image": "assets/flashcards/mundy-upjohn-dihydroxylation-d3a76eae45cf.png",
+    "width": 1017,
+    "height": 209,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Kelly,",
+        "rect": [
+          239,
+          147,
+          66,
+          34
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Kelly",
+        "rect": [
+          239,
+          149,
+          66,
+          38
+        ],
+        "detection": "ocr"
+      }
+    ]
+  },
+  "mundy-von-richter-reaction": {
+    "source": "assets/mundy/mundy-von-richter-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-von-richter-reaction-09f0aabee817.png",
+    "width": 1017,
+    "height": 215,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-watanabeconlon-transvinylation": {
+    "source": "assets/mundy/mundy-watanabeconlon-transvinylation-reaction.png",
+    "image": "assets/flashcards/mundy-watanabeconlon-transvinylation-64ee84e63ccc.png",
+    "width": 1017,
+    "height": 162,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-weiss-reaction": {
+    "source": "assets/mundy/mundy-weiss-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-weiss-reaction-a35b0f9bb7f8.png",
+    "width": 1017,
+    "height": 253,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-wichterle-reaction": {
+    "source": "assets/mundy/mundy-wichterle-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-wichterle-reaction-8135a80acdc4.png",
+    "width": 1017,
+    "height": 319,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-widmanstoermer-synthesis": {
+    "source": "assets/mundy/mundy-widmanstoermer-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-widmanstoermer-synthesis-71ffdd99b42c.png",
+    "width": 1017,
+    "height": 206,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-willgerodtkindler-reaction": {
+    "source": "assets/mundy/mundy-willgerodtkindler-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-willgerodtkindler-reaction-bde15423fecd.png",
+    "width": 1017,
+    "height": 171,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-wittig-indole-synthesis": {
+    "source": "assets/mundy/mundy-wittig-indole-synthesis-reaction.png",
+    "image": "assets/flashcards/mundy-wittig-indole-synthesis-6f71d87fd772.png",
+    "width": 1017,
+    "height": 258,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-woodward-cis-hydroxylation": {
+    "source": "assets/mundy/mundy-woodward-cis-hydroxylation-reaction.png",
+    "image": "assets/flashcards/mundy-woodward-cis-hydroxylation-e7836acf1d23.png",
+    "width": 1017,
+    "height": 218,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-yamamoto-esterification": {
+    "source": "assets/mundy/mundy-yamamoto-esterification-reaction.png",
+    "image": "assets/flashcards/mundy-yamamoto-esterification-c9865716aeb1.png",
+    "width": 1017,
+    "height": 232,
+    "ocrAudited": true,
+    "masks": []
+  },
+  "mundy-kulinkovich-reaction": {
+    "source": "assets/mundy/mundy-kulinkovich-reaction-reaction.png",
+    "image": "assets/flashcards/mundy-kulinkovich-reaction-93770562f75a.png",
+    "width": 1017,
+    "height": 207,
+    "ocrAudited": true,
+    "masks": [
+      {
+        "text": "Kulinkovich",
+        "rect": [
+          18,
+          5,
+          157,
+          40
+        ],
+        "detection": "pdf"
+      },
+      {
+        "text": "Kulinkovich",
+        "rect": [
+          15,
+          5,
+          163,
+          39
+        ],
+        "detection": "ocr"
+      }
+    ]
+  }
+}

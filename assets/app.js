@@ -21,18 +21,20 @@ const icons = {
 const icon = name => `<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">${icons[name] || icons.flask}</svg>`;
 document.querySelectorAll('[data-icon]').forEach(el => el.innerHTML = icon(el.dataset.icon));
 
-const categories = bookCategories;
+const categories = [...bookCategories, {id:'mundy-additions', name:'Additional reactions — Mundy et al.', short:'Mundy additions', color:'#800000', light:'#f8eeee'}];
 const sourceBooks = {
   kurti: {label:'Kürti & Czakó (2005)', authors:'Kürti & Czakó', title:'Strategic Applications of Named Reactions in Organic Synthesis', year:2005},
   li: {label:'Li (2021)', authors:'Jie Jack Li', title:'Name Reactions: A Collection of Detailed Mechanisms and Synthetic Applications', year:2021},
+  mundy: {label:'Mundy, Ellerd & Favaloro (2005)', authors:'Mundy, Ellerd & Favaloro', title:'Name Reactions and Reagents in Organic Synthesis, 2nd edition', year:2005},
 };
-Object.assign(bookReactions, liBookReactions);
-Object.assign(bookSections, liBookSections);
-Object.assign(flashcardFigures, liFlashcardFigures);
-const reactions = [...reactionCatalog, ...liCatalog].sort((a,b) => a.name.localeCompare(b.name));
+Object.assign(bookReactions, liBookReactions, mundyBookReactions);
+Object.assign(bookSections, liBookSections, mundyBookSections);
+Object.assign(flashcardFigures, liFlashcardFigures, mundyFlashcardFigures);
+const reactions = [...reactionCatalog, ...liCatalog, ...mundyCatalog].sort((a,b) => a.name.localeCompare(b.name));
 reactions.forEach(r => {
   r.sourceBook = r.sourceBook || 'kurti';
-  r.books = r.sourceBook === 'li' ? ['li'] : liCoverage[r.id] ? ['kurti', 'li'] : ['kurti'];
+  r.books = r.sourceBook === 'mundy' ? ['mundy'] : r.sourceBook === 'li' ? ['li'] : liCoverage[r.id] ? ['kurti', 'li'] : ['kurti'];
+  if (mundyCoverage[r.id] && !r.books.includes('mundy')) r.books.push('mundy');
 });
 
 const storageKey = 'catalyst-progress-v1';
@@ -44,15 +46,22 @@ if(!storageAvailable) document.querySelector('.local-status').innerHTML='Progres
 let page = 'dashboard', searchTerm = '', quiz = null;
 if (!['condensed', 'expanded'].includes(state.libraryView)) state.libraryView = 'condensed';
 // Retain bookmarks and quiz history when upgrading the original six-category app.
-if (state.categoryVersion !== 2) {
+if (!state.categoryVersion || state.categoryVersion < 2) {
   state.selectedCategories = categories.map(c => c.id);
   state.categoryVersion = 2;
+}
+// Extend an existing all-category selection while retaining custom selections.
+if (state.categoryVersion === 2) {
+  if (bookCategories.every(c => state.selectedCategories?.includes(c.id))) {
+    state.selectedCategories = [...new Set([...state.selectedCategories, 'mundy-additions'])];
+  }
+  state.categoryVersion = 3;
 }
 state.selectedCategories = Array.isArray(state.selectedCategories)
   ? categories.filter(c => state.selectedCategories.includes(c.id)).map(c => c.id)
   : categories.map(c => c.id);
 const inCategory = (r, id) => r.categories.includes(id);
-if (!['all', 'kurti', 'li'].includes(state.bookFilter)) state.bookFilter = 'all';
+if (!['all', ...Object.keys(sourceBooks)].includes(state.bookFilter)) state.bookFilter = 'all';
 const matchesBook = r => state.bookFilter === 'all' || r.books.includes(state.bookFilter);
 const isSelected = r => matchesBook(r) && r.categories.some(id => state.selectedCategories.includes(id));
 const selectedReactions = () => reactions.filter(isSelected);
@@ -71,6 +80,8 @@ function selectionTitle() {
 const main = document.querySelector('main');
 const quizDialog = document.querySelector('#quiz-dialog');
 const reactionDialog = document.querySelector('#reaction-dialog');
+const reagentDialog = document.querySelector('#reagent-dialog');
+let reagentSearch = '', reagentId = null, reagentIds = [];
 let detailReactionId = null;
 let detailReactionIds = [];
 let detailTab = 'reaction';
@@ -163,7 +174,7 @@ function dashboard() {
 function filteredReactions(saved = page === 'saved') {
   return reactions.filter(r => (!saved || state.saved.includes(r.id)) &&
     isSelected(r) &&
-    `${r.name} ${r.bookName || ''} ${r.appendixSummary || ''} ${r.summary} ${r.reagents} ${r.equation} ${categoryLabel(r)}`.toLowerCase().includes(searchTerm.toLowerCase()));
+    searchKey(`${r.name} ${r.bookName || ''} ${r.aliases || ''} ${r.appendixSummary || ''} ${r.summary} ${r.reagents} ${r.equation} ${categoryLabel(r)}`).includes(searchKey(searchTerm)));
 }
 
 function library(saved = false) {
@@ -174,6 +185,52 @@ function library(saved = false) {
     <div class="library-list" id="library-results"></div>`;
   renderLibraryResults(saved);
   document.querySelector('#reaction-search').addEventListener('input', e => { searchTerm = e.target.value; renderLibraryResults(saved); });
+}
+
+const searchKey = text => String(text).normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[’'–—-]/g, '');
+function filteredReagents() {
+  const terms = searchKey(reagentSearch).trim().split(/\s+/).filter(Boolean);
+  return reagentCatalog.filter(r => {
+    const text = searchKey(`${r.name} ${r.aliases} ${r.searchText}`);
+    return terms.every(term => text.includes(term));
+  });
+}
+
+function reagents() {
+  main.innerHTML = heading('Reagents') + `<p class="intro">Named reagents, catalysts, and acronyms from Mundy, Ellerd & Favaloro (2005). Open an entry for its structure, preparation, uses, and examples.</p>
+    <div class="search-row"><label class="search-box"><input id="reagent-search" aria-label="Search reagents" placeholder="Search names, acronyms, or uses" value="${escapeHTML(reagentSearch)}"></label></div>
+    <p class="catalog-note" id="reagent-count" aria-live="polite"></p><div class="library-list" id="reagent-results"></div>`;
+  renderReagentResults();
+  document.querySelector('#reagent-search').addEventListener('input', e => { reagentSearch = e.target.value; renderReagentResults(); });
+}
+
+function renderReagentResults() {
+  const results = filteredReagents();
+  document.querySelector('#reagent-count').textContent = `${results.length} reagent${results.length === 1 ? '' : 's'}`;
+  document.querySelector('#reagent-results').innerHTML = results.length ? results.map(r => `<article class="reaction-row"><button class="text-button reaction-name" data-reagent="${r.id}">${escapeHTML(r.name)}</button><p class="reaction-overview">${escapeHTML(r.aliases)} · ${r.endPage === r.printedPage ? `p. ${r.printedPage}` : `pp. ${r.printedPage}–${r.endPage}`}</p></article>`).join('') : '<div class="empty-state"><p>No reagents match. Try a different name, acronym, or use.</p></div>';
+}
+
+function showReagent(id) {
+  const r = reagentCatalog.find(r => r.id === id);
+  if (!r) return;
+  if (!reagentDialog.open) reagentIds = filteredReagents().map(r => r.id);
+  if (!reagentIds.includes(id)) reagentIds = [id];
+  reagentId = id;
+  const position = reagentIds.indexOf(id);
+  reagentDialog.innerHTML = `<div class="detail-browser">
+    <button class="detail-arrow" data-reagent-step="-1" aria-label="Previous reagent" ${position === 0 ? 'disabled' : ''}><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 5h-3l-4 7 4 7h3l-4-7z"/></svg></button>
+    <div class="dialog-inner"><div class="dialog-top"><span>${position + 1} / ${reagentIds.length} · Reagents</span><button class="close-button" data-close="reagent" aria-label="Close reagent">×</button></div>
+    <h2 id="reagent-title" tabindex="-1">${escapeHTML(r.name)}</h2><p class="muted">${escapeHTML(r.aliases)}</p>
+    ${r.figures.map(f => bookFigure(f, r.name, 'reagent reference')).join('')}
+    <p class="book-citation">Mundy, Ellerd & Favaloro, <cite>${sourceBooks.mundy.title}</cite> (2005), ${r.endPage === r.printedPage ? `p. ${r.printedPage}` : `pp. ${r.printedPage}–${r.endPage}`}.</p></div>
+    <button class="detail-arrow" data-reagent-step="1" aria-label="Next reagent" ${position === reagentIds.length - 1 ? 'disabled' : ''}><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5h3l4 7-4 7H8l4-7z"/></svg></button></div>`;
+  if (!reagentDialog.open) reagentDialog.showModal();
+  reagentDialog.querySelector('#reagent-title').focus({preventScroll:true});
+}
+
+function moveReagent(step) {
+  const id = reagentIds[reagentIds.indexOf(reagentId) + step];
+  if (id) showReagent(id);
 }
 
 function renderLibraryResults(saved) {
@@ -327,12 +384,14 @@ function statistics() {
 
 function render() {
   page = location.hash.slice(1) || 'dashboard';
-  if (!['dashboard','library','practice','statistics','saved','flashcards'].includes(page)) page = 'dashboard';
+  if (!['dashboard','library','reagents','practice','statistics','saved','flashcards'].includes(page)) page = 'dashboard';
+  document.querySelector('.category-sidebar').hidden = page === 'reagents';
+  document.querySelector('.content-layout').classList.toggle('reagents-layout', page === 'reagents');
   document.querySelectorAll('[data-page]').forEach(a => {
     a.classList.toggle('active', a.dataset.page === page);
     if (a.dataset.page === page) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
   });
-  ({dashboard, library, practice, statistics, flashcards, saved:() => library(true)})[page]();
+  ({dashboard, library, reagents, practice, statistics, flashcards, saved:() => library(true)})[page]();
 }
 
 function toggleSave(id) {
@@ -362,7 +421,7 @@ function detailPanel(r, tab) {
       : `<p>${escapeHTML(r.explanation)}</p><p class="muted">${escapeHTML(sections?.outlineNote || 'A separate outline/history section is not available for this reaction.')}</p>`;
   }
   if (tab === 'mechanism') {
-    return `<p class="mechanism-summary">${r.explanation}</p>${source?.mechanism ? bookFigure(source.mechanism, r.name, 'mechanism') : `<p class="muted">${escapeHTML(source?.mechanismNote || 'A mechanism figure for this reaction has not been located in this copy.')}</p>`}`;
+    return `<p class="mechanism-summary">${r.explanation}</p>${source?.mechanismIntro ? `<p>${escapeHTML(source.mechanismIntro)}</p>` : ''}${source?.mechanism ? bookFigure(source.mechanism, r.name, 'mechanism') : `<p class="muted">${escapeHTML(source?.mechanismNote || 'A mechanism figure for this reaction has not been located in this copy.')}</p>`}`;
   }
   return source?.applications?.length
     ? `${source.applicationIntro ? `<p class="mechanism-summary">${escapeHTML(source.applicationIntro)}</p>` : ''}${source.applications.map(figure => bookFigure(figure, r.name, 'synthetic applications')).join('')}`
@@ -389,7 +448,7 @@ function showDetail(id, tab = 'reaction') {
     <div class="reaction-tabs" role="tablist" aria-label="Reaction details">${tabs.map(([key, label]) => `<button role="tab" id="tab-${key}" aria-controls="reaction-panel" aria-selected="${tab === key}" tabindex="0" data-detail-tab="${key}">${label}</button>`).join('')}</div>
     <section id="reaction-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-${tab}">${detailPanel(r, tab)}</section>
     ${source ? `<p class="book-citation">${sourceBooks[r.sourceBook].authors}, <cite>${sourceBooks[r.sourceBook].title}</cite> (${sourceBooks[r.sourceBook].year}), ${source.pages.length === 1 ? 'p.' : 'pp.'} ${source.pages.join('–')}. Figures from your supplied copy.${r.sourceBook === 'kurti' && liCoverage[id] ? ` Also covered in Li (2021), p. ${liCoverage[id].pages.join(', ')}.` : ''}</p>` : ''}
-    <div class="detail-section"><h3>Study by category</h3><div class="actions">${r.categories.map(id => `<button class="text-button" data-start="${id}">Quiz: ${categoryFor(id).short}</button>`).join('')}</div><p class="muted">${r.sourceBook === 'li' ? 'Categories describe the reaction type.' : r.appendixPages.length ? `Appendix 8.3, pp. ${r.appendixPages.join(', ')}.` : r.supplemental ? 'Preserved from your original library; this reaction has no dedicated chapter.' : 'This chapter is not listed in the book’s appendix 8.3 category table.'}</p></div>
+    <div class="detail-section"><h3>Study by category</h3><div class="actions">${r.categories.map(id => `<button class="text-button" data-start="${id}">Quiz: ${categoryFor(id).short}</button>`).join('')}</div><p class="muted">${r.sourceBook === 'mundy' ? 'Additional reactions from Mundy, Ellerd & Favaloro (2005).' : r.sourceBook === 'li' ? 'Categories describe the reaction type.' : r.appendixPages.length ? `Appendix 8.3, pp. ${r.appendixPages.join(', ')}.` : r.supplemental ? 'Preserved from your original library; this reaction has no dedicated chapter.' : 'This chapter is not listed in the book’s appendix 8.3 category table.'}</p></div>
     <div class="detail-actions"><button class="button secondary" data-save="${r.id}">${state.saved.includes(r.id) ? 'Unsave reaction' : 'Save reaction'}</button></div></div>
     <button class="detail-arrow" data-detail-step="1" aria-label="Next reaction" title="Next reaction (→)" ${position >= detailReactionIds.length - 1 ? 'disabled' : ''}><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5h3l4 7-4 7H8l4-7z"/></svg></button></div>`;
   if (!reactionDialog.open) reactionDialog.showModal();
@@ -518,6 +577,13 @@ function requestExit() {
 quizDialog.addEventListener('cancel', e => { e.preventDefault(); requestExit(); });
 document.addEventListener('keydown', e => { if (e.key === 'Escape' && quizDialog.open) { e.preventDefault(); requestExit(); } });
 reactionDialog.addEventListener('click', e => { if (e.target === reactionDialog) reactionDialog.close(); });
+reagentDialog.addEventListener('click', e => { if (e.target === reagentDialog) reagentDialog.close(); });
+reagentDialog.addEventListener('keydown', e => {
+  if (e.altKey || e.ctrlKey || e.metaKey || e.shiftKey || e.target.closest('input,select,textarea')) return;
+  if (['ArrowLeft', 'ArrowRight'].includes(e.key)) {
+    e.preventDefault(); moveReagent(e.key === 'ArrowLeft' ? -1 : 1);
+  }
+});
 function selectCardView(view) {
   deck.answerView = view;
   renderFlashcard(); flashcardDialog.querySelector(`[data-card-view="${view}"]`).focus();
@@ -567,6 +633,9 @@ document.addEventListener('click', e => {
   else if (button.dataset.detail) showDetail(button.dataset.detail);
   else if (button.dataset.detailStep) moveDetail(Number(button.dataset.detailStep));
   else if (button.dataset.detailTab) selectDetailTab(button.dataset.detailTab);
+  else if (button.dataset.reagent) showReagent(button.dataset.reagent);
+  else if (button.dataset.reagentStep) moveReagent(Number(button.dataset.reagentStep));
+  else if (button.dataset.close === 'reagent') reagentDialog.close();
   else if (button.dataset.answer) answer(button.dataset.answer);
   else if (button.id === 'next-question') nextQuestion();
   else if (button.hasAttribute('data-end-session')) finishQuiz();

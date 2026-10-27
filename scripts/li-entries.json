@@ -967,7 +967,15 @@
       390,
       207
     ],
-    "mechanismCrop": null
+    "mechanismCrop": [
+      50,
+      363,
+      390,
+      586
+    ],
+    "mechanismPage": 279,
+    "mechanismCaption": "Shared chromium(VI) oxidation mechanism (Jones pathway)",
+    "mechanismIntro": "Li describes Collins, PCC, and PDC oxidations as following a pathway similar to Jones oxidation (p. 279). The shared figure below illustrates chromate ester formation and elimination using the Jones conditions. See Reaction & conditions for this reagent’s conditions and products."
   },
   {
     "name": "PCC oxidation",
@@ -985,7 +993,15 @@
       390,
       223
     ],
-    "mechanismCrop": null
+    "mechanismCrop": [
+      50,
+      363,
+      390,
+      586
+    ],
+    "mechanismPage": 279,
+    "mechanismCaption": "Shared chromium(VI) oxidation mechanism (Jones pathway)",
+    "mechanismIntro": "Li describes Collins, PCC, and PDC oxidations as following a pathway similar to Jones oxidation (p. 279). The shared figure below illustrates chromate ester formation and elimination using the Jones conditions. See Reaction & conditions for this reagent’s conditions and products."
   },
   {
     "name": "PDC oxidation",
@@ -1003,7 +1019,15 @@
       390,
       224
     ],
-    "mechanismCrop": null
+    "mechanismCrop": [
+      50,
+      363,
+      390,
+      586
+    ],
+    "mechanismPage": 279,
+    "mechanismCaption": "Shared chromium(VI) oxidation mechanism (Jones pathway)",
+    "mechanismIntro": "Li describes Collins, PCC, and PDC oxidations as following a pathway similar to Jones oxidation (p. 279). The shared figure below illustrates chromate ester formation and elimination using the Jones conditions. See Reaction & conditions for this reagent’s conditions and products."
   },
   {
     "name": "Julia–Kocienski olefination",
