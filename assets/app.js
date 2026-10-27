@@ -384,14 +384,14 @@ function statistics() {
 
 function render() {
   page = location.hash.slice(1) || 'dashboard';
-  if (!['dashboard','library','reagents','practice','statistics','saved','flashcards'].includes(page)) page = 'dashboard';
-  document.querySelector('.category-sidebar').hidden = page === 'reagents';
-  document.querySelector('.content-layout').classList.toggle('reagents-layout', page === 'reagents');
+  if (!['dashboard','library','reagents','practice','statistics','saved','flashcards','account'].includes(page)) page = 'dashboard';
+  document.querySelector('.category-sidebar').hidden = ['reagents', 'account'].includes(page);
+  document.querySelector('.content-layout').classList.toggle('reagents-layout', ['reagents', 'account'].includes(page));
   document.querySelectorAll('[data-page]').forEach(a => {
     a.classList.toggle('active', a.dataset.page === page);
     if (a.dataset.page === page) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
   });
-  ({dashboard, library, reagents, practice, statistics, flashcards, saved:() => library(true)})[page]();
+  ({dashboard, library, reagents, practice, statistics, flashcards, saved:() => library(true), account:renderAccount})[page]();
 }
 
 function toggleSave(id) {
@@ -651,3 +651,4 @@ setupCategories();
 if (window.matchMedia('(max-width: 700px)').matches) document.querySelector('.category-sidebar details').open = false;
 persist();
 render();
+initializeAccountCallback();

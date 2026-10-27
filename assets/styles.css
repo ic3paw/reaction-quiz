@@ -98,6 +98,16 @@ select { width: 240px; }
 .bookmark-button.saved svg { fill: var(--accent-light); }
 .icon { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
 .empty-state { padding: 28px 0; color: var(--muted); }
+.account-panel { max-width: 760px; }
+.account-notice { padding: 18px 20px; margin: 24px 0; border-left: 3px solid var(--accent); background: var(--accent-light); font-size: 14px; }
+.account-form { display: grid; gap: 12px; max-width: 400px; }
+.account-form input { min-width: 0; width: 100%; padding: 11px 12px; border: 1px solid #ccc; border-radius: 2px; }
+.account-form label { font-weight: 600; }
+.account-form button { justify-self: start; }
+.account-email { overflow-wrap: anywhere; }
+.account-backup { margin-top: 32px; border-top: 1px solid var(--line); padding-top: 24px; }
+.account-message { margin: 24px 0 0; }
+.account-error { color: var(--accent); font-weight: 600; }
 .empty-state p { margin-bottom: 16px; }
 .practice-list { margin-bottom: 40px; }
 .practice-row { display: flex; gap: 24px; justify-content: space-between; align-items: center; padding: 22px 0; border-bottom: 1px solid #ededed; }

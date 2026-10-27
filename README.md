@@ -14,11 +14,12 @@ A responsive named-reaction study website built with plain HTML, CSS, and JavaSc
 - Flashcard modes for recalling the name from a book scheme, reaction/conditions, or mechanism, with outline/history and synthetic application answer tabs, flip, shuffle, keyboard navigation, self-rating, and review of remaining cards
 - Accuracy, practice history, daily streaks, and reaction mastery
 - Local browser storage for bookmarks and progress
+- Optional Supabase email-link accounts and private manual cloud backups; see [backend setup and design](./docs/supabase.md)
 - Responsive layouts and keyboard-accessible dialogs
 
 Progress is specific to the current browser and website origin. Three consecutive correct answers for a reaction mark it as mastered. An unfinished finite quiz keeps answered-question progress but does not count as a completed session. Ending an endless quiz saves its answered-question total and score; unanswered questions are excluded, and empty sessions are not recorded.
 
-The interface uses Arial and system fonts, with UChicago maroon (`#800000`) accents and no external assets or network requests. Reaction data is in [assets/reactions.js](./assets/reactions.js), application logic is in [assets/app.js](./assets/app.js), and styling is in [assets/styles.css](./assets/styles.css).
+The interface uses Arial and system fonts, with UChicago maroon (`#800000`) accents. Guest study uses no external assets or network requests. Optional accounts load the Supabase SDK and connect to a configured Supabase project. Reaction data is in [assets/reactions.js](./assets/reactions.js), application logic is in [assets/app.js](./assets/app.js), and styling is in [assets/styles.css](./assets/styles.css).
 
 ## Categories and practice
 
@@ -119,4 +120,4 @@ python3 scripts/build-mundy.py "/path/to/mundy.pdf"
 python3 scripts/validate-mundy.py
 ```
 
-The OCR helper records page-relative word bounds so identifying names can be whitened without cropping molecular structures. The [figure manifest](./scripts/mundy-figures.json) records every source page and crop, and the [prompt mask manifest](./scripts/mundy-flashcard-masks.json) records every whiteout. The validator checks IDs against both earlier catalogs, citations, source coverage, reagent continuation pages, every image, and pixel equality outside the masks. The website remains static and needs no runtime dependencies or network access.
+The OCR helper records page-relative word bounds so identifying names can be whitened without cropping molecular structures. The [figure manifest](./scripts/mundy-figures.json) records every source page and crop, and the [prompt mask manifest](./scripts/mundy-flashcard-masks.json) records every whiteout. The validator checks IDs against both earlier catalogs, citations, source coverage, reagent continuation pages, every image, and pixel equality outside the masks. The website remains static; guest study needs no external runtime dependencies or network access.
