@@ -22,6 +22,7 @@ reagents = js('assets/mundy-data.js','reagentCatalog')
 masks = read('scripts/mundy-flashcard-masks.json')
 old = js('assets/reactions.js','reactionCatalog') + js('assets/li-data.js','liCatalog')
 old_ids = {r['id'] for r in old}
+categories = {c['id'] for c in js('assets/reactions.js', 'bookCategories')}
 assert len(new)==len(catalog)==185
 assert not old_ids & set(new), 'Existing reaction IDs and progress must be preserved'
 assert {r['id'] for r in catalog}==set(new)==set(book)==set(sections)==set(prompts)==set(masks)
@@ -31,7 +32,8 @@ for e in entries:
     assert e['printedPage'] in coverage[e['id']]
 for r in catalog:
     id=r['id'];e=new[id]
-    assert r['categories']==['mundy-additions'] and r['sourceBook']=='mundy'
+    assert r['categories']==e['categories'] and set(r['categories']) <= categories - {'not-listed'}
+    assert r['category']==r['categories'][0] and r['sourceBook']=='mundy'
     assert r['summary'] and r['question'] and r['explanation']
     assert r['printedPage']==book[id]['pages'][0]==e['printedPage']
     assert bool(book[id].get('mechanism'))==bool(e['mechanismCrop'])

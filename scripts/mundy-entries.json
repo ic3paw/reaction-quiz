@@ -38,6 +38,10 @@
       357.1,
       389,
       620
+    ],
+    "categories": [
+      "rearrangements",
+      "reactions-involving-carbonyl-compounds"
     ]
   },
   {
@@ -65,7 +69,10 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "rearrangements"
+    ]
   },
   {
     "id": "mundy-arensvan-dorp-aldehyde-synthesis",
@@ -89,7 +96,11 @@
     ],
     "notesCrop": null,
     "applicationCrop": null,
-    "mechanismCaption": "Mechanism within the source reaction scheme"
+    "mechanismCaption": "Mechanism within the source reaction scheme",
+    "categories": [
+      "homologation",
+      "reactions-involving-carbonyl-compounds"
+    ]
   },
   {
     "id": "mundy-bodrouxchichibabin-aldehyde-synthesis",
@@ -113,7 +124,10 @@
     ],
     "notesCrop": null,
     "applicationCrop": null,
-    "mechanismCaption": "Mechanism within the source reaction scheme"
+    "mechanismCaption": "Mechanism within the source reaction scheme",
+    "categories": [
+      "reactions-involving-carbonyl-compounds"
+    ]
   },
   {
     "id": "mundy-albrightgoldman-oxidation",
@@ -137,7 +151,10 @@
     ],
     "notesCrop": null,
     "applicationCrop": null,
-    "mechanismCaption": "Mechanism within the source reaction scheme"
+    "mechanismCaption": "Mechanism within the source reaction scheme",
+    "categories": [
+      "oxidation"
+    ]
   },
   {
     "id": "corey-kim-oxidation",
@@ -193,7 +210,10 @@
     ],
     "notesCrop": null,
     "applicationCrop": null,
-    "mechanismCaption": "Mechanism within the source reaction scheme"
+    "mechanismCaption": "Mechanism within the source reaction scheme",
+    "categories": [
+      "oxidation"
+    ]
   },
   {
     "id": "dess-martin-oxidation",
@@ -225,7 +245,10 @@
     ],
     "notesCrop": null,
     "applicationCrop": null,
-    "mechanismCaption": "Mechanism within the source reaction scheme"
+    "mechanismCaption": "Mechanism within the source reaction scheme",
+    "categories": [
+      "oxidation"
+    ]
   },
   {
     "id": "mundy-fukuyama-reduction",
@@ -249,7 +272,11 @@
     ],
     "notesCrop": null,
     "applicationCrop": null,
-    "mechanismCaption": "Mechanism within the source reaction scheme"
+    "mechanismCaption": "Mechanism within the source reaction scheme",
+    "categories": [
+      "reduction",
+      "reactions-involving-carbonyl-compounds"
+    ]
   },
   {
     "id": "gattermann-and-gattermann-koch-formylation",
@@ -289,7 +316,11 @@
     ],
     "notesCrop": null,
     "applicationCrop": null,
-    "mechanismCaption": "Mechanism within the source reaction scheme"
+    "mechanismCaption": "Mechanism within the source reaction scheme",
+    "categories": [
+      "oxidation",
+      "nucleophilic-substitution"
+    ]
   },
   {
     "id": "mundy-grundmann-aldehyde-synthesis",
@@ -313,7 +344,10 @@
     ],
     "notesCrop": null,
     "applicationCrop": null,
-    "mechanismCaption": "Mechanism within the source reaction scheme"
+    "mechanismCaption": "Mechanism within the source reaction scheme",
+    "categories": [
+      "homologation"
+    ]
   },
   {
     "id": "criegee-oxidation",
@@ -345,7 +379,11 @@
     ],
     "notesCrop": null,
     "applicationCrop": null,
-    "mechanismCaption": "Mechanism within the source reaction scheme"
+    "mechanismCaption": "Mechanism within the source reaction scheme",
+    "categories": [
+      "oxidation",
+      "nucleophilic-substitution"
+    ]
   },
   {
     "id": "mundy-meyers-aldehyde-synthesis",
@@ -369,7 +407,11 @@
     ],
     "notesCrop": null,
     "applicationCrop": null,
-    "mechanismCaption": "Mechanism within the source reaction scheme"
+    "mechanismCaption": "Mechanism within the source reaction scheme",
+    "categories": [
+      "reactions-involving-carbonyl-compounds",
+      "nucleophilic-substitution"
+    ]
   },
   {
     "id": "mundy-reissert-aldehyde-synthesis",
@@ -393,7 +435,10 @@
     ],
     "notesCrop": null,
     "applicationCrop": null,
-    "mechanismCaption": "Mechanism within the source reaction scheme"
+    "mechanismCaption": "Mechanism within the source reaction scheme",
+    "categories": [
+      "reactions-involving-carbonyl-compounds"
+    ]
   },
   {
     "id": "stephen-aldehyde-synthesis-stephen-reduction",
@@ -441,7 +486,11 @@
     ],
     "notesCrop": null,
     "applicationCrop": null,
-    "mechanismCaption": "Mechanism within the source reaction scheme"
+    "mechanismCaption": "Mechanism within the source reaction scheme",
+    "categories": [
+      "reduction",
+      "reactions-involving-carbonyl-compounds"
+    ]
   },
   {
     "id": "mundy-alderrickert-reaction",
@@ -473,6 +522,11 @@
       283.3,
       389,
       620
+    ],
+    "categories": [
+      "cycloaromatization",
+      "pericyclic-reactions",
+      "fragmentation-reactions"
     ]
   },
   {
@@ -507,7 +561,11 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "heterocycle-formation",
+      "oxidation"
+    ]
   },
   {
     "id": "mundy-allanrobinson-reaction",
@@ -534,7 +592,11 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "heterocycle-formation",
+      "reactions-involving-carbonyl-compounds"
+    ]
   },
   {
     "id": "mundy-delepine-reaction",
@@ -552,7 +614,10 @@
     ],
     "mechanismCrop": null,
     "notesCrop": null,
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "nucleophilic-substitution"
+    ]
   },
   {
     "id": "mundy-orton-rearrangement",
@@ -570,7 +635,11 @@
     ],
     "mechanismCrop": null,
     "notesCrop": null,
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "electrophilic-aromatic-substitution",
+      "rearrangements"
+    ]
   },
   {
     "id": "mundy-reillyhickinbottom-rearrangement",
@@ -594,7 +663,11 @@
     ],
     "notesCrop": null,
     "applicationCrop": null,
-    "mechanismCaption": "Mechanism within the source reaction scheme"
+    "mechanismCaption": "Mechanism within the source reaction scheme",
+    "categories": [
+      "electrophilic-aromatic-substitution",
+      "rearrangements"
+    ]
   },
   {
     "id": "mitsunobu-reaction",
@@ -626,7 +699,11 @@
     ],
     "notesCrop": null,
     "applicationCrop": null,
-    "mechanismCaption": "Mechanism within the source reaction scheme"
+    "mechanismCaption": "Mechanism within the source reaction scheme",
+    "categories": [
+      "nucleophilic-substitution",
+      "reactions-involving-carbonyl-compounds"
+    ]
   },
   {
     "id": "mundy-fukuyama-amine-synthesis",
@@ -650,7 +727,10 @@
     ],
     "notesCrop": null,
     "applicationCrop": null,
-    "mechanismCaption": "Mechanism within the source reaction scheme"
+    "mechanismCaption": "Mechanism within the source reaction scheme",
+    "categories": [
+      "nucleophilic-substitution"
+    ]
   },
   {
     "id": "gabriel",
@@ -676,7 +756,12 @@
     ],
     "mechanismCrop": null,
     "notesCrop": null,
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "heterocycle-formation",
+      "rearrangements",
+      "ring-expansion"
+    ]
   },
   {
     "id": "mundy-gabrielmarckwald-ethylenimine-synthesis",
@@ -700,7 +785,11 @@
     ],
     "notesCrop": null,
     "applicationCrop": null,
-    "mechanismCaption": "Mechanism within the source reaction scheme"
+    "mechanismCaption": "Mechanism within the source reaction scheme",
+    "categories": [
+      "heterocycle-formation",
+      "nucleophilic-substitution"
+    ]
   },
   {
     "id": "mundy-schweizer-allylamine-synthesis",
@@ -724,7 +813,10 @@
     ],
     "notesCrop": null,
     "applicationCrop": null,
-    "mechanismCaption": "Mechanism within the source reaction scheme"
+    "mechanismCaption": "Mechanism within the source reaction scheme",
+    "categories": [
+      "reactions-involving-carbonyl-compounds"
+    ]
   },
   {
     "id": "mundy-voigt-amination",
@@ -748,7 +840,10 @@
     ],
     "notesCrop": null,
     "applicationCrop": null,
-    "mechanismCaption": "Mechanism within the source reaction scheme"
+    "mechanismCaption": "Mechanism within the source reaction scheme",
+    "categories": [
+      "reactions-involving-carbonyl-compounds"
+    ]
   },
   {
     "id": "mundy-andersen-sulfoxide-synthesis",
@@ -775,7 +870,10 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "nucleophilic-substitution"
+    ]
   },
   {
     "id": "mundy-appel-reaction",
@@ -807,6 +905,9 @@
       476.9,
       389,
       620
+    ],
+    "categories": [
+      "nucleophilic-substitution"
     ]
   },
   {
@@ -876,7 +977,10 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "rearrangements"
+    ]
   },
   {
     "id": "bamford-stevens-shapiro-olefination",
@@ -917,7 +1021,11 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "degradation",
+      "oxidation"
+    ]
   },
   {
     "id": "bartoli-indole-synthesis",
@@ -977,6 +1085,9 @@
       482.9,
       389,
       620
+    ],
+    "categories": [
+      "heterocycle-formation"
     ]
   },
   {
@@ -1004,7 +1115,11 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "electrophilic-aromatic-substitution",
+      "oxidation"
+    ]
   },
   {
     "id": "baylis-hillman-reaction",
@@ -1038,7 +1153,10 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "reduction"
+    ]
   },
   {
     "id": "abnormal-beckmann-rearrangement",
@@ -1074,7 +1192,11 @@
       620
     ],
     "notesCrop": null,
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "heterocycle-formation",
+      "reactions-involving-carbonyl-compounds"
+    ]
   },
   {
     "id": "mundy-benzidine-rearrangement",
@@ -1096,7 +1218,10 @@
       620
     ],
     "notesCrop": null,
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "rearrangements"
+    ]
   },
   {
     "id": "benzilic-acid-rearrangement",
@@ -1165,7 +1290,10 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "reactions-involving-carbonyl-compounds"
+    ]
   },
   {
     "id": "mundy-blanc-chloromethylation",
@@ -1192,7 +1320,10 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "electrophilic-aromatic-substitution"
+    ]
   },
   {
     "id": "mundy-blanc-cyclization",
@@ -1219,7 +1350,12 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "carbocycle-formation",
+      "heterocycle-formation",
+      "reactions-involving-carbonyl-compounds"
+    ]
   },
   {
     "id": "mundy-boord-olefin-synthesis",
@@ -1251,6 +1387,10 @@
       398.7,
       389,
       620
+    ],
+    "categories": [
+      "elimination-reactions",
+      "reduction"
     ]
   },
   {
@@ -1284,6 +1424,10 @@
       281.3,
       389,
       620
+    ],
+    "categories": [
+      "reduction",
+      "reactions-involving-carbonyl-compounds"
     ]
   },
   {
@@ -1311,7 +1455,11 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "heterocycle-formation",
+      "pericyclic-reactions"
+    ]
   },
   {
     "id": "mundy-bouveault-aldehyde-synthesis",
@@ -1338,7 +1486,10 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "reactions-involving-carbonyl-compounds"
+    ]
   },
   {
     "id": "mundy-bouveaultblanc-reduction",
@@ -1365,7 +1516,11 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "reduction",
+      "reactions-involving-carbonyl-compounds"
+    ]
   },
   {
     "id": "mundy-boylandsims-oxidation",
@@ -1392,7 +1547,10 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "oxidation"
+    ]
   },
   {
     "id": "mundy-bradsher-reaction",
@@ -1419,7 +1577,12 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "carbocycle-formation",
+      "cycloaromatization",
+      "electrophilic-aromatic-substitution"
+    ]
   },
   {
     "id": "brook-rearrangement",
@@ -1462,7 +1625,10 @@
       620
     ],
     "notesCrop": null,
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "nucleophilic-aromatic-substitution"
+    ]
   },
   {
     "id": "buchwald-hartwig-cross-coupling",
@@ -1510,7 +1676,10 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "rearrangements"
+    ]
   },
   {
     "id": "carroll-rearrangement-kimel-cope-rearrangement",
@@ -1556,6 +1725,9 @@
       469.4,
       389,
       620
+    ],
+    "categories": [
+      "reduction"
     ]
   },
   {
@@ -1646,7 +1818,11 @@
     ],
     "notesCrop": null,
     "applicationCrop": null,
-    "mechanismCaption": "Mechanism within the source reaction scheme"
+    "mechanismCaption": "Mechanism within the source reaction scheme",
+    "categories": [
+      "pericyclic-reactions",
+      "rearrangements"
+    ]
   },
   {
     "id": "johnson-claisen-rearrangement",
@@ -1659,7 +1835,7 @@
   {
     "id": "mundy-daubendietsche-rearrangement",
     "name": "Dauben–Dietsche rearrangement",
-    "summary": "A vinyl-substituted strained ring undergoes a thermal rearrangement.",
+    "summary": "A vinyl ether precursor rearranges through an allyl vinyl ether to an unsaturated aldehyde.",
     "status": "new",
     "printedPage": 154,
     "endPage": 154,
@@ -1678,7 +1854,11 @@
     ],
     "notesCrop": null,
     "applicationCrop": null,
-    "mechanismCaption": "Mechanism within the source reaction scheme"
+    "mechanismCaption": "Mechanism within the source reaction scheme",
+    "categories": [
+      "pericyclic-reactions",
+      "rearrangements"
+    ]
   },
   {
     "id": "mundy-denmark-rearrangement",
@@ -1702,7 +1882,11 @@
     ],
     "notesCrop": null,
     "applicationCrop": null,
-    "mechanismCaption": "Mechanism within the source reaction scheme"
+    "mechanismCaption": "Mechanism within the source reaction scheme",
+    "categories": [
+      "pericyclic-reactions",
+      "rearrangements"
+    ]
   },
   {
     "id": "mundy-marbetsaucy-reaction",
@@ -1726,7 +1910,11 @@
     ],
     "notesCrop": null,
     "applicationCrop": null,
-    "mechanismCaption": "Mechanism within the source reaction scheme"
+    "mechanismCaption": "Mechanism within the source reaction scheme",
+    "categories": [
+      "pericyclic-reactions",
+      "rearrangements"
+    ]
   },
   {
     "id": "aza-cope-rearrangement",
@@ -1768,7 +1956,11 @@
     ],
     "mechanismCrop": null,
     "notesCrop": null,
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "pericyclic-reactions",
+      "rearrangements"
+    ]
   },
   {
     "id": "claisen",
@@ -1821,6 +2013,10 @@
       490.5,
       389,
       620
+    ],
+    "categories": [
+      "homologation",
+      "nucleophilic-substitution"
     ]
   },
   {
@@ -1860,6 +2056,10 @@
       467.3,
       389,
       620
+    ],
+    "categories": [
+      "heterocycle-formation",
+      "reactions-involving-carbonyl-compounds"
     ]
   },
   {
@@ -1922,6 +2122,10 @@
       269.9,
       389,
       620
+    ],
+    "categories": [
+      "oxidation",
+      "reactions-involving-carbonyl-compounds"
     ]
   },
   {
@@ -1954,6 +2158,9 @@
       383.3,
       389,
       620
+    ],
+    "categories": [
+      "transition-metal-catalyzed-couplings"
     ]
   },
   {
@@ -1981,7 +2188,11 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "rearrangements",
+      "nucleophilic-substitution"
+    ]
   },
   {
     "id": "corey-nicolaou-macrolactonization",
@@ -2020,6 +2231,10 @@
       400.7,
       389,
       620
+    ],
+    "categories": [
+      "nucleophilic-substitution",
+      "reactions-involving-carbonyl-compounds"
     ]
   },
   {
@@ -2124,7 +2339,11 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "heterocycle-formation",
+      "reactions-involving-carbonyl-compounds"
+    ]
   },
   {
     "id": "mundy-dondoni-homologation",
@@ -2151,7 +2370,11 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "homologation",
+      "reactions-involving-carbonyl-compounds"
+    ]
   },
   {
     "id": "dotz-benzannulation-reaction",
@@ -2185,6 +2408,11 @@
       363.9,
       389,
       620
+    ],
+    "categories": [
+      "ring-expansion",
+      "radical-reactions",
+      "fragmentation-reactions"
     ]
   },
   {
@@ -2212,7 +2440,12 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "reactions-involving-carbenes",
+      "pericyclic-reactions",
+      "rearrangements"
+    ]
   },
   {
     "id": "mundy-duff-reaction",
@@ -2239,7 +2472,10 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "electrophilic-aromatic-substitution"
+    ]
   },
   {
     "id": "eglinton-coupling",
@@ -2285,6 +2521,9 @@
       400.5,
       389,
       620
+    ],
+    "categories": [
+      "reactions-involving-carbonyl-compounds"
     ]
   },
   {
@@ -2338,6 +2577,10 @@
       392.9,
       389,
       620
+    ],
+    "categories": [
+      "reduction",
+      "reactions-involving-carbonyl-compounds"
     ]
   },
   {
@@ -2388,7 +2631,11 @@
       620
     ],
     "notesCrop": null,
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "electrophilic-aromatic-substitution",
+      "rearrangements"
+    ]
   },
   {
     "id": "fischer",
@@ -2434,6 +2681,10 @@
       422.8,
       389,
       620
+    ],
+    "categories": [
+      "nucleophilic-substitution",
+      "reactions-involving-carbonyl-compounds"
     ]
   },
   {
@@ -2494,6 +2745,10 @@
       423.9,
       389,
       620
+    ],
+    "categories": [
+      "reactions-involving-carbenes",
+      "rearrangements"
     ]
   },
   {
@@ -2533,6 +2788,10 @@
       389.9,
       389,
       620
+    ],
+    "categories": [
+      "heterocycle-formation",
+      "nucleophilic-substitution"
     ]
   },
   {
@@ -2565,6 +2824,9 @@
       456.7,
       389,
       620
+    ],
+    "categories": [
+      "nucleophilic-substitution"
     ]
   },
   {
@@ -2592,6 +2854,9 @@
       290.1,
       389,
       620
+    ],
+    "categories": [
+      "heterocycle-formation"
     ]
   },
   {
@@ -2645,6 +2910,9 @@
       281.3,
       389,
       620
+    ],
+    "categories": [
+      "reduction"
     ]
   },
   {
@@ -2677,6 +2945,10 @@
       475.2,
       389,
       620
+    ],
+    "categories": [
+      "elimination-reactions",
+      "oxidation"
     ]
   },
   {
@@ -2708,7 +2980,10 @@
     ],
     "notesCrop": null,
     "applicationCrop": null,
-    "mechanismCaption": "Mechanism within the source reaction scheme"
+    "mechanismCaption": "Mechanism within the source reaction scheme",
+    "categories": [
+      "reactions-involving-carbonyl-compounds"
+    ]
   },
   {
     "id": "mundy-bodroux-reaction",
@@ -2732,7 +3007,11 @@
     ],
     "notesCrop": null,
     "applicationCrop": null,
-    "mechanismCaption": "Mechanism within the source reaction scheme"
+    "mechanismCaption": "Mechanism within the source reaction scheme",
+    "categories": [
+      "reactions-involving-carbonyl-compounds",
+      "nucleophilic-substitution"
+    ]
   },
   {
     "id": "mundy-dzhemilev-reaction",
@@ -2755,7 +3034,10 @@
       615.0
     ],
     "notesCrop": null,
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "electrophilic-addition-to-c-c-multiple-bonds"
+    ]
   },
   {
     "id": "grob-fragmentation",
@@ -2801,6 +3083,10 @@
       396.8,
       389,
       620
+    ],
+    "categories": [
+      "fragmentation-reactions",
+      "reactions-involving-carbonyl-compounds"
     ]
   },
   {
@@ -2833,6 +3119,10 @@
       317.4,
       389,
       620
+    ],
+    "categories": [
+      "oxidation",
+      "nucleophilic-substitution"
     ]
   },
   {
@@ -2880,7 +3170,11 @@
     ],
     "mechanismCrop": null,
     "notesCrop": null,
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "heterocycle-formation",
+      "reactions-involving-carbonyl-compounds"
+    ]
   },
   {
     "id": "hantzsch-dihydropyridine-synthesis",
@@ -2946,7 +3240,11 @@
     ],
     "mechanismCrop": null,
     "notesCrop": null,
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "heterocycle-formation",
+      "reactions-involving-carbonyl-compounds"
+    ]
   },
   {
     "id": "gewald-aminothiophene-synthesis",
@@ -2977,7 +3275,10 @@
       366.0
     ],
     "notesCrop": null,
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "heterocycle-formation"
+    ]
   },
   {
     "id": "mundy-hinsberg-thiophene-synthesis",
@@ -3000,7 +3301,11 @@
       343.0
     ],
     "notesCrop": null,
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "heterocycle-formation",
+      "reactions-involving-carbonyl-compounds"
+    ]
   },
   {
     "id": "mundy-volharderdmann-cyclization",
@@ -3018,7 +3323,10 @@
     ],
     "mechanismCrop": null,
     "notesCrop": null,
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "heterocycle-formation"
+    ]
   },
   {
     "id": "mundy-baeyerdrewson-indigo-synthesis",
@@ -3036,7 +3344,11 @@
     ],
     "mechanismCrop": null,
     "notesCrop": null,
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "heterocycle-formation",
+      "reactions-involving-carbonyl-compounds"
+    ]
   },
   {
     "id": "mundy-bischlermohlau-indole-synthesis",
@@ -3054,7 +3366,10 @@
     ],
     "mechanismCrop": null,
     "notesCrop": null,
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "heterocycle-formation"
+    ]
   },
   {
     "id": "mundy-furstner-indole-synthesis",
@@ -3072,7 +3387,11 @@
     ],
     "mechanismCrop": null,
     "notesCrop": null,
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "heterocycle-formation",
+      "reduction"
+    ]
   },
   {
     "id": "mundy-gassman-indole-synthesis",
@@ -3095,7 +3414,12 @@
       571.0
     ],
     "notesCrop": null,
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "heterocycle-formation",
+      "pericyclic-reactions",
+      "rearrangements"
+    ]
   },
   {
     "id": "mundy-hegedus-indole-synthesis",
@@ -3119,7 +3443,11 @@
     ],
     "notesCrop": null,
     "applicationCrop": null,
-    "mechanismPage": 309
+    "mechanismPage": 309,
+    "categories": [
+      "heterocycle-formation",
+      "transition-metal-catalyzed-couplings"
+    ]
   },
   {
     "id": "larock-indole-synthesis",
@@ -3151,7 +3479,11 @@
     ],
     "notesCrop": null,
     "applicationCrop": null,
-    "mechanismCaption": "Mechanism within the source reaction scheme"
+    "mechanismCaption": "Mechanism within the source reaction scheme",
+    "categories": [
+      "heterocycle-formation",
+      "reduction"
+    ]
   },
   {
     "id": "mundy-moriban-indole-synthesis",
@@ -3174,7 +3506,11 @@
       533.0
     ],
     "notesCrop": null,
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "heterocycle-formation",
+      "transition-metal-catalyzed-couplings"
+    ]
   },
   {
     "id": "mundy-smith-indole-synthesis",
@@ -3198,7 +3534,10 @@
     ],
     "notesCrop": null,
     "applicationCrop": null,
-    "mechanismCaption": "Mechanism within the source reaction scheme"
+    "mechanismCaption": "Mechanism within the source reaction scheme",
+    "categories": [
+      "heterocycle-formation"
+    ]
   },
   {
     "id": "mundy-camps-quinoline-synthesis",
@@ -3216,7 +3555,11 @@
     ],
     "mechanismCrop": null,
     "notesCrop": null,
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "heterocycle-formation",
+      "reactions-involving-carbonyl-compounds"
+    ]
   },
   {
     "id": "mundy-knorr-quinoline-synthesis",
@@ -3240,7 +3583,12 @@
     ],
     "notesCrop": null,
     "applicationCrop": null,
-    "mechanismCaption": "Mechanism within the source reaction scheme"
+    "mechanismCaption": "Mechanism within the source reaction scheme",
+    "categories": [
+      "heterocycle-formation",
+      "electrophilic-aromatic-substitution",
+      "reactions-involving-carbonyl-compounds"
+    ]
   },
   {
     "id": "mundy-niementowski-quinoline-synthesis",
@@ -3264,7 +3612,11 @@
     ],
     "notesCrop": null,
     "applicationCrop": null,
-    "mechanismCaption": "Mechanism within the source reaction scheme"
+    "mechanismCaption": "Mechanism within the source reaction scheme",
+    "categories": [
+      "heterocycle-formation",
+      "reactions-involving-carbonyl-compounds"
+    ]
   },
   {
     "id": "mundy-riehm-quinoline-synthesis",
@@ -3282,7 +3634,11 @@
     ],
     "mechanismCrop": null,
     "notesCrop": null,
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "heterocycle-formation",
+      "reactions-involving-carbonyl-compounds"
+    ]
   },
   {
     "id": "mundy-schlittlermuller-reaction",
@@ -3300,7 +3656,11 @@
     ],
     "mechanismCrop": null,
     "notesCrop": null,
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "heterocycle-formation",
+      "electrophilic-aromatic-substitution"
+    ]
   },
   {
     "id": "mundy-borsche-cinnoline-synthesis",
@@ -3323,7 +3683,10 @@
       304.0
     ],
     "notesCrop": null,
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "heterocycle-formation"
+    ]
   },
   {
     "id": "mundy-von-richter-cinnoline-synthesis",
@@ -3346,7 +3709,10 @@
       533.0
     ],
     "notesCrop": null,
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "heterocycle-formation"
+    ]
   },
   {
     "id": "mundy-auwers-synthesis",
@@ -3370,7 +3736,12 @@
     ],
     "notesCrop": null,
     "applicationCrop": null,
-    "mechanismCaption": "Mechanism within the source reaction scheme"
+    "mechanismCaption": "Mechanism within the source reaction scheme",
+    "categories": [
+      "heterocycle-formation",
+      "ring-expansion",
+      "rearrangements"
+    ]
   },
   {
     "id": "mundy-simonis-chromone-cyclization",
@@ -3388,7 +3759,11 @@
     ],
     "mechanismCrop": null,
     "notesCrop": null,
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "heterocycle-formation",
+      "reactions-involving-carbonyl-compounds"
+    ]
   },
   {
     "id": "mundy-wesselymoser-rearrangement",
@@ -3412,7 +3787,11 @@
     ],
     "notesCrop": null,
     "applicationCrop": null,
-    "mechanismCaption": "Mechanism within the source reaction scheme"
+    "mechanismCaption": "Mechanism within the source reaction scheme",
+    "categories": [
+      "heterocycle-formation",
+      "rearrangements"
+    ]
   },
   {
     "id": "mundy-perkin-coumarin-rearrangement",
@@ -3430,7 +3809,12 @@
     ],
     "mechanismCrop": null,
     "notesCrop": null,
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "heterocycle-formation",
+      "ring-contraction",
+      "rearrangements"
+    ]
   },
   {
     "id": "knorr-pyrazole-synthesis",
@@ -3456,7 +3840,10 @@
     ],
     "mechanismCrop": null,
     "notesCrop": null,
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "heterocycle-formation"
+    ]
   },
   {
     "id": "mundy-brackeen-imidazole-synthesis",
@@ -3474,7 +3861,11 @@
     ],
     "mechanismCrop": null,
     "notesCrop": null,
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "heterocycle-formation",
+      "reactions-involving-carbonyl-compounds"
+    ]
   },
   {
     "id": "mundy-bredereck-imidazole-synthesis",
@@ -3492,7 +3883,11 @@
     ],
     "mechanismCrop": null,
     "notesCrop": null,
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "heterocycle-formation",
+      "reactions-involving-carbonyl-compounds"
+    ]
   },
   {
     "id": "mundy-pechmann-pyrazole-synthesis",
@@ -3510,7 +3905,11 @@
     ],
     "mechanismCrop": null,
     "notesCrop": null,
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "heterocycle-formation",
+      "pericyclic-reactions"
+    ]
   },
   {
     "id": "mundy-einhornbrunner-reaction",
@@ -3528,7 +3927,11 @@
     ],
     "mechanismCrop": null,
     "notesCrop": null,
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "heterocycle-formation",
+      "reactions-involving-carbonyl-compounds"
+    ]
   },
   {
     "id": "mundy-pellizzari-reaction",
@@ -3546,7 +3949,11 @@
     ],
     "mechanismCrop": null,
     "notesCrop": null,
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "heterocycle-formation",
+      "reactions-involving-carbonyl-compounds"
+    ]
   },
   {
     "id": "mundy-bernthsen-acridine-synthesis",
@@ -3564,7 +3971,11 @@
     ],
     "mechanismCrop": null,
     "notesCrop": null,
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "heterocycle-formation",
+      "electrophilic-aromatic-substitution"
+    ]
   },
   {
     "id": "mundy-bischler-quinoxaline-synthesis",
@@ -3582,7 +3993,10 @@
     ],
     "mechanismCrop": null,
     "notesCrop": null,
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "heterocycle-formation"
+    ]
   },
   {
     "id": "mundy-gutknecht-pyrazine-synthesis",
@@ -3600,7 +4014,12 @@
     ],
     "mechanismCrop": null,
     "notesCrop": null,
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "heterocycle-formation",
+      "oxidation",
+      "reactions-involving-carbonyl-compounds"
+    ]
   },
   {
     "id": "mundy-pinner-triazine-synthesis",
@@ -3618,7 +4037,10 @@
     ],
     "mechanismCrop": null,
     "notesCrop": null,
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "heterocycle-formation"
+    ]
   },
   {
     "id": "mundy-dornowwiehler-oxazole-synthesis",
@@ -3636,7 +4058,10 @@
     ],
     "mechanismCrop": null,
     "notesCrop": null,
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "heterocycle-formation"
+    ]
   },
   {
     "id": "mundy-fischer-oxazole-synthesis",
@@ -3654,7 +4079,11 @@
     ],
     "mechanismCrop": null,
     "notesCrop": null,
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "heterocycle-formation",
+      "reactions-involving-carbonyl-compounds"
+    ]
   },
   {
     "id": "hiyama-reaction",
@@ -3695,7 +4124,10 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "reactions-involving-carbenes"
+    ]
   },
   {
     "id": "hofmann",
@@ -3736,7 +4168,11 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "electrophilic-aromatic-substitution",
+      "rearrangements"
+    ]
   },
   {
     "id": "mundy-hooker-reaction",
@@ -3758,7 +4194,12 @@
       620
     ],
     "notesCrop": null,
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "degradation",
+      "oxidation",
+      "rearrangements"
+    ]
   },
   {
     "id": "horner-wadsworth-emmons-olefination",
@@ -3813,7 +4254,10 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "reactions-involving-carbonyl-compounds"
+    ]
   },
   {
     "id": "jacobsen-katsuki-epoxidation",
@@ -3859,6 +4303,10 @@
       410.3,
       389,
       620
+    ],
+    "categories": [
+      "carbocycle-formation",
+      "electrophilic-addition-to-c-c-multiple-bonds"
     ]
   },
   {
@@ -3900,6 +4348,10 @@
       331.7,
       389,
       620
+    ],
+    "categories": [
+      "rearrangements",
+      "fragmentation-reactions"
     ]
   },
   {
@@ -3953,6 +4405,10 @@
       454.8,
       389,
       620
+    ],
+    "categories": [
+      "heterocycle-formation",
+      "oxidation"
     ]
   },
   {
@@ -3994,6 +4450,10 @@
       440.3,
       389,
       620
+    ],
+    "categories": [
+      "homologation",
+      "electrophilic-addition-to-c-c-multiple-bonds"
     ]
   },
   {
@@ -4028,6 +4488,10 @@
       436.3,
       389,
       620
+    ],
+    "categories": [
+      "degradation",
+      "radical-reactions"
     ]
   },
   {
@@ -4069,7 +4533,11 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "heterocycle-formation",
+      "reactions-involving-carbonyl-compounds"
+    ]
   },
   {
     "id": "krapcho-dealkoxycarbonylation-krapcho-reaction",
@@ -4110,7 +4578,10 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "electrophilic-addition-to-c-c-multiple-bonds"
+    ]
   },
   {
     "id": "kumada-cross-coupling",
@@ -4144,7 +4615,11 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "oxidation",
+      "fragmentation-reactions"
+    ]
   },
   {
     "id": "leuckartwallach-reaction",
@@ -4190,6 +4665,9 @@
       455.8,
       389,
       620
+    ],
+    "categories": [
+      "transition-metal-catalyzed-couplings"
     ]
   },
   {
@@ -4222,6 +4700,9 @@
       318.3,
       389,
       620
+    ],
+    "categories": [
+      "reduction"
     ]
   },
   {
@@ -4284,6 +4765,10 @@
       397.7,
       389,
       620
+    ],
+    "categories": [
+      "electrophilic-aromatic-substitution",
+      "reactions-involving-carbonyl-compounds"
     ]
   },
   {
@@ -4316,6 +4801,10 @@
       434.0,
       389,
       620
+    ],
+    "categories": [
+      "reduction",
+      "reactions-involving-carbonyl-compounds"
     ]
   },
   {
@@ -4343,7 +4832,11 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "fragmentation-reactions",
+      "rearrangements"
+    ]
   },
   {
     "id": "mcmurry-coupling",
@@ -4384,6 +4877,9 @@
       478.1,
       389,
       620
+    ],
+    "categories": [
+      "rearrangements"
     ]
   },
   {
@@ -4418,7 +4914,11 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "carbocycle-formation",
+      "photochemical-reactions"
+    ]
   },
   {
     "id": "meyer-schuster-and-rupe-rearrangement",
@@ -4492,6 +4992,11 @@
       462.7,
       389,
       620
+    ],
+    "categories": [
+      "heterocycle-formation",
+      "ring-expansion",
+      "rearrangements"
     ]
   },
   {
@@ -4531,6 +5036,9 @@
       439.4,
       389,
       620
+    ],
+    "categories": [
+      "rearrangements"
     ]
   },
   {
@@ -4563,6 +5071,10 @@
       394.9,
       389,
       620
+    ],
+    "categories": [
+      "cycloaromatization",
+      "radical-reactions"
     ]
   },
   {
@@ -4590,7 +5102,10 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "rearrangements"
+    ]
   },
   {
     "id": "nazarov-cyclization",
@@ -4650,6 +5165,9 @@
       281.5,
       389,
       620
+    ],
+    "categories": [
+      "electrophilic-addition-to-c-c-multiple-bonds"
     ]
   },
   {
@@ -4696,6 +5214,10 @@
       395.9,
       389,
       620
+    ],
+    "categories": [
+      "heterocycle-formation",
+      "reactions-involving-carbonyl-compounds"
     ]
   },
   {
@@ -4723,7 +5245,10 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "carbocycle-formation"
+    ]
   },
   {
     "id": "nozaki-hiyama-kishi-reaction",
@@ -4778,7 +5303,10 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "electrophilic-addition-to-c-c-multiple-bonds"
+    ]
   },
   {
     "id": "paal-knorr-furan-synthesis",
@@ -4814,7 +5342,10 @@
       620
     ],
     "notesCrop": null,
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "oxidation"
+    ]
   },
   {
     "id": "passerini-multicomponent-reaction",
@@ -4897,7 +5428,11 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "cycloaromatization",
+      "oxidation"
+    ]
   },
   {
     "id": "mundy-pfitzinger-reaction",
@@ -4924,7 +5459,11 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "heterocycle-formation",
+      "reactions-involving-carbonyl-compounds"
+    ]
   },
   {
     "id": "pfitzner-moffatt-oxidation",
@@ -4963,6 +5502,10 @@
       392.8,
       389,
       620
+    ],
+    "categories": [
+      "heterocycle-formation",
+      "electrophilic-aromatic-substitution"
     ]
   },
   {
@@ -4990,6 +5533,10 @@
       412.3,
       389,
       620
+    ],
+    "categories": [
+      "heterocycle-formation",
+      "electrophilic-aromatic-substitution"
     ]
   },
   {
@@ -5029,6 +5576,11 @@
       381.3,
       389,
       620
+    ],
+    "categories": [
+      "heterocycle-formation",
+      "pericyclic-reactions",
+      "rearrangements"
     ]
   },
   {
@@ -5056,7 +5608,11 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "reduction",
+      "reactions-involving-carbonyl-compounds"
+    ]
   },
   {
     "id": "pinacol",
@@ -5115,7 +5671,11 @@
     ],
     "notesCrop": null,
     "applicationCrop": null,
-    "aliases": "Bardhan–Sengupta phenanthrene synthesis"
+    "aliases": "Bardhan–Sengupta phenanthrene synthesis",
+    "categories": [
+      "carbocycle-formation",
+      "electrophilic-aromatic-substitution"
+    ]
   },
   {
     "id": "mundy-bogert-reaction",
@@ -5133,7 +5693,11 @@
     ],
     "mechanismCrop": null,
     "notesCrop": null,
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "carbocycle-formation",
+      "electrophilic-aromatic-substitution"
+    ]
   },
   {
     "id": "mundy-darzens-tetralin-synthesis",
@@ -5156,7 +5720,11 @@
       289.0
     ],
     "notesCrop": null,
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "carbocycle-formation",
+      "electrophilic-aromatic-substitution"
+    ]
   },
   {
     "id": "mundy-haworth-synthesis",
@@ -5179,7 +5747,12 @@
       615.0
     ],
     "notesCrop": null,
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "carbocycle-formation",
+      "cycloaromatization",
+      "electrophilic-aromatic-substitution"
+    ]
   },
   {
     "id": "pomeranz-fritsch-reaction",
@@ -5239,6 +5812,10 @@
       423.8,
       389,
       620
+    ],
+    "categories": [
+      "carbocycle-formation",
+      "radical-reactions"
     ]
   },
   {
@@ -5271,6 +5848,9 @@
       283.5,
       389,
       620
+    ],
+    "categories": [
+      "reactions-involving-carbonyl-compounds"
     ]
   },
   {
@@ -5317,6 +5897,9 @@
       439.2,
       389,
       620
+    ],
+    "categories": [
+      "reactions-involving-carbonyl-compounds"
     ]
   },
   {
@@ -5363,6 +5946,9 @@
       322.3,
       389,
       620
+    ],
+    "categories": [
+      "nucleophilic-aromatic-substitution"
     ]
   },
   {
@@ -5390,6 +5976,10 @@
       369.7,
       389,
       620
+    ],
+    "categories": [
+      "heterocycle-formation",
+      "reduction"
     ]
   },
   {
@@ -5438,7 +6028,11 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "heterocycle-formation",
+      "reactions-involving-carbonyl-compounds"
+    ]
   },
   {
     "id": "mundy-rosenmund-reduction",
@@ -5470,6 +6064,10 @@
       342.6,
       389,
       620
+    ],
+    "categories": [
+      "reduction",
+      "reactions-involving-carbonyl-compounds"
     ]
   },
   {
@@ -5532,7 +6130,12 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "oxidation",
+      "pericyclic-reactions",
+      "photochemical-reactions"
+    ]
   },
   {
     "id": "schmidt-reaction",
@@ -5566,7 +6169,10 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "nucleophilic-substitution"
+    ]
   },
   {
     "id": "mundy-scholl-reaction",
@@ -5598,6 +6204,11 @@
       412.3,
       389,
       620
+    ],
+    "categories": [
+      "carbocycle-formation",
+      "cycloaromatization",
+      "oxidation"
     ]
   },
   {
@@ -5632,6 +6243,10 @@
       429.6,
       389,
       620
+    ],
+    "categories": [
+      "oxidation",
+      "fragmentation-reactions"
     ]
   },
   {
@@ -5659,7 +6274,10 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "rearrangements"
+    ]
   },
   {
     "id": "mundy-semmlerwolff-reaction",
@@ -5686,6 +6304,10 @@
       356.0,
       389,
       620
+    ],
+    "categories": [
+      "cycloaromatization",
+      "elimination-reactions"
     ]
   },
   {
@@ -5790,7 +6412,11 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "oxidation",
+      "nucleophilic-substitution"
+    ]
   },
   {
     "id": "sonogashira-cross-coupling",
@@ -5885,6 +6511,9 @@
       346.4,
       389,
       620
+    ],
+    "categories": [
+      "reactions-involving-carbonyl-compounds"
     ]
   },
   {
@@ -5919,7 +6548,11 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "degradation",
+      "reactions-involving-carbonyl-compounds"
+    ]
   },
   {
     "id": "suzuki",
@@ -5974,7 +6607,10 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "electrophilic-aromatic-substitution"
+    ]
   },
   {
     "id": "mundy-thorpe-thorpeziegler-reaction",
@@ -6006,6 +6642,9 @@
       511.4,
       389,
       620
+    ],
+    "categories": [
+      "carbocycle-formation"
     ]
   },
   {
@@ -6047,7 +6686,11 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "carbocycle-formation",
+      "transition-metal-catalyzed-couplings"
+    ]
   },
   {
     "id": "mundy-tscherniaceinhorn-reaction",
@@ -6074,7 +6717,10 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "electrophilic-aromatic-substitution"
+    ]
   },
   {
     "id": "tsuji-trost-reaction-allylation",
@@ -6108,6 +6754,10 @@
       359.9,
       389,
       620
+    ],
+    "categories": [
+      "heterocycle-formation",
+      "radical-reactions"
     ]
   },
   {
@@ -6156,7 +6806,10 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "oxidation"
+    ]
   },
   {
     "id": "vilsmeier-haack-formylation",
@@ -6199,7 +6852,10 @@
       620
     ],
     "notesCrop": null,
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "nucleophilic-aromatic-substitution"
+    ]
   },
   {
     "id": "wacker-oxidation",
@@ -6240,7 +6896,10 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "transition-metal-catalyzed-couplings"
+    ]
   },
   {
     "id": "mundy-weiss-reaction",
@@ -6267,7 +6926,11 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "carbocycle-formation",
+      "reactions-involving-carbonyl-compounds"
+    ]
   },
   {
     "id": "wharton-olefin-synthesis-wharton-transposition",
@@ -6301,7 +6964,11 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "carbocycle-formation",
+      "reactions-involving-carbonyl-compounds"
+    ]
   },
   {
     "id": "mundy-widmanstoermer-synthesis",
@@ -6328,7 +6995,10 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "heterocycle-formation"
+    ]
   },
   {
     "id": "mundy-willgerodtkindler-reaction",
@@ -6350,7 +7020,11 @@
       620
     ],
     "notesCrop": null,
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "rearrangements",
+      "reactions-involving-carbonyl-compounds"
+    ]
   },
   {
     "id": "williamson",
@@ -6384,6 +7058,10 @@
       327.1,
       389,
       620
+    ],
+    "categories": [
+      "heterocycle-formation",
+      "reactions-involving-carbonyl-compounds"
     ]
   },
   {
@@ -6446,7 +7124,10 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "oxidation"
+    ]
   },
   {
     "id": "wurtz-coupling",
@@ -6487,7 +7168,11 @@
       389,
       620
     ],
-    "applicationCrop": null
+    "applicationCrop": null,
+    "categories": [
+      "reactions-involving-carbonyl-compounds",
+      "nucleophilic-substitution"
+    ]
   },
   {
     "id": "mundy-kulinkovich-reaction",
@@ -6516,6 +7201,10 @@
       389,
       369
     ],
-    "mechanismCaption": "Mechanism within the source reaction scheme"
+    "mechanismCaption": "Mechanism within the source reaction scheme",
+    "categories": [
+      "carbocycle-formation",
+      "reactions-involving-carbonyl-compounds"
+    ]
   }
 ]

@@ -15,9 +15,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 6,
     "categories": [
-      "mundy-additions"
+      "rearrangements",
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "rearrangements",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -36,9 +37,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 8,
     "categories": [
-      "mundy-additions"
+      "rearrangements"
     ],
-    "category": "mundy-additions",
+    "category": "rearrangements",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -57,9 +58,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 10,
     "categories": [
-      "mundy-additions"
+      "oxidation"
     ],
-    "category": "mundy-additions",
+    "category": "oxidation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -78,9 +79,11 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 18,
     "categories": [
-      "mundy-additions"
+      "cycloaromatization",
+      "pericyclic-reactions",
+      "fragmentation-reactions"
     ],
-    "category": "mundy-additions",
+    "category": "cycloaromatization",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -99,9 +102,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 28,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation",
+      "oxidation"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -120,9 +124,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 32,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation",
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -141,9 +146,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 38,
     "categories": [
-      "mundy-additions"
+      "nucleophilic-substitution"
     ],
-    "category": "mundy-additions",
+    "category": "nucleophilic-substitution",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -162,9 +167,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 40,
     "categories": [
-      "mundy-additions"
+      "nucleophilic-substitution"
     ],
-    "category": "mundy-additions",
+    "category": "nucleophilic-substitution",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -183,9 +188,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 10,
     "categories": [
-      "mundy-additions"
+      "homologation",
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "homologation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -204,9 +210,11 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 317,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation",
+      "ring-expansion",
+      "rearrangements"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -225,9 +233,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 155,
     "categories": [
-      "mundy-additions"
+      "pericyclic-reactions",
+      "rearrangements"
     ],
-    "category": "mundy-additions",
+    "category": "pericyclic-reactions",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -246,9 +255,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 307,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation",
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -267,9 +277,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 54,
     "categories": [
-      "mundy-additions"
+      "rearrangements"
     ],
-    "category": "mundy-additions",
+    "category": "rearrangements",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -288,9 +298,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 60,
     "categories": [
-      "mundy-additions"
+      "degradation",
+      "oxidation"
     ],
-    "category": "mundy-additions",
+    "category": "degradation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -309,9 +320,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 70,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -330,9 +341,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 72,
     "categories": [
-      "mundy-additions"
+      "electrophilic-aromatic-substitution",
+      "oxidation"
     ],
-    "category": "mundy-additions",
+    "category": "electrophilic-aromatic-substitution",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -351,9 +363,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 76,
     "categories": [
-      "mundy-additions"
+      "reduction"
     ],
-    "category": "mundy-additions",
+    "category": "reduction",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -372,9 +384,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 82,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation",
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -393,9 +406,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 286,
     "categories": [
-      "mundy-additions"
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "reactions-involving-carbonyl-compounds",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -414,9 +427,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 84,
     "categories": [
-      "mundy-additions"
+      "rearrangements"
     ],
-    "category": "mundy-additions",
+    "category": "rearrangements",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -435,9 +448,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 319,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation",
+      "electrophilic-aromatic-substitution"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -456,9 +470,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 319,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -477,9 +491,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 308,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -498,9 +512,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 98,
     "categories": [
-      "mundy-additions"
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "reactions-involving-carbonyl-compounds",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -519,9 +533,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 100,
     "categories": [
-      "mundy-additions"
+      "electrophilic-aromatic-substitution"
     ],
-    "category": "mundy-additions",
+    "category": "electrophilic-aromatic-substitution",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -540,9 +554,11 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 102,
     "categories": [
-      "mundy-additions"
+      "carbocycle-formation",
+      "heterocycle-formation",
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "carbocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -561,9 +577,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 286,
     "categories": [
-      "mundy-additions"
+      "reactions-involving-carbonyl-compounds",
+      "nucleophilic-substitution"
     ],
-    "category": "mundy-additions",
+    "category": "reactions-involving-carbonyl-compounds",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -582,9 +599,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 10,
     "categories": [
-      "mundy-additions"
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "reactions-involving-carbonyl-compounds",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -603,9 +620,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 524,
     "categories": [
-      "mundy-additions"
+      "carbocycle-formation",
+      "electrophilic-aromatic-substitution"
     ],
-    "category": "mundy-additions",
+    "category": "carbocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -624,9 +642,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 524,
     "categories": [
-      "mundy-additions"
+      "carbocycle-formation",
+      "electrophilic-aromatic-substitution"
     ],
-    "category": "mundy-additions",
+    "category": "carbocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -645,9 +664,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 104,
     "categories": [
-      "mundy-additions"
+      "elimination-reactions",
+      "reduction"
     ],
-    "category": "mundy-additions",
+    "category": "elimination-reactions",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -666,9 +686,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 106,
     "categories": [
-      "mundy-additions"
+      "reduction",
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "reduction",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -687,9 +708,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 315,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -708,9 +729,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 108,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation",
+      "pericyclic-reactions"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -729,9 +751,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 110,
     "categories": [
-      "mundy-additions"
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "reactions-involving-carbonyl-compounds",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -750,9 +772,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 112,
     "categories": [
-      "mundy-additions"
+      "reduction",
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "reduction",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -771,9 +794,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 114,
     "categories": [
-      "mundy-additions"
+      "oxidation"
     ],
-    "category": "mundy-additions",
+    "category": "oxidation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -792,9 +815,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 318,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation",
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -813,9 +837,11 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 116,
     "categories": [
-      "mundy-additions"
+      "carbocycle-formation",
+      "cycloaromatization",
+      "electrophilic-aromatic-substitution"
     ],
-    "category": "mundy-additions",
+    "category": "carbocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -834,9 +860,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 318,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation",
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -855,9 +882,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 124,
     "categories": [
-      "mundy-additions"
+      "nucleophilic-aromatic-substitution"
     ],
-    "category": "mundy-additions",
+    "category": "nucleophilic-aromatic-substitution",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -876,9 +903,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 312,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation",
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -897,9 +925,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 132,
     "categories": [
-      "mundy-additions"
+      "rearrangements"
     ],
-    "category": "mundy-additions",
+    "category": "rearrangements",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -918,9 +946,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 138,
     "categories": [
-      "mundy-additions"
+      "reduction"
     ],
-    "category": "mundy-additions",
+    "category": "reduction",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -939,9 +967,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 153,
     "categories": [
-      "mundy-additions"
+      "pericyclic-reactions",
+      "rearrangements"
     ],
-    "category": "mundy-additions",
+    "category": "pericyclic-reactions",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -960,9 +989,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 162,
     "categories": [
-      "mundy-additions"
+      "homologation",
+      "nucleophilic-substitution"
     ],
-    "category": "mundy-additions",
+    "category": "homologation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -981,9 +1011,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 166,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation",
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -1002,9 +1033,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 178,
     "categories": [
-      "mundy-additions"
+      "oxidation",
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "oxidation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -1023,9 +1055,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 180,
     "categories": [
-      "mundy-additions"
+      "transition-metal-catalyzed-couplings"
     ],
-    "category": "mundy-additions",
+    "category": "transition-metal-catalyzed-couplings",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -1044,9 +1076,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 182,
     "categories": [
-      "mundy-additions"
+      "rearrangements",
+      "nucleophilic-substitution"
     ],
-    "category": "mundy-additions",
+    "category": "rearrangements",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -1065,9 +1098,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 186,
     "categories": [
-      "mundy-additions"
+      "nucleophilic-substitution",
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "nucleophilic-substitution",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -1086,9 +1120,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 525,
     "categories": [
-      "mundy-additions"
+      "carbocycle-formation",
+      "electrophilic-aromatic-substitution"
     ],
-    "category": "mundy-additions",
+    "category": "carbocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -1097,19 +1132,20 @@ const mundyCatalog = [
     "name": "Dauben–Dietsche rearrangement",
     "bookName": "Dauben–Dietsche rearrangement",
     "aliases": "",
-    "summary": "A vinyl-substituted strained ring undergoes a thermal rearrangement.",
-    "question": "A vinyl-substituted strained ring undergoes a thermal rearrangement. Identify the named reaction.",
-    "equation": "A vinyl-substituted strained ring undergoes a thermal rearrangement.",
-    "explanation": "A vinyl-substituted strained ring undergoes a thermal rearrangement.",
+    "summary": "A vinyl ether precursor rearranges through an allyl vinyl ether to an unsaturated aldehyde.",
+    "question": "A vinyl ether precursor rearranges through an allyl vinyl ether to an unsaturated aldehyde. Identify the named reaction.",
+    "equation": "A vinyl ether precursor rearranges through an allyl vinyl ether to an unsaturated aldehyde.",
+    "explanation": "A vinyl ether precursor rearranges through an allyl vinyl ether to an unsaturated aldehyde.",
     "reagents": "",
     "difficulty": "Book entry",
     "sourceOverview": true,
     "sourceBook": "mundy",
     "printedPage": 154,
     "categories": [
-      "mundy-additions"
+      "pericyclic-reactions",
+      "rearrangements"
     ],
-    "category": "mundy-additions",
+    "category": "pericyclic-reactions",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -1128,9 +1164,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 34,
     "categories": [
-      "mundy-additions"
+      "nucleophilic-substitution"
     ],
-    "category": "mundy-additions",
+    "category": "nucleophilic-substitution",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -1149,9 +1185,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 154,
     "categories": [
-      "mundy-additions"
+      "pericyclic-reactions",
+      "rearrangements"
     ],
-    "category": "mundy-additions",
+    "category": "pericyclic-reactions",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -1170,9 +1207,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 212,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation",
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -1191,9 +1229,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 214,
     "categories": [
-      "mundy-additions"
+      "homologation",
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "homologation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -1212,9 +1251,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 319,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -1233,9 +1272,11 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 218,
     "categories": [
-      "mundy-additions"
+      "ring-expansion",
+      "radical-reactions",
+      "fragmentation-reactions"
     ],
-    "category": "mundy-additions",
+    "category": "ring-expansion",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -1254,9 +1295,11 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 220,
     "categories": [
-      "mundy-additions"
+      "reactions-involving-carbenes",
+      "pericyclic-reactions",
+      "rearrangements"
     ],
-    "category": "mundy-additions",
+    "category": "reactions-involving-carbenes",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -1275,9 +1318,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 222,
     "categories": [
-      "mundy-additions"
+      "electrophilic-aromatic-substitution"
     ],
-    "category": "mundy-additions",
+    "category": "electrophilic-aromatic-substitution",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -1296,9 +1339,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 286,
     "categories": [
-      "mundy-additions"
+      "electrophilic-addition-to-c-c-multiple-bonds"
     ],
-    "category": "mundy-additions",
+    "category": "electrophilic-addition-to-c-c-multiple-bonds",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -1317,9 +1360,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 318,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation",
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -1338,9 +1382,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 228,
     "categories": [
-      "mundy-additions"
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "reactions-involving-carbonyl-compounds",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -1359,9 +1403,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 12,
     "categories": [
-      "mundy-additions"
+      "oxidation"
     ],
-    "category": "mundy-additions",
+    "category": "oxidation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -1380,9 +1424,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 236,
     "categories": [
-      "mundy-additions"
+      "reduction",
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "reduction",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -1401,9 +1446,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 306,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -1422,9 +1467,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 319,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation",
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -1443,9 +1489,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 246,
     "categories": [
-      "mundy-additions"
+      "electrophilic-aromatic-substitution",
+      "rearrangements"
     ],
-    "category": "mundy-additions",
+    "category": "electrophilic-aromatic-substitution",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -1464,9 +1511,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 35,
     "categories": [
-      "mundy-additions"
+      "nucleophilic-substitution",
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "nucleophilic-substitution",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -1485,9 +1533,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 252,
     "categories": [
-      "mundy-additions"
+      "nucleophilic-substitution",
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "nucleophilic-substitution",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -1506,9 +1555,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 262,
     "categories": [
-      "mundy-additions"
+      "reactions-involving-carbenes",
+      "rearrangements"
     ],
-    "category": "mundy-additions",
+    "category": "reactions-involving-carbenes",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -1527,9 +1577,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 35,
     "categories": [
-      "mundy-additions"
+      "nucleophilic-substitution"
     ],
-    "category": "mundy-additions",
+    "category": "nucleophilic-substitution",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -1548,9 +1598,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 12,
     "categories": [
-      "mundy-additions"
+      "reduction",
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "reduction",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -1569,9 +1620,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 308,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation",
+      "reduction"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -1590,9 +1642,11 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 36,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation",
+      "rearrangements",
+      "ring-expansion"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -1611,9 +1665,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 266,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation",
+      "nucleophilic-substitution"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -1632,9 +1687,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 37,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation",
+      "nucleophilic-substitution"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -1653,9 +1709,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 13,
     "categories": [
-      "mundy-additions"
+      "oxidation",
+      "nucleophilic-substitution"
     ],
-    "category": "mundy-additions",
+    "category": "oxidation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -1674,9 +1731,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 268,
     "categories": [
-      "mundy-additions"
+      "nucleophilic-substitution"
     ],
-    "category": "mundy-additions",
+    "category": "nucleophilic-substitution",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -1695,9 +1752,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 270,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -1716,9 +1773,11 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 308,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation",
+      "pericyclic-reactions",
+      "rearrangements"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -1737,9 +1796,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 280,
     "categories": [
-      "mundy-additions"
+      "reduction"
     ],
-    "category": "mundy-additions",
+    "category": "reduction",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -1758,9 +1817,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 282,
     "categories": [
-      "mundy-additions"
+      "elimination-reactions",
+      "oxidation"
     ],
-    "category": "mundy-additions",
+    "category": "elimination-reactions",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -1779,9 +1839,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 13,
     "categories": [
-      "mundy-additions"
+      "homologation"
     ],
-    "category": "mundy-additions",
+    "category": "homologation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -1800,9 +1860,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 302,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation",
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -1821,9 +1882,11 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 319,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation",
+      "oxidation",
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -1842,9 +1905,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 292,
     "categories": [
-      "mundy-additions"
+      "fragmentation-reactions",
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "fragmentation-reactions",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -1863,9 +1927,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 305,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation",
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -1884,9 +1949,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 294,
     "categories": [
-      "mundy-additions"
+      "oxidation",
+      "nucleophilic-substitution"
     ],
-    "category": "mundy-additions",
+    "category": "oxidation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -1905,9 +1971,11 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 525,
     "categories": [
-      "mundy-additions"
+      "carbocycle-formation",
+      "cycloaromatization",
+      "electrophilic-aromatic-substitution"
     ],
-    "category": "mundy-additions",
+    "category": "carbocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -1926,9 +1994,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 308,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation",
+      "transition-metal-catalyzed-couplings"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -1947,9 +2016,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 307,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation",
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -1968,9 +2038,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 318,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -1989,9 +2059,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 324,
     "categories": [
-      "mundy-additions"
+      "reactions-involving-carbenes"
     ],
-    "category": "mundy-additions",
+    "category": "reactions-involving-carbenes",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -2010,9 +2080,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 330,
     "categories": [
-      "mundy-additions"
+      "electrophilic-aromatic-substitution",
+      "rearrangements"
     ],
-    "category": "mundy-additions",
+    "category": "electrophilic-aromatic-substitution",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -2031,9 +2102,11 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 332,
     "categories": [
-      "mundy-additions"
+      "degradation",
+      "oxidation",
+      "rearrangements"
     ],
-    "category": "mundy-additions",
+    "category": "degradation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -2052,9 +2125,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 342,
     "categories": [
-      "mundy-additions"
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "reactions-involving-carbonyl-compounds",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -2073,9 +2146,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 348,
     "categories": [
-      "mundy-additions"
+      "carbocycle-formation",
+      "electrophilic-addition-to-c-c-multiple-bonds"
     ],
-    "category": "mundy-additions",
+    "category": "carbocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -2094,9 +2168,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 354,
     "categories": [
-      "mundy-additions"
+      "rearrangements",
+      "fragmentation-reactions"
     ],
-    "category": "mundy-additions",
+    "category": "rearrangements",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -2115,9 +2190,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 362,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation",
+      "oxidation"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -2136,9 +2212,11 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 313,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation",
+      "electrophilic-aromatic-substitution",
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -2157,9 +2235,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 368,
     "categories": [
-      "mundy-additions"
+      "homologation",
+      "electrophilic-addition-to-c-c-multiple-bonds"
     ],
-    "category": "mundy-additions",
+    "category": "homologation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -2178,9 +2257,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 372,
     "categories": [
-      "mundy-additions"
+      "degradation",
+      "radical-reactions"
     ],
-    "category": "mundy-additions",
+    "category": "degradation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -2199,9 +2279,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 378,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation",
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -2220,9 +2301,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 14,
     "categories": [
-      "mundy-additions"
+      "oxidation",
+      "nucleophilic-substitution"
     ],
-    "category": "mundy-additions",
+    "category": "oxidation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -2241,9 +2323,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 384,
     "categories": [
-      "mundy-additions"
+      "electrophilic-addition-to-c-c-multiple-bonds"
     ],
-    "category": "mundy-additions",
+    "category": "electrophilic-addition-to-c-c-multiple-bonds",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -2262,9 +2344,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 287,
     "categories": [
-      "mundy-additions"
+      "carbocycle-formation",
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "carbocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -2283,9 +2366,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 309,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation",
+      "reduction"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -2304,9 +2388,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 388,
     "categories": [
-      "mundy-additions"
+      "oxidation",
+      "fragmentation-reactions"
     ],
-    "category": "mundy-additions",
+    "category": "oxidation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -2325,9 +2410,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 394,
     "categories": [
-      "mundy-additions"
+      "transition-metal-catalyzed-couplings"
     ],
-    "category": "mundy-additions",
+    "category": "transition-metal-catalyzed-couplings",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -2346,9 +2431,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 396,
     "categories": [
-      "mundy-additions"
+      "reduction"
     ],
-    "category": "mundy-additions",
+    "category": "reduction",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -2367,9 +2452,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 154,
     "categories": [
-      "mundy-additions"
+      "pericyclic-reactions",
+      "rearrangements"
     ],
-    "category": "mundy-additions",
+    "category": "pericyclic-reactions",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -2388,9 +2474,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 410,
     "categories": [
-      "mundy-additions"
+      "electrophilic-aromatic-substitution",
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "electrophilic-aromatic-substitution",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -2409,9 +2496,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 412,
     "categories": [
-      "mundy-additions"
+      "reduction",
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "reduction",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -2430,9 +2518,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 414,
     "categories": [
-      "mundy-additions"
+      "fragmentation-reactions",
+      "rearrangements"
     ],
-    "category": "mundy-additions",
+    "category": "fragmentation-reactions",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -2451,9 +2540,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 420,
     "categories": [
-      "mundy-additions"
+      "rearrangements"
     ],
-    "category": "mundy-additions",
+    "category": "rearrangements",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -2472,9 +2561,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 424,
     "categories": [
-      "mundy-additions"
+      "carbocycle-formation",
+      "photochemical-reactions"
     ],
-    "category": "mundy-additions",
+    "category": "carbocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -2493,9 +2583,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 15,
     "categories": [
-      "mundy-additions"
+      "reactions-involving-carbonyl-compounds",
+      "nucleophilic-substitution"
     ],
-    "category": "mundy-additions",
+    "category": "reactions-involving-carbonyl-compounds",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -2514,9 +2605,11 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 438,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation",
+      "ring-expansion",
+      "rearrangements"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -2535,9 +2628,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 310,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation",
+      "transition-metal-catalyzed-couplings"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -2556,9 +2650,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 442,
     "categories": [
-      "mundy-additions"
+      "rearrangements"
     ],
-    "category": "mundy-additions",
+    "category": "rearrangements",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -2577,9 +2671,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 444,
     "categories": [
-      "mundy-additions"
+      "cycloaromatization",
+      "radical-reactions"
     ],
-    "category": "mundy-additions",
+    "category": "cycloaromatization",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -2598,9 +2693,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 446,
     "categories": [
-      "mundy-additions"
+      "rearrangements"
     ],
-    "category": "mundy-additions",
+    "category": "rearrangements",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -2619,9 +2714,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 456,
     "categories": [
-      "mundy-additions"
+      "electrophilic-addition-to-c-c-multiple-bonds"
     ],
-    "category": "mundy-additions",
+    "category": "electrophilic-addition-to-c-c-multiple-bonds",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -2640,9 +2735,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 462,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation",
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -2661,9 +2757,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 314,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation",
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -2682,9 +2779,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 464,
     "categories": [
-      "mundy-additions"
+      "carbocycle-formation"
     ],
-    "category": "mundy-additions",
+    "category": "carbocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -2703,9 +2800,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 11,
     "categories": [
-      "mundy-additions"
+      "oxidation"
     ],
-    "category": "mundy-additions",
+    "category": "oxidation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -2724,9 +2821,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 34,
     "categories": [
-      "mundy-additions"
+      "electrophilic-aromatic-substitution",
+      "rearrangements"
     ],
-    "category": "mundy-additions",
+    "category": "electrophilic-aromatic-substitution",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -2745,9 +2843,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 474,
     "categories": [
-      "mundy-additions"
+      "electrophilic-addition-to-c-c-multiple-bonds"
     ],
-    "category": "mundy-additions",
+    "category": "electrophilic-addition-to-c-c-multiple-bonds",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -2766,9 +2864,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 480,
     "categories": [
-      "mundy-additions"
+      "oxidation"
     ],
-    "category": "mundy-additions",
+    "category": "oxidation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -2787,9 +2885,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 318,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation",
+      "pericyclic-reactions"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -2808,9 +2907,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 318,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation",
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -2829,9 +2929,11 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 317,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation",
+      "ring-contraction",
+      "rearrangements"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -2850,9 +2952,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 498,
     "categories": [
-      "mundy-additions"
+      "cycloaromatization",
+      "oxidation"
     ],
-    "category": "mundy-additions",
+    "category": "cycloaromatization",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -2871,9 +2974,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 500,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation",
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -2892,9 +2996,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 504,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation",
+      "electrophilic-aromatic-substitution"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -2913,9 +3018,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 506,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation",
+      "electrophilic-aromatic-substitution"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -2934,9 +3040,11 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 510,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation",
+      "pericyclic-reactions",
+      "rearrangements"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -2955,9 +3063,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 512,
     "categories": [
-      "mundy-additions"
+      "reduction",
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "reduction",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -2976,9 +3085,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 319,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -2997,9 +3106,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 534,
     "categories": [
-      "mundy-additions"
+      "carbocycle-formation",
+      "radical-reactions"
     ],
-    "category": "mundy-additions",
+    "category": "carbocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -3018,9 +3128,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 536,
     "categories": [
-      "mundy-additions"
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "reactions-involving-carbonyl-compounds",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -3039,9 +3149,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 542,
     "categories": [
-      "mundy-additions"
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "reactions-involving-carbonyl-compounds",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -3060,9 +3170,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 34,
     "categories": [
-      "mundy-additions"
+      "electrophilic-aromatic-substitution",
+      "rearrangements"
     ],
-    "category": "mundy-additions",
+    "category": "electrophilic-aromatic-substitution",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -3081,9 +3192,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 16,
     "categories": [
-      "mundy-additions"
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "reactions-involving-carbonyl-compounds",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -3102,9 +3213,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 550,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation",
+      "reduction"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -3123,9 +3235,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 548,
     "categories": [
-      "mundy-additions"
+      "nucleophilic-aromatic-substitution"
     ],
-    "category": "mundy-additions",
+    "category": "nucleophilic-aromatic-substitution",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -3144,9 +3256,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 314,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation",
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -3165,9 +3278,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 558,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation",
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -3186,9 +3300,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 560,
     "categories": [
-      "mundy-additions"
+      "reduction",
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "reduction",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -3207,9 +3322,11 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 572,
     "categories": [
-      "mundy-additions"
+      "oxidation",
+      "pericyclic-reactions",
+      "photochemical-reactions"
     ],
-    "category": "mundy-additions",
+    "category": "oxidation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -3228,9 +3345,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 314,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation",
+      "electrophilic-aromatic-substitution"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -3249,9 +3367,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 576,
     "categories": [
-      "mundy-additions"
+      "nucleophilic-substitution"
     ],
-    "category": "mundy-additions",
+    "category": "nucleophilic-substitution",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -3270,9 +3388,11 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 578,
     "categories": [
-      "mundy-additions"
+      "carbocycle-formation",
+      "cycloaromatization",
+      "oxidation"
     ],
-    "category": "mundy-additions",
+    "category": "carbocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -3291,9 +3411,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 582,
     "categories": [
-      "mundy-additions"
+      "oxidation",
+      "fragmentation-reactions"
     ],
-    "category": "mundy-additions",
+    "category": "oxidation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -3312,9 +3433,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 37,
     "categories": [
-      "mundy-additions"
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "reactions-involving-carbonyl-compounds",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -3333,9 +3454,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 584,
     "categories": [
-      "mundy-additions"
+      "rearrangements"
     ],
-    "category": "mundy-additions",
+    "category": "rearrangements",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -3354,9 +3475,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 586,
     "categories": [
-      "mundy-additions"
+      "cycloaromatization",
+      "elimination-reactions"
     ],
-    "category": "mundy-additions",
+    "category": "cycloaromatization",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -3375,9 +3497,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 317,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation",
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -3396,9 +3519,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 311,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -3417,9 +3540,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 610,
     "categories": [
-      "mundy-additions"
+      "oxidation",
+      "nucleophilic-substitution"
     ],
-    "category": "mundy-additions",
+    "category": "oxidation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -3438,9 +3562,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 17,
     "categories": [
-      "mundy-additions"
+      "reduction",
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "reduction",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -3459,9 +3584,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 630,
     "categories": [
-      "mundy-additions"
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "reactions-involving-carbonyl-compounds",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -3480,9 +3605,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 634,
     "categories": [
-      "mundy-additions"
+      "degradation",
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "degradation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -3501,9 +3627,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 644,
     "categories": [
-      "mundy-additions"
+      "electrophilic-aromatic-substitution"
     ],
-    "category": "mundy-additions",
+    "category": "electrophilic-aromatic-substitution",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -3522,9 +3648,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 646,
     "categories": [
-      "mundy-additions"
+      "carbocycle-formation"
     ],
-    "category": "mundy-additions",
+    "category": "carbocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -3543,9 +3669,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 652,
     "categories": [
-      "mundy-additions"
+      "carbocycle-formation",
+      "transition-metal-catalyzed-couplings"
     ],
-    "category": "mundy-additions",
+    "category": "carbocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -3564,9 +3691,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 654,
     "categories": [
-      "mundy-additions"
+      "electrophilic-aromatic-substitution"
     ],
-    "category": "mundy-additions",
+    "category": "electrophilic-aromatic-substitution",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -3585,9 +3712,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 658,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation",
+      "radical-reactions"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -3606,9 +3734,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 666,
     "categories": [
-      "mundy-additions"
+      "oxidation"
     ],
-    "category": "mundy-additions",
+    "category": "oxidation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -3627,9 +3755,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 37,
     "categories": [
-      "mundy-additions"
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "reactions-involving-carbonyl-compounds",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -3648,9 +3776,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 307,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -3669,9 +3797,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 315,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -3690,9 +3818,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 674,
     "categories": [
-      "mundy-additions"
+      "nucleophilic-aromatic-substitution"
     ],
-    "category": "mundy-additions",
+    "category": "nucleophilic-aromatic-substitution",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -3711,9 +3839,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 680,
     "categories": [
-      "mundy-additions"
+      "transition-metal-catalyzed-couplings"
     ],
-    "category": "mundy-additions",
+    "category": "transition-metal-catalyzed-couplings",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -3732,9 +3860,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 682,
     "categories": [
-      "mundy-additions"
+      "carbocycle-formation",
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "carbocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -3753,9 +3882,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 317,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation",
+      "rearrangements"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -3774,9 +3904,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 686,
     "categories": [
-      "mundy-additions"
+      "carbocycle-formation",
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "carbocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -3795,9 +3926,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 688,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -3816,9 +3947,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 690,
     "categories": [
-      "mundy-additions"
+      "rearrangements",
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "rearrangements",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -3837,9 +3969,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 694,
     "categories": [
-      "mundy-additions"
+      "heterocycle-formation",
+      "reactions-involving-carbonyl-compounds"
     ],
-    "category": "mundy-additions",
+    "category": "heterocycle-formation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -3858,9 +3991,9 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 706,
     "categories": [
-      "mundy-additions"
+      "oxidation"
     ],
-    "category": "mundy-additions",
+    "category": "oxidation",
     "appendixPages": [],
     "appendixSummary": null
   },
@@ -3879,9 +4012,10 @@ const mundyCatalog = [
     "sourceBook": "mundy",
     "printedPage": 712,
     "categories": [
-      "mundy-additions"
+      "reactions-involving-carbonyl-compounds",
+      "nucleophilic-substitution"
     ],
-    "category": "mundy-additions",
+    "category": "reactions-involving-carbonyl-compounds",
     "appendixPages": [],
     "appendixSummary": null
   }

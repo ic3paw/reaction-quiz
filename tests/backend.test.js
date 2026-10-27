@@ -31,7 +31,7 @@ function fixture() {
   };
   return {api, calls, change: user => authListener('SIGNED_IN', user ? {user} : null), finishRead: data => resolveRead({data, error: null})};
 }
-const catalog = {reactions: ['aldol'], categories: ['addition', 'mundy-additions'], books: ['all', 'li']};
+const catalog = {reactions: ['aldol'], categories: ['addition'], mundyCategories: ['addition'], books: ['all', 'li', 'mundy']};
 const payload = {saved: ['aldol'], attempts: [{id: 'aldol', correct: true, at: '2026-10-27T12:00:00Z'}], sessions: [{title: 'Practice', total: 1, correct: 1, seconds: 2, at: '2026-10-27T12:00:00Z'}]};
 
 await test('Empty configuration makes no SDK request', async () => {
@@ -90,7 +90,7 @@ await test('Conflicts and signed-out writes are rejected', async () => {
 await test('Valid snapshots preserve study data and normalize older preferences', () => {
   const output = validateStudyBackup({schema_version: 1, payload: {...payload, saved: ['aldol', 'aldol', 'unknown'], selectedCategories: ['addition'], categoryVersion: 2, flashcardMode: 'outline', extra: 'discard'}}, catalog);
   assert(output.saved.length === 1 && output.attempts[0].correct && output.sessions[0].total === 1);
-  assert(output.selectedCategories.includes('mundy-additions') && output.flashcardMode === 'reaction');
+  assert(output.selectedCategories.includes('addition') && output.categoryVersion === 4 && output.flashcardMode === 'reaction');
   assert(!('extra' in output));
 });
 await test('Malformed and future snapshots cannot be restored', async () => {

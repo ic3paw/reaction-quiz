@@ -21,7 +21,7 @@ const icons = {
 const icon = name => `<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">${icons[name] || icons.flask}</svg>`;
 document.querySelectorAll('[data-icon]').forEach(el => el.innerHTML = icon(el.dataset.icon));
 
-const categories = [...bookCategories, {id:'mundy-additions', name:'Additional reactions — Mundy et al.', short:'Mundy additions', color:'#800000', light:'#f8eeee'}];
+const categories = bookCategories;
 const sourceBooks = {
   kurti: {label:'Kürti & Czakó (2005)', authors:'Kürti & Czakó', title:'Strategic Applications of Named Reactions in Organic Synthesis', year:2005},
   li: {label:'Li (2021)', authors:'Jie Jack Li', title:'Name Reactions: A Collection of Detailed Mechanisms and Synthetic Applications', year:2021},
@@ -30,12 +30,7 @@ const sourceBooks = {
 Object.assign(bookReactions, liBookReactions, mundyBookReactions);
 Object.assign(bookSections, liBookSections, mundyBookSections);
 Object.assign(flashcardFigures, liFlashcardFigures, mundyFlashcardFigures);
-const reactions = [...reactionCatalog, ...liCatalog, ...mundyCatalog].sort((a,b) => a.name.localeCompare(b.name));
-reactions.forEach(r => {
-  r.sourceBook = r.sourceBook || 'kurti';
-  r.books = r.sourceBook === 'mundy' ? ['mundy'] : r.sourceBook === 'li' ? ['li'] : liCoverage[r.id] ? ['kurti', 'li'] : ['kurti'];
-  if (mundyCoverage[r.id] && !r.books.includes('mundy')) r.books.push('mundy');
-});
+const reactions = consolidateReactions([...reactionCatalog, ...liCatalog, ...mundyCatalog], liCoverage, mundyCoverage);
 
 const storageKey = 'catalyst-progress-v1';
 let state = {saved:[], attempts:[], sessions:[]};
@@ -45,21 +40,7 @@ function persist(){try{localStorage.setItem(storageKey,JSON.stringify(state));}c
 if(!storageAvailable) document.querySelector('.local-status').innerHTML='Progress saved for this visit';
 let page = 'dashboard', searchTerm = '', quiz = null;
 if (!['condensed', 'expanded'].includes(state.libraryView)) state.libraryView = 'condensed';
-// Retain bookmarks and quiz history when upgrading the original six-category app.
-if (!state.categoryVersion || state.categoryVersion < 2) {
-  state.selectedCategories = categories.map(c => c.id);
-  state.categoryVersion = 2;
-}
-// Extend an existing all-category selection while retaining custom selections.
-if (state.categoryVersion === 2) {
-  if (bookCategories.every(c => state.selectedCategories?.includes(c.id))) {
-    state.selectedCategories = [...new Set([...state.selectedCategories, 'mundy-additions'])];
-  }
-  state.categoryVersion = 3;
-}
-state.selectedCategories = Array.isArray(state.selectedCategories)
-  ? categories.filter(c => state.selectedCategories.includes(c.id)).map(c => c.id)
-  : categories.map(c => c.id);
+state = migrateStudyProgress(state, backupCatalog());
 const inCategory = (r, id) => r.categories.includes(id);
 if (!['all', ...Object.keys(sourceBooks)].includes(state.bookFilter)) state.bookFilter = 'all';
 const matchesBook = r => state.bookFilter === 'all' || r.books.includes(state.bookFilter);
@@ -411,6 +392,11 @@ function bookFigure(figure, name, type, prompt = false) {
 }
 
 function detailPanel(r, tab) {
+  const related = (r.mergedEntries || []).filter(entry => availableTabs(detailTabs, entry).some(([key]) => key === tab));
+  return sourceDetailPanel(r, tab) + related.map(entry => `<details class="detail-section"><summary>${escapeHTML(entry.name)} — Mundy source</summary>${sourceDetailPanel(entry, tab)}</details>`).join('');
+}
+
+function sourceDetailPanel(r, tab) {
   const source = bookReactions[r.id];
   const sections = bookSections[r.id];
   if (tab === 'reaction') {
@@ -445,6 +431,7 @@ function showDetail(id, tab = 'reaction') {
     <button class="detail-arrow" data-detail-step="-1" aria-label="Previous reaction" title="Previous reaction (←)" ${position <= 0 ? 'disabled' : ''}><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 5h-3l-4 7 4 7h3l-4-7z"/></svg></button>
     <div class="dialog-inner"><div class="dialog-top"><span>${position + 1} / ${detailReactionIds.length} · ${categoryLabel(r)}</span><button class="close-button" data-close="reaction" aria-label="Close reaction">×</button></div>
     <h2 id="reaction-title" tabindex="-1">${r.name}</h2>
+    ${r.mergedEntries.length ? `<p class="muted">Also includes: ${r.mergedEntries.map(entry => escapeHTML(entry.name)).join('; ')}.</p>` : ''}
     <div class="reaction-tabs" role="tablist" aria-label="Reaction details">${tabs.map(([key, label]) => `<button role="tab" id="tab-${key}" aria-controls="reaction-panel" aria-selected="${tab === key}" tabindex="0" data-detail-tab="${key}">${label}</button>`).join('')}</div>
     <section id="reaction-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-${tab}">${detailPanel(r, tab)}</section>
     ${source ? `<p class="book-citation">${sourceBooks[r.sourceBook].authors}, <cite>${sourceBooks[r.sourceBook].title}</cite> (${sourceBooks[r.sourceBook].year}), ${source.pages.length === 1 ? 'p.' : 'pp.'} ${source.pages.join('–')}. Figures from your supplied copy.${r.sourceBook === 'kurti' && liCoverage[id] ? ` Also covered in Li (2021), p. ${liCoverage[id].pages.join(', ')}.` : ''}</p>` : ''}

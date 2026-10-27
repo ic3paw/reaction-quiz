@@ -70,7 +70,7 @@ for e in entries:
     catalog.append(dict(id=id,name=e['name'],bookName=e['name'],aliases=e.get('aliases',''),summary=summary,
         question=summary+' Identify the named reaction.',equation=summary,explanation=summary,reagents='',
         difficulty='Book entry',sourceOverview=True,sourceBook='mundy',printedPage=n,
-        categories=['mundy-additions'],category='mundy-additions',appendixPages=[],appendixSummary=None))
+        categories=e['categories'],category=e['categories'][0],appendixPages=[],appendixSummary=None))
     reaction=figure(id,'reaction',n,e['reactionCrop'],'Reaction & conditions')
     sections[id]={'reaction':reaction}
     source={'pages':[n,e['endPage']] if e['endPage']!=n else [n],'book':'mundy','reaction':reaction,'applications':[]}

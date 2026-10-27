@@ -98,7 +98,7 @@ window.createQuizBackend = function createQuizBackend(config, loadClient = async
 window.validateStudyBackup = function validateStudyBackup(snapshot, catalog) {
   const fail = () => { throw new Error('This backup is invalid or uses an unsupported format. Browser progress has not changed.'); };
   if (!snapshot || snapshot.schema_version !== 1) return fail();
-  const data = snapshot.payload;
+  let data = snapshot.payload;
   const object = value => value !== null && typeof value === 'object' && !Array.isArray(value);
   const date = value => typeof value === 'string' && Number.isFinite(Date.parse(value));
   const integer = value => Number.isSafeInteger(value) && value >= 0;
@@ -108,15 +108,13 @@ window.validateStudyBackup = function validateStudyBackup(snapshot, catalog) {
   if (!data.sessions.every(s => object(s) && typeof s.title === 'string' && s.title.length <= 1000 && integer(s.total) && integer(s.correct) && s.correct <= s.total && Number.isFinite(s.seconds) && s.seconds >= 0 && date(s.at))) return fail();
   if (data.selectedCategories !== undefined && (!Array.isArray(data.selectedCategories) || !data.selectedCategories.every(id => typeof id === 'string'))) return fail();
   if (data.flashcardReviews !== undefined && (!object(data.flashcardReviews) || !Object.values(data.flashcardReviews).every(r => object(r) && ['known', 'again'].includes(r.rating) && date(r.at)))) return fail();
+  data = migrateStudyProgress(data, catalog);
   const ids = new Set(catalog.reactions);
-  let selected = data.selectedCategories || catalog.categories;
-  if (!data.categoryVersion || data.categoryVersion < 2) selected = catalog.categories;
-  if (data.categoryVersion === 2 && catalog.categories.filter(id => id !== 'mundy-additions').every(id => selected.includes(id))) selected = catalog.categories;
   return {
     saved: [...new Set(data.saved.filter(id => ids.has(id)))],
     attempts: data.attempts.filter(a => ids.has(a.id)).map(({id, correct, at}) => ({id, correct, at})),
     sessions: data.sessions.map(({title, total, correct, seconds, at}) => ({title, total, correct, seconds, at})),
-    selectedCategories: catalog.categories.filter(id => selected.includes(id)), categoryVersion: 3,
+    selectedCategories: data.selectedCategories, categoryVersion: data.categoryVersion,
     libraryView: data.libraryView === 'expanded' ? 'expanded' : 'condensed',
     bookFilter: catalog.books.includes(data.bookFilter) ? data.bookFilter : 'all',
     flashcardMode: ['name', 'reaction', 'mechanism'].includes(data.flashcardMode) ? data.flashcardMode : data.flashcardMode === 'outline' ? 'reaction' : 'name',

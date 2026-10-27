@@ -13,7 +13,8 @@ quizBackend.subscribe(user => {
 });
 
 function backupCatalog() {
-  return {reactions: reactions.map(r => r.id), categories: categories.map(c => c.id), books: ['all', ...Object.keys(sourceBooks)]};
+  return {reactions: reactions.map(r => r.id), categories: categories.map(c => c.id),
+    mundyCategories: [...new Set(mundyCatalog.flatMap(r => r.categories))], books: ['all', ...Object.keys(sourceBooks)]};
 }
 
 function renderAccount() {
