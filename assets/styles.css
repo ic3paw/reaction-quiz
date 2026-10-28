@@ -105,7 +105,10 @@ select { width: 240px; }
 .account-form label { font-weight: 600; }
 .account-form button { justify-self: start; }
 .account-form small { color: var(--muted); line-height: 1.5; }
-.account-auth-options { margin-top: 24px; flex-wrap: wrap; }
+.account-auth { max-width: 400px; }
+.account-auth .account-form > .button { justify-self: stretch; margin-top: 8px; }
+.account-auth-options { margin-top: 18px; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.account-create { padding: 6px 12px; font-size: 13px; }
 .account-email { overflow-wrap: anywhere; }
 .account-backup { margin-top: 32px; border-top: 1px solid var(--line); padding-top: 24px; }
 .account-message { margin: 24px 0 0; }

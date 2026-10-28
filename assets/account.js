@@ -1,7 +1,7 @@
 'use strict';
 
 const quizBackend = window.createQuizBackend(window.REACTION_QUIZ_SUPABASE);
-let accountBusy = false, accountConnected = false, accountMessage = '', accountError = false;
+let accountBusy = false, accountConnectionAttempted = false, accountMessage = '', accountError = false;
 let cloudBackup = null, cloudLoaded = false, restorePreview = null, accountUserId = null;
 let accountMode = 'signin', accountProfile = null, profileLoaded = false, profileError = '';
 let accountUsername = '', accountEmail = '', recoveryActive = false;
@@ -16,7 +16,7 @@ quizBackend.subscribe((user, {recovering} = {}) => {
     accountProfile = null; profileLoaded = false; profileError = '';
     if (!user) accountMode = 'signin';
     // Auth callbacks stay synchronous; SDK calls here can deadlock its session lock.
-    if (user && accountConnected && !accountBusy) setTimeout(() => {
+    if (user && !accountBusy) setTimeout(() => {
       if (quizBackend.user?.id === user.id) runAccountTask(loadAccountProfile);
     }, 0);
   }
@@ -30,10 +30,10 @@ async function loadAccountProfile() {
   catch (error) { profileError = error.message; }
 }
 
-function usernameInput(disabled) {
+function usernameInput(disabled, showHelp = true) {
   return `<label for="account-username">Username</label>
-    <input id="account-username" name="username" autocomplete="username" autocapitalize="none" spellcheck="false" required minlength="3" maxlength="24" pattern="[A-Za-z0-9_]{3,24}" aria-describedby="username-help" value="${escapeHTML(accountUsername)}" ${disabled}>
-    <small id="username-help">3–24 letters, numbers, or underscores. Usernames are not case-sensitive.</small>`;
+    <input id="account-username" name="username" autocomplete="username" autocapitalize="none" spellcheck="false" required minlength="3" maxlength="24" pattern="[A-Za-z0-9_]{3,24}" ${showHelp ? 'aria-describedby="username-help"' : ''} value="${escapeHTML(accountUsername)}" ${disabled}>
+    ${showHelp ? '<small id="username-help">3–24 letters, numbers, or underscores. Usernames are not case-sensitive.</small>' : ''}`;
 }
 function emailInput(disabled) {
   return `<label for="account-email">Email address</label><input id="account-email" name="email" type="email" autocomplete="email" required maxlength="254" value="${escapeHTML(accountEmail)}" ${disabled}>`;
@@ -45,22 +45,24 @@ function passwordInputs(disabled, isNew = false) {
     <input id="account-password-confirm" name="confirm" type="password" autocomplete="new-password" required minlength="12" maxlength="256" ${disabled}>` : ''}`;
 }
 function signedOutForm(disabled) {
-  const modes = {signin:'Sign in', signup:'Create account', recover:'Forgot password?', link:'Use an email link', confirm:'Resend confirmation'};
+  const modes = {signin:'Sign in', signup:'Create account', recover:'Reset password'};
   const intro = {
-    signin:'Sign in with your username and password.',
-    signup:'Choose a username and password. Your email is used for confirmation and account recovery.',
+    signin:'',
+    signup:'Choose your login details and add an email for password recovery.',
     recover:'Enter your account email to receive a password reset link. Open it in this browser.',
-    link:'Existing email-link account? Sign in with your email, then choose a username and set a password.',
-    confirm:'Enter your email to request another confirmation link. Open it in this browser.',
   };
-  const labels = {signin:'Sign in', signup:'Create account', recover:'Send reset link', link:'Email me a sign-in link', confirm:'Resend confirmation'};
-  return `<h2>${modes[accountMode]}</h2><p>${intro[accountMode]}</p>
+  const labels = {signin:'Sign in', signup:'Create account', recover:'Send reset link'};
+  return `<section class="account-auth" aria-labelledby="account-auth-title">
+    <h2 id="account-auth-title">${modes[accountMode]}</h2>${intro[accountMode] ? `<p>${intro[accountMode]}</p>` : ''}
     <form id="account-auth-form" class="account-form" data-mode="${accountMode}">
-    ${['signin','signup'].includes(accountMode) ? usernameInput(disabled) : ''}
+    ${['signin','signup'].includes(accountMode) ? usernameInput(disabled, accountMode === 'signup') : ''}
     ${accountMode !== 'signin' ? emailInput(disabled) : ''}
     ${['signin','signup'].includes(accountMode) ? passwordInputs(disabled, accountMode === 'signup') : ''}
     <button class="button primary" ${disabled}>${labels[accountMode]}</button></form>
-    <div class="actions account-auth-options">${Object.entries(modes).filter(([mode]) => mode !== accountMode).map(([mode,label]) => `<button class="text-button" data-account-mode="${mode}" ${disabled}>${label}</button>`).join('')}</div>`;
+    <div class="actions account-auth-options">${accountMode === 'signin' ? `
+      <button class="button secondary account-create" data-account-mode="signup" ${disabled}>Create account</button>
+      <button class="text-button" data-account-mode="recover" ${disabled}>Forgot password?</button>` : `
+      <button class="text-button" data-account-mode="signin" ${disabled}>Back to sign in</button>`}</div></section>`;
 }
 function accountCredentials(disabled) {
   const recovery = recoveryActive || accountMode === 'password';
@@ -79,18 +81,23 @@ function backupCatalog() {
 }
 
 function renderAccount() {
+  const params = new URLSearchParams(location.search);
+  // Opening Account restores the session without a separate Connect screen.
+  // Callback initialization handles confirmation/recovery links after routing.
+  if (quizBackend.configured && !accountConnectionAttempted && !accountBusy &&
+      !['code', 'error_description', 'recovery'].some(key => params.has(key))) {
+    accountAction('connect');
+    return;
+  }
   const user = quizBackend.user;
   const disabled = accountBusy ? 'disabled' : '';
   main.innerHTML = heading('Account') + `<div class="account-panel">
-    <p class="intro">Keep a private cloud backup of your saved reactions, quiz history, flashcard reviews, and study preferences.</p>
-    <p class="account-notice">Studying always saves to this browser. Cloud backups are manual: back up after studying, then restore on another device. Signing in or out does not change browser progress. On a shared device, that progress remains visible to other people.</p>
-    ${!quizBackend.configured ? '<h2>Accounts are coming soon</h2><p>This site’s account service has not been connected yet. Your library, quizzes, and browser progress are ready to use.</p><a class="button secondary" href="#dashboard">Continue studying</a>' : !accountConnected ? `
-      <h2>Connect your account</h2><p>Sign in to save and restore your study progress across devices.</p>
-      <button class="button primary" data-account-action="connect" ${disabled}>${accountBusy ? 'Connecting…' : 'Connect'}</button>` : !user ? signedOutForm(disabled) : `
+    ${!quizBackend.configured ? '<h2>Accounts are coming soon</h2><p>This site’s account service has not been connected yet. Your library, quizzes, and browser progress are ready to use.</p><a class="button secondary" href="#dashboard">Continue studying</a>' : !user ? signedOutForm(disabled) : `
       <div class="section-heading"><h2>Signed in</h2><button class="text-button" data-account-action="sign-out" ${disabled}>Sign out on this device</button></div>
       <p class="account-email">${escapeHTML(user.email || 'Your account')}</p>
       ${accountCredentials(disabled)}
       <section class="account-backup"><h2>Study backup</h2>
+      <p class="muted">Progress saves to this browser. Back up manually to use it on another device; signing out leaves browser progress here.</p>
       <p>This browser: ${state.saved.length} saved reactions · ${state.attempts.length} quiz answers · ${state.sessions.length} completed quizzes.</p>
       <p>${!cloudLoaded ? 'Refresh to check for an existing cloud backup.' : cloudBackup ? `Cloud backup: ${escapeHTML(new Date(cloudBackup.updated_at).toLocaleString())} · revision ${escapeHTML(cloudBackup.revision)}.` : 'No cloud backup yet.'}</p>
       <p class="muted">Backing up replaces this account’s cloud copy with the progress currently in this browser. Restoring replaces browser progress with the cloud copy; histories are not merged.</p>
@@ -102,7 +109,11 @@ function renderAccount() {
     </div>`;
   main.querySelectorAll('[data-account-mode]').forEach(button => button.addEventListener('click', () => {
     if (accountBusy) return;
+    const form = main.querySelector('#account-auth-form');
+    if (form?.elements.username) accountUsername = form.elements.username.value.trim();
+    if (form?.elements.email) accountEmail = form.elements.email.value.trim();
     accountMode = button.dataset.accountMode; accountMessage = ''; accountError = false; renderAccount();
+    main.querySelector('#account-auth-form input')?.focus();
   }));
   main.querySelectorAll('.account-form').forEach(form => form.addEventListener('submit', event => {
     event.preventDefault();
@@ -138,12 +149,6 @@ function renderAccount() {
       } else if (mode === 'recover') {
         await quizBackend.resetPassword(accountEmail);
         accountMessage = 'If this email belongs to an eligible account, a reset link will arrive shortly. Open it in this browser.';
-      } else if (mode === 'confirm') {
-        await quizBackend.resendConfirmation(accountEmail);
-        accountMessage = 'If this account needs confirmation, a new link will arrive shortly. Open it in this browser.';
-      } else {
-        await quizBackend.sendSignInLink(accountEmail);
-        accountMessage = 'If this email belongs to an eligible account, a sign-in link will arrive shortly. Open it in this browser.';
       }
     });
   }));
@@ -167,9 +172,10 @@ async function refreshCloudBackup() {
 
 function accountAction(action) {
   if (action === 'cancel') { restorePreview = null; renderAccount(); return; }
+  if (action === 'connect') accountConnectionAttempted = true;
   return runAccountTask(async () => {
     if (action === 'connect') {
-      await quizBackend.connect(); accountConnected = true;
+      await quizBackend.connect();
       if (quizBackend.user) {
         await loadAccountProfile();
         if (quizBackend.recovering || new URLSearchParams(location.search).get('recovery') === '1') accountMode = 'password';
@@ -218,10 +224,12 @@ function initializeAccountCallback() {
   const authError = params.get('error_description') || hashParams.get('error_description');
   location.hash = 'account';
   if (authError) {
+    accountConnectionAttempted = true;
     const clean = new URL(location.href);
     ['code', 'error', 'error_code', 'error_description', 'recovery'].forEach(key => clean.searchParams.delete(key));
     history.replaceState(null, '', clean);
-    accountError = true; accountMessage = 'This account link could not be used. Connect and request a new sign-in, confirmation, or reset link.';
+    accountMode = 'recover';
+    accountError = true; accountMessage = 'This account link could not be used. Request a new password reset link below.';
     renderAccount();
   } else {
     accountAction('connect');

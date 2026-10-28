@@ -1,6 +1,6 @@
 # Supabase accounts and backend foundation
 
-Accounts support username/password registration and sign-in, email confirmation, password recovery, and private manual study backups. Existing email-link users can sign in by email, claim a username, and set a password without changing their Auth user ID or backups. The static reaction and reagent catalog stays in the site assets. Guests can keep studying without a connection, and the Supabase SDK loads only when someone connects an account or returns through a sign-in link.
+Accounts support username/password registration and sign-in, email confirmation, password recovery, and private manual study backups. Existing users without a username can follow a password recovery link, claim a username, and set a password without changing their Auth user ID or backups. The static reaction and reagent catalog stays in the site assets. Guests can keep studying without a connection, and the Supabase SDK loads when someone opens Account or returns through an account link.
 
 ## Connect a project
 
@@ -9,7 +9,7 @@ Accounts support username/password registration and sign-in, email confirmation,
 3. Set Authentication → URL Configuration → Site URL to the deployed app URL. Add each exact callback URL to the redirect allowlist, including its path and `#account`, for example `https://your-site.example/index.html#account` and `http://localhost:8765/index.html#account`. If people visit `/` as well as `/index.html`, allow both. Avoid broad production wildcards.
 4. Set `url` and `publishableKey` in [the browser configuration](../assets/supabase-config.js). Use the project URL and an `sb_publishable_…` key (a legacy `anon` key also works). Both values are public. Never put an `sb_secret_…` key, service-role key, database password, or SMTP credential in frontend assets.
 5. Serve the site over HTTPS in production. For local development, run `python3 -m http.server 8765` and open `http://localhost:8765/index.html#account`. Accounts require an HTTP origin; opening the HTML file directly still supports guest study.
-6. Complete the username/password deployment below, then select Account → Connect → Create account. Choose a username and password and supply a recovery email. Open the confirmation link in the same browser profile that requested it. PKCE uses a browser-local verifier. For existing accounts, choose Use an email link, then claim a username and set a password.
+6. Complete the username/password deployment below, then select Account → Create account. Choose a username and password and supply a recovery email. Open the confirmation link in the same browser profile that requested it. PKCE uses a browser-local verifier. For existing accounts without a username, use Forgot password, open the recovery link, then claim a username and set a password.
 
 No project is provisioned, migration applied, or email sent by this repository change. Empty configuration leaves accounts unavailable and makes no external requests. A configured account flow downloads the pinned Supabase JavaScript SDK from esm.sh and calls your Supabase project. Deployments with a Content Security Policy must permit those resources, or vendor the SDK and update the loader in [the backend adapter](../assets/backend.js).
 
@@ -18,7 +18,11 @@ No project is provisioned, migration applied, or email sent by this repository c
 The implementation is included in the repository, but the new migration and Edge Function must be deployed before username registration and login work. The browser's public key cannot apply migrations or deploy functions. Existing email-link sign-in and backup operations continue to work before deployment; username settings report unavailable until the migration is installed.
 
 1. Apply [the username migration](../supabase/migrations/202610280001_username_password.sql) **after** the original backup migration, through the SQL editor or your authenticated migration workflow. It adds private profile access, atomic username claims, the signup trigger, and server-only lookup/throttling. It does not rewrite existing users or backups.
-2. Deploy [username-login](../supabase/functions/username-login/index.ts), including its [handler module](../supabase/functions/username-login/handler.mjs). From an authenticated Supabase CLI in the repository:
+2. Deploy a function named exactly `username-login`. For a **Dashboard-only deployment**, select Edge Functions → Deploy a new function → Via Editor. Replace all starter `index.ts` code with the entire [single-file dashboard entrypoint](../supabase/dashboard/username-login.ts), then deploy. It includes the handler and has no local imports, avoiding the Dashboard bundler's reported missing `handler.mjs` error. After deployment, disable **Verify JWT** in the function settings and save. No second file or Terminal command is needed for this method.
+
+   The single-file entrypoint is generated from the original function files. Maintainers must regenerate it with `python3 scripts/build-username-login.py` after changing either source file; do not edit the generated copy independently.
+
+   Alternatively, deploy the original [username-login](../supabase/functions/username-login/index.ts) and [handler module](../supabase/functions/username-login/handler.mjs) together from an authenticated Supabase CLI in the repository:
 
    ```sh
    supabase functions deploy username-login --project-ref kjabiqcemysvbavapaqo --no-verify-jwt
@@ -28,6 +32,8 @@ The implementation is included in the repository, but the new migration and Edge
 3. In Authentication → URL Configuration, allow the normal account callback and the recovery callback for each site path you serve. For example, allow `https://your-site.example/index.html#account` and `https://your-site.example/index.html?recovery=1#account`; also add the `/` equivalents if used. Use the same URLs for local tests, replacing the origin with `http://localhost:8765`. The recovery flag selects the password form; it does not grant a session or authorize a password change.
 4. In Authentication → Email, enable signups and email confirmations. Set the project password minimum to 12 characters so direct API callers follow the same minimum as the UI. Configure production SMTP and test both confirmation and password recovery email delivery.
 5. Publish the updated static assets after the migration and function are deployed. Test a new account and an existing email-link account, reload/session persistence, sign-out, reset/confirmation link expiry, and access to an existing backup. These live deployment checks require your project access; local tests use fake Auth responses and an isolated database.
+
+The Account page opens directly to username/password sign-in, with a smaller Create account button and a Forgot password link. Session restoration is automatic. Password recovery still uses Supabase email delivery; removing email confirmation does not enable reset email delivery. Configure SMTP for public recovery emails.
 
 ### Username and password behavior
 

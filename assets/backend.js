@@ -102,7 +102,7 @@ window.createQuizBackend = function createQuizBackend(config, loadClient = async
       });
       if (response.status === 429) throw new Error('Too many sign-in attempts. Please try again in 15 minutes.');
       if ([400, 401].includes(response.status)) throw new Error('Invalid username or password. Confirm your email before signing in.');
-      if (!response.ok) throw new Error('Username sign-in is temporarily unavailable. Please try again later or use an email link.');
+      if (!response.ok) throw new Error('Username sign-in is temporarily unavailable. Please try again later.');
       const tokens = await response.json();
       if (generation !== startGeneration) throw new Error('Your account changed. Please try again.');
       if (typeof tokens.access_token !== 'string' || typeof tokens.refresh_token !== 'string') throw new Error('The sign-in response was incomplete. Please try again.');

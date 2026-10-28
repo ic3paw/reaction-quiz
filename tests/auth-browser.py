@@ -21,7 +21,10 @@ export function createClient() {
         }
         return {data:{session:JSON.parse(sessionStorage.getItem('test-session') || 'null')},error:null};
       },
-      async signUp(args) {log('signUp',args);sessionStorage.setItem('test-profile',args.options.data.username);return {data:{session:null},error:null};},
+      async signUp(args) {log('signUp',args);sessionStorage.setItem('test-profile',args.options.data.username);
+        const session=sessionStorage.getItem('test-autoconfirm') ? {user} : null;
+        if(session) save(session);
+        return {data:{session},error:null};},
       async setSession(args) {log('setSession',args);save({user});return {data:{session:{user}},error:null};},
       async signInWithOtp(args) {log('otp',args);return {error:null};},
       async resetPasswordForEmail(email,args) {log('reset',{email,...args});return {error:null};},
@@ -62,9 +65,22 @@ with sync_playwright() as p:
 
     context.route('https://*.supabase.co/**', fake_server)
     base = 'http://127.0.0.1:8765/'
-    page.goto(base + '#account')
-    page.get_by_role('button', name='Connect', exact=True).click()
+    page.goto(base)
+    assert page.evaluate('typeof testAuthEvent') == 'undefined', 'Guest study must not initialize Auth'
+    page.get_by_role('link', name='Account', exact=True).click()
     expect(page.get_by_label('Username', exact=True)).to_be_visible()
+    expect(page.get_by_label('Username', exact=True)).to_be_enabled()
+    expect(page.get_by_role('button', name='Connect', exact=True)).to_have_count(0)
+    expect(page.locator('.account-notice')).to_have_count(0)
+    expect(page.locator('.account-auth button')).to_have_count(3)
+    expect(page.get_by_role('button', name='Use an email link', exact=True)).to_have_count(0)
+    expect(page.get_by_role('button', name='Resend confirmation', exact=True)).to_have_count(0)
+    page.set_viewport_size({'width':390,'height':844})
+    assert page.evaluate('document.documentElement.scrollWidth <= innerWidth'), 'Mobile page must not overflow'
+    assert page.get_by_role('button', name='Create account', exact=True).bounding_box()['height'] < page.get_by_role('button', name='Sign in', exact=True).bounding_box()['height']
+    page.screenshot(path='/tmp/reaction-quiz-login-mobile.png', full_page=True)
+    page.set_viewport_size({'width':1100,'height':900})
+    page.screenshot(path='/tmp/reaction-quiz-login-desktop.png', full_page=True)
     page.get_by_role('button', name='Create account', exact=True).click()
     page.get_by_label('Username', exact=True).fill('CHEMIST_1')
     page.get_by_label('Email address', exact=True).fill('private@example.test')
@@ -77,11 +93,7 @@ with sync_playwright() as p:
     expect(page.locator('#account-message')).to_contain_text('Check your email')
     assert page.evaluate('authCalls[0].args.options.data.username') == 'chemist_1'
     assert page.get_by_label('New password', exact=True).input_value() == ''
-    page.get_by_role('button', name='Resend confirmation', exact=True).click()
-    page.get_by_role('button', name='Resend confirmation', exact=True).click()
-    expect(page.locator('#account-message')).to_contain_text('new link')
-    assert page.evaluate('authCalls.at(-1).args.type') == 'signup'
-    page.get_by_role('button', name='Sign in', exact=True).click()
+    page.get_by_role('button', name='Back to sign in', exact=True).click()
     page.get_by_label('Username', exact=True).fill('CHEMIST_1')
     page.get_by_label('Password', exact=True).fill('wrong-password')
     page.get_by_role('button', name='Sign in', exact=True).click()
@@ -97,7 +109,6 @@ with sync_playwright() as p:
     page.get_by_role('button', name='Refresh cloud details', exact=True).click()
     expect(page.locator('#account-message')).to_contain_text('refreshed')
     page.reload()
-    page.get_by_role('button', name='Connect', exact=True).click()
     expect(page.get_by_role('heading', name='Signed in', exact=True)).to_be_visible()
     page.get_by_role('button', name='Sign out on this device', exact=True).click()
     page.get_by_role('button', name='Forgot password?', exact=True).click()
@@ -115,15 +126,10 @@ with sync_playwright() as p:
     expect(page.locator('#account-message')).to_contain_text('Password saved')
     assert 'recovery=' not in page.url
     assert page.evaluate('authCalls.at(-1).method') == 'update'
-    # Legacy email-link account claims a username without changing identity/progress.
+    # Existing account reaches recovery and claims a username without changing identity/progress.
     page.get_by_role('button', name='Sign out on this device', exact=True).click()
     page.evaluate("sessionStorage.removeItem('test-profile')")
-    page.get_by_role('button', name='Use an email link', exact=True).click()
-    page.get_by_label('Email address', exact=True).fill('private@example.test')
-    page.get_by_role('button', name='Email me a sign-in link', exact=True).click()
-    expect(page.locator('#account-message')).to_contain_text('sign-in link will arrive')
-    assert page.evaluate('authCalls.at(-1).args.options.shouldCreateUser') is False
-    page.goto(base + '?code=existing-user#account')
+    page.goto(base + '?recovery=1&code=existing-user#account')
     expect(page.get_by_role('button', name='Claim username', exact=True)).to_be_visible()
     page.get_by_label('Username', exact=True).fill('Existing_User')
     page.get_by_role('button', name='Claim username', exact=True).click()
@@ -136,6 +142,18 @@ with sync_playwright() as p:
     page.goto(base + '?error_description=expired&code=invalid#account')
     expect(page.locator('#account-message')).to_contain_text('could not be used')
     assert 'code=' not in page.url and 'error_description=' not in page.url
+    expect(page.get_by_role('button', name='Send reset link', exact=True)).to_be_visible()
+    # With email confirmation disabled, a new account signs in immediately.
+    page.evaluate("sessionStorage.removeItem('test-session'); sessionStorage.setItem('test-autoconfirm','1')")
+    page.goto(base + '#account')
+    page.get_by_role('button', name='Create account', exact=True).click()
+    page.get_by_label('Username', exact=True).fill('instant_user')
+    page.get_by_label('Email address', exact=True).fill('private@example.test')
+    page.get_by_label('New password', exact=True).fill('test-password-123')
+    page.get_by_label('Confirm password', exact=True).fill('test-password-123')
+    page.get_by_role('button', name='Create account', exact=True).click()
+    expect(page.get_by_role('heading', name='Signed in', exact=True)).to_be_visible()
+    expect(page.locator('#account-message')).to_contain_text('Account created')
     assert not errors, errors
-    print('PASS: registration, confirmation resend, validation, username sign-in/errors, session reload, recovery/reload, password update, legacy migration, callback errors, and unchanged study progress; no real Auth requests.')
+    print('PASS: direct login UI, mobile layout, registration with/without confirmation, validation, username sign-in/errors, automatic session reload, recovery/reload, password update, existing account migration, callback errors, and unchanged study progress; no real Auth requests.')
     browser.close()
