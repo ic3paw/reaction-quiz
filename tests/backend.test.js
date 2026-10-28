@@ -139,5 +139,66 @@ await test('PostgreSQL migration: RLS, concurrent revisions, payload checks, cas
     assert((await db.query('select * from public.study_backups')).rows.length === 0, 'Deleted users must lose backups');
   } finally { await db.close(); }
 });
+await test('Username database: atomic signup, private profiles, one-time claims, service-only lookup and throttling', async () => {
+  const {PGlite} = await import('https://esm.sh/@electric-sql/pglite@0.3.14');
+  const assetBase = 'https://cdn.jsdelivr.net/npm/@electric-sql/pglite@0.3.14/dist/';
+  const [fsBundle, wasmModule] = await Promise.all([
+    fetch(assetBase + 'pglite.data').then(response => response.blob()),
+    WebAssembly.compileStreaming(fetch(assetBase + 'pglite.wasm')),
+  ]);
+  const db = new PGlite({fsBundle, wasmModule});
+  const a = '00000000-0000-0000-0000-000000000001', b = '00000000-0000-0000-0000-000000000002';
+  const c = '00000000-0000-0000-0000-000000000003', d = '00000000-0000-0000-0000-000000000004';
+  try {
+    await db.exec(`create role anon; create role authenticated; create role service_role;
+      create schema auth; create table auth.users(id uuid primary key, email text, email_confirmed_at timestamptz, raw_user_meta_data jsonb);
+      create function auth.uid() returns uuid language sql stable as $$ select nullif(current_setting('request.jwt.claim.sub', true), '')::uuid $$;
+      grant usage on schema auth to authenticated, anon;
+      grant execute on function auth.uid() to authenticated, anon;
+      insert into auth.users (id, email, email_confirmed_at) values ('${a}', 'a@example.test', now()), ('${b}', 'b@example.test', now());`);
+    await db.exec(await fetch('../supabase/migrations/202610280001_username_password.sql').then(r => r.text()));
+    await db.exec(`set role authenticated; set request.jwt.claim.sub = '${a}';`);
+    const claim = name => db.query('select public.claim_username($1) as username', [name]);
+    assert((await claim('  Chemist_A  ')).rows[0].username === 'chemist_a');
+    assert((await claim('chemist_a')).rows[0].username === 'chemist_a', 'Retries are idempotent');
+    await rejects(() => claim('new_name'), /already has a username/);
+    await rejects(() => claim('invalid name'), /3–24/);
+    await rejects(() => db.query('insert into public.account_profiles(user_id,username) values ($1,$2)', [b,'stolen']), /permission denied/);
+    await rejects(() => db.query("update public.account_profiles set username = 'stolen'"), /permission denied/);
+    await rejects(() => db.query("select public.resolve_username_for_login('chemist_a')"), /permission denied/);
+    await db.exec(`set request.jwt.claim.sub = '${b}';`);
+    assert((await db.query('select * from public.account_profiles')).rows.length === 0, 'Other profiles remain private');
+    await rejects(() => claim('CHEMIST_A'), /unavailable/);
+    await claim('chemist_b');
+    assert((await db.query('select username from public.account_profiles')).rows[0].username === 'chemist_b');
+    await db.exec('reset role; set role anon;');
+    await rejects(() => claim('visitor'), /permission denied/);
+    await rejects(() => db.query('select * from public.account_profiles'), /permission denied/);
+    await rejects(() => db.query("select public.resolve_username_for_login('chemist_a')"), /permission denied/);
+    await rejects(() => db.query('select * from private.username_login_limits'), /permission denied/);
+    await db.exec('reset role;');
+    // Trigger reserves usernames atomically, but does not require legacy users to have one.
+    await db.query('insert into auth.users values ($1,$2,null,$3)', [c,'c@example.test',JSON.stringify({username:' NEW_USER '})]);
+    assert((await db.query('select username from public.account_profiles where user_id=$1',[c])).rows[0].username === 'new_user');
+    await rejects(() => db.query('insert into auth.users values ($1,$2,null,$3)', [d,'d@example.test',JSON.stringify({username:'NEW_USER'})]), /unique constraint/);
+    assert((await db.query('select id from auth.users where id=$1',[d])).rows.length === 0, 'Failed signup must roll back Auth user');
+    await rejects(() => db.query('insert into auth.users values ($1,$2,null,$3)', [d,'d@example.test',JSON.stringify({username:'bad name'})]), /Invalid username/);
+    await db.query('update auth.users set raw_user_meta_data=$1 where id=$2',[JSON.stringify({username:'chemist_a'}),c]);
+    assert((await db.query('select username from public.account_profiles where user_id=$1',[c])).rows[0].username === 'new_user', 'Editable metadata is not username authority');
+    await db.exec('set role service_role;');
+    const lookup = async name => (await db.query('select public.resolve_username_for_login($1) as result',[name])).rows[0].result;
+    assert((await lookup('CHEMIST_A')).email === 'a@example.test');
+    assert((await lookup('new_user')).email === null, 'Unconfirmed accounts are not resolved');
+    assert((await lookup('unknown_user')).email === null);
+    for (let i=0;i<10;i++) assert((await lookup('throttled_user')).allowed === true);
+    assert((await lookup('THROTTLED_USER')).allowed === false, 'Case cannot bypass persistent throttle');
+    await db.exec("reset role; update private.username_login_limits set window_start = now() - interval '2 days'; set role service_role;");
+    assert((await lookup('throttled_user')).allowed === true, 'Expired limits reset');
+    await db.exec("reset role; update private.username_login_limits set attempts=1000 where key='global'; set role service_role;");
+    assert((await lookup('another_unknown')).allowed === false, 'Global cap bounds random-name traffic');
+    await db.exec(`reset role; delete from auth.users where id='${c}';`);
+    assert((await db.query('select username from public.account_profiles where user_id=$1',[c])).rows.length===0,'Deleting a user releases the username');
+  } finally { await db.close(); }
+});
 window.backendTestResults.done = true;
 document.title = results.every(r => r.passed) ? 'Backend tests passed' : 'Backend tests failed';

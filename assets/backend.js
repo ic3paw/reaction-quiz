@@ -4,15 +4,17 @@
 window.createQuizBackend = function createQuizBackend(config, loadClient = async () => {
   const {createClient} = await import('https://esm.sh/@supabase/supabase-js@2.57.4');
   return createClient;
-}) {
-  let client, pending, user = null, generation = 0;
+}, request = (...args) => fetch(...args)) {
+  let client, pending, user = null, generation = 0, recovering = false;
   const listeners = new Set();
   const configured = Boolean(config?.url && config?.publishableKey);
-  function notify(session) {
+  function notify(session, event) {
     const next = session?.user || null;
-    if (next?.id !== user?.id) generation++;
+    if (next?.id !== user?.id) { generation++; recovering = false; }
+    if (event === 'PASSWORD_RECOVERY') recovering = true;
+    if (!next) recovering = false;
     user = next;
-    listeners.forEach(listener => listener(user));
+    listeners.forEach(listener => listener(user, {recovering}));
   }
   async function connect() {
     if (client) return client;
@@ -33,13 +35,15 @@ window.createQuizBackend = function createQuizBackend(config, loadClient = async
       const candidate = createClient(url.href, key, {auth: {
         flowType: 'pkce', persistSession: true, autoRefreshToken: true, detectSessionInUrl: true,
       }});
+      // Subscribe before initialization finishes so recovery callbacks are not lost.
+      const subscription = candidate.auth.onAuthStateChange((event, session) => notify(session, event));
       const {data, error} = await candidate.auth.getSession();
       if (error) {
+        subscription?.data?.subscription?.unsubscribe();
         candidate.auth.stopAutoRefresh();
         throw error;
       }
       client = candidate;
-      client.auth.onAuthStateChange((_event, session) => notify(session));
       notify(data.session);
       return client;
     })().catch(error => { pending = null; throw error; });
@@ -52,17 +56,92 @@ window.createQuizBackend = function createQuizBackend(config, loadClient = async
   function checkIdentity(start) {
     if (start.generation !== generation || start.id !== user?.id) throw new Error('Your account changed. Please try again.');
   }
+  function callbackURL(recovery = false) {
+    const redirect = new URL(location.href);
+    redirect.search = ''; redirect.hash = 'account';
+    if (recovery) redirect.searchParams.set('recovery', '1');
+    return redirect.href;
+  }
+  function usernameValue(value) {
+    const username = value.trim().toLowerCase();
+    if (!/^[a-z0-9_]{3,24}$/.test(username)) throw new Error('Use 3–24 letters, numbers, or underscores for your username.');
+    return username;
+  }
+  function checkPassword(password) {
+    if (typeof password !== 'string' || password.length < 12 || password.length > 256) throw new Error('Use a password between 12 and 256 characters.');
+  }
   return {
     configured,
     get user() { return user; },
+    get recovering() { return recovering; },
     connect,
     subscribe(listener) { listeners.add(listener); return () => listeners.delete(listener); },
     async sendSignInLink(email) {
       const api = await connect();
-      const redirect = new URL(location.href);
-      redirect.search = ''; redirect.hash = 'account';
-      const {error} = await api.auth.signInWithOtp({email, options: {emailRedirectTo: redirect.href}});
+      const {error} = await api.auth.signInWithOtp({email, options: {emailRedirectTo: callbackURL(), shouldCreateUser: false}});
       if (error) throw error;
+    },
+    async signUp(username, email, password) {
+      username = usernameValue(username); checkPassword(password);
+      const api = await connect();
+      const {data, error} = await api.auth.signUp({email: email.trim(), password,
+        options: {data: {username}, emailRedirectTo: callbackURL()}});
+      if (error) throw new Error('Could not create this account. Try another username, or recover your existing account. ' + (error.code === 'weak_password' ? 'Choose a stronger password.' : ''));
+      if (data.session) notify(data.session);
+      return Boolean(data.session);
+    },
+    async signIn(username, password) {
+      username = usernameValue(username);
+      if (typeof password !== 'string' || !password.length || password.length > 256) throw new Error('Enter your password.');
+      const api = await connect();
+      const startGeneration = generation;
+      const response = await request(new URL('functions/v1/username-login', config.url.replace(/\/?$/, '/')).href, {
+        method: 'POST', credentials: 'omit', cache: 'no-store',
+        headers: {'Content-Type': 'application/json', apikey: config.publishableKey},
+        body: JSON.stringify({username, password}), signal: AbortSignal.timeout(30000),
+      });
+      if (response.status === 429) throw new Error('Too many sign-in attempts. Please try again in 15 minutes.');
+      if ([400, 401].includes(response.status)) throw new Error('Invalid username or password. Confirm your email before signing in.');
+      if (!response.ok) throw new Error('Username sign-in is temporarily unavailable. Please try again later or use an email link.');
+      const tokens = await response.json();
+      if (generation !== startGeneration) throw new Error('Your account changed. Please try again.');
+      if (typeof tokens.access_token !== 'string' || typeof tokens.refresh_token !== 'string') throw new Error('The sign-in response was incomplete. Please try again.');
+      const {data, error} = await api.auth.setSession({access_token: tokens.access_token, refresh_token: tokens.refresh_token});
+      if (error) throw error;
+      notify(data.session);
+    },
+    async resetPassword(email) {
+      const api = await connect();
+      const {error} = await api.auth.resetPasswordForEmail(email.trim(), {redirectTo: callbackURL(true)});
+      if (error) throw error;
+    },
+    async resendConfirmation(email) {
+      const api = await connect();
+      const {error} = await api.auth.resend({type: 'signup', email: email.trim(), options: {emailRedirectTo: callbackURL()}});
+      if (error) throw error;
+    },
+    async updatePassword(password) {
+      checkPassword(password);
+      const api = await connect(); const start = identity();
+      const {error} = await api.auth.updateUser({password});
+      checkIdentity(start);
+      if (error) throw error;
+      recovering = false;
+    },
+    async readProfile() {
+      const api = await connect(); const start = identity();
+      const {data, error} = await api.from('account_profiles').select('username').eq('user_id', start.id).maybeSingle();
+      checkIdentity(start);
+      if (error) throw new Error('Username settings are temporarily unavailable. Your study backups are still available.');
+      return data;
+    },
+    async claimUsername(username) {
+      username = usernameValue(username);
+      const api = await connect(); const start = identity();
+      const {data, error} = await api.rpc('claim_username', {p_username: username});
+      checkIdentity(start);
+      if (error) throw new Error('Could not claim this username. Try another name or reload your account settings.');
+      return {username: data};
     },
     async signOut() {
       const api = await connect();

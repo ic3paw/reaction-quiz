@@ -14,7 +14,7 @@ A responsive named-reaction study website built with plain HTML, CSS, and JavaSc
 - Flashcard modes for recalling the name from a book scheme, reaction/conditions, or mechanism, with outline/history and synthetic application answer tabs, flip, shuffle, keyboard navigation, self-rating, and review of remaining cards
 - Accuracy, practice history, daily streaks, and reaction mastery
 - Local browser storage for bookmarks and progress
-- Optional Supabase email-link accounts and private manual cloud backups; see [backend setup and design](./docs/supabase.md)
+- Optional Supabase username/password accounts, email confirmation/recovery, and private manual cloud backups; see [backend setup and design](./docs/supabase.md)
 - Responsive layouts and keyboard-accessible dialogs
 
 Progress is specific to the current browser and website origin. Three consecutive correct answers for a reaction mark it as mastered. An unfinished finite quiz keeps answered-question progress but does not count as a completed session. Ending an endless quiz saves its answered-question total and score; unanswered questions are excluded, and empty sessions are not recorded.

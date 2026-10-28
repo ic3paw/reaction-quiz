@@ -1,0 +1,4 @@
+# Login is public because callers do not have a session yet. The function checks
+# the password through Supabase Auth before returning session tokens.
+[functions.username-login]
+verify_jwt = false

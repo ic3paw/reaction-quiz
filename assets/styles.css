@@ -104,6 +104,8 @@ select { width: 240px; }
 .account-form input { min-width: 0; width: 100%; padding: 11px 12px; border: 1px solid #ccc; border-radius: 2px; }
 .account-form label { font-weight: 600; }
 .account-form button { justify-self: start; }
+.account-form small { color: var(--muted); line-height: 1.5; }
+.account-auth-options { margin-top: 24px; flex-wrap: wrap; }
 .account-email { overflow-wrap: anywhere; }
 .account-backup { margin-top: 32px; border-top: 1px solid var(--line); padding-top: 24px; }
 .account-message { margin: 24px 0 0; }
