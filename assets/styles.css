@@ -20,7 +20,7 @@ a:hover, .text-button:hover { text-decoration: underline; text-underline-offset:
 button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible { outline: 2px solid var(--link); outline-offset: 4px; }
 button:disabled { cursor: not-allowed; opacity: .4; }
 .site-header { --menu-duration: .85s; position: sticky; top: 0; z-index: 30; background: #fff; border-bottom: 1px solid var(--line); }
-.header-inner { position: relative; max-width: 1200px; margin: 0 auto; padding: 14px 32px; display: grid; grid-template-columns: auto minmax(0, 1fr) 44px; align-items: center; gap: 20px; }
+.header-inner { position: relative; max-width: 1200px; margin: 0 auto; padding: 14px 32px; display: grid; grid-template-columns: auto minmax(0, 1fr) 44px; align-items: center; gap: 56px; }
 .brand { grid-column: 1; grid-row: 1; font-size: 30px; font-weight: 800; letter-spacing: -1px; color: #111; }
 .brand:hover { text-decoration: none; }
 .menu-toggle { grid-column: 3; grid-row: 1; position: relative; z-index: 2; display: inline-flex; align-items: center; justify-content: center; width: 44px; min-height: 44px; padding: 0; border: 0; background: #fff; color: var(--accent); }
@@ -40,7 +40,7 @@ button:disabled { cursor: not-allowed; opacity: .4; }
   #main-navigation, .navigation-links, .menu-symbol, .menu-symbol::after { transition: none; }
   .menu-open .menu-symbol { transform: none; }
 }
-.content-layout { max-width: 1200px; margin: 52px auto 0; padding: 0 32px; display: grid; grid-template-columns: 245px minmax(0, 1fr); gap: 42px; align-items: start; }
+.content-layout { max-width: 1200px; margin: 72px auto 0; padding: 0 32px; display: grid; grid-template-columns: 245px minmax(0, 1fr); gap: 42px; align-items: start; }
 main { min-width: 0; min-height: 65vh; }
 .category-sidebar { position: sticky; top: 96px; padding-right: 25px; border-right: 1px solid var(--line); }
 .category-sidebar fieldset { max-height: 62vh; overflow-y: auto; scrollbar-width: thin; }
@@ -218,7 +218,7 @@ dialog::backdrop { background: #0005; }
   #main-navigation { left: 24px; right: 24px; max-height: calc(100dvh - 80px); }
   .navigation-links { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .nav-item { font-size: 14px; padding: 12px; }
-  .content-layout { margin-top: 24px; padding: 0 24px; grid-template-columns: 1fr; gap: 28px; }
+  .content-layout { margin-top: 36px; padding: 0 24px; grid-template-columns: 1fr; gap: 28px; }
   .category-sidebar { position: static; padding: 0 0 16px; border-right: 0; border-bottom: 1px solid var(--line); }
   .category-sidebar summary { margin-bottom: 0; }
   .category-sidebar details[open] summary { margin-bottom: 16px; }
