@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#ffffff">
   <meta name="description" content="Named reaction quizzes, a searchable reaction library, and practice statistics.">
   <title>Named Reaction Database</title>
-  <link rel="stylesheet" href="assets/styles.css?v=20261029-compact-menu">
+  <link rel="stylesheet" href="assets/styles.css?v=20261029-sliding-menu">
   <script src="assets/reactions.js" defer></script>
   <script src="assets/book-data.js" defer></script>
   <script src="assets/book-sections.js" defer></script>
@@ -17,7 +17,7 @@
   <script src="assets/supabase-config.js?v=20261027-connected" defer></script>
   <script src="assets/backend.js?v=20261028-simple-login" defer></script>
   <script src="assets/account.js?v=20261028-simple-login" defer></script>
-  <script src="assets/app.js?v=20261029-compact-menu" defer></script>
+  <script src="assets/app.js?v=20261029-sliding-menu" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -27,7 +27,7 @@
       <span class="menu-label">Menu</span>
       <span class="menu-symbol" aria-hidden="true"></span>
     </button>
-    <nav id="main-navigation" aria-label="Main navigation" hidden>
+    <nav id="main-navigation" aria-label="Main navigation" aria-hidden="true" inert>
       <a href="#dashboard" data-page="dashboard" class="nav-item active">Home</a>
       <a href="#library" data-page="library" class="nav-item">Reactions</a>
       <a href="#reagents" data-page="reagents" class="nav-item">Reagents</a>

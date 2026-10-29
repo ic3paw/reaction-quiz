@@ -24,13 +24,17 @@ document.querySelectorAll('[data-icon]').forEach(el => el.innerHTML = icon(el.da
 const siteHeader = document.querySelector('.site-header');
 const menuToggle = document.querySelector('.menu-toggle');
 const mainNavigation = document.querySelector('#main-navigation');
+let menuOpen = false;
 function setMenuOpen(open, returnFocus = false) {
-  mainNavigation.hidden = !open;
+  menuOpen = open;
+  siteHeader.classList.toggle('menu-open', open);
+  mainNavigation.inert = !open;
+  mainNavigation.setAttribute('aria-hidden', String(!open));
   menuToggle.setAttribute('aria-expanded', String(open));
   menuToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
   if (returnFocus) menuToggle.focus();
 }
-menuToggle.addEventListener('click', () => setMenuOpen(mainNavigation.hidden));
+menuToggle.addEventListener('click', () => setMenuOpen(!menuOpen));
 siteHeader.addEventListener('click', event => {
   if (!event.target.closest('a[href^="#"]')) return;
   setMenuOpen(false);
@@ -39,12 +43,12 @@ siteHeader.addEventListener('click', event => {
   content.focus({preventScroll: true});
 });
 document.addEventListener('click', event => {
-  if (!mainNavigation.hidden && !siteHeader.contains(event.target)) {
+  if (menuOpen && !siteHeader.contains(event.target)) {
     setMenuOpen(false, mainNavigation.contains(document.activeElement));
   }
 });
 document.addEventListener('keydown', event => {
-  if (event.key === 'Escape' && !mainNavigation.hidden) {
+  if (event.key === 'Escape' && menuOpen) {
     event.preventDefault();
     setMenuOpen(false, true);
   }
