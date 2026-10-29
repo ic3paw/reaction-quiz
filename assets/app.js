@@ -6,6 +6,7 @@ const icons = {
   layers: '<path d="m12 3 10 5-10 5L2 8l10-5Zm-10 9 10 5 10-5M2 16l10 5 10-5"/>',
   chart: '<path d="M4 3v17h17M8 15v-4m5 4V7m5 8V4"/>',
   bookmark: '<path d="M6 4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v17l-6-4-6 4V4Z"/>',
+  folder: '<path d="M3 7V5a1 1 0 0 1 1-1h5l2 3h9a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7Z"/>',
   target: '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/>',
   flame: '<path d="M13 3c1 6-4 6-3 11 2 0 3-2 3-4 4 2 6 5 4 9-3 5-11 3-12-2-1-5 4-8 8-14Z"/>',
   clock: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
@@ -230,10 +231,11 @@ function renderSavedFolders() {
 function reactionFolderControl(r) {
   if (!state.saved.includes(r.id)) return '';
   const selected = state.savedFolders.find(folder => folder.reactionIds.includes(r.id));
-  return `<label class="reaction-folder">Folder <select data-reaction-folder="${r.id}" aria-label="Folder for ${escapeHTML(r.name)}">
-    <option value="" ${selected ? '' : 'selected'}>Unfiled</option>
-    ${state.savedFolders.map(folder => `<option value="${folder.id}" ${selected?.id === folder.id ? 'selected' : ''}>${escapeHTML(folder.name)}</option>`).join('')}
-    </select></label>`;
+  const options = [{id: '', name: 'Unfiled'}, ...state.savedFolders];
+  return `<details class="reaction-folder"><summary data-reaction-folder="${r.id}" aria-label="Folder for ${escapeHTML(r.name)}" title="Move to folder · ${escapeHTML(selected?.name || 'Unfiled')}">${icon('folder')}</summary>
+    <div class="reaction-folder-menu" role="group" aria-label="Move to folder">
+    ${options.map(folder => `<button type="button" data-move-reaction="${r.id}" data-folder-target="${folder.id}" aria-pressed="${(selected?.id || '') === folder.id}"><span>${escapeHTML(folder.name)}</span>${(selected?.id || '') === folder.id ? icon('check') : ''}</button>`).join('')}
+    </div></details>`;
 }
 
 function moveToFolder(id, folderId) {
@@ -247,6 +249,10 @@ function moveToFolder(id, folderId) {
     // A moved row may disappear from this folder; keep keyboard focus in the list.
     const control = document.querySelector(`[data-reaction-folder="${id}"]`) || document.querySelector('#saved-folder-filter');
     if (!reactionDialog.open) control?.focus();
+  }
+  if (reactionDialog.open) {
+    showDetail(id, detailTab);
+    reactionDialog.querySelector('[data-reaction-folder]')?.focus();
   }
   toast(target ? `Moved to ${target.name}.` : 'Moved to Unfiled.');
 }
@@ -281,7 +287,7 @@ function editSavedFolder(action) {
     }
     persist(); dialog.close(); renderLibraryResults(true);
     document.querySelector('#saved-folder-filter').focus();
-    toast(deleting ? 'Folder deleted. Reactions kept in Unfiled.' : action === 'rename' ? 'Folder renamed.' : 'Folder created. Choose it from a reaction’s Folder menu.');
+    toast(deleting ? 'Folder deleted. Reactions kept in Unfiled.' : action === 'rename' ? 'Folder renamed.' : 'Folder created. Use a reaction’s folder icon to move it.');
   });
   dialog.querySelector('input')?.addEventListener('input', event => event.target.setCustomValidity(''));
   dialog.showModal();
@@ -345,9 +351,8 @@ function renderLibraryResults(saved) {
   document.querySelectorAll('[data-library-view]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.libraryView === state.libraryView)));
   document.querySelector('#library-results').innerHTML = filtered.length ? filtered.map(r => `
     <article class="reaction-row ${state.libraryView}"><div class="reaction-row-heading"><button class="text-button reaction-name" data-detail="${r.id}">${escapeHTML(r.name)}</button>
-    ${saved || state.libraryView === 'expanded' ? `<button class="bookmark-button ${state.saved.includes(r.id) ? 'saved' : ''}" data-save="${r.id}" aria-label="${state.saved.includes(r.id) ? 'Unsave' : 'Save'} ${escapeHTML(r.name)}" aria-pressed="${state.saved.includes(r.id)}">${icon('bookmark')}</button>` : ''}</div>
-    ${state.libraryView === 'expanded' ? bookFigure(bookSections[r.id].reaction, r.name, 'reaction & conditions') : `<p class="reaction-overview">${escapeHTML(r.appendixSummary || r.summary)}</p>`}
-    ${saved ? reactionFolderControl(r) : ''}</article>`).join('') :
+    <div class="reaction-tools">${saved ? reactionFolderControl(r) : ''}${saved || state.libraryView === 'expanded' ? `<button class="bookmark-button ${state.saved.includes(r.id) ? 'saved' : ''}" data-save="${r.id}" aria-label="${state.saved.includes(r.id) ? 'Unsave' : 'Save'} ${escapeHTML(r.name)}" aria-pressed="${state.saved.includes(r.id)}">${icon('bookmark')}</button>` : ''}</div></div>
+    ${state.libraryView === 'expanded' ? bookFigure(bookSections[r.id].reaction, r.name, 'reaction & conditions') : `<p class="reaction-overview">${escapeHTML(r.appendixSummary || r.summary)}</p>`}</article>`).join('') :
     `<div class="empty-state"><p>${!state.selectedCategories.length ? 'Select at least one category.' : saved && !state.saved.length ? 'No saved reactions. Bookmark reactions in the library.' : emptyFolder ? 'This folder is empty. Choose All saved, then use a reaction’s Folder menu to move it here.' : 'No matches. Try a different search, book, or category.'}</p>${saved && !state.saved.length ? '<a href="#library">Browse reactions</a>' : ''}</div>`;
 }
 
@@ -556,14 +561,14 @@ function showDetail(id, tab = 'reaction') {
   const source = bookReactions[id];
   reactionDialog.innerHTML = `<div class="detail-browser">
     <button class="detail-arrow" data-detail-step="-1" aria-label="Previous reaction" title="Previous reaction (←)" ${position <= 0 ? 'disabled' : ''}><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 5h-3l-4 7 4 7h3l-4-7z"/></svg></button>
-    <div class="dialog-inner"><div class="dialog-top"><span>${position + 1} / ${detailReactionIds.length} · ${categoryLabel(r)}</span><button class="close-button" data-close="reaction" aria-label="Close reaction">×</button></div>
+    <div class="dialog-inner"><div class="dialog-top"><span>${position + 1} / ${detailReactionIds.length} · ${categoryLabel(r)}</span><div class="reaction-tools">${reactionFolderControl(r)}<button class="close-button" data-close="reaction" aria-label="Close reaction">×</button></div></div>
     <h2 id="reaction-title" tabindex="-1">${r.name}</h2>
     ${r.mergedEntries.length ? `<p class="muted">Also includes: ${r.mergedEntries.map(entry => escapeHTML(entry.name)).join('; ')}.</p>` : ''}
     <div class="reaction-tabs" role="tablist" aria-label="Reaction details">${tabs.map(([key, label]) => `<button role="tab" id="tab-${key}" aria-controls="reaction-panel" aria-selected="${tab === key}" tabindex="0" data-detail-tab="${key}">${label}</button>`).join('')}</div>
     <section id="reaction-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-${tab}">${detailPanel(r, tab)}</section>
     ${source ? `<p class="book-citation">${sourceBooks[r.sourceBook].authors}, <cite>${sourceBooks[r.sourceBook].title}</cite> (${sourceBooks[r.sourceBook].year}), ${source.pages.length === 1 ? 'p.' : 'pp.'} ${source.pages.join('–')}. Figures from your supplied copy.${r.sourceBook === 'kurti' && liCoverage[id] ? ` Also covered in Li (2021), p. ${liCoverage[id].pages.join(', ')}.` : ''}</p>` : ''}
     <div class="detail-section"><h3>Study by category</h3><div class="actions">${r.categories.map(id => `<button class="text-button" data-start="${id}">Quiz: ${categoryFor(id).short}</button>`).join('')}</div><p class="muted">${r.sourceBook === 'mundy' ? 'Additional reactions from Mundy, Ellerd & Favaloro (2005).' : r.sourceBook === 'li' ? 'Categories describe the reaction type.' : r.appendixPages.length ? `Appendix 8.3, pp. ${r.appendixPages.join(', ')}.` : r.supplemental ? 'Preserved from your original library; this reaction has no dedicated chapter.' : 'This chapter is not listed in the book’s appendix 8.3 category table.'}</p></div>
-    <div class="detail-actions"><button class="button secondary" data-save="${r.id}">${state.saved.includes(r.id) ? 'Unsave reaction' : 'Save reaction'}</button>${reactionFolderControl(r)}</div></div>
+    <div class="detail-actions"><button class="button secondary" data-save="${r.id}">${state.saved.includes(r.id) ? 'Unsave reaction' : 'Save reaction'}</button></div></div>
     <button class="detail-arrow" data-detail-step="1" aria-label="Next reaction" title="Next reaction (→)" ${position >= detailReactionIds.length - 1 ? 'disabled' : ''}><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5h3l4 7-4 7H8l4-7z"/></svg></button></div>`;
   if (!reactionDialog.open) reactionDialog.showModal();
 }
@@ -710,15 +715,30 @@ reactionDialog.addEventListener('keydown', e => {
     moveDetail(e.key === 'ArrowLeft' ? -1 : 1);
   }
 });
+// Folder pickers dismiss like dropdowns, including inside a reaction dialog.
+document.addEventListener('click', event => {
+  document.querySelectorAll('.reaction-folder[open]').forEach(folder => {
+    if (!folder.contains(event.target)) folder.open = false;
+  });
+});
+document.addEventListener('keydown', event => {
+  if (event.key !== 'Escape') return;
+  const folder = document.querySelector('.reaction-folder[open]');
+  if (!folder) return;
+  event.preventDefault(); event.stopImmediatePropagation();
+  folder.open = false;
+  folder.querySelector('summary').focus();
+}, true);
+document.addEventListener('focusin', event => {
+  document.querySelectorAll('.reaction-folder[open]').forEach(folder => {
+    if (!folder.contains(event.target)) folder.open = false;
+  });
+});
 document.addEventListener('change', e => {
   if (e.target.id === 'saved-folder-filter') {
     savedFolderId = e.target.value;
     renderLibraryResults(true);
     document.querySelector('#saved-folder-filter').focus();
-    return;
-  }
-  if (e.target.matches('[data-reaction-folder]')) {
-    moveToFolder(e.target.dataset.reactionFolder, e.target.value);
     return;
   }
   if (!e.target.matches('[data-card-mode]')) return;
@@ -735,7 +755,8 @@ document.addEventListener('change', e => {
 });
 document.addEventListener('click', e => {
   const button = e.target.closest('button'); if (!button) return;
-  if (button.dataset.folderAction) editSavedFolder(button.dataset.folderAction);
+  if (button.dataset.moveReaction) moveToFolder(button.dataset.moveReaction, button.dataset.folderTarget);
+  else if (button.dataset.folderAction) editSavedFolder(button.dataset.folderAction);
   else if (button.dataset.close === 'folder') document.querySelector('#folder-dialog').close();
   else if (button.dataset.libraryView) {
     state.libraryView = button.dataset.libraryView;
