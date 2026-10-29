@@ -176,8 +176,8 @@ function syncCategories() {
 function dashboard() {
   main.innerHTML = heading('Named reactions') + `
     ${selectedReactions().length ? '' : '<p class="intro">Select at least one category to start.</p>'}
-    <div class="actions"><button class="button primary" data-start="selected" ${selectedReactions().length ? '' : 'disabled'}>Quiz all selected</button><button class="button secondary" data-flashcards="selected" ${selectedReactions().length ? '' : 'disabled'}>Study flashcards</button><button class="text-button" data-start="mixed" ${selectedReactions().length ? '' : 'disabled'}>Quick quiz</button><button class="text-button" data-start="endless" ${selectedReactions().length ? '' : 'disabled'}>Endless quiz</button></div>
-    <p class="catalog-note">${selectedReactions().length} reactions selected.</p>
+    <div class="actions"><button class="button primary" data-start="selected" ${selectedReactions().length ? '' : 'disabled'}>Quiz all selected</button><button class="button secondary" data-flashcards="selected" ${selectedReactions().length ? '' : 'disabled'}>Study flashcards</button></div>
+    <p class="catalog-note">${selectedReactions().length} reactions selected. Missed questions return until you answer them correctly three times in a row.</p>
     <section class="home-section"><div class="section-heading"><h2>All-time progress</h2><a class="text-button" href="#statistics">View statistics</a></div>${statsMarkup()}</section>`;
 }
 
@@ -258,8 +258,7 @@ function renderLibraryResults(saved) {
 
 function practice() {
   const modes = [
-    ['Quiz every selected reaction', `${selectedReactions().length} questions from your selected categories, without repeats.`, 'selected'],
-    ['Endless quiz', 'Keep practicing selected categories. End the session whenever you like.', 'endless'],
+    ['Quiz all selected', `${selectedReactions().length} reactions. Missed questions repeat until you get them right three times in a row.`, 'selected'],
     ['Review mistakes', 'Reactions you last answered incorrectly.', 'review'],
     ['Saved reactions', 'Practice your bookmarked reactions.', 'saved'],
   ];
@@ -493,7 +492,7 @@ function selectDetailTab(tab, focus = true) {
 }
 
 function startQuiz(mode) {
-  let pool = studyPool(mode), title = 'Quick quiz';
+  let pool = studyPool(mode), title = 'Selected reactions';
   if (!pool.length) { toast('Select at least one category.'); return; }
   if (mode === 'review') {
     pool = pool.filter(r => { const attempts = state.attempts.filter(a => a.id === r.id); return attempts.length && !attempts[attempts.length - 1].correct; });
@@ -505,30 +504,30 @@ function startQuiz(mode) {
   } else if (mode === 'collection') {
     pool = filteredReactions(); title = state.selectedCategories.length === 1 ? categoryFor(state.selectedCategories[0]).short : 'Selected reactions';
     if (!pool.length) { toast('No reactions selected.'); return; }
-  } else if (mode === 'endless') {
-    title = 'Endless quiz';
   } else if (categoryFor(mode)) { title = categoryFor(mode).short; }
   else if (mode === 'all') { title = 'All reactions'; }
   else if (mode === 'selected') { title = selectionTitle(); }
   if (!pool.length) { toast('No reactions in this selection.'); return; }
   const ordered = shuffle(pool);
-  quiz = {mode, title, pool:[...pool], questions:mode === 'mixed' ? ordered.slice(0,5) : ordered, index:0, answeredCount:0, correct:0, answered:false, started:Date.now(), finished:false};
+  quiz = {mode, title, pool:[...pool], questions:ordered, index:0, answeredCount:0, correct:0, answered:false,
+    missed:new Set(), correctStreaks:new Map(), cleared:new Set(), started:Date.now(), finished:false};
   if (reactionDialog.open) reactionDialog.close();
   renderQuestion(); quizDialog.showModal();
 }
 
 function renderQuestion() {
   const r = quiz.questions[quiz.index];
-  const endless = quiz.mode === 'endless';
   // Prefer the actual quiz pool; fill tiny selections without repeating answers.
   const candidates = shuffle(quiz.pool.filter(x => x.id !== r.id));
   const used = new Set([r.id,...candidates.map(x => x.id)]);
   const distractors = [...candidates,...shuffle(reactions.filter(x => matchesBook(x) && !used.has(x.id)))].slice(0,3);
   quiz.options = shuffle([r, ...distractors]); quiz.answered = false;
-  quizDialog.innerHTML = `<div class="dialog-inner"><div class="dialog-top"><span>${escapeHTML(quiz.title)} · ${endless ? `Question ${quiz.answeredCount + 1}` : `${quiz.index + 1} / ${quiz.questions.length}`}</span><button class="close-button" data-close="quiz" aria-label="${endless ? 'End session' : 'Exit quiz'}">×</button></div>
-    ${endless ? `<p class="running-score" id="quiz-running-score" aria-live="polite">${quiz.correct} correct · ${quiz.answeredCount} answered</p>` : `<div class="quiz-progress"><div style="width:${quiz.index / quiz.questions.length * 100}%"></div></div>`}<span class="badge quiz-category">${escapeHTML(quiz.title)}</span>
+  quizDialog.innerHTML = `<div class="dialog-inner"><div class="dialog-top"><span>${escapeHTML(quiz.title)} · Question ${quiz.answeredCount + 1}</span><button class="close-button" data-close="quiz" aria-label="Exit quiz">×</button></div>
+    <p id="quiz-progress-label" aria-live="polite">${quiz.cleared.size} / ${quiz.pool.length} reactions cleared</p>
+    <div class="quiz-progress"><div style="width:${quiz.cleared.size / quiz.pool.length * 100}%"></div></div>
+    <p class="muted">${quiz.missed.has(r.id) ? `Review: ${quiz.correctStreaks.get(r.id)} / 3 correct in a row for this reaction.` : 'Missed questions return until you get them right three times in a row.'}</p>
     <h2 id="quiz-title">Name the reaction</h2><p class="question-text">${escapeHTML(r.question)}</p><div class="answers">${quiz.options.map((option,i) => `<button class="answer" data-answer="${option.id}"><span>${String.fromCharCode(65+i)}</span>${escapeHTML(option.name)}</button>`).join('')}</div>
-    <div id="answer-feedback" aria-live="polite"></div><div class="quiz-footer">${endless ? '<button class="button secondary" data-end-session>End session</button>' : ''}<button class="button primary" id="next-question" disabled>${!endless && quiz.index === quiz.questions.length - 1 ? 'See results' : 'Next question'} →</button></div></div>`;
+    <div id="answer-feedback" aria-live="polite"></div><div class="quiz-footer"><button class="button primary" id="next-question" disabled>Next question →</button></div></div>`;
 }
 
 function answer(id) {
@@ -537,44 +536,46 @@ function answer(id) {
   const r = quiz.questions[quiz.index], correct = id === r.id;
   quiz.answeredCount++;
   if (correct) quiz.correct++;
-  const runningScore = quizDialog.querySelector('#quiz-running-score');
-  if (runningScore) runningScore.textContent = `${quiz.correct} correct · ${quiz.answeredCount} answered`;
+  if (!correct) {
+    quiz.missed.add(r.id);
+    quiz.correctStreaks.set(r.id, 0);
+  } else if (quiz.missed.has(r.id)) {
+    quiz.correctStreaks.set(r.id, quiz.correctStreaks.get(r.id) + 1);
+  }
+  // Reinsert at the end so other pending reactions are practiced first.
+  if (quiz.missed.has(r.id) && quiz.correctStreaks.get(r.id) < 3) quiz.questions.push(r);
+  else quiz.cleared.add(r.id);
+  quizDialog.querySelector('#quiz-progress-label').textContent = `${quiz.cleared.size} / ${quiz.pool.length} reactions cleared`;
+  quizDialog.querySelector('.quiz-progress > div').style.width = `${quiz.cleared.size / quiz.pool.length * 100}%`;
   state.attempts.push({id:r.id, correct, at:new Date().toISOString()}); persist();
   quizDialog.querySelectorAll('[data-answer]').forEach(button => {
     button.disabled = true;
     if (button.dataset.answer === r.id) button.classList.add('correct');
     else if (button.dataset.answer === id) button.classList.add('incorrect');
   });
-  document.querySelector('#answer-feedback').innerHTML = `<div class="answer-feedback"><strong>${correct ? 'Correct.' : `Correct answer: ${r.name}.`}</strong>${r.explanation}</div>`;
-  const next = document.querySelector('#next-question'); next.disabled = false; next.focus();
+  const reviewFeedback = !correct ? 'This question will return. Get it right three times in a row to clear it.'
+    : quiz.missed.has(r.id) ? `${quiz.correctStreaks.get(r.id)} / 3 correct in a row.${quiz.cleared.has(r.id) ? ' Reaction cleared.' : ' This question will return.'}` : 'Reaction cleared.';
+  document.querySelector('#answer-feedback').innerHTML = `<div class="answer-feedback"><strong>${correct ? 'Correct.' : `Correct answer: ${escapeHTML(r.name)}.`}</strong>${r.explanation}<p>${reviewFeedback}</p></div>`;
+  const next = document.querySelector('#next-question');
+  next.textContent = quiz.cleared.size === quiz.pool.length ? 'See results →' : 'Next question →';
+  next.disabled = false; next.focus();
 }
 
 function nextQuestion() {
   if (!quiz?.answered || quiz.finished) return;
   if (quiz.index < quiz.questions.length - 1) { quiz.index++; renderQuestion(); quizDialog.querySelector('[data-answer]').focus(); return; }
-  if (quiz.mode === 'endless') {
-    const previousId = quiz.questions[quiz.index].id;
-    quiz.questions = shuffle(quiz.pool);
-    // Cover each selected reaction once per pass; avoid back-to-back repeats.
-    if (quiz.questions.length > 1 && quiz.questions[0].id === previousId) {
-      [quiz.questions[0], quiz.questions[1]] = [quiz.questions[1], quiz.questions[0]];
-    }
-    quiz.index = 0;
-    renderQuestion(); quizDialog.querySelector('[data-answer]').focus();
-    return;
-  }
   finishQuiz();
 }
 
 function finishQuiz() {
-  if (!quiz || quiz.finished) return;
+  if (!quiz || quiz.finished || quiz.cleared.size !== quiz.pool.length) return;
   quiz.finished = true;
   const total = quiz.answeredCount;
   if (!total) { quizDialog.close(); render(); return; }
   const seconds = Math.round((Date.now() - quiz.started) / 1000);
   state.sessions.push({title:quiz.title, total, correct:quiz.correct, seconds, at:new Date().toISOString()}); persist();
   quizDialog.innerHTML = `<div class="dialog-inner results"><div class="dialog-top"><span>${quiz.title}</span><button class="close-button" data-close="quiz" aria-label="Close results">×</button></div>
-    <h2 id="quiz-title">${quiz.mode === 'endless' ? 'Session complete' : 'Quiz complete'}</h2><div class="result-score">${quiz.correct}<span> / ${total}</span></div>
+    <h2 id="quiz-title">Quiz complete</h2><p>All ${quiz.pool.length} reactions cleared.</p><div class="result-score">${quiz.correct}<span> / ${total}</span></div>
     <div class="result-metrics"><div><strong>${Math.round(quiz.correct / total * 100)}%</strong><span>Accuracy</span></div><div><strong>${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2,'0')}</strong><span>Time</span></div><div><strong>${streak()}</strong><span>Day streak</span></div></div>
     <div class="result-actions"><button class="button secondary" data-close="quiz">Done</button><button class="button primary" data-retry>Try again</button></div></div>`;
   render();
@@ -583,7 +584,6 @@ function finishQuiz() {
 
 function requestExit() {
   if (!quiz || quiz.finished) { quizDialog.close(); render(); return; }
-  if (quiz.mode === 'endless') { finishQuiz(); return; }
   if (quizDialog.querySelector('.quiz-exit')) return;
   const section = document.createElement('div'); section.className = 'quiz-exit';
   section.innerHTML = '<strong>Leave quiz?</strong><p>Answered questions are saved. This session will remain incomplete.</p><div class="result-actions"><button class="button secondary" data-continue>Continue</button><button class="button primary" data-exit>Leave</button></div>';
@@ -654,7 +654,6 @@ document.addEventListener('click', e => {
   else if (button.dataset.close === 'reagent') reagentDialog.close();
   else if (button.dataset.answer) answer(button.dataset.answer);
   else if (button.id === 'next-question') nextQuestion();
-  else if (button.hasAttribute('data-end-session')) finishQuiz();
   else if (button.dataset.close === 'reaction') reactionDialog.close();
   else if (button.dataset.close === 'quiz') requestExit();
   else if (button.hasAttribute('data-continue')) button.closest('.quiz-exit').remove();

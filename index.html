@@ -6,7 +6,10 @@
   <meta name="theme-color" content="#ffffff">
   <meta name="description" content="Named reaction quizzes, a searchable reaction library, and practice statistics.">
   <title>NameReactionDB</title>
-  <link rel="stylesheet" href="assets/styles.css?v=20261029-header-spacing">
+  <link rel="icon" type="image/png" href="assets/favicon.png?v=20261029">
+  <link rel="icon" type="image/svg+xml" sizes="any" href="assets/favicon.svg?v=20261029">
+  <script src="assets/theme.js?v=20261029-dark-mode"></script>
+  <link rel="stylesheet" href="assets/styles.css?v=20261029-dark-mode">
   <script src="assets/reactions.js" defer></script>
   <script src="assets/book-data.js" defer></script>
   <script src="assets/book-sections.js" defer></script>
@@ -17,15 +20,21 @@
   <script src="assets/supabase-config.js?v=20261027-connected" defer></script>
   <script src="assets/backend.js?v=20261028-simple-login" defer></script>
   <script src="assets/account.js?v=20261028-simple-login" defer></script>
-  <script src="assets/app.js?v=20261029-menu-stays-open" defer></script>
+  <script src="assets/app.js?v=20261029-adaptive-quiz" defer></script>
 </head>
 <body>
   <header class="site-header">
     <div class="header-inner">
     <a href="#dashboard" class="brand">NameReactionDB</a>
+    <div class="header-controls">
     <button class="menu-toggle" type="button" aria-label="Open menu" aria-controls="main-navigation" aria-expanded="false">
       <span class="menu-symbol" aria-hidden="true"></span>
     </button>
+    <button class="theme-toggle" type="button" aria-label="Dark mode" aria-pressed="false" title="Switch to dark mode">
+      <svg class="icon theme-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 13a8.5 8.5 0 0 1-9.5-9.5A8.5 8.5 0 1 0 20.5 13Z"/></svg>
+      <svg class="icon theme-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg>
+    </button>
+    </div>
     <nav id="main-navigation" aria-label="Main navigation" aria-hidden="true" inert>
       <div class="navigation-links">
       <a href="#dashboard" data-page="dashboard" class="nav-item active">Home</a>
