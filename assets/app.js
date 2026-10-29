@@ -67,7 +67,7 @@ let storageAvailable = true;
 try { const raw = JSON.parse(localStorage.getItem(storageKey)); if(raw && Array.isArray(raw.saved) && Array.isArray(raw.attempts) && Array.isArray(raw.sessions)) state = raw; } catch { storageAvailable = false; }
 function persist(){try{localStorage.setItem(storageKey,JSON.stringify(state));}catch{storageAvailable=false;document.querySelector('.local-status').innerHTML='Progress saved for this visit';}}
 if(!storageAvailable) document.querySelector('.local-status').innerHTML='Progress saved for this visit';
-let page = 'dashboard', searchTerm = '', quiz = null;
+let page = 'dashboard', searchTerm = '', quiz = null, savedFolderId = 'all';
 if (!['condensed', 'expanded'].includes(state.libraryView)) state.libraryView = 'condensed';
 state = migrateStudyProgress(state, backupCatalog());
 const inCategory = (r, id) => r.categories.includes(id);
@@ -183,18 +183,110 @@ function dashboard() {
 
 function filteredReactions(saved = page === 'saved') {
   return reactions.filter(r => (!saved || state.saved.includes(r.id)) &&
+    (!saved || matchesSavedFolder(r.id)) &&
     isSelected(r) &&
     searchKey(`${r.name} ${r.bookName || ''} ${r.aliases || ''} ${r.appendixSummary || ''} ${r.summary} ${r.reagents} ${r.equation} ${categoryLabel(r)}`).includes(searchKey(searchTerm)));
 }
 
 function library(saved = false) {
   main.innerHTML = heading(saved ? 'Saved reactions' : 'Reaction library') + `
+    ${saved ? '<section id="saved-folders" aria-label="Saved reaction folders"></section>' : ''}
     <div class="search-row"><label class="search-box"><input id="reaction-search" aria-label="Search reactions" placeholder="Search reactions or reagents" value="${escapeHTML(searchTerm)}"></label></div>
     <div class="library-view-toggle" role="group" aria-label="Library view"><button data-library-view="condensed" aria-pressed="${state.libraryView === 'condensed'}">Condensed</button><button data-library-view="expanded" aria-pressed="${state.libraryView === 'expanded'}">Expanded</button></div>
     <div class="section-heading"><p id="result-count"></p><div class="actions"><button class="text-button" data-flashcards="collection">Flashcards</button><button class="text-button" data-start="collection">Quiz this selection</button></div></div>
     <div class="library-list" id="library-results"></div>`;
   renderLibraryResults(saved);
   document.querySelector('#reaction-search').addEventListener('input', e => { searchTerm = e.target.value; renderLibraryResults(saved); });
+}
+
+function currentSavedFolder() {
+  return state.savedFolders.find(folder => folder.id === savedFolderId);
+}
+
+function matchesSavedFolder(id) {
+  if (savedFolderId === 'unfiled') return !state.savedFolders.some(folder => folder.reactionIds.includes(id));
+  const folder = currentSavedFolder();
+  return !folder || folder.reactionIds.includes(id);
+}
+
+function savedCollectionTitle() {
+  return currentSavedFolder()?.name || (savedFolderId === 'unfiled' ? 'Unfiled reactions' : 'Saved reactions');
+}
+
+function renderSavedFolders() {
+  const container = document.querySelector('#saved-folders');
+  if (!container) return;
+  if (!['all', 'unfiled'].includes(savedFolderId) && !currentSavedFolder()) savedFolderId = 'all';
+  const unfiled = state.saved.filter(id => !state.savedFolders.some(folder => folder.reactionIds.includes(id))).length;
+  container.innerHTML = `<div class="folder-toolbar"><label class="folder-filter">Folder
+    <select id="saved-folder-filter"><option value="all">All saved (${state.saved.length})</option><option value="unfiled">Unfiled (${unfiled})</option>
+    ${state.savedFolders.map(folder => `<option value="${folder.id}">${escapeHTML(folder.name)} (${folder.reactionIds.length})</option>`).join('')}</select></label>
+    <div class="actions"><button class="button secondary" data-folder-action="create">New folder</button>
+    ${currentSavedFolder() ? '<button class="text-button" data-folder-action="rename">Rename</button><button class="text-button" data-folder-action="delete">Delete folder</button>' : ''}</div></div>
+    <p class="muted folder-hint">Choose a folder, then quiz or study its reactions. Book, category, and search filters still apply.</p>`;
+  container.querySelector('select').value = savedFolderId;
+}
+
+function reactionFolderControl(r) {
+  if (!state.saved.includes(r.id)) return '';
+  const selected = state.savedFolders.find(folder => folder.reactionIds.includes(r.id));
+  return `<label class="reaction-folder">Folder <select data-reaction-folder="${r.id}" aria-label="Folder for ${escapeHTML(r.name)}">
+    <option value="" ${selected ? '' : 'selected'}>Unfiled</option>
+    ${state.savedFolders.map(folder => `<option value="${folder.id}" ${selected?.id === folder.id ? 'selected' : ''}>${escapeHTML(folder.name)}</option>`).join('')}
+    </select></label>`;
+}
+
+function moveToFolder(id, folderId) {
+  const target = state.savedFolders.find(folder => folder.id === folderId);
+  if (!state.saved.includes(id) || (folderId && !target)) return;
+  state.savedFolders.forEach(folder => { folder.reactionIds = folder.reactionIds.filter(item => item !== id); });
+  if (target) target.reactionIds.push(id);
+  persist();
+  if (page === 'saved') {
+    renderLibraryResults(true);
+    // A moved row may disappear from this folder; keep keyboard focus in the list.
+    const control = document.querySelector(`[data-reaction-folder="${id}"]`) || document.querySelector('#saved-folder-filter');
+    if (!reactionDialog.open) control?.focus();
+  }
+  toast(target ? `Moved to ${target.name}.` : 'Moved to Unfiled.');
+}
+
+function editSavedFolder(action) {
+  const folder = currentSavedFolder();
+  if (action !== 'create' && !folder) return;
+  const dialog = document.querySelector('#folder-dialog');
+  const deleting = action === 'delete';
+  dialog.innerHTML = `<form class="dialog-inner" id="folder-form"><div class="dialog-top"><h2 id="folder-title">${deleting ? 'Delete folder' : action === 'rename' ? 'Rename folder' : 'New folder'}</h2>
+    <button class="close-button" type="button" data-close="folder" aria-label="Close folder editor">×</button></div>
+    ${deleting ? `<p>Delete “${escapeHTML(folder.name)}”? Its reactions will stay saved and move to Unfiled.</p>` : `<label class="folder-name">Folder name<input id="folder-name" name="name" required maxlength="80" autocomplete="off" value="${escapeHTML(action === 'rename' ? folder.name : '')}" placeholder="e.g. Exam revision"></label>`}
+    <div class="quiz-footer"><button class="button secondary" type="button" data-close="folder">Cancel</button><button class="button primary" type="submit">${deleting ? 'Delete folder' : action === 'rename' ? 'Save name' : 'Create folder'}</button></div></form>`;
+  dialog.querySelector('form').addEventListener('submit', event => {
+    event.preventDefault();
+    if (deleting) {
+      state.savedFolders = state.savedFolders.filter(item => item.id !== folder.id);
+      savedFolderId = 'unfiled';
+    } else {
+      const input = dialog.querySelector('input');
+      const name = input.value.trim();
+      if (!name || state.savedFolders.some(item => item.id !== (action === 'rename' ? folder.id : null) && item.name.toLocaleLowerCase() === name.toLocaleLowerCase())) {
+        input.setCustomValidity(name ? 'A folder with this name already exists.' : 'Enter a folder name.');
+        input.reportValidity(); return;
+      }
+      if (action === 'rename') folder.name = name;
+      else {
+        const created = {id: `folder-${crypto.randomUUID()}`, name, reactionIds: []};
+        state.savedFolders.push(created);
+        // Keep the current reactions visible so they can be filed into the new folder.
+      }
+    }
+    persist(); dialog.close(); renderLibraryResults(true);
+    document.querySelector('#saved-folder-filter').focus();
+    toast(deleting ? 'Folder deleted. Reactions kept in Unfiled.' : action === 'rename' ? 'Folder renamed.' : 'Folder created. Choose it from a reaction’s Folder menu.');
+  });
+  dialog.querySelector('input')?.addEventListener('input', event => event.target.setCustomValidity(''));
+  dialog.showModal();
+  if (deleting) dialog.querySelector('[data-close="folder"]').focus();
+  else dialog.querySelector('input').focus();
 }
 
 const searchKey = text => String(text).normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[’'–—-]/g, '');
@@ -244,16 +336,19 @@ function moveReagent(step) {
 }
 
 function renderLibraryResults(saved) {
+  if (saved) renderSavedFolders();
   const filtered = filteredReactions(saved);
+  const emptyFolder = saved && savedFolderId !== 'all' && !state.saved.some(matchesSavedFolder);
   document.querySelector('#result-count').textContent = `${filtered.length} reaction${filtered.length === 1 ? '' : 's'}`;
   document.querySelector('[data-start="collection"]').disabled = !filtered.length;
   document.querySelector('[data-flashcards="collection"]').disabled = !filtered.length;
   document.querySelectorAll('[data-library-view]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.libraryView === state.libraryView)));
   document.querySelector('#library-results').innerHTML = filtered.length ? filtered.map(r => `
     <article class="reaction-row ${state.libraryView}"><div class="reaction-row-heading"><button class="text-button reaction-name" data-detail="${r.id}">${escapeHTML(r.name)}</button>
-    ${state.libraryView === 'expanded' ? `<button class="bookmark-button ${state.saved.includes(r.id) ? 'saved' : ''}" data-save="${r.id}" aria-label="${state.saved.includes(r.id) ? 'Unsave' : 'Save'} ${escapeHTML(r.name)}" aria-pressed="${state.saved.includes(r.id)}">${icon('bookmark')}</button>` : ''}</div>
-    ${state.libraryView === 'expanded' ? bookFigure(bookSections[r.id].reaction, r.name, 'reaction & conditions') : `<p class="reaction-overview">${escapeHTML(r.appendixSummary || r.summary)}</p>`}</article>`).join('') :
-    `<div class="empty-state"><p>${!state.selectedCategories.length ? 'Select at least one category.' : saved && !state.saved.length ? 'No saved reactions. Bookmark reactions in the library.' : 'No matches. Try a different search or category.'}</p>${saved && !state.saved.length ? '<a href="#library">Browse reactions</a>' : ''}</div>`;
+    ${saved || state.libraryView === 'expanded' ? `<button class="bookmark-button ${state.saved.includes(r.id) ? 'saved' : ''}" data-save="${r.id}" aria-label="${state.saved.includes(r.id) ? 'Unsave' : 'Save'} ${escapeHTML(r.name)}" aria-pressed="${state.saved.includes(r.id)}">${icon('bookmark')}</button>` : ''}</div>
+    ${state.libraryView === 'expanded' ? bookFigure(bookSections[r.id].reaction, r.name, 'reaction & conditions') : `<p class="reaction-overview">${escapeHTML(r.appendixSummary || r.summary)}</p>`}
+    ${saved ? reactionFolderControl(r) : ''}</article>`).join('') :
+    `<div class="empty-state"><p>${!state.selectedCategories.length ? 'Select at least one category.' : saved && !state.saved.length ? 'No saved reactions. Bookmark reactions in the library.' : emptyFolder ? 'This folder is empty. Choose All saved, then use a reaction’s Folder menu to move it here.' : 'No matches. Try a different search, book, or category.'}</p>${saved && !state.saved.length ? '<a href="#library">Browse reactions</a>' : ''}</div>`;
 }
 
 function practice() {
@@ -295,7 +390,7 @@ function startFlashcards(mode) {
   const pool = fullPool.filter(r => canRecall(r, state.flashcardMode));
   if (!pool.length) { toast(state.flashcardMode === 'mechanism' ? 'No mechanism figures in this selection. Choose another recall mode.' : 'No cards in this selection.'); return; }
   deck = {pool:fullPool, cards:shuffle(pool), original:[...pool], index:0, revealed:false, ratings:{}, mode:state.flashcardMode, answerView:state.flashcardMode,
-    title:categoryFor(mode)?.short || `${mode==='saved' || (mode==='collection' && page==='saved') ? 'Saved · ' : ''}${selectionTitle()}`, finished:false};
+    title:mode === 'collection' && page === 'saved' ? savedCollectionTitle() : categoryFor(mode)?.short || `${mode==='saved' ? 'Saved · ' : ''}${selectionTitle()}`, finished:false};
   if (reactionDialog.open) reactionDialog.close();
   renderFlashcard(); flashcardDialog.showModal();
 }
@@ -404,7 +499,11 @@ function render() {
 }
 
 function toggleSave(id) {
-  if (state.saved.includes(id)) { state.saved = state.saved.filter(x => x !== id); toast('Reaction removed.'); }
+  if (state.saved.includes(id)) {
+    state.saved = state.saved.filter(x => x !== id);
+    state.savedFolders.forEach(folder => { folder.reactionIds = folder.reactionIds.filter(item => item !== id); });
+    toast('Reaction removed.');
+  }
   else { state.saved.push(id); toast('Reaction saved.'); }
   persist();
   if (page === 'library' || page === 'saved') renderLibraryResults(page === 'saved');
@@ -464,7 +563,7 @@ function showDetail(id, tab = 'reaction') {
     <section id="reaction-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-${tab}">${detailPanel(r, tab)}</section>
     ${source ? `<p class="book-citation">${sourceBooks[r.sourceBook].authors}, <cite>${sourceBooks[r.sourceBook].title}</cite> (${sourceBooks[r.sourceBook].year}), ${source.pages.length === 1 ? 'p.' : 'pp.'} ${source.pages.join('–')}. Figures from your supplied copy.${r.sourceBook === 'kurti' && liCoverage[id] ? ` Also covered in Li (2021), p. ${liCoverage[id].pages.join(', ')}.` : ''}</p>` : ''}
     <div class="detail-section"><h3>Study by category</h3><div class="actions">${r.categories.map(id => `<button class="text-button" data-start="${id}">Quiz: ${categoryFor(id).short}</button>`).join('')}</div><p class="muted">${r.sourceBook === 'mundy' ? 'Additional reactions from Mundy, Ellerd & Favaloro (2005).' : r.sourceBook === 'li' ? 'Categories describe the reaction type.' : r.appendixPages.length ? `Appendix 8.3, pp. ${r.appendixPages.join(', ')}.` : r.supplemental ? 'Preserved from your original library; this reaction has no dedicated chapter.' : 'This chapter is not listed in the book’s appendix 8.3 category table.'}</p></div>
-    <div class="detail-actions"><button class="button secondary" data-save="${r.id}">${state.saved.includes(r.id) ? 'Unsave reaction' : 'Save reaction'}</button></div></div>
+    <div class="detail-actions"><button class="button secondary" data-save="${r.id}">${state.saved.includes(r.id) ? 'Unsave reaction' : 'Save reaction'}</button>${reactionFolderControl(r)}</div></div>
     <button class="detail-arrow" data-detail-step="1" aria-label="Next reaction" title="Next reaction (→)" ${position >= detailReactionIds.length - 1 ? 'disabled' : ''}><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5h3l4 7-4 7H8l4-7z"/></svg></button></div>`;
   if (!reactionDialog.open) reactionDialog.showModal();
 }
@@ -502,7 +601,7 @@ function startQuiz(mode) {
     pool = pool.filter(r => state.saved.includes(r.id)); title = 'Saved reactions';
     if (!pool.length) { toast('No saved reactions in the selected categories.'); return; }
   } else if (mode === 'collection') {
-    pool = filteredReactions(); title = state.selectedCategories.length === 1 ? categoryFor(state.selectedCategories[0]).short : 'Selected reactions';
+    pool = filteredReactions(); title = page === 'saved' ? savedCollectionTitle() : state.selectedCategories.length === 1 ? categoryFor(state.selectedCategories[0]).short : 'Selected reactions';
     if (!pool.length) { toast('No reactions selected.'); return; }
   } else if (categoryFor(mode)) { title = categoryFor(mode).short; }
   else if (mode === 'all') { title = 'All reactions'; }
@@ -574,7 +673,7 @@ function finishQuiz() {
   if (!total) { quizDialog.close(); render(); return; }
   const seconds = Math.round((Date.now() - quiz.started) / 1000);
   state.sessions.push({title:quiz.title, total, correct:quiz.correct, seconds, at:new Date().toISOString()}); persist();
-  quizDialog.innerHTML = `<div class="dialog-inner results"><div class="dialog-top"><span>${quiz.title}</span><button class="close-button" data-close="quiz" aria-label="Close results">×</button></div>
+  quizDialog.innerHTML = `<div class="dialog-inner results"><div class="dialog-top"><span>${escapeHTML(quiz.title)}</span><button class="close-button" data-close="quiz" aria-label="Close results">×</button></div>
     <h2 id="quiz-title">Quiz complete</h2><p>All ${quiz.pool.length} reactions cleared.</p><div class="result-score">${quiz.correct}<span> / ${total}</span></div>
     <div class="result-metrics"><div><strong>${Math.round(quiz.correct / total * 100)}%</strong><span>Accuracy</span></div><div><strong>${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2,'0')}</strong><span>Time</span></div><div><strong>${streak()}</strong><span>Day streak</span></div></div>
     <div class="result-actions"><button class="button secondary" data-close="quiz">Done</button><button class="button primary" data-retry>Try again</button></div></div>`;
@@ -612,6 +711,16 @@ reactionDialog.addEventListener('keydown', e => {
   }
 });
 document.addEventListener('change', e => {
+  if (e.target.id === 'saved-folder-filter') {
+    savedFolderId = e.target.value;
+    renderLibraryResults(true);
+    document.querySelector('#saved-folder-filter').focus();
+    return;
+  }
+  if (e.target.matches('[data-reaction-folder]')) {
+    moveToFolder(e.target.dataset.reactionFolder, e.target.value);
+    return;
+  }
   if (!e.target.matches('[data-card-mode]')) return;
   state.flashcardMode = e.target.value;
   persist();
@@ -626,7 +735,9 @@ document.addEventListener('change', e => {
 });
 document.addEventListener('click', e => {
   const button = e.target.closest('button'); if (!button) return;
-  if (button.dataset.libraryView) {
+  if (button.dataset.folderAction) editSavedFolder(button.dataset.folderAction);
+  else if (button.dataset.close === 'folder') document.querySelector('#folder-dialog').close();
+  else if (button.dataset.libraryView) {
     state.libraryView = button.dataset.libraryView;
     persist(); renderLibraryResults(page === 'saved');
   }

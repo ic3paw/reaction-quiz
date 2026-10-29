@@ -57,8 +57,25 @@ function migrateStudyProgress(data, catalog) {
       selected = [...new Set([...selected, ...catalog.mundyCategories])];
     }
   }
+  const saved = [...new Set(data.saved.map(canonicalId))];
+  const savedIds = new Set(saved.filter(id => catalog.reactions.includes(id)));
+  const folderIds = new Set(), filedIds = new Set();
+  const savedFolders = [];
+  for (const folder of Array.isArray(data.savedFolders) ? data.savedFolders : []) {
+    if (!folder || typeof folder.id !== 'string' || !/^folder-[a-z0-9-]+$/.test(folder.id) ||
+        folderIds.has(folder.id) || typeof folder.name !== 'string' || !folder.name.trim() ||
+        !Array.isArray(folder.reactionIds)) continue;
+    folderIds.add(folder.id);
+    const reactionIds = [];
+    for (const oldId of folder.reactionIds) {
+      const id = canonicalId(oldId);
+      if (!savedIds.has(id) || filedIds.has(id)) continue;
+      filedIds.add(id); reactionIds.push(id);
+    }
+    savedFolders.push({id: folder.id, name: folder.name.trim().slice(0, 80), reactionIds});
+  }
   return {...data,
-    saved: [...new Set(data.saved.map(canonicalId))],
+    saved, savedFolders,
     attempts: data.attempts.map(a => ({...a, id: canonicalId(a.id)})),
     flashcardReviews: reviews,
     selectedCategories: catalog.categories.filter(id => selected.includes(id)),

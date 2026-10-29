@@ -184,6 +184,10 @@ window.validateStudyBackup = function validateStudyBackup(snapshot, catalog) {
   if (!object(data) || new TextEncoder().encode(JSON.stringify(data)).length > 2000000) return fail();
   if (!['saved', 'attempts', 'sessions'].every(key => Array.isArray(data[key]))) return fail();
   if (!data.saved.every(id => typeof id === 'string') || !data.attempts.every(a => object(a) && typeof a.id === 'string' && typeof a.correct === 'boolean' && date(a.at))) return fail();
+  if (data.savedFolders !== undefined && (!Array.isArray(data.savedFolders) || !data.savedFolders.every(f =>
+    object(f) && typeof f.id === 'string' && /^folder-[a-z0-9-]+$/.test(f.id) &&
+    typeof f.name === 'string' && f.name.trim().length > 0 && f.name.length <= 80 &&
+    Array.isArray(f.reactionIds) && f.reactionIds.every(id => typeof id === 'string')))) return fail();
   if (!data.sessions.every(s => object(s) && typeof s.title === 'string' && s.title.length <= 1000 && integer(s.total) && integer(s.correct) && s.correct <= s.total && Number.isFinite(s.seconds) && s.seconds >= 0 && date(s.at))) return fail();
   if (data.selectedCategories !== undefined && (!Array.isArray(data.selectedCategories) || !data.selectedCategories.every(id => typeof id === 'string'))) return fail();
   if (data.flashcardReviews !== undefined && (!object(data.flashcardReviews) || !Object.values(data.flashcardReviews).every(r => object(r) && ['known', 'again'].includes(r.rating) && date(r.at)))) return fail();
@@ -191,6 +195,7 @@ window.validateStudyBackup = function validateStudyBackup(snapshot, catalog) {
   const ids = new Set(catalog.reactions);
   return {
     saved: [...new Set(data.saved.filter(id => ids.has(id)))],
+    savedFolders: data.savedFolders,
     attempts: data.attempts.filter(a => ids.has(a.id)).map(({id, correct, at}) => ({id, correct, at})),
     sessions: data.sessions.map(({title, total, correct, seconds, at}) => ({title, total, correct, seconds, at})),
     selectedCategories: data.selectedCategories, categoryVersion: data.categoryVersion,

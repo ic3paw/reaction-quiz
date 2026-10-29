@@ -129,3 +129,28 @@ test('cloud validation still rejects malformed data before migration', () => {
   context.input = {...oldState, attempts: [{id: 'mundy-kulinkovich-reaction', correct: 'yes', at: 'bad'}]};
   assert.throws(() => evaluate('window.validateStudyBackup({schema_version: 1, payload: input}, catalog)'), /invalid/);
 });
+
+test('folders survive migration and cloud round trips without duplicate or unsaved memberships', () => {
+  const savedFolders = [
+    {id: 'folder-one', name: 'Exam revision', reactionIds: ['mundy-kulinkovich-reaction', 'kulinkovich-reaction', 'unknown', 'aldol']},
+    {id: 'folder-two', name: 'Later', reactionIds: ['kulinkovich-reaction', 'mundy-smith-indole-synthesis']},
+  ];
+  for (const cloud of [false, true]) {
+    assert.deepEqual(migrate(oldState, cloud).savedFolders, []);
+    const result = migrate({...oldState, savedFolders}, cloud);
+    assert.deepEqual(result.savedFolders, [
+      {id: 'folder-one', name: 'Exam revision', reactionIds: ['kulinkovich-reaction']},
+      {id: 'folder-two', name: 'Later', reactionIds: ['madelung-indole-synthesis']},
+    ]);
+    assert.deepEqual(migrate(result, cloud), result);
+  }
+});
+
+test('cloud validation rejects malformed folders before replacing local progress', () => {
+  for (const savedFolders of [null, {}, [{id: 'bad"id', name: 'Exam', reactionIds: []}],
+    [{id: 'folder-one', name: ' ', reactionIds: []}],
+    [{id: 'folder-one', name: 'x'.repeat(81), reactionIds: []}],
+    [{id: 'folder-one', name: 'Exam', reactionIds: [null]}]]) {
+    assert.throws(() => migrate({...oldState, savedFolders}, true), /invalid/);
+  }
+});

@@ -14,6 +14,7 @@ A responsive named-reaction study website built with plain HTML, CSS, and JavaSc
 - Flashcard modes for recalling the name from a book scheme, reaction/conditions, or mechanism, with outline/history and synthetic application answer tabs, flip, shuffle, keyboard navigation, self-rating, and review of remaining cards
 - Accuracy, practice history, daily streaks, and reaction mastery
 - Local browser storage for bookmarks and progress
+- Saved-reaction folders with create, rename, move, and delete controls; quiz or study a folder using the Saved page. Deleting a folder keeps its reactions in Unfiled. Folders persist locally and are included in manual cloud backups
 - Optional Supabase username/password accounts, email confirmation/recovery, and private manual cloud backups; see [backend setup and design](./docs/supabase.md)
 - Light and dark themes with a header toggle; follows the system initially and remembers your choice in this browser. Book diagrams retain their original white backgrounds for readability
 - Responsive layouts and keyboard-accessible dialogs

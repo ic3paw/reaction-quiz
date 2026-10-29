@@ -1,0 +1,102 @@
+"""Saved folders: real UI, old progress, filtered decks, safe names, and persistence."""
+from playwright.sync_api import sync_playwright, expect
+
+with sync_playwright() as p:
+    browser = p.chromium.launch()
+    page = browser.new_page(viewport={'width': 1440, 'height': 1000})
+    errors = []
+    page.on('pageerror', lambda error: errors.append(str(error)))
+    page.goto('http://127.0.0.1:8765/')
+    ids = page.evaluate('reactions.slice(0, 3).map(r => r.id)')
+    page.evaluate('(ids) => {state.saved = ids; delete state.savedFolders; persist();}', ids)
+    page.reload()
+    page.evaluate("location.hash = 'saved'")
+    expect(page.locator('.reaction-row')).to_have_count(3)
+    expect(page.locator('#saved-folder-filter')).to_have_value('all')
+    dialog = page.locator('#folder-dialog')
+
+    def create(name):
+        page.get_by_role('button', name='New folder', exact=True).click()
+        dialog.get_by_label('Folder name', exact=True).fill(name)
+        dialog.get_by_role('button', name='Create folder', exact=True).click()
+
+    create('Exam revision')
+    folder = page.evaluate('state.savedFolders[0].id')
+    expect(page.locator('.reaction-row')).to_have_count(3)
+    page.locator(f'[data-reaction-folder="{ids[0]}"]').select_option(folder)
+    page.locator(f'[data-reaction-folder="{ids[1]}"]').select_option(folder)
+    page.locator('#saved-folder-filter').select_option(folder)
+    expect(page.locator('.reaction-row')).to_have_count(2)
+    page.locator('[data-start="collection"]').click()
+    assert set(page.evaluate('quiz.pool.map(r => r.id)')) == set(ids[:2])
+    assert page.evaluate('quiz.title') == 'Exam revision'
+    page.get_by_role('button', name='Exit quiz', exact=True).click()
+    page.get_by_role('button', name='Leave', exact=True).click()
+    page.locator('[data-flashcards="collection"]').click()
+    assert set(page.evaluate('deck.pool.map(r => r.id)')) == set(ids[:2])
+    page.get_by_role('button', name='Close flashcards', exact=True).click()
+    page.locator('#reaction-search').fill('no matches here')
+    expect(page.locator('[data-start="collection"]')).to_be_disabled()
+    page.locator('#reaction-search').fill('')
+    page.get_by_role('button', name='Rename', exact=True).click()
+    # Folder names must remain plain text, including at the end of a quiz.
+    name = '<img src=x onerror=alert(1)>'
+    dialog.get_by_label('Folder name', exact=True).fill(name)
+    dialog.get_by_role('button', name='Save name', exact=True).click()
+    expect(page.locator('#saved-folder-filter option:checked')).to_have_text(name + ' (2)')
+    page.locator('[data-start="collection"]').click()
+    for _ in range(2):
+        current = page.evaluate('quiz.questions[quiz.index].id')
+        page.locator(f'[data-answer="{current}"]').click()
+        page.locator('#next-question').click()
+    expect(page.locator('#quiz-dialog img')).to_have_count(0)
+    expect(page.locator('#quiz-dialog .dialog-top')).to_contain_text(name)
+    page.get_by_role('button', name='Done', exact=True).click()
+    create(name)
+    expect(dialog).to_be_visible()
+    assert not dialog.locator('input').evaluate('(input) => input.checkValidity()')
+    dialog.get_by_role('button', name='Cancel', exact=True).click()
+    create('Later')
+    second = page.evaluate('state.savedFolders[1].id')
+    page.locator(f'[data-reaction-folder="{ids[0]}"]').select_option(second)
+    expect(page.locator('.reaction-row')).to_have_count(1)
+    page.reload()
+    expect(page.locator('.reaction-row')).to_have_count(3)
+    assert page.evaluate('state.savedFolders[1].reactionIds') == [ids[0]]
+    assert page.evaluate('JSON.stringify(validateStudyBackup({schema_version:1,payload:state},backupCatalog()).savedFolders) === JSON.stringify(state.savedFolders)')
+    page.locator('#saved-folder-filter').select_option(second)
+    page.get_by_role('button', name='Delete folder', exact=True).click()
+    dialog.get_by_role('button', name='Cancel', exact=True).click()
+    assert page.evaluate('state.savedFolders.length') == 2
+    page.get_by_role('button', name='Delete folder', exact=True).click()
+    dialog.get_by_role('button', name='Delete folder', exact=True).click()
+    expect(page.locator('#saved-folder-filter')).to_have_value('unfiled')
+    expect(page.locator('.reaction-row')).to_have_count(2)
+    assert len(page.evaluate('state.saved')) == 3
+    page.locator('#saved-folder-filter').select_option(folder)
+    page.locator('[data-save]').first.click()
+    expect(page.locator('.reaction-row')).to_have_count(0)
+    assert page.evaluate('state.savedFolders[0].reactionIds') == []
+    page.locator('#saved-folder-filter').select_option('all')
+    page.locator('[data-detail]').first.click()
+    page.locator('#reaction-dialog [data-reaction-folder]').select_option(folder)
+    page.get_by_role('button', name='Close reaction', exact=True).click()
+    page.locator('#saved-folder-filter').select_option(folder)
+    expect(page.locator('.reaction-row')).to_have_count(1)
+    # Restore a pre-folder backup while the current selection points to a folder.
+    page.evaluate('state = validateStudyBackup({schema_version:1,payload:{saved:state.saved,attempts:[],sessions:[]}},backupCatalog()); render();')
+    expect(page.locator('#saved-folder-filter')).to_have_value('all')
+    expect(page.locator('.reaction-row')).to_have_count(2)
+    create('Exam revision')
+    for width in [1440, 390, 320]:
+        page.set_viewport_size({'width': width, 'height': 1000})
+        assert page.evaluate('document.documentElement.scrollWidth <= innerWidth'), width
+        page.locator('#main-content').scroll_into_view_if_needed()
+        page.screenshot(path=f'/tmp/saved-folders-{width}.png')
+    page.get_by_role('button', name='Dark mode', exact=True).click()
+    page.locator('#main-content').scroll_into_view_if_needed()
+    page.wait_for_timeout(250)
+    page.screenshot(path='/tmp/saved-folders-dark.png')
+    assert not errors, errors
+    browser.close()
+    print('PASS: folder create/rename/delete, duplicate names, moving/unsaving, folder decks, safe names, persistence, backups, and mobile layouts.')
