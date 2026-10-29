@@ -67,6 +67,7 @@ with sync_playwright() as p:
     base = 'http://127.0.0.1:8765/'
     page.goto(base)
     assert page.evaluate('typeof testAuthEvent') == 'undefined', 'Guest study must not initialize Auth'
+    page.get_by_role('button', name='Open menu', exact=True).click()
     page.get_by_role('link', name='Account', exact=True).click()
     expect(page.get_by_label('Username', exact=True)).to_be_visible()
     expect(page.get_by_label('Username', exact=True)).to_be_enabled()
@@ -146,6 +147,7 @@ with sync_playwright() as p:
     # With email confirmation disabled, a new account signs in immediately.
     page.evaluate("sessionStorage.removeItem('test-session'); sessionStorage.setItem('test-autoconfirm','1')")
     page.goto(base + '#account')
+    page.reload()
     page.get_by_role('button', name='Create account', exact=True).click()
     page.get_by_label('Username', exact=True).fill('instant_user')
     page.get_by_label('Email address', exact=True).fill('private@example.test')

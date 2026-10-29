@@ -21,6 +21,39 @@ const icons = {
 const icon = name => `<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">${icons[name] || icons.flask}</svg>`;
 document.querySelectorAll('[data-icon]').forEach(el => el.innerHTML = icon(el.dataset.icon));
 
+const siteHeader = document.querySelector('.site-header');
+const menuToggle = document.querySelector('.menu-toggle');
+const mainNavigation = document.querySelector('#main-navigation');
+function setMenuOpen(open, returnFocus = false) {
+  mainNavigation.hidden = !open;
+  menuToggle.setAttribute('aria-expanded', String(open));
+  menuToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  if (returnFocus) menuToggle.focus();
+}
+menuToggle.addEventListener('click', () => setMenuOpen(mainNavigation.hidden));
+siteHeader.addEventListener('click', event => {
+  if (!event.target.closest('a[href^="#"]')) return;
+  setMenuOpen(false);
+  const content = document.querySelector('#main-content');
+  content.setAttribute('tabindex', '-1');
+  content.focus({preventScroll: true});
+});
+document.addEventListener('click', event => {
+  if (!mainNavigation.hidden && !siteHeader.contains(event.target)) {
+    setMenuOpen(false, mainNavigation.contains(document.activeElement));
+  }
+});
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && !mainNavigation.hidden) {
+    event.preventDefault();
+    setMenuOpen(false, true);
+  }
+});
+siteHeader.addEventListener('focusout', event => {
+  if (event.relatedTarget && !siteHeader.contains(event.relatedTarget)) setMenuOpen(false);
+});
+window.addEventListener('hashchange', () => setMenuOpen(false));
+
 const categories = bookCategories;
 const sourceBooks = {
   kurti: {label:'Kürti & Czakó (2005)', authors:'Kürti & Czakó', title:'Strategic Applications of Named Reactions in Organic Synthesis', year:2005},
