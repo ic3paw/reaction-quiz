@@ -1,4 +1,4 @@
-# Name Reaction Database
+# NameReactionDB
 
 A responsive named-reaction study website built with plain HTML, CSS, and JavaScript. Open [index.html](./index.html) in a modern browser to get started. No build step or dependencies are required.
 
