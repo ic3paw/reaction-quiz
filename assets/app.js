@@ -35,13 +35,6 @@ function setMenuOpen(open, returnFocus = false) {
   if (returnFocus) menuToggle.focus();
 }
 menuToggle.addEventListener('click', () => setMenuOpen(!menuOpen));
-siteHeader.addEventListener('click', event => {
-  if (!event.target.closest('a[href^="#"]')) return;
-  setMenuOpen(false);
-  const content = document.querySelector('#main-content');
-  content.setAttribute('tabindex', '-1');
-  content.focus({preventScroll: true});
-});
 document.addEventListener('click', event => {
   if (menuOpen && !siteHeader.contains(event.target)) {
     setMenuOpen(false, mainNavigation.contains(document.activeElement));
@@ -56,7 +49,6 @@ document.addEventListener('keydown', event => {
 siteHeader.addEventListener('focusout', event => {
   if (event.relatedTarget && !siteHeader.contains(event.relatedTarget)) setMenuOpen(false);
 });
-window.addEventListener('hashchange', () => setMenuOpen(false));
 
 const categories = bookCategories;
 const sourceBooks = {
