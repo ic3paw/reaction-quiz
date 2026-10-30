@@ -5,6 +5,7 @@ A responsive named-reaction study website built with plain HTML, CSS, and JavaSc
 ## Features
 
 - 468 unique study entries: the original 251, 36 additions from Li (2021), and 181 additional entries from Mundy, Ellerd & Favaloro (2005), after consolidating four overlapping cards; filter by source book or view all books
+- A Protecting groups section with all 1,275 group listings and 136 section/general-method entries from Greene (2007), in book order, with protection/deprotection source excerpts and cropped download margins; see [coverage and source notes](./docs/protecting-groups.md)
 - A searchable Reagents tab with 151 named reagents, catalysts, acronyms, and reference entries from Mundy et al., including structures, preparation, uses, and examples
 - Searchable library with a remembered Condensed view (names and appendix overviews) or Expanded view (book reaction schemes)
 - Reaction & conditions (shown first), Outline / history, Mechanism, and Synthetic applications tabs where source material is available, with book figures and printed-page citations

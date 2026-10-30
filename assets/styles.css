@@ -326,3 +326,20 @@ dialog::backdrop { background: #0005; }
 }
 
 .detail-arrow svg { display: block; width: 24px; height: 24px; fill: currentColor; stroke: none; }
+
+.protecting-filters { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr) minmax(0, 1fr); gap: 18px; }
+.protecting-filters label { display: flex; flex-direction: column; gap: 8px; min-width: 0; font-size: 14px; font-weight: 600; }
+.protecting-filters input, .protecting-filters select { width: 100%; min-width: 0; }
+.protecting-chapter-heading { margin: 36px 0 18px; }
+.protecting-section-heading { margin: 28px 0 0; padding-bottom: 12px; border-bottom: 1px solid var(--line); color: var(--secondary); font-size: 14px; }
+.protecting-row { display: flex; align-items: baseline; justify-content: space-between; gap: 18px; padding: 16px 0; border-bottom: 1px solid var(--soft-line); }
+.protecting-row button { font-size: 15px; overflow-wrap: anywhere; min-width: 0; }
+.protecting-row > span { flex-shrink: 0; }
+.protecting-pagination { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 28px 0; }
+#protecting-dialog { width: min(950px, calc(100% - 32px)); }
+#protecting-title { overflow-wrap: anywhere; }
+#protecting-title:focus { outline: none; }
+@media (max-width: 700px) {
+  .protecting-filters { grid-template-columns: 1fr; }
+  .protecting-row { align-items: flex-start; flex-direction: column; gap: 5px; }
+}
