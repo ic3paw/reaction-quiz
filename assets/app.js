@@ -26,30 +26,15 @@ const siteHeader = document.querySelector('.site-header');
 const menuToggle = document.querySelector('.menu-toggle');
 const mainNavigation = document.querySelector('#main-navigation');
 let menuOpen = true;
-function setMenuOpen(open, returnFocus = false) {
+function setMenuOpen(open) {
   menuOpen = open;
   siteHeader.classList.toggle('menu-open', open);
   mainNavigation.inert = !open;
   mainNavigation.setAttribute('aria-hidden', String(!open));
   menuToggle.setAttribute('aria-expanded', String(open));
   menuToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
-  if (returnFocus) menuToggle.focus();
 }
 menuToggle.addEventListener('click', () => setMenuOpen(!menuOpen));
-document.addEventListener('click', event => {
-  if (menuOpen && !siteHeader.contains(event.target)) {
-    setMenuOpen(false, mainNavigation.contains(document.activeElement));
-  }
-});
-document.addEventListener('keydown', event => {
-  if (event.key === 'Escape' && menuOpen) {
-    event.preventDefault();
-    setMenuOpen(false, true);
-  }
-});
-siteHeader.addEventListener('focusout', event => {
-  if (event.relatedTarget && !siteHeader.contains(event.relatedTarget)) setMenuOpen(false);
-});
 
 const categories = bookCategories;
 const sourceBooks = {

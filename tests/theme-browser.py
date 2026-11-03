@@ -52,6 +52,17 @@ with sync_playwright() as p:
                 assert box['x'] + box['width'] <= controls['x'], width
         if width == 390:
             page.screenshot(path='/tmp/namereactiondb-dark-mobile.png')
+        page.locator('#reaction-search').click()
+        expect(page.locator('.menu-toggle')).to_have_attribute('aria-expanded', 'true')
+        page.locator('.nav-item.active').focus()
+        page.locator('#reaction-search').focus()
+        page.keyboard.press('Escape')
+        expect(page.locator('.menu-toggle')).to_have_attribute('aria-expanded', 'true')
+        page.locator('.menu-toggle').click()
+        expect(page.locator('.menu-toggle')).to_have_attribute('aria-expanded', 'false')
+        assert page.locator('#main-navigation').evaluate('(nav) => nav.inert')
+        page.locator('.menu-toggle').click()
+        expect(page.locator('.menu-toggle')).to_have_attribute('aria-expanded', 'true')
     page.set_viewport_size({'width': 1440, 'height': 1000})
     page.locator('.menu-toggle').click()
     page.locator('.reaction-name').first.click()
