@@ -25,7 +25,7 @@ document.querySelectorAll('[data-icon]').forEach(el => el.innerHTML = icon(el.da
 const siteHeader = document.querySelector('.site-header');
 const menuToggle = document.querySelector('.menu-toggle');
 const mainNavigation = document.querySelector('#main-navigation');
-let menuOpen = false;
+let menuOpen = true;
 function setMenuOpen(open, returnFocus = false) {
   menuOpen = open;
   siteHeader.classList.toggle('menu-open', open);
@@ -351,7 +351,7 @@ function renderLibraryResults(saved) {
   document.querySelectorAll('[data-library-view]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.libraryView === state.libraryView)));
   document.querySelector('#library-results').innerHTML = filtered.length ? filtered.map(r => `
     <article class="reaction-row ${state.libraryView}"><div class="reaction-row-heading"><button class="text-button reaction-name" data-detail="${r.id}">${escapeHTML(r.name)}</button>
-    <div class="reaction-tools">${saved ? reactionFolderControl(r) : ''}${saved || state.libraryView === 'expanded' ? `<button class="bookmark-button ${state.saved.includes(r.id) ? 'saved' : ''}" data-save="${r.id}" aria-label="${state.saved.includes(r.id) ? 'Unsave' : 'Save'} ${escapeHTML(r.name)}" aria-pressed="${state.saved.includes(r.id)}">${icon('bookmark')}</button>` : ''}</div></div>
+    <div class="reaction-tools">${saved ? reactionFolderControl(r) : ''}<button class="bookmark-button ${state.saved.includes(r.id) ? 'saved' : ''}" data-save="${r.id}" aria-label="${state.saved.includes(r.id) ? 'Unsave' : 'Save'} ${escapeHTML(r.name)}" aria-pressed="${state.saved.includes(r.id)}">${icon('bookmark')}</button></div></div>
     ${state.libraryView === 'expanded' ? bookFigure(bookSections[r.id].reaction, r.name, 'reaction & conditions') : `<p class="reaction-overview">${escapeHTML(r.appendixSummary || r.summary)}</p>`}</article>`).join('') :
     `<div class="empty-state"><p>${!state.selectedCategories.length ? 'Select at least one category.' : saved && !state.saved.length ? 'No saved reactions. Bookmark reactions in the library.' : emptyFolder ? 'This folder is empty. Choose All saved, then use a reaction’s Folder menu to move it here.' : 'No matches. Try a different search, book, or category.'}</p>${saved && !state.saved.length ? '<a href="#library">Browse reactions</a>' : ''}</div>`;
 }

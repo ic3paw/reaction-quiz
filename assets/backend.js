@@ -206,3 +206,4 @@ window.validateStudyBackup = function validateStudyBackup(snapshot, catalog) {
     flashcardReviews: Object.fromEntries(Object.entries(data.flashcardReviews || {}).filter(([id]) => ids.has(id)).map(([id, {rating, at}]) => [id, {rating, at}])),
   };
 };
+  
